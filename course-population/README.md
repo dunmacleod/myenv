@@ -28,7 +28,8 @@ Confirmed against the already-populated sibling course
 ```
 
 Notes carried over from that course:
-- `plan` uses the `www.notion.so/masterschool/...` host, not `app.notion.com/p/...`.
+- `plan` uses the `www.notion.so/masterschool/<Slug>-<32-hex-id>` host and
+  slug+id form, not `app.notion.com/p/...` and not a bare id.
 - Deck URLs are stored clean — no `?usp=drivesdk` or `ouid=` query parameters.
 - Sessions without a deck (there, `Code Clinic`) leave `deck` empty rather than
   pointing at a placeholder. Here that applies to LS15 and LS16.
@@ -48,9 +49,20 @@ Notes carried over from that course:
 - LS15 (Presentation Day) and LS16 (Code Clinic) have no deck in Drive.
   Treated as intentional, per the sibling course. Confirm before entering.
 
-## Still to confirm
+## Files
 
-- Whether LS15/LS16 should carry a deck in this course.
+- `ls-manifest.csv` — the payload.
+- `POPULATE-PROMPT.md` — self-contained handoff prompt for the session that
+  does the entry. Must run in a Remote Control / bridge session with a
+  logged-in browser; a cloud session cannot reach `lms.masterschool.com`.
+
+## Settled
+
+- LS15/LS16 carry no deck. Intentional, confirmed.
+- Plan links normalised to slug+id so all 16 read identically.
+
+## Still open
+
 - The `appnotion` flag seen on the sibling course's LS1 (`false`) — purpose
-  unknown, not represented here.
+  unknown, deliberately not represented. Leave at default.
 - Whether sprint blocks already exist in the target course or need creating.
