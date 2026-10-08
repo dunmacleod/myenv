@@ -158,4 +158,26 @@ Nothing in the published content contradicts a locked decision.
 **F-1** should be annotated into §45.7 so the stale checks don't mislead a later reader.
 **F-2**, **F-4**, **F-5** and **F-8** are content-lead calls, not blockers.
 
-**Status: AUDIT COMPLETE. CLOSEOUT PENDING F-3, F-6, F-7.**
+---
+
+## §49.6 Post-audit actions and content-lead decisions — 2026-10-08
+
+Recorded here so the handoff stays self-contained.
+
+- **F-6 — resolved by the content lead.** The `Translation review` value question is
+  settled. §47.2's claim should be corrected to describe the agreed state.
+- **F-8 — APPLIED by Claude.** The four `🎓` page icons in the tutor-session database
+  (`1cd94183…58cc23`) were removed via `PATCH /v1/pages/{id}` with `icon: null`, on the
+  content lead's explicit instruction. Verified `icon = None` on all four afterwards.
+  All three databases now carry zero page icons and zero database icons.
+- **Falkenwerk — RETAINED.** The running case is `Falkenwerk Service GmbH`, a customer-service
+  organisation building a support-triage agent. The real FALKENWERK in Koblenz is a media
+  agency — a different sector, as §40.1 judged. Decision: keep the name. This closes the
+  open item §40.1 left with the content lead.
+- **The four house-voice calls** (masculine `der Tutor`, `Finaler Check`, the absent
+  `Lernergebnisse`/`Check zum Verständnis` blocks, `Hohe Nichtbestehenswahrscheinlichkeit`)
+  — accepted as they stand. No change required; do not re-litigate.
+
+**Remaining before closeout: F-3 and F-7.**
+
+**Status: AUDIT COMPLETE. CLOSEOUT PENDING F-3, F-7.**
