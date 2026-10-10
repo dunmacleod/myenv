@@ -1,0 +1,6112 @@
+[
+ {
+  "object": "block",
+  "id": "bcdefe2c-b973-4797-a70b-b3dd4ba98965",
+  "parent": {
+   "type": "page_id",
+   "page_id": "ffb94183-19f3-837e-89de-01d87df3bbcb"
+  },
+  "created_time": "2026-07-03T12:52:00.000Z",
+  "last_edited_time": "2026-07-03T12:52:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Nach dem Schema-Mismatch, der den Garantie-Handoff besch\u00e4digt hat, beginnt Sofia noch einmal mit einem ordentlichen Vertrag. Bevor sie das vollst\u00e4ndige Support-System von Cascadia neu baut, m\u00f6chte sie den kleinstm\u00f6glichen Handoff bauen, der funktionieren k\u00f6nnte: zwei Agenten in Flowise Agentflow V2, mit geteiltem Flow State, der die Absicht und das Reasoning vom ersten Agenten zum zweiten weitergibt.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Nach dem Schema-Mismatch, der den Garantie-Handoff besch\u00e4digt hat, beginnt Sofia noch einmal mit einem ordentlichen Vertrag. Bevor sie das vollst\u00e4ndige Support-System von Cascadia neu baut, m\u00f6chte sie den kleinstm\u00f6glichen Handoff bauen, der funktionieren k\u00f6nnte: zwei Agenten in Flowise Agentflow V2, mit geteiltem Flow State, der die Absicht und das Reasoning vom ersten Agenten zum zweiten weitergibt.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "c4cb3c7b-301b-43df-9942-f91ad2ecbffe",
+  "parent": {
+   "type": "page_id",
+   "page_id": "ffb94183-19f3-837e-89de-01d87df3bbcb"
+  },
+  "created_time": "2026-07-03T12:52:00.000Z",
+  "last_edited_time": "2026-07-03T12:52:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "In diesem Walkthrough baust du genau das. Ein Intake-Agent klassifiziert eine Kundennachricht und schreibt drei Schl\u00fcssel in Flow State: die Absicht des Kunden, eine einzeilige Zusammenfassung und einen Grund f\u00fcr den Handoff. Ein Specialist-Agent liest diese Schl\u00fcssel und antwortet auf ihrer Grundlage, ohne die urspr\u00fcngliche Nachricht erneut zu analysieren. Das ist das kleinste konkrete Beispiel f\u00fcr den Kommunikationsvertrag, den die vorherige Lektion beschrieben hat.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "In diesem Walkthrough baust du genau das. Ein Intake-Agent klassifiziert eine Kundennachricht und schreibt drei Schl\u00fcssel in Flow State: die Absicht des Kunden, eine einzeilige Zusammenfassung und einen Grund f\u00fcr den Handoff. Ein Specialist-Agent liest diese Schl\u00fcssel und antwortet auf ihrer Grundlage, ohne die urspr\u00fcngliche Nachricht erneut zu analysieren. Das ist das kleinste konkrete Beispiel f\u00fcr den Kommunikationsvertrag, den die vorherige Lektion beschrieben hat.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "e9c113a4-ca82-4026-9c3c-9803be9279f0",
+  "parent": {
+   "type": "page_id",
+   "page_id": "ffb94183-19f3-837e-89de-01d87df3bbcb"
+  },
+  "created_time": "2026-07-03T12:52:00.000Z",
+  "last_edited_time": "2026-07-03T12:52:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Jeder Multi-Agent-Handoff braucht eine gemeinsame Memory-Ebene, damit Agent B wei\u00df, was Agent A getan hat. Agentflow V2 bietet ein implizites Execution-Thread-Memory sowie einen expliziten globalen Kontext namens ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Jeder Multi-Agent-Handoff braucht eine gemeinsame Memory-Ebene, damit Agent B wei\u00df, was Agent A getan hat. Agentflow V2 bietet ein implizites Execution-Thread-Memory sowie einen expliziten globalen Kontext namens ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "Flow State (",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Flow State (",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "$flow.state",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": true,
+      "color": "default"
+     },
+     "plain_text": "$flow.state",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": ")",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": ")",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": ".",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": ".",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "bd8ebd8c-c44a-4e41-ad14-c026f8720ed1",
+  "parent": {
+   "type": "page_id",
+   "page_id": "ffb94183-19f3-837e-89de-01d87df3bbcb"
+  },
+  "created_time": "2026-07-03T12:52:00.000Z",
+  "last_edited_time": "2026-07-03T12:52:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Start-Node-Initialisierung:",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Start-Node-Initialisierung:",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " Ganz am Anfang deiner Canvas muss der ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " Ganz am Anfang deiner Canvas muss der ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "Start-Node",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Start-Node",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " die Key-Value-Paare (das Vertragsschema), auf die sp\u00e4tere Agenten zugreifen oder die sie aktualisieren, explizit deklarieren und initialisieren.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " die Key-Value-Paare (das Vertragsschema), auf die sp\u00e4tere Agenten zugreifen oder die sie aktualisieren, explizit deklarieren und initialisieren.",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "1c885e77-1ede-43f2-a059-f903562eb9ba",
+  "parent": {
+   "type": "page_id",
+   "page_id": "ffb94183-19f3-837e-89de-01d87df3bbcb"
+  },
+  "created_time": "2026-07-03T12:52:00.000Z",
+  "last_edited_time": "2026-07-03T12:52:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Zustandsaktualisierungen (\u00dcberschreiben vs. Anh\u00e4ngen):",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Zustandsaktualisierungen (\u00dcberschreiben vs. Anh\u00e4ngen):",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " Wenn Daten durch einen Node laufen, kannst du konfigurieren, wie eine Variable aktualisiert wird:",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " Wenn Daten durch einen Node laufen, kannst du konfigurieren, wie eine Variable aktualisiert wird:",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "27da73a8-831a-4051-80d6-c028821e9e3b",
+  "parent": {
+   "type": "page_id",
+   "page_id": "ffb94183-19f3-837e-89de-01d87df3bbcb"
+  },
+  "created_time": "2026-07-03T12:52:00.000Z",
+  "last_edited_time": "2026-07-03T12:52:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "\u25e6 ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "\u25e6 ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "Replace:",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Replace:",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " \u00dcberschreibt die Variable (z. B. Aktualisierung von ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " \u00dcberschreibt die Variable (z. B. Aktualisierung von ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "ticket_status",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": true,
+      "color": "default"
+     },
+     "plain_text": "ticket_status",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " oder ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " oder ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "current_summary",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": true,
+      "color": "default"
+     },
+     "plain_text": "current_summary",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": ").",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": ").",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "71e755aa-5ded-4833-97a2-72d91164bc7e",
+  "parent": {
+   "type": "page_id",
+   "page_id": "ffb94183-19f3-837e-89de-01d87df3bbcb"
+  },
+  "created_time": "2026-07-03T12:52:00.000Z",
+  "last_edited_time": "2026-07-03T12:52:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "\u25e6 ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "\u25e6 ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "Append:",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Append:",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " Wandelt die Variable in ein Array um oder h\u00e4ngt etwas daran an (ideal, um Roh-JSON-Logs oder mehrstufige Analysen \u00fcber mehrere Agenten hinweg zu sammeln).",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " Wandelt die Variable in ein Array um oder h\u00e4ngt etwas daran an (ideal, um Roh-JSON-Logs oder mehrstufige Analysen \u00fcber mehrere Agenten hinweg zu sammeln).",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "b228f2c2-7022-4679-92cb-f95ef55ccb49",
+  "parent": {
+   "type": "page_id",
+   "page_id": "ffb94183-19f3-837e-89de-01d87df3bbcb"
+  },
+  "created_time": "2026-07-03T12:52:00.000Z",
+  "last_edited_time": "2026-07-03T12:52:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Ein robuster Handoff-Vertrag garantiert, dass bei der \u00dcbergabe der Ausf\u00fchrung von Agent A an Agent B alle kritischen Informationen (z. B. Absicht, verifizierte Parameter, Roh-Logs) sauber im Graph-Flow geb\u00fcndelt sind.",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Ein robuster Handoff-Vertrag garantiert, dass bei der \u00dcbergabe der Ausf\u00fchrung von Agent A an Agent B alle kritischen Informationen (z. B. Absicht, verifizierte Parameter, Roh-Logs) sauber im Graph-Flow geb\u00fcndelt sind.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "8eaea317-2946-40ff-8ece-68f3d981594e",
+  "parent": {
+   "type": "page_id",
+   "page_id": "ffb94183-19f3-837e-89de-01d87df3bbcb"
+  },
+  "created_time": "2026-07-03T12:52:00.000Z",
+  "last_edited_time": "2026-07-03T12:52:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_2",
+  "heading_2": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Der Workflow, den du baust",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Der Workflow, den du baust",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "1260cf48-b0ea-49ee-9117-5801c670e006",
+  "parent": {
+   "type": "page_id",
+   "page_id": "ffb94183-19f3-837e-89de-01d87df3bbcb"
+  },
+  "created_time": "2026-07-03T12:52:00.000Z",
+  "last_edited_time": "2026-07-03T12:52:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Du baust die kleinste Version von Cascadias Support-Triage: einen Intake-Agent, der eingehende Nachrichten klassifiziert, und einen Specialist-Agent, der den Billing-Branch bearbeitet.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Du baust die kleinste Version von Cascadias Support-Triage: einen Intake-Agent, der eingehende Nachrichten klassifiziert, und einen Specialist-Agent, der den Billing-Branch bearbeitet.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "a52afd35-17f0-4a1b-b1df-a3fbda6a94f2",
+  "parent": {
+   "type": "page_id",
+   "page_id": "ffb94183-19f3-837e-89de-01d87df3bbcb"
+  },
+  "created_time": "2026-07-03T12:52:00.000Z",
+  "last_edited_time": "2026-07-03T12:52:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Der Intake-Agent liest die Nachricht eines Kunden und extrahiert das Hauptproblem. Der Specialist-Agent nutzt diesen extrahierten Kontext, um eine fokussiertere Antwort zu schreiben, ohne zum urspr\u00fcnglichen Nachrichtentext zur\u00fcckzugehen.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Der Intake-Agent liest die Nachricht eines Kunden und extrahiert das Hauptproblem. Der Specialist-Agent nutzt diesen extrahierten Kontext, um eine fokussiertere Antwort zu schreiben, ohne zum urspr\u00fcnglichen Nachrichtentext zur\u00fcckzugehen.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "2d869187-6d92-4961-9d6f-141b346e24c0",
+  "parent": {
+   "type": "page_id",
+   "page_id": "ffb94183-19f3-837e-89de-01d87df3bbcb"
+  },
+  "created_time": "2026-07-03T12:52:00.000Z",
+  "last_edited_time": "2026-07-03T12:52:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "So sieht der Flow aus:",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "So sieht der Flow aus:",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "39194183-19f3-80e6-8aa1-f33f0611f0ef",
+  "parent": {
+   "type": "page_id",
+   "page_id": "ffb94183-19f3-837e-89de-01d87df3bbcb"
+  },
+  "created_time": "2026-07-02T15:09:00.000Z",
+  "last_edited_time": "2026-07-02T15:09:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "image",
+  "image": {
+   "caption": [],
+   "type": "file",
+   "file": {
+    "url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/3a9085c4-df29-45e6-8bc7-6c9c0a25ea8c/0e5d53d3-72d6-4d90-a45b-7c405c29a5a6/intake_specialist_flow_de.svg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466QUQJ7N46%2F20261010%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20261010T074858Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEIf%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJIMEYCIQDeYYyzTCtPm21cVzuorklDvs9nBxNaPEAOf3y1lz5eqgIhAJfmeN2BF9vGV2uG7X%2Bvhxn88d88F53SYMllbGGWpvkLKv8DCE8QABoMNjM3NDIzMTgzODA1Igwg%2FxVEtDI2KEdc%2FuUq3AOCn5Nvuq0JnrweCZ%2BSMh2cqvjD6y2FYbFNIBbeCxx762BxDtoqQN8sIi%2Ba5Isc%2BkJwpxeOUOz0L5Ofsbrwk2QWO4oGcNZRpgV4RDHIqS9WySqnPF0h1SIIlexOybEAEaDsXpq438Flw%2BySaKPjtK5PTQiM%2F7FwQoHlUjRyhd2%2F8fQ%2B5MPJg3hlpisw0OsSoN0AkaciUQRYk50jrVLIzAiqm4POFBqGwSxWumIP%2FMvI%2FbUWgSoN%2Bf4XBW1ZvP73MLM0hITNdL7jLX5E87GzBouBisvaic6aKuJ6y2Wi1m%2FLEpKp98No0ftpEVKb6M3jnLB6NBeMV8twTOm%2FZovra562sr7EFxT6%2Bx1B9PCtX34WOtP5oRWHejq9vAlA%2FiObXYJEN0wyjVPVHPrTAN1cMoZEK5RuPHdc%2FEgT9cF5AkPSu%2B8QCuc36PARBhOS6SpKB1QIigR6yz35%2BqDf65f6b%2B2U4Hfjd%2FkCF8rsgI5xbn7c4SnAK8EWq3tgVCc3OPts53zY0Ztq7TL%2BPeoRjFenKDBIxLZ%2Fojh7ZkrVsgilIF7Noh0f6laMhk5MDmkFkLFBbuKsulAPfrtq51zFr%2FoC7EPDfmDQOQNrfuL%2FaHd0ueoM0b%2FBvUcO%2BVo%2B3y1GhjDrtafWBjqkAcxDR%2BuiDa5UzPtsC5S3KSCMcIVvSm6kRod8G0VywpikNogwsCMiP6DFM4DDYIus0rNpBcTci35fyGj3CZ8ZqQPUUa3B0Vfcy7jM2SjcQyclECX469JM78YTxlBM530hQFEXhVI0eLwVXRnknUegamQdIspsHw2xdEp0ZIFCTEQ%2FFyXuCLUyFbU%2FpXGZx5dpXHK6sWStBkvm%2B2OR%2BMZMvWn8rcYY&X-Amz-Signature=b83914c3216d2f1dba94aa40d84b42e6f5e010fb98f9bd384ddaff62300f7e20&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+    "expiry_time": "2026-10-10T08:48:58.673Z"
+   }
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "ea8a4d40-588d-4fec-834d-494c286f4eee",
+  "parent": {
+   "type": "page_id",
+   "page_id": "ffb94183-19f3-837e-89de-01d87df3bbcb"
+  },
+  "created_time": "2026-07-03T12:54:00.000Z",
+  "last_edited_time": "2026-07-03T12:54:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Das ist ein einfaches Muster f\u00fcr Nachrichtenweitergabe: Der erste Agent bereitet nur den Kontext vor, die endg\u00fcltige Antwort liefert der zweite Agent.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Das ist ein einfaches Muster f\u00fcr Nachrichtenweitergabe: Der erste Agent bereitet nur den Kontext vor, die endg\u00fcltige Antwort liefert der zweite Agent.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "88d3b62c-7171-498d-bde2-d3d404537bd2",
+  "parent": {
+   "type": "page_id",
+   "page_id": "ffb94183-19f3-837e-89de-01d87df3bbcb"
+  },
+  "created_time": "2026-07-03T12:54:00.000Z",
+  "last_edited_time": "2026-07-03T12:54:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_2",
+  "heading_2": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Schritt 1: Einen neuen Agentflow-V2-Flow erstellen",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Schritt 1: Einen neuen Agentflow-V2-Flow erstellen",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "0faec7ca-cbd2-45ef-a63d-73d519c06069",
+  "parent": {
+   "type": "page_id",
+   "page_id": "ffb94183-19f3-837e-89de-01d87df3bbcb"
+  },
+  "created_time": "2026-07-03T12:54:00.000Z",
+  "last_edited_time": "2026-07-03T12:54:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "\u00d6ffne Flowise und erstelle einen neuen Agentflow-V2-Workflow.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "\u00d6ffne Flowise und erstelle einen neuen Agentflow-V2-Workflow.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "b9494183-19f3-8270-b47c-8164a588b7a3",
+  "parent": {
+   "type": "page_id",
+   "page_id": "ffb94183-19f3-837e-89de-01d87df3bbcb"
+  },
+  "created_time": "2026-07-02T14:49:00.000Z",
+  "last_edited_time": "2026-07-02T14:49:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "image",
+  "image": {
+   "caption": [],
+   "type": "file",
+   "file": {
+    "url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/3a9085c4-df29-45e6-8bc7-6c9c0a25ea8c/35841cbb-acda-4942-aad9-8865953cbd6d/image.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466QUQJ7N46%2F20261010%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20261010T074858Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEIf%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJIMEYCIQDeYYyzTCtPm21cVzuorklDvs9nBxNaPEAOf3y1lz5eqgIhAJfmeN2BF9vGV2uG7X%2Bvhxn88d88F53SYMllbGGWpvkLKv8DCE8QABoMNjM3NDIzMTgzODA1Igwg%2FxVEtDI2KEdc%2FuUq3AOCn5Nvuq0JnrweCZ%2BSMh2cqvjD6y2FYbFNIBbeCxx762BxDtoqQN8sIi%2Ba5Isc%2BkJwpxeOUOz0L5Ofsbrwk2QWO4oGcNZRpgV4RDHIqS9WySqnPF0h1SIIlexOybEAEaDsXpq438Flw%2BySaKPjtK5PTQiM%2F7FwQoHlUjRyhd2%2F8fQ%2B5MPJg3hlpisw0OsSoN0AkaciUQRYk50jrVLIzAiqm4POFBqGwSxWumIP%2FMvI%2FbUWgSoN%2Bf4XBW1ZvP73MLM0hITNdL7jLX5E87GzBouBisvaic6aKuJ6y2Wi1m%2FLEpKp98No0ftpEVKb6M3jnLB6NBeMV8twTOm%2FZovra562sr7EFxT6%2Bx1B9PCtX34WOtP5oRWHejq9vAlA%2FiObXYJEN0wyjVPVHPrTAN1cMoZEK5RuPHdc%2FEgT9cF5AkPSu%2B8QCuc36PARBhOS6SpKB1QIigR6yz35%2BqDf65f6b%2B2U4Hfjd%2FkCF8rsgI5xbn7c4SnAK8EWq3tgVCc3OPts53zY0Ztq7TL%2BPeoRjFenKDBIxLZ%2Fojh7ZkrVsgilIF7Noh0f6laMhk5MDmkFkLFBbuKsulAPfrtq51zFr%2FoC7EPDfmDQOQNrfuL%2FaHd0ueoM0b%2FBvUcO%2BVo%2B3y1GhjDrtafWBjqkAcxDR%2BuiDa5UzPtsC5S3KSCMcIVvSm6kRod8G0VywpikNogwsCMiP6DFM4DDYIus0rNpBcTci35fyGj3CZ8ZqQPUUa3B0Vfcy7jM2SjcQyclECX469JM78YTxlBM530hQFEXhVI0eLwVXRnknUegamQdIspsHw2xdEp0ZIFCTEQ%2FFyXuCLUyFbU%2FpXGZx5dpXHK6sWStBkvm%2B2OR%2BMZMvWn8rcYY&X-Amz-Signature=4545b298f2d708e004745abc8b56b52dcc0b8b451ac7fdd7c21eb05c200475b0&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+    "expiry_time": "2026-10-10T08:48:58.673Z"
+   }
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "5be94183-19f3-8363-8af2-014b4f2bc699",
+  "parent": {
+   "type": "page_id",
+   "page_id": "ffb94183-19f3-837e-89de-01d87df3bbcb"
+  },
+  "created_time": "2026-07-02T14:49:00.000Z",
+  "last_edited_time": "2026-07-03T12:54:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Du kannst ihn ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Du kannst ihn ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "Customer Support Triage",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": true,
+      "color": "default"
+     },
+     "plain_text": "Customer Support Triage",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " nennen.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " nennen.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "3f994183-19f3-82a3-b418-01ae80d70029",
+  "parent": {
+   "type": "page_id",
+   "page_id": "ffb94183-19f3-837e-89de-01d87df3bbcb"
+  },
+  "created_time": "2026-07-02T14:49:00.000Z",
+  "last_edited_time": "2026-07-02T14:49:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "image",
+  "image": {
+   "caption": [],
+   "type": "file",
+   "file": {
+    "url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/3a9085c4-df29-45e6-8bc7-6c9c0a25ea8c/e80b526a-dbde-499d-8b70-4f7c229590da/image.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466QUQJ7N46%2F20261010%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20261010T074858Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEIf%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJIMEYCIQDeYYyzTCtPm21cVzuorklDvs9nBxNaPEAOf3y1lz5eqgIhAJfmeN2BF9vGV2uG7X%2Bvhxn88d88F53SYMllbGGWpvkLKv8DCE8QABoMNjM3NDIzMTgzODA1Igwg%2FxVEtDI2KEdc%2FuUq3AOCn5Nvuq0JnrweCZ%2BSMh2cqvjD6y2FYbFNIBbeCxx762BxDtoqQN8sIi%2Ba5Isc%2BkJwpxeOUOz0L5Ofsbrwk2QWO4oGcNZRpgV4RDHIqS9WySqnPF0h1SIIlexOybEAEaDsXpq438Flw%2BySaKPjtK5PTQiM%2F7FwQoHlUjRyhd2%2F8fQ%2B5MPJg3hlpisw0OsSoN0AkaciUQRYk50jrVLIzAiqm4POFBqGwSxWumIP%2FMvI%2FbUWgSoN%2Bf4XBW1ZvP73MLM0hITNdL7jLX5E87GzBouBisvaic6aKuJ6y2Wi1m%2FLEpKp98No0ftpEVKb6M3jnLB6NBeMV8twTOm%2FZovra562sr7EFxT6%2Bx1B9PCtX34WOtP5oRWHejq9vAlA%2FiObXYJEN0wyjVPVHPrTAN1cMoZEK5RuPHdc%2FEgT9cF5AkPSu%2B8QCuc36PARBhOS6SpKB1QIigR6yz35%2BqDf65f6b%2B2U4Hfjd%2FkCF8rsgI5xbn7c4SnAK8EWq3tgVCc3OPts53zY0Ztq7TL%2BPeoRjFenKDBIxLZ%2Fojh7ZkrVsgilIF7Noh0f6laMhk5MDmkFkLFBbuKsulAPfrtq51zFr%2FoC7EPDfmDQOQNrfuL%2FaHd0ueoM0b%2FBvUcO%2BVo%2B3y1GhjDrtafWBjqkAcxDR%2BuiDa5UzPtsC5S3KSCMcIVvSm6kRod8G0VywpikNogwsCMiP6DFM4DDYIus0rNpBcTci35fyGj3CZ8ZqQPUUa3B0Vfcy7jM2SjcQyclECX469JM78YTxlBM530hQFEXhVI0eLwVXRnknUegamQdIspsHw2xdEp0ZIFCTEQ%2FFyXuCLUyFbU%2FpXGZx5dpXHK6sWStBkvm%2B2OR%2BMZMvWn8rcYY&X-Amz-Signature=f2529a30d28e8dda5a8b6a85cdd6c328054423a835f8f237882bec352d3aef7a&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+    "expiry_time": "2026-10-10T08:48:58.673Z"
+   }
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "7624063d-e588-423e-b7da-0f1926505135",
+  "parent": {
+   "type": "page_id",
+   "page_id": "ffb94183-19f3-837e-89de-01d87df3bbcb"
+  },
+  "created_time": "2026-07-03T12:54:00.000Z",
+  "last_edited_time": "2026-07-03T12:54:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Der Start-Node steht f\u00fcr den Beginn der Unterhaltung und ist auch der Ort, an dem du den geteilten Zustand definierst, den sp\u00e4tere Nodes verwenden.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Der Start-Node steht f\u00fcr den Beginn der Unterhaltung und ist auch der Ort, an dem du den geteilten Zustand definierst, den sp\u00e4tere Nodes verwenden.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "99004dc3-f651-4675-a1fa-999b575ac866",
+  "parent": {
+   "type": "page_id",
+   "page_id": "ffb94183-19f3-837e-89de-01d87df3bbcb"
+  },
+  "created_time": "2026-07-03T12:54:00.000Z",
+  "last_edited_time": "2026-07-03T12:54:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Such im Start-Node den Bereich Flow State und leg diese Variablen an:",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Such im Start-Node den Bereich Flow State und leg diese Variablen an:",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "4d194183-19f3-8212-80c9-019051204778",
+  "parent": {
+   "type": "page_id",
+   "page_id": "ffb94183-19f3-837e-89de-01d87df3bbcb"
+  },
+  "created_time": "2026-07-02T14:49:00.000Z",
+  "last_edited_time": "2026-07-02T14:49:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "code",
+  "code": {
+   "caption": [],
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "{ \"customer_intent\": \"\", \n\t\"issue_summary\": \"\", \n\t\"handoff_reason\": \"\" }",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "{ \"customer_intent\": \"\", \n\t\"issue_summary\": \"\", \n\t\"handoff_reason\": \"\" }",
+     "href": null
+    }
+   ],
+   "language": "json"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "acf94183-19f3-8372-a2b8-0174ef9a0e78",
+  "parent": {
+   "type": "page_id",
+   "page_id": "ffb94183-19f3-837e-89de-01d87df3bbcb"
+  },
+  "created_time": "2026-07-02T14:49:00.000Z",
+  "last_edited_time": "2026-07-02T14:49:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "image",
+  "image": {
+   "caption": [],
+   "type": "file",
+   "file": {
+    "url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/3a9085c4-df29-45e6-8bc7-6c9c0a25ea8c/a8ed9f06-ea8c-47cc-8a23-2f085ceba7a0/image.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466QUQJ7N46%2F20261010%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20261010T074858Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEIf%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJIMEYCIQDeYYyzTCtPm21cVzuorklDvs9nBxNaPEAOf3y1lz5eqgIhAJfmeN2BF9vGV2uG7X%2Bvhxn88d88F53SYMllbGGWpvkLKv8DCE8QABoMNjM3NDIzMTgzODA1Igwg%2FxVEtDI2KEdc%2FuUq3AOCn5Nvuq0JnrweCZ%2BSMh2cqvjD6y2FYbFNIBbeCxx762BxDtoqQN8sIi%2Ba5Isc%2BkJwpxeOUOz0L5Ofsbrwk2QWO4oGcNZRpgV4RDHIqS9WySqnPF0h1SIIlexOybEAEaDsXpq438Flw%2BySaKPjtK5PTQiM%2F7FwQoHlUjRyhd2%2F8fQ%2B5MPJg3hlpisw0OsSoN0AkaciUQRYk50jrVLIzAiqm4POFBqGwSxWumIP%2FMvI%2FbUWgSoN%2Bf4XBW1ZvP73MLM0hITNdL7jLX5E87GzBouBisvaic6aKuJ6y2Wi1m%2FLEpKp98No0ftpEVKb6M3jnLB6NBeMV8twTOm%2FZovra562sr7EFxT6%2Bx1B9PCtX34WOtP5oRWHejq9vAlA%2FiObXYJEN0wyjVPVHPrTAN1cMoZEK5RuPHdc%2FEgT9cF5AkPSu%2B8QCuc36PARBhOS6SpKB1QIigR6yz35%2BqDf65f6b%2B2U4Hfjd%2FkCF8rsgI5xbn7c4SnAK8EWq3tgVCc3OPts53zY0Ztq7TL%2BPeoRjFenKDBIxLZ%2Fojh7ZkrVsgilIF7Noh0f6laMhk5MDmkFkLFBbuKsulAPfrtq51zFr%2FoC7EPDfmDQOQNrfuL%2FaHd0ueoM0b%2FBvUcO%2BVo%2B3y1GhjDrtafWBjqkAcxDR%2BuiDa5UzPtsC5S3KSCMcIVvSm6kRod8G0VywpikNogwsCMiP6DFM4DDYIus0rNpBcTci35fyGj3CZ8ZqQPUUa3B0Vfcy7jM2SjcQyclECX469JM78YTxlBM530hQFEXhVI0eLwVXRnknUegamQdIspsHw2xdEp0ZIFCTEQ%2FFyXuCLUyFbU%2FpXGZx5dpXHK6sWStBkvm%2B2OR%2BMZMvWn8rcYY&X-Amz-Signature=58e57c67d3d394389ac51798ab8c712d8f5b05fa06e6f6c2e654e467a79cadbf&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+    "expiry_time": "2026-10-10T08:48:58.673Z"
+   }
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "2d194183-19f3-83e2-8d52-81104e66043d",
+  "parent": {
+   "type": "page_id",
+   "page_id": "ffb94183-19f3-837e-89de-01d87df3bbcb"
+  },
+  "created_time": "2026-07-02T14:49:00.000Z",
+  "last_edited_time": "2026-07-03T12:54:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Klick auf ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Klick auf ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "Add Flow State",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": true,
+      "color": "default"
+     },
+     "plain_text": "Add Flow State",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": ", um Variablen zu aktualisieren:",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": ", um Variablen zu aktualisieren:",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "5d494183-19f3-8336-ad2b-81d1a5a2b638",
+  "parent": {
+   "type": "page_id",
+   "page_id": "ffb94183-19f3-837e-89de-01d87df3bbcb"
+  },
+  "created_time": "2026-07-02T14:49:00.000Z",
+  "last_edited_time": "2026-07-02T14:49:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "image",
+  "image": {
+   "caption": [],
+   "type": "file",
+   "file": {
+    "url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/3a9085c4-df29-45e6-8bc7-6c9c0a25ea8c/41b7177a-0316-4b3a-b906-699f8f89481a/image.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466QUQJ7N46%2F20261010%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20261010T074858Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEIf%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJIMEYCIQDeYYyzTCtPm21cVzuorklDvs9nBxNaPEAOf3y1lz5eqgIhAJfmeN2BF9vGV2uG7X%2Bvhxn88d88F53SYMllbGGWpvkLKv8DCE8QABoMNjM3NDIzMTgzODA1Igwg%2FxVEtDI2KEdc%2FuUq3AOCn5Nvuq0JnrweCZ%2BSMh2cqvjD6y2FYbFNIBbeCxx762BxDtoqQN8sIi%2Ba5Isc%2BkJwpxeOUOz0L5Ofsbrwk2QWO4oGcNZRpgV4RDHIqS9WySqnPF0h1SIIlexOybEAEaDsXpq438Flw%2BySaKPjtK5PTQiM%2F7FwQoHlUjRyhd2%2F8fQ%2B5MPJg3hlpisw0OsSoN0AkaciUQRYk50jrVLIzAiqm4POFBqGwSxWumIP%2FMvI%2FbUWgSoN%2Bf4XBW1ZvP73MLM0hITNdL7jLX5E87GzBouBisvaic6aKuJ6y2Wi1m%2FLEpKp98No0ftpEVKb6M3jnLB6NBeMV8twTOm%2FZovra562sr7EFxT6%2Bx1B9PCtX34WOtP5oRWHejq9vAlA%2FiObXYJEN0wyjVPVHPrTAN1cMoZEK5RuPHdc%2FEgT9cF5AkPSu%2B8QCuc36PARBhOS6SpKB1QIigR6yz35%2BqDf65f6b%2B2U4Hfjd%2FkCF8rsgI5xbn7c4SnAK8EWq3tgVCc3OPts53zY0Ztq7TL%2BPeoRjFenKDBIxLZ%2Fojh7ZkrVsgilIF7Noh0f6laMhk5MDmkFkLFBbuKsulAPfrtq51zFr%2FoC7EPDfmDQOQNrfuL%2FaHd0ueoM0b%2FBvUcO%2BVo%2B3y1GhjDrtafWBjqkAcxDR%2BuiDa5UzPtsC5S3KSCMcIVvSm6kRod8G0VywpikNogwsCMiP6DFM4DDYIus0rNpBcTci35fyGj3CZ8ZqQPUUa3B0Vfcy7jM2SjcQyclECX469JM78YTxlBM530hQFEXhVI0eLwVXRnknUegamQdIspsHw2xdEp0ZIFCTEQ%2FFyXuCLUyFbU%2FpXGZx5dpXHK6sWStBkvm%2B2OR%2BMZMvWn8rcYY&X-Amz-Signature=27a5ba35493239854a0b6c7258903c19fb81c415fdbb2d89450e5416035521c4&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+    "expiry_time": "2026-10-10T08:48:58.673Z"
+   }
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "5c594183-19f3-83bb-a988-811993def87f",
+  "parent": {
+   "type": "page_id",
+   "page_id": "ffb94183-19f3-837e-89de-01d87df3bbcb"
+  },
+  "created_time": "2026-07-02T14:49:00.000Z",
+  "last_edited_time": "2026-07-03T12:55:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Diese Variablen sind der Handoff-Vertrag. Sie definieren, was Agent A vorbereiten muss, bevor Agent B fortfahren kann.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Diese Variablen sind der Handoff-Vertrag. Sie definieren, was Agent A vorbereiten muss, bevor Agent B fortfahren kann.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "c9094183-19f3-8345-bde2-01f54bb8eae3",
+  "parent": {
+   "type": "page_id",
+   "page_id": "ffb94183-19f3-837e-89de-01d87df3bbcb"
+  },
+  "created_time": "2026-07-02T14:49:00.000Z",
+  "last_edited_time": "2026-07-02T14:49:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "callout",
+  "callout": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Bevor du weitermachst, pr\u00fcf, dass die Variablen im Start-Node existieren und als leere Strings initialisiert sind.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Bevor du weitermachst, pr\u00fcf, dass die Variablen im Start-Node existieren und als leere Strings initialisiert sind.",
+     "href": null
+    }
+   ],
+   "icon": {
+    "type": "emoji",
+    "emoji": "\u261d"
+   },
+   "color": "brown_background"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "31accd10-299e-4117-8f0c-8b0e5767f946",
+  "parent": {
+   "type": "page_id",
+   "page_id": "ffb94183-19f3-837e-89de-01d87df3bbcb"
+  },
+  "created_time": "2026-07-03T12:55:00.000Z",
+  "last_edited_time": "2026-07-03T12:55:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_2",
+  "heading_2": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Schritt 2: Agent A als Intake-Agent hinzuf\u00fcgen",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Schritt 2: Agent A als Intake-Agent hinzuf\u00fcgen",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "10a58c53-b903-46d5-9e05-863774ffed01",
+  "parent": {
+   "type": "page_id",
+   "page_id": "ffb94183-19f3-837e-89de-01d87df3bbcb"
+  },
+  "created_time": "2026-07-03T12:55:00.000Z",
+  "last_edited_time": "2026-07-03T12:55:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "F\u00fcg nach dem Start-Node einen Agent-Node hinzu. Da dieser Agent keine Tools braucht, kannst du auch einen LLM-Node w\u00e4hlen. Nenn ihn Intake Agent.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "F\u00fcg nach dem Start-Node einen Agent-Node hinzu. Da dieser Agent keine Tools braucht, kannst du auch einen LLM-Node w\u00e4hlen. Nenn ihn Intake Agent.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "1ab94183-19f3-8349-9d84-818cf78cc428",
+  "parent": {
+   "type": "page_id",
+   "page_id": "ffb94183-19f3-837e-89de-01d87df3bbcb"
+  },
+  "created_time": "2026-07-02T14:49:00.000Z",
+  "last_edited_time": "2026-07-02T14:49:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "callout",
+  "callout": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "F\u00fcr diese Aufgabe nimmst du am besten ein Gemini- oder OpenAI-LLM, weil lokale Modelle wie Ollama oft keine strukturierte Ausgabe erzeugen. Es gibt einen Workaround \u00fcber eine Custom Function, die die n\u00f6tige Struktur zur\u00fcckgibt, aber der Einfachheit halber nutzt du hier Gemini-Modelle.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "F\u00fcr diese Aufgabe nimmst du am besten ein Gemini- oder OpenAI-LLM, weil lokale Modelle wie Ollama oft keine strukturierte Ausgabe erzeugen. Es gibt einen Workaround \u00fcber eine Custom Function, die die n\u00f6tige Struktur zur\u00fcckgibt, aber der Einfachheit halber nutzt du hier Gemini-Modelle.",
+     "href": null
+    }
+   ],
+   "icon": {
+    "type": "emoji",
+    "emoji": "\u261d"
+   },
+   "color": "red_background"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "15194183-19f3-82cb-9cf7-81e93635fd2e",
+  "parent": {
+   "type": "page_id",
+   "page_id": "ffb94183-19f3-837e-89de-01d87df3bbcb"
+  },
+  "created_time": "2026-07-02T14:49:00.000Z",
+  "last_edited_time": "2026-07-03T12:56:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Verbinde den Start-Node mit dem Intake Agent.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Verbinde den Start-Node mit dem Intake Agent.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "9eb94183-19f3-82db-aaa0-017e0686b1c5",
+  "parent": {
+   "type": "page_id",
+   "page_id": "ffb94183-19f3-837e-89de-01d87df3bbcb"
+  },
+  "created_time": "2026-07-02T14:49:00.000Z",
+  "last_edited_time": "2026-07-02T14:49:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "image",
+  "image": {
+   "caption": [],
+   "type": "file",
+   "file": {
+    "url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/3a9085c4-df29-45e6-8bc7-6c9c0a25ea8c/9d0e1286-e34e-477f-b103-30b040aca580/image.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466QUQJ7N46%2F20261010%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20261010T074858Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEIf%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJIMEYCIQDeYYyzTCtPm21cVzuorklDvs9nBxNaPEAOf3y1lz5eqgIhAJfmeN2BF9vGV2uG7X%2Bvhxn88d88F53SYMllbGGWpvkLKv8DCE8QABoMNjM3NDIzMTgzODA1Igwg%2FxVEtDI2KEdc%2FuUq3AOCn5Nvuq0JnrweCZ%2BSMh2cqvjD6y2FYbFNIBbeCxx762BxDtoqQN8sIi%2Ba5Isc%2BkJwpxeOUOz0L5Ofsbrwk2QWO4oGcNZRpgV4RDHIqS9WySqnPF0h1SIIlexOybEAEaDsXpq438Flw%2BySaKPjtK5PTQiM%2F7FwQoHlUjRyhd2%2F8fQ%2B5MPJg3hlpisw0OsSoN0AkaciUQRYk50jrVLIzAiqm4POFBqGwSxWumIP%2FMvI%2FbUWgSoN%2Bf4XBW1ZvP73MLM0hITNdL7jLX5E87GzBouBisvaic6aKuJ6y2Wi1m%2FLEpKp98No0ftpEVKb6M3jnLB6NBeMV8twTOm%2FZovra562sr7EFxT6%2Bx1B9PCtX34WOtP5oRWHejq9vAlA%2FiObXYJEN0wyjVPVHPrTAN1cMoZEK5RuPHdc%2FEgT9cF5AkPSu%2B8QCuc36PARBhOS6SpKB1QIigR6yz35%2BqDf65f6b%2B2U4Hfjd%2FkCF8rsgI5xbn7c4SnAK8EWq3tgVCc3OPts53zY0Ztq7TL%2BPeoRjFenKDBIxLZ%2Fojh7ZkrVsgilIF7Noh0f6laMhk5MDmkFkLFBbuKsulAPfrtq51zFr%2FoC7EPDfmDQOQNrfuL%2FaHd0ueoM0b%2FBvUcO%2BVo%2B3y1GhjDrtafWBjqkAcxDR%2BuiDa5UzPtsC5S3KSCMcIVvSm6kRod8G0VywpikNogwsCMiP6DFM4DDYIus0rNpBcTci35fyGj3CZ8ZqQPUUa3B0Vfcy7jM2SjcQyclECX469JM78YTxlBM530hQFEXhVI0eLwVXRnknUegamQdIspsHw2xdEp0ZIFCTEQ%2FFyXuCLUyFbU%2FpXGZx5dpXHK6sWStBkvm%2B2OR%2BMZMvWn8rcYY&X-Amz-Signature=7142b3a84d4e77482fc14249ac8ece2adab18812b9bc78efbdf16a013c532a2b&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+    "expiry_time": "2026-10-10T08:48:58.706Z"
+   }
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "05194183-19f3-8283-9958-81d1c65d7ada",
+  "parent": {
+   "type": "page_id",
+   "page_id": "ffb94183-19f3-837e-89de-01d87df3bbcb"
+  },
+  "created_time": "2026-07-02T14:49:00.000Z",
+  "last_edited_time": "2026-07-03T12:56:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Gib dem Intake Agent diese Rolle als ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Gib dem Intake Agent diese Rolle als ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "System",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": true,
+      "color": "default"
+     },
+     "plain_text": "System",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "-Nachricht, indem du auf ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "-Nachricht, indem du auf ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "Add Message",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": true,
+      "color": "default"
+     },
+     "plain_text": "Add Message",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " klickst:",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " klickst:",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "49794183-19f3-830a-adf1-01bdb55b6d2c",
+  "parent": {
+   "type": "page_id",
+   "page_id": "ffb94183-19f3-837e-89de-01d87df3bbcb"
+  },
+  "created_time": "2026-07-02T14:49:00.000Z",
+  "last_edited_time": "2026-07-02T14:49:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "image",
+  "image": {
+   "caption": [],
+   "type": "file",
+   "file": {
+    "url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/3a9085c4-df29-45e6-8bc7-6c9c0a25ea8c/01f6283f-10ce-4fb3-898c-af8c0cc45130/image.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466QUQJ7N46%2F20261010%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20261010T074858Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEIf%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJIMEYCIQDeYYyzTCtPm21cVzuorklDvs9nBxNaPEAOf3y1lz5eqgIhAJfmeN2BF9vGV2uG7X%2Bvhxn88d88F53SYMllbGGWpvkLKv8DCE8QABoMNjM3NDIzMTgzODA1Igwg%2FxVEtDI2KEdc%2FuUq3AOCn5Nvuq0JnrweCZ%2BSMh2cqvjD6y2FYbFNIBbeCxx762BxDtoqQN8sIi%2Ba5Isc%2BkJwpxeOUOz0L5Ofsbrwk2QWO4oGcNZRpgV4RDHIqS9WySqnPF0h1SIIlexOybEAEaDsXpq438Flw%2BySaKPjtK5PTQiM%2F7FwQoHlUjRyhd2%2F8fQ%2B5MPJg3hlpisw0OsSoN0AkaciUQRYk50jrVLIzAiqm4POFBqGwSxWumIP%2FMvI%2FbUWgSoN%2Bf4XBW1ZvP73MLM0hITNdL7jLX5E87GzBouBisvaic6aKuJ6y2Wi1m%2FLEpKp98No0ftpEVKb6M3jnLB6NBeMV8twTOm%2FZovra562sr7EFxT6%2Bx1B9PCtX34WOtP5oRWHejq9vAlA%2FiObXYJEN0wyjVPVHPrTAN1cMoZEK5RuPHdc%2FEgT9cF5AkPSu%2B8QCuc36PARBhOS6SpKB1QIigR6yz35%2BqDf65f6b%2B2U4Hfjd%2FkCF8rsgI5xbn7c4SnAK8EWq3tgVCc3OPts53zY0Ztq7TL%2BPeoRjFenKDBIxLZ%2Fojh7ZkrVsgilIF7Noh0f6laMhk5MDmkFkLFBbuKsulAPfrtq51zFr%2FoC7EPDfmDQOQNrfuL%2FaHd0ueoM0b%2FBvUcO%2BVo%2B3y1GhjDrtafWBjqkAcxDR%2BuiDa5UzPtsC5S3KSCMcIVvSm6kRod8G0VywpikNogwsCMiP6DFM4DDYIus0rNpBcTci35fyGj3CZ8ZqQPUUa3B0Vfcy7jM2SjcQyclECX469JM78YTxlBM530hQFEXhVI0eLwVXRnknUegamQdIspsHw2xdEp0ZIFCTEQ%2FFyXuCLUyFbU%2FpXGZx5dpXHK6sWStBkvm%2B2OR%2BMZMvWn8rcYY&X-Amz-Signature=d8c46d6bdf4dbe027cce49745839d0a48f6cb0804511b53fed958e5a7d664782&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+    "expiry_time": "2026-10-10T08:48:58.706Z"
+   }
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "28594183-19f3-8358-ad4b-81bef4a317b3",
+  "parent": {
+   "type": "page_id",
+   "page_id": "ffb94183-19f3-837e-89de-01d87df3bbcb"
+  },
+  "created_time": "2026-07-02T14:49:00.000Z",
+  "last_edited_time": "2026-07-03T08:06:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": true,
+  "in_trash": false,
+  "type": "callout",
+  "callout": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "You are an Intake Agent for Cascadia Outfitters' customer support workflow. Your job is not to solve the customer's problem fully. Your job is to analyze the customer's request and prepare a clear handoff for the next agent. Identify:",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "You are an Intake Agent for Cascadia Outfitters' customer support workflow. Your job is not to solve the customer's problem fully. Your job is to analyze the customer's request and prepare a clear handoff for the next agent. Identify:",
+     "href": null
+    }
+   ],
+   "icon": {
+    "type": "emoji",
+    "emoji": "\ud83d\udcac"
+   },
+   "color": "blue_background"
+  },
+  "archived": false,
+  "_children": [
+   {
+    "object": "block",
+    "id": "39294183-19f3-8070-acd3-cba5e166a5e4",
+    "parent": {
+     "type": "block_id",
+     "block_id": "28594183-19f3-8358-ad4b-81bef4a317b3"
+    },
+    "created_time": "2026-07-03T08:06:00.000Z",
+    "last_edited_time": "2026-07-03T08:06:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "bulleted_list_item",
+    "bulleted_list_item": {
+     "rich_text": [
+      {
+       "type": "text",
+       "text": {
+        "content": "the customer\u2019s main intent with one word (billing, charged, payment, invoice, subscription, other)",
+        "link": null
+       },
+       "annotations": {
+        "bold": false,
+        "italic": false,
+        "strikethrough": false,
+        "underline": false,
+        "code": false,
+        "color": "default"
+       },
+       "plain_text": "the customer\u2019s main intent with one word (billing, charged, payment, invoice, subscription, other)",
+       "href": null
+      }
+     ],
+     "color": "default"
+    },
+    "archived": false
+   },
+   {
+    "object": "block",
+    "id": "39294183-19f3-8075-87f3-e7c72cb49d5f",
+    "parent": {
+     "type": "block_id",
+     "block_id": "28594183-19f3-8358-ad4b-81bef4a317b3"
+    },
+    "created_time": "2026-07-03T08:06:00.000Z",
+    "last_edited_time": "2026-07-03T08:06:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "bulleted_list_item",
+    "bulleted_list_item": {
+     "rich_text": [
+      {
+       "type": "text",
+       "text": {
+        "content": "a short summary of the issue",
+        "link": null
+       },
+       "annotations": {
+        "bold": false,
+        "italic": false,
+        "strikethrough": false,
+        "underline": false,
+        "code": false,
+        "color": "default"
+       },
+       "plain_text": "a short summary of the issue",
+       "href": null
+      }
+     ],
+     "color": "default"
+    },
+    "archived": false
+   },
+   {
+    "object": "block",
+    "id": "39294183-19f3-801c-9717-c6713ff01690",
+    "parent": {
+     "type": "block_id",
+     "block_id": "28594183-19f3-8358-ad4b-81bef4a317b3"
+    },
+    "created_time": "2026-07-03T08:06:00.000Z",
+    "last_edited_time": "2026-07-03T08:06:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "bulleted_list_item",
+    "bulleted_list_item": {
+     "rich_text": [
+      {
+       "type": "text",
+       "text": {
+        "content": "why this case should be handed off to a specialist",
+        "link": null
+       },
+       "annotations": {
+        "bold": false,
+        "italic": false,
+        "strikethrough": false,
+        "underline": false,
+        "code": false,
+        "color": "default"
+       },
+       "plain_text": "why this case should be handed off to a specialist",
+       "href": null
+      }
+     ],
+     "color": "default"
+    },
+    "archived": false
+   },
+   {
+    "object": "block",
+    "id": "39294183-19f3-8058-be1a-e4a81caf5231",
+    "parent": {
+     "type": "block_id",
+     "block_id": "28594183-19f3-8358-ad4b-81bef4a317b3"
+    },
+    "created_time": "2026-07-03T08:06:00.000Z",
+    "last_edited_time": "2026-07-03T08:06:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "bulleted_list_item",
+    "bulleted_list_item": {
+     "rich_text": [
+      {
+       "type": "text",
+       "text": {
+        "content": "Return your answer in this structure",
+        "link": null
+       },
+       "annotations": {
+        "bold": false,
+        "italic": false,
+        "strikethrough": false,
+        "underline": false,
+        "code": false,
+        "color": "default"
+       },
+       "plain_text": "Return your answer in this structure",
+       "href": null
+      }
+     ],
+     "color": "default"
+    },
+    "archived": false
+   },
+   {
+    "object": "block",
+    "id": "49694183-19f3-8396-b32b-015580620b8c",
+    "parent": {
+     "type": "block_id",
+     "block_id": "28594183-19f3-8358-ad4b-81bef4a317b3"
+    },
+    "created_time": "2026-07-02T14:49:00.000Z",
+    "last_edited_time": "2026-07-02T14:49:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+     "rich_text": [
+      {
+       "type": "text",
+       "text": {
+        "content": "{",
+        "link": null
+       },
+       "annotations": {
+        "bold": false,
+        "italic": false,
+        "strikethrough": false,
+        "underline": false,
+        "code": false,
+        "color": "default"
+       },
+       "plain_text": "{",
+       "href": null
+      }
+     ],
+     "icon": null,
+     "color": "default"
+    },
+    "archived": false
+   },
+   {
+    "object": "block",
+    "id": "0d894183-19f3-8295-8f3c-0168b145b262",
+    "parent": {
+     "type": "block_id",
+     "block_id": "28594183-19f3-8358-ad4b-81bef4a317b3"
+    },
+    "created_time": "2026-07-02T14:49:00.000Z",
+    "last_edited_time": "2026-07-02T14:49:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+     "rich_text": [
+      {
+       "type": "text",
+       "text": {
+        "content": "\"customer_intent\": \"\",",
+        "link": null
+       },
+       "annotations": {
+        "bold": false,
+        "italic": false,
+        "strikethrough": false,
+        "underline": false,
+        "code": false,
+        "color": "default"
+       },
+       "plain_text": "\"customer_intent\": \"\",",
+       "href": null
+      }
+     ],
+     "icon": null,
+     "color": "default"
+    },
+    "archived": false
+   },
+   {
+    "object": "block",
+    "id": "2ae94183-19f3-8389-b730-815352787f52",
+    "parent": {
+     "type": "block_id",
+     "block_id": "28594183-19f3-8358-ad4b-81bef4a317b3"
+    },
+    "created_time": "2026-07-02T14:49:00.000Z",
+    "last_edited_time": "2026-07-02T14:49:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+     "rich_text": [
+      {
+       "type": "text",
+       "text": {
+        "content": "\"issue_summary\": \"\",",
+        "link": null
+       },
+       "annotations": {
+        "bold": false,
+        "italic": false,
+        "strikethrough": false,
+        "underline": false,
+        "code": false,
+        "color": "default"
+       },
+       "plain_text": "\"issue_summary\": \"\",",
+       "href": null
+      }
+     ],
+     "icon": null,
+     "color": "default"
+    },
+    "archived": false
+   },
+   {
+    "object": "block",
+    "id": "e3794183-19f3-83ce-8da2-81561ec21986",
+    "parent": {
+     "type": "block_id",
+     "block_id": "28594183-19f3-8358-ad4b-81bef4a317b3"
+    },
+    "created_time": "2026-07-02T14:49:00.000Z",
+    "last_edited_time": "2026-07-02T14:49:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+     "rich_text": [
+      {
+       "type": "text",
+       "text": {
+        "content": "\"handoff_reason\": \"\"",
+        "link": null
+       },
+       "annotations": {
+        "bold": false,
+        "italic": false,
+        "strikethrough": false,
+        "underline": false,
+        "code": false,
+        "color": "default"
+       },
+       "plain_text": "\"handoff_reason\": \"\"",
+       "href": null
+      }
+     ],
+     "icon": null,
+     "color": "default"
+    },
+    "archived": false
+   },
+   {
+    "object": "block",
+    "id": "da094183-19f3-8259-9bfa-81f642502d55",
+    "parent": {
+     "type": "block_id",
+     "block_id": "28594183-19f3-8358-ad4b-81bef4a317b3"
+    },
+    "created_time": "2026-07-02T14:49:00.000Z",
+    "last_edited_time": "2026-07-02T14:49:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+     "rich_text": [
+      {
+       "type": "text",
+       "text": {
+        "content": "}",
+        "link": null
+       },
+       "annotations": {
+        "bold": false,
+        "italic": false,
+        "strikethrough": false,
+        "underline": false,
+        "code": false,
+        "color": "default"
+       },
+       "plain_text": "}",
+       "href": null
+      }
+     ],
+     "icon": null,
+     "color": "default"
+    },
+    "archived": false
+   }
+  ]
+ },
+ {
+  "object": "block",
+  "id": "cf094183-19f3-833c-81bc-0134271624bb",
+  "parent": {
+   "type": "page_id",
+   "page_id": "ffb94183-19f3-837e-89de-01d87df3bbcb"
+  },
+  "created_time": "2026-07-02T14:49:00.000Z",
+  "last_edited_time": "2026-07-02T14:49:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "image",
+  "image": {
+   "caption": [],
+   "type": "file",
+   "file": {
+    "url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/3a9085c4-df29-45e6-8bc7-6c9c0a25ea8c/37c80a93-96a8-4a63-a5b5-4ada0546be24/image.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466QUQJ7N46%2F20261010%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20261010T074858Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEIf%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJIMEYCIQDeYYyzTCtPm21cVzuorklDvs9nBxNaPEAOf3y1lz5eqgIhAJfmeN2BF9vGV2uG7X%2Bvhxn88d88F53SYMllbGGWpvkLKv8DCE8QABoMNjM3NDIzMTgzODA1Igwg%2FxVEtDI2KEdc%2FuUq3AOCn5Nvuq0JnrweCZ%2BSMh2cqvjD6y2FYbFNIBbeCxx762BxDtoqQN8sIi%2Ba5Isc%2BkJwpxeOUOz0L5Ofsbrwk2QWO4oGcNZRpgV4RDHIqS9WySqnPF0h1SIIlexOybEAEaDsXpq438Flw%2BySaKPjtK5PTQiM%2F7FwQoHlUjRyhd2%2F8fQ%2B5MPJg3hlpisw0OsSoN0AkaciUQRYk50jrVLIzAiqm4POFBqGwSxWumIP%2FMvI%2FbUWgSoN%2Bf4XBW1ZvP73MLM0hITNdL7jLX5E87GzBouBisvaic6aKuJ6y2Wi1m%2FLEpKp98No0ftpEVKb6M3jnLB6NBeMV8twTOm%2FZovra562sr7EFxT6%2Bx1B9PCtX34WOtP5oRWHejq9vAlA%2FiObXYJEN0wyjVPVHPrTAN1cMoZEK5RuPHdc%2FEgT9cF5AkPSu%2B8QCuc36PARBhOS6SpKB1QIigR6yz35%2BqDf65f6b%2B2U4Hfjd%2FkCF8rsgI5xbn7c4SnAK8EWq3tgVCc3OPts53zY0Ztq7TL%2BPeoRjFenKDBIxLZ%2Fojh7ZkrVsgilIF7Noh0f6laMhk5MDmkFkLFBbuKsulAPfrtq51zFr%2FoC7EPDfmDQOQNrfuL%2FaHd0ueoM0b%2FBvUcO%2BVo%2B3y1GhjDrtafWBjqkAcxDR%2BuiDa5UzPtsC5S3KSCMcIVvSm6kRod8G0VywpikNogwsCMiP6DFM4DDYIus0rNpBcTci35fyGj3CZ8ZqQPUUa3B0Vfcy7jM2SjcQyclECX469JM78YTxlBM530hQFEXhVI0eLwVXRnknUegamQdIspsHw2xdEp0ZIFCTEQ%2FFyXuCLUyFbU%2FpXGZx5dpXHK6sWStBkvm%2B2OR%2BMZMvWn8rcYY&X-Amz-Signature=c52c68395d4d257b57eaf470aafaaa3b4721524241ccef5b8dc71327388ba17d&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+    "expiry_time": "2026-10-10T08:48:58.706Z"
+   }
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "b1994183-19f3-823e-857b-81da382405b9",
+  "parent": {
+   "type": "page_id",
+   "page_id": "ffb94183-19f3-837e-89de-01d87df3bbcb"
+  },
+  "created_time": "2026-07-02T14:49:00.000Z",
+  "last_edited_time": "2026-07-03T12:56:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "F\u00fchr einen kurzen Test mit dieser Nutzernachricht aus:",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "F\u00fchr einen kurzen Test mit dieser Nutzernachricht aus:",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "76c94183-19f3-8348-be2c-0191be751f49",
+  "parent": {
+   "type": "page_id",
+   "page_id": "ffb94183-19f3-837e-89de-01d87df3bbcb"
+  },
+  "created_time": "2026-07-02T14:49:00.000Z",
+  "last_edited_time": "2026-07-02T14:49:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "callout",
+  "callout": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Meine Subscription wurde diesen Monat zweimal berechnet. Kann mir jemand helfen, das zu beheben?",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Meine Subscription wurde diesen Monat zweimal berechnet. Kann mir jemand helfen, das zu beheben?",
+     "href": null
+    }
+   ],
+   "icon": {
+    "type": "emoji",
+    "emoji": "\ud83d\udcac"
+   },
+   "color": "gray_background"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "d8594183-19f3-83b9-b0a4-010248c0ccf0",
+  "parent": {
+   "type": "page_id",
+   "page_id": "ffb94183-19f3-837e-89de-01d87df3bbcb"
+  },
+  "created_time": "2026-07-02T14:49:00.000Z",
+  "last_edited_time": "2026-07-02T14:58:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Erwartetes Ergebnis: Der Intake Agent sollte ein Problem im Zusammenhang mit der Subscription erkennen und es klar zusammenfassen.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Erwartetes Ergebnis: Der Intake Agent sollte ein Problem im Zusammenhang mit der Subscription erkennen und es klar zusammenfassen.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "52294183-19f3-8351-bc0a-812bb41c3fef",
+  "parent": {
+   "type": "page_id",
+   "page_id": "ffb94183-19f3-837e-89de-01d87df3bbcb"
+  },
+  "created_time": "2026-07-02T14:49:00.000Z",
+  "last_edited_time": "2026-07-02T14:49:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "image",
+  "image": {
+   "caption": [],
+   "type": "file",
+   "file": {
+    "url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/3a9085c4-df29-45e6-8bc7-6c9c0a25ea8c/161b6b0c-9f17-488a-b9f1-3c337d095fdd/image.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466QUQJ7N46%2F20261010%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20261010T074858Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEIf%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJIMEYCIQDeYYyzTCtPm21cVzuorklDvs9nBxNaPEAOf3y1lz5eqgIhAJfmeN2BF9vGV2uG7X%2Bvhxn88d88F53SYMllbGGWpvkLKv8DCE8QABoMNjM3NDIzMTgzODA1Igwg%2FxVEtDI2KEdc%2FuUq3AOCn5Nvuq0JnrweCZ%2BSMh2cqvjD6y2FYbFNIBbeCxx762BxDtoqQN8sIi%2Ba5Isc%2BkJwpxeOUOz0L5Ofsbrwk2QWO4oGcNZRpgV4RDHIqS9WySqnPF0h1SIIlexOybEAEaDsXpq438Flw%2BySaKPjtK5PTQiM%2F7FwQoHlUjRyhd2%2F8fQ%2B5MPJg3hlpisw0OsSoN0AkaciUQRYk50jrVLIzAiqm4POFBqGwSxWumIP%2FMvI%2FbUWgSoN%2Bf4XBW1ZvP73MLM0hITNdL7jLX5E87GzBouBisvaic6aKuJ6y2Wi1m%2FLEpKp98No0ftpEVKb6M3jnLB6NBeMV8twTOm%2FZovra562sr7EFxT6%2Bx1B9PCtX34WOtP5oRWHejq9vAlA%2FiObXYJEN0wyjVPVHPrTAN1cMoZEK5RuPHdc%2FEgT9cF5AkPSu%2B8QCuc36PARBhOS6SpKB1QIigR6yz35%2BqDf65f6b%2B2U4Hfjd%2FkCF8rsgI5xbn7c4SnAK8EWq3tgVCc3OPts53zY0Ztq7TL%2BPeoRjFenKDBIxLZ%2Fojh7ZkrVsgilIF7Noh0f6laMhk5MDmkFkLFBbuKsulAPfrtq51zFr%2FoC7EPDfmDQOQNrfuL%2FaHd0ueoM0b%2FBvUcO%2BVo%2B3y1GhjDrtafWBjqkAcxDR%2BuiDa5UzPtsC5S3KSCMcIVvSm6kRod8G0VywpikNogwsCMiP6DFM4DDYIus0rNpBcTci35fyGj3CZ8ZqQPUUa3B0Vfcy7jM2SjcQyclECX469JM78YTxlBM530hQFEXhVI0eLwVXRnknUegamQdIspsHw2xdEp0ZIFCTEQ%2FFyXuCLUyFbU%2FpXGZx5dpXHK6sWStBkvm%2B2OR%2BMZMvWn8rcYY&X-Amz-Signature=6ec44fbba8299abd0cd07f51de468f4547d4890e3b065c50c4e2a24f355c96c2&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+    "expiry_time": "2026-10-10T08:48:58.706Z"
+   }
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "8d8bf9cf-a656-40e4-9e0d-ddb9c525c6db",
+  "parent": {
+   "type": "page_id",
+   "page_id": "ffb94183-19f3-837e-89de-01d87df3bbcb"
+  },
+  "created_time": "2026-07-03T12:57:00.000Z",
+  "last_edited_time": "2026-07-03T12:57:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_2",
+  "heading_2": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Schritt 3: Die Ausgabe im JSON-Format speichern",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Schritt 3: Die Ausgabe im JSON-Format speichern",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "7a7251fa-46e6-40ff-b4cc-72c04e01c9f5",
+  "parent": {
+   "type": "page_id",
+   "page_id": "ffb94183-19f3-837e-89de-01d87df3bbcb"
+  },
+  "created_time": "2026-07-03T12:57:00.000Z",
+  "last_edited_time": "2026-07-03T12:57:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Um Flow State zu aktualisieren und Variablen korrekt zuzuordnen, erstellst du zuerst eine strukturierte Ausgabe aus dem Agenten. Klick auf ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Um Flow State zu aktualisieren und Variablen korrekt zuzuordnen, erstellst du zuerst eine strukturierte Ausgabe aus dem Agenten. Klick auf ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "JSON Structured Output",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": true,
+      "color": "default"
+     },
+     "plain_text": "JSON Structured Output",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " und f\u00fcg Variablen hinzu:",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " und f\u00fcg Variablen hinzu:",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "09b94183-19f3-827e-9ca7-81ab8a3c65d3",
+  "parent": {
+   "type": "page_id",
+   "page_id": "ffb94183-19f3-837e-89de-01d87df3bbcb"
+  },
+  "created_time": "2026-07-02T14:49:00.000Z",
+  "last_edited_time": "2026-07-02T14:49:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "image",
+  "image": {
+   "caption": [],
+   "type": "file",
+   "file": {
+    "url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/3a9085c4-df29-45e6-8bc7-6c9c0a25ea8c/1ffdd75d-2444-4491-85b4-e9b2b2c7414d/image.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466QUQJ7N46%2F20261010%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20261010T074858Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEIf%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJIMEYCIQDeYYyzTCtPm21cVzuorklDvs9nBxNaPEAOf3y1lz5eqgIhAJfmeN2BF9vGV2uG7X%2Bvhxn88d88F53SYMllbGGWpvkLKv8DCE8QABoMNjM3NDIzMTgzODA1Igwg%2FxVEtDI2KEdc%2FuUq3AOCn5Nvuq0JnrweCZ%2BSMh2cqvjD6y2FYbFNIBbeCxx762BxDtoqQN8sIi%2Ba5Isc%2BkJwpxeOUOz0L5Ofsbrwk2QWO4oGcNZRpgV4RDHIqS9WySqnPF0h1SIIlexOybEAEaDsXpq438Flw%2BySaKPjtK5PTQiM%2F7FwQoHlUjRyhd2%2F8fQ%2B5MPJg3hlpisw0OsSoN0AkaciUQRYk50jrVLIzAiqm4POFBqGwSxWumIP%2FMvI%2FbUWgSoN%2Bf4XBW1ZvP73MLM0hITNdL7jLX5E87GzBouBisvaic6aKuJ6y2Wi1m%2FLEpKp98No0ftpEVKb6M3jnLB6NBeMV8twTOm%2FZovra562sr7EFxT6%2Bx1B9PCtX34WOtP5oRWHejq9vAlA%2FiObXYJEN0wyjVPVHPrTAN1cMoZEK5RuPHdc%2FEgT9cF5AkPSu%2B8QCuc36PARBhOS6SpKB1QIigR6yz35%2BqDf65f6b%2B2U4Hfjd%2FkCF8rsgI5xbn7c4SnAK8EWq3tgVCc3OPts53zY0Ztq7TL%2BPeoRjFenKDBIxLZ%2Fojh7ZkrVsgilIF7Noh0f6laMhk5MDmkFkLFBbuKsulAPfrtq51zFr%2FoC7EPDfmDQOQNrfuL%2FaHd0ueoM0b%2FBvUcO%2BVo%2B3y1GhjDrtafWBjqkAcxDR%2BuiDa5UzPtsC5S3KSCMcIVvSm6kRod8G0VywpikNogwsCMiP6DFM4DDYIus0rNpBcTci35fyGj3CZ8ZqQPUUa3B0Vfcy7jM2SjcQyclECX469JM78YTxlBM530hQFEXhVI0eLwVXRnknUegamQdIspsHw2xdEp0ZIFCTEQ%2FFyXuCLUyFbU%2FpXGZx5dpXHK6sWStBkvm%2B2OR%2BMZMvWn8rcYY&X-Amz-Signature=53ae89eeaa7fa476f1b3c232f159cd3d3e8fca64d50134dbb79694884a7eee13&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+    "expiry_time": "2026-10-10T08:48:58.706Z"
+   }
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "e5bf729d-b6f4-44a5-ae80-8871f40a6bf0",
+  "parent": {
+   "type": "page_id",
+   "page_id": "ffb94183-19f3-837e-89de-01d87df3bbcb"
+  },
+  "created_time": "2026-07-03T12:57:00.000Z",
+  "last_edited_time": "2026-07-03T12:57:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Das ist die Ausgabe des Agenten. Sie ist noch nicht mit Flow State verbunden, das ordnest du im n\u00e4chsten Schritt zu. Jedes Feld sollte ein String sein, und du kannst f\u00fcr jedes eine kurze Beschreibung erg\u00e4nzen.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Das ist die Ausgabe des Agenten. Sie ist noch nicht mit Flow State verbunden, das ordnest du im n\u00e4chsten Schritt zu. Jedes Feld sollte ein String sein, und du kannst f\u00fcr jedes eine kurze Beschreibung erg\u00e4nzen.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "ef703046-e029-4c21-bd70-8eb97a6c7664",
+  "parent": {
+   "type": "page_id",
+   "page_id": "ffb94183-19f3-837e-89de-01d87df3bbcb"
+  },
+  "created_time": "2026-07-03T12:57:00.000Z",
+  "last_edited_time": "2026-07-03T12:57:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_2",
+  "heading_2": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Schritt 4: Die Ausgabe des Intake Agent in Flow State speichern",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Schritt 4: Die Ausgabe des Intake Agent in Flow State speichern",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "088d344a-f809-4b49-9ea9-2255816f3d36",
+  "parent": {
+   "type": "page_id",
+   "page_id": "ffb94183-19f3-837e-89de-01d87df3bbcb"
+  },
+  "created_time": "2026-07-03T12:57:00.000Z",
+  "last_edited_time": "2026-07-03T12:57:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Konfigurier den Intake Agent jetzt so, dass seine Ausgabe Flow State aktualisiert.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Konfigurier den Intake Agent jetzt so, dass seine Ausgabe Flow State aktualisiert.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "9f3557b5-e297-495b-8b9b-34424b25ecd7",
+  "parent": {
+   "type": "page_id",
+   "page_id": "ffb94183-19f3-837e-89de-01d87df3bbcb"
+  },
+  "created_time": "2026-07-03T12:57:00.000Z",
+  "last_edited_time": "2026-07-03T12:57:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Ordne das Ergebnis des Agenten den Variablen zu, die du zuvor erstellt hast:",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Ordne das Ergebnis des Agenten den Variablen zu, die du zuvor erstellt hast:",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "d4c94183-19f3-8287-a01a-818d8623add1",
+  "parent": {
+   "type": "page_id",
+   "page_id": "ffb94183-19f3-837e-89de-01d87df3bbcb"
+  },
+  "created_time": "2026-07-02T14:49:00.000Z",
+  "last_edited_time": "2026-07-02T14:49:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "code",
+  "code": {
+   "caption": [],
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "customer_intent \u2192 billing \nissue_summary \u2192 user says they were charged twice for the subscription \nhandoff_reason \u2192 billing specialist needed",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "customer_intent \u2192 billing \nissue_summary \u2192 user says they were charged twice for the subscription \nhandoff_reason \u2192 billing specialist needed",
+     "href": null
+    }
+   ],
+   "language": "json"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "e1394183-19f3-82dc-a04c-01aa89708705",
+  "parent": {
+   "type": "page_id",
+   "page_id": "ffb94183-19f3-837e-89de-01d87df3bbcb"
+  },
+  "created_time": "2026-07-02T14:49:00.000Z",
+  "last_edited_time": "2026-07-03T12:57:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "\u00d6ffne deine Agentenkonfiguration erneut und aktualisier Flow State:",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "\u00d6ffne deine Agentenkonfiguration erneut und aktualisier Flow State:",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "2a694183-19f3-828c-b396-01c65cf92b87",
+  "parent": {
+   "type": "page_id",
+   "page_id": "ffb94183-19f3-837e-89de-01d87df3bbcb"
+  },
+  "created_time": "2026-07-02T14:49:00.000Z",
+  "last_edited_time": "2026-07-02T14:49:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "image",
+  "image": {
+   "caption": [],
+   "type": "file",
+   "file": {
+    "url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/3a9085c4-df29-45e6-8bc7-6c9c0a25ea8c/ebe318e6-c90f-432c-8abc-2b5bab5bbc1a/image.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466QUQJ7N46%2F20261010%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20261010T074858Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEIf%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJIMEYCIQDeYYyzTCtPm21cVzuorklDvs9nBxNaPEAOf3y1lz5eqgIhAJfmeN2BF9vGV2uG7X%2Bvhxn88d88F53SYMllbGGWpvkLKv8DCE8QABoMNjM3NDIzMTgzODA1Igwg%2FxVEtDI2KEdc%2FuUq3AOCn5Nvuq0JnrweCZ%2BSMh2cqvjD6y2FYbFNIBbeCxx762BxDtoqQN8sIi%2Ba5Isc%2BkJwpxeOUOz0L5Ofsbrwk2QWO4oGcNZRpgV4RDHIqS9WySqnPF0h1SIIlexOybEAEaDsXpq438Flw%2BySaKPjtK5PTQiM%2F7FwQoHlUjRyhd2%2F8fQ%2B5MPJg3hlpisw0OsSoN0AkaciUQRYk50jrVLIzAiqm4POFBqGwSxWumIP%2FMvI%2FbUWgSoN%2Bf4XBW1ZvP73MLM0hITNdL7jLX5E87GzBouBisvaic6aKuJ6y2Wi1m%2FLEpKp98No0ftpEVKb6M3jnLB6NBeMV8twTOm%2FZovra562sr7EFxT6%2Bx1B9PCtX34WOtP5oRWHejq9vAlA%2FiObXYJEN0wyjVPVHPrTAN1cMoZEK5RuPHdc%2FEgT9cF5AkPSu%2B8QCuc36PARBhOS6SpKB1QIigR6yz35%2BqDf65f6b%2B2U4Hfjd%2FkCF8rsgI5xbn7c4SnAK8EWq3tgVCc3OPts53zY0Ztq7TL%2BPeoRjFenKDBIxLZ%2Fojh7ZkrVsgilIF7Noh0f6laMhk5MDmkFkLFBbuKsulAPfrtq51zFr%2FoC7EPDfmDQOQNrfuL%2FaHd0ueoM0b%2FBvUcO%2BVo%2B3y1GhjDrtafWBjqkAcxDR%2BuiDa5UzPtsC5S3KSCMcIVvSm6kRod8G0VywpikNogwsCMiP6DFM4DDYIus0rNpBcTci35fyGj3CZ8ZqQPUUa3B0Vfcy7jM2SjcQyclECX469JM78YTxlBM530hQFEXhVI0eLwVXRnknUegamQdIspsHw2xdEp0ZIFCTEQ%2FFyXuCLUyFbU%2FpXGZx5dpXHK6sWStBkvm%2B2OR%2BMZMvWn8rcYY&X-Amz-Signature=3da314ac429be9231d6249ff8750c1c3ae3c35f5decaee566724a7748bd668e7&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+    "expiry_time": "2026-10-10T08:48:58.706Z"
+   }
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "5f394183-19f3-83b5-8597-019b1ffb38df",
+  "parent": {
+   "type": "page_id",
+   "page_id": "ffb94183-19f3-837e-89de-01d87df3bbcb"
+  },
+  "created_time": "2026-07-02T14:49:00.000Z",
+  "last_edited_time": "2026-07-03T12:57:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Ordne die Ausgabe des Agenten zu, um den Zustand zu aktualisieren:",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Ordne die Ausgabe des Agenten zu, um den Zustand zu aktualisieren:",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "e1d94183-19f3-82c9-9b65-813fd965b2f4",
+  "parent": {
+   "type": "page_id",
+   "page_id": "ffb94183-19f3-837e-89de-01d87df3bbcb"
+  },
+  "created_time": "2026-07-02T14:49:00.000Z",
+  "last_edited_time": "2026-07-02T14:49:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "image",
+  "image": {
+   "caption": [],
+   "type": "file",
+   "file": {
+    "url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/3a9085c4-df29-45e6-8bc7-6c9c0a25ea8c/df251fd7-8bba-4f1f-88fc-b00b1f05ec90/image.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466QUQJ7N46%2F20261010%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20261010T074858Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEIf%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJIMEYCIQDeYYyzTCtPm21cVzuorklDvs9nBxNaPEAOf3y1lz5eqgIhAJfmeN2BF9vGV2uG7X%2Bvhxn88d88F53SYMllbGGWpvkLKv8DCE8QABoMNjM3NDIzMTgzODA1Igwg%2FxVEtDI2KEdc%2FuUq3AOCn5Nvuq0JnrweCZ%2BSMh2cqvjD6y2FYbFNIBbeCxx762BxDtoqQN8sIi%2Ba5Isc%2BkJwpxeOUOz0L5Ofsbrwk2QWO4oGcNZRpgV4RDHIqS9WySqnPF0h1SIIlexOybEAEaDsXpq438Flw%2BySaKPjtK5PTQiM%2F7FwQoHlUjRyhd2%2F8fQ%2B5MPJg3hlpisw0OsSoN0AkaciUQRYk50jrVLIzAiqm4POFBqGwSxWumIP%2FMvI%2FbUWgSoN%2Bf4XBW1ZvP73MLM0hITNdL7jLX5E87GzBouBisvaic6aKuJ6y2Wi1m%2FLEpKp98No0ftpEVKb6M3jnLB6NBeMV8twTOm%2FZovra562sr7EFxT6%2Bx1B9PCtX34WOtP5oRWHejq9vAlA%2FiObXYJEN0wyjVPVHPrTAN1cMoZEK5RuPHdc%2FEgT9cF5AkPSu%2B8QCuc36PARBhOS6SpKB1QIigR6yz35%2BqDf65f6b%2B2U4Hfjd%2FkCF8rsgI5xbn7c4SnAK8EWq3tgVCc3OPts53zY0Ztq7TL%2BPeoRjFenKDBIxLZ%2Fojh7ZkrVsgilIF7Noh0f6laMhk5MDmkFkLFBbuKsulAPfrtq51zFr%2FoC7EPDfmDQOQNrfuL%2FaHd0ueoM0b%2FBvUcO%2BVo%2B3y1GhjDrtafWBjqkAcxDR%2BuiDa5UzPtsC5S3KSCMcIVvSm6kRod8G0VywpikNogwsCMiP6DFM4DDYIus0rNpBcTci35fyGj3CZ8ZqQPUUa3B0Vfcy7jM2SjcQyclECX469JM78YTxlBM530hQFEXhVI0eLwVXRnknUegamQdIspsHw2xdEp0ZIFCTEQ%2FFyXuCLUyFbU%2FpXGZx5dpXHK6sWStBkvm%2B2OR%2BMZMvWn8rcYY&X-Amz-Signature=e4510de7bd38ba3bcb46ef2e03e100437e3869ee69be0a19e20f8aed3f76449e&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+    "expiry_time": "2026-10-10T08:48:58.748Z"
+   }
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "1399ed39-276d-4550-ae09-e278ac03d320",
+  "parent": {
+   "type": "page_id",
+   "page_id": "ffb94183-19f3-837e-89de-01d87df3bbcb"
+  },
+  "created_time": "2026-07-02T14:59:00.000Z",
+  "last_edited_time": "2026-07-02T14:59:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Hier ist ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Hier ist ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "output",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": true,
+      "color": "default"
+     },
+     "plain_text": "output",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " die Ausgabe des Agenten.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " die Ausgabe des Agenten.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "ee23885a-d6b2-4e2c-9543-975324fc4ca9",
+  "parent": {
+   "type": "page_id",
+   "page_id": "ffb94183-19f3-837e-89de-01d87df3bbcb"
+  },
+  "created_time": "2026-07-03T12:58:00.000Z",
+  "last_edited_time": "2026-07-03T12:58:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_2",
+  "heading_2": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Schritt 5: Agent B als Specialist-Agent hinzuf\u00fcgen",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Schritt 5: Agent B als Specialist-Agent hinzuf\u00fcgen",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "868098c3-aaca-46c1-8231-acb790693b3a",
+  "parent": {
+   "type": "page_id",
+   "page_id": "ffb94183-19f3-837e-89de-01d87df3bbcb"
+  },
+  "created_time": "2026-07-03T12:58:00.000Z",
+  "last_edited_time": "2026-07-03T12:58:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "F\u00fcg nach dem Intake Agent einen zweiten Agent-Node hinzu. Nenn ihn Specialist Agent. Wie beim vorherigen kann das auch ein LLM-Node sein.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "F\u00fcg nach dem Intake Agent einen zweiten Agent-Node hinzu. Nenn ihn Specialist Agent. Wie beim vorherigen kann das auch ein LLM-Node sein.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "39294183-19f3-806b-8383-f5a4e33fff3c",
+  "parent": {
+   "type": "page_id",
+   "page_id": "ffb94183-19f3-837e-89de-01d87df3bbcb"
+  },
+  "created_time": "2026-07-03T12:58:00.000Z",
+  "last_edited_time": "2026-07-03T12:58:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Verbinde den Intake Agent mit dem Specialist Agent.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Verbinde den Intake Agent mit dem Specialist Agent.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "a8f94183-19f3-8399-8edd-81dd68251d3b",
+  "parent": {
+   "type": "page_id",
+   "page_id": "ffb94183-19f3-837e-89de-01d87df3bbcb"
+  },
+  "created_time": "2026-07-02T14:49:00.000Z",
+  "last_edited_time": "2026-07-02T14:49:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "image",
+  "image": {
+   "caption": [],
+   "type": "file",
+   "file": {
+    "url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/3a9085c4-df29-45e6-8bc7-6c9c0a25ea8c/83b4cdf9-f6cf-40ff-a13e-91c704f7ae38/image.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466QUQJ7N46%2F20261010%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20261010T074858Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEIf%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJIMEYCIQDeYYyzTCtPm21cVzuorklDvs9nBxNaPEAOf3y1lz5eqgIhAJfmeN2BF9vGV2uG7X%2Bvhxn88d88F53SYMllbGGWpvkLKv8DCE8QABoMNjM3NDIzMTgzODA1Igwg%2FxVEtDI2KEdc%2FuUq3AOCn5Nvuq0JnrweCZ%2BSMh2cqvjD6y2FYbFNIBbeCxx762BxDtoqQN8sIi%2Ba5Isc%2BkJwpxeOUOz0L5Ofsbrwk2QWO4oGcNZRpgV4RDHIqS9WySqnPF0h1SIIlexOybEAEaDsXpq438Flw%2BySaKPjtK5PTQiM%2F7FwQoHlUjRyhd2%2F8fQ%2B5MPJg3hlpisw0OsSoN0AkaciUQRYk50jrVLIzAiqm4POFBqGwSxWumIP%2FMvI%2FbUWgSoN%2Bf4XBW1ZvP73MLM0hITNdL7jLX5E87GzBouBisvaic6aKuJ6y2Wi1m%2FLEpKp98No0ftpEVKb6M3jnLB6NBeMV8twTOm%2FZovra562sr7EFxT6%2Bx1B9PCtX34WOtP5oRWHejq9vAlA%2FiObXYJEN0wyjVPVHPrTAN1cMoZEK5RuPHdc%2FEgT9cF5AkPSu%2B8QCuc36PARBhOS6SpKB1QIigR6yz35%2BqDf65f6b%2B2U4Hfjd%2FkCF8rsgI5xbn7c4SnAK8EWq3tgVCc3OPts53zY0Ztq7TL%2BPeoRjFenKDBIxLZ%2Fojh7ZkrVsgilIF7Noh0f6laMhk5MDmkFkLFBbuKsulAPfrtq51zFr%2FoC7EPDfmDQOQNrfuL%2FaHd0ueoM0b%2FBvUcO%2BVo%2B3y1GhjDrtafWBjqkAcxDR%2BuiDa5UzPtsC5S3KSCMcIVvSm6kRod8G0VywpikNogwsCMiP6DFM4DDYIus0rNpBcTci35fyGj3CZ8ZqQPUUa3B0Vfcy7jM2SjcQyclECX469JM78YTxlBM530hQFEXhVI0eLwVXRnknUegamQdIspsHw2xdEp0ZIFCTEQ%2FFyXuCLUyFbU%2FpXGZx5dpXHK6sWStBkvm%2B2OR%2BMZMvWn8rcYY&X-Amz-Signature=1451a765cfdef9a23c5ba6c198f6646595ba1fba3ac832418d284d142d435b14&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+    "expiry_time": "2026-10-10T08:48:58.748Z"
+   }
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "d7632289-9a3d-4c7e-b35a-d16f3a839840",
+  "parent": {
+   "type": "page_id",
+   "page_id": "ffb94183-19f3-837e-89de-01d87df3bbcb"
+  },
+  "created_time": "2026-07-03T12:58:00.000Z",
+  "last_edited_time": "2026-07-03T12:59:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Der Specialist Agent baut auf dem Handoff-Vertrag auf, den Agent A erstellt hat, statt bei null anzufangen.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Der Specialist Agent baut auf dem Handoff-Vertrag auf, den Agent A erstellt hat, statt bei null anzufangen.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "f366aecb-8973-43c8-a9e2-4bff67812f96",
+  "parent": {
+   "type": "page_id",
+   "page_id": "ffb94183-19f3-837e-89de-01d87df3bbcb"
+  },
+  "created_time": "2026-07-03T12:58:00.000Z",
+  "last_edited_time": "2026-07-03T12:58:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Nutz diesen Prompt als Systemnachricht:",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Nutz diesen Prompt als Systemnachricht:",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "c7894183-19f3-836a-8595-01509f446ec6",
+  "parent": {
+   "type": "page_id",
+   "page_id": "ffb94183-19f3-837e-89de-01d87df3bbcb"
+  },
+  "created_time": "2026-07-02T14:49:00.000Z",
+  "last_edited_time": "2026-07-02T14:49:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "callout",
+  "callout": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "A previous intake agent has already analyzed the user request. Do not repeat the intake process and do not ask for information that is already available. Use this handoff context: Customer intent: {{$flow.state.customer_intent}} Issue summary: {{$flow.state.issue_summary}} Handoff reason: {{$flow.state.handoff_reason}} Now write a helpful, focused response to the customer.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "A previous intake agent has already analyzed the user request. Do not repeat the intake process and do not ask for information that is already available. Use this handoff context: Customer intent: {{$flow.state.customer_intent}} Issue summary: {{$flow.state.issue_summary}} Handoff reason: {{$flow.state.handoff_reason}} Now write a helpful, focused response to the customer.",
+     "href": null
+    }
+   ],
+   "icon": {
+    "type": "emoji",
+    "emoji": "\ud83d\udcac"
+   },
+   "color": "blue_background"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "e3894183-19f3-8353-8a62-819e6f733111",
+  "parent": {
+   "type": "page_id",
+   "page_id": "ffb94183-19f3-837e-89de-01d87df3bbcb"
+  },
+  "created_time": "2026-07-02T14:49:00.000Z",
+  "last_edited_time": "2026-07-03T12:59:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "F\u00fchr dieselbe Testnachricht erneut aus.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "F\u00fchr dieselbe Testnachricht erneut aus.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "1d194183-19f3-833e-bffe-017f2132bf23",
+  "parent": {
+   "type": "page_id",
+   "page_id": "ffb94183-19f3-837e-89de-01d87df3bbcb"
+  },
+  "created_time": "2026-07-02T14:49:00.000Z",
+  "last_edited_time": "2026-07-02T14:49:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "callout",
+  "callout": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Meine Subscription wurde diesen Monat zweimal berechnet. Kann mir jemand helfen, das zu beheben?",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Meine Subscription wurde diesen Monat zweimal berechnet. Kann mir jemand helfen, das zu beheben?",
+     "href": null
+    }
+   ],
+   "icon": {
+    "type": "emoji",
+    "emoji": "\ud83d\udcac"
+   },
+   "color": "gray_background"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "cdf94183-19f3-82e0-ad73-81b3d7bf0ac1",
+  "parent": {
+   "type": "page_id",
+   "page_id": "ffb94183-19f3-837e-89de-01d87df3bbcb"
+  },
+  "created_time": "2026-07-02T14:49:00.000Z",
+  "last_edited_time": "2026-07-02T15:00:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Erwartetes Ergebnis: Der Specialist Agent sollte antworten, als w\u00e4re der Fall bereits triagiert worden.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Erwartetes Ergebnis: Der Specialist Agent sollte antworten, als w\u00e4re der Fall bereits triagiert worden.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "b6894183-19f3-8368-85a9-01fb9fc3d796",
+  "parent": {
+   "type": "page_id",
+   "page_id": "ffb94183-19f3-837e-89de-01d87df3bbcb"
+  },
+  "created_time": "2026-07-02T14:49:00.000Z",
+  "last_edited_time": "2026-07-02T14:49:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "9c094183-19f3-826f-a563-81b904530971",
+  "parent": {
+   "type": "page_id",
+   "page_id": "ffb94183-19f3-837e-89de-01d87df3bbcb"
+  },
+  "created_time": "2026-07-02T14:49:00.000Z",
+  "last_edited_time": "2026-07-02T14:49:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "image",
+  "image": {
+   "caption": [],
+   "type": "file",
+   "file": {
+    "url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/3a9085c4-df29-45e6-8bc7-6c9c0a25ea8c/b3ac6eab-d5bc-4bfc-a4ed-cdcf6f897f3e/image.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466QUQJ7N46%2F20261010%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20261010T074858Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEIf%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJIMEYCIQDeYYyzTCtPm21cVzuorklDvs9nBxNaPEAOf3y1lz5eqgIhAJfmeN2BF9vGV2uG7X%2Bvhxn88d88F53SYMllbGGWpvkLKv8DCE8QABoMNjM3NDIzMTgzODA1Igwg%2FxVEtDI2KEdc%2FuUq3AOCn5Nvuq0JnrweCZ%2BSMh2cqvjD6y2FYbFNIBbeCxx762BxDtoqQN8sIi%2Ba5Isc%2BkJwpxeOUOz0L5Ofsbrwk2QWO4oGcNZRpgV4RDHIqS9WySqnPF0h1SIIlexOybEAEaDsXpq438Flw%2BySaKPjtK5PTQiM%2F7FwQoHlUjRyhd2%2F8fQ%2B5MPJg3hlpisw0OsSoN0AkaciUQRYk50jrVLIzAiqm4POFBqGwSxWumIP%2FMvI%2FbUWgSoN%2Bf4XBW1ZvP73MLM0hITNdL7jLX5E87GzBouBisvaic6aKuJ6y2Wi1m%2FLEpKp98No0ftpEVKb6M3jnLB6NBeMV8twTOm%2FZovra562sr7EFxT6%2Bx1B9PCtX34WOtP5oRWHejq9vAlA%2FiObXYJEN0wyjVPVHPrTAN1cMoZEK5RuPHdc%2FEgT9cF5AkPSu%2B8QCuc36PARBhOS6SpKB1QIigR6yz35%2BqDf65f6b%2B2U4Hfjd%2FkCF8rsgI5xbn7c4SnAK8EWq3tgVCc3OPts53zY0Ztq7TL%2BPeoRjFenKDBIxLZ%2Fojh7ZkrVsgilIF7Noh0f6laMhk5MDmkFkLFBbuKsulAPfrtq51zFr%2FoC7EPDfmDQOQNrfuL%2FaHd0ueoM0b%2FBvUcO%2BVo%2B3y1GhjDrtafWBjqkAcxDR%2BuiDa5UzPtsC5S3KSCMcIVvSm6kRod8G0VywpikNogwsCMiP6DFM4DDYIus0rNpBcTci35fyGj3CZ8ZqQPUUa3B0Vfcy7jM2SjcQyclECX469JM78YTxlBM530hQFEXhVI0eLwVXRnknUegamQdIspsHw2xdEp0ZIFCTEQ%2FFyXuCLUyFbU%2FpXGZx5dpXHK6sWStBkvm%2B2OR%2BMZMvWn8rcYY&X-Amz-Signature=d20a6d2e0eaf35c49d5c1d53c48e43e8b27eec337a84b601361142bf49500fdc&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+    "expiry_time": "2026-10-10T08:48:58.748Z"
+   }
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "0d90889f-1686-44da-b77a-bab10a97e1b1",
+  "parent": {
+   "type": "page_id",
+   "page_id": "ffb94183-19f3-837e-89de-01d87df3bbcb"
+  },
+  "created_time": "2026-07-03T12:59:00.000Z",
+  "last_edited_time": "2026-07-03T12:59:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_2",
+  "heading_2": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Schritt 6: Eine einfache Routing-Entscheidung hinzuf\u00fcgen",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Schritt 6: Eine einfache Routing-Entscheidung hinzuf\u00fcgen",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "691a41c3-a057-4a34-9a0e-e725a2b7626c",
+  "parent": {
+   "type": "page_id",
+   "page_id": "ffb94183-19f3-837e-89de-01d87df3bbcb"
+  },
+  "created_time": "2026-07-03T12:59:00.000Z",
+  "last_edited_time": "2026-07-03T12:59:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Mach den Handoff jetzt realistischer.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Mach den Handoff jetzt realistischer.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "2ba816eb-fb8e-4275-881d-b803b8505ddc",
+  "parent": {
+   "type": "page_id",
+   "page_id": "ffb94183-19f3-837e-89de-01d87df3bbcb"
+  },
+  "created_time": "2026-07-03T12:59:00.000Z",
+  "last_edited_time": "2026-07-03T13:00:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "F\u00fcge zwischen dem Intake Agent und dem Specialist Agent einen Condition-Node hinzu. Gib ihm einen passenden Titel.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "F\u00fcge zwischen dem Intake Agent und dem Specialist Agent einen Condition-Node hinzu. Gib ihm einen passenden Titel.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "69794183-19f3-83d6-a15e-010251a6c599",
+  "parent": {
+   "type": "page_id",
+   "page_id": "ffb94183-19f3-837e-89de-01d87df3bbcb"
+  },
+  "created_time": "2026-07-02T14:49:00.000Z",
+  "last_edited_time": "2026-07-02T14:49:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "image",
+  "image": {
+   "caption": [],
+   "type": "file",
+   "file": {
+    "url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/3a9085c4-df29-45e6-8bc7-6c9c0a25ea8c/ebaf0781-19d3-46e3-8112-f0e4204fc222/image.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466QUQJ7N46%2F20261010%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20261010T074858Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEIf%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJIMEYCIQDeYYyzTCtPm21cVzuorklDvs9nBxNaPEAOf3y1lz5eqgIhAJfmeN2BF9vGV2uG7X%2Bvhxn88d88F53SYMllbGGWpvkLKv8DCE8QABoMNjM3NDIzMTgzODA1Igwg%2FxVEtDI2KEdc%2FuUq3AOCn5Nvuq0JnrweCZ%2BSMh2cqvjD6y2FYbFNIBbeCxx762BxDtoqQN8sIi%2Ba5Isc%2BkJwpxeOUOz0L5Ofsbrwk2QWO4oGcNZRpgV4RDHIqS9WySqnPF0h1SIIlexOybEAEaDsXpq438Flw%2BySaKPjtK5PTQiM%2F7FwQoHlUjRyhd2%2F8fQ%2B5MPJg3hlpisw0OsSoN0AkaciUQRYk50jrVLIzAiqm4POFBqGwSxWumIP%2FMvI%2FbUWgSoN%2Bf4XBW1ZvP73MLM0hITNdL7jLX5E87GzBouBisvaic6aKuJ6y2Wi1m%2FLEpKp98No0ftpEVKb6M3jnLB6NBeMV8twTOm%2FZovra562sr7EFxT6%2Bx1B9PCtX34WOtP5oRWHejq9vAlA%2FiObXYJEN0wyjVPVHPrTAN1cMoZEK5RuPHdc%2FEgT9cF5AkPSu%2B8QCuc36PARBhOS6SpKB1QIigR6yz35%2BqDf65f6b%2B2U4Hfjd%2FkCF8rsgI5xbn7c4SnAK8EWq3tgVCc3OPts53zY0Ztq7TL%2BPeoRjFenKDBIxLZ%2Fojh7ZkrVsgilIF7Noh0f6laMhk5MDmkFkLFBbuKsulAPfrtq51zFr%2FoC7EPDfmDQOQNrfuL%2FaHd0ueoM0b%2FBvUcO%2BVo%2B3y1GhjDrtafWBjqkAcxDR%2BuiDa5UzPtsC5S3KSCMcIVvSm6kRod8G0VywpikNogwsCMiP6DFM4DDYIus0rNpBcTci35fyGj3CZ8ZqQPUUa3B0Vfcy7jM2SjcQyclECX469JM78YTxlBM530hQFEXhVI0eLwVXRnknUegamQdIspsHw2xdEp0ZIFCTEQ%2FFyXuCLUyFbU%2FpXGZx5dpXHK6sWStBkvm%2B2OR%2BMZMvWn8rcYY&X-Amz-Signature=3fc17c5884c088ced2ef33781d403535ba0acebe8af6889efd66af42331f7f06&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+    "expiry_time": "2026-10-10T08:48:58.748Z"
+   }
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "ec894183-19f3-832b-aa05-010a6bdff6c6",
+  "parent": {
+   "type": "page_id",
+   "page_id": "ffb94183-19f3-837e-89de-01d87df3bbcb"
+  },
+  "created_time": "2026-07-02T14:49:00.000Z",
+  "last_edited_time": "2026-07-02T15:01:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Der Condition-Node sollte pr\u00fcfen, ob das Problem Billing-bezogen ist. Wir pr\u00fcfen den Flow-State-Wert in ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Der Condition-Node sollte pr\u00fcfen, ob das Problem Billing-bezogen ist. Wir pr\u00fcfen den Flow-State-Wert in ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "customer_intent",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": true,
+      "color": "default"
+     },
+     "plain_text": "customer_intent",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": ".\n",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": ".\n",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "e9c94183-19f3-829f-aecd-010feec30b1c",
+  "parent": {
+   "type": "page_id",
+   "page_id": "ffb94183-19f3-837e-89de-01d87df3bbcb"
+  },
+  "created_time": "2026-07-02T14:49:00.000Z",
+  "last_edited_time": "2026-07-02T14:49:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "image",
+  "image": {
+   "caption": [],
+   "type": "file",
+   "file": {
+    "url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/3a9085c4-df29-45e6-8bc7-6c9c0a25ea8c/4ef13450-80ff-482f-af89-c9eb7d9046ad/image.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466QUQJ7N46%2F20261010%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20261010T074858Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEIf%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJIMEYCIQDeYYyzTCtPm21cVzuorklDvs9nBxNaPEAOf3y1lz5eqgIhAJfmeN2BF9vGV2uG7X%2Bvhxn88d88F53SYMllbGGWpvkLKv8DCE8QABoMNjM3NDIzMTgzODA1Igwg%2FxVEtDI2KEdc%2FuUq3AOCn5Nvuq0JnrweCZ%2BSMh2cqvjD6y2FYbFNIBbeCxx762BxDtoqQN8sIi%2Ba5Isc%2BkJwpxeOUOz0L5Ofsbrwk2QWO4oGcNZRpgV4RDHIqS9WySqnPF0h1SIIlexOybEAEaDsXpq438Flw%2BySaKPjtK5PTQiM%2F7FwQoHlUjRyhd2%2F8fQ%2B5MPJg3hlpisw0OsSoN0AkaciUQRYk50jrVLIzAiqm4POFBqGwSxWumIP%2FMvI%2FbUWgSoN%2Bf4XBW1ZvP73MLM0hITNdL7jLX5E87GzBouBisvaic6aKuJ6y2Wi1m%2FLEpKp98No0ftpEVKb6M3jnLB6NBeMV8twTOm%2FZovra562sr7EFxT6%2Bx1B9PCtX34WOtP5oRWHejq9vAlA%2FiObXYJEN0wyjVPVHPrTAN1cMoZEK5RuPHdc%2FEgT9cF5AkPSu%2B8QCuc36PARBhOS6SpKB1QIigR6yz35%2BqDf65f6b%2B2U4Hfjd%2FkCF8rsgI5xbn7c4SnAK8EWq3tgVCc3OPts53zY0Ztq7TL%2BPeoRjFenKDBIxLZ%2Fojh7ZkrVsgilIF7Noh0f6laMhk5MDmkFkLFBbuKsulAPfrtq51zFr%2FoC7EPDfmDQOQNrfuL%2FaHd0ueoM0b%2FBvUcO%2BVo%2B3y1GhjDrtafWBjqkAcxDR%2BuiDa5UzPtsC5S3KSCMcIVvSm6kRod8G0VywpikNogwsCMiP6DFM4DDYIus0rNpBcTci35fyGj3CZ8ZqQPUUa3B0Vfcy7jM2SjcQyclECX469JM78YTxlBM530hQFEXhVI0eLwVXRnknUegamQdIspsHw2xdEp0ZIFCTEQ%2FFyXuCLUyFbU%2FpXGZx5dpXHK6sWStBkvm%2B2OR%2BMZMvWn8rcYY&X-Amz-Signature=4f7e13033cb951aeabfe608e6adb79fc4a58059d93d961a42a50a71f2b87047f&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+    "expiry_time": "2026-10-10T08:48:58.748Z"
+   }
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "d9b768fb-c830-4ff9-90f7-0e5a746674b7",
+  "parent": {
+   "type": "page_id",
+   "page_id": "ffb94183-19f3-837e-89de-01d87df3bbcb"
+  },
+  "created_time": "2026-07-03T13:01:00.000Z",
+  "last_edited_time": "2026-07-03T13:01:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Du kannst den zweiten Branch hinzuf\u00fcgen, der mit einem Direct-Reply-Node verbunden ist.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Du kannst den zweiten Branch hinzuf\u00fcgen, der mit einem Direct-Reply-Node verbunden ist.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "b7c7318c-5e25-45eb-9e76-86c015933111",
+  "parent": {
+   "type": "page_id",
+   "page_id": "ffb94183-19f3-837e-89de-01d87df3bbcb"
+  },
+  "created_time": "2026-07-03T13:01:00.000Z",
+  "last_edited_time": "2026-07-03T13:01:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Dort kannst du folgende Ausgabe hinzuf\u00fcgen:",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Dort kannst du folgende Ausgabe hinzuf\u00fcgen:",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "6ab94183-19f3-82e8-af1a-0142a19be47e",
+  "parent": {
+   "type": "page_id",
+   "page_id": "ffb94183-19f3-837e-89de-01d87df3bbcb"
+  },
+  "created_time": "2026-07-02T14:49:00.000Z",
+  "last_edited_time": "2026-07-03T08:08:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": true,
+  "in_trash": false,
+  "type": "callout",
+  "callout": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Thank you for reaching out. Based on the information provided, your request does not appear to be related to billing.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Thank you for reaching out. Based on the information provided, your request does not appear to be related to billing.",
+     "href": null
+    }
+   ],
+   "icon": {
+    "type": "emoji",
+    "emoji": "\ud83d\udcac"
+   },
+   "color": "blue_background"
+  },
+  "archived": false,
+  "_children": [
+   {
+    "object": "block",
+    "id": "39294183-19f3-800a-b10c-dcca17b616ed",
+    "parent": {
+     "type": "block_id",
+     "block_id": "6ab94183-19f3-82e8-af1a-0142a19be47e"
+    },
+    "created_time": "2026-07-03T08:08:00.000Z",
+    "last_edited_time": "2026-07-03T08:08:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+     "rich_text": [
+      {
+       "type": "text",
+       "text": {
+        "content": "To ensure your inquiry is handled by the most appropriate team, we have forwarded it to the relevant specialist. They will review your case and get back to you as soon as they become available.",
+        "link": null
+       },
+       "annotations": {
+        "bold": false,
+        "italic": false,
+        "strikethrough": false,
+        "underline": false,
+        "code": false,
+        "color": "default"
+       },
+       "plain_text": "To ensure your inquiry is handled by the most appropriate team, we have forwarded it to the relevant specialist. They will review your case and get back to you as soon as they become available.",
+       "href": null
+      }
+     ],
+     "icon": null,
+     "color": "default"
+    },
+    "archived": false
+   },
+   {
+    "object": "block",
+    "id": "39294183-19f3-80df-9e12-e60eb85cf07b",
+    "parent": {
+     "type": "block_id",
+     "block_id": "6ab94183-19f3-82e8-af1a-0142a19be47e"
+    },
+    "created_time": "2026-07-03T08:08:00.000Z",
+    "last_edited_time": "2026-07-03T08:08:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+     "rich_text": [
+      {
+       "type": "text",
+       "text": {
+        "content": "Thank you for your patience and understanding.",
+        "link": null
+       },
+       "annotations": {
+        "bold": false,
+        "italic": false,
+        "strikethrough": false,
+        "underline": false,
+        "code": false,
+        "color": "default"
+       },
+       "plain_text": "Thank you for your patience and understanding.",
+       "href": null
+      }
+     ],
+     "icon": null,
+     "color": "default"
+    },
+    "archived": false
+   }
+  ]
+ },
+ {
+  "object": "block",
+  "id": "aa394183-19f3-8355-a033-814a55fe1716",
+  "parent": {
+   "type": "page_id",
+   "page_id": "ffb94183-19f3-837e-89de-01d87df3bbcb"
+  },
+  "created_time": "2026-07-02T14:49:00.000Z",
+  "last_edited_time": "2026-07-02T14:49:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "image",
+  "image": {
+   "caption": [],
+   "type": "file",
+   "file": {
+    "url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/3a9085c4-df29-45e6-8bc7-6c9c0a25ea8c/679f7f91-fd5e-4dc3-803d-9d3d6aecc7e0/image.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466QUQJ7N46%2F20261010%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20261010T074858Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEIf%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJIMEYCIQDeYYyzTCtPm21cVzuorklDvs9nBxNaPEAOf3y1lz5eqgIhAJfmeN2BF9vGV2uG7X%2Bvhxn88d88F53SYMllbGGWpvkLKv8DCE8QABoMNjM3NDIzMTgzODA1Igwg%2FxVEtDI2KEdc%2FuUq3AOCn5Nvuq0JnrweCZ%2BSMh2cqvjD6y2FYbFNIBbeCxx762BxDtoqQN8sIi%2Ba5Isc%2BkJwpxeOUOz0L5Ofsbrwk2QWO4oGcNZRpgV4RDHIqS9WySqnPF0h1SIIlexOybEAEaDsXpq438Flw%2BySaKPjtK5PTQiM%2F7FwQoHlUjRyhd2%2F8fQ%2B5MPJg3hlpisw0OsSoN0AkaciUQRYk50jrVLIzAiqm4POFBqGwSxWumIP%2FMvI%2FbUWgSoN%2Bf4XBW1ZvP73MLM0hITNdL7jLX5E87GzBouBisvaic6aKuJ6y2Wi1m%2FLEpKp98No0ftpEVKb6M3jnLB6NBeMV8twTOm%2FZovra562sr7EFxT6%2Bx1B9PCtX34WOtP5oRWHejq9vAlA%2FiObXYJEN0wyjVPVHPrTAN1cMoZEK5RuPHdc%2FEgT9cF5AkPSu%2B8QCuc36PARBhOS6SpKB1QIigR6yz35%2BqDf65f6b%2B2U4Hfjd%2FkCF8rsgI5xbn7c4SnAK8EWq3tgVCc3OPts53zY0Ztq7TL%2BPeoRjFenKDBIxLZ%2Fojh7ZkrVsgilIF7Noh0f6laMhk5MDmkFkLFBbuKsulAPfrtq51zFr%2FoC7EPDfmDQOQNrfuL%2FaHd0ueoM0b%2FBvUcO%2BVo%2B3y1GhjDrtafWBjqkAcxDR%2BuiDa5UzPtsC5S3KSCMcIVvSm6kRod8G0VywpikNogwsCMiP6DFM4DDYIus0rNpBcTci35fyGj3CZ8ZqQPUUa3B0Vfcy7jM2SjcQyclECX469JM78YTxlBM530hQFEXhVI0eLwVXRnknUegamQdIspsHw2xdEp0ZIFCTEQ%2FFyXuCLUyFbU%2FpXGZx5dpXHK6sWStBkvm%2B2OR%2BMZMvWn8rcYY&X-Amz-Signature=33c7273b9a4cd4bace324fb6d7531d767dcc620069484a9e88fd8c86847dec6f&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+    "expiry_time": "2026-10-10T08:48:58.748Z"
+   }
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "74694183-19f3-83f3-a1cb-012b4c6366e7",
+  "parent": {
+   "type": "page_id",
+   "page_id": "ffb94183-19f3-837e-89de-01d87df3bbcb"
+  },
+  "created_time": "2026-07-02T14:49:00.000Z",
+  "last_edited_time": "2026-07-03T13:01:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Und dein finaler Agent Flow sollte so aussehen:",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Und dein finaler Agent Flow sollte so aussehen:",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "aca94183-19f3-82d5-a03d-01f214981ea5",
+  "parent": {
+   "type": "page_id",
+   "page_id": "ffb94183-19f3-837e-89de-01d87df3bbcb"
+  },
+  "created_time": "2026-07-02T14:49:00.000Z",
+  "last_edited_time": "2026-07-02T14:49:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "image",
+  "image": {
+   "caption": [],
+   "type": "file",
+   "file": {
+    "url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/3a9085c4-df29-45e6-8bc7-6c9c0a25ea8c/4b5929c7-d7e4-4b49-8236-b3be8a2b5e1d/image.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466QUQJ7N46%2F20261010%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20261010T074858Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEIf%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJIMEYCIQDeYYyzTCtPm21cVzuorklDvs9nBxNaPEAOf3y1lz5eqgIhAJfmeN2BF9vGV2uG7X%2Bvhxn88d88F53SYMllbGGWpvkLKv8DCE8QABoMNjM3NDIzMTgzODA1Igwg%2FxVEtDI2KEdc%2FuUq3AOCn5Nvuq0JnrweCZ%2BSMh2cqvjD6y2FYbFNIBbeCxx762BxDtoqQN8sIi%2Ba5Isc%2BkJwpxeOUOz0L5Ofsbrwk2QWO4oGcNZRpgV4RDHIqS9WySqnPF0h1SIIlexOybEAEaDsXpq438Flw%2BySaKPjtK5PTQiM%2F7FwQoHlUjRyhd2%2F8fQ%2B5MPJg3hlpisw0OsSoN0AkaciUQRYk50jrVLIzAiqm4POFBqGwSxWumIP%2FMvI%2FbUWgSoN%2Bf4XBW1ZvP73MLM0hITNdL7jLX5E87GzBouBisvaic6aKuJ6y2Wi1m%2FLEpKp98No0ftpEVKb6M3jnLB6NBeMV8twTOm%2FZovra562sr7EFxT6%2Bx1B9PCtX34WOtP5oRWHejq9vAlA%2FiObXYJEN0wyjVPVHPrTAN1cMoZEK5RuPHdc%2FEgT9cF5AkPSu%2B8QCuc36PARBhOS6SpKB1QIigR6yz35%2BqDf65f6b%2B2U4Hfjd%2FkCF8rsgI5xbn7c4SnAK8EWq3tgVCc3OPts53zY0Ztq7TL%2BPeoRjFenKDBIxLZ%2Fojh7ZkrVsgilIF7Noh0f6laMhk5MDmkFkLFBbuKsulAPfrtq51zFr%2FoC7EPDfmDQOQNrfuL%2FaHd0ueoM0b%2FBvUcO%2BVo%2B3y1GhjDrtafWBjqkAcxDR%2BuiDa5UzPtsC5S3KSCMcIVvSm6kRod8G0VywpikNogwsCMiP6DFM4DDYIus0rNpBcTci35fyGj3CZ8ZqQPUUa3B0Vfcy7jM2SjcQyclECX469JM78YTxlBM530hQFEXhVI0eLwVXRnknUegamQdIspsHw2xdEp0ZIFCTEQ%2FFyXuCLUyFbU%2FpXGZx5dpXHK6sWStBkvm%2B2OR%2BMZMvWn8rcYY&X-Amz-Signature=ed239c337d64e7c6d8efe6f5f1134a5784a1b39546ed02acd16aaee57a15e865&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+    "expiry_time": "2026-10-10T08:48:58.797Z"
+   }
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "15c94183-19f3-82cd-bf91-010515813e9a",
+  "parent": {
+   "type": "page_id",
+   "page_id": "ffb94183-19f3-837e-89de-01d87df3bbcb"
+  },
+  "created_time": "2026-07-02T14:49:00.000Z",
+  "last_edited_time": "2026-07-03T13:01:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Pass den Prompt in deinem Specialist Agent an, da er jetzt nur noch f\u00fcr Billing-Probleme zust\u00e4ndig ist:",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Pass den Prompt in deinem Specialist Agent an, da er jetzt nur noch f\u00fcr Billing-Probleme zust\u00e4ndig ist:",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "fff94183-19f3-82a6-a249-81ebf098c998",
+  "parent": {
+   "type": "page_id",
+   "page_id": "ffb94183-19f3-837e-89de-01d87df3bbcb"
+  },
+  "created_time": "2026-07-02T14:49:00.000Z",
+  "last_edited_time": "2026-07-03T08:09:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": true,
+  "in_trash": false,
+  "type": "callout",
+  "callout": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "You are a Billing Specialist Agent.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "You are a Billing Specialist Agent.",
+     "href": null
+    }
+   ],
+   "icon": {
+    "type": "emoji",
+    "emoji": "\ud83d\udcac"
+   },
+   "color": "blue_background"
+  },
+  "archived": false,
+  "_children": [
+   {
+    "object": "block",
+    "id": "39294183-19f3-80e1-888d-f60a7db7b95d",
+    "parent": {
+     "type": "block_id",
+     "block_id": "fff94183-19f3-82a6-a249-81ebf098c998"
+    },
+    "created_time": "2026-07-03T08:09:00.000Z",
+    "last_edited_time": "2026-07-03T08:09:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+     "rich_text": [
+      {
+       "type": "text",
+       "text": {
+        "content": "You ONLY handle billing-related issues such as:",
+        "link": null
+       },
+       "annotations": {
+        "bold": false,
+        "italic": false,
+        "strikethrough": false,
+        "underline": false,
+        "code": false,
+        "color": "default"
+       },
+       "plain_text": "You ONLY handle billing-related issues such as:",
+       "href": null
+      }
+     ],
+     "icon": null,
+     "color": "default"
+    },
+    "archived": false
+   },
+   {
+    "object": "block",
+    "id": "39294183-19f3-80f8-856c-d1e5db2773e0",
+    "parent": {
+     "type": "block_id",
+     "block_id": "fff94183-19f3-82a6-a249-81ebf098c998"
+    },
+    "created_time": "2026-07-03T08:09:00.000Z",
+    "last_edited_time": "2026-07-03T08:09:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "bulleted_list_item",
+    "bulleted_list_item": {
+     "rich_text": [
+      {
+       "type": "text",
+       "text": {
+        "content": "double charges",
+        "link": null
+       },
+       "annotations": {
+        "bold": false,
+        "italic": false,
+        "strikethrough": false,
+        "underline": false,
+        "code": false,
+        "color": "default"
+       },
+       "plain_text": "double charges",
+       "href": null
+      }
+     ],
+     "color": "default"
+    },
+    "archived": false
+   },
+   {
+    "object": "block",
+    "id": "39294183-19f3-8051-b7fb-cbcdeac0ffae",
+    "parent": {
+     "type": "block_id",
+     "block_id": "fff94183-19f3-82a6-a249-81ebf098c998"
+    },
+    "created_time": "2026-07-03T08:09:00.000Z",
+    "last_edited_time": "2026-07-03T08:09:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "bulleted_list_item",
+    "bulleted_list_item": {
+     "rich_text": [
+      {
+       "type": "text",
+       "text": {
+        "content": "payment failures",
+        "link": null
+       },
+       "annotations": {
+        "bold": false,
+        "italic": false,
+        "strikethrough": false,
+        "underline": false,
+        "code": false,
+        "color": "default"
+       },
+       "plain_text": "payment failures",
+       "href": null
+      }
+     ],
+     "color": "default"
+    },
+    "archived": false
+   },
+   {
+    "object": "block",
+    "id": "39294183-19f3-802f-894e-e4487e542902",
+    "parent": {
+     "type": "block_id",
+     "block_id": "fff94183-19f3-82a6-a249-81ebf098c998"
+    },
+    "created_time": "2026-07-03T08:09:00.000Z",
+    "last_edited_time": "2026-07-03T08:09:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "bulleted_list_item",
+    "bulleted_list_item": {
+     "rich_text": [
+      {
+       "type": "text",
+       "text": {
+        "content": "invoices",
+        "link": null
+       },
+       "annotations": {
+        "bold": false,
+        "italic": false,
+        "strikethrough": false,
+        "underline": false,
+        "code": false,
+        "color": "default"
+       },
+       "plain_text": "invoices",
+       "href": null
+      }
+     ],
+     "color": "default"
+    },
+    "archived": false
+   },
+   {
+    "object": "block",
+    "id": "39294183-19f3-80bb-a98f-c975fa386cae",
+    "parent": {
+     "type": "block_id",
+     "block_id": "fff94183-19f3-82a6-a249-81ebf098c998"
+    },
+    "created_time": "2026-07-03T08:09:00.000Z",
+    "last_edited_time": "2026-07-03T08:09:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "bulleted_list_item",
+    "bulleted_list_item": {
+     "rich_text": [
+      {
+       "type": "text",
+       "text": {
+        "content": "subscription billing",
+        "link": null
+       },
+       "annotations": {
+        "bold": false,
+        "italic": false,
+        "strikethrough": false,
+        "underline": false,
+        "code": false,
+        "color": "default"
+       },
+       "plain_text": "subscription billing",
+       "href": null
+      }
+     ],
+     "color": "default"
+    },
+    "archived": false
+   },
+   {
+    "object": "block",
+    "id": "39294183-19f3-80bd-bf2c-e2ec7cd47dc6",
+    "parent": {
+     "type": "block_id",
+     "block_id": "fff94183-19f3-82a6-a249-81ebf098c998"
+    },
+    "created_time": "2026-07-03T08:09:00.000Z",
+    "last_edited_time": "2026-07-03T08:09:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "bulleted_list_item",
+    "bulleted_list_item": {
+     "rich_text": [
+      {
+       "type": "text",
+       "text": {
+        "content": "refunds",
+        "link": null
+       },
+       "annotations": {
+        "bold": false,
+        "italic": false,
+        "strikethrough": false,
+        "underline": false,
+        "code": false,
+        "color": "default"
+       },
+       "plain_text": "refunds",
+       "href": null
+      }
+     ],
+     "color": "default"
+    },
+    "archived": false
+   },
+   {
+    "object": "block",
+    "id": "39294183-19f3-809b-8957-eaf06c9f3de9",
+    "parent": {
+     "type": "block_id",
+     "block_id": "fff94183-19f3-82a6-a249-81ebf098c998"
+    },
+    "created_time": "2026-07-03T08:09:00.000Z",
+    "last_edited_time": "2026-07-03T08:09:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "bulleted_list_item",
+    "bulleted_list_item": {
+     "rich_text": [
+      {
+       "type": "text",
+       "text": {
+        "content": "account charges",
+        "link": null
+       },
+       "annotations": {
+        "bold": false,
+        "italic": false,
+        "strikethrough": false,
+        "underline": false,
+        "code": false,
+        "color": "default"
+       },
+       "plain_text": "account charges",
+       "href": null
+      }
+     ],
+     "color": "default"
+    },
+    "archived": false
+   },
+   {
+    "object": "block",
+    "id": "39294183-19f3-8075-8c82-fe4475c00943",
+    "parent": {
+     "type": "block_id",
+     "block_id": "fff94183-19f3-82a6-a249-81ebf098c998"
+    },
+    "created_time": "2026-07-03T08:09:00.000Z",
+    "last_edited_time": "2026-07-03T08:09:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+     "rich_text": [
+      {
+       "type": "text",
+       "text": {
+        "content": "A previous Intake Agent has already analyzed the request and prepared a handoff for you.",
+        "link": null
+       },
+       "annotations": {
+        "bold": false,
+        "italic": false,
+        "strikethrough": false,
+        "underline": false,
+        "code": false,
+        "color": "default"
+       },
+       "plain_text": "A previous Intake Agent has already analyzed the request and prepared a handoff for you.",
+       "href": null
+      }
+     ],
+     "icon": null,
+     "color": "default"
+    },
+    "archived": false
+   },
+   {
+    "object": "block",
+    "id": "39294183-19f3-8051-a859-c37ba8bdcee6",
+    "parent": {
+     "type": "block_id",
+     "block_id": "fff94183-19f3-82a6-a249-81ebf098c998"
+    },
+    "created_time": "2026-07-03T08:09:00.000Z",
+    "last_edited_time": "2026-07-03T08:09:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+     "rich_text": [
+      {
+       "type": "text",
+       "text": {
+        "content": "Use the following handoff information:",
+        "link": null
+       },
+       "annotations": {
+        "bold": false,
+        "italic": false,
+        "strikethrough": false,
+        "underline": false,
+        "code": false,
+        "color": "default"
+       },
+       "plain_text": "Use the following handoff information:",
+       "href": null
+      }
+     ],
+     "icon": null,
+     "color": "default"
+    },
+    "archived": false
+   },
+   {
+    "object": "block",
+    "id": "39294183-19f3-8036-9cb4-e6b2e0c15034",
+    "parent": {
+     "type": "block_id",
+     "block_id": "fff94183-19f3-82a6-a249-81ebf098c998"
+    },
+    "created_time": "2026-07-03T08:09:00.000Z",
+    "last_edited_time": "2026-07-03T08:09:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+     "rich_text": [
+      {
+       "type": "text",
+       "text": {
+        "content": "Customer Intent:",
+        "link": null
+       },
+       "annotations": {
+        "bold": false,
+        "italic": false,
+        "strikethrough": false,
+        "underline": false,
+        "code": false,
+        "color": "default"
+       },
+       "plain_text": "Customer Intent:",
+       "href": null
+      }
+     ],
+     "icon": null,
+     "color": "default"
+    },
+    "archived": false
+   },
+   {
+    "object": "block",
+    "id": "39294183-19f3-8060-8aba-cc20ccaaec9a",
+    "parent": {
+     "type": "block_id",
+     "block_id": "fff94183-19f3-82a6-a249-81ebf098c998"
+    },
+    "created_time": "2026-07-03T08:09:00.000Z",
+    "last_edited_time": "2026-07-03T08:09:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+     "rich_text": [
+      {
+       "type": "text",
+       "text": {
+        "content": "{{ $flow.state.customer_intent }}",
+        "link": null
+       },
+       "annotations": {
+        "bold": false,
+        "italic": false,
+        "strikethrough": false,
+        "underline": false,
+        "code": false,
+        "color": "default"
+       },
+       "plain_text": "{{ $flow.state.customer_intent }}",
+       "href": null
+      }
+     ],
+     "icon": null,
+     "color": "default"
+    },
+    "archived": false
+   },
+   {
+    "object": "block",
+    "id": "39294183-19f3-80cb-ab07-f47691f12723",
+    "parent": {
+     "type": "block_id",
+     "block_id": "fff94183-19f3-82a6-a249-81ebf098c998"
+    },
+    "created_time": "2026-07-03T08:09:00.000Z",
+    "last_edited_time": "2026-07-03T08:09:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+     "rich_text": [
+      {
+       "type": "text",
+       "text": {
+        "content": "Issue Summary:",
+        "link": null
+       },
+       "annotations": {
+        "bold": false,
+        "italic": false,
+        "strikethrough": false,
+        "underline": false,
+        "code": false,
+        "color": "default"
+       },
+       "plain_text": "Issue Summary:",
+       "href": null
+      }
+     ],
+     "icon": null,
+     "color": "default"
+    },
+    "archived": false
+   },
+   {
+    "object": "block",
+    "id": "39294183-19f3-8068-b650-f586681920d0",
+    "parent": {
+     "type": "block_id",
+     "block_id": "fff94183-19f3-82a6-a249-81ebf098c998"
+    },
+    "created_time": "2026-07-03T08:09:00.000Z",
+    "last_edited_time": "2026-07-03T08:09:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+     "rich_text": [
+      {
+       "type": "text",
+       "text": {
+        "content": "{{ $flow.state.issue_summary }}",
+        "link": null
+       },
+       "annotations": {
+        "bold": false,
+        "italic": false,
+        "strikethrough": false,
+        "underline": false,
+        "code": false,
+        "color": "default"
+       },
+       "plain_text": "{{ $flow.state.issue_summary }}",
+       "href": null
+      }
+     ],
+     "icon": null,
+     "color": "default"
+    },
+    "archived": false
+   },
+   {
+    "object": "block",
+    "id": "39294183-19f3-8071-9634-dc2e56b97dcd",
+    "parent": {
+     "type": "block_id",
+     "block_id": "fff94183-19f3-82a6-a249-81ebf098c998"
+    },
+    "created_time": "2026-07-03T08:09:00.000Z",
+    "last_edited_time": "2026-07-03T08:09:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+     "rich_text": [
+      {
+       "type": "text",
+       "text": {
+        "content": "Handoff Reason:",
+        "link": null
+       },
+       "annotations": {
+        "bold": false,
+        "italic": false,
+        "strikethrough": false,
+        "underline": false,
+        "code": false,
+        "color": "default"
+       },
+       "plain_text": "Handoff Reason:",
+       "href": null
+      }
+     ],
+     "icon": null,
+     "color": "default"
+    },
+    "archived": false
+   },
+   {
+    "object": "block",
+    "id": "39294183-19f3-80b0-9123-f2cb02128d44",
+    "parent": {
+     "type": "block_id",
+     "block_id": "fff94183-19f3-82a6-a249-81ebf098c998"
+    },
+    "created_time": "2026-07-03T08:09:00.000Z",
+    "last_edited_time": "2026-07-03T08:09:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+     "rich_text": [
+      {
+       "type": "text",
+       "text": {
+        "content": "{{ $flow.state.handoff_reason }}",
+        "link": null
+       },
+       "annotations": {
+        "bold": false,
+        "italic": false,
+        "strikethrough": false,
+        "underline": false,
+        "code": false,
+        "color": "default"
+       },
+       "plain_text": "{{ $flow.state.handoff_reason }}",
+       "href": null
+      }
+     ],
+     "icon": null,
+     "color": "default"
+    },
+    "archived": false
+   },
+   {
+    "object": "block",
+    "id": "39294183-19f3-80ff-a279-ce92a9b81008",
+    "parent": {
+     "type": "block_id",
+     "block_id": "fff94183-19f3-82a6-a249-81ebf098c998"
+    },
+    "created_time": "2026-07-03T08:09:00.000Z",
+    "last_edited_time": "2026-07-03T08:09:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+     "rich_text": [
+      {
+       "type": "text",
+       "text": {
+        "content": "Instructions:",
+        "link": null
+       },
+       "annotations": {
+        "bold": false,
+        "italic": false,
+        "strikethrough": false,
+        "underline": false,
+        "code": false,
+        "color": "default"
+       },
+       "plain_text": "Instructions:",
+       "href": null
+      }
+     ],
+     "icon": null,
+     "color": "default"
+    },
+    "archived": false
+   },
+   {
+    "object": "block",
+    "id": "39294183-19f3-8079-8e75-d4784aad5468",
+    "parent": {
+     "type": "block_id",
+     "block_id": "fff94183-19f3-82a6-a249-81ebf098c998"
+    },
+    "created_time": "2026-07-03T08:09:00.000Z",
+    "last_edited_time": "2026-07-03T08:09:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "bulleted_list_item",
+    "bulleted_list_item": {
+     "rich_text": [
+      {
+       "type": "text",
+       "text": {
+        "content": "Assume the intake analysis is correct.",
+        "link": null
+       },
+       "annotations": {
+        "bold": false,
+        "italic": false,
+        "strikethrough": false,
+        "underline": false,
+        "code": false,
+        "color": "default"
+       },
+       "plain_text": "Assume the intake analysis is correct.",
+       "href": null
+      }
+     ],
+     "color": "default"
+    },
+    "archived": false
+   },
+   {
+    "object": "block",
+    "id": "39294183-19f3-803f-905f-ed8fd8dbe95a",
+    "parent": {
+     "type": "block_id",
+     "block_id": "fff94183-19f3-82a6-a249-81ebf098c998"
+    },
+    "created_time": "2026-07-03T08:09:00.000Z",
+    "last_edited_time": "2026-07-03T08:09:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "bulleted_list_item",
+    "bulleted_list_item": {
+     "rich_text": [
+      {
+       "type": "text",
+       "text": {
+        "content": "Do not repeat the intake process.",
+        "link": null
+       },
+       "annotations": {
+        "bold": false,
+        "italic": false,
+        "strikethrough": false,
+        "underline": false,
+        "code": false,
+        "color": "default"
+       },
+       "plain_text": "Do not repeat the intake process.",
+       "href": null
+      }
+     ],
+     "color": "default"
+    },
+    "archived": false
+   },
+   {
+    "object": "block",
+    "id": "39294183-19f3-8066-93be-dc72e69b22ff",
+    "parent": {
+     "type": "block_id",
+     "block_id": "fff94183-19f3-82a6-a249-81ebf098c998"
+    },
+    "created_time": "2026-07-03T08:09:00.000Z",
+    "last_edited_time": "2026-07-03T08:09:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "bulleted_list_item",
+    "bulleted_list_item": {
+     "rich_text": [
+      {
+       "type": "text",
+       "text": {
+        "content": "Do not ask for information that is already available in the handoff.",
+        "link": null
+       },
+       "annotations": {
+        "bold": false,
+        "italic": false,
+        "strikethrough": false,
+        "underline": false,
+        "code": false,
+        "color": "default"
+       },
+       "plain_text": "Do not ask for information that is already available in the handoff.",
+       "href": null
+      }
+     ],
+     "color": "default"
+    },
+    "archived": false
+   },
+   {
+    "object": "block",
+    "id": "39294183-19f3-801b-a1aa-e91b5a7c7127",
+    "parent": {
+     "type": "block_id",
+     "block_id": "fff94183-19f3-82a6-a249-81ebf098c998"
+    },
+    "created_time": "2026-07-03T08:09:00.000Z",
+    "last_edited_time": "2026-07-03T08:09:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "bulleted_list_item",
+    "bulleted_list_item": {
+     "rich_text": [
+      {
+       "type": "text",
+       "text": {
+        "content": "Focus only on resolving the billing issue.",
+        "link": null
+       },
+       "annotations": {
+        "bold": false,
+        "italic": false,
+        "strikethrough": false,
+        "underline": false,
+        "code": false,
+        "color": "default"
+       },
+       "plain_text": "Focus only on resolving the billing issue.",
+       "href": null
+      }
+     ],
+     "color": "default"
+    },
+    "archived": false
+   },
+   {
+    "object": "block",
+    "id": "39294183-19f3-80ad-9d92-f6873c48e43a",
+    "parent": {
+     "type": "block_id",
+     "block_id": "fff94183-19f3-82a6-a249-81ebf098c998"
+    },
+    "created_time": "2026-07-03T08:09:00.000Z",
+    "last_edited_time": "2026-07-03T08:09:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "bulleted_list_item",
+    "bulleted_list_item": {
+     "rich_text": [
+      {
+       "type": "text",
+       "text": {
+        "content": "If additional information is needed, ask concise follow-up questions.",
+        "link": null
+       },
+       "annotations": {
+        "bold": false,
+        "italic": false,
+        "strikethrough": false,
+        "underline": false,
+        "code": false,
+        "color": "default"
+       },
+       "plain_text": "If additional information is needed, ask concise follow-up questions.",
+       "href": null
+      }
+     ],
+     "color": "default"
+    },
+    "archived": false
+   },
+   {
+    "object": "block",
+    "id": "39294183-19f3-8020-abd6-f2bbfbf6fd11",
+    "parent": {
+     "type": "block_id",
+     "block_id": "fff94183-19f3-82a6-a249-81ebf098c998"
+    },
+    "created_time": "2026-07-03T08:09:00.000Z",
+    "last_edited_time": "2026-07-03T08:09:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "bulleted_list_item",
+    "bulleted_list_item": {
+     "rich_text": [
+      {
+       "type": "text",
+       "text": {
+        "content": "Provide a clear explanation and next steps.",
+        "link": null
+       },
+       "annotations": {
+        "bold": false,
+        "italic": false,
+        "strikethrough": false,
+        "underline": false,
+        "code": false,
+        "color": "default"
+       },
+       "plain_text": "Provide a clear explanation and next steps.",
+       "href": null
+      }
+     ],
+     "color": "default"
+    },
+    "archived": false
+   },
+   {
+    "object": "block",
+    "id": "39294183-19f3-807a-9f6a-fc5f09e8fb34",
+    "parent": {
+     "type": "block_id",
+     "block_id": "fff94183-19f3-82a6-a249-81ebf098c998"
+    },
+    "created_time": "2026-07-03T08:09:00.000Z",
+    "last_edited_time": "2026-07-03T08:09:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "bulleted_list_item",
+    "bulleted_list_item": {
+     "rich_text": [
+      {
+       "type": "text",
+       "text": {
+        "content": "If the issue is not billing-related, politely state that it falls outside your scope.",
+        "link": null
+       },
+       "annotations": {
+        "bold": false,
+        "italic": false,
+        "strikethrough": false,
+        "underline": false,
+        "code": false,
+        "color": "default"
+       },
+       "plain_text": "If the issue is not billing-related, politely state that it falls outside your scope.",
+       "href": null
+      }
+     ],
+     "color": "default"
+    },
+    "archived": false
+   },
+   {
+    "object": "block",
+    "id": "39294183-19f3-8023-94b0-ed74b1ef32f0",
+    "parent": {
+     "type": "block_id",
+     "block_id": "fff94183-19f3-82a6-a249-81ebf098c998"
+    },
+    "created_time": "2026-07-03T08:09:00.000Z",
+    "last_edited_time": "2026-07-03T08:09:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+     "rich_text": [
+      {
+       "type": "text",
+       "text": {
+        "content": "Response structure:",
+        "link": null
+       },
+       "annotations": {
+        "bold": false,
+        "italic": false,
+        "strikethrough": false,
+        "underline": false,
+        "code": false,
+        "color": "default"
+       },
+       "plain_text": "Response structure:",
+       "href": null
+      }
+     ],
+     "icon": null,
+     "color": "default"
+    },
+    "archived": false
+   },
+   {
+    "object": "block",
+    "id": "39294183-19f3-8068-bfbc-f33c6449a795",
+    "parent": {
+     "type": "block_id",
+     "block_id": "fff94183-19f3-82a6-a249-81ebf098c998"
+    },
+    "created_time": "2026-07-03T08:09:00.000Z",
+    "last_edited_time": "2026-07-03T08:09:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+     "rich_text": [
+      {
+       "type": "text",
+       "text": {
+        "content": "Issue Assessment:",
+        "link": null
+       },
+       "annotations": {
+        "bold": false,
+        "italic": false,
+        "strikethrough": false,
+        "underline": false,
+        "code": false,
+        "color": "default"
+       },
+       "plain_text": "Issue Assessment:",
+       "href": null
+      }
+     ],
+     "icon": null,
+     "color": "default"
+    },
+    "archived": false
+   },
+   {
+    "object": "block",
+    "id": "39294183-19f3-80c6-a933-dde4118ba660",
+    "parent": {
+     "type": "block_id",
+     "block_id": "fff94183-19f3-82a6-a249-81ebf098c998"
+    },
+    "created_time": "2026-07-03T08:09:00.000Z",
+    "last_edited_time": "2026-07-03T08:09:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+     "rich_text": [
+      {
+       "type": "text",
+       "text": {
+        "content": "[brief explanation of the billing issue]",
+        "link": null
+       },
+       "annotations": {
+        "bold": false,
+        "italic": false,
+        "strikethrough": false,
+        "underline": false,
+        "code": false,
+        "color": "default"
+       },
+       "plain_text": "[brief explanation of the billing issue]",
+       "href": null
+      }
+     ],
+     "icon": null,
+     "color": "default"
+    },
+    "archived": false
+   },
+   {
+    "object": "block",
+    "id": "39294183-19f3-80ed-a26b-c150cd2d4c2e",
+    "parent": {
+     "type": "block_id",
+     "block_id": "fff94183-19f3-82a6-a249-81ebf098c998"
+    },
+    "created_time": "2026-07-03T08:09:00.000Z",
+    "last_edited_time": "2026-07-03T08:09:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+     "rich_text": [
+      {
+       "type": "text",
+       "text": {
+        "content": "Recommended Action:",
+        "link": null
+       },
+       "annotations": {
+        "bold": false,
+        "italic": false,
+        "strikethrough": false,
+        "underline": false,
+        "code": false,
+        "color": "default"
+       },
+       "plain_text": "Recommended Action:",
+       "href": null
+      }
+     ],
+     "icon": null,
+     "color": "default"
+    },
+    "archived": false
+   },
+   {
+    "object": "block",
+    "id": "39294183-19f3-801e-8a61-d03dd52e2f93",
+    "parent": {
+     "type": "block_id",
+     "block_id": "fff94183-19f3-82a6-a249-81ebf098c998"
+    },
+    "created_time": "2026-07-03T08:09:00.000Z",
+    "last_edited_time": "2026-07-03T08:09:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+     "rich_text": [
+      {
+       "type": "text",
+       "text": {
+        "content": "[specific next step]",
+        "link": null
+       },
+       "annotations": {
+        "bold": false,
+        "italic": false,
+        "strikethrough": false,
+        "underline": false,
+        "code": false,
+        "color": "default"
+       },
+       "plain_text": "[specific next step]",
+       "href": null
+      }
+     ],
+     "icon": null,
+     "color": "default"
+    },
+    "archived": false
+   },
+   {
+    "object": "block",
+    "id": "39294183-19f3-807b-983e-ce1d31312e95",
+    "parent": {
+     "type": "block_id",
+     "block_id": "fff94183-19f3-82a6-a249-81ebf098c998"
+    },
+    "created_time": "2026-07-03T08:09:00.000Z",
+    "last_edited_time": "2026-07-03T08:09:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+     "rich_text": [
+      {
+       "type": "text",
+       "text": {
+        "content": "Additional Information Needed:",
+        "link": null
+       },
+       "annotations": {
+        "bold": false,
+        "italic": false,
+        "strikethrough": false,
+        "underline": false,
+        "code": false,
+        "color": "default"
+       },
+       "plain_text": "Additional Information Needed:",
+       "href": null
+      }
+     ],
+     "icon": null,
+     "color": "default"
+    },
+    "archived": false
+   },
+   {
+    "object": "block",
+    "id": "39294183-19f3-80f5-98f7-f124773b9d67",
+    "parent": {
+     "type": "block_id",
+     "block_id": "fff94183-19f3-82a6-a249-81ebf098c998"
+    },
+    "created_time": "2026-07-03T08:09:00.000Z",
+    "last_edited_time": "2026-07-03T08:09:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+     "rich_text": [
+      {
+       "type": "text",
+       "text": {
+        "content": "[question(s) if required, otherwise \"None\"]",
+        "link": null
+       },
+       "annotations": {
+        "bold": false,
+        "italic": false,
+        "strikethrough": false,
+        "underline": false,
+        "code": false,
+        "color": "default"
+       },
+       "plain_text": "[question(s) if required, otherwise \"None\"]",
+       "href": null
+      }
+     ],
+     "icon": null,
+     "color": "default"
+    },
+    "archived": false
+   }
+  ]
+ },
+ {
+  "object": "block",
+  "id": "33b4df02-a433-4ac7-963a-f44417245ca7",
+  "parent": {
+   "type": "page_id",
+   "page_id": "ffb94183-19f3-837e-89de-01d87df3bbcb"
+  },
+  "created_time": "2026-07-03T13:02:00.000Z",
+  "last_edited_time": "2026-07-03T13:02:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_2",
+  "heading_2": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Schritt 7: Den Handoff-Vertrag testen",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Schritt 7: Den Handoff-Vertrag testen",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "5f52dbd0-d800-40b0-8851-85eb28a6459d",
+  "parent": {
+   "type": "page_id",
+   "page_id": "ffb94183-19f3-837e-89de-01d87df3bbcb"
+  },
+  "created_time": "2026-07-03T13:02:00.000Z",
+  "last_edited_time": "2026-07-03T13:02:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Nutz diesen Test-Prompt:",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Nutz diesen Test-Prompt:",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "ad094183-19f3-8316-9e5c-81f4d8d13eca",
+  "parent": {
+   "type": "page_id",
+   "page_id": "ffb94183-19f3-837e-89de-01d87df3bbcb"
+  },
+  "created_time": "2026-07-02T14:49:00.000Z",
+  "last_edited_time": "2026-07-02T14:49:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "code",
+  "code": {
+   "caption": [],
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "My invoice says I paid for the Pro plan, but my account still shows the Basic plan.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "My invoice says I paid for the Pro plan, but my account still shows the Basic plan.",
+     "href": null
+    }
+   ],
+   "language": "plain text"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "883a644a-68a7-4c16-886c-18b3836190fd",
+  "parent": {
+   "type": "page_id",
+   "page_id": "ffb94183-19f3-837e-89de-01d87df3bbcb"
+  },
+  "created_time": "2026-07-03T13:02:00.000Z",
+  "last_edited_time": "2026-07-05T13:41:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Pr\u00fcf drei Dinge:",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Pr\u00fcf drei Dinge:",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "0e7cb53c-b52b-44ce-87be-af58b17b379f",
+  "parent": {
+   "type": "page_id",
+   "page_id": "ffb94183-19f3-837e-89de-01d87df3bbcb"
+  },
+  "created_time": "2026-07-03T13:02:00.000Z",
+  "last_edited_time": "2026-07-03T13:02:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Erstens sollte der Intake Agent die Absicht korrekt erkennen.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Erstens sollte der Intake Agent die Absicht korrekt erkennen.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "ba877f9b-6196-456d-b29c-5d1739201f6c",
+  "parent": {
+   "type": "page_id",
+   "page_id": "ffb94183-19f3-837e-89de-01d87df3bbcb"
+  },
+  "created_time": "2026-07-03T13:02:00.000Z",
+  "last_edited_time": "2026-07-03T13:02:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Zweitens sollte Flow State den extrahierten Handoff-Kontext enthalten.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Zweitens sollte Flow State den extrahierten Handoff-Kontext enthalten.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "8e1ab2fe-530f-41d1-ac82-d182e11d17b2",
+  "parent": {
+   "type": "page_id",
+   "page_id": "ffb94183-19f3-837e-89de-01d87df3bbcb"
+  },
+  "created_time": "2026-07-03T13:02:00.000Z",
+  "last_edited_time": "2026-07-03T13:02:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Drittens sollte der Specialist Agent diesen Kontext verwenden, statt alles von Grund auf neu zu analysieren.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Drittens sollte der Specialist Agent diesen Kontext verwenden, statt alles von Grund auf neu zu analysieren.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "025189dd-d4fb-4fbc-9c91-3f3cb1bc9665",
+  "parent": {
+   "type": "page_id",
+   "page_id": "ffb94183-19f3-837e-89de-01d87df3bbcb"
+  },
+  "created_time": "2026-07-03T13:02:00.000Z",
+  "last_edited_time": "2026-07-03T13:02:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_2",
+  "heading_2": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Zusammenfassung",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Zusammenfassung",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "00c37d69-a478-4f0a-8886-19dd9f753434",
+  "parent": {
+   "type": "page_id",
+   "page_id": "ffb94183-19f3-837e-89de-01d87df3bbcb"
+  },
+  "created_time": "2026-07-03T13:02:00.000Z",
+  "last_edited_time": "2026-07-03T13:02:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Du hast einen einfachen Zwei-Agenten-Handoff in Flowise Agentflow V2 gebaut. Der erste Agent hat die Nutzeranfrage analysiert, n\u00fctzlichen Kontext in Flow State gespeichert und die Kontrolle \u00fcber den Graphen an den n\u00e4chsten Agenten weitergegeben. Der zweite Agent hat diesen Kontext genutzt, um eine fokussiertere Antwort zu erzeugen.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Du hast einen einfachen Zwei-Agenten-Handoff in Flowise Agentflow V2 gebaut. Der erste Agent hat die Nutzeranfrage analysiert, n\u00fctzlichen Kontext in Flow State gespeichert und die Kontrolle \u00fcber den Graphen an den n\u00e4chsten Agenten weitergegeben. Der zweite Agent hat diesen Kontext genutzt, um eine fokussiertere Antwort zu erzeugen.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "8c8b1e88-82d1-4e5b-88c1-360d0007dad3",
+  "parent": {
+   "type": "page_id",
+   "page_id": "ffb94183-19f3-837e-89de-01d87df3bbcb"
+  },
+  "created_time": "2026-07-03T13:02:00.000Z",
+  "last_edited_time": "2026-07-03T13:02:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Das ist die Grundlage vorhersehbarer Multi-Agent-Koordination: Agenten \u00fcbergeben strukturierten Kontext \u00fcber einen expliziten Handoff-Vertrag, statt eine Unterhaltung blind fortzusetzen.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Das ist die Grundlage vorhersehbarer Multi-Agent-Koordination: Agenten \u00fcbergeben strukturierten Kontext \u00fcber einen expliziten Handoff-Vertrag, statt eine Unterhaltung blind fortzusetzen.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "d6894183-19f3-820b-9156-812c843c9a5f",
+  "parent": {
+   "type": "page_id",
+   "page_id": "ffb94183-19f3-837e-89de-01d87df3bbcb"
+  },
+  "created_time": "2026-07-02T14:49:00.000Z",
+  "last_edited_time": "2026-07-02T14:49:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ }
+]

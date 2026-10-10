@@ -1,0 +1,2068 @@
+[
+ {
+  "object": "block",
+  "id": "37e94183-19f3-8070-a886-fc14720fcd19",
+  "parent": {
+   "type": "page_id",
+   "page_id": "37e94183-19f3-807d-ab30-cea98d38d2b5"
+  },
+  "created_time": "2026-06-13T17:40:00.000Z",
+  "last_edited_time": "2026-07-01T15:09:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Sofia's Intake Agent (from the previous lesson) does one job well: it classifies a customer message and writes structured context to Flow State. But that's only the first half of a real support workflow. To actually resolve a customer's issue, the Specialist Agent needs to look up the customer's order in Cascadia's order database, check the shipping status through the carrier's API, and pull warranty records from the compliance team's system.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Sofia's Intake Agent (from the previous lesson) does one job well: it classifies a customer message and writes structured context to Flow State. But that's only the first half of a real support workflow. To actually resolve a customer's issue, the Specialist Agent needs to look up the customer's order in Cascadia's order database, check the shipping status through the carrier's API, and pull warranty records from the compliance team's system.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37e94183-19f3-807d-8f4c-e3301959ed54",
+  "parent": {
+   "type": "page_id",
+   "page_id": "37e94183-19f3-807d-ab30-cea98d38d2b5"
+  },
+  "created_time": "2026-06-13T17:40:00.000Z",
+  "last_edited_time": "2026-07-01T15:10:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Traditionally, every one of those integrations required custom code. Sofia's team would write one connector for the order database, another for the shipping API, another for the warranty records \u2014 each with its own format, its own error handling, its own authentication. Every new tool the agent needs is another maintenance burden.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Traditionally, every one of those integrations required custom code. Sofia's team would write one connector for the order database, another for the shipping API, another for the warranty records \u2014 each with its own format, its own error handling, its own authentication. Every new tool the agent needs is another maintenance burden.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37e94183-19f3-8043-98fb-ed3c273ad818",
+  "parent": {
+   "type": "page_id",
+   "page_id": "37e94183-19f3-807d-ab30-cea98d38d2b5"
+  },
+  "created_time": "2026-06-13T17:40:00.000Z",
+  "last_edited_time": "2026-07-01T15:10:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "This creates a familiar problem: agents become powerful, but connecting them to real systems becomes a bottleneck. As the number of tools grows, the integration work grows faster than the value the agent produces.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "This creates a familiar problem: agents become powerful, but connecting them to real systems becomes a bottleneck. As the number of tools grows, the integration work grows faster than the value the agent produces.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37e94183-19f3-8087-85c4-d7ae17153460",
+  "parent": {
+   "type": "page_id",
+   "page_id": "37e94183-19f3-807d-ab30-cea98d38d2b5"
+  },
+  "created_time": "2026-06-13T17:40:00.000Z",
+  "last_edited_time": "2026-07-01T15:10:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Model Context Protocol (MCP) was created to solve this problem.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Model Context Protocol (MCP) was created to solve this problem.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37e94183-19f3-8033-ac3d-fae3c45a902b",
+  "parent": {
+   "type": "page_id",
+   "page_id": "37e94183-19f3-807d-ab30-cea98d38d2b5"
+  },
+  "created_time": "2026-06-13T17:46:00.000Z",
+  "last_edited_time": "2026-06-13T17:47:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_2",
+  "heading_2": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "The integration problem",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "The integration problem",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37e94183-19f3-8068-8c45-c139cba5d3b2",
+  "parent": {
+   "type": "page_id",
+   "page_id": "37e94183-19f3-807d-ab30-cea98d38d2b5"
+  },
+  "created_time": "2026-06-13T17:45:00.000Z",
+  "last_edited_time": "2026-06-13T17:46:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Imagine you are building an AI assistant for a company. The assistant needs to search internal documents, read files from Google Drive, query a PostgreSQL database, create Jira tickets, send Slack messages, and trigger automation workflows. Without a common integration standard, every system requires its own custom connection. Each tool may use different authentication methods, API designs, request formats, and response structures. As more tools are added, the amount of integration work grows quickly, making the system harder to develop, maintain, and scale. This is the challenge that Model Context Protocol (MCP) aims to solve.\n",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Imagine you are building an AI assistant for a company. The assistant needs to search internal documents, read files from Google Drive, query a PostgreSQL database, create Jira tickets, send Slack messages, and trigger automation workflows. Without a common integration standard, every system requires its own custom connection. Each tool may use different authentication methods, API designs, request formats, and response structures. As more tools are added, the amount of integration work grows quickly, making the system harder to develop, maintain, and scale. This is the challenge that Model Context Protocol (MCP) aims to solve.\n",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37e94183-19f3-80fa-b1b0-ff3a98b33c0e",
+  "parent": {
+   "type": "page_id",
+   "page_id": "37e94183-19f3-807d-ab30-cea98d38d2b5"
+  },
+  "created_time": "2026-06-13T17:54:00.000Z",
+  "last_edited_time": "2026-06-13T17:54:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "image",
+  "image": {
+   "caption": [],
+   "type": "file",
+   "file": {
+    "url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/3a9085c4-df29-45e6-8bc7-6c9c0a25ea8c/92f010e0-3910-4924-9a6e-6eb469bb0d8c/image.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB4666UIBBVRA%2F20261010%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20261010T074525Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEIf%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJHMEUCIGT3v1cO6vr80c2IuxWJ4Kb1tnkQd9puYByJkuU5VGqmAiEAgpQW3XNdFwx3BSj59f%2FXunjcIHT3jkPPnfcBy27Y%2Fvkq%2FwMIUBAAGgw2Mzc0MjMxODM4MDUiDMv8AuQuN1anh2vqLSrcA95W2VRAb1Yyqcp7tUc53kCpaBJWEy1dQxupRLgOasfOfS0vdF3rrf0LO4wWni2Y0OpiliVbaYHWmCh3O5ahr1gt6lbCX736nETtlUGMyZeMef2itZ4n0VeQ5oG1AvUdc5Jzl0qWR6YfFTFugx8LbprG9vK1FwvfwT7PICmBz8xNJHX0qRJsM86ZGNR%2B4py7pEdCKxo3IBWlzO05F%2B%2Fw%2FMkERB5H6s2j50ECt5Ko9BSZwBXWLaK0ryCtTlQ5dFXAsNSuNl7hLjSsn1uyGUpsnFeRChX1TATPUvOogLg10sq3uxF3R%2FPyXPAdrNrv1PRLzS5WDXRprgJgSLIFBq8gAOCxOC3bjD%2Bosdb%2FQmibwxUG8Tr8UmmlJ463dhxFak1MvG9pZsaOZPQ6d7ZwJG%2FWSOk2qXXpca7KvhtIcHJVqsDG0Fwp4EY7rMlgyol9Cv%2Blils7ojtRrkhELmKICIGGFZSIGaT3lfV1%2BHP9Si6xa6Lf0Pfzm76ADBjrrigq0HJlATHPRBJNwlirTINDj388k8mRP7oonylHiByy8tTvYVoV5PnwT8RPzuzB%2FvqL5QhEp3vV8L8k8qANKjrgaJDsjYE1%2BMBMXM7ghqT2TrfqOQTrJydy%2Bc0pRGIiEdaFMK23p9YGOqUBY%2BFA8Q3yR1mQvbxDnsyiYmsAmDIcgz8CDyH0xuSZX%2BaDAg%2FUMPVUR7i1CcWBM0YGyBi4c3FY%2BufMjsN6Nki%2BxdDapby2zthHhC6qmNVMJ53BE1ep%2BbC%2FDguJccnXUFlVljy6PmVMyy8VlF4kK35IefEIi%2FROJma55Wn6cPC5dbxHXtGJMNgk6HWEG44XiuTuBrJZyi5GVU1V7FdIDCPHUKH%2BedYD&X-Amz-Signature=93f7ee41fd0f67f4fbba0c670a5b7dbb0037c7232ab0cadaa89a35495749fe5f&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+    "expiry_time": "2026-10-10T08:45:25.648Z"
+   }
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37e94183-19f3-80b5-8241-f0064def9dc9",
+  "parent": {
+   "type": "page_id",
+   "page_id": "37e94183-19f3-807d-ab30-cea98d38d2b5"
+  },
+  "created_time": "2026-06-13T17:57:00.000Z",
+  "last_edited_time": "2026-06-13T17:57:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_2",
+  "heading_2": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "What is MCP?",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "What is MCP?",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37e94183-19f3-80b8-bad5-c93ef92fc625",
+  "parent": {
+   "type": "page_id",
+   "page_id": "37e94183-19f3-807d-ab30-cea98d38d2b5"
+  },
+  "created_time": "2026-06-13T17:57:00.000Z",
+  "last_edited_time": "2026-06-13T17:57:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Model Context Protocol (MCP)",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Model Context Protocol (MCP)",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " is an open protocol that allows AI models and agents to communicate with external tools and data sources through a standardized interface.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " is an open protocol that allows AI models and agents to communicate with external tools and data sources through a standardized interface.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37e94183-19f3-80c0-8135-fda7ed656451",
+  "parent": {
+   "type": "page_id",
+   "page_id": "37e94183-19f3-807d-ab30-cea98d38d2b5"
+  },
+  "created_time": "2026-06-13T17:57:00.000Z",
+  "last_edited_time": "2026-06-13T17:57:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Instead of building a custom connection for every system, developers implement the MCP standard once.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Instead of building a custom connection for every system, developers implement the MCP standard once.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37e94183-19f3-80dc-bc79-e778bf9ca46c",
+  "parent": {
+   "type": "page_id",
+   "page_id": "37e94183-19f3-807d-ab30-cea98d38d2b5"
+  },
+  "created_time": "2026-06-13T17:57:00.000Z",
+  "last_edited_time": "2026-06-13T17:57:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "An MCP-compatible agent can then work with any MCP-compatible tool.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "An MCP-compatible agent can then work with any MCP-compatible tool.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37e94183-19f3-8034-b8ec-e9f9193b28a0",
+  "parent": {
+   "type": "page_id",
+   "page_id": "37e94183-19f3-807d-ab30-cea98d38d2b5"
+  },
+  "created_time": "2026-06-13T17:57:00.000Z",
+  "last_edited_time": "2026-06-13T17:58:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "You can think of MCP as a universal power adapter when traveling. ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "You can think of MCP as a universal power adapter when traveling. ",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37e94183-19f3-8043-8d7d-faf611a94ba7",
+  "parent": {
+   "type": "page_id",
+   "page_id": "37e94183-19f3-807d-ab30-cea98d38d2b5"
+  },
+  "created_time": "2026-06-13T17:58:00.000Z",
+  "last_edited_time": "2026-06-13T17:58:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "When you travel between countries, every country may have different wall sockets. Without a universal adapter, you need a different plug for every destination. The more countries you visit, the more adapters you need to carry.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "When you travel between countries, every country may have different wall sockets. Without a universal adapter, you need a different plug for every destination. The more countries you visit, the more adapters you need to carry.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37e94183-19f3-8053-a68b-ff3ec117f0dd",
+  "parent": {
+   "type": "page_id",
+   "page_id": "37e94183-19f3-807d-ab30-cea98d38d2b5"
+  },
+  "created_time": "2026-06-13T17:58:00.000Z",
+  "last_edited_time": "2026-06-13T17:58:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "MCP works in a similar way for AI agents. Instead of building a different connection for every tool, database, or application, the agent connects through one common standard. As long as a tool supports MCP, the agent can interact with it without needing a custom integration.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "MCP works in a similar way for AI agents. Instead of building a different connection for every tool, database, or application, the agent connects through one common standard. As long as a tool supports MCP, the agent can interact with it without needing a custom integration.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37e94183-19f3-8019-937a-e0fd2de2e957",
+  "parent": {
+   "type": "page_id",
+   "page_id": "37e94183-19f3-807d-ab30-cea98d38d2b5"
+  },
+  "created_time": "2026-06-13T18:00:00.000Z",
+  "last_edited_time": "2026-06-13T18:00:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_2",
+  "heading_2": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "MCP architecture",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "MCP architecture",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37e94183-19f3-80a9-a2cd-d35d151f8663",
+  "parent": {
+   "type": "page_id",
+   "page_id": "37e94183-19f3-807d-ab30-cea98d38d2b5"
+  },
+  "created_time": "2026-06-13T18:00:00.000Z",
+  "last_edited_time": "2026-06-13T18:00:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "At a high level, MCP introduces two main components:",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "At a high level, MCP introduces two main components:",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37e94183-19f3-80fe-abe2-d8744b3759ae",
+  "parent": {
+   "type": "page_id",
+   "page_id": "37e94183-19f3-807d-ab30-cea98d38d2b5"
+  },
+  "created_time": "2026-06-13T18:00:00.000Z",
+  "last_edited_time": "2026-07-05T11:39:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": true,
+  "in_trash": false,
+  "type": "table",
+  "table": {
+   "table_width": 2,
+   "has_column_header": true,
+   "has_row_header": false
+  },
+  "archived": false,
+  "_children": [
+   {
+    "object": "block",
+    "id": "37e94183-19f3-80ba-8598-ec4e04ce0440",
+    "parent": {
+     "type": "block_id",
+     "block_id": "37e94183-19f3-80fe-abe2-d8744b3759ae"
+    },
+    "created_time": "2026-06-13T18:00:00.000Z",
+    "last_edited_time": "2026-06-13T18:00:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "table_row",
+    "table_row": {
+     "cells": [
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Component",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Component",
+        "href": null
+       }
+      ],
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Purpose",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Purpose",
+        "href": null
+       }
+      ]
+     ]
+    },
+    "archived": false
+   },
+   {
+    "object": "block",
+    "id": "37e94183-19f3-8070-b4d5-f28681aeb256",
+    "parent": {
+     "type": "block_id",
+     "block_id": "37e94183-19f3-80fe-abe2-d8744b3759ae"
+    },
+    "created_time": "2026-06-13T18:00:00.000Z",
+    "last_edited_time": "2026-06-13T18:00:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "table_row",
+    "table_row": {
+     "cells": [
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "MCP Client",
+         "link": null
+        },
+        "annotations": {
+         "bold": true,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "MCP Client",
+        "href": null
+       }
+      ],
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "The agent or application requesting access",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "The agent or application requesting access",
+        "href": null
+       }
+      ]
+     ]
+    },
+    "archived": false
+   },
+   {
+    "object": "block",
+    "id": "37e94183-19f3-80a8-b25d-c7a745dd3033",
+    "parent": {
+     "type": "block_id",
+     "block_id": "37e94183-19f3-80fe-abe2-d8744b3759ae"
+    },
+    "created_time": "2026-06-13T18:00:00.000Z",
+    "last_edited_time": "2026-06-13T18:00:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "table_row",
+    "table_row": {
+     "cells": [
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "MCP Server",
+         "link": null
+        },
+        "annotations": {
+         "bold": true,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "MCP Server",
+        "href": null
+       }
+      ],
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "The system exposing tools, resources, or actions",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "The system exposing tools, resources, or actions",
+        "href": null
+       }
+      ]
+     ]
+    },
+    "archived": false
+   }
+  ]
+ },
+ {
+  "object": "block",
+  "id": "37e94183-19f3-8087-a810-f94c3a24955f",
+  "parent": {
+   "type": "page_id",
+   "page_id": "37e94183-19f3-807d-ab30-cea98d38d2b5"
+  },
+  "created_time": "2026-06-13T18:01:00.000Z",
+  "last_edited_time": "2026-06-13T18:01:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "The agent does not need to know implementation details.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "The agent does not need to know implementation details.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37e94183-19f3-8073-8741-f2aaf4c4bd8c",
+  "parent": {
+   "type": "page_id",
+   "page_id": "37e94183-19f3-807d-ab30-cea98d38d2b5"
+  },
+  "created_time": "2026-06-13T18:01:00.000Z",
+  "last_edited_time": "2026-06-13T18:01:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Instead, it asks the MCP server:",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Instead, it asks the MCP server:",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37e94183-19f3-80f7-9338-e56ae27ab7df",
+  "parent": {
+   "type": "page_id",
+   "page_id": "37e94183-19f3-807d-ab30-cea98d38d2b5"
+  },
+  "created_time": "2026-06-13T18:01:00.000Z",
+  "last_edited_time": "2026-06-13T18:01:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "What tools are available?",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "What tools are available?",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37e94183-19f3-8020-a792-c32c4beead97",
+  "parent": {
+   "type": "page_id",
+   "page_id": "37e94183-19f3-807d-ab30-cea98d38d2b5"
+  },
+  "created_time": "2026-06-13T18:01:00.000Z",
+  "last_edited_time": "2026-06-13T18:01:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "What parameters does this tool require?",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "What parameters does this tool require?",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37e94183-19f3-8081-b4fb-fde7e3702724",
+  "parent": {
+   "type": "page_id",
+   "page_id": "37e94183-19f3-807d-ab30-cea98d38d2b5"
+  },
+  "created_time": "2026-06-13T18:01:00.000Z",
+  "last_edited_time": "2026-06-13T18:01:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "How should I call it?",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "How should I call it?",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37e94183-19f3-8037-87c1-ec085f694e3e",
+  "parent": {
+   "type": "page_id",
+   "page_id": "37e94183-19f3-807d-ab30-cea98d38d2b5"
+  },
+  "created_time": "2026-06-13T18:01:00.000Z",
+  "last_edited_time": "2026-06-13T18:01:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "The MCP server provides this information in a standard format.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "The MCP server provides this information in a standard format.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37e94183-19f3-807f-bc57-c8f407c99172",
+  "parent": {
+   "type": "page_id",
+   "page_id": "37e94183-19f3-807d-ab30-cea98d38d2b5"
+  },
+  "created_time": "2026-06-13T18:09:00.000Z",
+  "last_edited_time": "2026-06-13T18:09:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37e94183-19f3-8008-be74-e42a51410b12",
+  "parent": {
+   "type": "page_id",
+   "page_id": "37e94183-19f3-807d-ab30-cea98d38d2b5"
+  },
+  "created_time": "2026-06-13T18:16:00.000Z",
+  "last_edited_time": "2026-06-13T18:16:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "image",
+  "image": {
+   "caption": [],
+   "type": "file",
+   "file": {
+    "url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/3a9085c4-df29-45e6-8bc7-6c9c0a25ea8c/5cda8db7-1485-49aa-bc9d-70defe1fa0b4/image.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB4666UIBBVRA%2F20261010%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20261010T074525Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEIf%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJHMEUCIGT3v1cO6vr80c2IuxWJ4Kb1tnkQd9puYByJkuU5VGqmAiEAgpQW3XNdFwx3BSj59f%2FXunjcIHT3jkPPnfcBy27Y%2Fvkq%2FwMIUBAAGgw2Mzc0MjMxODM4MDUiDMv8AuQuN1anh2vqLSrcA95W2VRAb1Yyqcp7tUc53kCpaBJWEy1dQxupRLgOasfOfS0vdF3rrf0LO4wWni2Y0OpiliVbaYHWmCh3O5ahr1gt6lbCX736nETtlUGMyZeMef2itZ4n0VeQ5oG1AvUdc5Jzl0qWR6YfFTFugx8LbprG9vK1FwvfwT7PICmBz8xNJHX0qRJsM86ZGNR%2B4py7pEdCKxo3IBWlzO05F%2B%2Fw%2FMkERB5H6s2j50ECt5Ko9BSZwBXWLaK0ryCtTlQ5dFXAsNSuNl7hLjSsn1uyGUpsnFeRChX1TATPUvOogLg10sq3uxF3R%2FPyXPAdrNrv1PRLzS5WDXRprgJgSLIFBq8gAOCxOC3bjD%2Bosdb%2FQmibwxUG8Tr8UmmlJ463dhxFak1MvG9pZsaOZPQ6d7ZwJG%2FWSOk2qXXpca7KvhtIcHJVqsDG0Fwp4EY7rMlgyol9Cv%2Blils7ojtRrkhELmKICIGGFZSIGaT3lfV1%2BHP9Si6xa6Lf0Pfzm76ADBjrrigq0HJlATHPRBJNwlirTINDj388k8mRP7oonylHiByy8tTvYVoV5PnwT8RPzuzB%2FvqL5QhEp3vV8L8k8qANKjrgaJDsjYE1%2BMBMXM7ghqT2TrfqOQTrJydy%2Bc0pRGIiEdaFMK23p9YGOqUBY%2BFA8Q3yR1mQvbxDnsyiYmsAmDIcgz8CDyH0xuSZX%2BaDAg%2FUMPVUR7i1CcWBM0YGyBi4c3FY%2BufMjsN6Nki%2BxdDapby2zthHhC6qmNVMJ53BE1ep%2BbC%2FDguJccnXUFlVljy6PmVMyy8VlF4kK35IefEIi%2FROJma55Wn6cPC5dbxHXtGJMNgk6HWEG44XiuTuBrJZyi5GVU1V7FdIDCPHUKH%2BedYD&X-Amz-Signature=f7a6f68df2d78913e7dfaea1010230ef5573feeffc1afded7769fc124a1057a9&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+    "expiry_time": "2026-10-10T08:45:25.648Z"
+   }
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37e94183-19f3-8039-acd8-f003cffd8af3",
+  "parent": {
+   "type": "page_id",
+   "page_id": "37e94183-19f3-807d-ab30-cea98d38d2b5"
+  },
+  "created_time": "2026-06-13T18:16:00.000Z",
+  "last_edited_time": "2026-06-13T18:16:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_2",
+  "heading_2": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "What can MCP connect to?",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "What can MCP connect to?",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37e94183-19f3-8060-a8e0-c36b35c446d2",
+  "parent": {
+   "type": "page_id",
+   "page_id": "37e94183-19f3-807d-ab30-cea98d38d2b5"
+  },
+  "created_time": "2026-06-13T18:19:00.000Z",
+  "last_edited_time": "2026-06-13T18:19:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "An MCP server can expose many different kinds of resources to an AI agent. These resources may include files such as PDFs, spreadsheets, and documents; databases such as PostgreSQL, MySQL, or Snowflake; external APIs like weather services, CRM systems, or ERP platforms; knowledge bases such as Notion, Confluence, and SharePoint; communication tools including Slack, Microsoft Teams, and Gmail; automation platforms like n8n, Zapier, and Make; and developer tools such as GitHub, GitLab, and Jira.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "An MCP server can expose many different kinds of resources to an AI agent. These resources may include files such as PDFs, spreadsheets, and documents; databases such as PostgreSQL, MySQL, or Snowflake; external APIs like weather services, CRM systems, or ERP platforms; knowledge bases such as Notion, Confluence, and SharePoint; communication tools including Slack, Microsoft Teams, and Gmail; automation platforms like n8n, Zapier, and Make; and developer tools such as GitHub, GitLab, and Jira.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37e94183-19f3-8072-9945-c8824a9bcab6",
+  "parent": {
+   "type": "page_id",
+   "page_id": "37e94183-19f3-807d-ab30-cea98d38d2b5"
+  },
+  "created_time": "2026-06-13T18:19:00.000Z",
+  "last_edited_time": "2026-06-13T18:19:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "The key advantage of MCP is that, from the agent's perspective, all of these resources appear as discoverable tools that can be accessed through a consistent interaction pattern. This allows the agent to work with many different systems without needing a custom integration for each one.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "The key advantage of MCP is that, from the agent's perspective, all of these resources appear as discoverable tools that can be accessed through a consistent interaction pattern. This allows the agent to work with many different systems without needing a custom integration for each one.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37e94183-19f3-801a-b0a8-cc103e297a35",
+  "parent": {
+   "type": "page_id",
+   "page_id": "37e94183-19f3-807d-ab30-cea98d38d2b5"
+  },
+  "created_time": "2026-06-13T18:19:00.000Z",
+  "last_edited_time": "2026-06-13T18:21:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_2",
+  "heading_2": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Why MCP matters for agents",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Why MCP matters for agents",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37e94183-19f3-8004-bcda-f36ccc66e8c3",
+  "parent": {
+   "type": "page_id",
+   "page_id": "37e94183-19f3-807d-ab30-cea98d38d2b5"
+  },
+  "created_time": "2026-06-13T18:21:00.000Z",
+  "last_edited_time": "2026-06-13T18:21:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "MCP is becoming important because agents rarely operate in isolation. Most useful agents need access to information, the ability to take actions, and connections to business systems while working across multiple tools and platforms. Traditionally, every new integration required custom engineering effort, meaning developers had to build and maintain separate connections for each system.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "MCP is becoming important because agents rarely operate in isolation. Most useful agents need access to information, the ability to take actions, and connections to business systems while working across multiple tools and platforms. Traditionally, every new integration required custom engineering effort, meaning developers had to build and maintain separate connections for each system.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37e94183-19f3-8099-aba8-d0f1aac86e9c",
+  "parent": {
+   "type": "page_id",
+   "page_id": "37e94183-19f3-807d-ab30-cea98d38d2b5"
+  },
+  "created_time": "2026-06-13T18:21:00.000Z",
+  "last_edited_time": "2026-06-13T18:21:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "MCP addresses this challenge by providing a standardized way for agents to discover and interact with external resources. As a result, integrating new tools becomes simpler, extending an agent's capabilities no longer requires changes to its core logic, and organizations can benefit from a growing ecosystem of compatible tools built by different providers. This allows developers to focus on designing intelligent agent behavior rather than spending time on integration and infrastructure work.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "MCP addresses this challenge by providing a standardized way for agents to discover and interact with external resources. As a result, integrating new tools becomes simpler, extending an agent's capabilities no longer requires changes to its core logic, and organizations can benefit from a growing ecosystem of compatible tools built by different providers. This allows developers to focus on designing intelligent agent behavior rather than spending time on integration and infrastructure work.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37e94183-19f3-80ff-b9fb-fcc8ade528db",
+  "parent": {
+   "type": "page_id",
+   "page_id": "37e94183-19f3-807d-ab30-cea98d38d2b5"
+  },
+  "created_time": "2026-06-13T18:22:00.000Z",
+  "last_edited_time": "2026-07-01T15:11:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_2",
+  "heading_2": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Check for Understanding",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Check for Understanding",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "39094183-19f3-81bf-b8e4-d3139ac450ee",
+  "parent": {
+   "type": "page_id",
+   "page_id": "37e94183-19f3-807d-ab30-cea98d38d2b5"
+  },
+  "created_time": "2026-07-01T15:11:00.000Z",
+  "last_edited_time": "2026-07-01T15:11:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_3",
+  "heading_3": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Question 1",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Question 1",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "39494183-19f3-8077-b8ef-e186e83ad4d5",
+  "parent": {
+   "type": "page_id",
+   "page_id": "37e94183-19f3-807d-ab30-cea98d38d2b5"
+  },
+  "created_time": "2026-07-05T13:49:00.000Z",
+  "last_edited_time": "2026-07-05T13:50:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": true,
+  "in_trash": false,
+  "type": "callout",
+  "callout": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Your agent needs to access several systems:",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Your agent needs to access several systems:",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "gray_background"
+  },
+  "archived": false,
+  "_children": [
+   {
+    "object": "block",
+    "id": "39494183-19f3-8010-ae22-c268ee420cfe",
+    "parent": {
+     "type": "block_id",
+     "block_id": "39494183-19f3-8077-b8ef-e186e83ad4d5"
+    },
+    "created_time": "2026-07-05T13:50:00.000Z",
+    "last_edited_time": "2026-07-05T13:50:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "bulleted_list_item",
+    "bulleted_list_item": {
+     "rich_text": [
+      {
+       "type": "text",
+       "text": {
+        "content": "A PostgreSQL database",
+        "link": null
+       },
+       "annotations": {
+        "bold": false,
+        "italic": false,
+        "strikethrough": false,
+        "underline": false,
+        "code": false,
+        "color": "default"
+       },
+       "plain_text": "A PostgreSQL database",
+       "href": null
+      }
+     ],
+     "color": "default"
+    },
+    "archived": false
+   },
+   {
+    "object": "block",
+    "id": "39494183-19f3-8072-bbed-d1ab9bc4e8bd",
+    "parent": {
+     "type": "block_id",
+     "block_id": "39494183-19f3-8077-b8ef-e186e83ad4d5"
+    },
+    "created_time": "2026-07-05T13:50:00.000Z",
+    "last_edited_time": "2026-07-05T13:50:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "bulleted_list_item",
+    "bulleted_list_item": {
+     "rich_text": [
+      {
+       "type": "text",
+       "text": {
+        "content": "A file storage system",
+        "link": null
+       },
+       "annotations": {
+        "bold": false,
+        "italic": false,
+        "strikethrough": false,
+        "underline": false,
+        "code": false,
+        "color": "default"
+       },
+       "plain_text": "A file storage system",
+       "href": null
+      }
+     ],
+     "color": "default"
+    },
+    "archived": false
+   },
+   {
+    "object": "block",
+    "id": "39494183-19f3-80d8-92ef-c40d95423de6",
+    "parent": {
+     "type": "block_id",
+     "block_id": "39494183-19f3-8077-b8ef-e186e83ad4d5"
+    },
+    "created_time": "2026-07-05T13:50:00.000Z",
+    "last_edited_time": "2026-07-05T13:50:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "bulleted_list_item",
+    "bulleted_list_item": {
+     "rich_text": [
+      {
+       "type": "text",
+       "text": {
+        "content": "A ticketing platform",
+        "link": null
+       },
+       "annotations": {
+        "bold": false,
+        "italic": false,
+        "strikethrough": false,
+        "underline": false,
+        "code": false,
+        "color": "default"
+       },
+       "plain_text": "A ticketing platform",
+       "href": null
+      }
+     ],
+     "color": "default"
+    },
+    "archived": false
+   },
+   {
+    "object": "block",
+    "id": "39494183-19f3-805a-83b3-fb8f7b0599d3",
+    "parent": {
+     "type": "block_id",
+     "block_id": "39494183-19f3-8077-b8ef-e186e83ad4d5"
+    },
+    "created_time": "2026-07-05T13:50:00.000Z",
+    "last_edited_time": "2026-07-05T13:50:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+     "rich_text": [
+      {
+       "type": "text",
+       "text": {
+        "content": "Which statement best describes the role of MCP?",
+        "link": null
+       },
+       "annotations": {
+        "bold": false,
+        "italic": false,
+        "strikethrough": false,
+        "underline": false,
+        "code": false,
+        "color": "default"
+       },
+       "plain_text": "Which statement best describes the role of MCP?",
+       "href": null
+      }
+     ],
+     "icon": null,
+     "color": "default"
+    },
+    "archived": false
+   },
+   {
+    "object": "block",
+    "id": "39494183-19f3-80a1-a284-d9064d3b06dc",
+    "parent": {
+     "type": "block_id",
+     "block_id": "39494183-19f3-8077-b8ef-e186e83ad4d5"
+    },
+    "created_time": "2026-07-05T13:49:00.000Z",
+    "last_edited_time": "2026-07-05T13:50:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "embed",
+    "embed": {
+     "caption": [],
+     "url": "https://app.masterschool.com/campus/multi-choice-question/83293b5d-051f-4818-91c2-3a75451acf74"
+    },
+    "archived": false
+   }
+  ]
+ },
+ {
+  "object": "block",
+  "id": "39094183-19f3-81ba-aafd-f1e622e5881a",
+  "parent": {
+   "type": "page_id",
+   "page_id": "37e94183-19f3-807d-ab30-cea98d38d2b5"
+  },
+  "created_time": "2026-07-01T15:11:00.000Z",
+  "last_edited_time": "2026-07-05T13:50:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37e94183-19f3-80ca-9bf1-e7000af08d93",
+  "parent": {
+   "type": "page_id",
+   "page_id": "37e94183-19f3-807d-ab30-cea98d38d2b5"
+  },
+  "created_time": "2026-06-13T18:22:00.000Z",
+  "last_edited_time": "2026-06-13T18:22:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_2",
+  "heading_2": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Summary",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Summary",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "39094183-19f3-81ba-8100-e02bbf5fea0e",
+  "parent": {
+   "type": "page_id",
+   "page_id": "37e94183-19f3-807d-ab30-cea98d38d2b5"
+  },
+  "created_time": "2026-07-01T15:11:00.000Z",
+  "last_edited_time": "2026-07-01T15:11:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Before MCP, every tool Sofia needs at Cascadia would require its own custom connector \u2014 one for the order database, another for the shipping API, another for the warranty system. MCP replaces that per-tool integration work with one standard protocol that any MCP-compatible tool can plug into.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Before MCP, every tool Sofia needs at Cascadia would require its own custom connector \u2014 one for the order database, another for the shipping API, another for the warranty system. MCP replaces that per-tool integration work with one standard protocol that any MCP-compatible tool can plug into.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "39094183-19f3-81b5-bcaa-c83d5e671739",
+  "parent": {
+   "type": "page_id",
+   "page_id": "37e94183-19f3-807d-ab30-cea98d38d2b5"
+  },
+  "created_time": "2026-07-01T15:11:00.000Z",
+  "last_edited_time": "2026-07-01T15:11:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "In the next lesson, Sofia connects an actual MCP tool to a Flowise agent and watches the agent discover and call it.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "In the next lesson, Sofia connects an actual MCP tool to a Flowise agent and watches the agent discover and call it.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37e94183-19f3-800b-adc8-f5d9b4c9b508",
+  "parent": {
+   "type": "page_id",
+   "page_id": "37e94183-19f3-807d-ab30-cea98d38d2b5"
+  },
+  "created_time": "2026-06-13T18:22:00.000Z",
+  "last_edited_time": "2026-06-13T18:22:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ }
+]

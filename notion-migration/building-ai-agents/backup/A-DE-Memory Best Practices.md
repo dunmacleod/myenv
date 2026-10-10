@@ -1,0 +1,42 @@
+# Memory Best Practices
+
+Notion page: https://app.notion.com/p/Memory-Best-Practices-3779418319f3801cb3c8d7f41e467fe8
+Backed up before n8n migration
+
+> 💡 Nach dieser Lektion verstehst du genau, nach welchen Kernregeln Informationen in das Gedächtnis des Agenten aufgenommen oder bewusst ausgeschlossen werden sollten. Zudem erfährst du, wie du dich vor den häufigsten Fehlern beim Speichermanagement schützt, damit dein KI-Agent auch im Live-Betrieb absolut zuverlässig arbeitet.
+
+## Warum Best Practices in dieser Phase wichtig sind
+Der Agent der Contigo GmbH kann jetzt Gespräche mithilfe von Buffer Memory führen, Sessions mithilfe von Session IDs isolieren und die Kontextlänge mithilfe von Buffer Window Memory steuern. Die technischen Grundlagen sind vorhanden. Aber eine funktionierende Memory-Konfiguration zu haben und eine gut entworfene zu haben, ist nicht dasselbe.
+Beim Testen ist das Team der Contigo GmbH bereits auf drei wiederkehrende Probleme gestoßen: Erstens speichert der Agent gelegentlich Informationen, die er eigentlich ignorieren sollte – darunter sensible Details, die erhebliche Datenschutzrisiken bergen. Zweitens wächst die Datenbank seines Langzeitgedächtnisses viel schneller als erwartet, weil sich darin riesige Datenmengen ansammeln, die niemals abgerufen werden und keinerlei Nutzen bringen. Zu guter Letzt blieb in einem Fall eine Fehlinformation, die früh in einer Session erfasst wurde, über mehrere Gesprächsrunden hinweg bestehen. Dadurch erteilte der Agent dem Kunden über mehrere Nachrichtenwechsel hinweg ungenaue Auskünfte, bevor ein menschlicher Prüfer den Fehler bemerkte.
+Das alles sind keine einfachen Konfigurationsfehler. Es sind grundlegende Designfehler und sie entstehen immer genau dann, wenn klare Richtlinien dafür fehlen, wie sich das Gedächtnis des Agenten verhalten soll.
+## Regel 1: Das notwendige Minimum speichern
+Der häufigste Fehler beim Speichermanagement ist es, schlichtweg zu viele Daten zu speichern. Entwickler konfigurieren KI-Agenten oft so, dass sie jede Aussage eines Nutzers lückenlos erfassen, weil sie annehmen, dass mehr Kontext automatisch auch bessere Ergebnisse liefert. Das ist jedoch ein Trugschluss.
+Das Speichern überflüssiger Inhalte bringt drei konkrete Nachteile mit sich. Es vergrößert bei jeder folgenden Gesprächsrunde das Kontextfenster, was die Token-Kosten in die Höhe treibt und die Konzentration des Modells bei langen Dialogen verschlechtert. Zudem füllt es die Datenbank des Langzeitgedächtnisses mit digitalem Rauschen, was das präzise Abrufen relevanter Informationen erschwert. Schließlich vergrößert jede unnötige Information die Angriffsfläche für Datenschutzrisiken, sollte es jemals zu einem unbefugten Zugriff auf die Datenbank kommen.
+Die Regel ist einfach: Speichere nur, was der Agent in einer zukünftigen Interaktion wirklich nutzen würde, um den Kunden besser zu betreuen. Wenn die Frage „Würde sich der Agent im nächsten Gespräch dadurch verbessern?“ keine klare Antwort hat, sollte die Information nicht gespeichert werden.
+
+> In deinem Chatflow: Dein Buffer-Window-Memory-Node wendet dieses Prinzip bereits an, indem er den aktiven Kontext auf die letzten K Nachrichten begrenzt. Die Fenstergröße, die du konfiguriert hast, ist deine erste Umsetzung dieser Regel.
+Stelle dir folgende Frage: Benötigt der Agent wirklich jede einzelne Nachricht innerhalb dieses Fensters, um den Kunden in der aktuellen Gesprächsrunde optimal zu unterstützen?
+
+## Regel 2: Sensible Identifikatoren niemals in Memory-Protokollen speichern
+Finanzzugangsdaten, staatlich ausgestellte Identifikatoren, Gesundheitsangaben und ähnliche sensible Daten sollten niemals in Gesprächs-Memory geschrieben werden (weder Kurzzeit- noch Langzeit-Memory).
+Diese Elemente sollten einem von zwei Pfaden folgen. Wenn sie benötigt werden, um eine Aktion abzuschließen (eine IBAN, die zur Aktualisierung einer Lastschrift erforderlich ist), sollten sie direkt über einen API-Aufruf an ein sicheres Tool übergeben und anschließend aus dem Gesprächskontext verworfen werden. Wenn sie für keine unmittelbare Aktion benötigt werden, sollten sie vollständig fallengelassen werden.
+Das ist nicht nur eine Sicherheitspraxis. Nach der EU-Datenschutz-Grundverordnung ist das Speichern besonderer Kategorien personenbezogener Daten ohne ausdrückliche Rechtsgrundlage und angemessene Schutzmaßnahmen ein regulatorischer Verstoß. In Contigos Betriebsumfeld ist diese Unterscheidung nicht verhandelbar.
+> In deinem Chatflow: Dein aktueller Build hat noch keine Tool-Verbindungen. Das kommt später. Für den Moment besteht das korrekte Verhalten darin, sicherzustellen, dass dein System-Prompt den Agenten anweist, sensible Daten anzuerkennen, ohne sie zu wiederholen oder unnötig im Gesprächsverlauf zu speichern. Das ist die Design-Einschränkung, die deine Tool-Konfiguration später korrekt durchsetzen wird. 
+## Regel 3: Zeitbasierten Verfall auf Langzeit-Memory anwenden
+Langzeit-Memory-Datenbanken wachsen unbegrenzt, wenn sie nicht aktiv verwaltet werden. Informationen, die vor sechs Monaten relevant waren, können heute veraltet oder ungenau sein. Manchmal passen sie einfach nicht mehr zur aktuellen Situation des Kunden.
+Implementiere eine zeitbasierte Ablaufrichtlinie, die Speichereinträge nach einem festgelegten Zeitraum automatisch niedriger einstuft oder ganz entfernt. Die exakte Dauer dieses Zeitraums hängt stark vom jeweiligen Anwendungsfall ab. Während eine persönliche Kundeneinstellung, wie die bevorzugte Kommunikationsart, oft über Jahre hinweg gültig bleibt, kann ein Hinweis auf eine temporäre Kontobeschränkung schon nach wenigen Wochen völlig irrelevant sein.
+Der Schlüssel ist, diese Entscheidung bewusst zu treffen, statt zuzulassen, dass sich die Datenbank unbegrenzt ansammelt.
+> In deinem Chatflow: Buffer Window Memory erledigt dies automatisch, indem Nachrichten außerhalb des Fensters verworfen werden. Automatische Trunkierung ist jedoch nicht dasselbe wie eine bewusste Verfalls-Policy. Überlege, welche Informationen im Gesprächsverlauf deines Contigo-Agenten in einer langen Session weiterhin relevant wären und welche nach wenigen Turns irrelevant werden.
+
+## Regel 4: Gespeicherte Fakten validieren und Konflikte behandeln
+Memory Poisoning tritt auf, wenn falsche Informationen gespeichert und dann in zukünftigen Sessions abgerufen werden, als wären sie wahr. Das kann passieren, wenn ein Kunde ungenaue Details angibt, wenn das Sprachmodell eine Tatsache halluziniert, die ins Memory geschrieben wird, oder wenn neue Informationen etwas widersprechen, das zuvor gespeichert wurde.
+Definiere eine klare Regel zur Konfliktlösung, bevor es im Live-Betrieb zu Problemen kommt. Wenn neue Informationen einem bestehenden Speichereintrag widersprechen, benötigt der Agent eine eindeutige Handlungsanweisung. Dabei muss festgelegt sein, ob er den alten Eintrag automatisch überschreibt, den Konflikt für eine menschliche Überprüfung markiert oder direkt beim Kunden nachfragt, welche Version korrekt ist.
+> In deinem Chatflow: Dein Buffer-Window-Memory-Node hat keine eingebaute Konfliktlösung. Wenn ein Kunde Informationen korrigiert, die er zuvor angegeben hat, sieht der Agent beide Versionen, sofern sie innerhalb des aktiven Fensters liegen. Dein System-Prompt sollte eine klare Anweisung enthalten, wie damit umzugehen ist. Eine einfache Regel wie „immer die zuletzt angegebene Information als korrekt behandeln“ reicht in dieser Phase aus.
+![image]((notion-hosted file))
+
+## Verständnis prüfen
+>  Ein Contigo-Agent speichert jede Nachricht aus jedem Kundengespräch ohne Filterung in seiner Langzeit-Memory-Datenbank. Was ist das unmittelbarste operative Risiko?
+  [EMBED] https://app.masterschool.com/campus/multi-choice-question/70486b01-e24a-4ab1-b969-464671e71314
+
+> 💡 Takeaway: 
+  Gutes Memory-Design zeichnet sich gleichermaßen dadurch aus, was der Agent vergisst, wie durch das, woran er sich erinnert. Nur wer das notwendige Minimum speichert, sensible Daten schützt, das Datenbankwachstum kontrolliert und widersprüchliche Informationen gezielt behandelt, meistert die vier entscheidenden Säulen des Speichermanagements. Sie machen letztlich den Unterschied aus, ob deine Konfiguration nur in einer kurzen Demo glänzt oder im echten Live-Betrieb dauerhaft standhält.

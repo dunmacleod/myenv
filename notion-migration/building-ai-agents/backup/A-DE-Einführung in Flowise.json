@@ -1,0 +1,1856 @@
+[
+ {
+  "object": "block",
+  "id": "37794183-19f3-808b-bc8a-dc5c976dfd25",
+  "parent": {
+   "type": "page_id",
+   "page_id": "37794183-19f3-80ea-99fc-f1f781cb6d1b"
+  },
+  "created_time": "2026-06-06T15:58:00.000Z",
+  "last_edited_time": "2026-06-06T15:58:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "callout",
+  "callout": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Nach dieser Lektion verstehst du genau, was Flowise ist und warum es entwickelt wurde. Du lernst die Funktionsweise dieses visuellen Baukastens f\u00fcr KI-Agenten kennen und erf\u00e4hrst, wie wir das Tool in diesem Kurs einsetzen, um den Support-Agenten der Contigo GmbH zu bauen.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Nach dieser Lektion verstehst du genau, was Flowise ist und warum es entwickelt wurde. Du lernst die Funktionsweise dieses visuellen Baukastens f\u00fcr KI-Agenten kennen und erf\u00e4hrst, wie wir das Tool in diesem Kurs einsetzen, um den Support-Agenten der Contigo GmbH zu bauen.",
+     "href": null
+    }
+   ],
+   "icon": {
+    "type": "emoji",
+    "emoji": "\ud83d\udca1"
+   },
+   "color": "gray_background"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37894183-19f3-80ae-a7fa-ff9f8e7fdd57",
+  "parent": {
+   "type": "page_id",
+   "page_id": "37794183-19f3-80ea-99fc-f1f781cb6d1b"
+  },
+  "created_time": "2026-06-07T08:58:00.000Z",
+  "last_edited_time": "2026-06-07T08:58:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "7f374f64-443f-4c18-a472-02251dcfe67d",
+  "parent": {
+   "type": "page_id",
+   "page_id": "37794183-19f3-80ea-99fc-f1f781cb6d1b"
+  },
+  "created_time": "2026-06-07T08:58:00.000Z",
+  "last_edited_time": "2026-06-07T08:58:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_2",
+  "heading_2": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Das Problem, das Flowise l\u00f6st",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Das Problem, das Flowise l\u00f6st",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "39b94183-19f3-8004-9509-d2d19eae0d88",
+  "parent": {
+   "type": "page_id",
+   "page_id": "37794183-19f3-80ea-99fc-f1f781cb6d1b"
+  },
+  "created_time": "2026-07-12T14:54:00.000Z",
+  "last_edited_time": "2026-07-12T14:54:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Einen KI-Agenten von Grund auf selbst zu programmieren bedeutet, die gesamte Verbindungslogik f\u00fcr jede einzelne Komponente m\u00fchsam aufzusetzen. Das betrifft das Sprachmodell ebenso wie das Ged\u00e4chtnis-Modul, die Vektordatenbank, externe Tools und die Prompt-Kette. Jede dieser Integrationen erfordert eigene API-Aufrufe, eine saubere Fehlerbehandlung und spezifische Konfigurationen. Noch bevor das eigentliche Verhalten des Agenten zum ersten Mal getestet werden kann, hat ein Entwickler bereits Hunderte Zeilen Standardcode geschrieben. Dieser sogenannte Boilerplate-Code tr\u00e4gt jedoch absolut nichts zur L\u00f6sung des eigentlichen Problems bei.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Einen KI-Agenten von Grund auf selbst zu programmieren bedeutet, die gesamte Verbindungslogik f\u00fcr jede einzelne Komponente m\u00fchsam aufzusetzen. Das betrifft das Sprachmodell ebenso wie das Ged\u00e4chtnis-Modul, die Vektordatenbank, externe Tools und die Prompt-Kette. Jede dieser Integrationen erfordert eigene API-Aufrufe, eine saubere Fehlerbehandlung und spezifische Konfigurationen. Noch bevor das eigentliche Verhalten des Agenten zum ersten Mal getestet werden kann, hat ein Entwickler bereits Hunderte Zeilen Standardcode geschrieben. Dieser sogenannte Boilerplate-Code tr\u00e4gt jedoch absolut nichts zur L\u00f6sung des eigentlichen Problems bei.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "afb25aa5-cb3b-45a2-8081-a72b4113546c",
+  "parent": {
+   "type": "page_id",
+   "page_id": "37794183-19f3-80ea-99fc-f1f781cb6d1b"
+  },
+  "created_time": "2026-07-12T14:55:00.000Z",
+  "last_edited_time": "2026-07-12T14:55:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "F\u00fcr ein Team wie das von Contigo GmbH ist das ein echtes Problem. Sie m\u00fcssen schnell von einer Gesch\u00e4ftsanforderung zu einem funktionierenden Prototyp kommen. Jede Stunde, die in Infrastruktur flie\u00dft, fehlt woanders: bei der Memory-Strategie, der Retrieval-Pipeline, den Tool-Beschreibungen oder dem Failure Handling.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "F\u00fcr ein Team wie das von Contigo GmbH ist das ein echtes Problem. Sie m\u00fcssen schnell von einer Gesch\u00e4ftsanforderung zu einem funktionierenden Prototyp kommen. Jede Stunde, die in Infrastruktur flie\u00dft, fehlt woanders: bei der Memory-Strategie, der Retrieval-Pipeline, den Tool-Beschreibungen oder dem Failure Handling.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "67feb7c0-3227-4329-bce9-2579b359fc99",
+  "parent": {
+   "type": "page_id",
+   "page_id": "37794183-19f3-80ea-99fc-f1f781cb6d1b"
+  },
+  "created_time": "2026-07-12T14:55:00.000Z",
+  "last_edited_time": "2026-07-12T14:55:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Genau hier setzt Flowise an. Du bekommst eine visuelle Drag-and-drop-Umgebung, in der AI-Agentenkomponenten als Nodes auf einem Canvas liegen. Ein Sprachmodell mit einem Memory-Modul zu verbinden ist eine einzige Drag-and-drop-Bewegung. Eine Vektordatenbank in die Retrieval-Pipeline einzubinden erledigst du \u00fcber ein Konfigurationspanel. Um die Infrastruktur k\u00fcmmert sich Flowise. Um das Design k\u00fcmmerst du dich.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Genau hier setzt Flowise an. Du bekommst eine visuelle Drag-and-drop-Umgebung, in der AI-Agentenkomponenten als Nodes auf einem Canvas liegen. Ein Sprachmodell mit einem Memory-Modul zu verbinden ist eine einzige Drag-and-drop-Bewegung. Eine Vektordatenbank in die Retrieval-Pipeline einzubinden erledigst du \u00fcber ein Konfigurationspanel. Um die Infrastruktur k\u00fcmmert sich Flowise. Um das Design k\u00fcmmerst du dich.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37894183-19f3-8084-8e18-fdb0f007d4e2",
+  "parent": {
+   "type": "page_id",
+   "page_id": "37794183-19f3-80ea-99fc-f1f781cb6d1b"
+  },
+  "created_time": "2026-06-07T08:58:00.000Z",
+  "last_edited_time": "2026-06-07T08:58:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "7cf2df3e-3688-4ec1-946e-1fc1f4a94482",
+  "parent": {
+   "type": "page_id",
+   "page_id": "37794183-19f3-80ea-99fc-f1f781cb6d1b"
+  },
+  "created_time": "2026-06-07T08:58:00.000Z",
+  "last_edited_time": "2026-06-07T08:58:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_2",
+  "heading_2": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Was Flowise ist",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Was Flowise ist",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "65b1c9a7-5785-472f-b89d-69ecd74c6d5e",
+  "parent": {
+   "type": "page_id",
+   "page_id": "37794183-19f3-80ea-99fc-f1f781cb6d1b"
+  },
+  "created_time": "2026-06-07T08:58:00.000Z",
+  "last_edited_time": "2026-07-12T14:57:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Flowise ist ein Open-Source-Tool: ein Low-Code-Visual-Builder f\u00fcr Large-Language-Model-Anwendungen und AI-Agenten. Es macht den Aufbau von LLM-gest\u00fctzten Systemen auch dann zug\u00e4nglich, wenn du zwar dein Problem genau kennst, aber keinen Framework-Level-Integrationscode von Grund auf schreiben willst.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Flowise ist ein Open-Source-Tool: ein Low-Code-Visual-Builder f\u00fcr Large-Language-Model-Anwendungen und AI-Agenten. Es macht den Aufbau von LLM-gest\u00fctzten Systemen auch dann zug\u00e4nglich, wenn du zwar dein Problem genau kennst, aber keinen Framework-Level-Integrationscode von Grund auf schreiben willst.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "72b35729-2872-4764-bdee-fd9db7e3f423",
+  "parent": {
+   "type": "page_id",
+   "page_id": "37794183-19f3-80ea-99fc-f1f781cb6d1b"
+  },
+  "created_time": "2026-06-07T08:58:00.000Z",
+  "last_edited_time": "2026-07-12T14:57:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Flowise gibt es in zwei Hauptvarianten: als selbst gehostete Anwendung oder als Flowise Cloud. In diesem Kurs verwendest du ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Flowise gibt es in zwei Hauptvarianten: als selbst gehostete Anwendung oder als Flowise Cloud. In diesem Kurs verwendest du ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "Flowise Cloud",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Flowise Cloud",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": ", damit du den Builder direkt im Browser \u00f6ffnen kannst, ohne etwas zu installieren oder einen Server aufzusetzen.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": ", damit du den Builder direkt im Browser \u00f6ffnen kannst, ohne etwas zu installieren oder einen Server aufzusetzen.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "b8ff17eb-4e61-4948-b30d-3794be54c942",
+  "parent": {
+   "type": "page_id",
+   "page_id": "37794183-19f3-80ea-99fc-f1f781cb6d1b"
+  },
+  "created_time": "2026-06-07T08:58:00.000Z",
+  "last_edited_time": "2026-06-07T08:58:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Bevor du fortf\u00e4hrst, erstelle ein Flowise-Cloud-Konto:",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Bevor du fortf\u00e4hrst, erstelle ein Flowise-Cloud-Konto:",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "ede4af0e-2040-4517-a0b0-544b00c816d6",
+  "parent": {
+   "type": "page_id",
+   "page_id": "37794183-19f3-80ea-99fc-f1f781cb6d1b"
+  },
+  "created_time": "2026-06-07T08:58:00.000Z",
+  "last_edited_time": "2026-06-07T08:59:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Du kannst dein Konto hier erstellen: ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Du kannst dein Konto hier erstellen: ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "Flowise Cloud sign-up",
+      "link": {
+       "url": "https://cloud.flowiseai.com/register"
+      }
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Flowise Cloud sign-up",
+     "href": "https://cloud.flowiseai.com/register"
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "0d1c6850-6b28-4e38-a850-1e134b0cb5ba",
+  "parent": {
+   "type": "page_id",
+   "page_id": "37794183-19f3-80ea-99fc-f1f781cb6d1b"
+  },
+  "created_time": "2026-06-07T08:58:00.000Z",
+  "last_edited_time": "2026-06-07T08:58:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Flowise bietet einen kostenlosen Cloud-Plan mit begrenzter Nutzung an, der ausreicht, um loszulegen und den ersten Kursaktivit\u00e4ten zu folgen. Du musst f\u00fcr diesen Kurs keinen kostenpflichtigen Plan w\u00e4hlen.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Flowise bietet einen kostenlosen Cloud-Plan mit begrenzter Nutzung an, der ausreicht, um loszulegen und den ersten Kursaktivit\u00e4ten zu folgen. Du musst f\u00fcr diesen Kurs keinen kostenpflichtigen Plan w\u00e4hlen.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "53ba963b-862d-40d4-8a62-c7538e1506b4",
+  "parent": {
+   "type": "page_id",
+   "page_id": "37794183-19f3-80ea-99fc-f1f781cb6d1b"
+  },
+  "created_time": "2026-06-07T08:58:00.000Z",
+  "last_edited_time": "2026-06-07T08:59:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Du kannst die aktuellen kostenlosen/Testoptionen hier pr\u00fcfen: ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Du kannst die aktuellen kostenlosen/Testoptionen hier pr\u00fcfen: ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "Flowise pricing",
+      "link": {
+       "url": "https://flowiseai.com/"
+      }
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Flowise pricing",
+     "href": "https://flowiseai.com/"
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "3531bdef-0f8d-45b3-96b9-75ee8e3c1483",
+  "parent": {
+   "type": "page_id",
+   "page_id": "37794183-19f3-80ea-99fc-f1f781cb6d1b"
+  },
+  "created_time": "2026-06-07T08:58:00.000Z",
+  "last_edited_time": "2026-06-07T08:58:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Nachdem du dich angemeldet hast, nimm dir ein paar Minuten Zeit, um dich in der Oberfl\u00e4che umzusehen. Du wirst haupts\u00e4chlich mit dem visuellen Builder arbeiten, in dem du Agenten und Workflows erstellst, indem du Komponenten hinzuf\u00fcgst und verbindest.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Nachdem du dich angemeldet hast, nimm dir ein paar Minuten Zeit, um dich in der Oberfl\u00e4che umzusehen. Du wirst haupts\u00e4chlich mit dem visuellen Builder arbeiten, in dem du Agenten und Workflows erstellst, indem du Komponenten hinzuf\u00fcgst und verbindest.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "39cb30c3-0cf5-4f81-b793-8803b3715f6d",
+  "parent": {
+   "type": "page_id",
+   "page_id": "37794183-19f3-80ea-99fc-f1f781cb6d1b"
+  },
+  "created_time": "2026-06-07T08:58:00.000Z",
+  "last_edited_time": "2026-06-07T08:59:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Du kannst die offizielle Dokumentation zur Oberfl\u00e4che hier pr\u00fcfen: ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Du kannst die offizielle Dokumentation zur Oberfl\u00e4che hier pr\u00fcfen: ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "Flowise documentation \u2014 Introduction",
+      "link": {
+       "url": "https://docs.flowiseai.com/"
+      }
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Flowise documentation \u2014 Introduction",
+     "href": "https://docs.flowiseai.com/"
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37794183-19f3-8026-bae4-d129c49be6b6",
+  "parent": {
+   "type": "page_id",
+   "page_id": "37794183-19f3-80ea-99fc-f1f781cb6d1b"
+  },
+  "created_time": "2026-06-06T15:58:00.000Z",
+  "last_edited_time": "2026-07-12T14:58:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "callout",
+  "callout": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Wenn du lieber direkt die selbst gehostete Version von Flowise verwenden m\u00f6chtest, kannst du den Kurs trotzdem weiterverfolgen. Der erste Teil ist jedoch auf die Cloud-Version ausgerichtet, daher k\u00f6nnen einige Screens, Einrichtungsschritte, URLs und Zugriffsoptionen anders aussehen. In diesem Fall musst du m\u00f6glicherweise etwas zus\u00e4tzliche DIY-Einrichtung oder Fehlerbehebung durchf\u00fchren, um die Lektionsanweisungen an deine eigene Installation anzupassen.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Wenn du lieber direkt die selbst gehostete Version von Flowise verwenden m\u00f6chtest, kannst du den Kurs trotzdem weiterverfolgen. Der erste Teil ist jedoch auf die Cloud-Version ausgerichtet, daher k\u00f6nnen einige Screens, Einrichtungsschritte, URLs und Zugriffsoptionen anders aussehen. In diesem Fall musst du m\u00f6glicherweise etwas zus\u00e4tzliche DIY-Einrichtung oder Fehlerbehebung durchf\u00fchren, um die Lektionsanweisungen an deine eigene Installation anzupassen.",
+     "href": null
+    }
+   ],
+   "icon": {
+    "type": "emoji",
+    "emoji": "\ud83d\udca1"
+   },
+   "color": "gray_background"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37894183-19f3-80ac-972b-ef5487d58409",
+  "parent": {
+   "type": "page_id",
+   "page_id": "37794183-19f3-80ea-99fc-f1f781cb6d1b"
+  },
+  "created_time": "2026-06-07T08:59:00.000Z",
+  "last_edited_time": "2026-06-07T08:59:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "93ae3174-0fb4-48df-ab8f-2295e7b56a12",
+  "parent": {
+   "type": "page_id",
+   "page_id": "37794183-19f3-80ea-99fc-f1f781cb6d1b"
+  },
+  "created_time": "2026-06-07T08:59:00.000Z",
+  "last_edited_time": "2026-06-07T08:59:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Die Flowise-Oberfl\u00e4che ist \u00fcber einen Standardbrowser zug\u00e4nglich. Sobald die Anwendung l\u00e4uft, ist jede Komponente einer Agentenarchitektur als ziehbarer Node in der Komponentenpalette verf\u00fcgbar. Die Architektur des Agenten wird gebaut, indem diese Nodes verbunden und ihre Parameter konfiguriert werden.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Die Flowise-Oberfl\u00e4che ist \u00fcber einen Standardbrowser zug\u00e4nglich. Sobald die Anwendung l\u00e4uft, ist jede Komponente einer Agentenarchitektur als ziehbarer Node in der Komponentenpalette verf\u00fcgbar. Die Architektur des Agenten wird gebaut, indem diese Nodes verbunden und ihre Parameter konfiguriert werden.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37894183-19f3-8032-9a54-f068807ce6e7",
+  "parent": {
+   "type": "page_id",
+   "page_id": "37794183-19f3-80ea-99fc-f1f781cb6d1b"
+  },
+  "created_time": "2026-06-07T08:59:00.000Z",
+  "last_edited_time": "2026-06-07T08:59:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "f088413d-5f92-45b0-97a0-cecd4ebe3a2f",
+  "parent": {
+   "type": "page_id",
+   "page_id": "37794183-19f3-80ea-99fc-f1f781cb6d1b"
+  },
+  "created_time": "2026-06-07T08:59:00.000Z",
+  "last_edited_time": "2026-06-07T08:59:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_2",
+  "heading_2": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Wie Flowise funktioniert",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Wie Flowise funktioniert",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "ed0f446a-3f0b-41d7-a22c-94e2e05dc95a",
+  "parent": {
+   "type": "page_id",
+   "page_id": "37794183-19f3-80ea-99fc-f1f781cb6d1b"
+  },
+  "created_time": "2026-06-07T08:59:00.000Z",
+  "last_edited_time": "2026-06-07T08:59:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Flowise organisiert Agenten-Builds in mehrere Umgebungen, die jeweils f\u00fcr ein unterschiedliches Ma\u00df an architektonischer Komplexit\u00e4t ausgelegt sind. In diesem Kurs konzentrieren wir uns jedoch auf Chatflow.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Flowise organisiert Agenten-Builds in mehrere Umgebungen, die jeweils f\u00fcr ein unterschiedliches Ma\u00df an architektonischer Komplexit\u00e4t ausgelegt sind. In diesem Kurs konzentrieren wir uns jedoch auf Chatflow.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "ed61590c-4f59-4afc-a120-0fe5626bd71a",
+  "parent": {
+   "type": "page_id",
+   "page_id": "37794183-19f3-80ea-99fc-f1f781cb6d1b"
+  },
+  "created_time": "2026-06-07T08:59:00.000Z",
+  "last_edited_time": "2026-06-07T08:59:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Chatflow",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Chatflow",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " ist die prim\u00e4re Umgebung f\u00fcr Single-Agent-Systeme. Es unterst\u00fctzt die wichtigsten Bausteine, die du in diesem Kurs verwenden lernst: Gespr\u00e4chsschritte miteinander verketten (Conversational Chains), einen Agenten aus deinen eigenen Dokumenten antworten lassen (ein Muster namens RAG), die Art von Memory, die du gerade kennengelernt hast, und Agenten mit externen Tools verbinden. Zu jedem davon bekommst du eine eigene Lektion \u2014 du musst die Namen noch nicht erkennen.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " ist die prim\u00e4re Umgebung f\u00fcr Single-Agent-Systeme. Es unterst\u00fctzt die wichtigsten Bausteine, die du in diesem Kurs verwenden lernst: Gespr\u00e4chsschritte miteinander verketten (Conversational Chains), einen Agenten aus deinen eigenen Dokumenten antworten lassen (ein Muster namens RAG), die Art von Memory, die du gerade kennengelernt hast, und Agenten mit externen Tools verbinden. Zu jedem davon bekommst du eine eigene Lektion \u2014 du musst die Namen noch nicht erkennen.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "25e8c205-642d-495f-88b2-b2f077a6d01e",
+  "parent": {
+   "type": "page_id",
+   "page_id": "37794183-19f3-80ea-99fc-f1f781cb6d1b"
+  },
+  "created_time": "2026-06-07T08:59:00.000Z",
+  "last_edited_time": "2026-06-07T08:59:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Der Ausf\u00fchrungspfad durch einen Chatflow ist relativ linear. Eine Nutzeranfrage flie\u00dft in einer definierten Reihenfolge durch die verbundenen Komponenten und gibt eine Antwort zur\u00fcck. Das ist die Umgebung, die f\u00fcr den Gro\u00dfteil des Contigo-Agenten-Builds in diesem Kurs verwendet wird.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Der Ausf\u00fchrungspfad durch einen Chatflow ist relativ linear. Eine Nutzeranfrage flie\u00dft in einer definierten Reihenfolge durch die verbundenen Komponenten und gibt eine Antwort zur\u00fcck. Das ist die Umgebung, die f\u00fcr den Gro\u00dfteil des Contigo-Agenten-Builds in diesem Kurs verwendet wird.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "d3c7e90d-78d1-4f72-92bf-917639594df1",
+  "parent": {
+   "type": "page_id",
+   "page_id": "37794183-19f3-80ea-99fc-f1f781cb6d1b"
+  },
+  "created_time": "2026-06-07T08:59:00.000Z",
+  "last_edited_time": "2026-07-12T14:58:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Jeder Knoten hat Verbindungspunkte, sogenannte Eingaben und Ausgaben. Ausgaben eines Knotens k\u00f6nnen mit kompatiblen Eingaben eines anderen Knotens verbunden werden. Flowise hilft dabei, einige Setup-Fehler zu vermeiden, indem es nur bestimmte Verbindungstypen zusammenpassen l\u00e4sst. Ein Knoten, der auf der Canvas platziert ist, beeinflusst den Agenten nur dann, wenn er mit dem aktiven Flow-Pfad verbunden ist, der zur Laufzeit verwendet wird.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Jeder Knoten hat Verbindungspunkte, sogenannte Eingaben und Ausgaben. Ausgaben eines Knotens k\u00f6nnen mit kompatiblen Eingaben eines anderen Knotens verbunden werden. Flowise hilft dabei, einige Setup-Fehler zu vermeiden, indem es nur bestimmte Verbindungstypen zusammenpassen l\u00e4sst. Ein Knoten, der auf der Canvas platziert ist, beeinflusst den Agenten nur dann, wenn er mit dem aktiven Flow-Pfad verbunden ist, der zur Laufzeit verwendet wird.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "39b94183-19f3-8074-bf31-ec1374a364ac",
+  "parent": {
+   "type": "page_id",
+   "page_id": "37794183-19f3-80ea-99fc-f1f781cb6d1b"
+  },
+  "created_time": "2026-07-12T14:58:00.000Z",
+  "last_edited_time": "2026-07-12T15:01:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37794183-19f3-8002-ad86-d15f32a6faea",
+  "parent": {
+   "type": "page_id",
+   "page_id": "37794183-19f3-80ea-99fc-f1f781cb6d1b"
+  },
+  "created_time": "2026-06-06T15:58:00.000Z",
+  "last_edited_time": "2026-06-07T16:50:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "image",
+  "image": {
+   "caption": [],
+   "type": "file",
+   "file": {
+    "url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/3a9085c4-df29-45e6-8bc7-6c9c0a25ea8c/13064655-5509-4e45-a244-f8113cf8e3a6/de_classic_chatflow.svg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466YBFG7TTE%2F20261010%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20261010T070114Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEIf%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJHMEUCIQC5Hh7ckMlVRuSiB4804Fs%2F76YxL73sWC%2Bud6oaKUeMtgIgSRH0tRTl5zWKCu%2BU8FnbsB0UCtqAwvZ2CIu%2FlnVJbVAq%2FwMITxAAGgw2Mzc0MjMxODM4MDUiDMLYmkhK4RMcsfRVVircA0ZqU5k2pAOO9UQDFMyleXawg3DMt4Mxo62OoeVtk5rz3gcyk7h%2FcFobh7nzO1svnhDoOV1cRC%2FA2Gy51aOVvZPQfRvPKyPlmCXaF4y4x%2FhdbE43zvjk5WEeS%2BrQGqe7ZFWqHtJ%2BcFbSioql6NFLQByQYYxFAnsUwTrkmngMwIxnOKNpE37Rw1x4VT4Jls8x3Eoz74jAo32QBr4teEy9JgjV6e6oe5%2BaFrNfJr8TKGounNe1QrcdQMG1mbAa6tzJueyTj0hfuCycy4TKdrMN0zEGoYgdLWruvOSM%2Bk9gTrpnoMOaOZwG0VAgE1N%2FMMfEy8K7X9Y96oQkCteCTvCaFEnBqQfqE%2F3gq0RVCroyKImZEDdPkHkvM710Pm%2FAoIgib3EdGn8P32KilhA5df5dLn3XkI%2FfQCxD5DZdnoBnL26zSN52gCORx%2FGreZOyofJxFBVPFWEsgQ9EftTjiIqQg2L3Fc5SZkR6VVfmLYnufRr%2FtCRlWLU8TwKBtGVU1WHV1LaJruevCB2tlAt%2FGz3lyp4gcUW3AnXJnXOP2%2FexYsq31AT9qb6NaxC7wbdwM5RZ%2F1gfoC5d9oqXQ6iTxJJhO%2FO6uaJbvZ%2Bj5WwYD%2BK%2Bdae7ldXkzJXZ3bK%2BAgLHMNO1p9YGOqUBKS6t3N80CheKL%2Fwy3RBVnxrdP0d%2B%2Bw9WntZl9qg%2BGB2sYFsMl4VS1ycQ4guPVoBSY9rCzmd8hFySYdH9ljNW6WNu8MJcQj6TZMab7imbS3gvEkclofNJULnXtXWXNh3Bjg%2FYyXGXs%2F8shHIjhZJBHPPY8xViLZhjV6r2dzGrWN2HLg8RcIr0s0o%2FzYRfWertXPN21dXz%2F78DBt8irM2AWuuLa5%2Fv&X-Amz-Signature=d42f82e4f2c0b908614f846d76739a0cc6fd47cd553816ef5b8f9d39090eddb2&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+    "expiry_time": "2026-10-10T08:01:14.143Z"
+   }
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37794183-19f3-80e3-af92-cb897c71ada3",
+  "parent": {
+   "type": "page_id",
+   "page_id": "37794183-19f3-80ea-99fc-f1f781cb6d1b"
+  },
+  "created_time": "2026-06-06T15:58:00.000Z",
+  "last_edited_time": "2026-06-06T15:58:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "6a248ea2-d846-4b4b-820a-1202d1a7c0ba",
+  "parent": {
+   "type": "page_id",
+   "page_id": "37794183-19f3-80ea-99fc-f1f781cb6d1b"
+  },
+  "created_time": "2026-06-07T09:00:00.000Z",
+  "last_edited_time": "2026-06-07T09:00:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_2",
+  "heading_2": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Warum Flowise existiert",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Warum Flowise existiert",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "94fb1eb6-8f40-462b-b6b7-1c14e769c019",
+  "parent": {
+   "type": "page_id",
+   "page_id": "37794183-19f3-80ea-99fc-f1f781cb6d1b"
+  },
+  "created_time": "2026-06-07T09:00:00.000Z",
+  "last_edited_time": "2026-06-07T09:00:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Drei Ver\u00e4nderungen in der AI-Entwicklungslandschaft haben die Bedingungen geschaffen, die Flowise notwendig gemacht haben.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Drei Ver\u00e4nderungen in der AI-Entwicklungslandschaft haben die Bedingungen geschaffen, die Flowise notwendig gemacht haben.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "f6561e39-a8ab-4f6a-9364-a70fc650a052",
+  "parent": {
+   "type": "page_id",
+   "page_id": "37794183-19f3-80ea-99fc-f1f781cb6d1b"
+  },
+  "created_time": "2026-06-07T09:00:00.000Z",
+  "last_edited_time": "2026-06-09T13:02:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "numbered_list_item",
+  "numbered_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Der erste Grund war die wachsende Zahl beweglicher Teile in KI-Systemen. Teams mussten Sprachmodelle verbinden, die Antworten formulieren, Embedding-Modelle, die Text in durchsuchbare numerische Bedeutung umwandeln, Vektordatenbanken, die diese Bedeutung speichern und durchsuchen, Memory-Komponenten, die n\u00fctzlichen Kontext behalten, und externe Tools wie APIs oder Datenbanken. Je mehr diese Komponenten wurden, desto schwieriger wurde es, alles direkt im Code zu verwalten. \nEine visuelle Abstraktionsschicht, die diese Verbindungen \u00fcbernimmt, reduziert diese Komplexit\u00e4t auf ein handhabbares Konfigurationsproblem.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Der erste Grund war die wachsende Zahl beweglicher Teile in KI-Systemen. Teams mussten Sprachmodelle verbinden, die Antworten formulieren, Embedding-Modelle, die Text in durchsuchbare numerische Bedeutung umwandeln, Vektordatenbanken, die diese Bedeutung speichern und durchsuchen, Memory-Komponenten, die n\u00fctzlichen Kontext behalten, und externe Tools wie APIs oder Datenbanken. Je mehr diese Komponenten wurden, desto schwieriger wurde es, alles direkt im Code zu verwalten. \nEine visuelle Abstraktionsschicht, die diese Verbindungen \u00fcbernimmt, reduziert diese Komplexit\u00e4t auf ein handhabbares Konfigurationsproblem.",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "21e824df-2281-4c84-84df-cb8189645d4e",
+  "parent": {
+   "type": "page_id",
+   "page_id": "37794183-19f3-80ea-99fc-f1f781cb6d1b"
+  },
+  "created_time": "2026-06-07T09:00:00.000Z",
+  "last_edited_time": "2026-06-07T09:00:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "numbered_list_item",
+  "numbered_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Die zweite war das Aufkommen agentischer Muster. Agenten sind Reasoning-Loops, die Tools aufrufen, Ergebnisse beobachten und entscheiden, was als N\u00e4chstes zu tun ist. Diese Loops in Code darzustellen, erfordert architektonische Disziplin, die fehleranf\u00e4llig und schwer zu debuggen ist. Ein Canvas, der den Loop sichtbar macht, macht es deutlich leichter, dar\u00fcber nachzudenken und ihn zu korrigieren.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Die zweite war das Aufkommen agentischer Muster. Agenten sind Reasoning-Loops, die Tools aufrufen, Ergebnisse beobachten und entscheiden, was als N\u00e4chstes zu tun ist. Diese Loops in Code darzustellen, erfordert architektonische Disziplin, die fehleranf\u00e4llig und schwer zu debuggen ist. Ein Canvas, der den Loop sichtbar macht, macht es deutlich leichter, dar\u00fcber nachzudenken und ihn zu korrigieren.",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "5503daf0-b969-4caf-bbe3-72c7aa9d1193",
+  "parent": {
+   "type": "page_id",
+   "page_id": "37794183-19f3-80ea-99fc-f1f781cb6d1b"
+  },
+  "created_time": "2026-06-07T09:00:00.000Z",
+  "last_edited_time": "2026-06-07T09:00:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "numbered_list_item",
+  "numbered_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Die dritte war der Bedarf an schneller Iteration. Agentenverhalten entsteht aus dem Zusammenspiel von Prompt, Memory, Retrieval und Tools. Einen Parameter zu \u00e4ndern und die Wirkung sofort in der integrierten Testoberfl\u00e4che zu beobachten, ist eine schnellere Feedbackschleife als Code zu bearbeiten, neu bereitzustellen und manuell erneut zu testen.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Die dritte war der Bedarf an schneller Iteration. Agentenverhalten entsteht aus dem Zusammenspiel von Prompt, Memory, Retrieval und Tools. Einen Parameter zu \u00e4ndern und die Wirkung sofort in der integrierten Testoberfl\u00e4che zu beobachten, ist eine schnellere Feedbackschleife als Code zu bearbeiten, neu bereitzustellen und manuell erneut zu testen.",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37894183-19f3-802b-bacf-c140d548d5d6",
+  "parent": {
+   "type": "page_id",
+   "page_id": "37794183-19f3-80ea-99fc-f1f781cb6d1b"
+  },
+  "created_time": "2026-06-07T09:00:00.000Z",
+  "last_edited_time": "2026-06-07T09:00:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "6df784a0-31f3-40e2-9ca1-06ea32029346",
+  "parent": {
+   "type": "page_id",
+   "page_id": "37794183-19f3-80ea-99fc-f1f781cb6d1b"
+  },
+  "created_time": "2026-06-07T09:00:00.000Z",
+  "last_edited_time": "2026-06-07T09:00:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_2",
+  "heading_2": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Wie Flowise in diesem Kurs verwendet wird",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Wie Flowise in diesem Kurs verwendet wird",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "5b8bb473-24bf-46ac-81ec-4c0959bddbf4",
+  "parent": {
+   "type": "page_id",
+   "page_id": "37794183-19f3-80ea-99fc-f1f781cb6d1b"
+  },
+  "created_time": "2026-06-07T09:00:00.000Z",
+  "last_edited_time": "2026-06-07T09:00:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Flowise ist das prim\u00e4re Tool f\u00fcr die Implementierung des Support-Agenten der Contigo GmbH. Jeder Sprint f\u00fchrt eine neue F\u00e4higkeit und die entsprechende Flowise-Konfiguration ein, die sie umsetzt. Am Ende des Kurses wird der Flowise-Canvas eine vollst\u00e4ndige, produktionsorientierte agentische Architektur enthalten; alles inkrementell aufgebaut, Sprint f\u00fcr Sprint, wobei Contigos Finanzdienstleistungskontext durchgehend als Business Case dient.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Flowise ist das prim\u00e4re Tool f\u00fcr die Implementierung des Support-Agenten der Contigo GmbH. Jeder Sprint f\u00fchrt eine neue F\u00e4higkeit und die entsprechende Flowise-Konfiguration ein, die sie umsetzt. Am Ende des Kurses wird der Flowise-Canvas eine vollst\u00e4ndige, produktionsorientierte agentische Architektur enthalten; alles inkrementell aufgebaut, Sprint f\u00fcr Sprint, wobei Contigos Finanzdienstleistungskontext durchgehend als Business Case dient.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "c1a3ab64-74a2-4e19-a721-ec7fdc99faa6",
+  "parent": {
+   "type": "page_id",
+   "page_id": "37794183-19f3-80ea-99fc-f1f781cb6d1b"
+  },
+  "created_time": "2026-06-07T09:00:00.000Z",
+  "last_edited_time": "2026-06-07T09:00:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_2",
+  "heading_2": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Verst\u00e4ndnis pr\u00fcfen",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Verst\u00e4ndnis pr\u00fcfen",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37794183-19f3-803d-8798-ffa5d29ab1f4",
+  "parent": {
+   "type": "page_id",
+   "page_id": "37794183-19f3-80ea-99fc-f1f781cb6d1b"
+  },
+  "created_time": "2026-06-06T15:58:00.000Z",
+  "last_edited_time": "2026-06-08T08:57:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": true,
+  "in_trash": false,
+  "type": "callout",
+  "callout": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Contigos Entwicklungsteam pr\u00fcft den Flowise-Builder, bevor der Build beginnt. Ein Junior-Entwickler schl\u00e4gt vor, dass der Agent, weil er sp\u00e4ter Memory, Retrieval und Tool-Verbindungen ben\u00f6tigen wird, zu komplex f\u00fcr Chatflow sein muss. Wie w\u00fcrdest du antworten?",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Contigos Entwicklungsteam pr\u00fcft den Flowise-Builder, bevor der Build beginnt. Ein Junior-Entwickler schl\u00e4gt vor, dass der Agent, weil er sp\u00e4ter Memory, Retrieval und Tool-Verbindungen ben\u00f6tigen wird, zu komplex f\u00fcr Chatflow sein muss. Wie w\u00fcrdest du antworten?",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "gray_background"
+  },
+  "archived": false,
+  "_children": [
+   {
+    "object": "block",
+    "id": "37994183-19f3-800b-9fc5-f2557d988818",
+    "parent": {
+     "type": "block_id",
+     "block_id": "37794183-19f3-803d-8798-ffa5d29ab1f4"
+    },
+    "created_time": "2026-06-08T08:57:00.000Z",
+    "last_edited_time": "2026-06-08T08:57:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "embed",
+    "embed": {
+     "caption": [],
+     "url": "https://app.masterschool.com/campus/multi-choice-question/b1994c12-c811-4412-9e10-6cae3d22a608"
+    },
+    "archived": false
+   }
+  ]
+ },
+ {
+  "object": "block",
+  "id": "37794183-19f3-80c6-932a-e1a37c2c6c76",
+  "parent": {
+   "type": "page_id",
+   "page_id": "37794183-19f3-80ea-99fc-f1f781cb6d1b"
+  },
+  "created_time": "2026-06-06T15:58:00.000Z",
+  "last_edited_time": "2026-06-06T15:58:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37794183-19f3-8057-8506-d816e7f98123",
+  "parent": {
+   "type": "page_id",
+   "page_id": "37794183-19f3-80ea-99fc-f1f781cb6d1b"
+  },
+  "created_time": "2026-06-06T15:58:00.000Z",
+  "last_edited_time": "2026-07-12T15:04:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "has_children": true,
+  "in_trash": false,
+  "type": "callout",
+  "callout": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Takeaway: ",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Takeaway: ",
+     "href": null
+    }
+   ],
+   "icon": {
+    "type": "emoji",
+    "emoji": "\ud83d\udca1"
+   },
+   "color": "gray_background"
+  },
+  "archived": false,
+  "_children": [
+   {
+    "object": "block",
+    "id": "39b94183-19f3-80b1-8d60-e2fa9a95d8fd",
+    "parent": {
+     "type": "block_id",
+     "block_id": "37794183-19f3-8057-8506-d816e7f98123"
+    },
+    "created_time": "2026-07-12T15:04:00.000Z",
+    "last_edited_time": "2026-07-12T15:04:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+     "rich_text": [
+      {
+       "type": "text",
+       "text": {
+        "content": "Flowise macht die Architektur von KI-Agenten visuell greifbar, sodass du sie direkt auf einer Benutzeroberfl\u00e4che konfigurieren und debuggen kannst. Das beschleunigt den gesamten Entwicklungsprozess enorm und sorgt f\u00fcr maximale Klarheit. Wenn du verstehst, welche Aufgabe die einzelnen Komponenten erf\u00fcllen, bevor du sie auf der Arbeitsfl\u00e4che miteinander verkn\u00fcpfst, macht das den entscheidenden Unterschied. Du befolgst nicht mehr nur einfach Anweisungen, sondern baust deine Agenten absolut zielgerichtet und mit System.",
+        "link": null
+       },
+       "annotations": {
+        "bold": false,
+        "italic": false,
+        "strikethrough": false,
+        "underline": false,
+        "code": false,
+        "color": "default"
+       },
+       "plain_text": "Flowise macht die Architektur von KI-Agenten visuell greifbar, sodass du sie direkt auf einer Benutzeroberfl\u00e4che konfigurieren und debuggen kannst. Das beschleunigt den gesamten Entwicklungsprozess enorm und sorgt f\u00fcr maximale Klarheit. Wenn du verstehst, welche Aufgabe die einzelnen Komponenten erf\u00fcllen, bevor du sie auf der Arbeitsfl\u00e4che miteinander verkn\u00fcpfst, macht das den entscheidenden Unterschied. Du befolgst nicht mehr nur einfach Anweisungen, sondern baust deine Agenten absolut zielgerichtet und mit System.",
+       "href": null
+      }
+     ],
+     "icon": null,
+     "color": "default"
+    },
+    "archived": false
+   }
+  ]
+ },
+ {
+  "object": "block",
+  "id": "39b94183-19f3-8087-bdcc-e712a696d956",
+  "parent": {
+   "type": "page_id",
+   "page_id": "37794183-19f3-80ea-99fc-f1f781cb6d1b"
+  },
+  "created_time": "2026-07-12T15:04:00.000Z",
+  "last_edited_time": "2026-07-12T15:04:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ }
+]

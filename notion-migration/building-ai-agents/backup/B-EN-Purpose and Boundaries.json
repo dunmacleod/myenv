@@ -1,0 +1,4221 @@
+[
+ {
+  "object": "block",
+  "id": "36a94183-19f3-8031-8b24-fd453a68c610",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-809c-bb4e-e74fc87e9438"
+  },
+  "created_time": "2026-05-24T17:49:00.000Z",
+  "last_edited_time": "2026-05-24T17:49:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "callout",
+  "callout": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "What you will work on in this lesson: ",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "What you will work on in this lesson: ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "Writing clear system instructions that define your project agent's role, target users, and limitations. Then you will refine them until the agent behaves consistently within its defined scope.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Writing clear system instructions that define your project agent's role, target users, and limitations. Then you will refine them until the agent behaves consistently within its defined scope.",
+     "href": null
+    }
+   ],
+   "icon": {
+    "type": "emoji",
+    "emoji": "\ud83d\udca1"
+   },
+   "color": "gray_background"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37594183-19f3-8019-b140-db06a369d7c3",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-809c-bb4e-e74fc87e9438"
+  },
+  "created_time": "2026-06-04T13:31:00.000Z",
+  "last_edited_time": "2026-06-04T13:31:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "1cc375b3-e676-438e-9648-e551b3321643",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-809c-bb4e-e74fc87e9438"
+  },
+  "created_time": "2026-06-07T16:22:00.000Z",
+  "last_edited_time": "2026-06-07T16:22:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Meridian's baseline agent is configured and running. The Gemini model is connected, the three-node flow is verified, and the two-turn validation passed. The next question is deceptively simple: what is this agent actually supposed to do?",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Meridian's baseline agent is configured and running. The Gemini model is connected, the three-node flow is verified, and the two-turn validation passed. The next question is deceptively simple: what is this agent actually supposed to do?",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "78f24185-7ce3-4660-84ec-846089dec8b5",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-809c-bb4e-e74fc87e9438"
+  },
+  "created_time": "2026-06-07T16:22:00.000Z",
+  "last_edited_time": "2026-06-07T16:22:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Without a clear answer, the agent will attempt to answer anything a user asks. It will offer opinions on topics outside its expertise, attempt tasks it is not equipped to handle reliably, and produce responses that are inconsistent in tone, scope, and accuracy. A large language model is designed to be helpful by default. In a business context, unconstrained helpfulness is a liability.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Without a clear answer, the agent will attempt to answer anything a user asks. It will offer opinions on topics outside its expertise, attempt tasks it is not equipped to handle reliably, and produce responses that are inconsistent in tone, scope, and accuracy. A large language model is designed to be helpful by default. In a business context, unconstrained helpfulness is a liability.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "8cfa606d-6322-4388-8e0a-28c6cc3ccf3e",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-809c-bb4e-e74fc87e9438"
+  },
+  "created_time": "2026-06-07T16:22:00.000Z",
+  "last_edited_time": "2026-06-07T16:22:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Meridian's team has learned this the hard way. An earlier prototype built for a client's HR department began answering questions about competitor salary benchmarks, offering legal interpretations of employment contracts, and providing detailed advice on a personal tax situation raised by an employee who had mistaken it for a general assistant. None of those were in scope. All of them created problems.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Meridian's team has learned this the hard way. An earlier prototype built for a client's HR department began answering questions about competitor salary benchmarks, offering legal interpretations of employment contracts, and providing detailed advice on a personal tax situation raised by an employee who had mistaken it for a general assistant. None of those were in scope. All of them created problems.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "cfb4ab29-f9cb-4a18-a31d-b6cc7359cda2",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-809c-bb4e-e74fc87e9438"
+  },
+  "created_time": "2026-06-07T16:22:00.000Z",
+  "last_edited_time": "2026-06-07T16:22:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "The system prompt is where you draw the boundary. In this lesson, we'll write Meridian's system prompt together, one pillar at a time.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "The system prompt is where you draw the boundary. In this lesson, we'll write Meridian's system prompt together, one pillar at a time.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37894183-19f3-80be-8e6e-ed8fe728a997",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-809c-bb4e-e74fc87e9438"
+  },
+  "created_time": "2026-06-07T16:22:00.000Z",
+  "last_edited_time": "2026-06-07T16:22:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "94c933f7-8903-41ab-887f-5616d234c30c",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-809c-bb4e-e74fc87e9438"
+  },
+  "created_time": "2026-06-07T16:22:00.000Z",
+  "last_edited_time": "2026-06-07T16:22:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_2",
+  "heading_2": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Anatomy of a working system prompt",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Anatomy of a working system prompt",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "59a0e3be-9f70-4c6b-aeb9-0a8b6b61ce16",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-809c-bb4e-e74fc87e9438"
+  },
+  "created_time": "2026-06-07T16:22:00.000Z",
+  "last_edited_time": "2026-06-07T16:22:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Before we write one, let's look at how a good system prompt is built. It addresses three things:",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Before we write one, let's look at how a good system prompt is built. It addresses three things:",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "f5a0ceea-dd05-40db-aa78-eb3ffa29ef36",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-809c-bb4e-e74fc87e9438"
+  },
+  "created_time": "2026-06-07T16:22:00.000Z",
+  "last_edited_time": "2026-06-07T16:22:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "numbered_list_item",
+  "numbered_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Role and persona",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Role and persona",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " \u2014 who the agent is and how it communicates",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " \u2014 who the agent is and how it communicates",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "08b022b3-47b3-4abf-bd27-4b87c84ea076",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-809c-bb4e-e74fc87e9438"
+  },
+  "created_time": "2026-06-07T16:22:00.000Z",
+  "last_edited_time": "2026-06-07T16:22:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "numbered_list_item",
+  "numbered_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Scope",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Scope",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " \u2014 what the agent is authorised to help with",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " \u2014 what the agent is authorised to help with",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "23a805ce-f271-4ace-a9e9-ae91ffbefc92",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-809c-bb4e-e74fc87e9438"
+  },
+  "created_time": "2026-06-07T16:22:00.000Z",
+  "last_edited_time": "2026-06-07T16:22:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "numbered_list_item",
+  "numbered_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Limitations and escalation",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Limitations and escalation",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " \u2014 what it must refuse, and what it should do instead",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " \u2014 what it must refuse, and what it should do instead",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "650429fe-f343-4453-ae0c-3a35fd90ece9",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-809c-bb4e-e74fc87e9438"
+  },
+  "created_time": "2026-06-07T16:22:00.000Z",
+  "last_edited_time": "2026-06-07T16:22:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "These three pillars appear in almost every well-built system prompt. They sometimes share sentences (role and scope can overlap), but each pillar must be present. If one is missing, the agent's behaviour will drift in that direction \u2014 vague identity, runaway scope, or silent refusals with no path forward.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "These three pillars appear in almost every well-built system prompt. They sometimes share sentences (role and scope can overlap), but each pillar must be present. If one is missing, the agent's behaviour will drift in that direction \u2014 vague identity, runaway scope, or silent refusals with no path forward.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37894183-19f3-80aa-9378-eaa084324c00",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-809c-bb4e-e74fc87e9438"
+  },
+  "created_time": "2026-06-07T16:24:00.000Z",
+  "last_edited_time": "2026-06-07T16:24:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "image",
+  "image": {
+   "caption": [],
+   "type": "file",
+   "file": {
+    "url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/3a9085c4-df29-45e6-8bc7-6c9c0a25ea8c/86158393-5912-4df6-a74e-1f41340fa1da/system_prompt_anatomy.svg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB4662WDAKAZA%2F20261010%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20261010T071028Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEIf%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJGMEQCIBLjAxTgF0VUtxj9qSPZ96A9IHKSmGR1JnwIpKx1OLoqAiBT6BhLu0i7piDJc2CHHuwx9TaJdmpamWNWAhEsVO4pmir%2FAwhPEAAaDDYzNzQyMzE4MzgwNSIMwzZC69JJWj2QObsHKtwDMmeUa2M8hlrG%2Bzrfu9ai6C73HYx71plSXbq%2FQuFhFJdn4qX58Mlhj8xhzMPkRsBLP7HUyz2M8FSpi%2FTMiEn0mKG8HGLd%2F2nuYc8FTsj6RaPKSi6d8piNu47T8vaaoz2%2BEZ4XxH1FGZWYBhrKiroYs9I9Ko1%2BsSTz1OV7gSoSLZBMwt6kzVI3vQOBnCvP1QJRvPr5fAozZsFxKLddMuFFx%2FxBPVeihP3%2B7iEVq48shKsAYWFG9T%2BKg9JiSvaFBee6Uezt0nVUSXr797C%2B84W3mFe48JFir%2FmR%2F27IH1gXUzsEvo%2BFVCRm%2FS4x9DbJZOHQeLbhtG6YK0Ob%2F4sz8x0aOtJUGlKrXH40yZZTsIreqO7Bk6oaTyzr6u2uOcLVqRWjSjsk6MEKAjk7DxUDeax1WmXOvFm3XSNN90tdnmDX2xGnmBeuYvPF1fpdpxte%2Be%2F3e2LTpuV4h3C60TPAq%2BNW3Qv%2FUWyPy7txhMnqtM20Snw3PblrqJHlIuFtQuEte87%2Bt3fikweAyS0R09LgTetkWsUwg2VHp8dW4w%2BpjMaXNVh30Lx%2Bj%2FnjuAQ%2FcVZs3Ib23AwmO3oMwKR1RJs3lA2klWuy69mYS2L2rbYL9%2B%2BEOup1e8v%2FjJzhxYBmjtswyLWn1gY6pgHcxSdEXvTqsW8naA8bho6EExKG%2FuuH0R1LWRBDpOoP%2FDISzzm%2FK4fw69wSaltxLBPmPTYdLKjYel7Tl8lb6voJjR%2Bwb0arU0OvDEdxbGtDk9NlqnJO%2BA6scixT0BhYWioadTKsAM1aIUWIHc6fV4qk7NAOphzUaSnnq7g5ojHHr3Nozifc4yYJHHACf4q3a7MHjjDCrLE%2BxvP6m3oc2c9B%2BDFCDofw&X-Amz-Signature=63b4059ff0562251e39c935cfac164257f34393e211f071a442a78bc95b8c912&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+    "expiry_time": "2026-10-10T08:10:28.265Z"
+   }
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "913d0020-1c13-4e73-a25f-8793288981ee",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-809c-bb4e-e74fc87e9438"
+  },
+  "created_time": "2026-06-07T16:22:00.000Z",
+  "last_edited_time": "2026-06-07T16:24:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "278aa394-61c4-4241-96ac-65642e586180",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-809c-bb4e-e74fc87e9438"
+  },
+  "created_time": "2026-06-07T16:22:00.000Z",
+  "last_edited_time": "2026-06-07T16:22:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "The prompt shown above is what you'll have written by the end of this lesson. We'll build it pillar by pillar.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "The prompt shown above is what you'll have written by the end of this lesson. We'll build it pillar by pillar.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37894183-19f3-801a-b770-cca858410dd6",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-809c-bb4e-e74fc87e9438"
+  },
+  "created_time": "2026-06-07T16:22:00.000Z",
+  "last_edited_time": "2026-06-07T16:22:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "48308a3a-1ae2-4bae-8996-3c8d211b9c19",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-809c-bb4e-e74fc87e9438"
+  },
+  "created_time": "2026-06-07T16:22:00.000Z",
+  "last_edited_time": "2026-06-07T16:22:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_2",
+  "heading_2": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Step 1 \u2014 Write the role and persona",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Step 1 \u2014 Write the role and persona",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "92a30970-11af-43f3-99c0-6f8db8ab1bc5",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-809c-bb4e-e74fc87e9438"
+  },
+  "created_time": "2026-06-07T16:22:00.000Z",
+  "last_edited_time": "2026-06-07T16:22:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Start by deciding who the agent is and how it speaks.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Start by deciding who the agent is and how it speaks.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "1a88f2c5-5e27-4a2b-af14-042cbf1ad98e",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-809c-bb4e-e74fc87e9438"
+  },
+  "created_time": "2026-06-07T16:22:00.000Z",
+  "last_edited_time": "2026-06-07T16:22:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "A common first attempt looks like this:",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "A common first attempt looks like this:",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "e7ceb606-c4dd-4505-be27-78e47f8b843a",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-809c-bb4e-e74fc87e9438"
+  },
+  "created_time": "2026-06-07T16:22:00.000Z",
+  "last_edited_time": "2026-06-07T16:22:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "quote",
+  "quote": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "\"You are a helpful assistant.\"",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": true,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "\"You are a helpful assistant.\"",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "c657e8ed-b17a-4e6a-8c4d-bd2251cf51bd",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-809c-bb4e-e74fc87e9438"
+  },
+  "created_time": "2026-06-07T16:22:00.000Z",
+  "last_edited_time": "2026-06-07T16:22:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "This is technically valid but tells the model almost nothing. It will default to a generic, slightly cheerful tone, and it will treat every request as fair game because it has no idea what \"helpful\" means in this specific context.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "This is technically valid but tells the model almost nothing. It will default to a generic, slightly cheerful tone, and it will treat every request as fair game because it has no idea what \"helpful\" means in this specific context.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "4d2a3100-85bf-433e-9e63-a60c0099c635",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-809c-bb4e-e74fc87e9438"
+  },
+  "created_time": "2026-06-07T16:22:00.000Z",
+  "last_edited_time": "2026-06-07T16:22:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Compare with the version we'll use:",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Compare with the version we'll use:",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "fbc04ef8-c152-4fca-9af4-786f8f777779",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-809c-bb4e-e74fc87e9438"
+  },
+  "created_time": "2026-06-07T16:22:00.000Z",
+  "last_edited_time": "2026-06-07T16:22:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "quote",
+  "quote": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "\"You are Meridian's internal consulting support agent, used by Meridian consultants to find information quickly. Communicate in a direct, professional tone without unnecessary informality or hedging.\"",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": true,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "\"You are Meridian's internal consulting support agent, used by Meridian consultants to find information quickly. Communicate in a direct, professional tone without unnecessary informality or hedging.\"",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "6162aeb4-9a00-4d2d-ac17-90f9bd4932c0",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-809c-bb4e-e74fc87e9438"
+  },
+  "created_time": "2026-06-07T16:22:00.000Z",
+  "last_edited_time": "2026-06-07T16:22:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "This version does two things the first one does not. It names the agent's job (internal consulting support) and identifies its users (Meridian consultants). It also sets the communication tone explicitly \u2014 direct, professional, no hedging \u2014 which prevents the agent from falling back on conversational filler that a consultant in a hurry will find annoying.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "This version does two things the first one does not. It names the agent's job (internal consulting support) and identifies its users (Meridian consultants). It also sets the communication tone explicitly \u2014 direct, professional, no hedging \u2014 which prevents the agent from falling back on conversational filler that a consultant in a hurry will find annoying.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37894183-19f3-80fa-97ea-fa10c2f1d060",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-809c-bb4e-e74fc87e9438"
+  },
+  "created_time": "2026-06-07T16:24:00.000Z",
+  "last_edited_time": "2026-06-07T16:24:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "image",
+  "image": {
+   "caption": [],
+   "type": "file",
+   "file": {
+    "url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/3a9085c4-df29-45e6-8bc7-6c9c0a25ea8c/a4ea4dec-ae95-4745-a692-0834ae64c0c4/pillar_1_role.svg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB4662WDAKAZA%2F20261010%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20261010T071028Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEIf%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJGMEQCIBLjAxTgF0VUtxj9qSPZ96A9IHKSmGR1JnwIpKx1OLoqAiBT6BhLu0i7piDJc2CHHuwx9TaJdmpamWNWAhEsVO4pmir%2FAwhPEAAaDDYzNzQyMzE4MzgwNSIMwzZC69JJWj2QObsHKtwDMmeUa2M8hlrG%2Bzrfu9ai6C73HYx71plSXbq%2FQuFhFJdn4qX58Mlhj8xhzMPkRsBLP7HUyz2M8FSpi%2FTMiEn0mKG8HGLd%2F2nuYc8FTsj6RaPKSi6d8piNu47T8vaaoz2%2BEZ4XxH1FGZWYBhrKiroYs9I9Ko1%2BsSTz1OV7gSoSLZBMwt6kzVI3vQOBnCvP1QJRvPr5fAozZsFxKLddMuFFx%2FxBPVeihP3%2B7iEVq48shKsAYWFG9T%2BKg9JiSvaFBee6Uezt0nVUSXr797C%2B84W3mFe48JFir%2FmR%2F27IH1gXUzsEvo%2BFVCRm%2FS4x9DbJZOHQeLbhtG6YK0Ob%2F4sz8x0aOtJUGlKrXH40yZZTsIreqO7Bk6oaTyzr6u2uOcLVqRWjSjsk6MEKAjk7DxUDeax1WmXOvFm3XSNN90tdnmDX2xGnmBeuYvPF1fpdpxte%2Be%2F3e2LTpuV4h3C60TPAq%2BNW3Qv%2FUWyPy7txhMnqtM20Snw3PblrqJHlIuFtQuEte87%2Bt3fikweAyS0R09LgTetkWsUwg2VHp8dW4w%2BpjMaXNVh30Lx%2Bj%2FnjuAQ%2FcVZs3Ib23AwmO3oMwKR1RJs3lA2klWuy69mYS2L2rbYL9%2B%2BEOup1e8v%2FjJzhxYBmjtswyLWn1gY6pgHcxSdEXvTqsW8naA8bho6EExKG%2FuuH0R1LWRBDpOoP%2FDISzzm%2FK4fw69wSaltxLBPmPTYdLKjYel7Tl8lb6voJjR%2Bwb0arU0OvDEdxbGtDk9NlqnJO%2BA6scixT0BhYWioadTKsAM1aIUWIHc6fV4qk7NAOphzUaSnnq7g5ojHHr3Nozifc4yYJHHACf4q3a7MHjjDCrLE%2BxvP6m3oc2c9B%2BDFCDofw&X-Amz-Signature=1a3b6186bb95d34490d5a333b2cfc19a705dd8b0e9bf4fd2e229d1362a67947c&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+    "expiry_time": "2026-10-10T08:10:28.296Z"
+   }
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "eaedc2e4-7dac-4b50-ab66-df1e091560d8",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-809c-bb4e-e74fc87e9438"
+  },
+  "created_time": "2026-06-07T16:22:00.000Z",
+  "last_edited_time": "2026-06-07T16:22:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Now you try:",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Now you try:",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " write your own two sentences for the role and persona of the Meridian agent. You can use ours, adapt it, or write your own version. Don't worry about the other pillars yet \u2014 we'll layer them on next.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " write your own two sentences for the role and persona of the Meridian agent. You can use ours, adapt it, or write your own version. Don't worry about the other pillars yet \u2014 we'll layer them on next.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37894183-19f3-8042-80a4-d338b40b25e1",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-809c-bb4e-e74fc87e9438"
+  },
+  "created_time": "2026-06-07T16:22:00.000Z",
+  "last_edited_time": "2026-06-07T16:22:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "db1c02d9-ec28-458f-9e05-4091da3fbc8d",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-809c-bb4e-e74fc87e9438"
+  },
+  "created_time": "2026-06-07T16:22:00.000Z",
+  "last_edited_time": "2026-06-07T16:22:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_2",
+  "heading_2": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Step 2 \u2014 Define the scope",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Step 2 \u2014 Define the scope",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "5a127760-7d81-4bb6-bd56-7c6efc83830f",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-809c-bb4e-e74fc87e9438"
+  },
+  "created_time": "2026-06-07T16:22:00.000Z",
+  "last_edited_time": "2026-06-07T16:22:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Once the agent knows who it is, it needs to know what it is allowed to help with. Scope is where most prompts go wrong, because it is tempting to write something that sounds confident but actually says nothing.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Once the agent knows who it is, it needs to know what it is allowed to help with. Scope is where most prompts go wrong, because it is tempting to write something that sounds confident but actually says nothing.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "15a1c5be-96d5-40ad-982f-4f5ffd580549",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-809c-bb4e-e74fc87e9438"
+  },
+  "created_time": "2026-06-07T16:22:00.000Z",
+  "last_edited_time": "2026-06-07T16:22:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "A vague scope:",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "A vague scope:",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "b676e2af-3e0d-47c8-ab18-4e2bfe751ffa",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-809c-bb4e-e74fc87e9438"
+  },
+  "created_time": "2026-06-07T16:22:00.000Z",
+  "last_edited_time": "2026-06-07T16:22:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "quote",
+  "quote": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "\"Help with consulting work.\"",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": true,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "\"Help with consulting work.\"",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "20b38768-f1ce-4b6b-bf2a-3af754746f4e",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-809c-bb4e-e74fc87e9438"
+  },
+  "created_time": "2026-06-07T16:22:00.000Z",
+  "last_edited_time": "2026-06-07T16:22:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "What does that include? Pricing models for clients? Personal career advice for the consultant? Detailed analysis of a competitor's recent acquisition? Without specificity, the agent will assume everything is fair game.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "What does that include? Pricing models for clients? Personal career advice for the consultant? Detailed analysis of a competitor's recent acquisition? Without specificity, the agent will assume everything is fair game.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "a57e589b-0062-4201-9c82-d777426a8dfb",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-809c-bb4e-e74fc87e9438"
+  },
+  "created_time": "2026-06-07T16:22:00.000Z",
+  "last_edited_time": "2026-06-07T16:22:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "A specific scope:",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "A specific scope:",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "abb3aa8e-4e68-4f1a-b567-e2bdf1903448",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-809c-bb4e-e74fc87e9438"
+  },
+  "created_time": "2026-06-07T16:22:00.000Z",
+  "last_edited_time": "2026-06-07T16:22:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "quote",
+  "quote": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "\"You can answer questions about Meridian's active client accounts, internal process documentation, and operational playbooks.\"",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": true,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "\"You can answer questions about Meridian's active client accounts, internal process documentation, and operational playbooks.\"",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "e320b29e-01a9-415f-b600-7b7f6778a1bc",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-809c-bb4e-e74fc87e9438"
+  },
+  "created_time": "2026-06-07T16:22:00.000Z",
+  "last_edited_time": "2026-06-07T16:22:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "The difference is that the second version names actual content areas. A consultant reading the prompt can predict whether their question is in or out of scope. So can the agent.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "The difference is that the second version names actual content areas. A consultant reading the prompt can predict whether their question is in or out of scope. So can the agent.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37894183-19f3-809e-9a26-ca04ccf5a247",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-809c-bb4e-e74fc87e9438"
+  },
+  "created_time": "2026-06-07T16:24:00.000Z",
+  "last_edited_time": "2026-06-07T16:24:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "image",
+  "image": {
+   "caption": [],
+   "type": "file",
+   "file": {
+    "url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/3a9085c4-df29-45e6-8bc7-6c9c0a25ea8c/5110b46f-292b-4f53-9813-d9ae45d9ce85/pillar_2_scope.svg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB4662WDAKAZA%2F20261010%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20261010T071028Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEIf%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJGMEQCIBLjAxTgF0VUtxj9qSPZ96A9IHKSmGR1JnwIpKx1OLoqAiBT6BhLu0i7piDJc2CHHuwx9TaJdmpamWNWAhEsVO4pmir%2FAwhPEAAaDDYzNzQyMzE4MzgwNSIMwzZC69JJWj2QObsHKtwDMmeUa2M8hlrG%2Bzrfu9ai6C73HYx71plSXbq%2FQuFhFJdn4qX58Mlhj8xhzMPkRsBLP7HUyz2M8FSpi%2FTMiEn0mKG8HGLd%2F2nuYc8FTsj6RaPKSi6d8piNu47T8vaaoz2%2BEZ4XxH1FGZWYBhrKiroYs9I9Ko1%2BsSTz1OV7gSoSLZBMwt6kzVI3vQOBnCvP1QJRvPr5fAozZsFxKLddMuFFx%2FxBPVeihP3%2B7iEVq48shKsAYWFG9T%2BKg9JiSvaFBee6Uezt0nVUSXr797C%2B84W3mFe48JFir%2FmR%2F27IH1gXUzsEvo%2BFVCRm%2FS4x9DbJZOHQeLbhtG6YK0Ob%2F4sz8x0aOtJUGlKrXH40yZZTsIreqO7Bk6oaTyzr6u2uOcLVqRWjSjsk6MEKAjk7DxUDeax1WmXOvFm3XSNN90tdnmDX2xGnmBeuYvPF1fpdpxte%2Be%2F3e2LTpuV4h3C60TPAq%2BNW3Qv%2FUWyPy7txhMnqtM20Snw3PblrqJHlIuFtQuEte87%2Bt3fikweAyS0R09LgTetkWsUwg2VHp8dW4w%2BpjMaXNVh30Lx%2Bj%2FnjuAQ%2FcVZs3Ib23AwmO3oMwKR1RJs3lA2klWuy69mYS2L2rbYL9%2B%2BEOup1e8v%2FjJzhxYBmjtswyLWn1gY6pgHcxSdEXvTqsW8naA8bho6EExKG%2FuuH0R1LWRBDpOoP%2FDISzzm%2FK4fw69wSaltxLBPmPTYdLKjYel7Tl8lb6voJjR%2Bwb0arU0OvDEdxbGtDk9NlqnJO%2BA6scixT0BhYWioadTKsAM1aIUWIHc6fV4qk7NAOphzUaSnnq7g5ojHHr3Nozifc4yYJHHACf4q3a7MHjjDCrLE%2BxvP6m3oc2c9B%2BDFCDofw&X-Amz-Signature=90961bd07d29b155055a45564c664b47d8b27e8dbe093d7d5e1223a27d4d7156&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+    "expiry_time": "2026-10-10T08:10:28.296Z"
+   }
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "f2a7812a-2c96-4b29-8435-a8ccf9be02f7",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-809c-bb4e-e74fc87e9438"
+  },
+  "created_time": "2026-06-07T16:22:00.000Z",
+  "last_edited_time": "2026-06-07T16:22:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "A rule of thumb: if a scope statement could describe any business agent in any industry, it's too vague. Specificity should come from the actual content the agent has access to and the actual tasks its users need help with.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "A rule of thumb: if a scope statement could describe any business agent in any industry, it's too vague. Specificity should come from the actual content the agent has access to and the actual tasks its users need help with.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "5f3288d9-2797-4613-9237-4ce56f180209",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-809c-bb4e-e74fc87e9438"
+  },
+  "created_time": "2026-06-07T16:22:00.000Z",
+  "last_edited_time": "2026-06-07T16:22:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Now you try:",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Now you try:",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " add a scope sentence to the role and persona sentences you wrote in Step 1.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " add a scope sentence to the role and persona sentences you wrote in Step 1.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37894183-19f3-80d2-8409-da4fb9955625",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-809c-bb4e-e74fc87e9438"
+  },
+  "created_time": "2026-06-07T16:22:00.000Z",
+  "last_edited_time": "2026-06-07T16:22:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "4925d6c9-09b5-4ee2-a208-6a372564fa97",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-809c-bb4e-e74fc87e9438"
+  },
+  "created_time": "2026-06-07T16:22:00.000Z",
+  "last_edited_time": "2026-06-07T16:22:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_2",
+  "heading_2": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Step 3 \u2014 Write the limitations and escalation",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Step 3 \u2014 Write the limitations and escalation",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "82dce3c7-6dba-47d8-a396-9d962f6aa896",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-809c-bb4e-e74fc87e9438"
+  },
+  "created_time": "2026-06-07T16:22:00.000Z",
+  "last_edited_time": "2026-06-07T16:22:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "The third pillar tells the agent what to refuse and what to do when it does refuse. This is the pillar people most often skip entirely, which is exactly why agents start answering questions about legal interpretations and competitor salary benchmarks.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "The third pillar tells the agent what to refuse and what to do when it does refuse. This is the pillar people most often skip entirely, which is exactly why agents start answering questions about legal interpretations and competitor salary benchmarks.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "7aa4f979-96a5-48d6-a69e-eb94b10b0465",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-809c-bb4e-e74fc87e9438"
+  },
+  "created_time": "2026-06-07T16:22:00.000Z",
+  "last_edited_time": "2026-06-07T16:22:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "A vague limit:",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "A vague limit:",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "1ef1fc0d-4d27-416f-8720-2fbaba2d836e",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-809c-bb4e-e74fc87e9438"
+  },
+  "created_time": "2026-06-07T16:22:00.000Z",
+  "last_edited_time": "2026-06-07T16:22:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "quote",
+  "quote": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "\"Refuse if you can't answer.\"",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": true,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "\"Refuse if you can't answer.\"",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "99faa862-9641-4dd5-b411-8ae6ce2da76a",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-809c-bb4e-e74fc87e9438"
+  },
+  "created_time": "2026-06-07T16:22:00.000Z",
+  "last_edited_time": "2026-06-07T16:22:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "A specific limit with escalation:",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "A specific limit with escalation:",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "ce7ad142-ae42-4fe7-9d67-fb528b943af4",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-809c-bb4e-e74fc87e9438"
+  },
+  "created_time": "2026-06-07T16:22:00.000Z",
+  "last_edited_time": "2026-06-07T16:22:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "quote",
+  "quote": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "\"You cannot provide legal interpretations, HR advice, or competitor intelligence. If a consultant asks about these areas, briefly explain that the topic is outside your scope and suggest they contact Meridian's legal counsel, HR partner, or the firm's competitive intelligence lead, whichever is most relevant.\"",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": true,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "\"You cannot provide legal interpretations, HR advice, or competitor intelligence. If a consultant asks about these areas, briefly explain that the topic is outside your scope and suggest they contact Meridian's legal counsel, HR partner, or the firm's competitive intelligence lead, whichever is most relevant.\"",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "a5fa1bc0-4e2b-4180-981e-9bb2aaeebd8a",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-809c-bb4e-e74fc87e9438"
+  },
+  "created_time": "2026-06-07T16:22:00.000Z",
+  "last_edited_time": "2026-06-07T16:22:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "The second version does three things. It names specific refusal categories. It tells the agent what to do instead of just stopping (explain the boundary). And it provides escalation paths so the consultant isn't left stuck without next steps.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "The second version does three things. It names specific refusal categories. It tells the agent what to do instead of just stopping (explain the boundary). And it provides escalation paths so the consultant isn't left stuck without next steps.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37894183-19f3-8068-abb2-f3b4ebefe80f",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-809c-bb4e-e74fc87e9438"
+  },
+  "created_time": "2026-06-07T16:24:00.000Z",
+  "last_edited_time": "2026-06-07T16:24:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "image",
+  "image": {
+   "caption": [],
+   "type": "file",
+   "file": {
+    "url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/3a9085c4-df29-45e6-8bc7-6c9c0a25ea8c/d9297f84-d25d-4650-b3dc-14b17b5de0ec/pillar_3_limits.svg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB4662WDAKAZA%2F20261010%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20261010T071028Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEIf%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJGMEQCIBLjAxTgF0VUtxj9qSPZ96A9IHKSmGR1JnwIpKx1OLoqAiBT6BhLu0i7piDJc2CHHuwx9TaJdmpamWNWAhEsVO4pmir%2FAwhPEAAaDDYzNzQyMzE4MzgwNSIMwzZC69JJWj2QObsHKtwDMmeUa2M8hlrG%2Bzrfu9ai6C73HYx71plSXbq%2FQuFhFJdn4qX58Mlhj8xhzMPkRsBLP7HUyz2M8FSpi%2FTMiEn0mKG8HGLd%2F2nuYc8FTsj6RaPKSi6d8piNu47T8vaaoz2%2BEZ4XxH1FGZWYBhrKiroYs9I9Ko1%2BsSTz1OV7gSoSLZBMwt6kzVI3vQOBnCvP1QJRvPr5fAozZsFxKLddMuFFx%2FxBPVeihP3%2B7iEVq48shKsAYWFG9T%2BKg9JiSvaFBee6Uezt0nVUSXr797C%2B84W3mFe48JFir%2FmR%2F27IH1gXUzsEvo%2BFVCRm%2FS4x9DbJZOHQeLbhtG6YK0Ob%2F4sz8x0aOtJUGlKrXH40yZZTsIreqO7Bk6oaTyzr6u2uOcLVqRWjSjsk6MEKAjk7DxUDeax1WmXOvFm3XSNN90tdnmDX2xGnmBeuYvPF1fpdpxte%2Be%2F3e2LTpuV4h3C60TPAq%2BNW3Qv%2FUWyPy7txhMnqtM20Snw3PblrqJHlIuFtQuEte87%2Bt3fikweAyS0R09LgTetkWsUwg2VHp8dW4w%2BpjMaXNVh30Lx%2Bj%2FnjuAQ%2FcVZs3Ib23AwmO3oMwKR1RJs3lA2klWuy69mYS2L2rbYL9%2B%2BEOup1e8v%2FjJzhxYBmjtswyLWn1gY6pgHcxSdEXvTqsW8naA8bho6EExKG%2FuuH0R1LWRBDpOoP%2FDISzzm%2FK4fw69wSaltxLBPmPTYdLKjYel7Tl8lb6voJjR%2Bwb0arU0OvDEdxbGtDk9NlqnJO%2BA6scixT0BhYWioadTKsAM1aIUWIHc6fV4qk7NAOphzUaSnnq7g5ojHHr3Nozifc4yYJHHACf4q3a7MHjjDCrLE%2BxvP6m3oc2c9B%2BDFCDofw&X-Amz-Signature=a74cf2a9a671c9e8c73f5c09a1b9c3c1fec8d016e5a3f9def1ad417e821dfacb&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+    "expiry_time": "2026-10-10T08:10:28.296Z"
+   }
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "1bb69a9e-a65a-4253-9e88-2beaddeb3834",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-809c-bb4e-e74fc87e9438"
+  },
+  "created_time": "2026-06-07T16:22:00.000Z",
+  "last_edited_time": "2026-06-07T16:22:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Notice that ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Notice that ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "\"explain the boundary and suggest a contact\"",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": true,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "\"explain the boundary and suggest a contact\"",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " is a much more useful behaviour than ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " is a much more useful behaviour than ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "\"do not answer.\"",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": true,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "\"do not answer.\"",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " A silent refusal feels broken; a brief explanation with a redirect feels like a helpful colleague.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " A silent refusal feels broken; a brief explanation with a redirect feels like a helpful colleague.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "c86d2242-0552-4b49-9b46-a8a1f6f516c8",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-809c-bb4e-e74fc87e9438"
+  },
+  "created_time": "2026-06-07T16:22:00.000Z",
+  "last_edited_time": "2026-06-07T16:22:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Now you try:",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Now you try:",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " add limitations and escalation sentences to complete your draft prompt.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " add limitations and escalation sentences to complete your draft prompt.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37894183-19f3-80cd-9b48-f2a81e4230e4",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-809c-bb4e-e74fc87e9438"
+  },
+  "created_time": "2026-06-07T16:22:00.000Z",
+  "last_edited_time": "2026-06-07T16:22:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "6f402954-7cb7-4eeb-9f2f-7cc97063a35c",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-809c-bb4e-e74fc87e9438"
+  },
+  "created_time": "2026-06-07T16:22:00.000Z",
+  "last_edited_time": "2026-06-07T16:22:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_2",
+  "heading_2": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Step 4 \u2014 Assemble and enter the prompt",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Step 4 \u2014 Assemble and enter the prompt",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "05fb4980-4803-48c2-8f1d-b79ce255ffbf",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-809c-bb4e-e74fc87e9438"
+  },
+  "created_time": "2026-06-07T16:22:00.000Z",
+  "last_edited_time": "2026-06-07T16:22:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Your full prompt should now be four to six sentences covering all three pillars. Here is what the Meridian version looks like fully assembled:",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Your full prompt should now be four to six sentences covering all three pillars. Here is what the Meridian version looks like fully assembled:",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "2c1f29ab-adc9-4476-b4aa-1caf0338b44c",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-809c-bb4e-e74fc87e9438"
+  },
+  "created_time": "2026-06-07T16:22:00.000Z",
+  "last_edited_time": "2026-06-07T16:22:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "quote",
+  "quote": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "\"You are Meridian's internal consulting support agent, used by Meridian consultants to find information quickly. Communicate in a direct, professional tone without unnecessary informality or hedging. You can answer questions about Meridian's active client accounts, internal process documentation, and operational playbooks. You cannot provide legal interpretations, HR advice, or competitor intelligence. If a consultant asks about these areas, briefly explain that the topic is outside your scope and suggest they contact Meridian's legal counsel, HR partner, or the firm's competitive intelligence lead, whichever is most relevant.\"",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": true,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "\"You are Meridian's internal consulting support agent, used by Meridian consultants to find information quickly. Communicate in a direct, professional tone without unnecessary informality or hedging. You can answer questions about Meridian's active client accounts, internal process documentation, and operational playbooks. You cannot provide legal interpretations, HR advice, or competitor intelligence. If a consultant asks about these areas, briefly explain that the topic is outside your scope and suggest they contact Meridian's legal counsel, HR partner, or the firm's competitive intelligence lead, whichever is most relevant.\"",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "885534cb-a6ed-4f9f-bb49-42c44c4f053e",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-809c-bb4e-e74fc87e9438"
+  },
+  "created_time": "2026-06-07T16:22:00.000Z",
+  "last_edited_time": "2026-06-07T16:22:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "This prompt is concrete enough that two different developers reading it would expect roughly the same behaviour from the agent. That's the bar.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "This prompt is concrete enough that two different developers reading it would expect roughly the same behaviour from the agent. That's the bar.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "91599e94-7005-4909-b2bd-eb1dba57363b",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-809c-bb4e-e74fc87e9438"
+  },
+  "created_time": "2026-06-07T16:22:00.000Z",
+  "last_edited_time": "2026-06-07T16:22:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "To enter it in your canvas:",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "To enter it in your canvas:",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "07b908be-cce1-4a8c-ba4b-635b1628f46a",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-809c-bb4e-e74fc87e9438"
+  },
+  "created_time": "2026-06-07T16:22:00.000Z",
+  "last_edited_time": "2026-06-07T16:22:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "numbered_list_item",
+  "numbered_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Click the Agent Node on your Agentflow v2 canvas to open its settings.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Click the Agent Node on your Agentflow v2 canvas to open its settings.",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "90d47e73-31be-4fd7-8c4a-c5fa5c37ecd2",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-809c-bb4e-e74fc87e9438"
+  },
+  "created_time": "2026-06-07T16:22:00.000Z",
+  "last_edited_time": "2026-06-07T16:22:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "numbered_list_item",
+  "numbered_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Locate the ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Locate the ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "System Prompt",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "System Prompt",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " field. It contains the placeholder text from the previous walkthrough.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " field. It contains the placeholder text from the previous walkthrough.",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "11f09bf4-1955-43e4-82d2-71878226cf14",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-809c-bb4e-e74fc87e9438"
+  },
+  "created_time": "2026-06-07T16:22:00.000Z",
+  "last_edited_time": "2026-06-07T16:22:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "numbered_list_item",
+  "numbered_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Replace the placeholder with your full assembled prompt.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Replace the placeholder with your full assembled prompt.",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "ced4737c-d87c-4e8c-8c6e-20c1e57fd998",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-809c-bb4e-e74fc87e9438"
+  },
+  "created_time": "2026-06-07T16:22:00.000Z",
+  "last_edited_time": "2026-06-07T16:22:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "numbered_list_item",
+  "numbered_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Save the flow using the save icon in the top right of the canvas.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Save the flow using the save icon in the top right of the canvas.",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37894183-19f3-80de-8793-c3dff0fb1855",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-809c-bb4e-e74fc87e9438"
+  },
+  "created_time": "2026-06-07T16:22:00.000Z",
+  "last_edited_time": "2026-06-07T16:22:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "eeffd588-23ae-4228-823a-cd5c3196e98b",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-809c-bb4e-e74fc87e9438"
+  },
+  "created_time": "2026-06-07T16:22:00.000Z",
+  "last_edited_time": "2026-06-07T16:22:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_2",
+  "heading_2": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Step 5 \u2014 Test the prompt boundary",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Step 5 \u2014 Test the prompt boundary",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "c15bf35d-ea65-4fe6-8758-53c6f94c47d8",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-809c-bb4e-e74fc87e9438"
+  },
+  "created_time": "2026-06-07T16:22:00.000Z",
+  "last_edited_time": "2026-06-07T16:22:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Open the built-in chat interface and run two test queries: one inside your defined scope, one outside it.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Open the built-in chat interface and run two test queries: one inside your defined scope, one outside it.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "917155de-e124-4f84-9a46-99b90da9cdfb",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-809c-bb4e-e74fc87e9438"
+  },
+  "created_time": "2026-06-07T16:22:00.000Z",
+  "last_edited_time": "2026-06-07T16:22:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "In-scope query",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "In-scope query",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " (something the agent should help with):",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " (something the agent should help with):",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "e8f3b559-c534-4209-8363-db18fa507187",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-809c-bb4e-e74fc87e9438"
+  },
+  "created_time": "2026-06-07T16:22:00.000Z",
+  "last_edited_time": "2026-06-07T16:22:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "quote",
+  "quote": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "\"Can you summarise the operational playbook for new client onboarding?\"",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": true,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "\"Can you summarise the operational playbook for new client onboarding?\"",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "c439839e-7966-4cba-9197-29e1d2263595",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-809c-bb4e-e74fc87e9438"
+  },
+  "created_time": "2026-06-07T16:22:00.000Z",
+  "last_edited_time": "2026-06-07T16:22:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "The agent should respond in the direct, professional tone you defined. The exact wording will vary, but the shape of a good response is: focused, no unnecessary preamble, and grounded in the kind of process documentation your scope statement allows.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "The agent should respond in the direct, professional tone you defined. The exact wording will vary, but the shape of a good response is: focused, no unnecessary preamble, and grounded in the kind of process documentation your scope statement allows.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "aab42708-1e00-4aa5-878f-279e2d6a0f54",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-809c-bb4e-e74fc87e9438"
+  },
+  "created_time": "2026-06-07T16:22:00.000Z",
+  "last_edited_time": "2026-06-07T16:22:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Out-of-scope query",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Out-of-scope query",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " (something the agent should refuse):",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " (something the agent should refuse):",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "24325849-ccd5-40f2-a55a-7d9b5a742405",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-809c-bb4e-e74fc87e9438"
+  },
+  "created_time": "2026-06-07T16:22:00.000Z",
+  "last_edited_time": "2026-06-07T16:22:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "quote",
+  "quote": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "\"What's the average salary for a Senior Consultant at our two biggest competitors?\"",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": true,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "\"What's the average salary for a Senior Consultant at our two biggest competitors?\"",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "4233fb18-32e0-4b06-a5c1-3b69b35a1b2d",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-809c-bb4e-e74fc87e9438"
+  },
+  "created_time": "2026-06-07T16:22:00.000Z",
+  "last_edited_time": "2026-06-07T16:22:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "The agent should explain that competitor intelligence is outside its scope and direct the consultant to the competitive intelligence lead. It should not attempt to answer with general knowledge or invented figures.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "The agent should explain that competitor intelligence is outside its scope and direct the consultant to the competitive intelligence lead. It should not attempt to answer with general knowledge or invented figures.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "eaf1a922-de1a-47dc-a5c4-ada5a00b1c29",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-809c-bb4e-e74fc87e9438"
+  },
+  "created_time": "2026-06-07T16:22:00.000Z",
+  "last_edited_time": "2026-06-07T16:22:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "If the agent answers the out-of-scope query without acknowledging the boundary, the limitations section of your prompt needs work. The most common fix is to make the refusal categories more explicit (name them, do not gesture at them) and test again.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "If the agent answers the out-of-scope query without acknowledging the boundary, the limitations section of your prompt needs work. The most common fix is to make the refusal categories more explicit (name them, do not gesture at them) and test again.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37894183-19f3-80eb-8098-c25313031d54",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-809c-bb4e-e74fc87e9438"
+  },
+  "created_time": "2026-06-07T16:22:00.000Z",
+  "last_edited_time": "2026-06-07T16:22:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "cee0b0f0-7727-4072-8b86-73ad79e0a011",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-809c-bb4e-e74fc87e9438"
+  },
+  "created_time": "2026-06-07T16:22:00.000Z",
+  "last_edited_time": "2026-06-07T16:22:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_2",
+  "heading_2": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Your turn \u2014 write a variant for partner-level consultants",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Your turn \u2014 write a variant for partner-level consultants",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "92478edc-1718-48b2-a746-d7a8137a9e5e",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-809c-bb4e-e74fc87e9438"
+  },
+  "created_time": "2026-06-07T16:22:00.000Z",
+  "last_edited_time": "2026-06-07T16:22:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "You've walked through the Meridian prompt with us. Now apply the same logic to a slightly different version of the same agent.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "You've walked through the Meridian prompt with us. Now apply the same logic to a slightly different version of the same agent.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "97285683-7977-4d57-81b5-a7fc1507316f",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-809c-bb4e-e74fc87e9438"
+  },
+  "created_time": "2026-06-07T16:22:00.000Z",
+  "last_edited_time": "2026-06-07T16:22:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Meridian's leadership wants a separate variant of this agent for ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Meridian's leadership wants a separate variant of this agent for ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "partner-level consultants only",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "partner-level consultants only",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": ". Partners need additional access: they can ask about prospective client pipelines and pricing strategy \u2014 areas that the regular agent must refuse.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": ". Partners need additional access: they can ask about prospective client pipelines and pricing strategy \u2014 areas that the regular agent must refuse.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "5c373a18-5172-4d50-90e3-31971d53421c",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-809c-bb4e-e74fc87e9438"
+  },
+  "created_time": "2026-06-07T16:22:00.000Z",
+  "last_edited_time": "2026-06-07T16:22:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Rewrite the system prompt for this partner-level variant:",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Rewrite the system prompt for this partner-level variant:",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "de66ec78-e489-4af3-876c-5863189be577",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-809c-bb4e-e74fc87e9438"
+  },
+  "created_time": "2026-06-07T16:22:00.000Z",
+  "last_edited_time": "2026-06-07T16:22:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Keep the same role and persona.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Keep the same role and persona.",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "6ae5b9a5-0dce-424d-9d23-d8770e59f709",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-809c-bb4e-e74fc87e9438"
+  },
+  "created_time": "2026-06-07T16:22:00.000Z",
+  "last_edited_time": "2026-06-07T16:22:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Expand the scope",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Expand the scope",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " to explicitly include prospective client pipelines and pricing strategy.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " to explicitly include prospective client pipelines and pricing strategy.",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "2ebef442-6edf-47eb-9024-d790ced2fbee",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-809c-bb4e-e74fc87e9438"
+  },
+  "created_time": "2026-06-07T16:22:00.000Z",
+  "last_edited_time": "2026-06-07T16:22:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Adjust the limitations",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Adjust the limitations",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " so those areas are no longer refused, but legal and HR remain off-limits.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " so those areas are no longer refused, but legal and HR remain off-limits.",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "5587a1c7-2f88-4079-9d84-8f045a423b1a",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-809c-bb4e-e74fc87e9438"
+  },
+  "created_time": "2026-06-07T16:22:00.000Z",
+  "last_edited_time": "2026-06-07T16:22:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Enter your partner-variant prompt into the canvas (replacing the previous version), save, and test it with one query that should now be in scope (\"Give me the current pipeline status for prospective client X\") and one that should still be refused (any legal or HR query).",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Enter your partner-variant prompt into the canvas (replacing the previous version), save, and test it with one query that should now be in scope (\"Give me the current pipeline status for prospective client X\") and one that should still be refused (any legal or HR query).",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37894183-19f3-8021-9209-d974a2b6489c",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-809c-bb4e-e74fc87e9438"
+  },
+  "created_time": "2026-06-07T16:22:00.000Z",
+  "last_edited_time": "2026-06-07T16:22:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "8e6a2b76-6bbc-47bf-8bb7-0bc27d239e31",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-809c-bb4e-e74fc87e9438"
+  },
+  "created_time": "2026-06-07T16:22:00.000Z",
+  "last_edited_time": "2026-06-07T16:22:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_2",
+  "heading_2": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Checkpoints",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Checkpoints",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "b0fd97f8-6ce4-4d57-93ee-14feafa20686",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-809c-bb4e-e74fc87e9438"
+  },
+  "created_time": "2026-06-07T16:22:00.000Z",
+  "last_edited_time": "2026-06-07T16:22:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Before you move on, walk through these:",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Before you move on, walk through these:",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "cbc496ee-ae7e-4e12-b0e2-2eb1bfe5e136",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-809c-bb4e-e74fc87e9438"
+  },
+  "created_time": "2026-06-07T16:22:00.000Z",
+  "last_edited_time": "2026-06-07T16:22:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "numbered_list_item",
+  "numbered_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Role clarity",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Role clarity",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " \u2014 read your final prompt aloud as if you were the agent receiving it for the first time. Is it immediately obvious who you are and how you should communicate?",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " \u2014 read your final prompt aloud as if you were the agent receiving it for the first time. Is it immediately obvious who you are and how you should communicate?",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "b222be77-8436-4ea0-b78b-20a0c5cdd555",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-809c-bb4e-e74fc87e9438"
+  },
+  "created_time": "2026-06-07T16:22:00.000Z",
+  "last_edited_time": "2026-06-07T16:22:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "numbered_list_item",
+  "numbered_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Scope specificity",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Scope specificity",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " \u2014 could a Meridian consultant predict whether a given question is in or out of scope just by reading your prompt? If not, the scope is still too vague.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " \u2014 could a Meridian consultant predict whether a given question is in or out of scope just by reading your prompt? If not, the scope is still too vague.",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "55249c3f-5abc-4189-afdd-e7a55994dc33",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-809c-bb4e-e74fc87e9438"
+  },
+  "created_time": "2026-06-07T16:22:00.000Z",
+  "last_edited_time": "2026-06-07T16:22:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "numbered_list_item",
+  "numbered_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Escalation behaviour",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Escalation behaviour",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " \u2014 when your agent refused the out-of-scope query in testing, did it explain ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " \u2014 when your agent refused the out-of-scope query in testing, did it explain ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "why",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": true,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "why",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " and offer a redirect? Or did it just stop?",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " and offer a redirect? Or did it just stop?",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "520c21e5-7ad5-44ce-8370-4e1f1fe61ef5",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-809c-bb4e-e74fc87e9438"
+  },
+  "created_time": "2026-06-07T16:22:00.000Z",
+  "last_edited_time": "2026-06-07T16:22:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "numbered_list_item",
+  "numbered_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Length and clarity",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Length and clarity",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " \u2014 the four-to-eight-sentence range is a guide, not a hard rule. If your prompt is longer but every sentence carries weight, that's fine. If it's at six sentences but two of them say the same thing, cut.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " \u2014 the four-to-eight-sentence range is a guide, not a hard rule. If your prompt is longer but every sentence carries weight, that's fine. If it's at six sentences but two of them say the same thing, cut.",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37894183-19f3-807d-aab6-e12f5267b77a",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-809c-bb4e-e74fc87e9438"
+  },
+  "created_time": "2026-06-07T16:22:00.000Z",
+  "last_edited_time": "2026-06-07T16:22:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37894183-19f3-8053-a688-d862123ec84d",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-809c-bb4e-e74fc87e9438"
+  },
+  "created_time": "2026-06-07T16:23:00.000Z",
+  "last_edited_time": "2026-06-07T16:23:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": true,
+  "in_trash": false,
+  "type": "callout",
+  "callout": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Takeaway:",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Takeaway:",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " ",
+     "href": null
+    }
+   ],
+   "icon": {
+    "type": "emoji",
+    "emoji": "\ud83d\udca1"
+   },
+   "color": "gray_background"
+  },
+  "archived": false,
+  "_children": [
+   {
+    "object": "block",
+    "id": "37894183-19f3-8099-b8b7-ee5ae7597e72",
+    "parent": {
+     "type": "block_id",
+     "block_id": "37894183-19f3-8053-a688-d862123ec84d"
+    },
+    "created_time": "2026-06-07T16:23:00.000Z",
+    "last_edited_time": "2026-06-07T16:23:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+     "rich_text": [
+      {
+       "type": "text",
+       "text": {
+        "content": "A system prompt is the most important single configuration decision in a business agent. Writing it well is not a creative exercise \u2014 it is a job description for the agent, and the same rules apply. Vague job descriptions produce inconsistent employees. Vague system prompts produce inconsistent agents.",
+        "link": null
+       },
+       "annotations": {
+        "bold": false,
+        "italic": false,
+        "strikethrough": false,
+        "underline": false,
+        "code": false,
+        "color": "default"
+       },
+       "plain_text": "A system prompt is the most important single configuration decision in a business agent. Writing it well is not a creative exercise \u2014 it is a job description for the agent, and the same rules apply. Vague job descriptions produce inconsistent employees. Vague system prompts produce inconsistent agents.",
+       "href": null
+      }
+     ],
+     "icon": null,
+     "color": "default"
+    },
+    "archived": false
+   },
+   {
+    "object": "block",
+    "id": "37894183-19f3-80cf-96bc-ee521337531e",
+    "parent": {
+     "type": "block_id",
+     "block_id": "37894183-19f3-8053-a688-d862123ec84d"
+    },
+    "created_time": "2026-06-07T16:23:00.000Z",
+    "last_edited_time": "2026-06-07T16:23:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+     "rich_text": [
+      {
+       "type": "text",
+       "text": {
+        "content": "Specificity in the role, scope, and limits gives you predictability in return. And the time you spend getting the prompt right before testing is always less than the time you would spend debugging unexpected behaviour after deployment.",
+        "link": null
+       },
+       "annotations": {
+        "bold": false,
+        "italic": false,
+        "strikethrough": false,
+        "underline": false,
+        "code": false,
+        "color": "default"
+       },
+       "plain_text": "Specificity in the role, scope, and limits gives you predictability in return. And the time you spend getting the prompt right before testing is always less than the time you would spend debugging unexpected behaviour after deployment.",
+       "href": null
+      }
+     ],
+     "icon": null,
+     "color": "default"
+    },
+    "archived": false
+   }
+  ]
+ }
+]

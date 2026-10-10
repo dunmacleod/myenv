@@ -1,0 +1,2362 @@
+[
+ {
+  "object": "block",
+  "id": "22a31ba3-1947-4a99-b4b1-4b400fe83a9d",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-80c9-acc9-cdb9f9c9a5b3"
+  },
+  "created_time": "2026-06-19T03:01:00.000Z",
+  "last_edited_time": "2026-06-19T03:01:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "After reviewing what went wrong with the first version of Vela's agent, Selin called a short planning session with Jonas and Petra. The conclusion from the previous lesson was clear: the agent failed not because it lacked capability, but because it had no architectural plan. Now the team needs to make their first real design decision before rebuilding anything on the canvas.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "After reviewing what went wrong with the first version of Vela's agent, Selin called a short planning session with Jonas and Petra. The conclusion from the previous lesson was clear: the agent failed not because it lacked capability, but because it had no architectural plan. Now the team needs to make their first real design decision before rebuilding anything on the canvas.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "123a9096-bb61-478e-9f6a-6d1f7378b144",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-80c9-acc9-cdb9f9c9a5b3"
+  },
+  "created_time": "2026-06-19T03:01:00.000Z",
+  "last_edited_time": "2026-06-19T03:01:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "A colleague from another team has suggested the solution is simple: \"Just add more agents.\" Selin isn't convinced. Adding agents means more nodes, more coordination logic, more places for things to go wrong, and more API calls per query. That has a cost \u2014 in latency, in tokens, and in debugging time. The question isn't whether multi-agent systems are more powerful. The question is whether Vela's problem actually requires one.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "A colleague from another team has suggested the solution is simple: \"Just add more agents.\" Selin isn't convinced. Adding agents means more nodes, more coordination logic, more places for things to go wrong, and more API calls per query. That has a cost \u2014 in latency, in tokens, and in debugging time. The question isn't whether multi-agent systems are more powerful. The question is whether Vela's problem actually requires one.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "adc8adc8-24a7-49cd-9d49-23f01861864c",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-80c9-acc9-cdb9f9c9a5b3"
+  },
+  "created_time": "2026-06-19T03:01:00.000Z",
+  "last_edited_time": "2026-06-19T03:01:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "This lesson gives the team (and you) the framework to answer that question.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "This lesson gives the team (and you) the framework to answer that question.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38f94183-19f3-80f7-ae64-e2c22b373139",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-80c9-acc9-cdb9f9c9a5b3"
+  },
+  "created_time": "2026-06-30T11:50:00.000Z",
+  "last_edited_time": "2026-06-30T11:50:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "ff8fe3cb-ca83-408b-8f0b-43d9436f70bc",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-80c9-acc9-cdb9f9c9a5b3"
+  },
+  "created_time": "2026-06-19T03:01:00.000Z",
+  "last_edited_time": "2026-06-19T03:01:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_2",
+  "heading_2": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "What a single-agent system is",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "What a single-agent system is",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "09567af4-1692-4472-83e1-5f2423cadddf",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-80c9-acc9-cdb9f9c9a5b3"
+  },
+  "created_time": "2026-06-19T03:01:00.000Z",
+  "last_edited_time": "2026-06-19T03:01:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "A single-agent system has one Agent Node doing all the reasoning. It receives the user's input, decides what to do, uses whatever tools or knowledge it has access to, and produces a response. The entire decision-making path runs through one node.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "A single-agent system has one Agent Node doing all the reasoning. It receives the user's input, decides what to do, uses whatever tools or knowledge it has access to, and produces a response. The entire decision-making path runs through one node.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "759ab176-c339-4abd-9e3a-3afb83a66680",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-80c9-acc9-cdb9f9c9a5b3"
+  },
+  "created_time": "2026-06-19T03:01:00.000Z",
+  "last_edited_time": "2026-06-19T03:01:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "This is not a limitation. A well-designed single-agent system can handle routing logic, tool use, memory across turns, and diverse query types \u2014 all within one Agent Node, driven by a clear system prompt and connected to the right inputs.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "This is not a limitation. A well-designed single-agent system can handle routing logic, tool use, memory across turns, and diverse query types \u2014 all within one Agent Node, driven by a clear system prompt and connected to the right inputs.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "bd447562-678f-42cf-8f36-4d18b0b98153",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-80c9-acc9-cdb9f9c9a5b3"
+  },
+  "created_time": "2026-06-19T03:01:00.000Z",
+  "last_edited_time": "2026-06-19T03:01:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Vela's current baseline is a single-agent system. One Start Node, one Agent Node, one Direct Reply Node. The Agent Node uses Gemini to reason about each query and respond. Nothing about that structure is wrong. The question is whether it is ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Vela's current baseline is a single-agent system. One Start Node, one Agent Node, one Direct Reply Node. The Agent Node uses Gemini to reason about each query and respond. Nothing about that structure is wrong. The question is whether it is ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "sufficient",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": true,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "sufficient",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " for what Vela needs.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " for what Vela needs.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38f94183-19f3-8068-81a4-d490473d254f",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-80c9-acc9-cdb9f9c9a5b3"
+  },
+  "created_time": "2026-06-30T11:50:00.000Z",
+  "last_edited_time": "2026-06-30T11:50:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "b57f0125-db7a-42d2-a306-294a8f7333c5",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-80c9-acc9-cdb9f9c9a5b3"
+  },
+  "created_time": "2026-06-19T03:01:00.000Z",
+  "last_edited_time": "2026-06-19T03:01:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_2",
+  "heading_2": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "What a multi-agent system adds",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "What a multi-agent system adds",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "afb60f5d-d5f5-49b1-9634-44b81039d4d0",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-80c9-acc9-cdb9f9c9a5b3"
+  },
+  "created_time": "2026-06-19T03:01:00.000Z",
+  "last_edited_time": "2026-06-19T03:01:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "A multi-agent system has more than one Agent Node, each with a defined role. One agent might handle information queries. Another handles action requests. A supervisor agent might decide which specialist to engage based on the incoming query. The agents coordinate \u2014 passing context, results, and control between them through the canvas.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "A multi-agent system has more than one Agent Node, each with a defined role. One agent might handle information queries. Another handles action requests. A supervisor agent might decide which specialist to engage based on the incoming query. The agents coordinate \u2014 passing context, results, and control between them through the canvas.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "39f5a348-53ca-4d38-9d31-7901883d38ab",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-80c9-acc9-cdb9f9c9a5b3"
+  },
+  "created_time": "2026-06-19T03:01:00.000Z",
+  "last_edited_time": "2026-06-19T03:01:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Multi-agent systems solve a specific set of problems that single agents genuinely cannot:",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Multi-agent systems solve a specific set of problems that single agents genuinely cannot:",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "96843fc0-165c-41e2-89b6-3a8438547b2d",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-80c9-acc9-cdb9f9c9a5b3"
+  },
+  "created_time": "2026-06-19T03:01:00.000Z",
+  "last_edited_time": "2026-06-19T03:01:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Specialisation at scale.",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Specialisation at scale.",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " When a single agent handles too many different types of tasks, its system prompt becomes long, its tool list grows, and its routing decisions become unreliable. Splitting the work across specialist agents (each with a narrow, well-defined scope) produces more consistent results.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " When a single agent handles too many different types of tasks, its system prompt becomes long, its tool list grows, and its routing decisions become unreliable. Splitting the work across specialist agents (each with a narrow, well-defined scope) produces more consistent results.",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "97e43f33-bba3-4158-9244-31311c156b19",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-80c9-acc9-cdb9f9c9a5b3"
+  },
+  "created_time": "2026-06-19T03:01:00.000Z",
+  "last_edited_time": "2026-06-19T03:01:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Parallel or sequential work.",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Parallel or sequential work.",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " Some tasks require one step to complete before another can begin, or two steps to run at the same time. A single agent completes one thing at a time in a linear loop. Multi-agent architectures can structure the work differently.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " Some tasks require one step to complete before another can begin, or two steps to run at the same time. A single agent completes one thing at a time in a linear loop. Multi-agent architectures can structure the work differently.",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "ad25fc27-a27b-417a-ab96-2625468246fb",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-80c9-acc9-cdb9f9c9a5b3"
+  },
+  "created_time": "2026-06-19T03:01:00.000Z",
+  "last_edited_time": "2026-06-19T03:01:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Failure isolation.",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Failure isolation.",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " When one agent in a multi-agent system fails, its failure does not necessarily corrupt the others. A single-agent failure is a total failure.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " When one agent in a multi-agent system fails, its failure does not necessarily corrupt the others. A single-agent failure is a total failure.",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "4b8eeee8-5b29-4742-88b7-53e0de0f5ae3",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-80c9-acc9-cdb9f9c9a5b3"
+  },
+  "created_time": "2026-06-19T03:01:00.000Z",
+  "last_edited_time": "2026-06-19T03:01:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "The cost of these benefits is real: more nodes, more coordination logic, higher latency per request, more tokens consumed per interaction, and harder debugging when something goes wrong between agents rather than inside one.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "The cost of these benefits is real: more nodes, more coordination logic, higher latency per request, more tokens consumed per interaction, and harder debugging when something goes wrong between agents rather than inside one.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38f94183-19f3-8070-aff1-d5e1b98160e0",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-80c9-acc9-cdb9f9c9a5b3"
+  },
+  "created_time": "2026-06-30T11:50:00.000Z",
+  "last_edited_time": "2026-06-30T11:50:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "8f1c18b5-5c4c-4f52-9f83-0f62173ef2ac",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-80c9-acc9-cdb9f9c9a5b3"
+  },
+  "created_time": "2026-06-19T03:01:00.000Z",
+  "last_edited_time": "2026-06-19T03:01:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_2",
+  "heading_2": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "The decision framework",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "The decision framework",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "2e35a8b5-fe05-453c-ba34-4551384f8426",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-80c9-acc9-cdb9f9c9a5b3"
+  },
+  "created_time": "2026-06-19T03:01:00.000Z",
+  "last_edited_time": "2026-06-19T03:01:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "The choice between single-agent and multi-agent should follow from the problem, not from a preference for complexity. Four questions make the decision clear.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "The choice between single-agent and multi-agent should follow from the problem, not from a preference for complexity. Four questions make the decision clear.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38494183-19f3-80f1-8f18-dc16988bb1af",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-80c9-acc9-cdb9f9c9a5b3"
+  },
+  "created_time": "2026-06-19T03:04:00.000Z",
+  "last_edited_time": "2026-06-19T03:04:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "image",
+  "image": {
+   "caption": [],
+   "type": "file",
+   "file": {
+    "url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/3a9085c4-df29-45e6-8bc7-6c9c0a25ea8c/cad9418f-afb9-48fb-a656-dfa23510c496/single-vs-multi-agent-decision__01__en.svg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466THXLAXCG%2F20261010%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20261010T073431Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEIf%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJIMEYCIQDJ2JIhD7xnVNYpOh8vxHfkcF91sCA7b1fBxRpuau4LAgIhAMZe%2Bd1IU8TcLsweSK%2BswM6fVXKUK0cxpJXAt0oe5fEQKv8DCE8QABoMNjM3NDIzMTgzODA1IgyBp6YrfAg2MzeMT4Mq3AMGybQI1nwGyXH2uc1GjqMSCd7mNYDj4SVJSsvsugMco5r%2BPoJVAUui%2FXP%2FDtz%2BZB3w6bmItX3XxmNUcNxJE0yQaIo3xUkuSIT3E6%2BfBN0CWTbMev030AXt3MsPdtLWnR1iOlrYlurgutAleTbxpqwWSaQDZWedXoUY0HOoxCvFWKHNzhRDOMOJzefjQlL6RjgkTvcQSB2%2BZHmqmQGWFvavXUzvewZjLPN4TNwJ0jVRCxTPaxNFxievhNSsogQgQ2a4NgsKhZCqKwwdFputR%2BH7vI%2B%2Brdo7nvpbuXx8lKcSqtcazcRXSs9qMdH8mIK54pvMUGQ6G3IEdBdslnjOckWjJcdkH5qgxrBulO1YLwZ5f%2BhhiJDG97DkTZ%2BnO4ncqWbiaTGTeuuzue%2FREnP1R1kJhTwiqmBTresBunXgxKqkACVFWGRtTdNAEXuaVQLsP3IyZfCYnv7R%2F5zC4b3%2BrArrDmMhjHpfqacRr8wp6GOyDE5FL%2FrzBhNIBZi%2FexWtFSaOz83lhsxvZvdUSw7DuVu9Oi1lSfElFmaWYQ5r5C39J2JH%2F5AOiK8DLLaGDJbBSBTV4NckoJ9nslq%2BlTIZMCaUI1WkxYB3b9PNJTY%2FjEnIv80BwYg2gRbGILfwNTDutqfWBjqkAZHtpo%2BkXit%2BP4kWleonwxGdSXPnWYzF9I84upqL9EX76Is4dxGA03OsXRKshrGD8Xok8Qm9QyMfEG%2FfrOdbPMnj%2BU6E55MOdKWTZacbH8ANuCzvefoOjSRF2zu1ujeVr1wBB8glddLLRq7X5vLafcG%2BAzvFjyGptGH00Ldd1zB20t3vis9%2BubwIUDHEQsd9liRoEDDerrktvJHbzBO%2FUVx9%2B%2B%2Bf&X-Amz-Signature=e04c51a3b0085da073db34c8e7d2e2e6ea212ff059db0ef01a89b9863ddc937a&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+    "expiry_time": "2026-10-10T08:34:31.592Z"
+   }
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38f94183-19f3-80c8-90a4-cd0729606d94",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-80c9-acc9-cdb9f9c9a5b3"
+  },
+  "created_time": "2026-06-30T11:51:00.000Z",
+  "last_edited_time": "2026-06-30T11:51:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "682fd5b0-c116-4658-a23f-364fb4c15b76",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-80c9-acc9-cdb9f9c9a5b3"
+  },
+  "created_time": "2026-06-19T03:01:00.000Z",
+  "last_edited_time": "2026-06-19T03:04:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "1. Can one well-scoped agent handle the full range of inputs reliably?",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "1. Can one well-scoped agent handle the full range of inputs reliably?",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "\nIf the agent's scope is narrow enough that a clear system prompt governs all query types without becoming unwieldy, a single agent is appropriate. Vela's agent answers questions about inventory, fulfilment, and supplier communications; three related areas that share context. One well-scoped agent could cover all three.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "\nIf the agent's scope is narrow enough that a clear system prompt governs all query types without becoming unwieldy, a single agent is appropriate. Vela's agent answers questions about inventory, fulfilment, and supplier communications; three related areas that share context. One well-scoped agent could cover all three.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38f94183-19f3-80ca-9a44-da595cf02228",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-80c9-acc9-cdb9f9c9a5b3"
+  },
+  "created_time": "2026-06-30T11:51:00.000Z",
+  "last_edited_time": "2026-06-30T11:51:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "e61f80c7-a71e-4c87-b0bf-1af7fc8b573b",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-80c9-acc9-cdb9f9c9a5b3"
+  },
+  "created_time": "2026-06-19T03:01:00.000Z",
+  "last_edited_time": "2026-06-19T03:04:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "2. Does the work require specialist knowledge or tools that conflict with each other?",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "2. Does the work require specialist knowledge or tools that conflict with each other?",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "\nIf different query types need fundamentally different tools, access levels, or reasoning approaches (and combining them creates routing confusion) specialised agents produce better results. If the tools and knowledge work well together in one system prompt, they do not need to be split.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "\nIf different query types need fundamentally different tools, access levels, or reasoning approaches (and combining them creates routing confusion) specialised agents produce better results. If the tools and knowledge work well together in one system prompt, they do not need to be split.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38f94183-19f3-80f1-b2c2-e1dfd9086d9f",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-80c9-acc9-cdb9f9c9a5b3"
+  },
+  "created_time": "2026-06-30T11:51:00.000Z",
+  "last_edited_time": "2026-06-30T11:51:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "0319116c-be6b-478f-bcef-0ad20ac643ac",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-80c9-acc9-cdb9f9c9a5b3"
+  },
+  "created_time": "2026-06-19T03:01:00.000Z",
+  "last_edited_time": "2026-06-19T03:01:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "3. Does a failure in one part need to be isolated from the rest?",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "3. Does a failure in one part need to be isolated from the rest?",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "\nIf one failure should not cascade into the whole agent stopping, multi-agent gives you isolation boundaries. If total failure on one query is acceptable and recoverable, single-agent is fine.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "\nIf one failure should not cascade into the whole agent stopping, multi-agent gives you isolation boundaries. If total failure on one query is acceptable and recoverable, single-agent is fine.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38f94183-19f3-80e9-8743-e3251ef66783",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-80c9-acc9-cdb9f9c9a5b3"
+  },
+  "created_time": "2026-06-30T11:51:00.000Z",
+  "last_edited_time": "2026-06-30T11:51:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "40199575-52bb-42f9-bd9b-15bd9059351a",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-80c9-acc9-cdb9f9c9a5b3"
+  },
+  "created_time": "2026-06-19T03:01:00.000Z",
+  "last_edited_time": "2026-06-19T03:01:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "4. Is the complexity cost justified by the reliability gain?",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "4. Is the complexity cost justified by the reliability gain?",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "\nMulti-agent systems are harder to build, test, and debug. If the reliability gain from splitting agents does not outweigh the coordination overhead introduced, the complexity is not earned. Default to the simpler system until the problem demands more.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "\nMulti-agent systems are harder to build, test, and debug. If the reliability gain from splitting agents does not outweigh the coordination overhead introduced, the complexity is not earned. Default to the simpler system until the problem demands more.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38f94183-19f3-8010-8d03-e7bb9a9bc187",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-80c9-acc9-cdb9f9c9a5b3"
+  },
+  "created_time": "2026-06-30T11:51:00.000Z",
+  "last_edited_time": "2026-06-30T11:51:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "93d68767-c150-4451-82d7-a84fb97d0b7b",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-80c9-acc9-cdb9f9c9a5b3"
+  },
+  "created_time": "2026-06-19T03:01:00.000Z",
+  "last_edited_time": "2026-06-19T03:02:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": true,
+  "in_trash": false,
+  "type": "table",
+  "table": {
+   "table_width": 2,
+   "has_column_header": true,
+   "has_row_header": false
+  },
+  "archived": false,
+  "_children": [
+   {
+    "object": "block",
+    "id": "38536697-37d7-4f8b-9209-4ef2bc369ed0",
+    "parent": {
+     "type": "block_id",
+     "block_id": "93d68767-c150-4451-82d7-a84fb97d0b7b"
+    },
+    "created_time": "2026-06-19T03:01:00.000Z",
+    "last_edited_time": "2026-06-19T03:01:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "231d872b-594c-81f2-a375-0002b8783aca"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "231d872b-594c-81f2-a375-0002b8783aca"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "table_row",
+    "table_row": {
+     "cells": [
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Signal",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Signal",
+        "href": null
+       }
+      ],
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Points toward",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Points toward",
+        "href": null
+       }
+      ]
+     ]
+    },
+    "archived": false
+   },
+   {
+    "object": "block",
+    "id": "137152f2-417d-4c73-bd11-5a6d03ffd63e",
+    "parent": {
+     "type": "block_id",
+     "block_id": "93d68767-c150-4451-82d7-a84fb97d0b7b"
+    },
+    "created_time": "2026-06-19T03:01:00.000Z",
+    "last_edited_time": "2026-06-19T03:01:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "231d872b-594c-81f2-a375-0002b8783aca"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "231d872b-594c-81f2-a375-0002b8783aca"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "table_row",
+    "table_row": {
+     "cells": [
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Scope is narrow and stable",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Scope is narrow and stable",
+        "href": null
+       }
+      ],
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Single agent",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Single agent",
+        "href": null
+       }
+      ]
+     ]
+    },
+    "archived": false
+   },
+   {
+    "object": "block",
+    "id": "9b666cd7-abbf-42a9-85ca-5b650635fa79",
+    "parent": {
+     "type": "block_id",
+     "block_id": "93d68767-c150-4451-82d7-a84fb97d0b7b"
+    },
+    "created_time": "2026-06-19T03:01:00.000Z",
+    "last_edited_time": "2026-06-19T03:01:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "231d872b-594c-81f2-a375-0002b8783aca"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "231d872b-594c-81f2-a375-0002b8783aca"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "table_row",
+    "table_row": {
+     "cells": [
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "System prompt is becoming long and unreliable",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "System prompt is becoming long and unreliable",
+        "href": null
+       }
+      ],
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Multi-agent",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Multi-agent",
+        "href": null
+       }
+      ]
+     ]
+    },
+    "archived": false
+   },
+   {
+    "object": "block",
+    "id": "78bf8d0a-619d-43f8-a08c-fc6a23b4c77e",
+    "parent": {
+     "type": "block_id",
+     "block_id": "93d68767-c150-4451-82d7-a84fb97d0b7b"
+    },
+    "created_time": "2026-06-19T03:01:00.000Z",
+    "last_edited_time": "2026-06-19T03:01:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "231d872b-594c-81f2-a375-0002b8783aca"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "231d872b-594c-81f2-a375-0002b8783aca"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "table_row",
+    "table_row": {
+     "cells": [
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "All tools belong together logically",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "All tools belong together logically",
+        "href": null
+       }
+      ],
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Single agent",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Single agent",
+        "href": null
+       }
+      ]
+     ]
+    },
+    "archived": false
+   },
+   {
+    "object": "block",
+    "id": "0c8a2d89-6c70-4e53-abb2-d6f037f34272",
+    "parent": {
+     "type": "block_id",
+     "block_id": "93d68767-c150-4451-82d7-a84fb97d0b7b"
+    },
+    "created_time": "2026-06-19T03:01:00.000Z",
+    "last_edited_time": "2026-06-19T03:01:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "231d872b-594c-81f2-a375-0002b8783aca"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "231d872b-594c-81f2-a375-0002b8783aca"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "table_row",
+    "table_row": {
+     "cells": [
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Tools conflict or create routing confusion",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Tools conflict or create routing confusion",
+        "href": null
+       }
+      ],
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Multi-agent",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Multi-agent",
+        "href": null
+       }
+      ]
+     ]
+    },
+    "archived": false
+   },
+   {
+    "object": "block",
+    "id": "e210604b-02a0-424b-a585-d82f91f29803",
+    "parent": {
+     "type": "block_id",
+     "block_id": "93d68767-c150-4451-82d7-a84fb97d0b7b"
+    },
+    "created_time": "2026-06-19T03:01:00.000Z",
+    "last_edited_time": "2026-06-19T03:01:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "231d872b-594c-81f2-a375-0002b8783aca"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "231d872b-594c-81f2-a375-0002b8783aca"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "table_row",
+    "table_row": {
+     "cells": [
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "A failure should stop the whole response",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "A failure should stop the whole response",
+        "href": null
+       }
+      ],
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Single agent",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Single agent",
+        "href": null
+       }
+      ]
+     ]
+    },
+    "archived": false
+   },
+   {
+    "object": "block",
+    "id": "8ce68f0a-701f-4196-9f76-22085b07c1c5",
+    "parent": {
+     "type": "block_id",
+     "block_id": "93d68767-c150-4451-82d7-a84fb97d0b7b"
+    },
+    "created_time": "2026-06-19T03:01:00.000Z",
+    "last_edited_time": "2026-06-19T03:01:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "231d872b-594c-81f2-a375-0002b8783aca"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "231d872b-594c-81f2-a375-0002b8783aca"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "table_row",
+    "table_row": {
+     "cells": [
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "A failure in one part should not stop others",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "A failure in one part should not stop others",
+        "href": null
+       }
+      ],
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Multi-agent",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Multi-agent",
+        "href": null
+       }
+      ]
+     ]
+    },
+    "archived": false
+   },
+   {
+    "object": "block",
+    "id": "e1682c34-e722-4e5a-a8b3-abed0033faf0",
+    "parent": {
+     "type": "block_id",
+     "block_id": "93d68767-c150-4451-82d7-a84fb97d0b7b"
+    },
+    "created_time": "2026-06-19T03:01:00.000Z",
+    "last_edited_time": "2026-06-19T03:01:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "231d872b-594c-81f2-a375-0002b8783aca"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "231d872b-594c-81f2-a375-0002b8783aca"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "table_row",
+    "table_row": {
+     "cells": [
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Coordination cost is low relative to reliability gain",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Coordination cost is low relative to reliability gain",
+        "href": null
+       }
+      ],
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Multi-agent",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Multi-agent",
+        "href": null
+       }
+      ]
+     ]
+    },
+    "archived": false
+   },
+   {
+    "object": "block",
+    "id": "36c37566-03ca-474a-87c6-c146e402e80e",
+    "parent": {
+     "type": "block_id",
+     "block_id": "93d68767-c150-4451-82d7-a84fb97d0b7b"
+    },
+    "created_time": "2026-06-19T03:01:00.000Z",
+    "last_edited_time": "2026-06-19T03:01:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "231d872b-594c-81f2-a375-0002b8783aca"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "231d872b-594c-81f2-a375-0002b8783aca"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "table_row",
+    "table_row": {
+     "cells": [
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Coordination cost exceeds the reliability benefit",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Coordination cost exceeds the reliability benefit",
+        "href": null
+       }
+      ],
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Single agent",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Single agent",
+        "href": null
+       }
+      ]
+     ]
+    },
+    "archived": false
+   }
+  ]
+ },
+ {
+  "object": "block",
+  "id": "38f94183-19f3-8064-bd36-d669c998fb06",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-80c9-acc9-cdb9f9c9a5b3"
+  },
+  "created_time": "2026-06-30T11:51:00.000Z",
+  "last_edited_time": "2026-06-30T11:51:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "80c5601b-405f-4386-858b-84b7422b334d",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-80c9-acc9-cdb9f9c9a5b3"
+  },
+  "created_time": "2026-06-19T03:01:00.000Z",
+  "last_edited_time": "2026-06-19T03:01:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_2",
+  "heading_2": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Applying the framework to Vela",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Applying the framework to Vela",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "e4d0784e-45f1-4171-9e98-031c9fe62fdc",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-80c9-acc9-cdb9f9c9a5b3"
+  },
+  "created_time": "2026-06-19T03:01:00.000Z",
+  "last_edited_time": "2026-06-19T03:01:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Selin walks the four questions against Vela's actual problem.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Selin walks the four questions against Vela's actual problem.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "ad212307-5737-4302-bfc6-aa5093720dfb",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-80c9-acc9-cdb9f9c9a5b3"
+  },
+  "created_time": "2026-06-19T03:01:00.000Z",
+  "last_edited_time": "2026-06-19T03:02:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "The agent handles three related areas: inventory, fulfilment, and supplier communications. These share enough context that one system prompt can govern all three without becoming unmanageable. The tools Vela needs are logically compatible. A failure on one query type does not need to be isolated from the others. And the team is small; Jonas and Petra will maintain this agent, and adding coordination logic between multiple agents introduces work they cannot absorb right now.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "The agent handles three related areas: inventory, fulfilment, and supplier communications. These share enough context that one system prompt can govern all three without becoming unmanageable. The tools Vela needs are logically compatible. A failure on one query type does not need to be isolated from the others. And the team is small; Jonas and Petra will maintain this agent, and adding coordination logic between multiple agents introduces work they cannot absorb right now.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "08010f53-9ca2-4dd3-bc6e-419269e8da40",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-80c9-acc9-cdb9f9c9a5b3"
+  },
+  "created_time": "2026-06-19T03:01:00.000Z",
+  "last_edited_time": "2026-06-19T03:01:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "The answer for Vela, at this stage, is a well-designed single-agent system. Not because multi-agent systems are more complicated, but because the problem does not yet justify the cost.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "The answer for Vela, at this stage, is a well-designed single-agent system. Not because multi-agent systems are more complicated, but because the problem does not yet justify the cost.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "25362b38-13fb-4546-8b2f-fe4c64262f05",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-80c9-acc9-cdb9f9c9a5b3"
+  },
+  "created_time": "2026-06-19T03:01:00.000Z",
+  "last_edited_time": "2026-06-19T03:02:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "This conclusion is revisable. If Vela's agent scope expands significantly, or if the system prompt starts producing inconsistent routing, or if the team grows to support more complex infrastructure, then the decision changes. Architectural decisions are not permanent. They are appropriate to the problem at the time they are made.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "This conclusion is revisable. If Vela's agent scope expands significantly, or if the system prompt starts producing inconsistent routing, or if the team grows to support more complex infrastructure, then the decision changes. Architectural decisions are not permanent. They are appropriate to the problem at the time they are made.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "f0ca9f1b-f362-4405-82be-763399e5f835",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-80c9-acc9-cdb9f9c9a5b3"
+  },
+  "created_time": "2026-06-19T03:01:00.000Z",
+  "last_edited_time": "2026-06-19T03:01:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "In your live session, you will apply this same framework to your own project. The decision you make there will be the foundation of your Sprint 1 architecture brief.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "In your live session, you will apply this same framework to your own project. The decision you make there will be the foundation of your Sprint 1 architecture brief.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38f94183-19f3-802a-beb6-fc14c0d53399",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-80c9-acc9-cdb9f9c9a5b3"
+  },
+  "created_time": "2026-06-30T11:51:00.000Z",
+  "last_edited_time": "2026-06-30T11:51:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "6593926c-8057-4c9a-ab89-7a834509bd93",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-80c9-acc9-cdb9f9c9a5b3"
+  },
+  "created_time": "2026-06-19T03:01:00.000Z",
+  "last_edited_time": "2026-06-19T03:01:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_2",
+  "heading_2": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Summary",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Summary",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "731eb7a3-a770-4d5f-8bbe-5d320a11cac5",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-80c9-acc9-cdb9f9c9a5b3"
+  },
+  "created_time": "2026-06-19T03:01:00.000Z",
+  "last_edited_time": "2026-06-19T03:01:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "The distinction between a single-agent and a multi-agent system is not about sophistication \u2014 it is about fit. A single agent with a clear scope, a well-written system prompt, and the right tools can outperform a multi-agent system that is over-engineered for the problem in front of it.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "The distinction between a single-agent and a multi-agent system is not about sophistication \u2014 it is about fit. A single agent with a clear scope, a well-written system prompt, and the right tools can outperform a multi-agent system that is over-engineered for the problem in front of it.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "bd962c2f-497d-4045-a566-819c6e1c928b",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-80c9-acc9-cdb9f9c9a5b3"
+  },
+  "created_time": "2026-06-19T03:01:00.000Z",
+  "last_edited_time": "2026-06-19T03:03:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "The four-question framework (scope, specialisation, failure isolation, and coordination cost) is what turns this from a gut feeling into a defensible decision. Vela's answer is single-agent for now. The next lesson introduces the full range of architecture patterns available, so you can see where single-agent and multi-agent fit within a broader set of design choices.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "The four-question framework (scope, specialisation, failure isolation, and coordination cost) is what turns this from a gut feeling into a defensible decision. Vela's answer is single-agent for now. The next lesson introduces the full range of architecture patterns available, so you can see where single-agent and multi-agent fit within a broader set of design choices.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ }
+]

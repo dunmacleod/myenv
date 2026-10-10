@@ -1,0 +1,3096 @@
+[
+ {
+  "object": "block",
+  "id": "614f429a-e7cd-45d1-b317-4e8b7fe6f456",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-80c0-a203-c1da9d6781bf"
+  },
+  "created_time": "2026-06-19T12:59:00.000Z",
+  "last_edited_time": "2026-06-29T08:02:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Selin reviews the first version of Vela's agent (the one that broke in production) with fresh eyes. The failure modes from the opening lesson of this sprint are now easier to name: inconsistent routing answers, degraded performance under load, a twenty-minute change that took a full day. At the time, the team diagnosed these as bugs. They patched them one at a time. The patches introduced new problems.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Selin reviews the first version of Vela's agent (the one that broke in production) with fresh eyes. The failure modes from the opening lesson of this sprint are now easier to name: inconsistent routing answers, degraded performance under load, a twenty-minute change that took a full day. At the time, the team diagnosed these as bugs. They patched them one at a time. The patches introduced new problems.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "d4038955-e454-42d6-9606-546795732a64",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-80c0-a203-c1da9d6781bf"
+  },
+  "created_time": "2026-06-19T12:59:00.000Z",
+  "last_edited_time": "2026-06-19T12:59:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "What Selin can see now is that each failure traced back to a specific architectural mistake made before a single node was added to the canvas. The mistakes did not look like mistakes when they were made. They looked like reasonable shortcuts \u2014 a quick way to get the canvas working faster, a configuration that seemed harmless, a design decision that felt flexible at the time.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "What Selin can see now is that each failure traced back to a specific architectural mistake made before a single node was added to the canvas. The mistakes did not look like mistakes when they were made. They looked like reasonable shortcuts \u2014 a quick way to get the canvas working faster, a configuration that seemed harmless, a design decision that felt flexible at the time.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38494183-19f3-800a-84cc-c5f71d0bda14",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-80c0-a203-c1da9d6781bf"
+  },
+  "created_time": "2026-06-19T13:00:00.000Z",
+  "last_edited_time": "2026-06-19T13:00:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "callout",
+  "callout": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "This lesson names the three mistakes that appear most often in real agent systems, explains why they are hard to spot before they cause damage, and shows how to recognise each one early enough to fix it at the design level rather than the patch level.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "This lesson names the three mistakes that appear most often in real agent systems, explains why they are hard to spot before they cause damage, and shows how to recognise each one early enough to fix it at the design level rather than the patch level.",
+     "href": null
+    }
+   ],
+   "icon": {
+    "type": "emoji",
+    "emoji": "\ud83d\udca1"
+   },
+   "color": "gray_background"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38f94183-19f3-80e8-a307-cac6678c3374",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-80c0-a203-c1da9d6781bf"
+  },
+  "created_time": "2026-06-30T12:22:00.000Z",
+  "last_edited_time": "2026-06-30T12:22:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "887c0ec3-dd0f-45c6-9d9f-e28f68a94bbf",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-80c0-a203-c1da9d6781bf"
+  },
+  "created_time": "2026-06-19T12:59:00.000Z",
+  "last_edited_time": "2026-06-19T13:00:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_2",
+  "heading_2": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Mistake 1: Over-engineering",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Mistake 1: Over-engineering",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "834964f4-aebc-4dc8-8e39-5c52cd745019",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-80c0-a203-c1da9d6781bf"
+  },
+  "created_time": "2026-06-19T12:59:00.000Z",
+  "last_edited_time": "2026-06-30T12:23:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "What it is:",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "What it is:",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " adding more nodes, more agents, more routing logic, and more coordination overhead than the problem actually requires.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " adding more nodes, more agents, more routing logic, and more coordination overhead than the problem actually requires.",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "fe1de49d-b8b9-4e35-b974-d730aef7e6f7",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-80c0-a203-c1da9d6781bf"
+  },
+  "created_time": "2026-06-19T12:59:00.000Z",
+  "last_edited_time": "2026-06-30T12:23:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Why it happens:",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Why it happens:",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " complexity feels like thoroughness. A canvas with a supervisor node, three specialist workers, a Loop Node, and four branches of Flow State handling looks more capable than a single Agent Node with a clear system prompt. It is more capable for a problem that needs that level of coordination. For a problem that does not, the extra nodes are a liability.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " complexity feels like thoroughness. A canvas with a supervisor node, three specialist workers, a Loop Node, and four branches of Flow State handling looks more capable than a single Agent Node with a clear system prompt. It is more capable for a problem that needs that level of coordination. For a problem that does not, the extra nodes are a liability.",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "f7a4d877-27b2-4753-8a91-b0e0e6debda2",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-80c0-a203-c1da9d6781bf"
+  },
+  "created_time": "2026-06-19T12:59:00.000Z",
+  "last_edited_time": "2026-06-19T12:59:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Over-engineering shows up in two forms. The first is premature multi-agent: splitting a single agent into two or more agents before there is evidence that one agent cannot do the job. The second is unnecessary branching: adding Condition Nodes and routing paths for scenarios that have not yet appeared, on the assumption that they eventually will.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Over-engineering shows up in two forms. The first is premature multi-agent: splitting a single agent into two or more agents before there is evidence that one agent cannot do the job. The second is unnecessary branching: adding Condition Nodes and routing paths for scenarios that have not yet appeared, on the assumption that they eventually will.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "82a35d16-132a-4020-b242-20312430ca05",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-80c0-a203-c1da9d6781bf"
+  },
+  "created_time": "2026-06-19T12:59:00.000Z",
+  "last_edited_time": "2026-06-19T12:59:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Both forms share the same cost: more nodes means more places for execution to fail, more Flow State keys to manage, more tool descriptions to keep non-overlapping, and a harder debugging surface when something does go wrong.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Both forms share the same cost: more nodes means more places for execution to fail, more Flow State keys to manage, more tool descriptions to keep non-overlapping, and a harder debugging surface when something does go wrong.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "01c7eec1-097d-4d2a-ae04-b7729c821a26",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-80c0-a203-c1da9d6781bf"
+  },
+  "created_time": "2026-06-19T12:59:00.000Z",
+  "last_edited_time": "2026-06-30T12:23:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "The Vela example:",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "The Vela example:",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " the first version of Vela's agent had implicit routing logic inside a single Agent Node that was asked to do too many things. The proposed fix from Jonas's colleague was to add multiple specialist agents. That would have been over-engineering \u2014 the problem was not that one agent was insufficient. The problem was that the one agent had not been designed deliberately. A well-scoped single agent with a clear system prompt handles Vela's three query types more reliably and with less overhead than three specialist agents with a supervisor routing between them.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " the first version of Vela's agent had implicit routing logic inside a single Agent Node that was asked to do too many things. The proposed fix from Jonas's colleague was to add multiple specialist agents. That would have been over-engineering \u2014 the problem was not that one agent was insufficient. The problem was that the one agent had not been designed deliberately. A well-scoped single agent with a clear system prompt handles Vela's three query types more reliably and with less overhead than three specialist agents with a supervisor routing between them.",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "c4b916fd-320c-401b-a2cd-880ceabfd309",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-80c0-a203-c1da9d6781bf"
+  },
+  "created_time": "2026-06-19T12:59:00.000Z",
+  "last_edited_time": "2026-06-30T12:23:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "The signal to watch for:",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "The signal to watch for:",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " if the justification for adding another agent is \"it might be useful later\" or \"it feels more robust,\" that is over-engineering. The justification for adding another agent should be a specific, observable failure in the existing agent that the new agent is designed to fix.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " if the justification for adding another agent is \"it might be useful later\" or \"it feels more robust,\" that is over-engineering. The justification for adding another agent should be a specific, observable failure in the existing agent that the new agent is designed to fix.",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38f94183-19f3-8035-b230-ce4c73aa633d",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-80c0-a203-c1da9d6781bf"
+  },
+  "created_time": "2026-06-30T12:22:00.000Z",
+  "last_edited_time": "2026-06-30T12:22:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "96f10bc5-fb54-47a1-bbfa-3e5942a07c22",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-80c0-a203-c1da9d6781bf"
+  },
+  "created_time": "2026-06-19T12:59:00.000Z",
+  "last_edited_time": "2026-06-19T13:00:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_2",
+  "heading_2": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Mistake 2: Hidden state",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Mistake 2: Hidden state",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "a1e3385a-7771-4497-938f-4074bb14bfbb",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-80c0-a203-c1da9d6781bf"
+  },
+  "created_time": "2026-06-19T12:59:00.000Z",
+  "last_edited_time": "2026-06-30T12:23:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "What it is:",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "What it is:",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " Using Flow State in ways that are not declared, documented, or predictable \u2014 writing to a key that was never initialised, reading a key whose value depends on a path the current execution may not have taken, or letting state accumulate across a session in ways that affect later queries.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " Using Flow State in ways that are not declared, documented, or predictable \u2014 writing to a key that was never initialised, reading a key whose value depends on a path the current execution may not have taken, or letting state accumulate across a session in ways that affect later queries.",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "6053afdc-f789-4ee1-ba6a-23a14fdd8b2d",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-80c0-a203-c1da9d6781bf"
+  },
+  "created_time": "2026-06-19T12:59:00.000Z",
+  "last_edited_time": "2026-06-30T12:23:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Why it happens:",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Why it happens:",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " Flow State is convenient. Any node can write to any key at any point in the execution. That flexibility makes it easy to pass data between non-adjacent nodes without adding explicit connections. It also makes it easy to introduce state that no one designed and no one fully understands.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " Flow State is convenient. Any node can write to any key at any point in the execution. That flexibility makes it easy to pass data between non-adjacent nodes without adding explicit connections. It also makes it easy to introduce state that no one designed and no one fully understands.",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38f94183-19f3-8006-9033-c7c028c5db61",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-80c0-a203-c1da9d6781bf"
+  },
+  "created_time": "2026-06-30T12:23:00.000Z",
+  "last_edited_time": "2026-06-30T12:23:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "9ee920fd-67a8-4ec3-a359-cd99ed3437da",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-80c0-a203-c1da9d6781bf"
+  },
+  "created_time": "2026-06-19T12:59:00.000Z",
+  "last_edited_time": "2026-06-19T12:59:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Hidden state has three common forms:",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Hidden state has three common forms:",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "2afd16bd-2246-4b65-82ec-cefa9a799a28",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-80c0-a203-c1da9d6781bf"
+  },
+  "created_time": "2026-06-19T12:59:00.000Z",
+  "last_edited_time": "2026-06-30T12:23:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "numbered_list_item",
+  "numbered_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Undeclared keys:",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Undeclared keys:",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " A node writes to ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " A node writes to ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "$flow.state.approval_result",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": true,
+      "color": "default"
+     },
+     "plain_text": "$flow.state.approval_result",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " without that key being initialised in the Start Node. The key exists and the write succeeds, but there is no explicit record that the key is part of the architecture. When a different node later tries to read ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " without that key being initialised in the Start Node. The key exists and the write succeeds, but there is no explicit record that the key is part of the architecture. When a different node later tries to read ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "$flow.state.approval_result",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": true,
+      "color": "default"
+     },
+     "plain_text": "$flow.state.approval_result",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " on a path where the writing node never ran, it receives an undefined value. The downstream node behaves unexpectedly, and the cause is not obvious from the execution trace.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " on a path where the writing node never ran, it receives an undefined value. The downstream node behaves unexpectedly, and the cause is not obvious from the execution trace.",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "826d158f-10bd-400c-ae45-d6961d4267f7",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-80c0-a203-c1da9d6781bf"
+  },
+  "created_time": "2026-06-19T12:59:00.000Z",
+  "last_edited_time": "2026-06-30T12:23:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "numbered_list_item",
+  "numbered_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Path-dependent values:",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Path-dependent values:",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " A key is written on one branch of a Condition Node but not the other. A downstream node that reads the key on both branches behaves correctly on the branch where the write happened and incorrectly on the branch where it did not \u2014 but only under the specific input conditions that trigger the unwritten branch. This class of bug is easy to miss in testing and difficult to reproduce.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " A key is written on one branch of a Condition Node but not the other. A downstream node that reads the key on both branches behaves correctly on the branch where the write happened and incorrectly on the branch where it did not \u2014 but only under the specific input conditions that trigger the unwritten branch. This class of bug is easy to miss in testing and difficult to reproduce.",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "ba6e675c-9193-40b2-8a3f-e72ef1e228bb",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-80c0-a203-c1da9d6781bf"
+  },
+  "created_time": "2026-06-19T12:59:00.000Z",
+  "last_edited_time": "2026-06-30T12:23:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "numbered_list_item",
+  "numbered_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Session accumulation: ",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Session accumulation: ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "Memory configured with ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Memory configured with ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "allMessages",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": true,
+      "color": "default"
+     },
+     "plain_text": "allMessages",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " and no window limit retains every turn of a long session. The Agent Node injects that full history into each new prompt. After twenty turns covering three different topics, the context window contains irrelevant earlier turns that bias the agent's interpretation of new queries. The agent is not broken \u2014 it is reasoning correctly from a context that is no longer appropriate.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " and no window limit retains every turn of a long session. The Agent Node injects that full history into each new prompt. After twenty turns covering three different topics, the context window contains irrelevant earlier turns that bias the agent's interpretation of new queries. The agent is not broken \u2014 it is reasoning correctly from a context that is no longer appropriate.",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38f94183-19f3-806c-8246-dd0a8f9f8709",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-80c0-a203-c1da9d6781bf"
+  },
+  "created_time": "2026-06-30T12:23:00.000Z",
+  "last_edited_time": "2026-06-30T12:23:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38bf5644-d0c7-4d0e-b892-c19702dfc3c8",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-80c0-a203-c1da9d6781bf"
+  },
+  "created_time": "2026-06-19T12:59:00.000Z",
+  "last_edited_time": "2026-06-30T12:24:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "The Vela example:",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "The Vela example:",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " The baseline canvas has two Flow State keys pre-declared but empty: ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " The baseline canvas has two Flow State keys pre-declared but empty: ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "query_type",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": true,
+      "color": "default"
+     },
+     "plain_text": "query_type",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " and ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " and ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "status_response",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": true,
+      "color": "default"
+     },
+     "plain_text": "status_response",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": ". Those exist precisely to prevent hidden state: the keys are visible in the Start Node, their purpose is named, and any node that writes to them is doing so into a known, declared structure. Adding keys at the node level without declaring them in the Start Node is the mistake this design pattern prevents.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": ". Those exist precisely to prevent hidden state: the keys are visible in the Start Node, their purpose is named, and any node that writes to them is doing so into a known, declared structure. Adding keys at the node level without declaring them in the Start Node is the mistake this design pattern prevents.",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "8c6ae58d-80c6-4866-82ad-e1d6d3a94951",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-80c0-a203-c1da9d6781bf"
+  },
+  "created_time": "2026-06-19T12:59:00.000Z",
+  "last_edited_time": "2026-06-30T12:24:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "The signal to watch for:",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "The signal to watch for:",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " if a Flow State key appears in a node's configuration but not in the Start Node's initialisation list, it is hidden state. Audit the Start Node against every ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " if a Flow State key appears in a node's configuration but not in the Start Node's initialisation list, it is hidden state. Audit the Start Node against every ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "$flow.state",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": true,
+      "color": "default"
+     },
+     "plain_text": "$flow.state",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " reference in the canvas before the architecture is considered complete.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " reference in the canvas before the architecture is considered complete.",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38f94183-19f3-809d-90d5-d27804054ebe",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-80c0-a203-c1da9d6781bf"
+  },
+  "created_time": "2026-06-30T12:23:00.000Z",
+  "last_edited_time": "2026-06-30T12:23:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "a52e6cb6-e2c6-4334-8a47-653fb95f0af6",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-80c0-a203-c1da9d6781bf"
+  },
+  "created_time": "2026-06-19T12:59:00.000Z",
+  "last_edited_time": "2026-06-19T13:01:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_2",
+  "heading_2": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Mistake 3: Brittle handoffs",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Mistake 3: Brittle handoffs",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "169595f8-9775-4970-bd3c-3cf16c82d5ad",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-80c0-a203-c1da9d6781bf"
+  },
+  "created_time": "2026-06-19T12:59:00.000Z",
+  "last_edited_time": "2026-06-30T12:24:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "What it is:",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "What it is:",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " designing a connection between two nodes, or two agents, where one node's output is assumed to arrive in a specific format, and there is no handling for what happens when it does not.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " designing a connection between two nodes, or two agents, where one node's output is assumed to arrive in a specific format, and there is no handling for what happens when it does not.",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "fd67985e-d05a-465b-b763-49cafa5d2dac",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-80c0-a203-c1da9d6781bf"
+  },
+  "created_time": "2026-06-19T12:59:00.000Z",
+  "last_edited_time": "2026-06-30T12:24:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Why it happens:",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Why it happens:",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " when building a canvas, it is natural to test the happy path first. Agent A produces a well-structured response. Agent B reads it and uses it correctly. The connection works. The problem is that Agent A's output format is not guaranteed. It is the result of a model inference, and model inference is not deterministic. Under slightly different input conditions, the same Agent Node may produce a response with a missing field, a different key name, or a format that a downstream node cannot parse.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " when building a canvas, it is natural to test the happy path first. Agent A produces a well-structured response. Agent B reads it and uses it correctly. The connection works. The problem is that Agent A's output format is not guaranteed. It is the result of a model inference, and model inference is not deterministic. Under slightly different input conditions, the same Agent Node may produce a response with a missing field, a different key name, or a format that a downstream node cannot parse.",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "fc497dc5-e436-4713-887a-4c4d94a8105e",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-80c0-a203-c1da9d6781bf"
+  },
+  "created_time": "2026-06-19T12:59:00.000Z",
+  "last_edited_time": "2026-06-19T12:59:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Brittle handoffs manifest in three specific ways:",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Brittle handoffs manifest in three specific ways:",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "b252f996-3495-4a7b-bfc3-af5de231d561",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-80c0-a203-c1da9d6781bf"
+  },
+  "created_time": "2026-06-19T12:59:00.000Z",
+  "last_edited_time": "2026-06-30T12:24:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "numbered_list_item",
+  "numbered_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Format dependency: ",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Format dependency: ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "A Condition Node expects ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "A Condition Node expects ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "$flow.state.next",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": true,
+      "color": "default"
+     },
+     "plain_text": "$flow.state.next",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " to contain one of three specific string values (",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " to contain one of three specific string values (",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "\"worker_a\"",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": true,
+      "color": "default"
+     },
+     "plain_text": "\"worker_a\"",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": ", ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": ", ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "\"worker_b\"",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": true,
+      "color": "default"
+     },
+     "plain_text": "\"worker_b\"",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": ", ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": ", ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "\"done\"",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": true,
+      "color": "default"
+     },
+     "plain_text": "\"done\"",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "). The supervisor LLM Node is prompted to write one of those three values. Under most inputs, it does. Under some inputs such as ambiguous requests, very short inputs, inputs in an unexpected language; it writes ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "). The supervisor LLM Node is prompted to write one of those three values. Under most inputs, it does. Under some inputs such as ambiguous requests, very short inputs, inputs in an unexpected language; it writes ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "\"Worker A\"",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": true,
+      "color": "default"
+     },
+     "plain_text": "\"Worker A\"",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " or ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " or ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "\"complete\"",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": true,
+      "color": "default"
+     },
+     "plain_text": "\"complete\"",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " or nothing. The Condition Node has no matching branch and the execution fails silently.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " or nothing. The Condition Node has no matching branch and the execution fails silently.",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "66292e53-c418-4aad-b9df-24db2b180373",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-80c0-a203-c1da9d6781bf"
+  },
+  "created_time": "2026-06-19T12:59:00.000Z",
+  "last_edited_time": "2026-06-30T12:24:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "numbered_list_item",
+  "numbered_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Missing fallback:",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Missing fallback:",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " An Agent Node is connected to a Direct Reply Node on the success path. There is no path defined for what happens if the Agent Node produces an empty response or an error. The execution reaches a dead end with no Direct Reply fires, the conversation stops, and the user receives nothing.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " An Agent Node is connected to a Direct Reply Node on the success path. There is no path defined for what happens if the Agent Node produces an empty response or an error. The execution reaches a dead end with no Direct Reply fires, the conversation stops, and the user receives nothing.",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "69358bc2-e338-4f92-bd8a-efecccc1f7cb",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-80c0-a203-c1da9d6781bf"
+  },
+  "created_time": "2026-06-19T12:59:00.000Z",
+  "last_edited_time": "2026-06-30T12:24:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "numbered_list_item",
+  "numbered_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Tight coupling:",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Tight coupling:",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " Agent A's output is used directly as Agent B's system prompt context, with no transformation step between them. When Agent A's output changes in length, structure, or tone, Agent B's behaviour shifts unpredictably because its context has shifted. The two agents are coupled without a defined interface between them.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " Agent A's output is used directly as Agent B's system prompt context, with no transformation step between them. When Agent A's output changes in length, structure, or tone, Agent B's behaviour shifts unpredictably because its context has shifted. The two agents are coupled without a defined interface between them.",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38f94183-19f3-80a5-aa07-cf3aa6ba9ec4",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-80c0-a203-c1da9d6781bf"
+  },
+  "created_time": "2026-06-30T12:24:00.000Z",
+  "last_edited_time": "2026-06-30T12:24:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "dad51eeb-2a44-4676-adbd-cc252c75ebee",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-80c0-a203-c1da9d6781bf"
+  },
+  "created_time": "2026-06-19T12:59:00.000Z",
+  "last_edited_time": "2026-06-30T12:24:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "The Vela example:",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "The Vela example:",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " An earlier Vela canvas used a Loop Node with a Max Loop Count of 2 and a fallback Direct Reply on the \"retries exhausted\" branch. That was a deliberate handoff design. The loop had a defined exit condition, and the exit path had a defined response. That is the right approach. A canvas where the Loop Node has no Max Loop Count, or where the retry-exhausted branch leads nowhere, is a brittle handoff waiting to fail.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " An earlier Vela canvas used a Loop Node with a Max Loop Count of 2 and a fallback Direct Reply on the \"retries exhausted\" branch. That was a deliberate handoff design. The loop had a defined exit condition, and the exit path had a defined response. That is the right approach. A canvas where the Loop Node has no Max Loop Count, or where the retry-exhausted branch leads nowhere, is a brittle handoff waiting to fail.",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "c547c02b-d2a9-4f7a-b3d1-192af793d051",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-80c0-a203-c1da9d6781bf"
+  },
+  "created_time": "2026-06-19T12:59:00.000Z",
+  "last_edited_time": "2026-06-30T12:24:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "The signal to watch for:",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "The signal to watch for:",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " For every node connection on the canvas, ask: what happens if the upstream node produces an unexpected output? If the answer is \"the canvas has no path for that,\" the handoff is brittle.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " For every node connection on the canvas, ask: what happens if the upstream node produces an unexpected output? If the answer is \"the canvas has no path for that,\" the handoff is brittle.",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38494183-19f3-80b4-b113-d53f4e3c329d",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-80c0-a203-c1da9d6781bf"
+  },
+  "created_time": "2026-06-19T13:07:00.000Z",
+  "last_edited_time": "2026-06-19T13:08:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "image",
+  "image": {
+   "caption": [],
+   "type": "file",
+   "file": {
+    "url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/3a9085c4-df29-45e6-8bc7-6c9c0a25ea8c/e220e184-5491-4ff9-8f4a-86a11f98f911/CC_3A_S2.2_architecture-mistakes-diagnostic.svg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466XV2XOOQN%2F20261010%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20261010T073302Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEIf%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJHMEUCIQCDsyitZ%2BeFZx9eSXq82dyjWVYyIJ1R%2FFYuytQLw62wIgIgc0pMwrvIeQKCPkhuRUlrI1Y3TU04X3MUC5MhtEBW9kMq%2FwMITxAAGgw2Mzc0MjMxODM4MDUiDOfzHqaiAsX9htwptyrcA1XVXcfN9AQVUlkuw5ualT4YmaXpyXOvEtfNtW3F2i88LsTdKi2k3LnB%2BoV%2FitdFKWfITbIl3yhEXgn6eV5XaGchGK2NDDZy9sAmAyenujzIC249RY6eyVgmXIB2wsytB1VE97nm11zrzanTc7j3oXZHur31%2BBbZzF70HATciCTdhWParV5rH%2F9CE5VBBg6m0NXH8p92Uo1S2iCWaonk3yl0nruKj%2B0q%2FR6O33yBvqp%2Bp%2F1z8eeL3ImOr9JNFJNN9dfQwZ4QajjGuJUTjoTKR8AJJXU7Xfkeiav8jcV%2Bq%2B3TD5fs%2FKP3GAOyxs1le%2BzNpMTt3j9%2B563XSGoHHdTM%2FQIyB0%2BMtbO9orQKFkGGIWCbJxQYOgBLr%2FEmP%2BhaT%2FE19SmMGFyLJHFCKxCUmaONLP6S67sm%2BPozhtjhoH0F1trg%2BoHUwWJRVioUvpQL%2B5mmVQYtDY1QBKqiM5wAh%2FnZV%2BGUI%2FnFyVbqM%2Fp76ksV2dUBkISOD6AuDfu1URUFsUsIJmxrjROO3ADy2%2F1LTT7nf89eC98FfRhoX0y5gFypFvCqOo2qPDUIWUj9NtT2R7akI%2BvB0sFjtjl2ZTvvGJvBmsf5zPydJRf981CCh78j5O3RlKLv1u%2Bbb4zXP3NTMNa3p9YGOqUBDAnZC2KShAioybKuMj5u4JJmuejdhZT0maSIXIkGVDFIHOp3DeuBt8Ei6OINvCaRMcJ4NqxjsCPEFFs1iG7L0Y%2FP%2FQkM84JclNi9fsw1vuMWymBcaOqHDFkeKEON30EltaEyOxJaBMBRhOg9KjcjUMVn%2BSSVOFNaNqH8Lp6Dyr19u6H0henaQraaJZr4ca%2FiX%2BezjzLiprrDUetZwdlQeiNQ2tr0&X-Amz-Signature=2a98d54223d91daf2a4104ad99e4d945717d3837b7c80365d0f650d4b433aa8e&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+    "expiry_time": "2026-10-10T08:33:02.385Z"
+   }
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38f94183-19f3-8059-b560-daa20091a962",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-80c0-a203-c1da9d6781bf"
+  },
+  "created_time": "2026-06-30T12:24:00.000Z",
+  "last_edited_time": "2026-06-30T12:24:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "f6069fd9-ff7b-4d2f-8bd0-2be8483f1021",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-80c0-a203-c1da9d6781bf"
+  },
+  "created_time": "2026-06-19T12:59:00.000Z",
+  "last_edited_time": "2026-06-19T12:59:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_2",
+  "heading_2": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "How the three mistakes relate to the three pillars",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "How the three mistakes relate to the three pillars",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "ad4c758e-bef7-42d1-8956-0725742b04c5",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-80c0-a203-c1da9d6781bf"
+  },
+  "created_time": "2026-06-19T12:59:00.000Z",
+  "last_edited_time": "2026-06-19T12:59:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Each mistake is a failure in one of the three architectural pillars from the previous lesson:",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Each mistake is a failure in one of the three architectural pillars from the previous lesson:",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "a23c42ab-6a53-4963-b0ff-0c2d30f0eec6",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-80c0-a203-c1da9d6781bf"
+  },
+  "created_time": "2026-06-19T12:59:00.000Z",
+  "last_edited_time": "2026-06-30T12:24:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": true,
+  "in_trash": false,
+  "type": "table",
+  "table": {
+   "table_width": 3,
+   "has_column_header": true,
+   "has_row_header": false
+  },
+  "archived": false,
+  "_children": [
+   {
+    "object": "block",
+    "id": "8645afac-9ab0-4085-9513-f18fdd54d210",
+    "parent": {
+     "type": "block_id",
+     "block_id": "a23c42ab-6a53-4963-b0ff-0c2d30f0eec6"
+    },
+    "created_time": "2026-06-19T12:59:00.000Z",
+    "last_edited_time": "2026-06-19T12:59:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "231d872b-594c-81f2-a375-0002b8783aca"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "231d872b-594c-81f2-a375-0002b8783aca"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "table_row",
+    "table_row": {
+     "cells": [
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Mistake",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Mistake",
+        "href": null
+       }
+      ],
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Root pillar",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Root pillar",
+        "href": null
+       }
+      ],
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Observable symptom",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Observable symptom",
+        "href": null
+       }
+      ]
+     ]
+    },
+    "archived": false
+   },
+   {
+    "object": "block",
+    "id": "d6668875-7fd6-41d9-905a-68a7c8717a8b",
+    "parent": {
+     "type": "block_id",
+     "block_id": "a23c42ab-6a53-4963-b0ff-0c2d30f0eec6"
+    },
+    "created_time": "2026-06-19T12:59:00.000Z",
+    "last_edited_time": "2026-06-19T12:59:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "231d872b-594c-81f2-a375-0002b8783aca"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "231d872b-594c-81f2-a375-0002b8783aca"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "table_row",
+    "table_row": {
+     "cells": [
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Over-engineering",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Over-engineering",
+        "href": null
+       }
+      ],
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Orchestration",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Orchestration",
+        "href": null
+       }
+      ],
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Canvas is harder to debug than the problem justifies; coordination nodes add latency without adding reliability",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Canvas is harder to debug than the problem justifies; coordination nodes add latency without adding reliability",
+        "href": null
+       }
+      ]
+     ]
+    },
+    "archived": false
+   },
+   {
+    "object": "block",
+    "id": "1f2fb1bb-e2cc-44b0-b414-7af7ac32f42a",
+    "parent": {
+     "type": "block_id",
+     "block_id": "a23c42ab-6a53-4963-b0ff-0c2d30f0eec6"
+    },
+    "created_time": "2026-06-19T12:59:00.000Z",
+    "last_edited_time": "2026-06-19T12:59:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "231d872b-594c-81f2-a375-0002b8783aca"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "231d872b-594c-81f2-a375-0002b8783aca"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "table_row",
+    "table_row": {
+     "cells": [
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Hidden state",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Hidden state",
+        "href": null
+       }
+      ],
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "State management",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "State management",
+        "href": null
+       }
+      ],
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Unexpected agent behaviour that varies by execution path; context bleed across topics; undeclared keys producing undefined reads",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Unexpected agent behaviour that varies by execution path; context bleed across topics; undeclared keys producing undefined reads",
+        "href": null
+       }
+      ]
+     ]
+    },
+    "archived": false
+   },
+   {
+    "object": "block",
+    "id": "1bed3c95-baf0-4ad8-a25e-24b0e9969a56",
+    "parent": {
+     "type": "block_id",
+     "block_id": "a23c42ab-6a53-4963-b0ff-0c2d30f0eec6"
+    },
+    "created_time": "2026-06-19T12:59:00.000Z",
+    "last_edited_time": "2026-06-19T12:59:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "231d872b-594c-81f2-a375-0002b8783aca"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "231d872b-594c-81f2-a375-0002b8783aca"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "table_row",
+    "table_row": {
+     "cells": [
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Brittle handoffs",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Brittle handoffs",
+        "href": null
+       }
+      ],
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Communication",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Communication",
+        "href": null
+       }
+      ],
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Execution stops silently; downstream node behaves unexpectedly on specific inputs; no fallback path fires",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Execution stops silently; downstream node behaves unexpectedly on specific inputs; no fallback path fires",
+        "href": null
+       }
+      ]
+     ]
+    },
+    "archived": false
+   }
+  ]
+ },
+ {
+  "object": "block",
+  "id": "ee46d71e-a35a-429c-832a-bcd87aa67f55",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-80c0-a203-c1da9d6781bf"
+  },
+  "created_time": "2026-06-19T12:59:00.000Z",
+  "last_edited_time": "2026-06-29T08:03:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "This mapping matters because the fix for each mistake lives in the same pillar as the mistake. Over-engineering is corrected by simplifying the orchestration \u2014 removing nodes that are not earning their place. Hidden state is corrected by auditing the state management \u2014 ensuring every key is declared, and every write happens on every execution path that downstream nodes later read from. Brittle handoffs are corrected by designing the communication deliberately \u2014 adding explicit format constraints, fallback paths, and transformation steps between tightly coupled nodes.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "This mapping matters because the fix for each mistake lives in the same pillar as the mistake. Over-engineering is corrected by simplifying the orchestration \u2014 removing nodes that are not earning their place. Hidden state is corrected by auditing the state management \u2014 ensuring every key is declared, and every write happens on every execution path that downstream nodes later read from. Brittle handoffs are corrected by designing the communication deliberately \u2014 adding explicit format constraints, fallback paths, and transformation steps between tightly coupled nodes.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "89048c09-f813-4194-bd3b-2b70f9a4a84c",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-80c0-a203-c1da9d6781bf"
+  },
+  "created_time": "2026-06-19T12:59:00.000Z",
+  "last_edited_time": "2026-06-19T12:59:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Knowing which pillar a mistake belongs to points directly to where the fix should be made.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Knowing which pillar a mistake belongs to points directly to where the fix should be made.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38f94183-19f3-8087-9bae-fceb72a1ac74",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-80c0-a203-c1da9d6781bf"
+  },
+  "created_time": "2026-06-30T12:24:00.000Z",
+  "last_edited_time": "2026-06-30T12:24:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "3ce95f0c-8a55-4b8c-bf64-ece4788ffa35",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-80c0-a203-c1da9d6781bf"
+  },
+  "created_time": "2026-06-19T12:59:00.000Z",
+  "last_edited_time": "2026-06-19T12:59:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_2",
+  "heading_2": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Check for Understanding",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Check for Understanding",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "39494183-19f3-809a-9fcd-e686d5768c0f",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-80c0-a203-c1da9d6781bf"
+  },
+  "created_time": "2026-07-05T12:14:00.000Z",
+  "last_edited_time": "2026-07-05T12:14:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": true,
+  "in_trash": false,
+  "type": "callout",
+  "callout": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Jonas reviews the redesigned Vela canvas before the Sprint 1 walkthrough. He notices that the supervisor LLM Node writes ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Jonas reviews the redesigned Vela canvas before the Sprint 1 walkthrough. He notices that the supervisor LLM Node writes ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "$flow.state.next",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": true,
+      "color": "default"
+     },
+     "plain_text": "$flow.state.next",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " to indicate which worker should act next, but the key is not listed in the Start Node's Flow State initialisation. The Condition Node downstream reads ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " to indicate which worker should act next, but the key is not listed in the Start Node's Flow State initialisation. The Condition Node downstream reads ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "$flow.state.next",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": true,
+      "color": "default"
+     },
+     "plain_text": "$flow.state.next",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " to route to the correct worker. Which mistake does this represent?",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " to route to the correct worker. Which mistake does this represent?",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "gray_background"
+  },
+  "archived": false,
+  "_children": [
+   {
+    "object": "block",
+    "id": "39494183-19f3-8005-b5b4-c13514243377",
+    "parent": {
+     "type": "block_id",
+     "block_id": "39494183-19f3-809a-9fcd-e686d5768c0f"
+    },
+    "created_time": "2026-07-05T12:14:00.000Z",
+    "last_edited_time": "2026-07-05T12:14:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "embed",
+    "embed": {
+     "caption": [],
+     "url": "https://app.masterschool.com/campus/multi-choice-question/5397f76c-6169-4249-9124-ac63df8268d5"
+    },
+    "archived": false
+   }
+  ]
+ },
+ {
+  "object": "block",
+  "id": "38f94183-19f3-80bb-9a28-d91b9c9160e4",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-80c0-a203-c1da9d6781bf"
+  },
+  "created_time": "2026-06-30T12:24:00.000Z",
+  "last_edited_time": "2026-06-30T12:24:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "5027c3df-c3af-45ac-a6f8-25b3d0a5cc25",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-80c0-a203-c1da9d6781bf"
+  },
+  "created_time": "2026-06-19T12:59:00.000Z",
+  "last_edited_time": "2026-06-19T12:59:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_2",
+  "heading_2": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Summary",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Summary",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "25be87b9-70e9-4f86-ac4b-13e833f5474c",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-80c0-a203-c1da9d6781bf"
+  },
+  "created_time": "2026-06-19T12:59:00.000Z",
+  "last_edited_time": "2026-06-19T13:05:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Three mistakes, three root pillars, three early warning signals. Over-engineering adds coordination overhead that the problem does not justify. The signal is a canvas that is harder to debug than the problem requires. Hidden state creates keys and memory that are not part of the declared architecture. The signal is a Flow State key that appears in a node but not in the Start Node. Brittle handoffs assume output formats that are not guaranteed, the signal is a node connection with no path for unexpected input.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Three mistakes, three root pillars, three early warning signals. Over-engineering adds coordination overhead that the problem does not justify. The signal is a canvas that is harder to debug than the problem requires. Hidden state creates keys and memory that are not part of the declared architecture. The signal is a Flow State key that appears in a node but not in the Start Node. Brittle handoffs assume output formats that are not guaranteed, the signal is a node connection with no path for unexpected input.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "d6aa339a-a269-4e14-8abb-9703256f41a6",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-80c0-a203-c1da9d6781bf"
+  },
+  "created_time": "2026-06-19T12:59:00.000Z",
+  "last_edited_time": "2026-06-19T12:59:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "The Sprint 1 walkthrough in the next lesson builds a single-agent system for Vela with all three mistakes deliberately avoided: the orchestration is no more complex than the problem requires, every Flow State key is declared in the Start Node, and every connection has a defined path for the case where the upstream node produces an unexpected output. That is what a deliberately designed agent looks like before it is tested.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "The Sprint 1 walkthrough in the next lesson builds a single-agent system for Vela with all three mistakes deliberately avoided: the orchestration is no more complex than the problem requires, every Flow State key is declared in the Start Node, and every connection has a defined path for the case where the upstream node produces an unexpected output. That is what a deliberately designed agent looks like before it is tested.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ }
+]

@@ -1,0 +1,3003 @@
+[
+ {
+  "object": "block",
+  "id": "3be94183-19f3-80d1-b5e4-f65f2702137a",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-802d-9f02-f30fafcce39a"
+  },
+  "created_time": "2026-08-16T10:08:00.000Z",
+  "last_edited_time": "2026-08-16T10:08:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "callout",
+  "callout": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "This lesson uses Gemini as the main example, but the underlying API usage logic applies broadly to other AI models and providers as well. Focus on the principles: structuring requests clearly, handling responses reliably, managing errors, and designing workflows that can be adapted to different model APIs.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "This lesson uses Gemini as the main example, but the underlying API usage logic applies broadly to other AI models and providers as well. Focus on the principles: structuring requests clearly, handling responses reliably, managing errors, and designing workflows that can be adapted to different model APIs.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "blue_background"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "36a94183-19f3-80e0-811f-eea0c7b505d8",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-802d-9f02-f30fafcce39a"
+  },
+  "created_time": "2026-05-24T16:40:00.000Z",
+  "last_edited_time": "2026-08-16T10:08:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "callout",
+  "callout": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "What you will work on in this lesson:",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "What you will work on in this lesson:",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " Independently verify that your local Flowise environment is running correctly and that your Gemini API key is authenticating without errors before building begins.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " Independently verify that your local Flowise environment is running correctly and that your Gemini API key is authenticating without errors before building begins.",
+     "href": null
+    }
+   ],
+   "icon": {
+    "type": "emoji",
+    "emoji": "\ud83d\udca1"
+   },
+   "color": "gray_background"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37594183-19f3-80bb-ac94-dd509246135d",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-802d-9f02-f30fafcce39a"
+  },
+  "created_time": "2026-06-04T11:01:00.000Z",
+  "last_edited_time": "2026-06-04T11:01:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "0e3cef6b-24cf-4bfe-aa5f-b2574f0858d6",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-802d-9f02-f30fafcce39a"
+  },
+  "created_time": "2026-05-20T10:15:00.000Z",
+  "last_edited_time": "2026-05-24T16:40:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_2",
+  "heading_2": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Why verification comes before building",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Why verification comes before building",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "afae0dd8-3254-45da-8bc7-f6a49d25636c",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-802d-9f02-f30fafcce39a"
+  },
+  "created_time": "2026-06-03T03:15:00.000Z",
+  "last_edited_time": "2026-06-03T03:15:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Meridian Consulting's development team has installed Flowise, generated their API key, and stored it in the credentials manager. The temptation at this point is to open the canvas and start connecting nodes. That temptation should be resisted.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Meridian Consulting's development team has installed Flowise, generated their API key, and stored it in the credentials manager. The temptation at this point is to open the canvas and start connecting nodes. That temptation should be resisted.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "2adc190e-5fa0-49aa-8165-95da56d23faf",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-802d-9f02-f30fafcce39a"
+  },
+  "created_time": "2026-06-03T03:15:00.000Z",
+  "last_edited_time": "2026-06-03T03:15:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "A broken environment discovered mid-build is significantly more disruptive than one caught before a single node has been placed. Configuration errors, credential issues, and invalid API keys all produce symptoms that are easy to misread as agent logic problems when they are actually setup problems. Verifying the environment first eliminates that category of confusion entirely.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "A broken environment discovered mid-build is significantly more disruptive than one caught before a single node has been placed. Configuration errors, credential issues, and invalid API keys all produce symptoms that are easy to misread as agent logic problems when they are actually setup problems. Verifying the environment first eliminates that category of confusion entirely.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "89fddfc1-f237-45fe-98cd-f8de464965e6",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-802d-9f02-f30fafcce39a"
+  },
+  "created_time": "2026-06-03T03:15:00.000Z",
+  "last_edited_time": "2026-06-03T03:15:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Your task is to confirm two things:",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Your task is to confirm two things:",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "01bacd30-b294-4139-98c0-b0e5e3ba1f68",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-802d-9f02-f30fafcce39a"
+  },
+  "created_time": "2026-06-03T03:15:00.000Z",
+  "last_edited_time": "2026-06-03T03:15:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Your local Flowise instance is running and the dashboard is accessible",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Your local Flowise instance is running and the dashboard is accessible",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "735c9c48-7d92-4105-acb3-6611c2abb8b0",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-802d-9f02-f30fafcce39a"
+  },
+  "created_time": "2026-06-03T03:15:00.000Z",
+  "last_edited_time": "2026-08-14T02:18:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Your API keys are active and authenticating correctly inside Flowise",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Your API keys are active and authenticating correctly inside Flowise",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37594183-19f3-80b1-96e3-e178bae5fbfe",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-802d-9f02-f30fafcce39a"
+  },
+  "created_time": "2026-06-04T11:02:00.000Z",
+  "last_edited_time": "2026-06-04T11:02:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "f1b5a817-5a02-42c7-b739-70a0f9fba810",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-802d-9f02-f30fafcce39a"
+  },
+  "created_time": "2026-05-20T10:15:00.000Z",
+  "last_edited_time": "2026-05-24T16:40:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_2",
+  "heading_2": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "What you have been given",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "What you have been given",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "540075e1-6806-4bad-b838-6a2bffe316be",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-802d-9f02-f30fafcce39a"
+  },
+  "created_time": "2026-05-29T10:32:00.000Z",
+  "last_edited_time": "2026-06-03T07:30:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Local Flowise access:",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Local Flowise access:",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " Your Flowise server should already be running from the previous lesson. ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " Your Flowise server should already be running from the previous lesson. ",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37494183-19f3-8049-be2b-d867e3393d29",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-802d-9f02-f30fafcce39a"
+  },
+  "created_time": "2026-06-03T07:30:00.000Z",
+  "last_edited_time": "2026-06-03T07:30:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "If it is not running, then check the following:",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "If it is not running, then check the following:",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "0b38ea77-04cd-4982-b98b-fc1fcb58b236",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-802d-9f02-f30fafcce39a"
+  },
+  "created_time": "2026-06-03T07:30:00.000Z",
+  "last_edited_time": "2026-06-03T07:30:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Confirm Docker Desktop is open and running. Look for the whale icon in your system tray",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Confirm Docker Desktop is open and running. Look for the whale icon in your system tray",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "0a28ab2b-687a-4ac9-a376-60bca9f6328d",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-802d-9f02-f30fafcce39a"
+  },
+  "created_time": "2026-06-03T07:30:00.000Z",
+  "last_edited_time": "2026-06-03T07:30:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Open a terminal and run ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Open a terminal and run ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "docker ps",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": true,
+      "color": "default"
+     },
+     "plain_text": "docker ps",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " to confirm the Flowise container is listed as running.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " to confirm the Flowise container is listed as running.",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "d422945a-94d5-48ef-8f1d-8f4cc69457a4",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-802d-9f02-f30fafcce39a"
+  },
+  "created_time": "2026-06-03T07:30:00.000Z",
+  "last_edited_time": "2026-06-03T07:30:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "If the container is not running, start it with ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "If the container is not running, start it with ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "docker start flowise",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": true,
+      "color": "default"
+     },
+     "plain_text": "docker start flowise",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "0026d4f2-d0d5-4d82-8e0a-a2a1ec314448",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-802d-9f02-f30fafcce39a"
+  },
+  "created_time": "2026-06-03T07:30:00.000Z",
+  "last_edited_time": "2026-06-03T07:30:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "If the container does not exist, rerun the full docker run command from the previous lesson.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "If the container does not exist, rerun the full docker run command from the previous lesson.",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37594183-19f3-801b-9f10-e657f9751258",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-802d-9f02-f30fafcce39a"
+  },
+  "created_time": "2026-06-04T11:05:00.000Z",
+  "last_edited_time": "2026-06-04T11:05:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37494183-19f3-80f2-a8d8-d35e5e83fb6c",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-802d-9f02-f30fafcce39a"
+  },
+  "created_time": "2026-06-03T07:30:00.000Z",
+  "last_edited_time": "2026-06-03T07:30:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_2",
+  "heading_2": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Useful references:",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Useful references:",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "a0c4c1c6-d900-4453-80fc-b36e49cb8880",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-802d-9f02-f30fafcce39a"
+  },
+  "created_time": "2026-05-20T10:15:00.000Z",
+  "last_edited_time": "2026-05-20T10:15:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Flowise documentation and troubleshooting: ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Flowise documentation and troubleshooting: ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "docs.flowiseai.com",
+      "link": {
+       "url": "https://docs.flowiseai.com/"
+      }
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "docs.flowiseai.com",
+     "href": "https://docs.flowiseai.com/"
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "427f45e4-841e-41b1-8530-042fadaf207e",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-802d-9f02-f30fafcce39a"
+  },
+  "created_time": "2026-05-20T10:15:00.000Z",
+  "last_edited_time": "2026-05-20T10:15:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Flowise GitHub repository and open issues: ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Flowise GitHub repository and open issues: ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "github.com/FlowiseAI/Flowise",
+      "link": {
+       "url": "https://github.com/FlowiseAI/Flowise"
+      }
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "github.com/FlowiseAI/Flowise",
+     "href": "https://github.com/FlowiseAI/Flowise"
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "fb2015ed-a40a-432f-873c-fda2bd43f66a",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-802d-9f02-f30fafcce39a"
+  },
+  "created_time": "2026-05-20T10:15:00.000Z",
+  "last_edited_time": "2026-05-20T10:15:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Google AI Studio for key management: ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Google AI Studio for key management: ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "aistudio.google.com",
+      "link": {
+       "url": "https://aistudio.google.com/"
+      }
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "aistudio.google.com",
+     "href": "https://aistudio.google.com/"
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "8dd43061-e8ad-4981-ade0-1eda2a7fb003",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-802d-9f02-f30fafcce39a"
+  },
+  "created_time": "2026-05-20T10:15:00.000Z",
+  "last_edited_time": "2026-05-20T10:15:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Gemini API reference documentation: ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Gemini API reference documentation: ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "ai.google.dev/api",
+      "link": {
+       "url": "https://ai.google.dev/api"
+      }
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "ai.google.dev/api",
+     "href": "https://ai.google.dev/api"
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37594183-19f3-8048-8f00-e6e78d299502",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-802d-9f02-f30fafcce39a"
+  },
+  "created_time": "2026-06-04T11:06:00.000Z",
+  "last_edited_time": "2026-06-04T11:06:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "c7818a08-8d96-4cfb-acd6-d79cd91f4c18",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-802d-9f02-f30fafcce39a"
+  },
+  "created_time": "2026-05-20T10:15:00.000Z",
+  "last_edited_time": "2026-05-24T16:41:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_2",
+  "heading_2": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Your tasks",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Your tasks",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "cb2ce060-6e01-4b54-a999-66f7bc1a2c74",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-802d-9f02-f30fafcce39a"
+  },
+  "created_time": "2026-05-20T10:15:00.000Z",
+  "last_edited_time": "2026-06-03T03:30:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_3",
+  "heading_3": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Task A: Access and verify Flowise from your laptop",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Task A: Access and verify Flowise from your laptop",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "fba22f2f-3849-4b43-a088-b123da5fd47e",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-802d-9f02-f30fafcce39a"
+  },
+  "created_time": "2026-06-03T03:17:00.000Z",
+  "last_edited_time": "2026-06-03T03:17:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Navigate to ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Navigate to ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "http://localhost:3000",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": true,
+      "color": "default"
+     },
+     "plain_text": "http://localhost:3000",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " in your browser. Confirm the Flowise dashboard loads and that you can see the left-hand navigation panel. Click ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " in your browser. Confirm the Flowise dashboard loads and that you can see the left-hand navigation panel. Click ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "Agentflows",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Agentflows",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " and confirm the section opens without errors.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " and confirm the section opens without errors.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "59b5d695-8be3-423b-b02f-e2f5b2325837",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-802d-9f02-f30fafcce39a"
+  },
+  "created_time": "2026-06-03T03:17:00.000Z",
+  "last_edited_time": "2026-06-03T03:17:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Document what you observe:",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Document what you observe:",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "dec5a586-96fa-46bf-8995-7f4800e4919c",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-802d-9f02-f30fafcce39a"
+  },
+  "created_time": "2026-06-03T03:17:00.000Z",
+  "last_edited_time": "2026-06-03T03:17:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Whether the dashboard loaded successfully",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Whether the dashboard loaded successfully",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "7ee4acb2-c346-4a0b-bbb3-1ba9ec174e61",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-802d-9f02-f30fafcce39a"
+  },
+  "created_time": "2026-06-03T03:17:00.000Z",
+  "last_edited_time": "2026-06-03T03:17:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Whether the Agentflows section opened correctly",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Whether the Agentflows section opened correctly",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "afbb43df-afdc-4c83-884f-8d7bf2946b68",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-802d-9f02-f30fafcce39a"
+  },
+  "created_time": "2026-06-03T03:17:00.000Z",
+  "last_edited_time": "2026-06-03T03:17:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Any errors you encountered",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Any errors you encountered",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "2ee485d0-2a02-4274-b10c-52f31d3d42b8",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-802d-9f02-f30fafcce39a"
+  },
+  "created_time": "2026-06-03T03:17:00.000Z",
+  "last_edited_time": "2026-06-03T03:17:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Do not proceed to Task B until the Flowise dashboard is fully accessible.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Do not proceed to Task B until the Flowise dashboard is fully accessible.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37594183-19f3-802c-b85e-cd2d3c97f5e2",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-802d-9f02-f30fafcce39a"
+  },
+  "created_time": "2026-06-04T11:06:00.000Z",
+  "last_edited_time": "2026-06-04T11:06:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "5006adea-98e4-4039-b6fa-0f8c3fe3cff3",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-802d-9f02-f30fafcce39a"
+  },
+  "created_time": "2026-05-20T10:15:00.000Z",
+  "last_edited_time": "2026-06-03T03:31:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_3",
+  "heading_3": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Task B: Validate the Gemini API key",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Task B: Validate the Gemini API key",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "8c56553d-bb6f-4cd4-9af4-481097ebe8a8",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-802d-9f02-f30fafcce39a"
+  },
+  "created_time": "2026-06-03T03:31:00.000Z",
+  "last_edited_time": "2026-06-03T03:31:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Build a minimal test canvas in ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Build a minimal test canvas in ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "Agentflow v2",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Agentflow v2",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " to confirm your credential is working:",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " to confirm your credential is working:",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "468bf9a1-ca30-4af8-84e6-2ac464be3680",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-802d-9f02-f30fafcce39a"
+  },
+  "created_time": "2026-06-03T03:31:00.000Z",
+  "last_edited_time": "2026-06-03T03:33:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "numbered_list_item",
+  "numbered_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Click ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Click ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "Agentflows",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Agentflows",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " in the left navigation, then click ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " in the left navigation, then click ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "+ Add New.",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "+ Add New.",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "619cd413-6518-42fb-a26e-944cfe8cfd1c",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-802d-9f02-f30fafcce39a"
+  },
+  "created_time": "2026-06-03T03:31:00.000Z",
+  "last_edited_time": "2026-06-03T07:34:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "numbered_list_item",
+  "numbered_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "On the canvas, you will already see a ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "On the canvas, you will already see a ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "Start Node. ",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Start Node. ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "Add an ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Add an ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "Agent Node",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Agent Node",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": ", and a ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": ", and a ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "Direct Reply Node",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Direct Reply Node",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " and connect them in sequence.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " and connect them in sequence.",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "cb078003-2efb-4fcd-8ac1-10dd6e88ece7",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-802d-9f02-f30fafcce39a"
+  },
+  "created_time": "2026-06-03T03:31:00.000Z",
+  "last_edited_time": "2026-06-03T07:36:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "numbered_list_item",
+  "numbered_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "In the Agent Node settings, double click and open the ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "In the Agent Node settings, double click and open the ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "Model",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Model",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " section. Select ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " section. Select ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "Google Gemini",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Google Gemini",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " and add your credential details.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " and add your credential details.",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "6916ace9-b534-4711-9ec1-c5b55074a38d",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-802d-9f02-f30fafcce39a"
+  },
+  "created_time": "2026-06-03T03:31:00.000Z",
+  "last_edited_time": "2026-06-03T07:37:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "numbered_list_item",
+  "numbered_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Set the model to what you chose",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Set the model to what you chose",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": ". ",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": ". ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "Select ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Select ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "Save.",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Save.",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "33d3dc15-cd8f-4c6d-ac84-f5d6961ceb9d",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-802d-9f02-f30fafcce39a"
+  },
+  "created_time": "2026-06-03T03:31:00.000Z",
+  "last_edited_time": "2026-06-03T03:33:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "numbered_list_item",
+  "numbered_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Click the chat icon and send: ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Click the chat icon and send: ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "Hello",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": true,
+      "color": "default"
+     },
+     "plain_text": "Hello",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "66f24224-7b73-4575-8a91-2f6f3d936073",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-802d-9f02-f30fafcce39a"
+  },
+  "created_time": "2026-06-03T03:31:00.000Z",
+  "last_edited_time": "2026-06-03T03:31:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "If the agent responds, the key is active and authenticating correctly. If it returns an error, use the following to diagnose:",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "If the agent responds, the key is active and authenticating correctly. If it returns an error, use the following to diagnose:",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "fa0a4b01-ecdd-45ce-ae6a-7e5a0d2f8227",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-802d-9f02-f30fafcce39a"
+  },
+  "created_time": "2026-06-03T03:31:00.000Z",
+  "last_edited_time": "2026-06-03T03:33:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "401 error:",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "401 error:",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " The key is invalid, inactive, or was not copied correctly.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " The key is invalid, inactive, or was not copied correctly.",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "f3d171e6-4be3-4a4e-8a4a-11bc45a17e36",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-802d-9f02-f30fafcce39a"
+  },
+  "created_time": "2026-06-03T03:31:00.000Z",
+  "last_edited_time": "2026-06-03T03:33:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "429 error:",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "429 error:",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " The free tier rate limit has been exceeded; wait one minute and retry.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " The free tier rate limit has been exceeded; wait one minute and retry.",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "f9d9f695-fd26-4e56-8c6b-b3b993ee61ac",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-802d-9f02-f30fafcce39a"
+  },
+  "created_time": "2026-06-03T03:31:00.000Z",
+  "last_edited_time": "2026-06-03T03:33:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "403 error:",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "403 error:",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " The key has a restriction blocking this type of request; check key settings in Google AI Studio.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " The key has a restriction blocking this type of request; check key settings in Google AI Studio.",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37494183-19f3-80a3-b8e4-d48325aecab9",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-802d-9f02-f30fafcce39a"
+  },
+  "created_time": "2026-06-03T07:31:00.000Z",
+  "last_edited_time": "2026-06-03T07:31:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "No response at all:",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "No response at all:",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " Confirm all three nodes are connected by visible edges and the canvas has been saved before testing.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " Confirm all three nodes are connected by visible edges and the canvas has been saved before testing.",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "f855a058-39f2-4eda-88fc-21294aebbfe7",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-802d-9f02-f30fafcce39a"
+  },
+  "created_time": "2026-06-03T03:31:00.000Z",
+  "last_edited_time": "2026-06-03T03:31:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Document your test message and the response you received. If the key returns an error, diagnose and resolve it using the error code guidance and references above before moving to the next lesson.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Document your test message and the response you received. If the key returns an error, diagnose and resolve it using the error code guidance and references above before moving to the next lesson.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37494183-19f3-8028-8e55-da54e10f3d8e",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-802d-9f02-f30fafcce39a"
+  },
+  "created_time": "2026-06-03T07:39:00.000Z",
+  "last_edited_time": "2026-06-03T07:39:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "image",
+  "image": {
+   "caption": [],
+   "type": "file",
+   "file": {
+    "url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/3a9085c4-df29-45e6-8bc7-6c9c0a25ea8c/dbcded77-e9e6-4cb2-92e5-401d3a6a3140/image.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466W7Z2WLL2%2F20261010%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20261010T071956Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEIf%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJHMEUCIQD%2F80qDDO%2FaD258FzjTEMvdIFwKEqdShvPkAaI4H4oCEwIgAm%2BuA5YHuVP6giY%2BUTSD4ekN8KkuZuD9nddse07MXrcq%2FwMIUBAAGgw2Mzc0MjMxODM4MDUiDFpzozELeJujazW9bSrcA6hqSWZZ%2FakrlxubyO%2BLXgTATXSJvH2zD5ix0KROLKPfslzQxgBmppGAAcm2fnLGC8TshYzK0bcHy0f9NMJ2W2FQdWjs9ZHVtAjNSMFJsPg9uOfeTN6FsyV2%2FmamWmibyn%2BhCunQhCzYf6V6CVFDNlLu68y9icCYdRIRnB%2FemMVr3cS8Emsm1hceDyytcGY7MlMO9BzU%2F7KcfCbZpiHUgbb%2F%2BxX%2By3eT8RjL3YJ9Gmb8oF4AQ28n0jAWdVJkXc9XcuBQOc4ZlO0FwJkuC35kl1mWAgq7v6qSmretO5n9UNkHW2Rv8cMQbTyoIR%2BxO%2FXqfhut41Wi7NWzVoB%2F3joIdXXqxixjhOGDa2qE9jaThHaZD00iW9A0mqNAbJGpqv2r9EtiCItvzle6vKMSfFZK3F79sEy8RlF%2FAJ19rXTrWjmagZIw%2Fe9MHDetITRUnfb8XWR3DNj264HNKn%2F3ECqLWRK2AXDNiV9R9k6pzGWBldj7Pwqv0aDii9DKAoqOXsLVbiGPC5b2hQJyifHpF2IzueWpM%2FTVk9W0xNBxzdZAteRXZXzaQI7n0tQK8mD4mDlMTIALvPb7GcwcxEasSib2rDFA%2BAx%2FgkVrd9NxSML3HOOYgnEH5JsEADaYJY5EMPy2p9YGOqUBGtGlPEOxPQ7rCllFGzfNL006oopr6Hxr2pX%2BL08U%2BrNfzGoOt%2F9%2BtG%2BKHLBYpMVkkAZ63cKUENofQXhEeZeaXlrALYe15aUlg0SwKFeYB4QtyanbatuHprlc8grKvS8tBZvI9IRj%2Bpz0QnZAfj70wrtmtHlDV%2B12WbFCahM%2Bj0djTdPp4NoolFAI0%2FPUVDWqf53lcQ1FUk4aW32Ns5edSsWwS3pt&X-Amz-Signature=b412be3fd0442d6ba540c1204eb900989573b1f3eba50660b2b202946abd40db&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+    "expiry_time": "2026-10-10T08:19:56.101Z"
+   }
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37594183-19f3-8001-b9b8-e73549f83a42",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-802d-9f02-f30fafcce39a"
+  },
+  "created_time": "2026-06-04T11:06:00.000Z",
+  "last_edited_time": "2026-06-04T11:06:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "398a9751-7a38-457e-ac0f-4da7a7c68882",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-802d-9f02-f30fafcce39a"
+  },
+  "created_time": "2026-05-20T10:15:00.000Z",
+  "last_edited_time": "2026-05-29T10:39:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_2",
+  "heading_2": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Check for Understanding",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Check for Understanding",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37594183-19f3-80b1-934c-e0cd64bd4f4c",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-802d-9f02-f30fafcce39a"
+  },
+  "created_time": "2026-06-04T11:07:00.000Z",
+  "last_edited_time": "2026-06-04T11:07:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": true,
+  "in_trash": false,
+  "type": "callout",
+  "callout": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "A Meridian developer opens ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "A Meridian developer opens ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "http://localhost:3000",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": true,
+      "color": "default"
+     },
+     "plain_text": "http://localhost:3000",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " and the page does not load. Docker Desktop is installed. What is the most likely cause and correct first step?",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " and the page does not load. Docker Desktop is installed. What is the most likely cause and correct first step?",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "gray_background"
+  },
+  "archived": false,
+  "_children": [
+   {
+    "object": "block",
+    "id": "37594183-19f3-808e-ab43-c93b32309f9c",
+    "parent": {
+     "type": "block_id",
+     "block_id": "37594183-19f3-80b1-934c-e0cd64bd4f4c"
+    },
+    "created_time": "2026-06-04T11:07:00.000Z",
+    "last_edited_time": "2026-06-04T11:07:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "embed",
+    "embed": {
+     "caption": [],
+     "url": "https://app.masterschool.com/campus/multi-choice-question/bc5f1d6e-27ce-4737-8208-28ee7b0c5d82"
+    },
+    "archived": false
+   }
+  ]
+ },
+ {
+  "object": "block",
+  "id": "37594183-19f3-8003-abe1-f67199ff71dd",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-802d-9f02-f30fafcce39a"
+  },
+  "created_time": "2026-06-04T11:06:00.000Z",
+  "last_edited_time": "2026-06-04T11:06:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "36a94183-19f3-807c-9f2b-cd71ed637d5a",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-802d-9f02-f30fafcce39a"
+  },
+  "created_time": "2026-05-24T16:43:00.000Z",
+  "last_edited_time": "2026-06-04T11:06:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": true,
+  "in_trash": false,
+  "type": "callout",
+  "callout": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Takeaway:",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Takeaway:",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " ",
+     "href": null
+    }
+   ],
+   "icon": {
+    "type": "emoji",
+    "emoji": "\ud83d\udca1"
+   },
+   "color": "gray_background"
+  },
+  "archived": false,
+  "_children": [
+   {
+    "object": "block",
+    "id": "37594183-19f3-80bb-98a0-e200027b4d8f",
+    "parent": {
+     "type": "block_id",
+     "block_id": "36a94183-19f3-807c-9f2b-cd71ed637d5a"
+    },
+    "created_time": "2026-06-04T11:06:00.000Z",
+    "last_edited_time": "2026-06-04T11:06:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+     "rich_text": [
+      {
+       "type": "text",
+       "text": {
+        "content": "Verifying the environment is the first real test of your setup. An agent that fails because of an infrastructure problem looks identical to one that fails because of a logic problem. ",
+        "link": null
+       },
+       "annotations": {
+        "bold": false,
+        "italic": false,
+        "strikethrough": false,
+        "underline": false,
+        "code": false,
+        "color": "default"
+       },
+       "plain_text": "Verifying the environment is the first real test of your setup. An agent that fails because of an infrastructure problem looks identical to one that fails because of a logic problem. ",
+       "href": null
+      }
+     ],
+     "icon": null,
+     "color": "default"
+    },
+    "archived": false
+   },
+   {
+    "object": "block",
+    "id": "37594183-19f3-80b4-9465-c3d3b86fec97",
+    "parent": {
+     "type": "block_id",
+     "block_id": "36a94183-19f3-807c-9f2b-cd71ed637d5a"
+    },
+    "created_time": "2026-06-04T11:06:00.000Z",
+    "last_edited_time": "2026-06-04T11:06:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+     "rich_text": [
+      {
+       "type": "text",
+       "text": {
+        "content": "Catching setup issues now before a single business rule has been written into the canvas is what keeps debugging fast and focused for the rest of the course.",
+        "link": null
+       },
+       "annotations": {
+        "bold": false,
+        "italic": false,
+        "strikethrough": false,
+        "underline": false,
+        "code": false,
+        "color": "default"
+       },
+       "plain_text": "Catching setup issues now before a single business rule has been written into the canvas is what keeps debugging fast and focused for the rest of the course.",
+       "href": null
+      }
+     ],
+     "icon": null,
+     "color": "default"
+    },
+    "archived": false
+   }
+  ]
+ },
+ {
+  "object": "block",
+  "id": "37494183-19f3-8016-a3fc-db7f858ee4fd",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-802d-9f02-f30fafcce39a"
+  },
+  "created_time": "2026-06-03T07:32:00.000Z",
+  "last_edited_time": "2026-06-03T07:32:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ }
+]

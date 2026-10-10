@@ -1,0 +1,2767 @@
+[
+ {
+  "object": "block",
+  "id": "38594183-19f3-808d-ba1c-d6442200d158",
+  "parent": {
+   "type": "page_id",
+   "page_id": "37e94183-19f3-807e-8dcc-f27b8f23c646"
+  },
+  "created_time": "2026-06-20T18:25:00.000Z",
+  "last_edited_time": "2026-07-01T15:13:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Sofia's Intake Agent can now hand off structured context, but it still can't reach any external system on its own. To actually resolve customer issues at Cascadia, the agent will need tools \u2014 starting with something simple. In this walkthrough, you connect a single MCP server to a Flowise agent and check whether the agent can discover and use it correctly.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Sofia's Intake Agent can now hand off structured context, but it still can't reach any external system on its own. To actually resolve customer issues at Cascadia, the agent will need tools \u2014 starting with something simple. In this walkthrough, you connect a single MCP server to a Flowise agent and check whether the agent can discover and use it correctly.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38594183-19f3-808e-aa3c-f01a2d2ca1a5",
+  "parent": {
+   "type": "page_id",
+   "page_id": "37e94183-19f3-807e-8dcc-f27b8f23c646"
+  },
+  "created_time": "2026-06-20T18:25:00.000Z",
+  "last_edited_time": "2026-06-20T18:25:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_2",
+  "heading_2": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Scenario",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Scenario",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38594183-19f3-80f3-9483-f45b1dd68247",
+  "parent": {
+   "type": "page_id",
+   "page_id": "37e94183-19f3-807e-8dcc-f27b8f23c646"
+  },
+  "created_time": "2026-06-20T18:25:00.000Z",
+  "last_edited_time": "2026-07-01T15:13:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Sofia wants to see the MCP integration pattern working before she wires up Cascadia's business systems. She sets up the smallest possible test: one Flowise agent, one MCP server, one query that requires the tool. If the agent discovers the tool, calls it, and uses the response, she knows the pattern will hold when she plugs in real Cascadia tools later.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Sofia wants to see the MCP integration pattern working before she wires up Cascadia's business systems. She sets up the smallest possible test: one Flowise agent, one MCP server, one query that requires the tool. If the agent discovers the tool, calls it, and uses the response, she knows the pattern will hold when she plugs in real Cascadia tools later.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38594183-19f3-801f-84d9-c0bba8641915",
+  "parent": {
+   "type": "page_id",
+   "page_id": "37e94183-19f3-807e-8dcc-f27b8f23c646"
+  },
+  "created_time": "2026-06-20T18:25:00.000Z",
+  "last_edited_time": "2026-06-20T18:25:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "For this walkthrough, use a simple MCP server such as ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "For this walkthrough, use a simple MCP server such as ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "Sequential Thinking MCP",
+      "link": {
+       "url": "https://mcpservers.org/servers/modelcontextprotocol/sequentialthinking"
+      }
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Sequential Thinking MCP",
+     "href": "https://mcpservers.org/servers/modelcontextprotocol/sequentialthinking"
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " server that is already available in your Flowise setup. ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " server that is already available in your Flowise setup. ",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38594183-19f3-80ec-a02d-ea18f05a388c",
+  "parent": {
+   "type": "page_id",
+   "page_id": "37e94183-19f3-807e-8dcc-f27b8f23c646"
+  },
+  "created_time": "2026-06-20T18:27:00.000Z",
+  "last_edited_time": "2026-06-20T18:27:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_2",
+  "heading_2": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Instructor walkthrough",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Instructor walkthrough",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38594183-19f3-80f0-ae01-d1928a5d0d6a",
+  "parent": {
+   "type": "page_id",
+   "page_id": "37e94183-19f3-807e-8dcc-f27b8f23c646"
+  },
+  "created_time": "2026-06-20T18:27:00.000Z",
+  "last_edited_time": "2026-06-20T18:27:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_3",
+  "heading_3": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Step 1: Create a new Agentflow",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Step 1: Create a new Agentflow",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38594183-19f3-80fe-8845-cc17a07f77c9",
+  "parent": {
+   "type": "page_id",
+   "page_id": "37e94183-19f3-807e-8dcc-f27b8f23c646"
+  },
+  "created_time": "2026-06-20T18:27:00.000Z",
+  "last_edited_time": "2026-06-20T18:27:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Open Flowise and create a new ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Open Flowise and create a new ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "Agentflow V2",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Agentflow V2",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " workflow. Add a ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " workflow. Add a ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "Start",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Start",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " node and a ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " node and a ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "Chat Input",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Chat Input",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " field if your canvas does not already include one.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " field if your canvas does not already include one.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "39094183-19f3-8078-8cb7-f4608882f545",
+  "parent": {
+   "type": "page_id",
+   "page_id": "37e94183-19f3-807e-8dcc-f27b8f23c646"
+  },
+  "created_time": "2026-07-01T15:21:00.000Z",
+  "last_edited_time": "2026-07-01T15:22:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "image",
+  "image": {
+   "caption": [],
+   "type": "file",
+   "file": {
+    "url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/3a9085c4-df29-45e6-8bc7-6c9c0a25ea8c/3985fd2f-e214-4f88-b1d1-3e4204ae4938/image.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB46634HUMBG4%2F20261010%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20261010T074611Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEIf%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJIMEYCIQDuVh76xQ35JBKurXTGAAxY2MhnpaPwm8n11UO56gGQzgIhAN3%2Fabc%2BOEuAa%2Be9iCHS3y8buFz3zqYQW%2FPyLCvol5CzKv8DCE8QABoMNjM3NDIzMTgzODA1Igyz%2BipBtgrqB1WuJV0q3AMR34lRJf5jB2gl1eHEYGxOxUBj3GaN3aiTOYLt2%2Bm1r4apSbJKNhSn5AMVHxuVlMkwYyDQ%2Bl%2B1mvPJdoC1WCGODF88vU5YIaEEIQMbaues%2FVkzvn8p0WQGUypKf8Vhe3DxVCwxa8VkqdB1BnUS3iaYV02co21mVkwyt%2BrpT7xo%2Fc4bi82O7Up6l8dT7yKSXDguOy8kw%2Fhu6yjCGK0QbUfKsxdjgcMUmhBlm1Tu%2Fh4iDm8d2%2BICI8Aj8XuxO51aRGoRCR1MkGUnsaORuIjYe7aH2drVN0jMytlpg%2Bsri9rK9bmUBPO4QvnPSG%2BmoXL0X%2BUjo8DJFUVnPFJva3SxqcrKS9tqoora6NAZdVnHUegC2UM5mMhCXOg%2BEiUqPdBke8ln%2FaRalXTlJNRFa5W16Iyc3V3FuM9SzosrahmJ9cWQk1YQCCuupxrBVYwv5IU3aVxyfrZaN3Uii%2FYHRI5NKIxSYi1ZN6Nh5zVUy9eMQ23bvng69NYVwpoM27k4aCx3EJPUMDI%2Fickn3oIc4xoaC4PFLpCXTySxlcuivR7INnrXTsrbcavxW3vapS35dpRNn3EvjuZl5ipaF5Vz%2BgV%2FevnUlfGyh3Ukr7N2q%2FCIPNrfXIamkZvj%2FAiHhNkcgTDUzKfWBjqkAeeRByZazSbM4igKl73qpsbDCktqXSZx%2BhT9eFhVh%2FO%2BHX26lBvVQvfQ0kr5hLmhkV%2F9l39W%2F3mEAZqPtLQZmXcF80LXR8kYdiPSSWnNTpKMrfPcV5%2FC5JvpysgiUCCQtUmVZSqYf7sQUYhNHYpENXlg0P4PB6VHGF16RxImAS1Rb%2BOhOsOsScZck4%2Fs6uaPu%2FnFk3IvjBoDQaaxQgebVsrs9yW7&X-Amz-Signature=ff267c9e3858a7899a9380011f729d959103453a1b4a4d92a6697067bcc54950&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+    "expiry_time": "2026-10-10T08:46:11.765Z"
+   }
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38594183-19f3-805e-ac27-df5e5f457cc1",
+  "parent": {
+   "type": "page_id",
+   "page_id": "37e94183-19f3-807e-8dcc-f27b8f23c646"
+  },
+  "created_time": "2026-06-20T18:29:00.000Z",
+  "last_edited_time": "2026-06-20T18:29:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_3",
+  "heading_3": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Step 2: Add an Agent node",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Step 2: Add an Agent node",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38594183-19f3-8060-af69-e3f002d5d1de",
+  "parent": {
+   "type": "page_id",
+   "page_id": "37e94183-19f3-807e-8dcc-f27b8f23c646"
+  },
+  "created_time": "2026-06-20T18:29:00.000Z",
+  "last_edited_time": "2026-06-20T18:29:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Add an ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Add an ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "Agent",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Agent",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " node and connect it to the Start node.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " node and connect it to the Start node.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38594183-19f3-80bb-9610-dea413b16dd4",
+  "parent": {
+   "type": "page_id",
+   "page_id": "37e94183-19f3-807e-8dcc-f27b8f23c646"
+  },
+  "created_time": "2026-06-20T18:29:00.000Z",
+  "last_edited_time": "2026-06-20T18:29:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "image",
+  "image": {
+   "caption": [],
+   "type": "file",
+   "file": {
+    "url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/3a9085c4-df29-45e6-8bc7-6c9c0a25ea8c/7eb6d8bd-fb0c-4bd9-9bbe-42815b22d211/image.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB46634HUMBG4%2F20261010%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20261010T074611Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEIf%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJIMEYCIQDuVh76xQ35JBKurXTGAAxY2MhnpaPwm8n11UO56gGQzgIhAN3%2Fabc%2BOEuAa%2Be9iCHS3y8buFz3zqYQW%2FPyLCvol5CzKv8DCE8QABoMNjM3NDIzMTgzODA1Igyz%2BipBtgrqB1WuJV0q3AMR34lRJf5jB2gl1eHEYGxOxUBj3GaN3aiTOYLt2%2Bm1r4apSbJKNhSn5AMVHxuVlMkwYyDQ%2Bl%2B1mvPJdoC1WCGODF88vU5YIaEEIQMbaues%2FVkzvn8p0WQGUypKf8Vhe3DxVCwxa8VkqdB1BnUS3iaYV02co21mVkwyt%2BrpT7xo%2Fc4bi82O7Up6l8dT7yKSXDguOy8kw%2Fhu6yjCGK0QbUfKsxdjgcMUmhBlm1Tu%2Fh4iDm8d2%2BICI8Aj8XuxO51aRGoRCR1MkGUnsaORuIjYe7aH2drVN0jMytlpg%2Bsri9rK9bmUBPO4QvnPSG%2BmoXL0X%2BUjo8DJFUVnPFJva3SxqcrKS9tqoora6NAZdVnHUegC2UM5mMhCXOg%2BEiUqPdBke8ln%2FaRalXTlJNRFa5W16Iyc3V3FuM9SzosrahmJ9cWQk1YQCCuupxrBVYwv5IU3aVxyfrZaN3Uii%2FYHRI5NKIxSYi1ZN6Nh5zVUy9eMQ23bvng69NYVwpoM27k4aCx3EJPUMDI%2Fickn3oIc4xoaC4PFLpCXTySxlcuivR7INnrXTsrbcavxW3vapS35dpRNn3EvjuZl5ipaF5Vz%2BgV%2FevnUlfGyh3Ukr7N2q%2FCIPNrfXIamkZvj%2FAiHhNkcgTDUzKfWBjqkAeeRByZazSbM4igKl73qpsbDCktqXSZx%2BhT9eFhVh%2FO%2BHX26lBvVQvfQ0kr5hLmhkV%2F9l39W%2F3mEAZqPtLQZmXcF80LXR8kYdiPSSWnNTpKMrfPcV5%2FC5JvpysgiUCCQtUmVZSqYf7sQUYhNHYpENXlg0P4PB6VHGF16RxImAS1Rb%2BOhOsOsScZck4%2Fs6uaPu%2FnFk3IvjBoDQaaxQgebVsrs9yW7&X-Amz-Signature=efe19338087906f45648e1b21bb8b1edc9b003c89541cb2c8eaa561457aa285f&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+    "expiry_time": "2026-10-10T08:46:11.765Z"
+   }
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38594183-19f3-8032-b6c0-fb5f97cd6d94",
+  "parent": {
+   "type": "page_id",
+   "page_id": "37e94183-19f3-807e-8dcc-f27b8f23c646"
+  },
+  "created_time": "2026-06-20T18:29:00.000Z",
+  "last_edited_time": "2026-06-20T18:37:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "You can rename your agent to something like Agent with Sequential MCP. Select the LLM of your choice (Gemini or Ollama) and in the system prompt (",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "You can rename your agent to something like Agent with Sequential MCP. Select the LLM of your choice (Gemini or Ollama) and in the system prompt (",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "Add Message",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": true,
+      "color": "default"
+     },
+     "plain_text": "Add Message",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " button), use:",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " button), use:",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38594183-19f3-8015-bb37-ea77412fae7d",
+  "parent": {
+   "type": "page_id",
+   "page_id": "37e94183-19f3-807e-8dcc-f27b8f23c646"
+  },
+  "created_time": "2026-06-20T18:30:00.000Z",
+  "last_edited_time": "2026-06-20T18:30:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": true,
+  "in_trash": false,
+  "type": "callout",
+  "callout": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "You are an IT support assistant.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "You are an IT support assistant.",
+     "href": null
+    }
+   ],
+   "icon": {
+    "type": "emoji",
+    "emoji": "\ud83d\udcac"
+   },
+   "color": "blue_background"
+  },
+  "archived": false,
+  "_children": [
+   {
+    "object": "block",
+    "id": "38594183-19f3-80ba-833d-f0e62efd1b1c",
+    "parent": {
+     "type": "block_id",
+     "block_id": "38594183-19f3-8015-bb37-ea77412fae7d"
+    },
+    "created_time": "2026-06-20T18:30:00.000Z",
+    "last_edited_time": "2026-06-20T18:30:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+     "rich_text": [
+      {
+       "type": "text",
+       "text": {
+        "content": "Your job is to answer the user\u2019s request.",
+        "link": null
+       },
+       "annotations": {
+        "bold": false,
+        "italic": false,
+        "strikethrough": false,
+        "underline": false,
+        "code": false,
+        "color": "default"
+       },
+       "plain_text": "Your job is to answer the user\u2019s request.",
+       "href": null
+      }
+     ],
+     "icon": null,
+     "color": "default"
+    },
+    "archived": false
+   },
+   {
+    "object": "block",
+    "id": "38594183-19f3-8027-934c-c9f8d6f985e3",
+    "parent": {
+     "type": "block_id",
+     "block_id": "38594183-19f3-8015-bb37-ea77412fae7d"
+    },
+    "created_time": "2026-06-20T18:30:00.000Z",
+    "last_edited_time": "2026-06-20T18:30:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+     "rich_text": [
+      {
+       "type": "text",
+       "text": {
+        "content": "When an MCP tool is useful, call the tool before answering.",
+        "link": null
+       },
+       "annotations": {
+        "bold": false,
+        "italic": false,
+        "strikethrough": false,
+        "underline": false,
+        "code": false,
+        "color": "default"
+       },
+       "plain_text": "When an MCP tool is useful, call the tool before answering.",
+       "href": null
+      }
+     ],
+     "icon": null,
+     "color": "default"
+    },
+    "archived": false
+   },
+   {
+    "object": "block",
+    "id": "38594183-19f3-80c5-8442-fb1373954c6f",
+    "parent": {
+     "type": "block_id",
+     "block_id": "38594183-19f3-8015-bb37-ea77412fae7d"
+    },
+    "created_time": "2026-06-20T18:30:00.000Z",
+    "last_edited_time": "2026-06-20T18:30:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+     "rich_text": [
+      {
+       "type": "text",
+       "text": {
+        "content": "When no tool is needed, answer directly.",
+        "link": null
+       },
+       "annotations": {
+        "bold": false,
+        "italic": false,
+        "strikethrough": false,
+        "underline": false,
+        "code": false,
+        "color": "default"
+       },
+       "plain_text": "When no tool is needed, answer directly.",
+       "href": null
+      }
+     ],
+     "icon": null,
+     "color": "default"
+    },
+    "archived": false
+   }
+  ]
+ },
+ {
+  "object": "block",
+  "id": "38594183-19f3-8028-ad37-d0057af2af5c",
+  "parent": {
+   "type": "page_id",
+   "page_id": "37e94183-19f3-807e-8dcc-f27b8f23c646"
+  },
+  "created_time": "2026-06-20T18:32:00.000Z",
+  "last_edited_time": "2026-06-20T18:32:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "image",
+  "image": {
+   "caption": [],
+   "type": "file",
+   "file": {
+    "url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/3a9085c4-df29-45e6-8bc7-6c9c0a25ea8c/247b30ff-b30a-4f3d-ba46-c6c94d548ed2/image.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB46634HUMBG4%2F20261010%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20261010T074611Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEIf%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJIMEYCIQDuVh76xQ35JBKurXTGAAxY2MhnpaPwm8n11UO56gGQzgIhAN3%2Fabc%2BOEuAa%2Be9iCHS3y8buFz3zqYQW%2FPyLCvol5CzKv8DCE8QABoMNjM3NDIzMTgzODA1Igyz%2BipBtgrqB1WuJV0q3AMR34lRJf5jB2gl1eHEYGxOxUBj3GaN3aiTOYLt2%2Bm1r4apSbJKNhSn5AMVHxuVlMkwYyDQ%2Bl%2B1mvPJdoC1WCGODF88vU5YIaEEIQMbaues%2FVkzvn8p0WQGUypKf8Vhe3DxVCwxa8VkqdB1BnUS3iaYV02co21mVkwyt%2BrpT7xo%2Fc4bi82O7Up6l8dT7yKSXDguOy8kw%2Fhu6yjCGK0QbUfKsxdjgcMUmhBlm1Tu%2Fh4iDm8d2%2BICI8Aj8XuxO51aRGoRCR1MkGUnsaORuIjYe7aH2drVN0jMytlpg%2Bsri9rK9bmUBPO4QvnPSG%2BmoXL0X%2BUjo8DJFUVnPFJva3SxqcrKS9tqoora6NAZdVnHUegC2UM5mMhCXOg%2BEiUqPdBke8ln%2FaRalXTlJNRFa5W16Iyc3V3FuM9SzosrahmJ9cWQk1YQCCuupxrBVYwv5IU3aVxyfrZaN3Uii%2FYHRI5NKIxSYi1ZN6Nh5zVUy9eMQ23bvng69NYVwpoM27k4aCx3EJPUMDI%2Fickn3oIc4xoaC4PFLpCXTySxlcuivR7INnrXTsrbcavxW3vapS35dpRNn3EvjuZl5ipaF5Vz%2BgV%2FevnUlfGyh3Ukr7N2q%2FCIPNrfXIamkZvj%2FAiHhNkcgTDUzKfWBjqkAeeRByZazSbM4igKl73qpsbDCktqXSZx%2BhT9eFhVh%2FO%2BHX26lBvVQvfQ0kr5hLmhkV%2F9l39W%2F3mEAZqPtLQZmXcF80LXR8kYdiPSSWnNTpKMrfPcV5%2FC5JvpysgiUCCQtUmVZSqYf7sQUYhNHYpENXlg0P4PB6VHGF16RxImAS1Rb%2BOhOsOsScZck4%2Fs6uaPu%2FnFk3IvjBoDQaaxQgebVsrs9yW7&X-Amz-Signature=d2c232e734ea3099c01aa0bad551cad3d659818f493ffc94ed3597dd3c468406&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+    "expiry_time": "2026-10-10T08:46:11.765Z"
+   }
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38594183-19f3-803d-81df-fffdc03d164f",
+  "parent": {
+   "type": "page_id",
+   "page_id": "37e94183-19f3-807e-8dcc-f27b8f23c646"
+  },
+  "created_time": "2026-06-20T18:33:00.000Z",
+  "last_edited_time": "2026-06-20T18:34:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Keep the prompt simple. The goal is not to build the final support agent yet. The goal is to prove that the agent can use an MCP tool.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Keep the prompt simple. The goal is not to build the final support agent yet. The goal is to prove that the agent can use an MCP tool.",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "\n",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "\n",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38594183-19f3-8066-b3ac-dafdad621ddf",
+  "parent": {
+   "type": "page_id",
+   "page_id": "37e94183-19f3-807e-8dcc-f27b8f23c646"
+  },
+  "created_time": "2026-06-20T18:34:00.000Z",
+  "last_edited_time": "2026-06-20T18:34:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_3",
+  "heading_3": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Step 3: Connect the MCP tool",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Step 3: Connect the MCP tool",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38594183-19f3-8089-867c-ebb2f306346d",
+  "parent": {
+   "type": "page_id",
+   "page_id": "37e94183-19f3-807e-8dcc-f27b8f23c646"
+  },
+  "created_time": "2026-06-20T18:34:00.000Z",
+  "last_edited_time": "2026-06-20T18:34:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "In the Agent node configuration, open the tools section and add the available MCP tool/server for sequential thinking:",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "In the Agent node configuration, open the tools section and add the available MCP tool/server for sequential thinking:",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38594183-19f3-801b-adf6-ff68b281b13d",
+  "parent": {
+   "type": "page_id",
+   "page_id": "37e94183-19f3-807e-8dcc-f27b8f23c646"
+  },
+  "created_time": "2026-06-20T18:34:00.000Z",
+  "last_edited_time": "2026-06-20T18:35:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "image",
+  "image": {
+   "caption": [],
+   "type": "file",
+   "file": {
+    "url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/3a9085c4-df29-45e6-8bc7-6c9c0a25ea8c/6c31c325-0030-4573-bad4-ecbf29fd2cba/image.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB46634HUMBG4%2F20261010%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20261010T074611Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEIf%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJIMEYCIQDuVh76xQ35JBKurXTGAAxY2MhnpaPwm8n11UO56gGQzgIhAN3%2Fabc%2BOEuAa%2Be9iCHS3y8buFz3zqYQW%2FPyLCvol5CzKv8DCE8QABoMNjM3NDIzMTgzODA1Igyz%2BipBtgrqB1WuJV0q3AMR34lRJf5jB2gl1eHEYGxOxUBj3GaN3aiTOYLt2%2Bm1r4apSbJKNhSn5AMVHxuVlMkwYyDQ%2Bl%2B1mvPJdoC1WCGODF88vU5YIaEEIQMbaues%2FVkzvn8p0WQGUypKf8Vhe3DxVCwxa8VkqdB1BnUS3iaYV02co21mVkwyt%2BrpT7xo%2Fc4bi82O7Up6l8dT7yKSXDguOy8kw%2Fhu6yjCGK0QbUfKsxdjgcMUmhBlm1Tu%2Fh4iDm8d2%2BICI8Aj8XuxO51aRGoRCR1MkGUnsaORuIjYe7aH2drVN0jMytlpg%2Bsri9rK9bmUBPO4QvnPSG%2BmoXL0X%2BUjo8DJFUVnPFJva3SxqcrKS9tqoora6NAZdVnHUegC2UM5mMhCXOg%2BEiUqPdBke8ln%2FaRalXTlJNRFa5W16Iyc3V3FuM9SzosrahmJ9cWQk1YQCCuupxrBVYwv5IU3aVxyfrZaN3Uii%2FYHRI5NKIxSYi1ZN6Nh5zVUy9eMQ23bvng69NYVwpoM27k4aCx3EJPUMDI%2Fickn3oIc4xoaC4PFLpCXTySxlcuivR7INnrXTsrbcavxW3vapS35dpRNn3EvjuZl5ipaF5Vz%2BgV%2FevnUlfGyh3Ukr7N2q%2FCIPNrfXIamkZvj%2FAiHhNkcgTDUzKfWBjqkAeeRByZazSbM4igKl73qpsbDCktqXSZx%2BhT9eFhVh%2FO%2BHX26lBvVQvfQ0kr5hLmhkV%2F9l39W%2F3mEAZqPtLQZmXcF80LXR8kYdiPSSWnNTpKMrfPcV5%2FC5JvpysgiUCCQtUmVZSqYf7sQUYhNHYpENXlg0P4PB6VHGF16RxImAS1Rb%2BOhOsOsScZck4%2Fs6uaPu%2FnFk3IvjBoDQaaxQgebVsrs9yW7&X-Amz-Signature=9286d8c4489b980401cddd1598c64a9a3a1884a293e166357b440f0475070e37&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+    "expiry_time": "2026-10-10T08:46:11.765Z"
+   }
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38594183-19f3-80e3-b66e-e890d18b62e4",
+  "parent": {
+   "type": "page_id",
+   "page_id": "37e94183-19f3-807e-8dcc-f27b8f23c646"
+  },
+  "created_time": "2026-06-20T18:34:00.000Z",
+  "last_edited_time": "2026-06-30T08:05:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "In the ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "In the ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "Available actions",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": true,
+      "color": "default"
+     },
+     "plain_text": "Available actions",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " section, select ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " section, select ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "SEQUENTIAL THINKING",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": true,
+      "color": "default"
+     },
+     "plain_text": "SEQUENTIAL THINKING",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": ".",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": ".",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38594183-19f3-80e2-9027-eea58b86db0b",
+  "parent": {
+   "type": "page_id",
+   "page_id": "37e94183-19f3-807e-8dcc-f27b8f23c646"
+  },
+  "created_time": "2026-06-20T18:35:00.000Z",
+  "last_edited_time": "2026-06-20T18:35:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "image",
+  "image": {
+   "caption": [],
+   "type": "file",
+   "file": {
+    "url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/3a9085c4-df29-45e6-8bc7-6c9c0a25ea8c/9a5687c1-da6c-43b5-9758-02c1ac5465d6/image.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB46634HUMBG4%2F20261010%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20261010T074611Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEIf%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJIMEYCIQDuVh76xQ35JBKurXTGAAxY2MhnpaPwm8n11UO56gGQzgIhAN3%2Fabc%2BOEuAa%2Be9iCHS3y8buFz3zqYQW%2FPyLCvol5CzKv8DCE8QABoMNjM3NDIzMTgzODA1Igyz%2BipBtgrqB1WuJV0q3AMR34lRJf5jB2gl1eHEYGxOxUBj3GaN3aiTOYLt2%2Bm1r4apSbJKNhSn5AMVHxuVlMkwYyDQ%2Bl%2B1mvPJdoC1WCGODF88vU5YIaEEIQMbaues%2FVkzvn8p0WQGUypKf8Vhe3DxVCwxa8VkqdB1BnUS3iaYV02co21mVkwyt%2BrpT7xo%2Fc4bi82O7Up6l8dT7yKSXDguOy8kw%2Fhu6yjCGK0QbUfKsxdjgcMUmhBlm1Tu%2Fh4iDm8d2%2BICI8Aj8XuxO51aRGoRCR1MkGUnsaORuIjYe7aH2drVN0jMytlpg%2Bsri9rK9bmUBPO4QvnPSG%2BmoXL0X%2BUjo8DJFUVnPFJva3SxqcrKS9tqoora6NAZdVnHUegC2UM5mMhCXOg%2BEiUqPdBke8ln%2FaRalXTlJNRFa5W16Iyc3V3FuM9SzosrahmJ9cWQk1YQCCuupxrBVYwv5IU3aVxyfrZaN3Uii%2FYHRI5NKIxSYi1ZN6Nh5zVUy9eMQ23bvng69NYVwpoM27k4aCx3EJPUMDI%2Fickn3oIc4xoaC4PFLpCXTySxlcuivR7INnrXTsrbcavxW3vapS35dpRNn3EvjuZl5ipaF5Vz%2BgV%2FevnUlfGyh3Ukr7N2q%2FCIPNrfXIamkZvj%2FAiHhNkcgTDUzKfWBjqkAeeRByZazSbM4igKl73qpsbDCktqXSZx%2BhT9eFhVh%2FO%2BHX26lBvVQvfQ0kr5hLmhkV%2F9l39W%2F3mEAZqPtLQZmXcF80LXR8kYdiPSSWnNTpKMrfPcV5%2FC5JvpysgiUCCQtUmVZSqYf7sQUYhNHYpENXlg0P4PB6VHGF16RxImAS1Rb%2BOhOsOsScZck4%2Fs6uaPu%2FnFk3IvjBoDQaaxQgebVsrs9yW7&X-Amz-Signature=858a0fa7b9cd33656e8e5e66f2ad3b04d9d088a547c5dda84b034e2bd38fed6c&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+    "expiry_time": "2026-10-10T08:46:11.765Z"
+   }
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38594183-19f3-80c2-b32e-c8787b83770a",
+  "parent": {
+   "type": "page_id",
+   "page_id": "37e94183-19f3-807e-8dcc-f27b8f23c646"
+  },
+  "created_time": "2026-06-20T18:35:00.000Z",
+  "last_edited_time": "2026-06-20T18:35:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_3",
+  "heading_3": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Step 4: Test tool discovery",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Step 4: Test tool discovery",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38594183-19f3-806a-9603-c7d9547470d3",
+  "parent": {
+   "type": "page_id",
+   "page_id": "37e94183-19f3-807e-8dcc-f27b8f23c646"
+  },
+  "created_time": "2026-06-20T18:35:00.000Z",
+  "last_edited_time": "2026-06-20T18:36:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Save and run the flow with a prompt that clearly requires the MCP tool. For Sequential Thinking MCP, use something like:",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Save and run the flow with a prompt that clearly requires the MCP tool. For Sequential Thinking MCP, use something like:",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38594183-19f3-806b-9d8e-eac19d08d34b",
+  "parent": {
+   "type": "page_id",
+   "page_id": "37e94183-19f3-807e-8dcc-f27b8f23c646"
+  },
+  "created_time": "2026-06-20T18:35:00.000Z",
+  "last_edited_time": "2026-06-20T18:35:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "callout",
+  "callout": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Break this problem into steps: I need to diagnose why a user cannot access their company email.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Break this problem into steps: I need to diagnose why a user cannot access their company email.",
+     "href": null
+    }
+   ],
+   "icon": {
+    "type": "emoji",
+    "emoji": "\ud83d\udcac"
+   },
+   "color": "blue_background"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38594183-19f3-8048-a5b7-f6a20f7c9521",
+  "parent": {
+   "type": "page_id",
+   "page_id": "37e94183-19f3-807e-8dcc-f27b8f23c646"
+  },
+  "created_time": "2026-06-20T18:36:00.000Z",
+  "last_edited_time": "2026-06-20T18:39:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "The agent should not only answer from memory. It should call the MCP tool or show evidence that it used the connected capability.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "The agent should not only answer from memory. It should call the MCP tool or show evidence that it used the connected capability.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "39094183-19f3-8114-9006-ed373a85d62f",
+  "parent": {
+   "type": "page_id",
+   "page_id": "37e94183-19f3-807e-8dcc-f27b8f23c646"
+  },
+  "created_time": "2026-07-01T15:13:00.000Z",
+  "last_edited_time": "2026-07-01T15:13:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_3",
+  "heading_3": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Step 5: Observe the result",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Step 5: Observe the result",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38594183-19f3-8058-8fb8-c383f610eaf0",
+  "parent": {
+   "type": "page_id",
+   "page_id": "37e94183-19f3-807e-8dcc-f27b8f23c646"
+  },
+  "created_time": "2026-06-20T18:39:00.000Z",
+  "last_edited_time": "2026-06-20T18:39:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "image",
+  "image": {
+   "caption": [],
+   "type": "file",
+   "file": {
+    "url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/3a9085c4-df29-45e6-8bc7-6c9c0a25ea8c/b3244403-c1f5-45f1-9ec5-aa9e3bd4c92d/image.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB46634HUMBG4%2F20261010%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20261010T074611Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEIf%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJIMEYCIQDuVh76xQ35JBKurXTGAAxY2MhnpaPwm8n11UO56gGQzgIhAN3%2Fabc%2BOEuAa%2Be9iCHS3y8buFz3zqYQW%2FPyLCvol5CzKv8DCE8QABoMNjM3NDIzMTgzODA1Igyz%2BipBtgrqB1WuJV0q3AMR34lRJf5jB2gl1eHEYGxOxUBj3GaN3aiTOYLt2%2Bm1r4apSbJKNhSn5AMVHxuVlMkwYyDQ%2Bl%2B1mvPJdoC1WCGODF88vU5YIaEEIQMbaues%2FVkzvn8p0WQGUypKf8Vhe3DxVCwxa8VkqdB1BnUS3iaYV02co21mVkwyt%2BrpT7xo%2Fc4bi82O7Up6l8dT7yKSXDguOy8kw%2Fhu6yjCGK0QbUfKsxdjgcMUmhBlm1Tu%2Fh4iDm8d2%2BICI8Aj8XuxO51aRGoRCR1MkGUnsaORuIjYe7aH2drVN0jMytlpg%2Bsri9rK9bmUBPO4QvnPSG%2BmoXL0X%2BUjo8DJFUVnPFJva3SxqcrKS9tqoora6NAZdVnHUegC2UM5mMhCXOg%2BEiUqPdBke8ln%2FaRalXTlJNRFa5W16Iyc3V3FuM9SzosrahmJ9cWQk1YQCCuupxrBVYwv5IU3aVxyfrZaN3Uii%2FYHRI5NKIxSYi1ZN6Nh5zVUy9eMQ23bvng69NYVwpoM27k4aCx3EJPUMDI%2Fickn3oIc4xoaC4PFLpCXTySxlcuivR7INnrXTsrbcavxW3vapS35dpRNn3EvjuZl5ipaF5Vz%2BgV%2FevnUlfGyh3Ukr7N2q%2FCIPNrfXIamkZvj%2FAiHhNkcgTDUzKfWBjqkAeeRByZazSbM4igKl73qpsbDCktqXSZx%2BhT9eFhVh%2FO%2BHX26lBvVQvfQ0kr5hLmhkV%2F9l39W%2F3mEAZqPtLQZmXcF80LXR8kYdiPSSWnNTpKMrfPcV5%2FC5JvpysgiUCCQtUmVZSqYf7sQUYhNHYpENXlg0P4PB6VHGF16RxImAS1Rb%2BOhOsOsScZck4%2Fs6uaPu%2FnFk3IvjBoDQaaxQgebVsrs9yW7&X-Amz-Signature=8716a05b5b7e10503daedbdf725a9d0d74f3313e31b04bb9309292ce68e88c41&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+    "expiry_time": "2026-10-10T08:46:11.806Z"
+   }
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38594183-19f3-80df-832d-df9000c99e94",
+  "parent": {
+   "type": "page_id",
+   "page_id": "37e94183-19f3-807e-8dcc-f27b8f23c646"
+  },
+  "created_time": "2026-06-20T18:39:00.000Z",
+  "last_edited_time": "2026-06-20T18:39:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Open the run details or node execution output. Look for:",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Open the run details or node execution output. Look for:",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38594183-19f3-8002-9326-cba7eb9b78f9",
+  "parent": {
+   "type": "page_id",
+   "page_id": "37e94183-19f3-807e-8dcc-f27b8f23c646"
+  },
+  "created_time": "2026-06-20T18:39:00.000Z",
+  "last_edited_time": "2026-06-20T18:39:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "whether the agent selected the MCP tool,",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "whether the agent selected the MCP tool,",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38594183-19f3-8096-95fc-c9f5511ce3d0",
+  "parent": {
+   "type": "page_id",
+   "page_id": "37e94183-19f3-807e-8dcc-f27b8f23c646"
+  },
+  "created_time": "2026-06-20T18:39:00.000Z",
+  "last_edited_time": "2026-06-20T18:39:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "what input it passed to the tool,",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "what input it passed to the tool,",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38594183-19f3-809a-b771-f656f79d6b9c",
+  "parent": {
+   "type": "page_id",
+   "page_id": "37e94183-19f3-807e-8dcc-f27b8f23c646"
+  },
+  "created_time": "2026-06-20T18:39:00.000Z",
+  "last_edited_time": "2026-06-20T18:39:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "what result came back,",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "what result came back,",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38594183-19f3-80dc-9e7f-cc7e4c162218",
+  "parent": {
+   "type": "page_id",
+   "page_id": "37e94183-19f3-807e-8dcc-f27b8f23c646"
+  },
+  "created_time": "2026-06-20T18:39:00.000Z",
+  "last_edited_time": "2026-06-20T18:39:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "how the final answer used the result.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "how the final answer used the result.",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38594183-19f3-8032-944f-c7c22d3aa5e6",
+  "parent": {
+   "type": "page_id",
+   "page_id": "37e94183-19f3-807e-8dcc-f27b8f23c646"
+  },
+  "created_time": "2026-06-20T18:39:00.000Z",
+  "last_edited_time": "2026-06-20T18:39:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "This is the key learning moment: MCP is successful only if the agent can actually call the tool during the workflow.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "This is the key learning moment: MCP is successful only if the agent can actually call the tool during the workflow.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38594183-19f3-80a1-9d40-cd8d2312a380",
+  "parent": {
+   "type": "page_id",
+   "page_id": "37e94183-19f3-807e-8dcc-f27b8f23c646"
+  },
+  "created_time": "2026-06-20T18:40:00.000Z",
+  "last_edited_time": "2026-06-20T18:40:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_2",
+  "heading_2": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Common failure points",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Common failure points",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38594183-19f3-80e1-acf7-c0932de7989a",
+  "parent": {
+   "type": "page_id",
+   "page_id": "37e94183-19f3-807e-8dcc-f27b8f23c646"
+  },
+  "created_time": "2026-06-20T18:40:00.000Z",
+  "last_edited_time": "2026-07-05T11:39:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": true,
+  "in_trash": false,
+  "type": "table",
+  "table": {
+   "table_width": 3,
+   "has_column_header": true,
+   "has_row_header": false
+  },
+  "archived": false,
+  "_children": [
+   {
+    "object": "block",
+    "id": "38594183-19f3-8061-86a7-f90c6b394591",
+    "parent": {
+     "type": "block_id",
+     "block_id": "38594183-19f3-80e1-acf7-c0932de7989a"
+    },
+    "created_time": "2026-06-20T18:40:00.000Z",
+    "last_edited_time": "2026-06-20T18:40:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "table_row",
+    "table_row": {
+     "cells": [
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Problem",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Problem",
+        "href": null
+       }
+      ],
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "What learners see",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "What learners see",
+        "href": null
+       }
+      ],
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "How to recover",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "How to recover",
+        "href": null
+       }
+      ]
+     ]
+    },
+    "archived": false
+   },
+   {
+    "object": "block",
+    "id": "38594183-19f3-8060-becf-dbba465d2d0a",
+    "parent": {
+     "type": "block_id",
+     "block_id": "38594183-19f3-80e1-acf7-c0932de7989a"
+    },
+    "created_time": "2026-06-20T18:40:00.000Z",
+    "last_edited_time": "2026-06-20T18:40:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "table_row",
+    "table_row": {
+     "cells": [
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "MCP tool does not appear",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "MCP tool does not appear",
+        "href": null
+       }
+      ],
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "No available MCP actions in Flowise",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "No available MCP actions in Flowise",
+        "href": null
+       }
+      ],
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Check that the MCP server is installed, running, and connected to Flowise",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Check that the MCP server is installed, running, and connected to Flowise",
+        "href": null
+       }
+      ]
+     ]
+    },
+    "archived": false
+   },
+   {
+    "object": "block",
+    "id": "38594183-19f3-8073-9e4d-de32d1a442b2",
+    "parent": {
+     "type": "block_id",
+     "block_id": "38594183-19f3-80e1-acf7-c0932de7989a"
+    },
+    "created_time": "2026-06-20T18:40:00.000Z",
+    "last_edited_time": "2026-06-20T18:40:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "table_row",
+    "table_row": {
+     "cells": [
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Agent ignores the tool",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Agent ignores the tool",
+        "href": null
+       }
+      ],
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "The answer appears, but no tool call is visible",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "The answer appears, but no tool call is visible",
+        "href": null
+       }
+      ],
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Make the prompt more explicit and ask for a task that requires the tool",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Make the prompt more explicit and ask for a task that requires the tool",
+        "href": null
+       }
+      ]
+     ]
+    },
+    "archived": false
+   },
+   {
+    "object": "block",
+    "id": "38594183-19f3-80fd-be82-eeaaf70cdc27",
+    "parent": {
+     "type": "block_id",
+     "block_id": "38594183-19f3-80e1-acf7-c0932de7989a"
+    },
+    "created_time": "2026-06-20T18:40:00.000Z",
+    "last_edited_time": "2026-06-20T18:40:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "table_row",
+    "table_row": {
+     "cells": [
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Authentication fails",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Authentication fails",
+        "href": null
+       }
+      ],
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Tool call returns an auth error",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Tool call returns an auth error",
+        "href": null
+       }
+      ],
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Check access token, environment variables, or provider login",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Check access token, environment variables, or provider login",
+        "href": null
+       }
+      ]
+     ]
+    },
+    "archived": false
+   },
+   {
+    "object": "block",
+    "id": "38594183-19f3-8040-9b53-e53442986f8d",
+    "parent": {
+     "type": "block_id",
+     "block_id": "38594183-19f3-80e1-acf7-c0932de7989a"
+    },
+    "created_time": "2026-06-20T18:40:00.000Z",
+    "last_edited_time": "2026-06-20T18:40:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "table_row",
+    "table_row": {
+     "cells": [
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Local server unavailable",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Local server unavailable",
+        "href": null
+       }
+      ],
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Connection or timeout error",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Connection or timeout error",
+        "href": null
+       }
+      ],
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Restart the MCP server and Flowise container",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Restart the MCP server and Flowise container",
+        "href": null
+       }
+      ]
+     ]
+    },
+    "archived": false
+   },
+   {
+    "object": "block",
+    "id": "38594183-19f3-8071-8274-f8a189cc963f",
+    "parent": {
+     "type": "block_id",
+     "block_id": "38594183-19f3-80e1-acf7-c0932de7989a"
+    },
+    "created_time": "2026-06-20T18:40:00.000Z",
+    "last_edited_time": "2026-06-20T18:40:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "table_row",
+    "table_row": {
+     "cells": [
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Wrong node type",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Wrong node type",
+        "href": null
+       }
+      ],
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Tool cannot be attached",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Tool cannot be attached",
+        "href": null
+       }
+      ],
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Use an Agent node that supports tools, not a plain LLM node",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Use an Agent node that supports tools, not a plain LLM node",
+        "href": null
+       }
+      ]
+     ]
+    },
+    "archived": false
+   }
+  ]
+ },
+ {
+  "object": "block",
+  "id": "38594183-19f3-807a-8f99-fc130df05807",
+  "parent": {
+   "type": "page_id",
+   "page_id": "37e94183-19f3-807e-8dcc-f27b8f23c646"
+  },
+  "created_time": "2026-06-20T18:40:00.000Z",
+  "last_edited_time": "2026-06-20T18:40:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_2",
+  "heading_2": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Solved reference behavior",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Solved reference behavior",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38594183-19f3-80b5-8eaa-f9676ffebaf1",
+  "parent": {
+   "type": "page_id",
+   "page_id": "37e94183-19f3-807e-8dcc-f27b8f23c646"
+  },
+  "created_time": "2026-06-20T18:40:00.000Z",
+  "last_edited_time": "2026-06-20T18:40:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "A successful run should show this pattern:",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "A successful run should show this pattern:",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "39494183-19f3-802d-8e34-cf4209d739db",
+  "parent": {
+   "type": "page_id",
+   "page_id": "37e94183-19f3-807e-8dcc-f27b8f23c646"
+  },
+  "created_time": "2026-07-05T11:43:00.000Z",
+  "last_edited_time": "2026-08-10T07:13:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "image",
+  "image": {
+   "caption": [],
+   "type": "file",
+   "file": {
+    "url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/3a9085c4-df29-45e6-8bc7-6c9c0a25ea8c/413e1259-789d-4196-8b7c-a6324b7bb0d8/diagram.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB46634HUMBG4%2F20261010%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20261010T074611Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEIf%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJIMEYCIQDuVh76xQ35JBKurXTGAAxY2MhnpaPwm8n11UO56gGQzgIhAN3%2Fabc%2BOEuAa%2Be9iCHS3y8buFz3zqYQW%2FPyLCvol5CzKv8DCE8QABoMNjM3NDIzMTgzODA1Igyz%2BipBtgrqB1WuJV0q3AMR34lRJf5jB2gl1eHEYGxOxUBj3GaN3aiTOYLt2%2Bm1r4apSbJKNhSn5AMVHxuVlMkwYyDQ%2Bl%2B1mvPJdoC1WCGODF88vU5YIaEEIQMbaues%2FVkzvn8p0WQGUypKf8Vhe3DxVCwxa8VkqdB1BnUS3iaYV02co21mVkwyt%2BrpT7xo%2Fc4bi82O7Up6l8dT7yKSXDguOy8kw%2Fhu6yjCGK0QbUfKsxdjgcMUmhBlm1Tu%2Fh4iDm8d2%2BICI8Aj8XuxO51aRGoRCR1MkGUnsaORuIjYe7aH2drVN0jMytlpg%2Bsri9rK9bmUBPO4QvnPSG%2BmoXL0X%2BUjo8DJFUVnPFJva3SxqcrKS9tqoora6NAZdVnHUegC2UM5mMhCXOg%2BEiUqPdBke8ln%2FaRalXTlJNRFa5W16Iyc3V3FuM9SzosrahmJ9cWQk1YQCCuupxrBVYwv5IU3aVxyfrZaN3Uii%2FYHRI5NKIxSYi1ZN6Nh5zVUy9eMQ23bvng69NYVwpoM27k4aCx3EJPUMDI%2Fickn3oIc4xoaC4PFLpCXTySxlcuivR7INnrXTsrbcavxW3vapS35dpRNn3EvjuZl5ipaF5Vz%2BgV%2FevnUlfGyh3Ukr7N2q%2FCIPNrfXIamkZvj%2FAiHhNkcgTDUzKfWBjqkAeeRByZazSbM4igKl73qpsbDCktqXSZx%2BhT9eFhVh%2FO%2BHX26lBvVQvfQ0kr5hLmhkV%2F9l39W%2F3mEAZqPtLQZmXcF80LXR8kYdiPSSWnNTpKMrfPcV5%2FC5JvpysgiUCCQtUmVZSqYf7sQUYhNHYpENXlg0P4PB6VHGF16RxImAS1Rb%2BOhOsOsScZck4%2Fs6uaPu%2FnFk3IvjBoDQaaxQgebVsrs9yW7&X-Amz-Signature=e7c9d633eabc28e998967c9feac7af8e7347692c3f2f5234dc4d41f152f85f3f&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+    "expiry_time": "2026-10-10T08:46:11.806Z"
+   }
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38594183-19f3-8091-990f-c35b80fae660",
+  "parent": {
+   "type": "page_id",
+   "page_id": "37e94183-19f3-807e-8dcc-f27b8f23c646"
+  },
+  "created_time": "2026-06-20T18:42:00.000Z",
+  "last_edited_time": "2026-06-20T18:42:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "The exact output depends on the MCP server, but the run log should clearly show that the MCP tool was called.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "The exact output depends on the MCP server, but the run log should clearly show that the MCP tool was called.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38594183-19f3-8003-8dc8-da9316ec7634",
+  "parent": {
+   "type": "page_id",
+   "page_id": "37e94183-19f3-807e-8dcc-f27b8f23c646"
+  },
+  "created_time": "2026-06-20T18:42:00.000Z",
+  "last_edited_time": "2026-06-20T18:42:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_2",
+  "heading_2": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Debrief lens",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Debrief lens",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38594183-19f3-805e-8a44-d2ef6737e90e",
+  "parent": {
+   "type": "page_id",
+   "page_id": "37e94183-19f3-807e-8dcc-f27b8f23c646"
+  },
+  "created_time": "2026-06-20T18:42:00.000Z",
+  "last_edited_time": "2026-06-20T18:42:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "The important distinction is between ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "The important distinction is between ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "having a tool configured",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "having a tool configured",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " and ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " and ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "having an agent use the tool correctly",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "having an agent use the tool correctly",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": ". A tool listed in Flowise is only potential capability. The real test is whether the agent calls it at the right moment and uses the result in the final response.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": ". A tool listed in Flowise is only potential capability. The real test is whether the agent calls it at the right moment and uses the result in the final response.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38594183-19f3-80f9-9978-c6711943252c",
+  "parent": {
+   "type": "page_id",
+   "page_id": "37e94183-19f3-807e-8dcc-f27b8f23c646"
+  },
+  "created_time": "2026-06-20T18:42:00.000Z",
+  "last_edited_time": "2026-06-20T18:42:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_2",
+  "heading_2": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Summary",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Summary",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38594183-19f3-80cf-84b1-ec6bbbe02633",
+  "parent": {
+   "type": "page_id",
+   "page_id": "37e94183-19f3-807e-8dcc-f27b8f23c646"
+  },
+  "created_time": "2026-06-20T18:42:00.000Z",
+  "last_edited_time": "2026-07-01T15:13:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "You connected one MCP tool to a Flowise agent and watched it discover, call, and use the result. This is the basic integration pattern behind more advanced agent systems. In the next lesson, we look at what happens when Sofia's agents need to talk to another team's agent \u2014 a different problem that MCP alone does not solve.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "You connected one MCP tool to a Flowise agent and watched it discover, call, and use the result. This is the basic integration pattern behind more advanced agent systems. In the next lesson, we look at what happens when Sofia's agents need to talk to another team's agent \u2014 a different problem that MCP alone does not solve.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ }
+]

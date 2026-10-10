@@ -1,0 +1,2646 @@
+[
+ {
+  "object": "block",
+  "id": "36994183-19f3-80d3-93d0-ec1d46303daf",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8093-8f8a-daa621eaff6f"
+  },
+  "created_time": "2026-05-23T23:18:00.000Z",
+  "last_edited_time": "2026-05-23T23:18:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "callout",
+  "callout": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "What you will do in this lesson:",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "What you will do in this lesson:",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " Configure the Session ID on your Buffer Memory node to isolate conversation history between users, and verify that session data is being stored and separated correctly.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " Configure the Session ID on your Buffer Memory node to isolate conversation history between users, and verify that session data is being stored and separated correctly.",
+     "href": null
+    }
+   ],
+   "icon": {
+    "type": "emoji",
+    "emoji": "\ud83d\udca1"
+   },
+   "color": "gray_background"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37494183-19f3-8091-9efc-df3679ea053a",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8093-8f8a-daa621eaff6f"
+  },
+  "created_time": "2026-06-03T17:05:00.000Z",
+  "last_edited_time": "2026-06-03T17:05:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "e6f4030f-e272-4130-9d37-6fefc15189c7",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8093-8f8a-daa621eaff6f"
+  },
+  "created_time": "2026-05-20T09:38:00.000Z",
+  "last_edited_time": "2026-05-23T23:18:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_2",
+  "heading_2": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Why this step comes now",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Why this step comes now",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "be04c4d4-dc05-45b7-8fae-d05412d605e3",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8093-8f8a-daa621eaff6f"
+  },
+  "created_time": "2026-05-20T09:38:00.000Z",
+  "last_edited_time": "2026-06-02T09:56:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "The Buffer Memory node you configured in the previous lesson gives Contigo's agent short-term conversational context within a single session. But it has a limitation: by default, if a Session ID is not specified, Flowise generates a random ID for each interaction. This is fine for single-user testing, but in a client-facing deployment where multiple users interact with the same Chatflow simultaneously, their conversation histories could bleed into each other.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "The Buffer Memory node you configured in the previous lesson gives Contigo's agent short-term conversational context within a single session. But it has a limitation: by default, if a Session ID is not specified, Flowise generates a random ID for each interaction. This is fine for single-user testing, but in a client-facing deployment where multiple users interact with the same Chatflow simultaneously, their conversation histories could bleed into each other.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37394183-19f3-8070-bcc8-fa049c1d2464",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8093-8f8a-daa621eaff6f"
+  },
+  "created_time": "2026-06-02T09:56:00.000Z",
+  "last_edited_time": "2026-06-02T09:56:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "In a client-facing financial services context like Contigo's, that is a serious problem. This walkthrough shows you how to configure the Session ID parameter on the Buffer Memory node. This is Flowise's mechanism for keeping each client's conversation history completely isolated from every other user's.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "In a client-facing financial services context like Contigo's, that is a serious problem. This walkthrough shows you how to configure the Session ID parameter on the Buffer Memory node. This is Flowise's mechanism for keeping each client's conversation history completely isolated from every other user's.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37494183-19f3-80d5-9422-e50b5b4cbb6a",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8093-8f8a-daa621eaff6f"
+  },
+  "created_time": "2026-06-03T17:05:00.000Z",
+  "last_edited_time": "2026-06-03T17:05:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "0c424ffa-2d84-4e22-ac48-4368cfb9de89",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8093-8f8a-daa621eaff6f"
+  },
+  "created_time": "2026-05-20T09:38:00.000Z",
+  "last_edited_time": "2026-05-23T23:18:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_2",
+  "heading_2": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "What you are building",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "What you are building",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "080ff52b-8667-4e9f-b579-17b19d99094f",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8093-8f8a-daa621eaff6f"
+  },
+  "created_time": "2026-05-20T09:38:00.000Z",
+  "last_edited_time": "2026-06-02T09:56:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "You are extending the Chatflow you built in the previous lesson. The Buffer Memory node is already connected and working. You have confirmed that the agent can recall information within a single session. The next step is to make that memory safe for a multi-user environment by configuring a Session ID on the Buffer Memory node.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "You are extending the Chatflow you built in the previous lesson. The Buffer Memory node is already connected and working. You have confirmed that the agent can recall information within a single session. The next step is to make that memory safe for a multi-user environment by configuring a Session ID on the Buffer Memory node.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37494183-19f3-809e-8603-cb47b97fc56a",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8093-8f8a-daa621eaff6f"
+  },
+  "created_time": "2026-06-03T17:06:00.000Z",
+  "last_edited_time": "2026-06-03T17:06:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "a5e53d95-132e-47cd-9f45-659ecda88c50",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8093-8f8a-daa621eaff6f"
+  },
+  "created_time": "2026-05-20T09:38:00.000Z",
+  "last_edited_time": "2026-06-03T17:06:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_3",
+  "heading_3": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Step 1: Open your existing Chatflow",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Step 1: Open your existing Chatflow",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "55ceccaa-a88f-401b-88de-ad875431f585",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8093-8f8a-daa621eaff6f"
+  },
+  "created_time": "2026-05-26T05:19:00.000Z",
+  "last_edited_time": "2026-08-13T12:17:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "From your Flowise dashboard, navigate to ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "From your Flowise dashboard, navigate to ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "Chatflows",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Chatflows",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " and open the Chatflow you built in the previous lesson. You should see your existing canvas and nodes already connected.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " and open the Chatflow you built in the previous lesson. You should see your existing canvas and nodes already connected.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "8fe2c588-a54f-4926-aafc-d349f24de654",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8093-8f8a-daa621eaff6f"
+  },
+  "created_time": "2026-05-26T05:19:00.000Z",
+  "last_edited_time": "2026-05-26T05:19:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "You do not need to add any new nodes for this lesson. The changes happen inside the Buffer Memory node configuration.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "You do not need to add any new nodes for this lesson. The changes happen inside the Buffer Memory node configuration.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "3bb94183-19f3-80b2-ad91-ccb4adf2a557",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8093-8f8a-daa621eaff6f"
+  },
+  "created_time": "2026-08-13T12:18:00.000Z",
+  "last_edited_time": "2026-08-13T12:18:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "CHANGED IMAGE",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "yellow_background"
+     },
+     "plain_text": "CHANGED IMAGE",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "36e94183-19f3-80d5-ba49-e369a4685c64",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8093-8f8a-daa621eaff6f"
+  },
+  "created_time": "2026-05-28T14:18:00.000Z",
+  "last_edited_time": "2026-08-13T12:18:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "image",
+  "image": {
+   "caption": [],
+   "type": "file",
+   "file": {
+    "url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/3a9085c4-df29-45e6-8bc7-6c9c0a25ea8c/e7761919-e7ad-49c9-aa2c-bf38cb244a4d/e1144379-7260-4d19-ac81-30f7f3364ba4.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB4665ZAXD435%2F20261010%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20261010T070339Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEIf%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJHMEUCIQC4UR%2ByO72a9FpaDPFU3xe1kDYrXbMtJstS09EOl%2F6YZAIgNYlYs4s02wlDo0HxZHAoACKb0wS%2Fm1L7KvQicT%2F2qM0q%2FwMIUBAAGgw2Mzc0MjMxODM4MDUiDJve%2BH0Ru5XHI3kIMCrcA2xAc21nKxTZHUymbV44CNooOKWkTT4fzwEcvDmURPdqTtfpFydzduMA3tuZj8TRhOjiTGVrjQgC3x6paVTyEKimahpEHARhPRA7HGJpOLXWiF2%2F9S9hVkv%2BrNSTw7TaQihKNxshGkvP9X1yHIeVqeewyBKsfXgxe3sc3Pp%2FCwyY2%2FrSJtYTZMHnnToQMZkfEH%2F9g1tWjZxy%2Bad2coAbeNPk%2B%2BgDMm23MAf5XPpLKK46K3ydtSP2iG4tLRF1PYDMvjq9Cf97%2F%2F5VsBM5OyArBvTncm8jsePe42lzQEWydmcOh327UbUXpBOjV4tSMrxhiJgJwdOE8Z3pJn%2FN0lykNUXwbeDe54NdeWnvCs1kxaF930c%2BlQZy%2FWf52fd1EMTnxrDdEBzNZkl9cpl%2FSm4IgQZlNpdId7UuiT3Gwtwp5zb7nSDxYQ0wmjoNLcNzPcuX3%2BhxUZHj0pvl7sauh5JklLtpyZrqRZRW1cO44QX5ldPg9m48XBVrAKLOOFI%2BpKcnx%2F0tPzEFUX%2BB%2BBA9otts%2B57wxom1YAiK59uKY7MFsNJZphBwWHragz2758Uyz2LcbSlUDD4DaS8czeildLAiGDAtsHQIQ89RhPBY4d%2B1CmPeqTOgIfNsDsbXeb6FMMK3p9YGOqUBQZYoX3DV8NWBwYErYmljSE%2FsbVNTpf6c10iOTwanQTRmFCSNEwf%2BOil1RXrt8YmiTLprT7ZMcHP1TZlVcConwXANcIL6Z0F%2BiqrudfbNBU%2FIaOBDmARDpuXEXMwMtkq2X54s9LH2UFK%2BzGpHuMHPV9rgGljb%2B8Z9EpocIovq59KmzhfnrEzQel7FZYB7w6mWhFTbpzkSjX54tiA8uxBeOZZpmd8J&X-Amz-Signature=f7631916f8046595c297391927a1190325a96bcbdae651fbb3510d6b5e341ae1&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+    "expiry_time": "2026-10-10T08:03:39.148Z"
+   }
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "66a8528e-6443-4015-9e0b-ca313d6e4cb2",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8093-8f8a-daa621eaff6f"
+  },
+  "created_time": "2026-05-20T09:38:00.000Z",
+  "last_edited_time": "2026-06-03T17:06:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_3",
+  "heading_3": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Step 2: Open the Buffer Memory node settings.",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Step 2: Open the Buffer Memory node settings.",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "907b2f47-3272-47ca-b25a-d5e90dd6c2db",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8093-8f8a-daa621eaff6f"
+  },
+  "created_time": "2026-05-26T04:46:00.000Z",
+  "last_edited_time": "2026-05-26T05:22:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Select ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Select ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "\u2018Additional Parameters.\u2019 ",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "\u2018Additional Parameters.\u2019 ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "You will see two parameters:",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "You will see two parameters:",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "3f210fe6-ce8d-41e9-bf41-3b58015bd5c5",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8093-8f8a-daa621eaff6f"
+  },
+  "created_time": "2026-05-26T05:22:00.000Z",
+  "last_edited_time": "2026-05-26T05:22:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Session ID",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Session ID",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "1a5f244a-73e8-4706-9f14-d056bd246a8c",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8093-8f8a-daa621eaff6f"
+  },
+  "created_time": "2026-05-26T05:22:00.000Z",
+  "last_edited_time": "2026-05-26T05:22:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Memory Key",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Memory Key",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "65368799-a38b-4fdf-9801-e8dbc8a85376",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8093-8f8a-daa621eaff6f"
+  },
+  "created_time": "2026-05-26T05:22:00.000Z",
+  "last_edited_time": "2026-06-02T09:57:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "The ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "The ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "Session ID",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Session ID",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " field is empty by default (but we did add ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " field is empty by default (but we did add ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "client_001",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": true,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "client_001",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": ") which means Flowise generates a random ID for each interaction. This is fine for single-user testing but is not suitable for production, where multiple users may be active at the same time.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": ") which means Flowise generates a random ID for each interaction. This is fine for single-user testing but is not suitable for production, where multiple users may be active at the same time.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37494183-19f3-8059-a017-df6447b38db2",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8093-8f8a-daa621eaff6f"
+  },
+  "created_time": "2026-06-03T17:06:00.000Z",
+  "last_edited_time": "2026-06-03T17:06:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "b7e6caf7-cde5-462b-bbdd-e8f17f3ba7ed",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8093-8f8a-daa621eaff6f"
+  },
+  "created_time": "2026-05-20T09:38:00.000Z",
+  "last_edited_time": "2026-06-03T17:06:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_3",
+  "heading_3": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Step 3: Configure the Session ID",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Step 3: Configure the Session ID",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "f2373bd1-1cae-4034-9751-0cb1483067f9",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8093-8f8a-daa621eaff6f"
+  },
+  "created_time": "2026-05-26T04:47:00.000Z",
+  "last_edited_time": "2026-06-02T09:57:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "In the ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "In the ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "Session ID",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Session ID",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " field, enter a value that represents a unique identifier for the current user or session. For testing purposes, we will keep the fixed value: client_001.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " field, enter a value that represents a unique identifier for the current user or session. For testing purposes, we will keep the fixed value: client_001.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "36e94183-19f3-804e-b4a0-e9ba216b5d9d",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8093-8f8a-daa621eaff6f"
+  },
+  "created_time": "2026-05-28T14:19:00.000Z",
+  "last_edited_time": "2026-05-28T14:19:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "image",
+  "image": {
+   "caption": [],
+   "type": "file",
+   "file": {
+    "url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/3a9085c4-df29-45e6-8bc7-6c9c0a25ea8c/e4eeb514-60ce-47a3-8dca-319c06322f5b/image.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB4665ZAXD435%2F20261010%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20261010T070339Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEIf%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJHMEUCIQC4UR%2ByO72a9FpaDPFU3xe1kDYrXbMtJstS09EOl%2F6YZAIgNYlYs4s02wlDo0HxZHAoACKb0wS%2Fm1L7KvQicT%2F2qM0q%2FwMIUBAAGgw2Mzc0MjMxODM4MDUiDJve%2BH0Ru5XHI3kIMCrcA2xAc21nKxTZHUymbV44CNooOKWkTT4fzwEcvDmURPdqTtfpFydzduMA3tuZj8TRhOjiTGVrjQgC3x6paVTyEKimahpEHARhPRA7HGJpOLXWiF2%2F9S9hVkv%2BrNSTw7TaQihKNxshGkvP9X1yHIeVqeewyBKsfXgxe3sc3Pp%2FCwyY2%2FrSJtYTZMHnnToQMZkfEH%2F9g1tWjZxy%2Bad2coAbeNPk%2B%2BgDMm23MAf5XPpLKK46K3ydtSP2iG4tLRF1PYDMvjq9Cf97%2F%2F5VsBM5OyArBvTncm8jsePe42lzQEWydmcOh327UbUXpBOjV4tSMrxhiJgJwdOE8Z3pJn%2FN0lykNUXwbeDe54NdeWnvCs1kxaF930c%2BlQZy%2FWf52fd1EMTnxrDdEBzNZkl9cpl%2FSm4IgQZlNpdId7UuiT3Gwtwp5zb7nSDxYQ0wmjoNLcNzPcuX3%2BhxUZHj0pvl7sauh5JklLtpyZrqRZRW1cO44QX5ldPg9m48XBVrAKLOOFI%2BpKcnx%2F0tPzEFUX%2BB%2BBA9otts%2B57wxom1YAiK59uKY7MFsNJZphBwWHragz2758Uyz2LcbSlUDD4DaS8czeildLAiGDAtsHQIQ89RhPBY4d%2B1CmPeqTOgIfNsDsbXeb6FMMK3p9YGOqUBQZYoX3DV8NWBwYErYmljSE%2FsbVNTpf6c10iOTwanQTRmFCSNEwf%2BOil1RXrt8YmiTLprT7ZMcHP1TZlVcConwXANcIL6Z0F%2BiqrudfbNBU%2FIaOBDmARDpuXEXMwMtkq2X54s9LH2UFK%2BzGpHuMHPV9rgGljb%2B8Z9EpocIovq59KmzhfnrEzQel7FZYB7w6mWhFTbpzkSjX54tiA8uxBeOZZpmd8J&X-Amz-Signature=86b84d6c5c7d04fad8106185ac31074a004ee81940a615bde5323f70e99e2de8&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+    "expiry_time": "2026-10-10T08:03:39.148Z"
+   }
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "36c94183-19f3-80d7-a55f-e1eb8f1f90f3",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8093-8f8a-daa621eaff6f"
+  },
+  "created_time": "2026-05-26T05:23:00.000Z",
+  "last_edited_time": "2026-05-26T05:23:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "callout",
+  "callout": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Why this matters:",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": true,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Why this matters:",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " The Session ID groups all conversation history under one identifier. When a Session ID is set, Flowise stores and retrieves memory only for that specific ID. Each client gets their own isolated memory space: One client's account details, case references, and preferences cannot appear in another client's conversation.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " The Session ID groups all conversation history under one identifier. When a Session ID is set, Flowise stores and retrieves memory only for that specific ID. Each client gets their own isolated memory space: One client's account details, case references, and preferences cannot appear in another client's conversation.",
+     "href": null
+    }
+   ],
+   "icon": {
+    "type": "emoji",
+    "emoji": "\u27a1\ufe0f"
+   },
+   "color": "gray_background"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37494183-19f3-80e1-8db3-e49a2bf5ef09",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8093-8f8a-daa621eaff6f"
+  },
+  "created_time": "2026-06-03T17:06:00.000Z",
+  "last_edited_time": "2026-06-03T17:06:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "5124a7c8-710e-4c59-9701-472072287980",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8093-8f8a-daa621eaff6f"
+  },
+  "created_time": "2026-05-20T09:38:00.000Z",
+  "last_edited_time": "2026-06-03T17:06:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_3",
+  "heading_3": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Step 4: Save and test session isolation",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Step 4: Save and test session isolation",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "9fd125d0-cba1-4cfd-bf15-8baa223cfa61",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8093-8f8a-daa621eaff6f"
+  },
+  "created_time": "2026-05-26T04:47:00.000Z",
+  "last_edited_time": "2026-05-26T05:24:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Save your Chatflow and open the built-in chat interface. Run the following isolation test using two separate browser sessions, each with a different Session ID configured in the Buffer Memory node.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Save your Chatflow and open the built-in chat interface. Run the following isolation test using two separate browser sessions, each with a different Session ID configured in the Buffer Memory node.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "5fb6c654-4a09-4c47-88c3-16ec5df48fb3",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8093-8f8a-daa621eaff6f"
+  },
+  "created_time": "2026-05-26T05:24:00.000Z",
+  "last_edited_time": "2026-05-26T05:30:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Session 1 Session ID: client_001",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Session 1 Session ID: client_001",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "39c6b011-35d0-410f-ad4c-41940c448814",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8093-8f8a-daa621eaff6f"
+  },
+  "created_time": "2026-05-26T05:24:00.000Z",
+  "last_edited_time": "2026-05-26T05:24:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Send: ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Send: ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "\"My preferred contact language is English and my open case is CG-9921.\"",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": true,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "\"My preferred contact language is English and my open case is CG-9921.\"",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "dd700699-6d69-47cc-b599-52eba131dc17",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8093-8f8a-daa621eaff6f"
+  },
+  "created_time": "2026-05-26T05:24:00.000Z",
+  "last_edited_time": "2026-05-26T05:24:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Then send: ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Then send: ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "\"What is my open case reference?\"",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": true,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "\"What is my open case reference?\"",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "7c7bc838-d7c4-441e-acf0-08419fa8d887",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8093-8f8a-daa621eaff6f"
+  },
+  "created_time": "2026-05-26T05:24:00.000Z",
+  "last_edited_time": "2026-05-26T05:24:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "The agent should respond with CG-9921, confirming memory is working correctly for this session.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "The agent should respond with CG-9921, confirming memory is working correctly for this session.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "36e94183-19f3-806c-8ed0-f8da69233ab9",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8093-8f8a-daa621eaff6f"
+  },
+  "created_time": "2026-05-28T14:26:00.000Z",
+  "last_edited_time": "2026-05-28T14:26:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "image",
+  "image": {
+   "caption": [],
+   "type": "file",
+   "file": {
+    "url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/3a9085c4-df29-45e6-8bc7-6c9c0a25ea8c/c3eff8da-0ce7-4808-ace8-cdd760a52403/image.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB4665ZAXD435%2F20261010%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20261010T070339Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEIf%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJHMEUCIQC4UR%2ByO72a9FpaDPFU3xe1kDYrXbMtJstS09EOl%2F6YZAIgNYlYs4s02wlDo0HxZHAoACKb0wS%2Fm1L7KvQicT%2F2qM0q%2FwMIUBAAGgw2Mzc0MjMxODM4MDUiDJve%2BH0Ru5XHI3kIMCrcA2xAc21nKxTZHUymbV44CNooOKWkTT4fzwEcvDmURPdqTtfpFydzduMA3tuZj8TRhOjiTGVrjQgC3x6paVTyEKimahpEHARhPRA7HGJpOLXWiF2%2F9S9hVkv%2BrNSTw7TaQihKNxshGkvP9X1yHIeVqeewyBKsfXgxe3sc3Pp%2FCwyY2%2FrSJtYTZMHnnToQMZkfEH%2F9g1tWjZxy%2Bad2coAbeNPk%2B%2BgDMm23MAf5XPpLKK46K3ydtSP2iG4tLRF1PYDMvjq9Cf97%2F%2F5VsBM5OyArBvTncm8jsePe42lzQEWydmcOh327UbUXpBOjV4tSMrxhiJgJwdOE8Z3pJn%2FN0lykNUXwbeDe54NdeWnvCs1kxaF930c%2BlQZy%2FWf52fd1EMTnxrDdEBzNZkl9cpl%2FSm4IgQZlNpdId7UuiT3Gwtwp5zb7nSDxYQ0wmjoNLcNzPcuX3%2BhxUZHj0pvl7sauh5JklLtpyZrqRZRW1cO44QX5ldPg9m48XBVrAKLOOFI%2BpKcnx%2F0tPzEFUX%2BB%2BBA9otts%2B57wxom1YAiK59uKY7MFsNJZphBwWHragz2758Uyz2LcbSlUDD4DaS8czeildLAiGDAtsHQIQ89RhPBY4d%2B1CmPeqTOgIfNsDsbXeb6FMMK3p9YGOqUBQZYoX3DV8NWBwYErYmljSE%2FsbVNTpf6c10iOTwanQTRmFCSNEwf%2BOil1RXrt8YmiTLprT7ZMcHP1TZlVcConwXANcIL6Z0F%2BiqrudfbNBU%2FIaOBDmARDpuXEXMwMtkq2X54s9LH2UFK%2BzGpHuMHPV9rgGljb%2B8Z9EpocIovq59KmzhfnrEzQel7FZYB7w6mWhFTbpzkSjX54tiA8uxBeOZZpmd8J&X-Amz-Signature=0b3534db1c30ebc7737415f4d599c4782cb7b121e66ee8bdaaf36a4d69fff59d&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+    "expiry_time": "2026-10-10T08:03:39.185Z"
+   }
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37494183-19f3-8005-82bf-f7d139a3bf70",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8093-8f8a-daa621eaff6f"
+  },
+  "created_time": "2026-06-03T17:06:00.000Z",
+  "last_edited_time": "2026-06-03T17:06:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "50d8829b-d2db-4d9a-895c-f1453fc0506a",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8093-8f8a-daa621eaff6f"
+  },
+  "created_time": "2026-05-26T05:24:00.000Z",
+  "last_edited_time": "2026-05-26T05:30:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Session 2 Session ID: client_002",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Session 2 Session ID: client_002",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "4ad7f320-1d19-41c7-8ce5-f2a0d88c1d15",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8093-8f8a-daa621eaff6f"
+  },
+  "created_time": "2026-05-26T05:24:00.000Z",
+  "last_edited_time": "2026-05-26T05:24:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Open a second browser session, update the Session ID in the Buffer Memory node to ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Open a second browser session, update the Session ID in the Buffer Memory node to ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "client_002",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": true,
+      "color": "default"
+     },
+     "plain_text": "client_002",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": ", save, and send:",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": ", save, and send:",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "fd5abeab-98e8-439c-8863-44fcd7e24064",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8093-8f8a-daa621eaff6f"
+  },
+  "created_time": "2026-05-26T05:24:00.000Z",
+  "last_edited_time": "2026-05-26T05:24:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "\"What language does this client prefer, and do they have any open cases?\"",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": true,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "\"What language does this client prefer, and do they have any open cases?\"",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "3cb990bf-80b8-48a0-abaa-48c87c0034d7",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8093-8f8a-daa621eaff6f"
+  },
+  "created_time": "2026-05-26T05:25:00.000Z",
+  "last_edited_time": "2026-05-26T05:25:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "What to look for:",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "What to look for:",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "6fb59d3c-0169-4ef4-a03d-d92497d9c9ae",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8093-8f8a-daa621eaff6f"
+  },
+  "created_time": "2026-05-26T05:25:00.000Z",
+  "last_edited_time": "2026-05-26T05:25:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Session 2 should have no knowledge of the information provided in Session 1. If it does, the Session IDs are not being applied correctly and the sessions are sharing the same memory space.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Session 2 should have no knowledge of the information provided in Session 1. If it does, the Session IDs are not being applied correctly and the sessions are sharing the same memory space.",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "6dd36249-34a7-4a49-92d4-729663143ae5",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8093-8f8a-daa621eaff6f"
+  },
+  "created_time": "2026-05-26T05:25:00.000Z",
+  "last_edited_time": "2026-05-26T05:25:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Session 1 should recall its own data correctly across turns, confirming that messages are being stored and retrieved under the correct Session ID.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Session 1 should recall its own data correctly across turns, confirming that messages are being stored and retrieved under the correct Session ID.",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37494183-19f3-8031-b52b-c715cb50bc02",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8093-8f8a-daa621eaff6f"
+  },
+  "created_time": "2026-06-03T17:06:00.000Z",
+  "last_edited_time": "2026-06-03T17:06:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "60aa53ee-7432-4b99-8501-70550b3ffa79",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8093-8f8a-daa621eaff6f"
+  },
+  "created_time": "2026-05-26T04:48:00.000Z",
+  "last_edited_time": "2026-06-03T17:06:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_3",
+  "heading_3": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Step 5: Verify message storage",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Step 5: Verify message storage",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "949b6d20-3e2d-48a3-9632-b38efa65b285",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8093-8f8a-daa621eaff6f"
+  },
+  "created_time": "2026-05-26T05:26:00.000Z",
+  "last_edited_time": "2026-06-02T09:59:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "In your Flowise dashboard, navigate to the chat history for your Chatflow. You can access this from the settings icon within the Chatflow canvas, under ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "In your Flowise dashboard, navigate to the chat history for your Chatflow. You can access this from the settings icon within the Chatflow canvas, under ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "View Messages",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "View Messages",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": ". You should see two separate conversation threads, each stored under its own Session ID. Each thread contains only the messages from that session, with no overlap between them. ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": ". You should see two separate conversation threads, each stored under its own Session ID. Each thread contains only the messages from that session, with no overlap between them. ",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37394183-19f3-8099-a60a-c5696f9a61fc",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8093-8f8a-daa621eaff6f"
+  },
+  "created_time": "2026-06-02T09:59:00.000Z",
+  "last_edited_time": "2026-06-02T09:59:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "This is your confirmation that session isolation is working correctly. In a regulated environment like Contigo's, being able to demonstrate that client conversation data is correctly isolated is a compliance requirement, not just a technical detail.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "This is your confirmation that session isolation is working correctly. In a regulated environment like Contigo's, being able to demonstrate that client conversation data is correctly isolated is a compliance requirement, not just a technical detail.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "36e94183-19f3-80cb-ba2d-c0c8827778fb",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8093-8f8a-daa621eaff6f"
+  },
+  "created_time": "2026-05-28T14:27:00.000Z",
+  "last_edited_time": "2026-05-28T14:28:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "image",
+  "image": {
+   "caption": [],
+   "type": "file",
+   "file": {
+    "url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/3a9085c4-df29-45e6-8bc7-6c9c0a25ea8c/0efff6a6-4801-4748-bfe4-04e40e6b1d87/image.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB4665ZAXD435%2F20261010%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20261010T070339Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEIf%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJHMEUCIQC4UR%2ByO72a9FpaDPFU3xe1kDYrXbMtJstS09EOl%2F6YZAIgNYlYs4s02wlDo0HxZHAoACKb0wS%2Fm1L7KvQicT%2F2qM0q%2FwMIUBAAGgw2Mzc0MjMxODM4MDUiDJve%2BH0Ru5XHI3kIMCrcA2xAc21nKxTZHUymbV44CNooOKWkTT4fzwEcvDmURPdqTtfpFydzduMA3tuZj8TRhOjiTGVrjQgC3x6paVTyEKimahpEHARhPRA7HGJpOLXWiF2%2F9S9hVkv%2BrNSTw7TaQihKNxshGkvP9X1yHIeVqeewyBKsfXgxe3sc3Pp%2FCwyY2%2FrSJtYTZMHnnToQMZkfEH%2F9g1tWjZxy%2Bad2coAbeNPk%2B%2BgDMm23MAf5XPpLKK46K3ydtSP2iG4tLRF1PYDMvjq9Cf97%2F%2F5VsBM5OyArBvTncm8jsePe42lzQEWydmcOh327UbUXpBOjV4tSMrxhiJgJwdOE8Z3pJn%2FN0lykNUXwbeDe54NdeWnvCs1kxaF930c%2BlQZy%2FWf52fd1EMTnxrDdEBzNZkl9cpl%2FSm4IgQZlNpdId7UuiT3Gwtwp5zb7nSDxYQ0wmjoNLcNzPcuX3%2BhxUZHj0pvl7sauh5JklLtpyZrqRZRW1cO44QX5ldPg9m48XBVrAKLOOFI%2BpKcnx%2F0tPzEFUX%2BB%2BBA9otts%2B57wxom1YAiK59uKY7MFsNJZphBwWHragz2758Uyz2LcbSlUDD4DaS8czeildLAiGDAtsHQIQ89RhPBY4d%2B1CmPeqTOgIfNsDsbXeb6FMMK3p9YGOqUBQZYoX3DV8NWBwYErYmljSE%2FsbVNTpf6c10iOTwanQTRmFCSNEwf%2BOil1RXrt8YmiTLprT7ZMcHP1TZlVcConwXANcIL6Z0F%2BiqrudfbNBU%2FIaOBDmARDpuXEXMwMtkq2X54s9LH2UFK%2BzGpHuMHPV9rgGljb%2B8Z9EpocIovq59KmzhfnrEzQel7FZYB7w6mWhFTbpzkSjX54tiA8uxBeOZZpmd8J&X-Amz-Signature=e7167d1f65cde6d3f9e55befe1762770da6bba8ed040b0c96c9e785cf8e6b1a5&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+    "expiry_time": "2026-10-10T08:03:39.185Z"
+   }
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37494183-19f3-806c-b7fb-fe8b7d7612de",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8093-8f8a-daa621eaff6f"
+  },
+  "created_time": "2026-06-03T17:06:00.000Z",
+  "last_edited_time": "2026-06-03T17:06:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "0fb94e7c-2a04-44cf-afd6-0670c42b65f4",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8093-8f8a-daa621eaff6f"
+  },
+  "created_time": "2026-05-20T09:38:00.000Z",
+  "last_edited_time": "2026-05-26T14:09:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_2",
+  "heading_2": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Checklist: Confirm before moving on",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Checklist: Confirm before moving on",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "1aa14e9e-770b-4777-8703-323cbc82f835",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8093-8f8a-daa621eaff6f"
+  },
+  "created_time": "2026-05-26T05:28:00.000Z",
+  "last_edited_time": "2026-05-26T05:28:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "to_do",
+  "to_do": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Buffer Memory node opened and Session ID field located",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Buffer Memory node opened and Session ID field located",
+     "href": null
+    }
+   ],
+   "checked": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "ff0801f6-b32c-4319-912c-9e585c75f82e",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8093-8f8a-daa621eaff6f"
+  },
+  "created_time": "2026-05-26T05:28:00.000Z",
+  "last_edited_time": "2026-05-26T05:28:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "to_do",
+  "to_do": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Session ID configured with a unique value for testing (e.g. ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Session ID configured with a unique value for testing (e.g. ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "client_001",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": true,
+      "color": "default"
+     },
+     "plain_text": "client_001",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": ")",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": ")",
+     "href": null
+    }
+   ],
+   "checked": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "3561c633-c314-4161-ada2-79ca96ef0d68",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8093-8f8a-daa621eaff6f"
+  },
+  "created_time": "2026-05-26T05:28:00.000Z",
+  "last_edited_time": "2026-05-26T05:28:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "to_do",
+  "to_do": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Chatflow saved after Session ID is set",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Chatflow saved after Session ID is set",
+     "href": null
+    }
+   ],
+   "checked": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "b01bd8e2-dc2d-43e0-9af3-46c64d780d3a",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8093-8f8a-daa621eaff6f"
+  },
+  "created_time": "2026-05-26T05:28:00.000Z",
+  "last_edited_time": "2026-05-26T05:28:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "to_do",
+  "to_do": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Memory test completed: agent recalled case reference across turns in Session 1",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Memory test completed: agent recalled case reference across turns in Session 1",
+     "href": null
+    }
+   ],
+   "checked": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "3ec1415f-0e58-4938-afcb-7e22253dbded",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8093-8f8a-daa621eaff6f"
+  },
+  "created_time": "2026-05-26T05:28:00.000Z",
+  "last_edited_time": "2026-05-26T05:28:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "to_do",
+  "to_do": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Isolation test completed: Session 2 had no access to Session 1 data",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Isolation test completed: Session 2 had no access to Session 1 data",
+     "href": null
+    }
+   ],
+   "checked": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "c5d70e71-23cc-4b88-a83a-449d31ec7a75",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8093-8f8a-daa621eaff6f"
+  },
+  "created_time": "2026-05-26T05:28:00.000Z",
+  "last_edited_time": "2026-05-26T05:28:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "to_do",
+  "to_do": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Chat history verified in Flowise dashboard showing separate threads per Session ID",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Chat history verified in Flowise dashboard showing separate threads per Session ID",
+     "href": null
+    }
+   ],
+   "checked": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "6f60456f-3820-461f-a6a0-db275fb12de3",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8093-8f8a-daa621eaff6f"
+  },
+  "created_time": "2026-05-20T09:38:00.000Z",
+  "last_edited_time": "2026-05-26T14:09:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "36c94183-19f3-807f-93a2-d3ba63e42576",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8093-8f8a-daa621eaff6f"
+  },
+  "created_time": "2026-05-26T14:09:00.000Z",
+  "last_edited_time": "2026-06-03T17:06:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": true,
+  "in_trash": false,
+  "type": "callout",
+  "callout": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Takeaway:",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Takeaway:",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " ",
+     "href": null
+    }
+   ],
+   "icon": {
+    "type": "emoji",
+    "emoji": "\ud83d\udca1"
+   },
+   "color": "gray_background"
+  },
+  "archived": false,
+  "_children": [
+   {
+    "object": "block",
+    "id": "37494183-19f3-8029-9d65-d62cdedcb6d9",
+    "parent": {
+     "type": "block_id",
+     "block_id": "36c94183-19f3-807f-93a2-d3ba63e42576"
+    },
+    "created_time": "2026-06-03T17:06:00.000Z",
+    "last_edited_time": "2026-06-03T17:06:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+     "rich_text": [
+      {
+       "type": "text",
+       "text": {
+        "content": "The Session ID is what makes Buffer Memory safe for a multi-user environment. Without it, conversation histories have no guaranteed isolation between users. Configuring it correctly before adding more complexity is what makes the rest of your Chatflow build reliable.",
+        "link": null
+       },
+       "annotations": {
+        "bold": false,
+        "italic": false,
+        "strikethrough": false,
+        "underline": false,
+        "code": false,
+        "color": "default"
+       },
+       "plain_text": "The Session ID is what makes Buffer Memory safe for a multi-user environment. Without it, conversation histories have no guaranteed isolation between users. Configuring it correctly before adding more complexity is what makes the rest of your Chatflow build reliable.",
+       "href": null
+      }
+     ],
+     "icon": null,
+     "color": "default"
+    },
+    "archived": false
+   }
+  ]
+ },
+ {
+  "object": "block",
+  "id": "37394183-19f3-8068-a622-cdef54bc3f2e",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8093-8f8a-daa621eaff6f"
+  },
+  "created_time": "2026-06-02T08:47:00.000Z",
+  "last_edited_time": "2026-06-02T08:47:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ }
+]
