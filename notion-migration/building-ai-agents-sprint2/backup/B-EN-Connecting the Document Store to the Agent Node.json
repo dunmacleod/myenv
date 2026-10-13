@@ -1,0 +1,4217 @@
+[
+ {
+  "object": "block",
+  "id": "36b94183-19f3-8043-ac70-e281dccaa343",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8072-beff-e31abfa04d3b"
+  },
+  "created_time": "2026-05-25T00:31:00.000Z",
+  "last_edited_time": "2026-05-25T00:31:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "callout",
+  "callout": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "What you will understand by the end of this lesson:",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "What you will understand by the end of this lesson:",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " Students connect the meridian-knowledge Document Store to the Agent Node on the Agentflow v2 canvas and verify the agent can retrieve and use knowledge from it.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " Students connect the meridian-knowledge Document Store to the Agent Node on the Agentflow v2 canvas and verify the agent can retrieve and use knowledge from it.",
+     "href": null
+    }
+   ],
+   "icon": {
+    "type": "emoji",
+    "emoji": "\ud83d\udca1"
+   },
+   "color": "gray_background"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37b94183-19f3-8096-a373-f0ad12adc274",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8072-beff-e31abfa04d3b"
+  },
+  "created_time": "2026-06-10T15:57:00.000Z",
+  "last_edited_time": "2026-06-10T15:57:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "c99f8c7d-c8ac-4fe8-9f45-23eedb2bce6e",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8072-beff-e31abfa04d3b"
+  },
+  "created_time": "2026-05-22T02:31:00.000Z",
+  "last_edited_time": "2026-06-05T05:38:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_2",
+  "heading_2": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Setting the scene",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Setting the scene",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "8f7e71dd-4869-4f56-8c4f-78300536141c",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8072-beff-e31abfa04d3b"
+  },
+  "created_time": "2026-05-22T02:31:00.000Z",
+  "last_edited_time": "2026-06-10T16:00:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Meridian's meridian-knowledge Document Store is populated, upserted, and verified. The three internal documents (Operations Handbook, Engagement Standards, and Regional Playbook) are chunked, embedded, and stored in Qdrant. The retrieval test queries confirmed the right chunks come back for the right questions. But the agent still cannot access any of it. ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Meridian's meridian-knowledge Document Store is populated, upserted, and verified. The three internal documents (Operations Handbook, Engagement Standards, and Regional Playbook) are chunked, embedded, and stored in Qdrant. The retrieval test queries confirmed the right chunks come back for the right questions. But the agent still cannot access any of it. ",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37694183-19f3-809a-900d-d584acd4fb28",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8072-beff-e31abfa04d3b"
+  },
+  "created_time": "2026-06-05T05:38:00.000Z",
+  "last_edited_time": "2026-06-05T05:38:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "The Document Store and the Agentflow v2 canvas exist independently. A consultant asking the agent about escalation procedures still receives a general answer from Gemini's training data, not from Meridian's actual standards.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "The Document Store and the Agentflow v2 canvas exist independently. A consultant asking the agent about escalation procedures still receives a general answer from Gemini's training data, not from Meridian's actual standards.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37694183-19f3-80d1-92c6-c99141189856",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8072-beff-e31abfa04d3b"
+  },
+  "created_time": "2026-06-05T05:38:00.000Z",
+  "last_edited_time": "2026-06-05T05:38:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "This lesson connects the two. By the end of it, the Meridian agent will retrieve accurate content from its own internal documentation and use it to answer consultant queries grounded in real policy.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "This lesson connects the two. By the end of it, the Meridian agent will retrieve accurate content from its own internal documentation and use it to answer consultant queries grounded in real policy.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37b94183-19f3-8054-9123-f08b51f58741",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8072-beff-e31abfa04d3b"
+  },
+  "created_time": "2026-06-10T15:58:00.000Z",
+  "last_edited_time": "2026-06-10T15:58:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "4673bd34-e999-4746-b76b-40b3dc2591f1",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8072-beff-e31abfa04d3b"
+  },
+  "created_time": "2026-05-22T02:31:00.000Z",
+  "last_edited_time": "2026-06-05T05:39:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_2",
+  "heading_2": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "What you are building",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "What you are building",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "e028c867-91b3-462c-9dba-c2a8e8139c28",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8072-beff-e31abfa04d3b"
+  },
+  "created_time": "2026-05-22T02:31:00.000Z",
+  "last_edited_time": "2026-06-05T05:39:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "An updated ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "An updated ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "Meridian Base Agent",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": true,
+      "color": "default"
+     },
+     "plain_text": "Meridian Base Agent",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " Agentflow v2 where the Agent Node is configured with the ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " Agentflow v2 where the Agent Node is configured with the ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "meridian-knowledge",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": true,
+      "color": "default"
+     },
+     "plain_text": "meridian-knowledge",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " Document Store as a knowledge source. The canvas structure remains three nodes (Start Node, Agent Node, Direct Reply Node) with knowledge retrieval added inside the Agent Node configuration.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " Document Store as a knowledge source. The canvas structure remains three nodes (Start Node, Agent Node, Direct Reply Node) with knowledge retrieval added inside the Agent Node configuration.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37b94183-19f3-8084-8126-c5bbb60163b7",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8072-beff-e31abfa04d3b"
+  },
+  "created_time": "2026-06-10T15:58:00.000Z",
+  "last_edited_time": "2026-06-10T15:58:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "cb73210e-f1e5-49f1-a18b-cf662e711d82",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8072-beff-e31abfa04d3b"
+  },
+  "created_time": "2026-06-05T05:39:00.000Z",
+  "last_edited_time": "2026-06-05T05:39:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_3",
+  "heading_3": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Step 1: Open the Meridian Base Agent canvas",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Step 1: Open the Meridian Base Agent canvas",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "1712273f-4f07-4cf8-be2c-e74058767b64",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8072-beff-e31abfa04d3b"
+  },
+  "created_time": "2026-06-05T05:39:00.000Z",
+  "last_edited_time": "2026-06-05T05:39:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Open Flowise at ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Open Flowise at ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "http://localhost:3000",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": true,
+      "color": "default"
+     },
+     "plain_text": "http://localhost:3000",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": ". Click ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": ". Click ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "Agentflows",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Agentflows",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " in the left navigation and open your ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " in the left navigation and open your ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "Meridian Base Agent",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": true,
+      "color": "default"
+     },
+     "plain_text": "Meridian Base Agent",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " canvas.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " canvas.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "a6e1876c-4690-46d5-93ae-1389075437b2",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8072-beff-e31abfa04d3b"
+  },
+  "created_time": "2026-06-05T05:39:00.000Z",
+  "last_edited_time": "2026-06-05T05:40:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Your canvas should show the three-node flow from Sprint 1: ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Your canvas should show the three-node flow from Sprint 1: ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "Start Node \u2192 Agent Node \u2192 Direct Reply Node",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Start Node \u2192 Agent Node \u2192 Direct Reply Node",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "31d24deb-afab-46f4-9814-156c7f128935",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8072-beff-e31abfa04d3b"
+  },
+  "created_time": "2026-06-05T05:39:00.000Z",
+  "last_edited_time": "2026-06-10T16:04:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "If the canvas is missing or was not saved, rebuild it following the previous lessons.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "If the canvas is missing or was not saved, rebuild it following the previous lessons.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37b94183-19f3-803e-aa05-d8ba8097c3d5",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8072-beff-e31abfa04d3b"
+  },
+  "created_time": "2026-06-10T15:58:00.000Z",
+  "last_edited_time": "2026-06-10T15:58:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "123289c4-533a-4b36-a86b-453a793588f3",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8072-beff-e31abfa04d3b"
+  },
+  "created_time": "2026-06-05T05:40:00.000Z",
+  "last_edited_time": "2026-06-05T05:40:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_3",
+  "heading_3": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Step 2: Open the Agent Node settings",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Step 2: Open the Agent Node settings",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "7a6fbf09-e00e-4b00-bed8-d6b7ade73bbb",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8072-beff-e31abfa04d3b"
+  },
+  "created_time": "2026-06-05T05:40:00.000Z",
+  "last_edited_time": "2026-06-05T05:40:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Click the ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Click the ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "Agent Node",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Agent Node",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " on the canvas to open its settings panel on the right side of the screen.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " on the canvas to open its settings panel on the right side of the screen.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "30925282-4ea6-4e9b-a902-0293b7725c7d",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8072-beff-e31abfa04d3b"
+  },
+  "created_time": "2026-06-05T05:40:00.000Z",
+  "last_edited_time": "2026-06-05T05:40:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Scroll down through the settings until you find the ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Scroll down through the settings until you find the ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "Knowledge",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Knowledge",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " section. It contains two subsections:",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " section. It contains two subsections:",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "f58ad214-446a-49e0-b41b-883d38bde927",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8072-beff-e31abfa04d3b"
+  },
+  "created_time": "2026-06-05T05:40:00.000Z",
+  "last_edited_time": "2026-06-05T05:40:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Knowledge / Document Stores",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Knowledge / Document Stores",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " for connecting Flowise-managed Document Stores",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " for connecting Flowise-managed Document Stores",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "70a02308-2be4-4eab-83eb-dc261ed826da",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8072-beff-e31abfa04d3b"
+  },
+  "created_time": "2026-06-05T05:40:00.000Z",
+  "last_edited_time": "2026-06-05T05:40:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Knowledge / Vector Embeddings",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Knowledge / Vector Embeddings",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " for connecting external vector databases directly",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " for connecting external vector databases directly",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "a83e263f-2493-4e89-b143-996c47ed4a0a",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8072-beff-e31abfa04d3b"
+  },
+  "created_time": "2026-06-05T05:40:00.000Z",
+  "last_edited_time": "2026-06-05T05:40:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "You will use ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "You will use ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "Knowledge / Document Stores",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Knowledge / Document Stores",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " for this lesson.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " for this lesson.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37b94183-19f3-801e-bdb2-e0ab72e22b15",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8072-beff-e31abfa04d3b"
+  },
+  "created_time": "2026-06-10T15:58:00.000Z",
+  "last_edited_time": "2026-06-10T15:58:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "fd7be3e3-40b3-4834-ae21-9793d605586d",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8072-beff-e31abfa04d3b"
+  },
+  "created_time": "2026-06-05T05:42:00.000Z",
+  "last_edited_time": "2026-06-05T05:42:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_3",
+  "heading_3": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Step 3: Connect the Document Store",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Step 3: Connect the Document Store",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "1d09eea5-2f15-4dae-9315-25db67de47e2",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8072-beff-e31abfa04d3b"
+  },
+  "created_time": "2026-06-05T05:42:00.000Z",
+  "last_edited_time": "2026-06-05T05:42:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Inside the ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Inside the ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "Knowledge / Document Stores",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Knowledge / Document Stores",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " subsection, click ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " subsection, click ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "+ Add Item",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "+ Add Item",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": ".",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": ".",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "f2ba7f24-80bf-4d8a-b6fa-e02b13bd7832",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8072-beff-e31abfa04d3b"
+  },
+  "created_time": "2026-06-05T05:42:00.000Z",
+  "last_edited_time": "2026-06-05T05:42:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Configure the two fields that appear:",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Configure the two fields that appear:",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "7d84a781-becd-4e97-b5da-34f41d6ac574",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8072-beff-e31abfa04d3b"
+  },
+  "created_time": "2026-06-05T05:42:00.000Z",
+  "last_edited_time": "2026-06-05T05:42:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": true,
+  "in_trash": false,
+  "type": "table",
+  "table": {
+   "table_width": 2,
+   "has_column_header": true,
+   "has_row_header": false
+  },
+  "archived": false,
+  "_children": [
+   {
+    "object": "block",
+    "id": "b0c3be87-64da-4128-ae85-51e5e291fb0b",
+    "parent": {
+     "type": "block_id",
+     "block_id": "7d84a781-becd-4e97-b5da-34f41d6ac574"
+    },
+    "created_time": "2026-06-05T05:42:00.000Z",
+    "last_edited_time": "2026-06-05T05:42:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "231d872b-594c-81f2-a375-0002b8783aca"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "231d872b-594c-81f2-a375-0002b8783aca"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "table_row",
+    "table_row": {
+     "cells": [
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Field",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Field",
+        "href": null
+       }
+      ],
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Value",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Value",
+        "href": null
+       }
+      ]
+     ]
+    },
+    "archived": false
+   },
+   {
+    "object": "block",
+    "id": "a8339d34-ab9c-4466-9d12-bf6ca002284a",
+    "parent": {
+     "type": "block_id",
+     "block_id": "7d84a781-becd-4e97-b5da-34f41d6ac574"
+    },
+    "created_time": "2026-06-05T05:42:00.000Z",
+    "last_edited_time": "2026-06-05T05:42:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "231d872b-594c-81f2-a375-0002b8783aca"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "231d872b-594c-81f2-a375-0002b8783aca"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "table_row",
+    "table_row": {
+     "cells": [
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Document Store",
+         "link": null
+        },
+        "annotations": {
+         "bold": true,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Document Store",
+        "href": null
+       }
+      ],
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Select ",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Select ",
+        "href": null
+       },
+       {
+        "type": "text",
+        "text": {
+         "content": "meridian-knowledge",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": true,
+         "color": "default"
+        },
+        "plain_text": "meridian-knowledge",
+        "href": null
+       },
+       {
+        "type": "text",
+        "text": {
+         "content": " from the dropdown",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": " from the dropdown",
+        "href": null
+       }
+      ]
+     ]
+    },
+    "archived": false
+   },
+   {
+    "object": "block",
+    "id": "6d238367-5e76-4d52-b16e-aebaca6fb7b6",
+    "parent": {
+     "type": "block_id",
+     "block_id": "7d84a781-becd-4e97-b5da-34f41d6ac574"
+    },
+    "created_time": "2026-06-05T05:42:00.000Z",
+    "last_edited_time": "2026-06-10T16:14:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "231d872b-594c-81f2-a375-0002b8783aca"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "table_row",
+    "table_row": {
+     "cells": [
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Describe Knowledge",
+         "link": null
+        },
+        "annotations": {
+         "bold": true,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Describe Knowledge",
+        "href": null
+       }
+      ],
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Meridian Consulting's internal documentation: project classification tiers and staffing rules, severity ratings and escalation procedures, client communication and confidentiality standards, knowledge sharing protocols, and regional operational guidelines for Germany, Poland, the Czech Republic, and the Nordic markets, including cross-regional engagement rules.",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Meridian Consulting's internal documentation: project classification tiers and staffing rules, severity ratings and escalation procedures, client communication and confidentiality standards, knowledge sharing protocols, and regional operational guidelines for Germany, Poland, the Czech Republic, and the Nordic markets, including cross-regional engagement rules.",
+        "href": null
+       }
+      ]
+     ]
+    },
+    "archived": false
+   }
+  ]
+ },
+ {
+  "object": "block",
+  "id": "37694183-19f3-8087-8c85-efc0e1ebef51",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8072-beff-e31abfa04d3b"
+  },
+  "created_time": "2026-06-05T05:42:00.000Z",
+  "last_edited_time": "2026-06-05T05:42:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "image",
+  "image": {
+   "caption": [],
+   "type": "file",
+   "file": {
+    "url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/3a9085c4-df29-45e6-8bc7-6c9c0a25ea8c/c8ea23a2-577e-440d-baa8-bb2df53f63ed/image.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466YOC7DR37%2F20261013%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20261013T102718Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjENL%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJIMEYCIQC4rFAtigu4cOCh3H8vamEcv9CXla5fdidTc1YnN2J84AIhANA5yYQg2mQ2x%2FpP6mEBPdSyUK%2FKXukmzaAnZzopfYLmKogECJv%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQABoMNjM3NDIzMTgzODA1IgyMjcN4Ged3Zb9IGbUq3ANGuGTQX9tu%2BeY5VZTL9Xk0GR0qcjMVxbAi0B5Ne3oKYjqPDHFiJVP4%2F7g37fVSn02c%2BnPb2Qc8TT1K43Heg9vBuQHPrgObpO0npXNO5frH48C7uKyXVwe5MWo37JGOtt1vs%2BgpCwsFtfhq7Z0tfZ%2FfxP%2BZvsuZGfYyK58swzLi4ibcfo6rxBMx86vdhlGi2CLhuKoRCIr3zfC1RJldeNd8eYHCRZisgKOdcxiPi1lf6hVdRYmJ%2Fv7l41J4O2hGxmskoEb1fYe0fvZPnwArA0oVTsYiUt2FSJ8u4244AO22xdVrm8P8LHd9kBwf1qZD4BS9Fbk%2Bz4rxv7sTRrLp828XodC6LmzcW7nezhGOFfwPMfh%2BV2D6L8%2Fj6SCu8JDyGlHxRAvf9EBRs7JAitbg94GH%2B0269kzH22Ds6k5c8UpiArRdFNMPTmEXVgBKtJx%2F3k%2BSYiut9J3YcvTv26ZdoZ8lEvl5%2FLu2dqmVhUUrmcB3L0QitbRlcEysUT4wl8Cj9lsphX8HmVqJMEM8lpCw7%2B%2FdVUIn3%2FO1Et9MaorG94Bc0YpcQSFr06Wm5ajDKgw22JvXisnE%2FwZxcUf6%2BDKbTRquPqUC5pTrraSr4QabsnzuluSgOqCoTgcNY7jc3TDs9rfWBjqkAXA6msKKLOjtkMW5KnJfiBZd0PVFPCGOK6uTEFY5jo4LB%2FhKJqOogTXsTaaowceG1MTPogx8vThDA9lQM7PwavnfoE3PRsWin%2BFTwyrHMMUethONVI1xSceX7YI9ajgRCOyTQFBZzBRAUk7a5hnyQ1p0X9opkoSITlntZgYs4nrMicCAgEPiv%2FNdxG9Zan9zm5SWWe6EpWiMVb6Lc7hjTmnTaH%2Fi&X-Amz-Signature=d8229616a23db93337e3d78867e9f9939610d09d45b6e7f8147dcfa8d2098963&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+    "expiry_time": "2026-10-13T11:27:18.076Z"
+   }
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37694183-19f3-8099-a473-c1b80e365d69",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8072-beff-e31abfa04d3b"
+  },
+  "created_time": "2026-06-05T05:42:00.000Z",
+  "last_edited_time": "2026-06-05T05:42:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "callout",
+  "callout": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Why the description matters:",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Why the description matters:",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " The Describe Knowledge field provides a natural language description of the content and purpose of the Document Store. This description guides the agent in understanding what kind of information the store contains and when it would be appropriate to query it. A vague description produces incorrect routing decisions. A precise description tells the agent exactly when to retrieve from this store versus when to answer from general reasoning.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " The Describe Knowledge field provides a natural language description of the content and purpose of the Document Store. This description guides the agent in understanding what kind of information the store contains and when it would be appropriate to query it. A vague description produces incorrect routing decisions. A precise description tells the agent exactly when to retrieve from this store versus when to answer from general reasoning.",
+     "href": null
+    }
+   ],
+   "icon": {
+    "type": "emoji",
+    "emoji": "\u26a0\ufe0f"
+   },
+   "color": "gray_background"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37b94183-19f3-80bc-9374-cfb46dfff4b5",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8072-beff-e31abfa04d3b"
+  },
+  "created_time": "2026-06-10T15:58:00.000Z",
+  "last_edited_time": "2026-06-10T15:58:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "7d428769-464e-4585-ac04-9730fef1799c",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8072-beff-e31abfa04d3b"
+  },
+  "created_time": "2026-06-05T05:43:00.000Z",
+  "last_edited_time": "2026-06-05T05:43:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_3",
+  "heading_3": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Step 4: Update the system prompt",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Step 4: Update the system prompt",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "b021fa6f-a7f8-4a1b-ad72-d6ab4e647472",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8072-beff-e31abfa04d3b"
+  },
+  "created_time": "2026-06-05T05:43:00.000Z",
+  "last_edited_time": "2026-06-05T05:43:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Click on the ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Click on the ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "Messages",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Messages",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " section of the Agent Node settings. Update the System prompt to include explicit knowledge retrieval guidance.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " section of the Agent Node settings. Update the System prompt to include explicit knowledge retrieval guidance.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "e979bc3e-f0c0-4e6f-a1bb-15b12cd6834b",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8072-beff-e31abfa04d3b"
+  },
+  "created_time": "2026-06-05T05:43:00.000Z",
+  "last_edited_time": "2026-06-05T05:43:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Add the following instruction to the existing system prompt, after the role and scope definition:",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Add the following instruction to the existing system prompt, after the role and scope definition:",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37694183-19f3-80e0-9f88-e731fda25169",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8072-beff-e31abfa04d3b"
+  },
+  "created_time": "2026-06-05T05:43:00.000Z",
+  "last_edited_time": "2026-06-05T05:43:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "quote",
+  "quote": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "When a consultant asks about Meridian's internal policies, procedures, escalation rules, project classification, knowledge sharing requirements, or regional operational guidelines, retrieve the relevant information from your knowledge base before responding. Always ground your answer in the retrieved content. If the knowledge base does not contain the information needed, say so clearly and suggest the consultant contact Meridian's knowledge management team directly.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "When a consultant asks about Meridian's internal policies, procedures, escalation rules, project classification, knowledge sharing requirements, or regional operational guidelines, retrieve the relevant information from your knowledge base before responding. Always ground your answer in the retrieved content. If the knowledge base does not contain the information needed, say so clearly and suggest the consultant contact Meridian's knowledge management team directly.",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37694183-19f3-8017-bc58-f728e25629db",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8072-beff-e31abfa04d3b"
+  },
+  "created_time": "2026-06-05T05:46:00.000Z",
+  "last_edited_time": "2026-06-05T05:46:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "image",
+  "image": {
+   "caption": [],
+   "type": "file",
+   "file": {
+    "url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/3a9085c4-df29-45e6-8bc7-6c9c0a25ea8c/e67a53d0-d186-4967-9866-c6a62c2d43c5/image.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466YOC7DR37%2F20261013%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20261013T102718Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjENL%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJIMEYCIQC4rFAtigu4cOCh3H8vamEcv9CXla5fdidTc1YnN2J84AIhANA5yYQg2mQ2x%2FpP6mEBPdSyUK%2FKXukmzaAnZzopfYLmKogECJv%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQABoMNjM3NDIzMTgzODA1IgyMjcN4Ged3Zb9IGbUq3ANGuGTQX9tu%2BeY5VZTL9Xk0GR0qcjMVxbAi0B5Ne3oKYjqPDHFiJVP4%2F7g37fVSn02c%2BnPb2Qc8TT1K43Heg9vBuQHPrgObpO0npXNO5frH48C7uKyXVwe5MWo37JGOtt1vs%2BgpCwsFtfhq7Z0tfZ%2FfxP%2BZvsuZGfYyK58swzLi4ibcfo6rxBMx86vdhlGi2CLhuKoRCIr3zfC1RJldeNd8eYHCRZisgKOdcxiPi1lf6hVdRYmJ%2Fv7l41J4O2hGxmskoEb1fYe0fvZPnwArA0oVTsYiUt2FSJ8u4244AO22xdVrm8P8LHd9kBwf1qZD4BS9Fbk%2Bz4rxv7sTRrLp828XodC6LmzcW7nezhGOFfwPMfh%2BV2D6L8%2Fj6SCu8JDyGlHxRAvf9EBRs7JAitbg94GH%2B0269kzH22Ds6k5c8UpiArRdFNMPTmEXVgBKtJx%2F3k%2BSYiut9J3YcvTv26ZdoZ8lEvl5%2FLu2dqmVhUUrmcB3L0QitbRlcEysUT4wl8Cj9lsphX8HmVqJMEM8lpCw7%2B%2FdVUIn3%2FO1Et9MaorG94Bc0YpcQSFr06Wm5ajDKgw22JvXisnE%2FwZxcUf6%2BDKbTRquPqUC5pTrraSr4QabsnzuluSgOqCoTgcNY7jc3TDs9rfWBjqkAXA6msKKLOjtkMW5KnJfiBZd0PVFPCGOK6uTEFY5jo4LB%2FhKJqOogTXsTaaowceG1MTPogx8vThDA9lQM7PwavnfoE3PRsWin%2BFTwyrHMMUethONVI1xSceX7YI9ajgRCOyTQFBZzBRAUk7a5hnyQ1p0X9opkoSITlntZgYs4nrMicCAgEPiv%2FNdxG9Zan9zm5SWWe6EpWiMVb6Lc7hjTmnTaH%2Fi&X-Amz-Signature=2403bdfbc5dea8a111592168090fb2c712065575a3bb4ef4ce7d3dae043103a6&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+    "expiry_time": "2026-10-13T11:27:18.076Z"
+   }
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37694183-19f3-8092-94b8-ee3e1541860d",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8072-beff-e31abfa04d3b"
+  },
+  "created_time": "2026-06-05T05:46:00.000Z",
+  "last_edited_time": "2026-06-05T05:46:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "callout",
+  "callout": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Why this instruction is needed:",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Why this instruction is needed:",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " Without explicit guidance, the agent may answer policy questions from Gemini's general training data rather than retrieving from the Document Store. This instruction tells the agent when to use the knowledge source and what to do when it cannot find the answer.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " Without explicit guidance, the agent may answer policy questions from Gemini's general training data rather than retrieving from the Document Store. This instruction tells the agent when to use the knowledge source and what to do when it cannot find the answer.",
+     "href": null
+    }
+   ],
+   "icon": {
+    "type": "emoji",
+    "emoji": "\u26a0\ufe0f"
+   },
+   "color": "gray_background"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37b94183-19f3-805b-88a9-c9d7ed8c1b50",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8072-beff-e31abfa04d3b"
+  },
+  "created_time": "2026-06-10T15:58:00.000Z",
+  "last_edited_time": "2026-06-10T15:58:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "a4402853-6db9-43b2-9709-6c71b84f6d60",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8072-beff-e31abfa04d3b"
+  },
+  "created_time": "2026-06-05T05:48:00.000Z",
+  "last_edited_time": "2026-06-05T05:48:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_3",
+  "heading_3": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Step 5: Update the Direct Reply Node",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Step 5: Update the Direct Reply Node",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "e3316e61-1297-451e-b895-834deaace478",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8072-beff-e31abfa04d3b"
+  },
+  "created_time": "2026-06-05T05:48:00.000Z",
+  "last_edited_time": "2026-06-05T05:48:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Click the ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Click the ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "Direct Reply Node",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Direct Reply Node",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " to open its settings. Confirm the ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " to open its settings. Confirm the ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "Message",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Message",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " field is set to the Agent Node's output variable:",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " field is set to the Agent Node's output variable:",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37694183-19f3-8061-92c1-c619520de452",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8072-beff-e31abfa04d3b"
+  },
+  "created_time": "2026-06-05T05:48:00.000Z",
+  "last_edited_time": "2026-06-05T05:48:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "code",
+  "code": {
+   "caption": [],
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "{{ agentAgentflow_0.output }}",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "{{ agentAgentflow_0.output }}",
+     "href": null
+    }
+   ],
+   "language": "powershell"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37694183-19f3-80eb-ad9d-f1d5db99e448",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8072-beff-e31abfa04d3b"
+  },
+  "created_time": "2026-06-05T05:48:00.000Z",
+  "last_edited_time": "2026-06-05T05:48:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "If it is empty or set to a different variable, update it now. Save the canvas.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "If it is empty or set to a different variable, update it now. Save the canvas.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "3bc94183-19f3-802e-8f55-ec070a04a2e1",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8072-beff-e31abfa04d3b"
+  },
+  "created_time": "2026-08-14T02:30:00.000Z",
+  "last_edited_time": "2026-08-14T02:30:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37b94183-19f3-80ce-958a-c2019df66c46",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8072-beff-e31abfa04d3b"
+  },
+  "created_time": "2026-06-10T15:58:00.000Z",
+  "last_edited_time": "2026-06-10T15:58:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "3f7862e6-7880-4f9c-9ba8-54d25590a8b8",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8072-beff-e31abfa04d3b"
+  },
+  "created_time": "2026-06-05T05:48:00.000Z",
+  "last_edited_time": "2026-06-05T05:48:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_3",
+  "heading_3": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Step 6: Run the knowledge retrieval test",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Step 6: Run the knowledge retrieval test",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "5341a886-ec2c-4a93-9017-3ac27a3f9eaa",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8072-beff-e31abfa04d3b"
+  },
+  "created_time": "2026-06-05T05:48:00.000Z",
+  "last_edited_time": "2026-06-05T05:48:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Click the chat icon in the top right corner to open the built-in test interface. Run the following four queries in a single session:",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Click the chat icon in the top right corner to open the built-in test interface. Run the following four queries in a single session:",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "a1c60d4e-df45-41fd-97c6-7c96d25481e9",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8072-beff-e31abfa04d3b"
+  },
+  "created_time": "2026-06-05T05:48:00.000Z",
+  "last_edited_time": "2026-06-05T05:49:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Query 1 - Policy retrieval: ",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Query 1 - Policy retrieval: ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "What are the three project classification tiers at Meridian and what does each one cover?",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": true,
+      "color": "default"
+     },
+     "plain_text": "What are the three project classification tiers at Meridian and what does each one cover?",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "419f084f-b753-4ab7-a6b6-dfbf259add0b",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8072-beff-e31abfa04d3b"
+  },
+  "created_time": "2026-06-05T05:48:00.000Z",
+  "last_edited_time": "2026-06-05T05:49:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Expected behavior: The agent retrieves from the Document Store and answers with Tier 1, Tier 2, and Tier 3 definitions from the Operations Handbook. It does not fabricate additional tiers or invent classification criteria.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Expected behavior: The agent retrieves from the Document Store and answers with Tier 1, Tier 2, and Tier 3 definitions from the Operations Handbook. It does not fabricate additional tiers or invent classification criteria.",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "c7298b0c-8443-4508-b60e-227ff80b3e80",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8072-beff-e31abfa04d3b"
+  },
+  "created_time": "2026-06-05T05:48:00.000Z",
+  "last_edited_time": "2026-06-05T05:49:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Query 2 - Procedural retrieval: ",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Query 2 - Procedural retrieval: ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "How quickly does a severity level 2 client issue need to be escalated?",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": true,
+      "color": "default"
+     },
+     "plain_text": "How quickly does a severity level 2 client issue need to be escalated?",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "4402e9aa-b66c-4f9a-ac75-936562e9c778",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8072-beff-e31abfa04d3b"
+  },
+  "created_time": "2026-06-05T05:48:00.000Z",
+  "last_edited_time": "2026-06-05T05:49:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Expected behavior: The agent retrieves the escalation procedure from the Engagement Standards document and answers with the four working hours requirement.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Expected behavior: The agent retrieves the escalation procedure from the Engagement Standards document and answers with the four working hours requirement.",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "a50da9a1-3c3a-4df0-baa0-ff9bc197b263",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8072-beff-e31abfa04d3b"
+  },
+  "created_time": "2026-06-05T05:48:00.000Z",
+  "last_edited_time": "2026-06-05T05:49:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Query 3 - Regional context retrieval: ",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Query 3 - Regional context retrieval: ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "What should I know about running an engagement in Poland?",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": true,
+      "color": "default"
+     },
+     "plain_text": "What should I know about running an engagement in Poland?",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "f0f73035-39eb-482b-a520-6a7487cb8e16",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8072-beff-e31abfa04d3b"
+  },
+  "created_time": "2026-06-05T05:48:00.000Z",
+  "last_edited_time": "2026-06-05T05:49:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Expected behavior: The agent retrieves the Poland section from the Regional Playbook and covers language preferences and engagement pace.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Expected behavior: The agent retrieves the Poland section from the Regional Playbook and covers language preferences and engagement pace.",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "9f290c67-56de-4abe-96c7-29ca9cbc154d",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8072-beff-e31abfa04d3b"
+  },
+  "created_time": "2026-06-10T16:14:00.000Z",
+  "last_edited_time": "2026-06-10T16:14:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Query 4 - Knowledge base gap:",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Query 4 - Knowledge base gap:",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "What is Meridian's remote work policy for consultants?",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": true,
+      "color": "default"
+     },
+     "plain_text": "What is Meridian's remote work policy for consultants?",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "e6880844-9ace-4b79-9578-9cf6d4d58728",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8072-beff-e31abfa04d3b"
+  },
+  "created_time": "2026-06-10T16:14:00.000Z",
+  "last_edited_time": "2026-06-10T16:14:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Expected behavior: The question is in scope (an internal Meridian policy a consultant might reasonably ask) but the answer is not in the Document Store. The agent should recognise the gap, say so clearly, and suggest contacting Meridian's knowledge management team directly \u2014 as instructed in the system prompt. It should not fabricate a policy from general training data.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Expected behavior: The question is in scope (an internal Meridian policy a consultant might reasonably ask) but the answer is not in the Document Store. The agent should recognise the gap, say so clearly, and suggest contacting Meridian's knowledge management team directly \u2014 as instructed in the system prompt. It should not fabricate a policy from general training data.",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37b94183-19f3-8074-86a3-c9b816aea1f7",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8072-beff-e31abfa04d3b"
+  },
+  "created_time": "2026-06-10T15:58:00.000Z",
+  "last_edited_time": "2026-06-10T15:58:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "53feecbf-8f61-4fd4-a635-646aa0388733",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8072-beff-e31abfa04d3b"
+  },
+  "created_time": "2026-06-05T05:48:00.000Z",
+  "last_edited_time": "2026-06-05T05:48:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_3",
+  "heading_3": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "What to look for",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "What to look for",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "ebf722d1-f873-468a-bfd9-a4dfd0bbad88",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8072-beff-e31abfa04d3b"
+  },
+  "created_time": "2026-06-05T05:48:00.000Z",
+  "last_edited_time": "2026-06-05T05:48:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "For Queries 1 through 3, the agent's response should:",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "For Queries 1 through 3, the agent's response should:",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "047594b3-88b8-4464-bcdc-79b112b11399",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8072-beff-e31abfa04d3b"
+  },
+  "created_time": "2026-06-05T05:48:00.000Z",
+  "last_edited_time": "2026-06-05T05:48:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Contain specific details that only exist in the synthetic documents \u2014 not generic consulting advice",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Contain specific details that only exist in the synthetic documents \u2014 not generic consulting advice",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "edc71a76-bfe1-465d-b6bc-50d2980e8b38",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8072-beff-e31abfa04d3b"
+  },
+  "created_time": "2026-06-05T05:48:00.000Z",
+  "last_edited_time": "2026-06-05T05:48:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Match the content of the relevant document section closely",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Match the content of the relevant document section closely",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "0ed6412a-1f00-4e37-bf04-95eb2d3797b1",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8072-beff-e31abfa04d3b"
+  },
+  "created_time": "2026-06-05T05:48:00.000Z",
+  "last_edited_time": "2026-06-05T05:48:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Not add information that is not in the documents",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Not add information that is not in the documents",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "7511f310-0f4a-4680-bf94-d2e209d357a4",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8072-beff-e31abfa04d3b"
+  },
+  "created_time": "2026-06-05T05:48:00.000Z",
+  "last_edited_time": "2026-06-05T05:48:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "If the agent returns a generic answer for any of Queries 1 through 3, the Document Store is not being queried. Check the following in order:",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "If the agent returns a generic answer for any of Queries 1 through 3, the Document Store is not being queried. Check the following in order:",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "c5a4cebd-1f77-4ce1-8509-66f5e9fd2202",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8072-beff-e31abfa04d3b"
+  },
+  "created_time": "2026-06-05T05:48:00.000Z",
+  "last_edited_time": "2026-06-05T05:48:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Confirm the ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Confirm the ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "meridian-knowledge",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": true,
+      "color": "default"
+     },
+     "plain_text": "meridian-knowledge",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " Document Store is selected in the Agent Node Knowledge configuration",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " Document Store is selected in the Agent Node Knowledge configuration",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "2e688988-9134-4d1f-9797-b316d846a978",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8072-beff-e31abfa04d3b"
+  },
+  "created_time": "2026-06-05T05:48:00.000Z",
+  "last_edited_time": "2026-06-05T05:48:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Confirm the Describe Knowledge field is filled in",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Confirm the Describe Knowledge field is filled in",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "3900d522-6523-4810-a729-c25950ad7a42",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8072-beff-e31abfa04d3b"
+  },
+  "created_time": "2026-06-05T05:48:00.000Z",
+  "last_edited_time": "2026-06-05T05:48:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Confirm the canvas has been saved before testing",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Confirm the canvas has been saved before testing",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "f3dc5164-70e1-4ed5-b1a1-8c79d172b11d",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8072-beff-e31abfa04d3b"
+  },
+  "created_time": "2026-06-05T05:48:00.000Z",
+  "last_edited_time": "2026-06-10T16:04:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Confirm the upsert completed successfully ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Confirm the upsert completed successfully ",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37b94183-19f3-804d-88c9-d77295fc9ef8",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8072-beff-e31abfa04d3b"
+  },
+  "created_time": "2026-06-10T15:58:00.000Z",
+  "last_edited_time": "2026-06-10T15:58:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "9bd79371-0a43-404a-8a1c-04fde25e81fd",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8072-beff-e31abfa04d3b"
+  },
+  "created_time": "2026-06-05T05:48:00.000Z",
+  "last_edited_time": "2026-06-10T15:58:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_3",
+  "heading_3": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Checklist: Confirm before moving on",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Checklist: Confirm before moving on",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "e4df951b-ae53-43c7-a0d7-0525f90f6697",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8072-beff-e31abfa04d3b"
+  },
+  "created_time": "2026-06-05T05:48:00.000Z",
+  "last_edited_time": "2026-06-05T05:48:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "to_do",
+  "to_do": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Meridian Base Agent",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": true,
+      "color": "default"
+     },
+     "plain_text": "Meridian Base Agent",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " canvas open and showing Start Node \u2192 Agent Node \u2192 Direct Reply Node",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " canvas open and showing Start Node \u2192 Agent Node \u2192 Direct Reply Node",
+     "href": null
+    }
+   ],
+   "checked": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "9928a927-4ec5-40b0-826d-e7f0eaa95527",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8072-beff-e31abfa04d3b"
+  },
+  "created_time": "2026-06-05T05:48:00.000Z",
+  "last_edited_time": "2026-06-05T05:48:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "to_do",
+  "to_do": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "meridian-knowledge",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": true,
+      "color": "default"
+     },
+     "plain_text": "meridian-knowledge",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " Document Store connected in Agent Node Knowledge / Document Stores section",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " Document Store connected in Agent Node Knowledge / Document Stores section",
+     "href": null
+    }
+   ],
+   "checked": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "189cc39d-a0a6-4193-80f6-a0a423bc5c2a",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8072-beff-e31abfa04d3b"
+  },
+  "created_time": "2026-06-05T05:48:00.000Z",
+  "last_edited_time": "2026-06-05T05:48:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "to_do",
+  "to_do": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Describe Knowledge field filled in with a precise description of the store's content",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Describe Knowledge field filled in with a precise description of the store's content",
+     "href": null
+    }
+   ],
+   "checked": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "f1aeab5d-8a91-4878-a140-44633017c755",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8072-beff-e31abfa04d3b"
+  },
+  "created_time": "2026-06-05T05:48:00.000Z",
+  "last_edited_time": "2026-06-05T05:48:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "to_do",
+  "to_do": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "System prompt updated with explicit knowledge retrieval instruction",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "System prompt updated with explicit knowledge retrieval instruction",
+     "href": null
+    }
+   ],
+   "checked": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "e284f423-9767-457b-941d-df7b8d5a455a",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8072-beff-e31abfa04d3b"
+  },
+  "created_time": "2026-06-05T05:48:00.000Z",
+  "last_edited_time": "2026-06-05T05:48:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "to_do",
+  "to_do": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Direct Reply Node Message field set to ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Direct Reply Node Message field set to ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "{{ agentAgentflow_0.output }}",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": true,
+      "color": "default"
+     },
+     "plain_text": "{{ agentAgentflow_0.output }}",
+     "href": null
+    }
+   ],
+   "checked": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "7a8505b5-7454-4c38-a8f5-b40a4be16c9a",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8072-beff-e31abfa04d3b"
+  },
+  "created_time": "2026-06-05T05:48:00.000Z",
+  "last_edited_time": "2026-06-05T05:48:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "to_do",
+  "to_do": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Canvas saved before testing",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Canvas saved before testing",
+     "href": null
+    }
+   ],
+   "checked": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "b6ba1de0-eef4-47eb-8051-347df58185ae",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8072-beff-e31abfa04d3b"
+  },
+  "created_time": "2026-06-05T05:48:00.000Z",
+  "last_edited_time": "2026-06-05T05:48:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "to_do",
+  "to_do": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "All four test queries run and evaluated",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "All four test queries run and evaluated",
+     "href": null
+    }
+   ],
+   "checked": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "c2fa9193-fb27-4921-b077-2e4a7311439a",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8072-beff-e31abfa04d3b"
+  },
+  "created_time": "2026-06-05T05:48:00.000Z",
+  "last_edited_time": "2026-06-05T05:48:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "to_do",
+  "to_do": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Queries 1 through 3 return content grounded in the synthetic documents",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Queries 1 through 3 return content grounded in the synthetic documents",
+     "href": null
+    }
+   ],
+   "checked": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "eaeb953f-5a81-442e-855b-9d5e53db35ef",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8072-beff-e31abfa04d3b"
+  },
+  "created_time": "2026-06-05T05:48:00.000Z",
+  "last_edited_time": "2026-06-10T16:15:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "to_do",
+  "to_do": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Query 4 returns the knowledge-gap fallback ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Query 4 returns the knowledge-gap fallback ",
+     "href": null
+    }
+   ],
+   "checked": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37694183-19f3-80cc-aad2-ffe2233b421e",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8072-beff-e31abfa04d3b"
+  },
+  "created_time": "2026-06-05T05:48:00.000Z",
+  "last_edited_time": "2026-06-05T05:48:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "36b94183-19f3-80d6-be3c-c34f9cdafb85",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8072-beff-e31abfa04d3b"
+  },
+  "created_time": "2026-05-25T00:35:00.000Z",
+  "last_edited_time": "2026-06-10T15:58:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": true,
+  "in_trash": false,
+  "type": "callout",
+  "callout": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Takeaway: ",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Takeaway: ",
+     "href": null
+    }
+   ],
+   "icon": {
+    "type": "emoji",
+    "emoji": "\ud83d\udca1"
+   },
+   "color": "gray_background"
+  },
+  "archived": false,
+  "_children": [
+   {
+    "object": "block",
+    "id": "37b94183-19f3-80f6-8a63-e4947e24f2f9",
+    "parent": {
+     "type": "block_id",
+     "block_id": "36b94183-19f3-80d6-be3c-c34f9cdafb85"
+    },
+    "created_time": "2026-06-10T15:58:00.000Z",
+    "last_edited_time": "2026-06-10T15:58:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+     "rich_text": [
+      {
+       "type": "text",
+       "text": {
+        "content": "Connecting a Document Store to an Agent Node takes two inputs: the store selection and the knowledge description. The store selection tells Flowise where to retrieve from. The description tells the agent when to retrieve and what to expect to find there. Both must be precise. ",
+        "link": null
+       },
+       "annotations": {
+        "bold": false,
+        "italic": false,
+        "strikethrough": false,
+        "underline": false,
+        "code": false,
+        "color": "default"
+       },
+       "plain_text": "Connecting a Document Store to an Agent Node takes two inputs: the store selection and the knowledge description. The store selection tells Flowise where to retrieve from. The description tells the agent when to retrieve and what to expect to find there. Both must be precise. ",
+       "href": null
+      }
+     ],
+     "icon": null,
+     "color": "default"
+    },
+    "archived": false
+   },
+   {
+    "object": "block",
+    "id": "37b94183-19f3-8085-90da-fa1537c2cbe8",
+    "parent": {
+     "type": "block_id",
+     "block_id": "36b94183-19f3-80d6-be3c-c34f9cdafb85"
+    },
+    "created_time": "2026-06-10T15:58:00.000Z",
+    "last_edited_time": "2026-06-10T15:58:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+     "rich_text": [
+      {
+       "type": "text",
+       "text": {
+        "content": "A connected but poorly described knowledge source produces an agent that ignores its own knowledge base and falls back to general reasoning which is indistinguishable from not having connected the store at all.",
+        "link": null
+       },
+       "annotations": {
+        "bold": false,
+        "italic": false,
+        "strikethrough": false,
+        "underline": false,
+        "code": false,
+        "color": "default"
+       },
+       "plain_text": "A connected but poorly described knowledge source produces an agent that ignores its own knowledge base and falls back to general reasoning which is indistinguishable from not having connected the store at all.",
+       "href": null
+      }
+     ],
+     "icon": null,
+     "color": "default"
+    },
+    "archived": false
+   }
+  ]
+ },
+ {
+  "object": "block",
+  "id": "37694183-19f3-8088-84fa-d8f08ddad583",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8072-beff-e31abfa04d3b"
+  },
+  "created_time": "2026-06-05T05:50:00.000Z",
+  "last_edited_time": "2026-06-05T05:50:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ }
+]

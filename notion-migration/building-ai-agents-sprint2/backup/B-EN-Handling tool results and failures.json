@@ -1,0 +1,3588 @@
+[
+ {
+  "object": "block",
+  "id": "36b94183-19f3-80ea-b467-fde965a03ef6",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8008-8c77-c79df2e64d5b"
+  },
+  "created_time": "2026-05-25T01:32:00.000Z",
+  "last_edited_time": "2026-05-25T01:32:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "callout",
+  "callout": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "What you will work on in this lesson:",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "What you will work on in this lesson:",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " Design professional result integration and graceful failure handling for both the successful HTTP response and failure states in Meridian's Agentflow v2.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " Design professional result integration and graceful failure handling for both the successful HTTP response and failure states in Meridian's Agentflow v2.",
+     "href": null
+    }
+   ],
+   "icon": {
+    "type": "emoji",
+    "emoji": "\ud83d\udca1"
+   },
+   "color": "gray_background"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37b94183-19f3-802e-a435-cea59024d94e",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8008-8c77-c79df2e64d5b"
+  },
+  "created_time": "2026-06-10T18:26:00.000Z",
+  "last_edited_time": "2026-06-10T18:26:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "547c8ca3-ee28-4e58-bead-b76c38ccbe11",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8008-8c77-c79df2e64d5b"
+  },
+  "created_time": "2026-05-22T02:35:00.000Z",
+  "last_edited_time": "2026-05-25T01:32:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_2",
+  "heading_2": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Setting the scene",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Setting the scene",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "49138394-bac5-4a53-a560-830cfcc93552",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8008-8c77-c79df2e64d5b"
+  },
+  "created_time": "2026-05-22T02:35:00.000Z",
+  "last_edited_time": "2026-06-05T09:27:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Meridian's Agentflow v2 is now routing queries by intent and retrieving live engagement data through the HTTP Node. When a consultant asks about an engagement status, the flow executes correctly. The Condition Agent Node classifies the query, the HTTP Node fetches the data, Agent Node B formats it, and Direct Reply B returns the response.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Meridian's Agentflow v2 is now routing queries by intent and retrieving live engagement data through the HTTP Node. When a consultant asks about an engagement status, the flow executes correctly. The Condition Agent Node classifies the query, the HTTP Node fetches the data, Agent Node B formats it, and Direct Reply B returns the response.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37694183-19f3-80d6-9e7f-ced8139100ce",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8008-8c77-c79df2e64d5b"
+  },
+  "created_time": "2026-06-05T09:27:00.000Z",
+  "last_edited_time": "2026-06-05T09:27:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "The happy path is working. But two failure patterns have emerged in extended testing that the current configuration does not handle adequately.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "The happy path is working. But two failure patterns have emerged in extended testing that the current configuration does not handle adequately.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37694183-19f3-8055-9d68-c7320a87d5aa",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8008-8c77-c79df2e64d5b"
+  },
+  "created_time": "2026-06-05T09:27:00.000Z",
+  "last_edited_time": "2026-06-05T09:27:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "The first is a ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "The first is a ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "presentation problem",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "presentation problem",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": ". When the HTTP Node returns a successful response, Agent Node B sometimes reproduces the raw JSON structure directly rather than transforming it into natural language. A consultant asking about an engagement status receives something like:",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": ". When the HTTP Node returns a successful response, Agent Node B sometimes reproduces the raw JSON structure directly rather than transforming it into natural language. A consultant asking about an engagement status receives something like:",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37694183-19f3-8000-b7a7-c016c24f5999",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8008-8c77-c79df2e64d5b"
+  },
+  "created_time": "2026-06-05T09:27:00.000Z",
+  "last_edited_time": "2026-06-05T09:27:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "code",
+  "code": {
+   "caption": [],
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "{\"userId\": 1, \"id\": 1, \"title\": \"delectus aut autem\", \"completed\": false}",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "{\"userId\": 1, \"id\": 1, \"title\": \"delectus aut autem\", \"completed\": false}",
+     "href": null
+    }
+   ],
+   "language": "json"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "305a9096-545e-44dc-afe1-e71cae3ed02c",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8008-8c77-c79df2e64d5b"
+  },
+  "created_time": "2026-06-05T09:27:00.000Z",
+  "last_edited_time": "2026-06-05T09:27:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "This is technically correct but reads like a database dump rather than a professional consulting tool response.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "This is technically correct but reads like a database dump rather than a professional consulting tool response.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "50395fcb-e472-43f9-864f-3c742da6bc30",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8008-8c77-c79df2e64d5b"
+  },
+  "created_time": "2026-06-05T09:27:00.000Z",
+  "last_edited_time": "2026-06-05T09:28:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "The second is a ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "The second is a ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "failure handling problem",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "failure handling problem",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": ". During testing, a developer deliberately pointed the HTTP Node at an invalid URL to simulate an API outage. Instead of acknowledging the failure and directing the consultant to their engagement manager, Agent Node B generated a fabricated status which consisted of hallucinating that an engagement was active and in the implementation phase when the HTTP Node had returned an error.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": ". During testing, a developer deliberately pointed the HTTP Node at an invalid URL to simulate an API outage. Instead of acknowledging the failure and directing the consultant to their engagement manager, Agent Node B generated a fabricated status which consisted of hallucinating that an engagement was active and in the implementation phase when the HTTP Node had returned an error.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "21164394-5912-419a-a396-bea8a19192c7",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8008-8c77-c79df2e64d5b"
+  },
+  "created_time": "2026-06-05T09:27:00.000Z",
+  "last_edited_time": "2026-06-05T09:27:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Both problems are system prompt failures. The HTTP Node and Agent Node B are working as configured. The agent is failing to handle outputs appropriately because it has not been given explicit instructions for how to do so.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Both problems are system prompt failures. The HTTP Node and Agent Node B are working as configured. The agent is failing to handle outputs appropriately because it has not been given explicit instructions for how to do so.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37b94183-19f3-8068-8904-c183d811d0be",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8008-8c77-c79df2e64d5b"
+  },
+  "created_time": "2026-06-10T18:26:00.000Z",
+  "last_edited_time": "2026-06-10T18:26:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "67bc0faa-14ce-4d39-b12f-4f871b8b0e2e",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8008-8c77-c79df2e64d5b"
+  },
+  "created_time": "2026-05-22T02:35:00.000Z",
+  "last_edited_time": "2026-06-05T09:28:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_2",
+  "heading_2": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "The two output states",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "The two output states",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "65c5b12d-10e6-43bd-aae9-a1fb047f8cd0",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8008-8c77-c79df2e64d5b"
+  },
+  "created_time": "2026-06-05T09:28:00.000Z",
+  "last_edited_time": "2026-06-05T09:28:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Your task involves designing Agent Node B's behaviour for two distinct output states. Review both before beginning.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Your task involves designing Agent Node B's behaviour for two distinct output states. Review both before beginning.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "af0a0ef2-f549-4485-bcb7-f485a7020150",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8008-8c77-c79df2e64d5b"
+  },
+  "created_time": "2026-05-22T02:35:00.000Z",
+  "last_edited_time": "2026-06-05T09:29:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_4",
+  "heading_4": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Output state 1: Successful HTTP response",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Output state 1: Successful HTTP response",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "0372bfe1-ae0e-44f3-a928-39a046858aba",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8008-8c77-c79df2e64d5b"
+  },
+  "created_time": "2026-05-22T02:35:00.000Z",
+  "last_edited_time": "2026-06-05T09:29:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "code",
+  "code": {
+   "caption": [],
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "{\n  \"userId\": 1,\n  \"id\": 1,\n  \"title\": \"delectus aut autem\",\n  \"completed\": false\n}",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "{\n  \"userId\": 1,\n  \"id\": 1,\n  \"title\": \"delectus aut autem\",\n  \"completed\": false\n}",
+     "href": null
+    }
+   ],
+   "language": "xml"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "b6a10327-8725-4eef-8d86-feec6573e5ce",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8008-8c77-c79df2e64d5b"
+  },
+  "created_time": "2026-06-05T09:29:00.000Z",
+  "last_edited_time": "2026-06-05T09:29:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Treat this as Meridian's mock engagement record where:",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Treat this as Meridian's mock engagement record where:",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "794871e9-1581-46bc-a40d-16d921a7f8dc",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8008-8c77-c79df2e64d5b"
+  },
+  "created_time": "2026-06-05T09:29:00.000Z",
+  "last_edited_time": "2026-06-05T09:29:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "id",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": true,
+      "color": "default"
+     },
+     "plain_text": "id",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " = engagement reference number",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " = engagement reference number",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "5020be66-5e3a-4011-8a9a-e19a4f25436a",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8008-8c77-c79df2e64d5b"
+  },
+  "created_time": "2026-06-05T09:29:00.000Z",
+  "last_edited_time": "2026-06-05T09:29:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "title",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": true,
+      "color": "default"
+     },
+     "plain_text": "title",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " = engagement name",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " = engagement name",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "8a7ec2c3-4663-43a9-adb4-8584191c356d",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8008-8c77-c79df2e64d5b"
+  },
+  "created_time": "2026-06-05T09:29:00.000Z",
+  "last_edited_time": "2026-06-05T09:29:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "completed",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": true,
+      "color": "default"
+     },
+     "plain_text": "completed",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " = whether the engagement is closed (",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " = whether the engagement is closed (",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "false",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": true,
+      "color": "default"
+     },
+     "plain_text": "false",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " = active, ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " = active, ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "true",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": true,
+      "color": "default"
+     },
+     "plain_text": "true",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " = closed)",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " = closed)",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "765a625d-cebf-4d6e-99ad-52c342e91082",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8008-8c77-c79df2e64d5b"
+  },
+  "created_time": "2026-06-05T09:29:00.000Z",
+  "last_edited_time": "2026-06-05T09:29:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Agent Node B must transform this into a natural, professional response that presents the key information clearly without reproducing the raw JSON structure or field names.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Agent Node B must transform this into a natural, professional response that presents the key information clearly without reproducing the raw JSON structure or field names.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37b94183-19f3-80ec-a61d-d53a2c2df845",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8008-8c77-c79df2e64d5b"
+  },
+  "created_time": "2026-06-10T18:26:00.000Z",
+  "last_edited_time": "2026-06-10T18:26:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "ac89bd02-f8d8-4224-8b2d-75650090b64b",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8008-8c77-c79df2e64d5b"
+  },
+  "created_time": "2026-05-22T02:35:00.000Z",
+  "last_edited_time": "2026-06-05T09:29:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_4",
+  "heading_4": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Output state 2: HTTP Node failure",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Output state 2: HTTP Node failure",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "f0f845c6-5770-4771-bbfe-c9f31e45ab5f",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8008-8c77-c79df2e64d5b"
+  },
+  "created_time": "2026-06-05T09:29:00.000Z",
+  "last_edited_time": "2026-06-05T09:29:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "When an HTTP Node request fails, Flowise returns an error response to the downstream node. The error typically appears as a string containing the HTTP status code and error message rather than the expected JSON body.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "When an HTTP Node request fails, Flowise returns an error response to the downstream node. The error typically appears as a string containing the HTTP status code and error message rather than the expected JSON body.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37694183-19f3-80d4-8e21-d3789ca0e777",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8008-8c77-c79df2e64d5b"
+  },
+  "created_time": "2026-06-05T09:29:00.000Z",
+  "last_edited_time": "2026-06-05T09:30:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Agent Node B must acknowledge the failure clearly, communicate what happened in plain language appropriate for a consulting professional, and provide a clear next step without fabricating a status or presenting the error as a partial success.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Agent Node B must acknowledge the failure clearly, communicate what happened in plain language appropriate for a consulting professional, and provide a clear next step without fabricating a status or presenting the error as a partial success.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37b94183-19f3-8058-a2a5-e4e8a0d161d0",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8008-8c77-c79df2e64d5b"
+  },
+  "created_time": "2026-06-10T18:26:00.000Z",
+  "last_edited_time": "2026-06-10T18:26:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "cd3df789-a76f-4ef0-b135-ae4a6777915c",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8008-8c77-c79df2e64d5b"
+  },
+  "created_time": "2026-05-22T02:35:00.000Z",
+  "last_edited_time": "2026-05-25T01:36:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_2",
+  "heading_2": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Your mission",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Your mission",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "7aeac8f4-d0e7-45ad-bb50-873ca33b292b",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8008-8c77-c79df2e64d5b"
+  },
+  "created_time": "2026-05-22T02:35:00.000Z",
+  "last_edited_time": "2026-05-25T01:36:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_4",
+  "heading_4": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Task A: Design the successful result response",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Task A: Design the successful result response",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "a9df797a-5a89-4784-a443-4b8cab55f76b",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8008-8c77-c79df2e64d5b"
+  },
+  "created_time": "2026-05-22T02:35:00.000Z",
+  "last_edited_time": "2026-06-05T09:30:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Assume Agent Node B has received the JSONPlaceholder response shown in Output State 1. Write the exact natural language response Agent Node B should produce for the following consultant query:",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Assume Agent Node B has received the JSONPlaceholder response shown in Output State 1. Write the exact natural language response Agent Node B should produce for the following consultant query:",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "f7755570-af44-4cfc-8ea7-3b87c39f6b96",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8008-8c77-c79df2e64d5b"
+  },
+  "created_time": "2026-05-22T02:35:00.000Z",
+  "last_edited_time": "2026-06-05T09:30:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "quote",
+  "quote": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "\"Can you check the current engagement status for account reference 1?\"",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": true,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "\"Can you check the current engagement status for account reference 1?\"",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "f975f080-e69a-48c5-8273-2f902d2ab150",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8008-8c77-c79df2e64d5b"
+  },
+  "created_time": "2026-05-22T02:35:00.000Z",
+  "last_edited_time": "2026-05-22T02:35:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Your response must satisfy the following requirements:",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Your response must satisfy the following requirements:",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "b29b20dd-9e87-4f6a-a295-436694520762",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8008-8c77-c79df2e64d5b"
+  },
+  "created_time": "2026-05-22T02:35:00.000Z",
+  "last_edited_time": "2026-05-22T02:35:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Present the key information from the JSON output in natural, professionally phrased language appropriate for Meridian's consulting environment",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Present the key information from the JSON output in natural, professionally phrased language appropriate for Meridian's consulting environment",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "59044bb6-0065-4235-a325-ade4ffbbbd27",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8008-8c77-c79df2e64d5b"
+  },
+  "created_time": "2026-05-22T02:35:00.000Z",
+  "last_edited_time": "2026-05-22T02:35:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Do not reproduce the raw JSON structure or field names in the response",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Do not reproduce the raw JSON structure or field names in the response",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "b8891f39-971d-4f24-850b-5c737450936a",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8008-8c77-c79df2e64d5b"
+  },
+  "created_time": "2026-05-22T02:35:00.000Z",
+  "last_edited_time": "2026-06-05T09:30:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Include the most operationally relevant fields such as engagement reference, name, and active or closed status",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Include the most operationally relevant fields such as engagement reference, name, and active or closed status",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "f4dd285b-7dd6-48e0-acef-125c59a3434d",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8008-8c77-c79df2e64d5b"
+  },
+  "created_time": "2026-05-22T02:35:00.000Z",
+  "last_edited_time": "2026-05-22T02:35:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "End with a brief offer to provide further detail or assistance if needed",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "End with a brief offer to provide further detail or assistance if needed",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "78c8ee76-d36a-4239-95ba-fe6bd17783c4",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8008-8c77-c79df2e64d5b"
+  },
+  "created_time": "2026-05-22T02:35:00.000Z",
+  "last_edited_time": "2026-06-05T09:31:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "This task tests your ability to write the kind of response a well-designed agent would produce before writing the instruction that produces it.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "This task tests your ability to write the kind of response a well-designed agent would produce before writing the instruction that produces it.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37b94183-19f3-80c3-97d9-cd9f9610e6cd",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8008-8c77-c79df2e64d5b"
+  },
+  "created_time": "2026-06-10T18:26:00.000Z",
+  "last_edited_time": "2026-06-10T18:26:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "ff9008aa-3a27-4fb0-80e8-2e5b54816572",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8008-8c77-c79df2e64d5b"
+  },
+  "created_time": "2026-05-22T02:35:00.000Z",
+  "last_edited_time": "2026-06-10T18:28:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_4",
+  "heading_4": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Task B: Write the result-handling instructions",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Task B: Write the result-handling instructions",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "e6295c85-e442-4def-9701-419fda0608e7",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8008-8c77-c79df2e64d5b"
+  },
+  "created_time": "2026-06-05T09:31:00.000Z",
+  "last_edited_time": "2026-06-10T18:28:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Draft a system prompt instruction for Agent Node B that tells it exactly how to behave when the HTTP Node returns an error state. ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Draft a system prompt instruction for Agent Node B that tells it exactly how to behave when the HTTP Node returns an error state. ",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "af763c92-91ec-4af9-82d3-b819020173f8",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8008-8c77-c79df2e64d5b"
+  },
+  "created_time": "2026-06-10T18:28:00.000Z",
+  "last_edited_time": "2026-06-10T18:28:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Draft system prompt instructions for Agent Node B that cover both output states. Your prompt must specify:",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Draft system prompt instructions for Agent Node B that cover both output states. Your prompt must specify:",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "4bafed38-5341-42b2-84ea-92f8d9cd2711",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8008-8c77-c79df2e64d5b"
+  },
+  "created_time": "2026-06-10T18:28:00.000Z",
+  "last_edited_time": "2026-06-10T18:28:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "numbered_list_item",
+  "numbered_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "How to format a successful HTTP response into the kind of natural-language reply you designed in Task A \u2014 including which fields to surface and which to suppress.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "How to format a successful HTTP response into the kind of natural-language reply you designed in Task A \u2014 including which fields to surface and which to suppress.",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "952792ea-1683-4597-9c9e-3899b25c1914",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8008-8c77-c79df2e64d5b"
+  },
+  "created_time": "2026-06-10T18:28:00.000Z",
+  "last_edited_time": "2026-06-10T18:28:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "numbered_list_item",
+  "numbered_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "How to behave when the HTTP Node returns an error state (the three requirements below).",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "How to behave when the HTTP Node returns an error state (the three requirements below).",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "62ff8d5f-5697-4d94-9868-984aa5f7a2cd",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8008-8c77-c79df2e64d5b"
+  },
+  "created_time": "2026-06-10T18:28:00.000Z",
+  "last_edited_time": "2026-06-10T18:28:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "The two sections together replace the existing Agent Node B system message. Indicate clearly to the model which behaviour applies when.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "The two sections together replace the existing Agent Node B system message. Indicate clearly to the model which behaviour applies when.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37b94183-19f3-8093-84c4-d9e55217ce6c",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8008-8c77-c79df2e64d5b"
+  },
+  "created_time": "2026-06-10T18:28:00.000Z",
+  "last_edited_time": "2026-06-10T18:28:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37b94183-19f3-802d-8013-c40a21b6196f",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8008-8c77-c79df2e64d5b"
+  },
+  "created_time": "2026-06-10T18:28:00.000Z",
+  "last_edited_time": "2026-06-10T18:28:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Your instruction must address the following three requirements:",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Your instruction must address the following three requirements:",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "05a01fd5-8e92-438e-aed6-b2802f3621e3",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8008-8c77-c79df2e64d5b"
+  },
+  "created_time": "2026-06-10T18:28:00.000Z",
+  "last_edited_time": "2026-06-10T18:28:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Draft system prompt instructions for Agent Node B that cover both output states. Your prompt must specify:",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Draft system prompt instructions for Agent Node B that cover both output states. Your prompt must specify:",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "150bee6f-7b6b-44a5-bfcb-10bf1d8cffdd",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8008-8c77-c79df2e64d5b"
+  },
+  "created_time": "2026-06-05T09:31:00.000Z",
+  "last_edited_time": "2026-06-05T09:31:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Acknowledge the failure honestly:",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Acknowledge the failure honestly:",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " Agent Node B must not present the error as a success or generate a fabricated status. The consultant must understand that the lookup did not return a result.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " Agent Node B must not present the error as a success or generate a fabricated status. The consultant must understand that the lookup did not return a result.",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "101a1c33-2ceb-4720-9cf3-579e4ab03153",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8008-8c77-c79df2e64d5b"
+  },
+  "created_time": "2026-06-05T09:31:00.000Z",
+  "last_edited_time": "2026-06-05T09:31:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Communicate the relevant detail:",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Communicate the relevant detail:",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " Agent Node B should explain what happened in plain language without exposing raw HTTP status codes, technical error strings, or JSON error objects that are not meaningful to a consulting professional.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " Agent Node B should explain what happened in plain language without exposing raw HTTP status codes, technical error strings, or JSON error objects that are not meaningful to a consulting professional.",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "a0f935dd-dbcc-46dd-9c78-6bf0eda25d50",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8008-8c77-c79df2e64d5b"
+  },
+  "created_time": "2026-06-05T09:31:00.000Z",
+  "last_edited_time": "2026-06-05T09:31:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Provide a clear next step:",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Provide a clear next step:",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " The instruction must specify what Agent Node B should offer after communicating the failure \u2014 for example, suggesting the consultant contact their engagement manager directly, or offering to search Meridian's knowledge base for related information instead.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " The instruction must specify what Agent Node B should offer after communicating the failure \u2014 for example, suggesting the consultant contact their engagement manager directly, or offering to search Meridian's knowledge base for related information instead.",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37b94183-19f3-806e-ab94-d99cb0533ec3",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8008-8c77-c79df2e64d5b"
+  },
+  "created_time": "2026-06-10T18:26:00.000Z",
+  "last_edited_time": "2026-06-10T18:26:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "bdbebb0d-df61-429c-9e83-d899dd51f4d9",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8008-8c77-c79df2e64d5b"
+  },
+  "created_time": "2026-05-22T02:35:00.000Z",
+  "last_edited_time": "2026-06-05T09:31:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_4",
+  "heading_4": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Task C: Update Agent Node B and test both output states",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Task C: Update Agent Node B and test both output states",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37b94183-19f3-8007-a7c1-f6e5a198b0e4",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8008-8c77-c79df2e64d5b"
+  },
+  "created_time": "2026-06-10T18:30:00.000Z",
+  "last_edited_time": "2026-06-10T18:30:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Open Agent Node B's settings and replace the existing system message with the instructions you wrote in Task B. The previous formatter prompt is superseded by your new version, which now handles both successful and failed lookups.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Open Agent Node B's settings and replace the existing system message with the instructions you wrote in Task B. The previous formatter prompt is superseded by your new version, which now handles both successful and failed lookups.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "95b7284f-61af-4792-8402-4ac113f0fba4",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8008-8c77-c79df2e64d5b"
+  },
+  "created_time": "2026-05-22T02:35:00.000Z",
+  "last_edited_time": "2026-06-05T09:32:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Enter your failure recovery instruction from Task B into the System message of Agent Node B on your canvas. Then run the following two tests in separate chat sessions and record the agent's responses.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Enter your failure recovery instruction from Task B into the System message of Agent Node B on your canvas. Then run the following two tests in separate chat sessions and record the agent's responses.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "d1589466-37c9-4dab-87ff-f0b8aa968476",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8008-8c77-c79df2e64d5b"
+  },
+  "created_time": "2026-05-22T02:35:00.000Z",
+  "last_edited_time": "2026-06-05T09:32:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Test 1 Successful lookup:",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Test 1 Successful lookup:",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "\"Can you check the current engagement status for account reference 1?\"",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": true,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "\"Can you check the current engagement status for account reference 1?\"",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " ",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "36b94183-19f3-8086-a279-fdf76c7301e0",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8008-8c77-c79df2e64d5b"
+  },
+  "created_time": "2026-05-25T01:38:00.000Z",
+  "last_edited_time": "2026-06-05T09:32:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Evaluate the response against the requirements in Task A. Does Agent Node B present the information professionally? Does it avoid reproducing raw JSON field names? Does it identify the most operationally relevant information?",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Evaluate the response against the requirements in Task A. Does Agent Node B present the information professionally? Does it avoid reproducing raw JSON field names? Does it identify the most operationally relevant information?",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "2b2bd190-2c03-40d7-9641-509ebc1d9aae",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8008-8c77-c79df2e64d5b"
+  },
+  "created_time": "2026-05-22T02:35:00.000Z",
+  "last_edited_time": "2026-06-05T09:32:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Test 2 Simulated HTTP Failure:",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Test 2 Simulated HTTP Failure:",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "\"Can you pull up the status for engagement ENG-9999?\"",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": true,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "\"Can you pull up the status for engagement ENG-9999?\"",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " ",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "36b94183-19f3-8064-b33b-dbedbb0ede43",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8008-8c77-c79df2e64d5b"
+  },
+  "created_time": "2026-05-25T01:38:00.000Z",
+  "last_edited_time": "2026-06-05T09:32:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "To simulate a failure, temporarily change the HTTP Node's Target URL to an invalid endpoint:",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "To simulate a failure, temporarily change the HTTP Node's Target URL to an invalid endpoint:",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37694183-19f3-80b7-9529-e110d9be7952",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8008-8c77-c79df2e64d5b"
+  },
+  "created_time": "2026-06-05T09:32:00.000Z",
+  "last_edited_time": "2026-06-05T09:32:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "code",
+  "code": {
+   "caption": [],
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "https://jsonplaceholder.typicode.com/invalid/endpoint/9999",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "https://jsonplaceholder.typicode.com/invalid/endpoint/9999",
+     "href": null
+    }
+   ],
+   "language": "json"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "1688282b-62f3-4b1f-aa88-0ca754a3cc70",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8008-8c77-c79df2e64d5b"
+  },
+  "created_time": "2026-05-22T02:35:00.000Z",
+  "last_edited_time": "2026-06-05T09:33:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "This returns a 404 response. Save the canvas and send: ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "This returns a 404 response. Save the canvas and send: ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "\u201cCan you check the engagement status for the Bauer account?\u201d",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": true,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "\u201cCan you check the engagement status for the Bauer account?\u201d",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "dca60af5-8961-4467-89e9-94fca9ec3728",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8008-8c77-c79df2e64d5b"
+  },
+  "created_time": "2026-06-05T09:33:00.000Z",
+  "last_edited_time": "2026-06-05T09:33:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Evaluate the response against Task B requirements. Does Agent Node B acknowledge the failure without fabricating a status? Does it communicate what happened in plain language? Does it offer a clear next step?",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Evaluate the response against Task B requirements. Does Agent Node B acknowledge the failure without fabricating a status? Does it communicate what happened in plain language? Does it offer a clear next step?",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37694183-19f3-80f4-bf21-da42b5f2f737",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8008-8c77-c79df2e64d5b"
+  },
+  "created_time": "2026-06-05T09:33:00.000Z",
+  "last_edited_time": "2026-06-05T09:33:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "After testing, restore the HTTP Node URL to:",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "After testing, restore the HTTP Node URL to:",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37694183-19f3-8072-9c6c-cef428a42d04",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8008-8c77-c79df2e64d5b"
+  },
+  "created_time": "2026-06-05T09:33:00.000Z",
+  "last_edited_time": "2026-06-05T09:33:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "code",
+  "code": {
+   "caption": [],
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "https://jsonplaceholder.typicode.com/todos/1",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "https://jsonplaceholder.typicode.com/todos/1",
+     "href": null
+    }
+   ],
+   "language": "json"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37694183-19f3-809a-9207-de0c6f1f8191",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8008-8c77-c79df2e64d5b"
+  },
+  "created_time": "2026-06-05T09:33:00.000Z",
+  "last_edited_time": "2026-06-05T09:34:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "If either test produces an inadequate response, identify which part of the system prompt instruction failed to produce the expected behavior and revise it. Re-run the test after each revision and document what changed.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "If either test produces an inadequate response, identify which part of the system prompt instruction failed to produce the expected behavior and revise it. Re-run the test after each revision and document what changed.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37b94183-19f3-8024-991c-f3019659d9cc",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8008-8c77-c79df2e64d5b"
+  },
+  "created_time": "2026-06-10T18:26:00.000Z",
+  "last_edited_time": "2026-06-10T18:26:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "cf676cc6-c248-46bf-b874-290dc1d552d1",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8008-8c77-c79df2e64d5b"
+  },
+  "created_time": "2026-05-22T02:35:00.000Z",
+  "last_edited_time": "2026-06-05T09:34:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_4",
+  "heading_4": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Task D: Simulate a complete API outage",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Task D: Simulate a complete API outage",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "6b6dde93-786d-46a7-94a0-335979d86dc4",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8008-8c77-c79df2e64d5b"
+  },
+  "created_time": "2026-06-05T09:34:00.000Z",
+  "last_edited_time": "2026-06-10T18:29:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Change the HTTP Node's Target URL to a domain that does not exist: ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Change the HTTP Node's Target URL to a domain that does not exist: ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "https://api.meridian-internal-nonexistent.com/engagements/status",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": true,
+      "color": "default"
+     },
+     "plain_text": "https://api.meridian-internal-nonexistent.com/engagements/status",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "1cef3bc4-4a66-47ef-bbe8-42c583116c28",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8008-8c77-c79df2e64d5b"
+  },
+  "created_time": "2026-06-05T09:34:00.000Z",
+  "last_edited_time": "2026-06-05T09:34:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Save the canvas and send: ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Save the canvas and send: ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "Can you check the engagement status for the Krauss account?",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": true,
+      "color": "default"
+     },
+     "plain_text": "Can you check the engagement status for the Krauss account?",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "cac60966-8468-436d-87ba-a798b2a103ae",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8008-8c77-c79df2e64d5b"
+  },
+  "created_time": "2026-06-05T09:34:00.000Z",
+  "last_edited_time": "2026-06-05T09:34:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Observe and record Agent Node B's response. Evaluate whether the current system prompt instruction handles a complete connection failure differently from a 404 not-found response.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Observe and record Agent Node B's response. Evaluate whether the current system prompt instruction handles a complete connection failure differently from a 404 not-found response.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "71cc70c8-b8d8-4552-827e-11975d04e65d",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8008-8c77-c79df2e64d5b"
+  },
+  "created_time": "2026-06-05T09:34:00.000Z",
+  "last_edited_time": "2026-06-05T09:34:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "quote",
+  "quote": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "What to think about:",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "What to think about:",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " A 404 response returns a structured HTTP error with a status code. A complete connection failure returns no response at all \u2014 Flowise receives a network error and passes it downstream as a generic error string. These are two different failure modes that may produce different agent behaviours even with the same system prompt instruction.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " A 404 response returns a structured HTTP error with a status code. A complete connection failure returns no response at all \u2014 Flowise receives a network error and passes it downstream as a generic error string. These are two different failure modes that may produce different agent behaviours even with the same system prompt instruction.",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "2533a9f8-6437-4a7d-9228-174cbea6b0b2",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8008-8c77-c79df2e64d5b"
+  },
+  "created_time": "2026-06-05T09:34:00.000Z",
+  "last_edited_time": "2026-06-05T09:34:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "After testing, restore the HTTP Node URL to: ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "After testing, restore the HTTP Node URL to: ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "https://jsonplaceholder.typicode.com/todos/1",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": true,
+      "color": "default"
+     },
+     "plain_text": "https://jsonplaceholder.typicode.com/todos/1",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37b94183-19f3-80cc-98e9-fdb720b40d37",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8008-8c77-c79df2e64d5b"
+  },
+  "created_time": "2026-06-10T18:26:00.000Z",
+  "last_edited_time": "2026-06-10T18:26:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "36b94183-19f3-806f-88d3-c1b14ba21356",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8008-8c77-c79df2e64d5b"
+  },
+  "created_time": "2026-05-25T01:42:00.000Z",
+  "last_edited_time": "2026-06-10T18:26:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": true,
+  "in_trash": false,
+  "type": "callout",
+  "callout": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Takeaway: ",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Takeaway: ",
+     "href": null
+    }
+   ],
+   "icon": {
+    "type": "emoji",
+    "emoji": "\ud83d\udca1"
+   },
+   "color": "gray_background"
+  },
+  "archived": false,
+  "_children": [
+   {
+    "object": "block",
+    "id": "37b94183-19f3-80dc-ae28-c672563a3a7e",
+    "parent": {
+     "type": "block_id",
+     "block_id": "36b94183-19f3-806f-88d3-c1b14ba21356"
+    },
+    "created_time": "2026-06-10T18:26:00.000Z",
+    "last_edited_time": "2026-06-10T18:26:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+     "rich_text": [
+      {
+       "type": "text",
+       "text": {
+        "content": "A tool that executes correctly is not the same as an agent that handles tool results well. The gap between the HTTP Node returning an error and Agent Node B responding to that error professionally is entirely governed by the system prompt. ",
+        "link": null
+       },
+       "annotations": {
+        "bold": false,
+        "italic": false,
+        "strikethrough": false,
+        "underline": false,
+        "code": false,
+        "color": "default"
+       },
+       "plain_text": "A tool that executes correctly is not the same as an agent that handles tool results well. The gap between the HTTP Node returning an error and Agent Node B responding to that error professionally is entirely governed by the system prompt. ",
+       "href": null
+      }
+     ],
+     "icon": null,
+     "color": "default"
+    },
+    "archived": false
+   },
+   {
+    "object": "block",
+    "id": "37b94183-19f3-80e0-96a9-f153804c8ff6",
+    "parent": {
+     "type": "block_id",
+     "block_id": "36b94183-19f3-806f-88d3-c1b14ba21356"
+    },
+    "created_time": "2026-06-10T18:26:00.000Z",
+    "last_edited_time": "2026-06-10T18:26:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+     "rich_text": [
+      {
+       "type": "text",
+       "text": {
+        "content": "Clear instructions for both successful result integration and failure recovery are the difference between an agent that behaves reliably under real conditions and one that fabricates confidence when it should be acknowledging uncertainty.",
+        "link": null
+       },
+       "annotations": {
+        "bold": false,
+        "italic": false,
+        "strikethrough": false,
+        "underline": false,
+        "code": false,
+        "color": "default"
+       },
+       "plain_text": "Clear instructions for both successful result integration and failure recovery are the difference between an agent that behaves reliably under real conditions and one that fabricates confidence when it should be acknowledging uncertainty.",
+       "href": null
+      }
+     ],
+     "icon": null,
+     "color": "default"
+    },
+    "archived": false
+   }
+  ]
+ },
+ {
+  "object": "block",
+  "id": "37694183-19f3-8065-b29a-d3261f701c1d",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8008-8c77-c79df2e64d5b"
+  },
+  "created_time": "2026-06-05T09:35:00.000Z",
+  "last_edited_time": "2026-06-05T09:35:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ }
+]

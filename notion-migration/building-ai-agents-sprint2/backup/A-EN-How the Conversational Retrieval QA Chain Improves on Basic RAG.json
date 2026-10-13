@@ -1,0 +1,2350 @@
+[
+ {
+  "object": "block",
+  "id": "36a94183-19f3-800a-9d20-c80371fd7e09",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-803c-83e4-e02a37a62745"
+  },
+  "created_time": "2026-05-24T00:29:00.000Z",
+  "last_edited_time": "2026-05-24T00:29:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "callout",
+  "callout": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "What you will understand by the end of this lesson: ",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "What you will understand by the end of this lesson: ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "Why basic single-shot RAG fails in multi-turn conversations, how the Conversational Retrieval QA Chain addresses this by incorporating conversation history into query reformulation, and what you can and cannot control in your Chatflow build.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Why basic single-shot RAG fails in multi-turn conversations, how the Conversational Retrieval QA Chain addresses this by incorporating conversation history into query reformulation, and what you can and cannot control in your Chatflow build.",
+     "href": null
+    }
+   ],
+   "icon": {
+    "type": "emoji",
+    "emoji": "\ud83d\udca1"
+   },
+   "color": "gray_background"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37994183-19f3-80a3-b6c1-e1f9054cdd22",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-803c-83e4-e02a37a62745"
+  },
+  "created_time": "2026-06-08T15:03:00.000Z",
+  "last_edited_time": "2026-06-08T15:03:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "24bf884f-e488-418f-8660-2d79532e05dc",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-803c-83e4-e02a37a62745"
+  },
+  "created_time": "2026-05-22T02:00:00.000Z",
+  "last_edited_time": "2026-06-04T19:03:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_2",
+  "heading_2": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "When basic RAG is not enough",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "When basic RAG is not enough",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "a2fda310-8f7b-443b-9959-949cef285f20",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-803c-83e4-e02a37a62745"
+  },
+  "created_time": "2026-06-04T19:01:00.000Z",
+  "last_edited_time": "2026-06-04T19:02:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Contigo GmbH's development team has a working understanding of the RAG pipeline. Documents are ingested, chunked, embedded, and stored. At query time, the client's question is converted into a vector, the closest matching chunks are retrieved, and the language model generates a grounded response.\nFor a single isolated question, this works well. But Contigo's support agent is not handling isolated questions. It is handling conversations which are multi-turn exchanges where each question builds on what came before.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Contigo GmbH's development team has a working understanding of the RAG pipeline. Documents are ingested, chunked, embedded, and stored. At query time, the client's question is converted into a vector, the closest matching chunks are retrieved, and the language model generates a grounded response.\nFor a single isolated question, this works well. But Contigo's support agent is not handling isolated questions. It is handling conversations which are multi-turn exchanges where each question builds on what came before.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37594183-19f3-803d-8806-e17754e4023a",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-803c-83e4-e02a37a62745"
+  },
+  "created_time": "2026-06-04T19:02:00.000Z",
+  "last_edited_time": "2026-06-04T19:02:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Consider this exchange:",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Consider this exchange:",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "36a94183-19f3-805e-b1b0-e76968c7a50c",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-803c-83e4-e02a37a62745"
+  },
+  "created_time": "2026-05-24T00:30:00.000Z",
+  "last_edited_time": "2026-06-04T19:02:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Turn 1 Client:  ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Turn 1 Client:  ",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "36a94183-19f3-80ea-b72f-ccf7c6d530ef",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-803c-83e4-e02a37a62745"
+  },
+  "created_time": "2026-05-24T00:30:00.000Z",
+  "last_edited_time": "2026-06-04T19:02:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "quote",
+  "quote": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "\"What are the eligibility criteria for the SME Standard loan?\"",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": true,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "\"What are the eligibility criteria for the SME Standard loan?\"",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37594183-19f3-802c-b097-d90f45e4de82",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-803c-83e4-e02a37a62745"
+  },
+  "created_time": "2026-06-04T19:02:00.000Z",
+  "last_edited_time": "2026-06-04T19:02:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Turn 2 Client:",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Turn 2 Client:",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37594183-19f3-80e4-8737-e66660d24b40",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-803c-83e4-e02a37a62745"
+  },
+  "created_time": "2026-06-04T19:02:00.000Z",
+  "last_edited_time": "2026-06-04T19:02:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "quote",
+  "quote": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "\"And what about the repayment conditions for that one?\u201d",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": true,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "\"And what about the repayment conditions for that one?\u201d",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "237ef71a-08d4-4ab1-ae58-b6410b611fdc",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-803c-83e4-e02a37a62745"
+  },
+  "created_time": "2026-06-04T19:03:00.000Z",
+  "last_edited_time": "2026-06-04T19:03:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "In a basic RAG system, Turn 2 is sent to the vector database exactly as written: \"And what about the repayment conditions for that one?\" The phrase \"that one\" has no meaning outside the context of Turn 1. The vector database has no knowledge of the previous exchange. It searches for chunks semantically similar to \"repayment conditions for that one\" and returns either nothing useful or a chunk from the wrong product section. The agent fails not because the information is missing from the knowledge base, but because the retrieval system had no way to know what \"that one\" referred to.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "In a basic RAG system, Turn 2 is sent to the vector database exactly as written: \"And what about the repayment conditions for that one?\" The phrase \"that one\" has no meaning outside the context of Turn 1. The vector database has no knowledge of the previous exchange. It searches for chunks semantically similar to \"repayment conditions for that one\" and returns either nothing useful or a chunk from the wrong product section. The agent fails not because the information is missing from the knowledge base, but because the retrieval system had no way to know what \"that one\" referred to.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37994183-19f3-8003-851e-c1f1d0ee0903",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-803c-83e4-e02a37a62745"
+  },
+  "created_time": "2026-06-08T15:03:00.000Z",
+  "last_edited_time": "2026-06-08T15:03:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "27453808-c8d8-49e5-bfe4-2fddeb9ec144",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-803c-83e4-e02a37a62745"
+  },
+  "created_time": "2026-05-22T02:00:00.000Z",
+  "last_edited_time": "2026-06-04T19:03:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_2",
+  "heading_2": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "What the Conversational Retrieval QA Chain does differently",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "What the Conversational Retrieval QA Chain does differently",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "939fdd3a-6e2a-457d-907f-3efe4cbb7471",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-803c-83e4-e02a37a62745"
+  },
+  "created_time": "2026-05-22T02:00:00.000Z",
+  "last_edited_time": "2026-06-04T19:04:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "The Conversational Retrieval QA Chain addresses this problem through a two-step process that happens before retrieval begins.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "The Conversational Retrieval QA Chain addresses this problem through a two-step process that happens before retrieval begins.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37994183-19f3-805e-a955-ebeca6f68d43",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-803c-83e4-e02a37a62745"
+  },
+  "created_time": "2026-06-08T15:03:00.000Z",
+  "last_edited_time": "2026-06-08T15:03:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "c13e07b3-ba19-4306-b3b1-8a5418fafe7b",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-803c-83e4-e02a37a62745"
+  },
+  "created_time": "2026-06-04T19:07:00.000Z",
+  "last_edited_time": "2026-06-04T19:07:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Step 1: Query reformulation - ",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Step 1: Query reformulation - ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "Before the query reaches the vector database, the chain passes it through the language model along with the recent conversation history from the Buffer Window Memory node. The language model rewrites the query into a standalone question that can be understood without the surrounding conversation.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Before the query reaches the vector database, the chain passes it through the language model along with the recent conversation history from the Buffer Window Memory node. The language model rewrites the query into a standalone question that can be understood without the surrounding conversation.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "a6133c04-129d-4463-ad78-7c0e25c73ea3",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-803c-83e4-e02a37a62745"
+  },
+  "created_time": "2026-06-04T19:07:00.000Z",
+  "last_edited_time": "2026-06-04T19:08:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Turn 2: ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Turn 2: ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "\"And what about the repayment conditions for that one?\"",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": true,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "\"And what about the repayment conditions for that one?\"",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "  \u2026 becomes: ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "  \u2026 becomes: ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "\"What are the repayment conditions for the Contigo SME Standard loan?\"",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": true,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "\"What are the repayment conditions for the Contigo SME Standard loan?\"",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "588363f0-3a40-417e-b8a1-e141bf006743",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-803c-83e4-e02a37a62745"
+  },
+  "created_time": "2026-06-04T19:07:00.000Z",
+  "last_edited_time": "2026-06-04T19:07:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "This reformulated query is what gets sent to the vector database. It now contains the specific terminology that matches the correct chunk in the knowledge base.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "This reformulated query is what gets sent to the vector database. It now contains the specific terminology that matches the correct chunk in the knowledge base.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37994183-19f3-80c8-b7df-d146de4fe137",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-803c-83e4-e02a37a62745"
+  },
+  "created_time": "2026-06-08T15:04:00.000Z",
+  "last_edited_time": "2026-06-08T15:04:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "da68d42f-30e0-4475-8396-1b7c403912a9",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-803c-83e4-e02a37a62745"
+  },
+  "created_time": "2026-06-04T19:07:00.000Z",
+  "last_edited_time": "2026-06-04T19:08:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Step 2: Retrieval and grounded generation - ",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Step 2: Retrieval and grounded generation - ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "The reformulated query is embedded and used to retrieve the top matching chunks from the Document Store. Those chunks are passed to the language model along with the original query and the conversation history to generate a grounded, contextually accurate response.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "The reformulated query is embedded and used to retrieve the top matching chunks from the Document Store. Those chunks are passed to the language model along with the original query and the conversation history to generate a grounded, contextually accurate response.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37594183-19f3-8051-8956-c7ac3a2cdd03",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-803c-83e4-e02a37a62745"
+  },
+  "created_time": "2026-06-04T19:16:00.000Z",
+  "last_edited_time": "2026-06-04T19:16:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "image",
+  "image": {
+   "caption": [],
+   "type": "file",
+   "file": {
+    "url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/3a9085c4-df29-45e6-8bc7-6c9c0a25ea8c/970a9409-05e9-4d44-84d9-b95fccd9d40d/040ee372-d225-4e34-b4df-b1da520a237a.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466X56IHBZN%2F20261013%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20261013T102249Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjENL%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJIMEYCIQDjq46GWM%2FOhHvCzWVbQFHd9TE3Fq6Mept9lpo0r1vs8wIhAKSRp1beqw7GSCr2vE%2Baw%2FVQkN2F89faFEBxA44hnTbaKogECJv%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQABoMNjM3NDIzMTgzODA1IgxNs4yY%2FnXt9HXI1joq3AP7vZwD7YU4YETmIVl21BYlKLL4V5NfQfFMaxpLUKf27vpEpnN6NIGBYB3dWUJMoiW0epBdKKQVttRo1JCacUcjUp%2FNly8EyaObusrw%2B3tI62X3T1UUXnVkhOtoAtG5syYER3Nsx0r9Wwvyf5YmwOOlBbmGrX5vJHSDTq7vqkxOUq5PMPTxrqKUthLqyLj01yuGaO0RXoymW3EEXV2Mvkh4%2BqgJKWNm%2FtFAxXn0ZUWC7oRFfnMFcU6A685VhXR5JOJw%2F30n4P9gWsqzHf8ezUMlkoO%2B%2BdzYAFfhT9bW5H4dsKJsNsjBCbMb3Ok3NJUW3PNO1o%2FXxtvogMD8NyC2Ok4jKLa%2FGO5qjz1nKn%2FSe2PSoxMN9fqLEyYVR8efsnF4eTprAXQ9P4EMMIgjpbKAZH0zcsSMV0qIzrvE7rVL2%2F4xoCNla%2FS88IaIJ8pHi5sXSXCAW7KCEC5J03LToUM2I3h2MwOVPC2szo47G8HzKCaq5hVPvwqmvhtq7CbCE2prdqLdqTK0GXDj6sWglFwk4fa73zCboNKkwgybwy%2FYMovqd9SEKeCIx3EL8d5OaQ%2FmqQ%2BgtDtzumkBCLbQfm10pXz7fy%2FWmZIEBWQYRDPxsXGoMXoT3KbkePvOWIG4gDDj9rfWBjqkAb567JX2DQRyc7f0G%2BQP0rhN8OxOH8YLwQyb1ERQznz1kEZlzw2mfAqbwMgR5gJmnXuDxfMdjuy1pJSvdn8RXvLNzBHD2G7l3w%2F90LuMzHaiwPJ0gpCGChUw06LMq%2BhZDepn%2BJ2hwvALNRZeQL%2FvwY4896kRST%2BwqILAg8OJ%2BYvOjhyGz0XUAm4AeduFOUNnAoa7aWv4wFiztIKgXtDyfBtdriSC&X-Amz-Signature=4aa897ec8e75a65d8d96cb78f49fe513f73614cc1204f3c17f72680e71883a0a&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+    "expiry_time": "2026-10-13T11:22:49.350Z"
+   }
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37994183-19f3-80d5-839b-e375eaf36f21",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-803c-83e4-e02a37a62745"
+  },
+  "created_time": "2026-06-08T15:12:00.000Z",
+  "last_edited_time": "2026-06-08T15:12:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "710e1adf-80ed-4bd9-ba0e-5ec2a26dc59c",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-803c-83e4-e02a37a62745"
+  },
+  "created_time": "2026-06-04T19:07:00.000Z",
+  "last_edited_time": "2026-06-04T19:08:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_2",
+  "heading_2": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "What this means for your Chatflow build",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "What this means for your Chatflow build",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "66a8c37d-a01f-4631-9083-76f130fae4a2",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-803c-83e4-e02a37a62745"
+  },
+  "created_time": "2026-06-04T19:07:00.000Z",
+  "last_edited_time": "2026-06-04T19:07:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "The Conversational Retrieval QA Chain combines three components that you will connect in A8.1:",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "The Conversational Retrieval QA Chain combines three components that you will connect in A8.1:",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "11b25eb8-7c21-438e-980c-55b78ea831a8",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-803c-83e4-e02a37a62745"
+  },
+  "created_time": "2026-06-04T19:07:00.000Z",
+  "last_edited_time": "2026-06-04T19:08:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": true,
+  "in_trash": false,
+  "type": "table",
+  "table": {
+   "table_width": 2,
+   "has_column_header": true,
+   "has_row_header": false
+  },
+  "archived": false,
+  "_children": [
+   {
+    "object": "block",
+    "id": "0e4b8d65-42f0-44be-8de7-2643eb262d31",
+    "parent": {
+     "type": "block_id",
+     "block_id": "11b25eb8-7c21-438e-980c-55b78ea831a8"
+    },
+    "created_time": "2026-06-04T19:07:00.000Z",
+    "last_edited_time": "2026-06-04T19:07:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "231d872b-594c-81f2-a375-0002b8783aca"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "231d872b-594c-81f2-a375-0002b8783aca"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "table_row",
+    "table_row": {
+     "cells": [
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Component",
+         "link": null
+        },
+        "annotations": {
+         "bold": true,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Component",
+        "href": null
+       }
+      ],
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "What it contributes",
+         "link": null
+        },
+        "annotations": {
+         "bold": true,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "What it contributes",
+        "href": null
+       }
+      ]
+     ]
+    },
+    "archived": false
+   },
+   {
+    "object": "block",
+    "id": "f630ee4f-eca4-4daf-b6f1-98d3ed6546bc",
+    "parent": {
+     "type": "block_id",
+     "block_id": "11b25eb8-7c21-438e-980c-55b78ea831a8"
+    },
+    "created_time": "2026-06-04T19:07:00.000Z",
+    "last_edited_time": "2026-06-04T19:07:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "231d872b-594c-81f2-a375-0002b8783aca"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "231d872b-594c-81f2-a375-0002b8783aca"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "table_row",
+    "table_row": {
+     "cells": [
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Buffer Window Memory node",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Buffer Window Memory node",
+        "href": null
+       }
+      ],
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Provides the conversation history used for query reformulation",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Provides the conversation history used for query reformulation",
+        "href": null
+       }
+      ]
+     ]
+    },
+    "archived": false
+   },
+   {
+    "object": "block",
+    "id": "3715fbe0-f4c9-4274-8d54-795bdb04cae5",
+    "parent": {
+     "type": "block_id",
+     "block_id": "11b25eb8-7c21-438e-980c-55b78ea831a8"
+    },
+    "created_time": "2026-06-04T19:07:00.000Z",
+    "last_edited_time": "2026-06-04T19:07:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "231d872b-594c-81f2-a375-0002b8783aca"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "231d872b-594c-81f2-a375-0002b8783aca"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "table_row",
+    "table_row": {
+     "cells": [
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Document Store",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Document Store",
+        "href": null
+       }
+      ],
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Provides the chunks retrieved after the query is reformulated",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Provides the chunks retrieved after the query is reformulated",
+        "href": null
+       }
+      ]
+     ]
+    },
+    "archived": false
+   },
+   {
+    "object": "block",
+    "id": "e89465c2-bb24-4360-ab1a-fc8405ad85a0",
+    "parent": {
+     "type": "block_id",
+     "block_id": "11b25eb8-7c21-438e-980c-55b78ea831a8"
+    },
+    "created_time": "2026-06-04T19:07:00.000Z",
+    "last_edited_time": "2026-06-04T19:07:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "231d872b-594c-81f2-a375-0002b8783aca"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "231d872b-594c-81f2-a375-0002b8783aca"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "table_row",
+    "table_row": {
+     "cells": [
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "ChatGoogleGenerativeAI node",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "ChatGoogleGenerativeAI node",
+        "href": null
+       }
+      ],
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Performs both the reformulation step and the final grounded generation",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Performs both the reformulation step and the final grounded generation",
+        "href": null
+       }
+      ]
+     ]
+    },
+    "archived": false
+   }
+  ]
+ },
+ {
+  "object": "block",
+  "id": "444e76b4-e5ba-4697-b573-9ee50f997c2e",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-803c-83e4-e02a37a62745"
+  },
+  "created_time": "2026-06-04T19:07:00.000Z",
+  "last_edited_time": "2026-06-04T19:08:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "This is why the Buffer Window Memory node you configured in Sprint 1 carries forward into Sprint 2. Without it, the chain has no conversation history to draw on and query reformulation cannot happen. The RAG pipeline and the memory configuration depend on each other.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "This is why the Buffer Window Memory node you configured in Sprint 1 carries forward into Sprint 2. Without it, the chain has no conversation history to draw on and query reformulation cannot happen. The RAG pipeline and the memory configuration depend on each other.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37994183-19f3-80fc-8dfa-e2dbbcd3fee5",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-803c-83e4-e02a37a62745"
+  },
+  "created_time": "2026-06-08T15:12:00.000Z",
+  "last_edited_time": "2026-06-08T15:12:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "559e6f16-cc92-4ca2-8be7-ac32372c44c2",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-803c-83e4-e02a37a62745"
+  },
+  "created_time": "2026-06-04T19:07:00.000Z",
+  "last_edited_time": "2026-06-04T19:08:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_2",
+  "heading_2": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "What you can control in your Chatflow",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "What you can control in your Chatflow",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "8782bc59-0faa-4c5b-95fb-2f41d52ca444",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-803c-83e4-e02a37a62745"
+  },
+  "created_time": "2026-06-04T19:07:00.000Z",
+  "last_edited_time": "2026-06-04T19:07:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Within the Conversational Retrieval QA Chain, you have direct control over the following retrieval quality levers:",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Within the Conversational Retrieval QA Chain, you have direct control over the following retrieval quality levers:",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "b9fe828f-1b5d-410c-aaa6-e471af93d1f8",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-803c-83e4-e02a37a62745"
+  },
+  "created_time": "2026-06-04T19:07:00.000Z",
+  "last_edited_time": "2026-06-08T15:12:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Top K",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Top K",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " \u2014 The number of chunks retrieved per query. A higher value gives the language model more context but risks diluting the signal with loosely related chunks. A lower value keeps the context focused but risks missing relevant information. ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " \u2014 The number of chunks retrieved per query. A higher value gives the language model more context but risks diluting the signal with loosely related chunks. A lower value keeps the context focused but risks missing relevant information. ",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "6cfb4c3d-51c6-4a6f-b9dc-115a56dab584",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-803c-83e4-e02a37a62745"
+  },
+  "created_time": "2026-06-04T19:07:00.000Z",
+  "last_edited_time": "2026-06-08T15:12:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "System prompt grounding",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "System prompt grounding",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " \u2014 The instruction that tells the language model how strictly to use the retrieved chunks. A weak instruction allows the model to supplement with its training data. A strong prohibition prevents it. ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " \u2014 The instruction that tells the language model how strictly to use the retrieved chunks. A weak instruction allows the model to supplement with its training data. A strong prohibition prevents it. ",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "49805817-424e-4c38-87f2-b0e7f98bf2ce",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-803c-83e4-e02a37a62745"
+  },
+  "created_time": "2026-06-04T19:07:00.000Z",
+  "last_edited_time": "2026-06-08T15:12:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Chunk quality",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Chunk quality",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " \u2014 Determined by the chunking and preparation decisions made. The Conversational Retrieval QA Chain retrieves whatever is in the Document Store. If the chunks are poorly prepared, query reformulation cannot compensate for them.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " \u2014 Determined by the chunking and preparation decisions made. The Conversational Retrieval QA Chain retrieves whatever is in the Document Store. If the chunks are poorly prepared, query reformulation cannot compensate for them.",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "2749e041-9cb9-4f9f-abcc-4f9dfe754f47",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-803c-83e4-e02a37a62745"
+  },
+  "created_time": "2026-06-04T19:07:00.000Z",
+  "last_edited_time": "2026-06-08T15:12:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Embedding model consistency",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Embedding model consistency",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " \u2014 The same embedding model must be used during ingestion and at query time. A mismatch produces meaningless similarity scores regardless of how well the query is reformulated.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " \u2014 The same embedding model must be used during ingestion and at query time. A mismatch produces meaningless similarity scores regardless of how well the query is reformulated.",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37994183-19f3-8054-b1a2-d5480dbe3019",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-803c-83e4-e02a37a62745"
+  },
+  "created_time": "2026-06-08T15:13:00.000Z",
+  "last_edited_time": "2026-06-08T15:13:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "50ade424-280e-4ca3-870e-15d3ddb37b6d",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-803c-83e4-e02a37a62745"
+  },
+  "created_time": "2026-06-04T19:07:00.000Z",
+  "last_edited_time": "2026-06-04T19:09:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_2",
+  "heading_2": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "What is beyond the scope of this Chatflow",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "What is beyond the scope of this Chatflow",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "68dc0762-82ef-4556-b115-b62c9eb63939",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-803c-83e4-e02a37a62745"
+  },
+  "created_time": "2026-06-04T19:07:00.000Z",
+  "last_edited_time": "2026-06-04T19:07:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "The Conversational Retrieval QA Chain follows a fixed sequence. It reformulates the query, retrieves once, and generates. It does not evaluate whether the retrieved chunks are sufficient, re-query if they are not, or route queries to different knowledge bases based on their content.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "The Conversational Retrieval QA Chain follows a fixed sequence. It reformulates the query, retrieves once, and generates. It does not evaluate whether the retrieved chunks are sufficient, re-query if they are not, or route queries to different knowledge bases based on their content.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "ab6615ae-62ca-40f4-8ae0-9081d6c970d1",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-803c-83e4-e02a37a62745"
+  },
+  "created_time": "2026-06-04T19:07:00.000Z",
+  "last_edited_time": "2026-06-04T19:09:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "These capabilities belong to a more advanced architecture called agentic RAG. Agentic RAG introduces an autonomous reasoning layer into the retrieval process itself, allowing the system to plan, evaluate, and iterate before generating a response. This is beyond the scope of your current Chatflow build but represents the direction the industry is moving for complex, multi-source retrieval tasks.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "These capabilities belong to a more advanced architecture called agentic RAG. Agentic RAG introduces an autonomous reasoning layer into the retrieval process itself, allowing the system to plan, evaluate, and iterate before generating a response. This is beyond the scope of your current Chatflow build but represents the direction the industry is moving for complex, multi-source retrieval tasks.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "4389b10e-ca69-4ea9-83be-d3c7b3f3abf6",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-803c-83e4-e02a37a62745"
+  },
+  "created_time": "2026-06-04T19:07:00.000Z",
+  "last_edited_time": "2026-06-04T19:07:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "For Contigo's support agent as built in this course, the Conversational Retrieval QA Chain is the correct and sufficient architecture.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "For Contigo's support agent as built in this course, the Conversational Retrieval QA Chain is the correct and sufficient architecture.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37994183-19f3-8094-aadd-c378f7819214",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-803c-83e4-e02a37a62745"
+  },
+  "created_time": "2026-06-08T15:13:00.000Z",
+  "last_edited_time": "2026-06-08T15:13:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "c24d7e6c-831f-4699-8d0f-fa0c86991eda",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-803c-83e4-e02a37a62745"
+  },
+  "created_time": "2026-06-04T19:07:00.000Z",
+  "last_edited_time": "2026-06-04T19:09:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_2",
+  "heading_2": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Check for understanding",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Check for understanding",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37c94183-19f3-8098-9374-e1295f587746",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-803c-83e4-e02a37a62745"
+  },
+  "created_time": "2026-06-11T12:38:00.000Z",
+  "last_edited_time": "2026-06-11T12:38:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": true,
+  "in_trash": false,
+  "type": "callout",
+  "callout": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "A Contigo client sends the following message in Turn 4 of a conversation: ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "A Contigo client sends the following message in Turn 4 of a conversation: ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "\"Does it apply to the same product?\"",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": true,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "\"Does it apply to the same product?\"",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " The agent returns an irrelevant chunk. A developer suggests increasing the Top K value to fix the problem. Why is this the wrong diagnosis, and what is the actual cause of the retrieval failure?",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " The agent returns an irrelevant chunk. A developer suggests increasing the Top K value to fix the problem. Why is this the wrong diagnosis, and what is the actual cause of the retrieval failure?",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "gray_background"
+  },
+  "archived": false,
+  "_children": [
+   {
+    "object": "block",
+    "id": "37c94183-19f3-804f-878f-f5cc8242cd89",
+    "parent": {
+     "type": "block_id",
+     "block_id": "37c94183-19f3-8098-9374-e1295f587746"
+    },
+    "created_time": "2026-06-11T12:38:00.000Z",
+    "last_edited_time": "2026-06-11T12:38:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "embed",
+    "embed": {
+     "caption": [],
+     "url": "https://app.masterschool.com/campus/multi-choice-question/0ea72e06-96db-45d4-a931-2a43f2148a71"
+    },
+    "archived": false
+   }
+  ]
+ },
+ {
+  "object": "block",
+  "id": "37594183-19f3-80c1-942e-c069414359cc",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-803c-83e4-e02a37a62745"
+  },
+  "created_time": "2026-06-04T19:11:00.000Z",
+  "last_edited_time": "2026-06-11T12:38:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37994183-19f3-8001-b091-f96ee53b1760",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-803c-83e4-e02a37a62745"
+  },
+  "created_time": "2026-06-08T15:13:00.000Z",
+  "last_edited_time": "2026-06-08T15:13:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37594183-19f3-8011-ae51-ec4a0d58064f",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-803c-83e4-e02a37a62745"
+  },
+  "created_time": "2026-06-04T19:09:00.000Z",
+  "last_edited_time": "2026-06-08T15:13:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": true,
+  "in_trash": false,
+  "type": "callout",
+  "callout": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Takeaway:",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Takeaway:",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " ",
+     "href": null
+    }
+   ],
+   "icon": {
+    "type": "emoji",
+    "emoji": "\ud83d\udca1"
+   },
+   "color": "gray_background"
+  },
+  "archived": false,
+  "_children": [
+   {
+    "object": "block",
+    "id": "37994183-19f3-80be-a246-ff2f7b3032a6",
+    "parent": {
+     "type": "block_id",
+     "block_id": "37594183-19f3-8011-ae51-ec4a0d58064f"
+    },
+    "created_time": "2026-06-08T15:13:00.000Z",
+    "last_edited_time": "2026-06-08T15:13:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+     "rich_text": [
+      {
+       "type": "text",
+       "text": {
+        "content": "The Conversational Retrieval QA Chain improves on basic RAG by reformulating ambiguous follow-up queries into standalone questions before retrieval begins. This makes multi-turn conversations reliable in a way that single-shot RAG cannot be. ",
+        "link": null
+       },
+       "annotations": {
+        "bold": false,
+        "italic": false,
+        "strikethrough": false,
+        "underline": false,
+        "code": false,
+        "color": "default"
+       },
+       "plain_text": "The Conversational Retrieval QA Chain improves on basic RAG by reformulating ambiguous follow-up queries into standalone questions before retrieval begins. This makes multi-turn conversations reliable in a way that single-shot RAG cannot be. ",
+       "href": null
+      }
+     ],
+     "icon": null,
+     "color": "default"
+    },
+    "archived": false
+   },
+   {
+    "object": "block",
+    "id": "37994183-19f3-80a8-95bc-d21816fc656f",
+    "parent": {
+     "type": "block_id",
+     "block_id": "37594183-19f3-8011-ae51-ec4a0d58064f"
+    },
+    "created_time": "2026-06-08T15:13:00.000Z",
+    "last_edited_time": "2026-06-08T15:13:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+     "rich_text": [
+      {
+       "type": "text",
+       "text": {
+        "content": "The reformulation depends entirely on the conversation history provided by the Buffer Window Memory node which is why memory configuration and retrieval configuration are not two separate concerns in your Chatflow. They are one connected system.",
+        "link": null
+       },
+       "annotations": {
+        "bold": false,
+        "italic": false,
+        "strikethrough": false,
+        "underline": false,
+        "code": false,
+        "color": "default"
+       },
+       "plain_text": "The reformulation depends entirely on the conversation history provided by the Buffer Window Memory node which is why memory configuration and retrieval configuration are not two separate concerns in your Chatflow. They are one connected system.",
+       "href": null
+      }
+     ],
+     "icon": null,
+     "color": "default"
+    },
+    "archived": false
+   }
+  ]
+ },
+ {
+  "object": "block",
+  "id": "36a94183-19f3-8065-a7c0-d9cf6d0d6625",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-803c-83e4-e02a37a62745"
+  },
+  "created_time": "2026-05-24T00:31:00.000Z",
+  "last_edited_time": "2026-05-24T00:31:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ }
+]

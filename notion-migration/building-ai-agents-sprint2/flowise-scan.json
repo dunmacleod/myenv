@@ -1,0 +1,34 @@
+[
+ {
+  "module": "B",
+  "lang": "EN",
+  "page": "What is a Document Store?",
+  "url": "https://app.notion.com/p/What-is-a-Document-Store-3669418319f3804497d0d4e89886eea3",
+  "where": "paragraph",
+  "text": "In n8n, a searchable knowledge base is built from connected components rather than a single Flowise Document Store screen. An ingestion workflow loads the source files, splits the text into chunks, generates embeddings, and writes the chunks and metadata into a vector store (for example Qdrant). A retrieval workflow searches that store and provides relevant passages to the AI Agent or a question-answering chain. The vector store is a separate service or supported storage integration; adding files to n8n does not automatically index them."
+ },
+ {
+  "module": "B",
+  "lang": "DE",
+  "page": "Was ist ein Document Store?",
+  "url": "https://app.notion.com/p/Was-ist-ein-Document-Store-3789418319f3803fbd05f2757fec58e8",
+  "where": "paragraph",
+  "text": "In n8n entsteht eine durchsuchbare Wissensbasis aus mehreren verbundenen Komponenten, nicht über eine zentrale Flowise-Document-Store-Oberfläche. Ein Ingestion-Workflow lädt die Dokumente, teilt sie in Chunks, erzeugt Embeddings und speichert Chunks samt Metadaten in einem Vector Store wie Qdrant. Ein Retrieval-Workflow durchsucht diesen Store und übergibt passende Textstellen an den AI Agent oder eine Frage-Antwort-Kette. Der Vector Store wird separat konfiguriert; ein Datei-Upload in n8n erstellt noch keinen Suchindex."
+ },
+ {
+  "module": "B",
+  "lang": "EN",
+  "page": "Connecting Qdrant Retrieval to the n8n AI Agent",
+  "url": "https://app.notion.com/p/Connecting-Qdrant-Retrieval-to-the-n8n-AI-Agent-3669418319f38072beffe31abfa04d3b",
+  "where": "paragraph",
+  "text": "Open the n8n instance and the Sprint 1 workflow Meridian Base Agent. Preserve its trigger, configured model, credentials, session handling, and response behavior. If the previous workflow was exported, import the saved n8n JSON rather than rebuilding a Flowise canvas."
+ },
+ {
+  "module": "B",
+  "lang": "DE",
+  "page": "Qdrant-Retrieval mit dem n8n AI Agent verbinden",
+  "url": "https://app.notion.com/p/Qdrant-Retrieval-mit-dem-n8n-AI-Agent-verbinden-3789418319f380d498f5e9d78796669d",
+  "where": "paragraph",
+  "text": "Öffne Meridian Base Agent aus Sprint 1 in n8n. Behalte Trigger, Modell, Credentials, Session-Konfiguration und Antwortlogik bei. Falls der Workflow exportiert wurde, importiere das n8n-JSON, statt den alten Flowise-Canvas nachzubauen."
+ }
+]
