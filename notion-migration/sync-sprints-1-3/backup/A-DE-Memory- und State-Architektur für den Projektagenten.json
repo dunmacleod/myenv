@@ -1,0 +1,5308 @@
+[
+ {
+  "object": "block",
+  "id": "bb589f71-181f-4469-af97-21b55926d417",
+  "parent": {
+   "type": "page_id",
+   "page_id": "e0694183-19f3-822d-981b-013d9f44d59d"
+  },
+  "created_time": "2026-07-03T13:12:00.000Z",
+  "last_edited_time": "2026-07-03T13:12:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Nordvik Freight koordiniert Gro\u00dfhandelslieferungen in Norwegen, Schweden und Finnland. Das Operations-Team bearbeitet jede Woche hunderte Lieferantenanfragen. Dazu geh\u00f6ren Fragen zu Preisfenstern, Routenverf\u00fcgbarkeit und Zoll-Compliance-Dokumentation. Bis jetzt wurden diese Anfragen manuell von drei Spezialistenteams bearbeitet. Nordviks Product Lead Astrid wurde damit beauftragt, das erste interne Multi-Agent-System des Unternehmens zu bauen, um diese Anfragen automatisch zu routen und zu beantworten.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Nordvik Freight koordiniert Gro\u00dfhandelslieferungen in Norwegen, Schweden und Finnland. Das Operations-Team bearbeitet jede Woche hunderte Lieferantenanfragen. Dazu geh\u00f6ren Fragen zu Preisfenstern, Routenverf\u00fcgbarkeit und Zoll-Compliance-Dokumentation. Bis jetzt wurden diese Anfragen manuell von drei Spezialistenteams bearbeitet. Nordviks Product Lead Astrid wurde damit beauftragt, das erste interne Multi-Agent-System des Unternehmens zu bauen, um diese Anfragen automatisch zu routen und zu beantworten.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "075838ec-ed82-4589-9856-06c5acc9aae2",
+  "parent": {
+   "type": "page_id",
+   "page_id": "e0694183-19f3-822d-981b-013d9f44d59d"
+  },
+  "created_time": "2026-07-03T13:12:00.000Z",
+  "last_edited_time": "2026-07-03T13:12:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Astrids Team hat eine Flowise-Agentflow-V2-Canvas mit folgender Struktur entworfen:",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Astrids Team hat eine Flowise-Agentflow-V2-Canvas mit folgender Struktur entworfen:",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "0221d056-5448-45fc-8c05-c63e099f69c7",
+  "parent": {
+   "type": "page_id",
+   "page_id": "e0694183-19f3-822d-981b-013d9f44d59d"
+  },
+  "created_time": "2026-07-03T13:12:00.000Z",
+  "last_edited_time": "2026-07-03T13:12:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Ein ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Ein ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "Classifier Agent",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Classifier Agent",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " (LLM-Node), der jede eingehende Lieferantenanfrage liest und in eine von drei Kategorien klassifiziert: ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " (LLM-Node), der jede eingehende Lieferantenanfrage liest und in eine von drei Kategorien klassifiziert: ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "pricing",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": true,
+      "color": "default"
+     },
+     "plain_text": "pricing",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": ", ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": ", ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "logistics",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": true,
+      "color": "default"
+     },
+     "plain_text": "logistics",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " oder ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " oder ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "compliance",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": true,
+      "color": "default"
+     },
+     "plain_text": "compliance",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": ". Er schreibt die Klassifizierung und den urspr\u00fcnglichen Anfragetext in Flow State.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": ". Er schreibt die Klassifizierung und den urspr\u00fcnglichen Anfragetext in Flow State.",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "c2ae776f-cc56-499e-8a84-15be9e0e1e85",
+  "parent": {
+   "type": "page_id",
+   "page_id": "e0694183-19f3-822d-981b-013d9f44d59d"
+  },
+  "created_time": "2026-07-03T13:12:00.000Z",
+  "last_edited_time": "2026-07-03T13:12:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Ein ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Ein ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "Condition-Node",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Condition-Node",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": ", der die Klassifizierung aus Flow State liest und zum passenden Spezialagenten routet.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": ", der die Klassifizierung aus Flow State liest und zum passenden Spezialagenten routet.",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "33463a53-1beb-4bf9-bc60-799a177e5795",
+  "parent": {
+   "type": "page_id",
+   "page_id": "e0694183-19f3-822d-981b-013d9f44d59d"
+  },
+  "created_time": "2026-07-03T13:12:00.000Z",
+  "last_edited_time": "2026-07-03T13:12:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Ein ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Ein ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "Pricing Agent",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Pricing Agent",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": ", ein ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": ", ein ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "Logistics Agent",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Logistics Agent",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " und ein ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " und ein ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "Compliance Agent.",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Compliance Agent.",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " Jeder ist so konfiguriert, dass er die Lieferantenanfrage aus Flow State als User-Message-Eingabe liest.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " Jeder ist so konfiguriert, dass er die Lieferantenanfrage aus Flow State als User-Message-Eingabe liest.",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "a8c7cab5-2001-4a20-b060-d670cb28ad8b",
+  "parent": {
+   "type": "page_id",
+   "page_id": "e0694183-19f3-822d-981b-013d9f44d59d"
+  },
+  "created_time": "2026-07-03T13:12:00.000Z",
+  "last_edited_time": "2026-07-03T13:12:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Ein ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Ein ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "Direct-Reply-Node",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Direct-Reply-Node",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " auf jedem Spezialistenpfad, der die Antwort des Agenten zur\u00fcckgibt.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " auf jedem Spezialistenpfad, der die Antwort des Agenten zur\u00fcckgibt.",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "dc394183-19f3-825b-8853-812c69cc86bb",
+  "parent": {
+   "type": "page_id",
+   "page_id": "e0694183-19f3-822d-981b-013d9f44d59d"
+  },
+  "created_time": "2026-07-03T13:02:00.000Z",
+  "last_edited_time": "2026-07-03T13:13:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "image",
+  "image": {
+   "caption": [],
+   "type": "file",
+   "file": {
+    "url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/3a9085c4-df29-45e6-8bc7-6c9c0a25ea8c/df369733-4079-4478-a452-b9bcaf855c6d/astrid_agentflow_canvas_de.svg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466XMLA67YS%2F20261022%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20261022T120024Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEKv%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJHMEUCICn%2FO1%2BsCDl9HmDZq8CelFh6alNIjt6hDCUBgcLdLEOnAiEAverIqX1FpDcHKDS3i9igI1ahodBrdnv52k96PNb5BMMq%2FwMIcxAAGgw2Mzc0MjMxODM4MDUiDPpjI%2BO%2Ft5FQ%2BqJJtSrcA4dEwAUu%2FrDEIuq6rKJoYX1IzcM2yymijX53AxfgZBq3vEYD6A773UTzWsNn2gCZZK1sGWu9M9bnqRRGZ%2FQRCA5BIY0E37RxQ4k5BAE4XENVEGcUB%2BsHfNzSMPAHvK4t5uQr27ITSesqMRW26Jh97kBdIPkwfcIZdLwDQf%2FGCoGE2QrsqE9cemX%2F8BUM%2FUb6dwvcXp2s4XvgKs2Ro3mGHk8So0j6Zd6rwHySGa5QhCHYUCURTOpahm6SlvbQa1%2FJGHwLYxBoZMfl8aNRXv7ghgWY11AJFEI32TkMP%2FxOKJgkbAExX3ArpMuPKKIQpO51bKqHC2zGpEAUSe5XfQXcwsQlazUk5qTKuIG04G27eYGrEp%2B6DDVfSBLlqLomxNnkPDxJE2XGoTYjttxx%2FvmbRaEa3AIlWIPuZ6AiBEX7sMTVyIAkEy49xqdPG9PPrRsJi72%2BvvIIWzyKvMKnYxikx6LD5pYN%2BwYSHxhm3XQ5SNc2NrnP8bBrruWtpHpJcOiKhkO1FksiSZYCiHlPzQhfvdo53VvTuRf%2Fp%2BQKfm0jlP8ZdafuKOfV0Gl9jasF%2BSt7VHrXghk16zkJsxYoFFHM2wr3Cc04FpplfH0JXiztaGb%2FdeMABbSgdt2lyr9ZMO%2FH59YGOqUBV4m1%2BV2F1ya2E5f%2FbaWh99If%2FFhgXSQtlOPxP6W7mfs2f9vTZpsXP530RTvBOO7%2Bb0AQs%2BQMSK6Jy1yR0FHqOIIWldwurZ6uvHUZjYkaONXHrnw1Xv%2FzxJtbvgJzIWgEJwItp2lQvMEe0rmaTG6qJAkzWLSeFzP7l7v7ZUsQBt1HsmhA%2BpTE21tQI5%2BXqebHPqILUITFd8biFj9Y0tPEBLL8ed58&X-Amz-Signature=668eb4f63d72668f2bae7a16f7ff210f7441da686e77284df6b2201a71088572&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+    "expiry_time": "2026-10-22T13:00:24.080Z"
+   }
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "6e4aa2db-201d-4591-b8f2-e643cc38d31e",
+  "parent": {
+   "type": "page_id",
+   "page_id": "e0694183-19f3-822d-981b-013d9f44d59d"
+  },
+  "created_time": "2026-07-03T13:13:00.000Z",
+  "last_edited_time": "2026-07-03T13:13:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Das System steht kurz vor dem Testing. Astrid hat dich gebeten, die Memory- und State-Architektur zu pr\u00fcfen, bevor die ersten echten Anfragen verarbeitet werden. Deine Aufgabe ist es, ein vollst\u00e4ndiges Architekturreview zu erstellen, indem du abdeckst, was geteilt und was privat ist, was nicht persistieren darf und wie Recovery aussieht, wenn etwas schiefgeht.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Das System steht kurz vor dem Testing. Astrid hat dich gebeten, die Memory- und State-Architektur zu pr\u00fcfen, bevor die ersten echten Anfragen verarbeitet werden. Deine Aufgabe ist es, ein vollst\u00e4ndiges Architekturreview zu erstellen, indem du abdeckst, was geteilt und was privat ist, was nicht persistieren darf und wie Recovery aussieht, wenn etwas schiefgeht.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "b45e7f25-2ea7-46b3-92bc-e3c76501774e",
+  "parent": {
+   "type": "page_id",
+   "page_id": "e0694183-19f3-822d-981b-013d9f44d59d"
+  },
+  "created_time": "2026-07-03T13:13:00.000Z",
+  "last_edited_time": "2026-07-03T13:13:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_2",
+  "heading_2": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Womit du arbeitest",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Womit du arbeitest",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "1e18629e-766f-4f69-a202-93f07ab1a264",
+  "parent": {
+   "type": "page_id",
+   "page_id": "e0694183-19f3-822d-981b-013d9f44d59d"
+  },
+  "created_time": "2026-07-03T13:13:00.000Z",
+  "last_edited_time": "2026-07-03T13:13:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Nordviks Canvas hat die folgende Flow-State-Konfiguration, wie sie auf dem Start-Node deklariert ist:",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Nordviks Canvas hat die folgende Flow-State-Konfiguration, wie sie auf dem Start-Node deklariert ist:",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "c4c5cbce-d768-4a4d-8d4e-c06492b58b80",
+  "parent": {
+   "type": "page_id",
+   "page_id": "e0694183-19f3-822d-981b-013d9f44d59d"
+  },
+  "created_time": "2026-07-03T13:13:00.000Z",
+  "last_edited_time": "2026-07-03T13:13:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": true,
+  "in_trash": false,
+  "type": "table",
+  "table": {
+   "table_width": 3,
+   "has_column_header": true,
+   "has_row_header": false
+  },
+  "archived": false,
+  "_children": [
+   {
+    "object": "block",
+    "id": "f67d6d96-69a3-4bcd-8a58-e9e1eca0bd6f",
+    "parent": {
+     "type": "block_id",
+     "block_id": "c4c5cbce-d768-4a4d-8d4e-c06492b58b80"
+    },
+    "created_time": "2026-07-03T13:13:00.000Z",
+    "last_edited_time": "2026-07-03T13:13:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "table_row",
+    "table_row": {
+     "cells": [
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Schl\u00fcssel",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Schl\u00fcssel",
+        "href": null
+       }
+      ],
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Standardwert",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Standardwert",
+        "href": null
+       }
+      ],
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Geschrieben von",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Geschrieben von",
+        "href": null
+       }
+      ]
+     ]
+    },
+    "archived": false
+   },
+   {
+    "object": "block",
+    "id": "bf8a21f1-d180-4a72-9245-8f9e05ea9763",
+    "parent": {
+     "type": "block_id",
+     "block_id": "c4c5cbce-d768-4a4d-8d4e-c06492b58b80"
+    },
+    "created_time": "2026-07-03T13:13:00.000Z",
+    "last_edited_time": "2026-07-03T13:13:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "table_row",
+    "table_row": {
+     "cells": [
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "query_category",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": true,
+         "color": "default"
+        },
+        "plain_text": "query_category",
+        "href": null
+       }
+      ],
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "unclassified",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": true,
+         "color": "default"
+        },
+        "plain_text": "unclassified",
+        "href": null
+       }
+      ],
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Classifier Agent (via Update Flow State)",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Classifier Agent (via Update Flow State)",
+        "href": null
+       }
+      ]
+     ]
+    },
+    "archived": false
+   },
+   {
+    "object": "block",
+    "id": "c5f258b4-eaec-4776-978a-6c81c3213110",
+    "parent": {
+     "type": "block_id",
+     "block_id": "c4c5cbce-d768-4a4d-8d4e-c06492b58b80"
+    },
+    "created_time": "2026-07-03T13:13:00.000Z",
+    "last_edited_time": "2026-07-03T13:13:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "table_row",
+    "table_row": {
+     "cells": [
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "supplier_query",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": true,
+         "color": "default"
+        },
+        "plain_text": "supplier_query",
+        "href": null
+       }
+      ],
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "(leerer String)",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": true,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "(leerer String)",
+        "href": null
+       }
+      ],
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Classifier Agent (via Update Flow State)",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Classifier Agent (via Update Flow State)",
+        "href": null
+       }
+      ]
+     ]
+    },
+    "archived": false
+   },
+   {
+    "object": "block",
+    "id": "3936ae92-9b27-4aa8-832e-51d2939d3079",
+    "parent": {
+     "type": "block_id",
+     "block_id": "c4c5cbce-d768-4a4d-8d4e-c06492b58b80"
+    },
+    "created_time": "2026-07-03T13:13:00.000Z",
+    "last_edited_time": "2026-07-03T13:13:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "table_row",
+    "table_row": {
+     "cells": [
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "urgency",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": true,
+         "color": "default"
+        },
+        "plain_text": "urgency",
+        "href": null
+       }
+      ],
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "normal",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": true,
+         "color": "default"
+        },
+        "plain_text": "normal",
+        "href": null
+       }
+      ],
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Classifier Agent (via Update Flow State)",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Classifier Agent (via Update Flow State)",
+        "href": null
+       }
+      ]
+     ]
+    },
+    "archived": false
+   }
+  ]
+ },
+ {
+  "object": "block",
+  "id": "a0795a2c-54aa-4699-8b1a-40d5da1d06c3",
+  "parent": {
+   "type": "page_id",
+   "page_id": "e0694183-19f3-822d-981b-013d9f44d59d"
+  },
+  "created_time": "2026-07-03T13:13:00.000Z",
+  "last_edited_time": "2026-07-03T13:13:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Das Structured-Output-Schema des Classifier:",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Das Structured-Output-Schema des Classifier:",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "1c5b6fe3-f1ac-485b-8f45-8869cedae59d",
+  "parent": {
+   "type": "page_id",
+   "page_id": "e0694183-19f3-822d-981b-013d9f44d59d"
+  },
+  "created_time": "2026-07-03T13:13:00.000Z",
+  "last_edited_time": "2026-07-03T13:13:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": true,
+  "in_trash": false,
+  "type": "table",
+  "table": {
+   "table_width": 3,
+   "has_column_header": true,
+   "has_row_header": false
+  },
+  "archived": false,
+  "_children": [
+   {
+    "object": "block",
+    "id": "cd39f595-5620-48dc-9126-faad220e8c2c",
+    "parent": {
+     "type": "block_id",
+     "block_id": "1c5b6fe3-f1ac-485b-8f45-8869cedae59d"
+    },
+    "created_time": "2026-07-03T13:13:00.000Z",
+    "last_edited_time": "2026-07-03T13:13:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "table_row",
+    "table_row": {
+     "cells": [
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Schl\u00fcssel",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Schl\u00fcssel",
+        "href": null
+       }
+      ],
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Typ",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Typ",
+        "href": null
+       }
+      ],
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Werte",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Werte",
+        "href": null
+       }
+      ]
+     ]
+    },
+    "archived": false
+   },
+   {
+    "object": "block",
+    "id": "5e811aca-2401-46af-93ff-2210cf1d3299",
+    "parent": {
+     "type": "block_id",
+     "block_id": "1c5b6fe3-f1ac-485b-8f45-8869cedae59d"
+    },
+    "created_time": "2026-07-03T13:13:00.000Z",
+    "last_edited_time": "2026-07-03T13:13:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "table_row",
+    "table_row": {
+     "cells": [
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "query_category",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": true,
+         "color": "default"
+        },
+        "plain_text": "query_category",
+        "href": null
+       }
+      ],
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "enum",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "enum",
+        "href": null
+       }
+      ],
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "pricing",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": true,
+         "color": "default"
+        },
+        "plain_text": "pricing",
+        "href": null
+       },
+       {
+        "type": "text",
+        "text": {
+         "content": ", ",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": ", ",
+        "href": null
+       },
+       {
+        "type": "text",
+        "text": {
+         "content": "logistics",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": true,
+         "color": "default"
+        },
+        "plain_text": "logistics",
+        "href": null
+       },
+       {
+        "type": "text",
+        "text": {
+         "content": ", ",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": ", ",
+        "href": null
+       },
+       {
+        "type": "text",
+        "text": {
+         "content": "compliance",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": true,
+         "color": "default"
+        },
+        "plain_text": "compliance",
+        "href": null
+       },
+       {
+        "type": "text",
+        "text": {
+         "content": ", ",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": ", ",
+        "href": null
+       },
+       {
+        "type": "text",
+        "text": {
+         "content": "unclassified",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": true,
+         "color": "default"
+        },
+        "plain_text": "unclassified",
+        "href": null
+       }
+      ]
+     ]
+    },
+    "archived": false
+   },
+   {
+    "object": "block",
+    "id": "a19787a5-7e6e-4742-9d65-36e66cfd755e",
+    "parent": {
+     "type": "block_id",
+     "block_id": "1c5b6fe3-f1ac-485b-8f45-8869cedae59d"
+    },
+    "created_time": "2026-07-03T13:13:00.000Z",
+    "last_edited_time": "2026-07-03T13:13:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "table_row",
+    "table_row": {
+     "cells": [
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "supplier_query",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": true,
+         "color": "default"
+        },
+        "plain_text": "supplier_query",
+        "href": null
+       }
+      ],
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "string",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "string",
+        "href": null
+       }
+      ],
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Die urspr\u00fcngliche Anfrage wortgetreu",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Die urspr\u00fcngliche Anfrage wortgetreu",
+        "href": null
+       }
+      ]
+     ]
+    },
+    "archived": false
+   },
+   {
+    "object": "block",
+    "id": "071f4c14-0bec-420e-9104-adf272dec757",
+    "parent": {
+     "type": "block_id",
+     "block_id": "1c5b6fe3-f1ac-485b-8f45-8869cedae59d"
+    },
+    "created_time": "2026-07-03T13:13:00.000Z",
+    "last_edited_time": "2026-07-03T13:13:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "table_row",
+    "table_row": {
+     "cells": [
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "urgency",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": true,
+         "color": "default"
+        },
+        "plain_text": "urgency",
+        "href": null
+       }
+      ],
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "enum",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "enum",
+        "href": null
+       }
+      ],
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "high",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": true,
+         "color": "default"
+        },
+        "plain_text": "high",
+        "href": null
+       },
+       {
+        "type": "text",
+        "text": {
+         "content": ", ",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": ", ",
+        "href": null
+       },
+       {
+        "type": "text",
+        "text": {
+         "content": "normal",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": true,
+         "color": "default"
+        },
+        "plain_text": "normal",
+        "href": null
+       }
+      ]
+     ]
+    },
+    "archived": false
+   }
+  ]
+ },
+ {
+  "object": "block",
+  "id": "6e85a200-feab-423d-943e-ec4fc98a0edb",
+  "parent": {
+   "type": "page_id",
+   "page_id": "e0694183-19f3-822d-981b-013d9f44d59d"
+  },
+  "created_time": "2026-07-03T13:13:00.000Z",
+  "last_edited_time": "2026-07-03T13:13:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Jeder Spezialagent hat ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Jeder Spezialagent hat ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "allMessages",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": true,
+      "color": "default"
+     },
+     "plain_text": "allMessages",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "-Memory aktiviert und liest ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "-Memory aktiviert und liest ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "{{$flow.state.supplier_query}}",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": true,
+      "color": "default"
+     },
+     "plain_text": "{{$flow.state.supplier_query}}",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " als seine User-Message-Eingabe.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " als seine User-Message-Eingabe.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "35cafd14-e0dd-42d3-9d2e-20b3ea637aba",
+  "parent": {
+   "type": "page_id",
+   "page_id": "e0694183-19f3-822d-981b-013d9f44d59d"
+  },
+  "created_time": "2026-07-03T13:13:00.000Z",
+  "last_edited_time": "2026-07-03T13:13:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Der Compliance Agent schreibt zus\u00e4tzlich \u00fcber seine eigene ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Der Compliance Agent schreibt zus\u00e4tzlich \u00fcber seine eigene ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "llmUpdateState",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": true,
+      "color": "default"
+     },
+     "plain_text": "llmUpdateState",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "-Konfiguration einen Wert in ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "-Konfiguration einen Wert in ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "$flow.state",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": true,
+      "color": "default"
+     },
+     "plain_text": "$flow.state",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": ": Er schreibt ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": ": Er schreibt ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "compliance_flag: \"review_required\"",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": true,
+      "color": "default"
+     },
+     "plain_text": "compliance_flag: \"review_required\"",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": ", wenn er eine Anfrage erkennt, die eine manuelle regulatorische Pr\u00fcfung erfordern k\u00f6nnte.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": ", wenn er eine Anfrage erkennt, die eine manuelle regulatorische Pr\u00fcfung erfordern k\u00f6nnte.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "aef1bd86-d830-4cc2-bf5c-5d79c330c148",
+  "parent": {
+   "type": "page_id",
+   "page_id": "e0694183-19f3-822d-981b-013d9f44d59d"
+  },
+  "created_time": "2026-07-03T13:13:00.000Z",
+  "last_edited_time": "2026-07-03T13:13:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Derzeit gibt es keinen Fallback-Branch im Condition-Node f\u00fcr ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Derzeit gibt es keinen Fallback-Branch im Condition-Node f\u00fcr ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "unclassified",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": true,
+      "color": "default"
+     },
+     "plain_text": "unclassified",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": ".",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": ".",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "77bb2719-9f61-4fc4-a811-1d69cac8ed75",
+  "parent": {
+   "type": "page_id",
+   "page_id": "e0694183-19f3-822d-981b-013d9f44d59d"
+  },
+  "created_time": "2026-07-03T13:13:00.000Z",
+  "last_edited_time": "2026-07-03T13:13:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_2",
+  "heading_2": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Behalte bei der Arbeit diese Fragen im Blick",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Behalte bei der Arbeit diese Fragen im Blick",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "63b3bff3-aaa9-4bb7-a4d6-15dcc4d3c50c",
+  "parent": {
+   "type": "page_id",
+   "page_id": "e0694183-19f3-822d-981b-013d9f44d59d"
+  },
+  "created_time": "2026-07-03T13:13:00.000Z",
+  "last_edited_time": "2026-07-03T13:13:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Lies die Canvas-Beschreibung oben sorgf\u00e4ltig durch, bevor du die Aufgaben unten bearbeitest. \u00dcberlege:",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Lies die Canvas-Beschreibung oben sorgf\u00e4ltig durch, bevor du die Aufgaben unten bearbeitest. \u00dcberlege:",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "998cd209-bf68-4ab7-a141-694b468fc4ee",
+  "parent": {
+   "type": "page_id",
+   "page_id": "e0694183-19f3-822d-981b-013d9f44d59d"
+  },
+  "created_time": "2026-07-03T13:13:00.000Z",
+  "last_edited_time": "2026-07-03T13:13:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Welche Flow-State-Schl\u00fcssel werden zwischen Agenten geteilt; und welche Agenten brauchen welchen Schl\u00fcssel?",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Welche Flow-State-Schl\u00fcssel werden zwischen Agenten geteilt; und welche Agenten brauchen welchen Schl\u00fcssel?",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "d9aa7e11-b911-4c3b-a755-5e2d87eeef64",
+  "parent": {
+   "type": "page_id",
+   "page_id": "e0694183-19f3-822d-981b-013d9f44d59d"
+  },
+  "created_time": "2026-07-03T13:13:00.000Z",
+  "last_edited_time": "2026-07-03T13:13:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Welche Informationselemente sind turn-scoped, session-scoped oder Kandidaten f\u00fcr persistente Speicherung?",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Welche Informationselemente sind turn-scoped, session-scoped oder Kandidaten f\u00fcr persistente Speicherung?",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "f63ae9aa-fe03-467f-a442-a7e9639e887d",
+  "parent": {
+   "type": "page_id",
+   "page_id": "e0694183-19f3-822d-981b-013d9f44d59d"
+  },
+  "created_time": "2026-07-03T13:13:00.000Z",
+  "last_edited_time": "2026-07-03T13:13:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Was passiert mit jedem Schl\u00fcssel, wenn der Classifier scheitert, bevor er in ihn schreibt?",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Was passiert mit jedem Schl\u00fcssel, wenn der Classifier scheitert, bevor er in ihn schreibt?",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "f04a581e-7e03-47db-b3f5-ec2d3878b479",
+  "parent": {
+   "type": "page_id",
+   "page_id": "e0694183-19f3-822d-981b-013d9f44d59d"
+  },
+  "created_time": "2026-07-03T13:13:00.000Z",
+  "last_edited_time": "2026-07-03T13:13:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Was bedeutet der ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Was bedeutet der ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "compliance_flag",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": true,
+      "color": "default"
+     },
+     "plain_text": "compliance_flag",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "Schreibvorgang des Compliance Agent f\u00fcr die anderen Agenten in derselben Session?",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Schreibvorgang des Compliance Agent f\u00fcr die anderen Agenten in derselben Session?",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "89433d58-46b3-42fd-82be-045e56bcc74b",
+  "parent": {
+   "type": "page_id",
+   "page_id": "e0694183-19f3-822d-981b-013d9f44d59d"
+  },
+  "created_time": "2026-07-03T13:13:00.000Z",
+  "last_edited_time": "2026-07-03T13:13:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Ist das Fehlen eines ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Ist das Fehlen eines ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "unclassified",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": true,
+      "color": "default"
+     },
+     "plain_text": "unclassified",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "Fallbacks eine Designl\u00fccke oder ein akzeptables Risiko f\u00fcr dieses System?",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Fallbacks eine Designl\u00fccke oder ein akzeptables Risiko f\u00fcr dieses System?",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "f0d484e9-7fea-490d-b5c0-9148d248757d",
+  "parent": {
+   "type": "page_id",
+   "page_id": "e0694183-19f3-822d-981b-013d9f44d59d"
+  },
+  "created_time": "2026-07-03T13:13:00.000Z",
+  "last_edited_time": "2026-07-03T13:13:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Du musst diese Fragen nicht direkt beantworten. Sie sind diagnostische Prompts. Nutze sie, um deine Analyse \u00fcber die vier Aufgaben hinweg zu steuern.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Du musst diese Fragen nicht direkt beantworten. Sie sind diagnostische Prompts. Nutze sie, um deine Analyse \u00fcber die vier Aufgaben hinweg zu steuern.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "33f8a172-deee-40c3-be69-5929578d52e5",
+  "parent": {
+   "type": "page_id",
+   "page_id": "e0694183-19f3-822d-981b-013d9f44d59d"
+  },
+  "created_time": "2026-07-03T13:13:00.000Z",
+  "last_edited_time": "2026-07-03T13:13:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_2",
+  "heading_2": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Schnelldiagnose",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Schnelldiagnose",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "8e194183-19f3-8355-96c2-019bb668f212",
+  "parent": {
+   "type": "page_id",
+   "page_id": "e0694183-19f3-822d-981b-013d9f44d59d"
+  },
+  "created_time": "2026-07-03T13:02:00.000Z",
+  "last_edited_time": "2026-07-04T19:29:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "callout",
+  "callout": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Bevor du beginnst, erstelle eine Kopie von ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Bevor du beginnst, erstelle eine Kopie von ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "dieser Vorlage",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "dieser Vorlage",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": ". Sie folgt dem Aufbau dieser Lektion: ein Tab mit dem Canvas-Kontext, dann ein Tab pro Aufgabe (A: Boundary Map, B: was nicht persistieren darf, C: State Recovery, D: Fehlerisolation), und ein finales Checksheet.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": ". Sie folgt dem Aufbau dieser Lektion: ein Tab mit dem Canvas-Kontext, dann ein Tab pro Aufgabe (A: Boundary Map, B: was nicht persistieren darf, C: State Recovery, D: Fehlerisolation), und ein finales Checksheet.",
+     "href": null
+    }
+   ],
+   "icon": {
+    "type": "emoji",
+    "emoji": "\ud83d\udd25"
+   },
+   "color": "green_background"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "ad494183-19f3-8267-99f6-8184f3a627b6",
+  "parent": {
+   "type": "page_id",
+   "page_id": "e0694183-19f3-822d-981b-013d9f44d59d"
+  },
+  "created_time": "2026-07-03T13:02:00.000Z",
+  "last_edited_time": "2026-07-03T13:14:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_3",
+  "heading_3": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Frage 1",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Frage 1",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "39494183-19f3-80d9-8ec0-e4e844cf08af",
+  "parent": {
+   "type": "page_id",
+   "page_id": "e0694183-19f3-822d-981b-013d9f44d59d"
+  },
+  "created_time": "2026-07-05T13:23:00.000Z",
+  "last_edited_time": "2026-07-05T13:23:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": true,
+  "in_trash": false,
+  "type": "callout",
+  "callout": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Der Logistics Agent ist mit aktivierter ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Der Logistics Agent ist mit aktivierter ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "allMessages",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": true,
+      "color": "default"
+     },
+     "plain_text": "allMessages",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "-Memory konfiguriert und liest ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "-Memory konfiguriert und liest ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "{{$flow.state.supplier_query}}",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": true,
+      "color": "default"
+     },
+     "plain_text": "{{$flow.state.supplier_query}}",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " als seine User Message. Ein Lieferant sendet zwei Anfragen in derselben Session; zuerst zu Pricing, dann zur Routenverf\u00fcgbarkeit. Was erh\u00e4lt der Logistics Agent bei der zweiten Anfrage als User-Message-Eingabe?",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " als seine User Message. Ein Lieferant sendet zwei Anfragen in derselben Session; zuerst zu Pricing, dann zur Routenverf\u00fcgbarkeit. Was erh\u00e4lt der Logistics Agent bei der zweiten Anfrage als User-Message-Eingabe?",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "gray_background"
+  },
+  "archived": false,
+  "_children": [
+   {
+    "object": "block",
+    "id": "39494183-19f3-80f8-8069-f61b3464597a",
+    "parent": {
+     "type": "block_id",
+     "block_id": "39494183-19f3-80d9-8ec0-e4e844cf08af"
+    },
+    "created_time": "2026-07-05T13:23:00.000Z",
+    "last_edited_time": "2026-07-05T13:23:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "embed",
+    "embed": {
+     "caption": [],
+     "url": "https://app.masterschool.com/campus/multi-choice-question/bdfb2cb8-f4dd-4164-8c6a-b14f8713319e"
+    },
+    "archived": false
+   }
+  ]
+ },
+ {
+  "object": "block",
+  "id": "a6d94d5b-7701-49c9-936e-bb708ce56165",
+  "parent": {
+   "type": "page_id",
+   "page_id": "e0694183-19f3-822d-981b-013d9f44d59d"
+  },
+  "created_time": "2026-07-03T13:14:00.000Z",
+  "last_edited_time": "2026-07-03T13:14:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_3",
+  "heading_3": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Frage 2",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Frage 2",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "39494183-19f3-80c0-87eb-cbe35f508971",
+  "parent": {
+   "type": "page_id",
+   "page_id": "e0694183-19f3-822d-981b-013d9f44d59d"
+  },
+  "created_time": "2026-07-05T13:24:00.000Z",
+  "last_edited_time": "2026-07-05T13:24:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": true,
+  "in_trash": false,
+  "type": "callout",
+  "callout": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Der Compliance Agent schreibt ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Der Compliance Agent schreibt ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "compliance_flag: \"review_required\"",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": true,
+      "color": "default"
+     },
+     "plain_text": "compliance_flag: \"review_required\"",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " in Flow State, wenn er ein regulatorisches Problem erkennt. Im n\u00e4chsten Turn derselben Session sendet der Lieferant eine Pricing-Anfrage. Der Classifier l\u00e4uft und routet zum Pricing Agent. Welches Risiko erzeugt der Schl\u00fcssel ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " in Flow State, wenn er ein regulatorisches Problem erkennt. Im n\u00e4chsten Turn derselben Session sendet der Lieferant eine Pricing-Anfrage. Der Classifier l\u00e4uft und routet zum Pricing Agent. Welches Risiko erzeugt der Schl\u00fcssel ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "compliance_flag",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": true,
+      "color": "default"
+     },
+     "plain_text": "compliance_flag",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "?",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "?",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "gray_background"
+  },
+  "archived": false,
+  "_children": [
+   {
+    "object": "block",
+    "id": "39494183-19f3-801e-bfd4-f3d185900f1f",
+    "parent": {
+     "type": "block_id",
+     "block_id": "39494183-19f3-80c0-87eb-cbe35f508971"
+    },
+    "created_time": "2026-07-05T13:24:00.000Z",
+    "last_edited_time": "2026-07-05T13:24:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "embed",
+    "embed": {
+     "caption": [],
+     "url": "https://app.masterschool.com/campus/multi-choice-question/299017fa-696d-4573-ae2d-da6a1a0d9335"
+    },
+    "archived": false
+   }
+  ]
+ },
+ {
+  "object": "block",
+  "id": "f20fc6c9-346e-489e-af31-3ce02001606e",
+  "parent": {
+   "type": "page_id",
+   "page_id": "e0694183-19f3-822d-981b-013d9f44d59d"
+  },
+  "created_time": "2026-07-03T13:14:00.000Z",
+  "last_edited_time": "2026-07-03T13:14:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_3",
+  "heading_3": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Frage 3",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Frage 3",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "39494183-19f3-809b-b8dc-d85f79b51b55",
+  "parent": {
+   "type": "page_id",
+   "page_id": "e0694183-19f3-822d-981b-013d9f44d59d"
+  },
+  "created_time": "2026-07-05T13:28:00.000Z",
+  "last_edited_time": "2026-07-05T13:28:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": true,
+  "in_trash": false,
+  "type": "callout",
+  "callout": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Nordviks Canvas hat keinen Fallback-Branch im Condition-Node f\u00fcr ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Nordviks Canvas hat keinen Fallback-Branch im Condition-Node f\u00fcr ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "unclassified",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": true,
+      "color": "default"
+     },
+     "plain_text": "unclassified",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": ". Ein Lieferant sendet die Nachricht ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": ". Ein Lieferant sendet die Nachricht ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "\"Hello, is anyone there?\"",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": true,
+      "color": "default"
+     },
+     "plain_text": "\"Hello, is anyone there?\"",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": ". Der Classifier gibt ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": ". Der Classifier gibt ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "query_category: \"unclassified\"",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": true,
+      "color": "default"
+     },
+     "plain_text": "query_category: \"unclassified\"",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " zur\u00fcck. Was passiert?",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " zur\u00fcck. Was passiert?",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "gray_background"
+  },
+  "archived": false,
+  "_children": [
+   {
+    "object": "block",
+    "id": "39494183-19f3-8031-bdb1-d529ec355215",
+    "parent": {
+     "type": "block_id",
+     "block_id": "39494183-19f3-809b-b8dc-d85f79b51b55"
+    },
+    "created_time": "2026-07-05T13:28:00.000Z",
+    "last_edited_time": "2026-07-05T13:28:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "embed",
+    "embed": {
+     "caption": [],
+     "url": "https://app.masterschool.com/campus/multi-choice-question/8df46cb0-a9ac-4de3-89ae-3c436cae5831"
+    },
+    "archived": false
+   }
+  ]
+ },
+ {
+  "object": "block",
+  "id": "507c4397-f5e9-4678-ac07-7ab5fc0babcc",
+  "parent": {
+   "type": "page_id",
+   "page_id": "e0694183-19f3-822d-981b-013d9f44d59d"
+  },
+  "created_time": "2026-07-03T13:14:00.000Z",
+  "last_edited_time": "2026-07-03T13:14:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_2",
+  "heading_2": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Aufgabe A: Die Memory-Grenzen kartieren",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Aufgabe A: Die Memory-Grenzen kartieren",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "2dc14320-d5ec-4b22-8d1b-8cf8fe6eb2bc",
+  "parent": {
+   "type": "page_id",
+   "page_id": "e0694183-19f3-822d-981b-013d9f44d59d"
+  },
+  "created_time": "2026-07-03T13:14:00.000Z",
+  "last_edited_time": "2026-07-03T13:14:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Erstelle f\u00fcr die Nordvik-Canvas eine Memory Boundary Map, die jedes Informationselement abdeckt, das sich zwischen Agenten bewegt. Nutze das Drei-Spalten-Format unten.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Erstelle f\u00fcr die Nordvik-Canvas eine Memory Boundary Map, die jedes Informationselement abdeckt, das sich zwischen Agenten bewegt. Nutze das Drei-Spalten-Format unten.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "1e4a6768-8fd3-4ce2-87c5-21ca7c10985d",
+  "parent": {
+   "type": "page_id",
+   "page_id": "e0694183-19f3-822d-981b-013d9f44d59d"
+  },
+  "created_time": "2026-07-03T13:14:00.000Z",
+  "last_edited_time": "2026-07-03T13:15:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": true,
+  "in_trash": false,
+  "type": "table",
+  "table": {
+   "table_width": 3,
+   "has_column_header": false,
+   "has_row_header": false
+  },
+  "archived": false,
+  "_children": [
+   {
+    "object": "block",
+    "id": "dcbc097d-de71-433b-ab45-305058ae363c",
+    "parent": {
+     "type": "block_id",
+     "block_id": "1e4a6768-8fd3-4ce2-87c5-21ca7c10985d"
+    },
+    "created_time": "2026-07-03T13:14:00.000Z",
+    "last_edited_time": "2026-07-03T13:14:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "table_row",
+    "table_row": {
+     "cells": [
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Information",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Information",
+        "href": null
+       }
+      ],
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Geteilt oder privat",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Geteilt oder privat",
+        "href": null
+       }
+      ],
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Persistenz-Scope",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Persistenz-Scope",
+        "href": null
+       }
+      ]
+     ]
+    },
+    "archived": false
+   },
+   {
+    "object": "block",
+    "id": "846e8c72-9882-41e6-a89e-95371c59c42e",
+    "parent": {
+     "type": "block_id",
+     "block_id": "1e4a6768-8fd3-4ce2-87c5-21ca7c10985d"
+    },
+    "created_time": "2026-07-03T13:14:00.000Z",
+    "last_edited_time": "2026-07-03T13:14:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "table_row",
+    "table_row": {
+     "cells": [
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "query_category",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": true,
+         "color": "default"
+        },
+        "plain_text": "query_category",
+        "href": null
+       }
+      ],
+      [],
+      []
+     ]
+    },
+    "archived": false
+   },
+   {
+    "object": "block",
+    "id": "ed94231e-c306-470a-ac1e-044531a55aea",
+    "parent": {
+     "type": "block_id",
+     "block_id": "1e4a6768-8fd3-4ce2-87c5-21ca7c10985d"
+    },
+    "created_time": "2026-07-03T13:14:00.000Z",
+    "last_edited_time": "2026-07-03T13:14:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "table_row",
+    "table_row": {
+     "cells": [
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "supplier_query",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": true,
+         "color": "default"
+        },
+        "plain_text": "supplier_query",
+        "href": null
+       }
+      ],
+      [],
+      []
+     ]
+    },
+    "archived": false
+   },
+   {
+    "object": "block",
+    "id": "911f2b51-49fc-43d7-b8f5-5353888cdc11",
+    "parent": {
+     "type": "block_id",
+     "block_id": "1e4a6768-8fd3-4ce2-87c5-21ca7c10985d"
+    },
+    "created_time": "2026-07-03T13:14:00.000Z",
+    "last_edited_time": "2026-07-03T13:14:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "table_row",
+    "table_row": {
+     "cells": [
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "urgency",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": true,
+         "color": "default"
+        },
+        "plain_text": "urgency",
+        "href": null
+       }
+      ],
+      [],
+      []
+     ]
+    },
+    "archived": false
+   },
+   {
+    "object": "block",
+    "id": "04605350-f12f-46c3-8bfe-f6b66722588e",
+    "parent": {
+     "type": "block_id",
+     "block_id": "1e4a6768-8fd3-4ce2-87c5-21ca7c10985d"
+    },
+    "created_time": "2026-07-03T13:14:00.000Z",
+    "last_edited_time": "2026-07-03T13:14:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "table_row",
+    "table_row": {
+     "cells": [
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "compliance_flag",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": true,
+         "color": "default"
+        },
+        "plain_text": "compliance_flag",
+        "href": null
+       }
+      ],
+      [],
+      []
+     ]
+    },
+    "archived": false
+   },
+   {
+    "object": "block",
+    "id": "8db81431-05fe-41b5-8dab-abfe754f2d29",
+    "parent": {
+     "type": "block_id",
+     "block_id": "1e4a6768-8fd3-4ce2-87c5-21ca7c10985d"
+    },
+    "created_time": "2026-07-03T13:14:00.000Z",
+    "last_edited_time": "2026-07-03T13:14:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "table_row",
+    "table_row": {
+     "cells": [
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "System-Prompt jedes Spezialagenten",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "System-Prompt jedes Spezialagenten",
+        "href": null
+       }
+      ],
+      [],
+      []
+     ]
+    },
+    "archived": false
+   },
+   {
+    "object": "block",
+    "id": "3d67f7fc-8703-44cd-b0e0-401d6de8c0cf",
+    "parent": {
+     "type": "block_id",
+     "block_id": "1e4a6768-8fd3-4ce2-87c5-21ca7c10985d"
+    },
+    "created_time": "2026-07-03T13:14:00.000Z",
+    "last_edited_time": "2026-07-03T13:14:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "table_row",
+    "table_row": {
+     "cells": [
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "allMessages",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": true,
+         "color": "default"
+        },
+        "plain_text": "allMessages",
+        "href": null
+       },
+       {
+        "type": "text",
+        "text": {
+         "content": "-Konversationshistorie",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "-Konversationshistorie",
+        "href": null
+       }
+      ],
+      [],
+      []
+     ]
+    },
+    "archived": false
+   }
+  ]
+ },
+ {
+  "object": "block",
+  "id": "749f375a-bc0d-4114-81c7-5e4b3ecb3a19",
+  "parent": {
+   "type": "page_id",
+   "page_id": "e0694183-19f3-822d-981b-013d9f44d59d"
+  },
+  "created_time": "2026-07-03T13:14:00.000Z",
+  "last_edited_time": "2026-07-03T13:14:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "F\u00fcr jede Zeile:",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "F\u00fcr jede Zeile:",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "77b317d1-8e38-4024-852f-f93ace60f3aa",
+  "parent": {
+   "type": "page_id",
+   "page_id": "e0694183-19f3-822d-981b-013d9f44d59d"
+  },
+  "created_time": "2026-07-03T13:14:00.000Z",
+  "last_edited_time": "2026-07-03T13:14:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Geteilt oder privat:",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Geteilt oder privat:",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " Gib an, ob die Information geteilt ist (von mehr als einem Node in der Canvas lesbar), privat ist (nur vom Agenten lesbar, der sie erzeugt hat) oder geteilt mit Bedingungen ist (von mehreren Nodes lesbar, aber mit einer Einschr\u00e4nkung, welche Agenten danach handeln sollten).",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " Gib an, ob die Information geteilt ist (von mehr als einem Node in der Canvas lesbar), privat ist (nur vom Agenten lesbar, der sie erzeugt hat) oder geteilt mit Bedingungen ist (von mehreren Nodes lesbar, aber mit einer Einschr\u00e4nkung, welche Agenten danach handeln sollten).",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "fa11c4a3-1982-4670-8fec-4e6d1269c43d",
+  "parent": {
+   "type": "page_id",
+   "page_id": "e0694183-19f3-822d-981b-013d9f44d59d"
+  },
+  "created_time": "2026-07-03T13:14:00.000Z",
+  "last_edited_time": "2026-07-03T13:14:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Persistenz-Scope:",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Persistenz-Scope:",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " Gib an, ob die Information turn-scoped ist (nur f\u00fcr den Agenten-Turn g\u00fcltig, der sie erzeugt hat), session-scoped ist (f\u00fcr die aktuelle Session g\u00fcltig) oder \u00fcber Sessions hinweg persistieren sollte (und falls ja, warum).",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " Gib an, ob die Information turn-scoped ist (nur f\u00fcr den Agenten-Turn g\u00fcltig, der sie erzeugt hat), session-scoped ist (f\u00fcr die aktuelle Session g\u00fcltig) oder \u00fcber Sessions hinweg persistieren sollte (und falls ja, warum).",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "39394183-19f3-80ce-9879-e69a109a45e2",
+  "parent": {
+   "type": "page_id",
+   "page_id": "e0694183-19f3-822d-981b-013d9f44d59d"
+  },
+  "created_time": "2026-07-04T19:34:00.000Z",
+  "last_edited_time": "2026-07-04T19:34:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Passt das aktuelle Canvas-Design bei einer Zeile nicht zu deinem empfohlenen Design, notier die L\u00fccke in einem einzeiligen Kommentar darunter. Zum Beispiel, wenn ein Wert derzeit geteilt ist, aber eigentlich privat sein sollte, oder session-scoped ist, aber eigentlich turn-scoped sein sollte.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Passt das aktuelle Canvas-Design bei einer Zeile nicht zu deinem empfohlenen Design, notier die L\u00fccke in einem einzeiligen Kommentar darunter. Zum Beispiel, wenn ein Wert derzeit geteilt ist, aber eigentlich privat sein sollte, oder session-scoped ist, aber eigentlich turn-scoped sein sollte.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "719394f8-3767-463a-b4f2-4e4789ba9b3e",
+  "parent": {
+   "type": "page_id",
+   "page_id": "e0694183-19f3-822d-981b-013d9f44d59d"
+  },
+  "created_time": "2026-07-03T13:14:00.000Z",
+  "last_edited_time": "2026-07-03T13:14:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_2",
+  "heading_2": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Aufgabe B: Identifizieren, was nicht persistieren darf",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Aufgabe B: Identifizieren, was nicht persistieren darf",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "552d78b6-6a10-459c-8d33-1f0f2b821386",
+  "parent": {
+   "type": "page_id",
+   "page_id": "e0694183-19f3-822d-981b-013d9f44d59d"
+  },
+  "created_time": "2026-07-03T13:14:00.000Z",
+  "last_edited_time": "2026-07-03T13:14:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Drei Informationselemente in der Nordvik-Canvas sind Kandidaten f\u00fcr die Kategorie \u201edarf nicht persistieren\". Identifiziere sie, gib an, in welche der vier Kategorien sie fallen (fl\u00fcchtiger Identifikator, abgeleitete Annahme, beil\u00e4ufig geteilte PII oder Arbeitskontext), und schreibe einen Satz dazu, wie du verhindern w\u00fcrdest, dass sie \u00fcber den angemessenen Scope hinaus persistieren.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Drei Informationselemente in der Nordvik-Canvas sind Kandidaten f\u00fcr die Kategorie \u201edarf nicht persistieren\". Identifiziere sie, gib an, in welche der vier Kategorien sie fallen (fl\u00fcchtiger Identifikator, abgeleitete Annahme, beil\u00e4ufig geteilte PII oder Arbeitskontext), und schreibe einen Satz dazu, wie du verhindern w\u00fcrdest, dass sie \u00fcber den angemessenen Scope hinaus persistieren.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "212e797e-0861-4e8d-80c2-14cd8c094903",
+  "parent": {
+   "type": "page_id",
+   "page_id": "e0694183-19f3-822d-981b-013d9f44d59d"
+  },
+  "created_time": "2026-07-03T13:14:00.000Z",
+  "last_edited_time": "2026-07-03T13:14:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Du musst nicht f\u00fcr jedes eine Canvas-\u00c4nderung vorschlagen. Eine System-Prompt-Anweisung, eine Designnotiz oder eine dokumentierte Einschr\u00e4nkung reicht aus.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Du musst nicht f\u00fcr jedes eine Canvas-\u00c4nderung vorschlagen. Eine System-Prompt-Anweisung, eine Designnotiz oder eine dokumentierte Einschr\u00e4nkung reicht aus.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "d6c2fda8-738e-4585-acd6-977739eb9059",
+  "parent": {
+   "type": "page_id",
+   "page_id": "e0694183-19f3-822d-981b-013d9f44d59d"
+  },
+  "created_time": "2026-07-03T13:14:00.000Z",
+  "last_edited_time": "2026-07-03T13:14:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_2",
+  "heading_2": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Aufgabe C: Das State-Recovery-Design definieren",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Aufgabe C: Das State-Recovery-Design definieren",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "20e470c7-03ff-484d-aca7-337226f017b3",
+  "parent": {
+   "type": "page_id",
+   "page_id": "e0694183-19f3-822d-981b-013d9f44d59d"
+  },
+  "created_time": "2026-07-03T13:14:00.000Z",
+  "last_edited_time": "2026-07-03T13:14:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Die Nordvik-Canvas hat zwei State-Recovery-L\u00fccken, die in der Canvas-Beschreibung identifiziert wurden: das Fehlen eines Fallback-Branch f\u00fcr ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Die Nordvik-Canvas hat zwei State-Recovery-L\u00fccken, die in der Canvas-Beschreibung identifiziert wurden: das Fehlen eines Fallback-Branch f\u00fcr ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "unclassified",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": true,
+      "color": "default"
+     },
+     "plain_text": "unclassified",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " und der Schl\u00fcssel ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " und der Schl\u00fcssel ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "compliance_flag",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": true,
+      "color": "default"
+     },
+     "plain_text": "compliance_flag",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": ", der \u00fcber Turns hinweg persistiert, ohne zur\u00fcckgesetzt zu werden.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": ", der \u00fcber Turns hinweg persistiert, ohne zur\u00fcckgesetzt zu werden.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "166e589f-fbad-4648-8e85-bee96238d708",
+  "parent": {
+   "type": "page_id",
+   "page_id": "e0694183-19f3-822d-981b-013d9f44d59d"
+  },
+  "created_time": "2026-07-03T13:14:00.000Z",
+  "last_edited_time": "2026-07-03T13:14:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Schreibe f\u00fcr jede L\u00fccke:",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Schreibe f\u00fcr jede L\u00fccke:",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "9be53e39-dfa8-4c77-bb63-bca5fa8326e2",
+  "parent": {
+   "type": "page_id",
+   "page_id": "e0694183-19f3-822d-981b-013d9f44d59d"
+  },
+  "created_time": "2026-07-03T13:14:00.000Z",
+  "last_edited_time": "2026-07-03T13:14:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "numbered_list_item",
+  "numbered_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Das Fehlerszenario:",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Das Fehlerszenario:",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " Was passiert mit Flow State und mit der Erfahrung des Lieferanten, wenn die L\u00fccke ausgel\u00f6st wird?",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " Was passiert mit Flow State und mit der Erfahrung des Lieferanten, wenn die L\u00fccke ausgel\u00f6st wird?",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "16b0efbb-9f98-4bb9-ae4c-93d3f54da815",
+  "parent": {
+   "type": "page_id",
+   "page_id": "e0694183-19f3-822d-981b-013d9f44d59d"
+  },
+  "created_time": "2026-07-03T13:14:00.000Z",
+  "last_edited_time": "2026-07-03T13:14:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "numbered_list_item",
+  "numbered_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Der sichere State:",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Der sichere State:",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " Was jeder betroffene Flow-State-Schl\u00fcssel nach der Recovery enthalten sollte.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " Was jeder betroffene Flow-State-Schl\u00fcssel nach der Recovery enthalten sollte.",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "5970462e-f539-454d-831e-5af6b645c475",
+  "parent": {
+   "type": "page_id",
+   "page_id": "e0694183-19f3-822d-981b-013d9f44d59d"
+  },
+  "created_time": "2026-07-03T13:14:00.000Z",
+  "last_edited_time": "2026-07-03T13:14:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "numbered_list_item",
+  "numbered_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Der Recovery-Mechanismus:",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Der Recovery-Mechanismus:",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " Eine spezifische Canvas-\u00c4nderung, die die L\u00fccke adressiert. Sei pr\u00e4zise: Benenne den Node, den Schl\u00fcssel und den Wert.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " Eine spezifische Canvas-\u00c4nderung, die die L\u00fccke adressiert. Sei pr\u00e4zise: Benenne den Node, den Schl\u00fcssel und den Wert.",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "d0896394-b6cc-4bc8-979b-45398f89590b",
+  "parent": {
+   "type": "page_id",
+   "page_id": "e0694183-19f3-822d-981b-013d9f44d59d"
+  },
+  "created_time": "2026-07-03T13:14:00.000Z",
+  "last_edited_time": "2026-07-03T13:14:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_2",
+  "heading_2": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Aufgabe D: Fehlerisolation bewerten",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Aufgabe D: Fehlerisolation bewerten",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "6f04c511-5c60-4edc-b17a-7aa8a6f92808",
+  "parent": {
+   "type": "page_id",
+   "page_id": "e0694183-19f3-822d-981b-013d9f44d59d"
+  },
+  "created_time": "2026-07-03T13:14:00.000Z",
+  "last_edited_time": "2026-07-03T13:14:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Der Compliance Agent schreibt zus\u00e4tzlich zum Lesen in ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Der Compliance Agent schreibt zus\u00e4tzlich zum Lesen in ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "$flow.state",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": true,
+      "color": "default"
+     },
+     "plain_text": "$flow.state",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": ", konkret in den Schl\u00fcssel ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": ", konkret in den Schl\u00fcssel ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "compliance_flag",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": true,
+      "color": "default"
+     },
+     "plain_text": "compliance_flag",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": ". Kein anderer Spezialagent schreibt in Flow State.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": ". Kein anderer Spezialagent schreibt in Flow State.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "29bd9fe2-14ab-489c-94b3-f5c33a747c75",
+  "parent": {
+   "type": "page_id",
+   "page_id": "e0694183-19f3-822d-981b-013d9f44d59d"
+  },
+  "created_time": "2026-07-03T13:14:00.000Z",
+  "last_edited_time": "2026-07-03T13:14:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Bewerte, ob das Schreibverhalten des Compliance Agent ein Fehlerisolationsrisiko f\u00fcr die anderen Agenten in der Canvas erzeugt. Deine Bewertung sollte adressieren:",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Bewerte, ob das Schreibverhalten des Compliance Agent ein Fehlerisolationsrisiko f\u00fcr die anderen Agenten in der Canvas erzeugt. Deine Bewertung sollte adressieren:",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "04c1e123-2268-4496-9506-dc0c4593e235",
+  "parent": {
+   "type": "page_id",
+   "page_id": "e0694183-19f3-822d-981b-013d9f44d59d"
+  },
+  "created_time": "2026-07-03T13:14:00.000Z",
+  "last_edited_time": "2026-07-03T13:14:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Ob der ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Ob der ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "compliance_flag",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": true,
+      "color": "default"
+     },
+     "plain_text": "compliance_flag",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "Schreibvorgang eine benannte, dokumentierte Entscheidung oder ein impliziter Nebeneffekt ist.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Schreibvorgang eine benannte, dokumentierte Entscheidung oder ein impliziter Nebeneffekt ist.",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "30d0c290-78a5-4d4f-a4bb-1806c0b3cdd4",
+  "parent": {
+   "type": "page_id",
+   "page_id": "e0694183-19f3-822d-981b-013d9f44d59d"
+  },
+  "created_time": "2026-07-03T13:14:00.000Z",
+  "last_edited_time": "2026-07-03T13:14:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Ob der Pricing Agent oder Logistics Agent von einem veralteten ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Ob der Pricing Agent oder Logistics Agent von einem veralteten ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "compliance_flag",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": true,
+      "color": "default"
+     },
+     "plain_text": "compliance_flag",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "Wert betroffen sein k\u00f6nnten.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Wert betroffen sein k\u00f6nnten.",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "39394183-19f3-809e-b4d4-fc7705e8d3f2",
+  "parent": {
+   "type": "page_id",
+   "page_id": "e0694183-19f3-822d-981b-013d9f44d59d"
+  },
+  "created_time": "2026-07-04T19:35:00.000Z",
+  "last_edited_time": "2026-07-04T19:36:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Welche Isolationsgrenze du empfehlen w\u00fcrdest: welche Agenten unter welchen Bedingungen in ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Welche Isolationsgrenze du empfehlen w\u00fcrdest: welche Agenten unter welchen Bedingungen in ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "$flow.state",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": true,
+      "color": "default"
+     },
+     "plain_text": "$flow.state",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " schreiben d\u00fcrfen.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " schreiben d\u00fcrfen.",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "d77ca6a8-a7fa-40de-a8d6-005a2ff007bd",
+  "parent": {
+   "type": "page_id",
+   "page_id": "e0694183-19f3-822d-981b-013d9f44d59d"
+  },
+  "created_time": "2026-07-03T13:14:00.000Z",
+  "last_edited_time": "2026-07-03T13:14:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Schreibe deine Bewertung in maximal drei kurzen Abs\u00e4tzen.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Schreibe deine Bewertung in maximal drei kurzen Abs\u00e4tzen.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "1b06c4cf-61fc-474c-9a73-bbf639eb79fc",
+  "parent": {
+   "type": "page_id",
+   "page_id": "e0694183-19f3-822d-981b-013d9f44d59d"
+  },
+  "created_time": "2026-07-03T13:14:00.000Z",
+  "last_edited_time": "2026-07-03T13:14:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_2",
+  "heading_2": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Abschlusspr\u00fcfung",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Abschlusspr\u00fcfung",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "beffe108-6de2-4dbf-9828-5048c35f21ab",
+  "parent": {
+   "type": "page_id",
+   "page_id": "e0694183-19f3-822d-981b-013d9f44d59d"
+  },
+  "created_time": "2026-07-03T13:14:00.000Z",
+  "last_edited_time": "2026-07-03T13:14:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Pr\u00fcfe deine Arbeit anhand dieser Fragen:",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Pr\u00fcfe deine Arbeit anhand dieser Fragen:",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "24186414-f0ff-4f76-9d69-b6624a1fa797",
+  "parent": {
+   "type": "page_id",
+   "page_id": "e0694183-19f3-822d-981b-013d9f44d59d"
+  },
+  "created_time": "2026-07-03T13:14:00.000Z",
+  "last_edited_time": "2026-07-03T13:14:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Deckt deine Memory Boundary Map jedes Informationselement ab, das sich zwischen Agenten bewegt, einschlie\u00dflich ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Deckt deine Memory Boundary Map jedes Informationselement ab, das sich zwischen Agenten bewegt, einschlie\u00dflich ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "allMessages",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": true,
+      "color": "default"
+     },
+     "plain_text": "allMessages",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " und des ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " und des ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "compliance_flag",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": true,
+      "color": "default"
+     },
+     "plain_text": "compliance_flag",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "Schreibvorgangs?",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Schreibvorgangs?",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "9080dbaa-b3d7-4cb9-aab5-f77bf1eef80d",
+  "parent": {
+   "type": "page_id",
+   "page_id": "e0694183-19f3-822d-981b-013d9f44d59d"
+  },
+  "created_time": "2026-07-03T13:14:00.000Z",
+  "last_edited_time": "2026-07-03T13:14:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Hast du in Aufgabe B mindestens drei Elemente identifiziert, die jeweils einer der vier Persistenzkategorien zugeordnet sind?",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Hast du in Aufgabe B mindestens drei Elemente identifiziert, die jeweils einer der vier Persistenzkategorien zugeordnet sind?",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "31af4a9e-8dfc-4355-bfac-b4179fb95675",
+  "parent": {
+   "type": "page_id",
+   "page_id": "e0694183-19f3-822d-981b-013d9f44d59d"
+  },
+  "created_time": "2026-07-03T13:14:00.000Z",
+  "last_edited_time": "2026-07-03T13:14:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Benennt jeder Recovery-Mechanismus in Aufgabe C einen spezifischen Node, Schl\u00fcssel und Wert, oder bleibt er auf der Ebene allgemeiner Prinzipien?",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Benennt jeder Recovery-Mechanismus in Aufgabe C einen spezifischen Node, Schl\u00fcssel und Wert, oder bleibt er auf der Ebene allgemeiner Prinzipien?",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "0dc0e64b-b810-4f42-8a52-66206143dda0",
+  "parent": {
+   "type": "page_id",
+   "page_id": "e0694183-19f3-822d-981b-013d9f44d59d"
+  },
+  "created_time": "2026-07-03T13:14:00.000Z",
+  "last_edited_time": "2026-07-03T13:14:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Bezieht deine Bewertung der Fehlerisolation in Aufgabe D Position (empfiehlt eine konkrete Grenze), statt nur \u00dcberlegungen ohne Schlussfolgerung aufzulisten?",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Bezieht deine Bewertung der Fehlerisolation in Aufgabe D Position (empfiehlt eine konkrete Grenze), statt nur \u00dcberlegungen ohne Schlussfolgerung aufzulisten?",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "349c1ba5-11b8-4274-bd33-315d0abe2034",
+  "parent": {
+   "type": "page_id",
+   "page_id": "e0694183-19f3-822d-981b-013d9f44d59d"
+  },
+  "created_time": "2026-07-03T13:14:00.000Z",
+  "last_edited_time": "2026-07-03T13:14:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_2",
+  "heading_2": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Zusammenfassung",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Zusammenfassung",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "39394183-19f3-8012-9651-f954faa4066a",
+  "parent": {
+   "type": "page_id",
+   "page_id": "e0694183-19f3-822d-981b-013d9f44d59d"
+  },
+  "created_time": "2026-07-04T19:37:00.000Z",
+  "last_edited_time": "2026-07-04T19:37:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "In diesem Assessment wendest du das Framework f\u00fcr die Memory- und State-Architektur auf ein v\u00f6llig neues System an. Das bedeutet: eine andere Organisation, eine andere Agentenstruktur und ganz neue Fehlerszenarien. Die vier Aufgaben behandeln inhaltlich zwar dieselben Themen wie die bisherigen Lektionen, allerdings anhand eines unbekannten Fallbeispiels und ohne vorgegebene L\u00f6sungen. ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "In diesem Assessment wendest du das Framework f\u00fcr die Memory- und State-Architektur auf ein v\u00f6llig neues System an. Das bedeutet: eine andere Organisation, eine andere Agentenstruktur und ganz neue Fehlerszenarien. Die vier Aufgaben behandeln inhaltlich zwar dieselben Themen wie die bisherigen Lektionen, allerdings anhand eines unbekannten Fallbeispiels und ohne vorgegebene L\u00f6sungen. ",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "39394183-19f3-8069-a0a4-fbc83d2d7d0b",
+  "parent": {
+   "type": "page_id",
+   "page_id": "e0694183-19f3-822d-981b-013d9f44d59d"
+  },
+  "created_time": "2026-07-04T19:37:00.000Z",
+  "last_edited_time": "2026-07-04T19:38:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Ein vollst\u00e4ndiges Architekturreview zu verfassen, noch bevor ein System in die Testphase geht, ist exakt die Kernkompetenz, die wir in diesem Sprint aufgebaut haben. Deine hier dokumentierten Entscheidungen machen am Ende den Unterschied zwischen einem System, das lediglich in der Testumgebung funktioniert, und einem, das im Praxiseinsatz stabil l\u00e4uft.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Ein vollst\u00e4ndiges Architekturreview zu verfassen, noch bevor ein System in die Testphase geht, ist exakt die Kernkompetenz, die wir in diesem Sprint aufgebaut haben. Deine hier dokumentierten Entscheidungen machen am Ende den Unterschied zwischen einem System, das lediglich in der Testumgebung funktioniert, und einem, das im Praxiseinsatz stabil l\u00e4uft.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ }
+]

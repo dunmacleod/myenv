@@ -1,0 +1,1351 @@
+[
+ {
+  "object": "block",
+  "id": "36b94183-19f3-80b3-80dd-dad2855f615c",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-801f-9c87-f2dbf7041ddb"
+  },
+  "created_time": "2026-05-25T00:01:00.000Z",
+  "last_edited_time": "2026-05-25T00:01:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "callout",
+  "callout": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "What you will understand by the end of this lesson:",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "What you will understand by the end of this lesson:",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " Students understand where and why Agentflow v2 architectures fail and how failures in one node cascade through the rest of the graph.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " Students understand where and why Agentflow v2 architectures fail and how failures in one node cascade through the rest of the graph.",
+     "href": null
+    }
+   ],
+   "icon": {
+    "type": "emoji",
+    "emoji": "\ud83d\udca1"
+   },
+   "color": "gray_background"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38094183-19f3-809d-85bc-c4bd6cbd0077",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-801f-9c87-f2dbf7041ddb"
+  },
+  "created_time": "2026-06-15T12:43:00.000Z",
+  "last_edited_time": "2026-06-15T12:43:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "e3a0c3b4-c67a-4296-9840-31a38177d8e3",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-801f-9c87-f2dbf7041ddb"
+  },
+  "created_time": "2026-05-22T02:36:00.000Z",
+  "last_edited_time": "2026-06-12T01:38:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_2",
+  "heading_2": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Setting the Scene",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Setting the Scene",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "aae46783-d20b-43d8-b87b-87629cc318a9",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-801f-9c87-f2dbf7041ddb"
+  },
+  "created_time": "2026-06-12T01:38:00.000Z",
+  "last_edited_time": "2026-06-12T01:41:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Meridian's agent did not fail during two weeks of internal testing. It began failing two days after being made available to the full consulting team. The canvas looked identical both times. The difference was the variety and volume of real queries hitting every corner of the configuration simultaneously. Visual builders hide complexity. When everything works, that is a productivity gain. When something breaks, the failure often originates not inside a node but between them in the connections that look trivial on the canvas. Understanding where Agentflow v2 architectures are structurally fragile is essential before Sprint 3 adds loops, iteration, and approval checkpoints to Meridian's canvas.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Meridian's agent did not fail during two weeks of internal testing. It began failing two days after being made available to the full consulting team. The canvas looked identical both times. The difference was the variety and volume of real queries hitting every corner of the configuration simultaneously. Visual builders hide complexity. When everything works, that is a productivity gain. When something breaks, the failure often originates not inside a node but between them in the connections that look trivial on the canvas. Understanding where Agentflow v2 architectures are structurally fragile is essential before Sprint 3 adds loops, iteration, and approval checkpoints to Meridian's canvas.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38094183-19f3-8095-b066-d56da1910621",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-801f-9c87-f2dbf7041ddb"
+  },
+  "created_time": "2026-06-15T12:43:00.000Z",
+  "last_edited_time": "2026-06-15T12:43:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37d94183-19f3-80d2-8f7b-c88ab2d7c81a",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-801f-9c87-f2dbf7041ddb"
+  },
+  "created_time": "2026-06-12T01:41:00.000Z",
+  "last_edited_time": "2026-06-12T01:41:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_2",
+  "heading_2": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "The Four Failure Points",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "The Four Failure Points",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "27e38dc0-1c6d-4316-983f-181ea4cd88e1",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-801f-9c87-f2dbf7041ddb"
+  },
+  "created_time": "2026-05-22T02:36:00.000Z",
+  "last_edited_time": "2026-06-15T12:43:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_3",
+  "heading_3": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Failure point 1: Prompt failures",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Failure point 1: Prompt failures",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "bd4e3758-0e66-4ae3-a388-349a647ed889",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-801f-9c87-f2dbf7041ddb"
+  },
+  "created_time": "2026-05-22T02:36:00.000Z",
+  "last_edited_time": "2026-06-15T12:43:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "The system prompt governs the agent's behaviour. When it is ambiguous or incomplete, the agent fills the gap with Gemini's general training data. The response sounds authoritative. It is wrong. No error is raised. The agent simply produces a confident incorrect answer that looks identical to a correct one.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "The system prompt governs the agent's behaviour. When it is ambiguous or incomplete, the agent fills the gap with Gemini's general training data. The response sounds authoritative. It is wrong. No error is raised. The agent simply produces a confident incorrect answer that looks identical to a correct one.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38094183-19f3-80eb-b1a6-e3dc3b0dbf93",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-801f-9c87-f2dbf7041ddb"
+  },
+  "created_time": "2026-06-15T12:43:00.000Z",
+  "last_edited_time": "2026-06-15T12:43:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "fdce9a1f-3858-40e1-accd-c66e46a20af2",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-801f-9c87-f2dbf7041ddb"
+  },
+  "created_time": "2026-05-22T02:36:00.000Z",
+  "last_edited_time": "2026-06-15T12:43:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_3",
+  "heading_3": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Failure point 2: Retrieval failures",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Failure point 2: Retrieval failures",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "9fb95c8c-f5d3-4999-8104-abf59b32544a",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-801f-9c87-f2dbf7041ddb"
+  },
+  "created_time": "2026-06-12T01:42:00.000Z",
+  "last_edited_time": "2026-06-15T12:43:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "The Document Store returns semantically adjacent chunks that are close to the query topic but not containing the information needed to answer correctly. The Agent Node treats them as sufficient and generates a response grounded in the wrong material. No node crashed. The failure is semantic, visible only when the response is compared against the actual document content.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "The Document Store returns semantically adjacent chunks that are close to the query topic but not containing the information needed to answer correctly. The Agent Node treats them as sufficient and generates a response grounded in the wrong material. No node crashed. The failure is semantic, visible only when the response is compared against the actual document content.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37d94183-19f3-8060-8e2a-d7fce77fd925",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-801f-9c87-f2dbf7041ddb"
+  },
+  "created_time": "2026-06-12T01:42:00.000Z",
+  "last_edited_time": "2026-06-15T12:43:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Here is a related failure: If the Qdrant vector store is not re-upserted after Meridian's playbooks are updated, the agent retrieves outdated content with full confidence with no indication in the canvas that anything is wrong.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Here is a related failure: If the Qdrant vector store is not re-upserted after Meridian's playbooks are updated, the agent retrieves outdated content with full confidence with no indication in the canvas that anything is wrong.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38094183-19f3-8045-96d2-cc083ae13249",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-801f-9c87-f2dbf7041ddb"
+  },
+  "created_time": "2026-06-15T12:43:00.000Z",
+  "last_edited_time": "2026-06-15T12:43:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "5eabfe5d-4cda-42d0-bf48-35d851b86cf6",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-801f-9c87-f2dbf7041ddb"
+  },
+  "created_time": "2026-05-22T02:36:00.000Z",
+  "last_edited_time": "2026-06-15T12:43:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_3",
+  "heading_3": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Failure point 3: Tool and HTTP failures",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Failure point 3: Tool and HTTP failures",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "cd690cb4-b519-4d07-ab2d-73d5776c8f06",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-801f-9c87-f2dbf7041ddb"
+  },
+  "created_time": "2026-06-12T01:43:00.000Z",
+  "last_edited_time": "2026-06-15T12:43:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "When the HTTP Node returns an error instead of data, Agent Node B without explicit failure handling either fabricates a status or writes an incorrect value to Flow State. Flow State is a runtime key-value store shared among nodes in a single execution. A fabricated value written to ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "When the HTTP Node returns an error instead of data, Agent Node B without explicit failure handling either fabricates a status or writes an incorrect value to Flow State. Flow State is a runtime key-value store shared among nodes in a single execution. A fabricated value written to ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "$flow.state.status_response",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": true,
+      "color": "default"
+     },
+     "plain_text": "$flow.state.status_response",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " is immediately available to every downstream node that reads from that key and the contamination is structural and immediate.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " is immediately available to every downstream node that reads from that key and the contamination is structural and immediate.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "9ab0e079-ae27-4b54-8cbc-c958c3d0a2fd",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-801f-9c87-f2dbf7041ddb"
+  },
+  "created_time": "2026-06-12T01:43:00.000Z",
+  "last_edited_time": "2026-06-15T12:43:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "In Sprint 3, the Loop Node will handle retry logic for failed HTTP calls. The Loop Node's Max Loop Count parameter defines the maximum number of times the loop can execute within a single workflow run, safeguarding against infinite cycles. The default value is 5. Without a configured exit path when the limit is reached, the loop terminates without returning a meaningful response.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "In Sprint 3, the Loop Node will handle retry logic for failed HTTP calls. The Loop Node's Max Loop Count parameter defines the maximum number of times the loop can execute within a single workflow run, safeguarding against infinite cycles. The default value is 5. Without a configured exit path when the limit is reached, the loop terminates without returning a meaningful response.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38094183-19f3-80a6-9701-eaeef2e3e1ad",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-801f-9c87-f2dbf7041ddb"
+  },
+  "created_time": "2026-06-15T12:43:00.000Z",
+  "last_edited_time": "2026-06-15T12:43:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "60601268-5c2f-4067-8c47-4f74beeda7b0",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-801f-9c87-f2dbf7041ddb"
+  },
+  "created_time": "2026-05-22T02:36:00.000Z",
+  "last_edited_time": "2026-06-15T12:43:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_3",
+  "heading_3": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Failure point 4: Memory failures",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Failure point 4: Memory failures",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "c4c52fc1-34ce-4544-b7cf-a5b5eef1ba5f",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-801f-9c87-f2dbf7041ddb"
+  },
+  "created_time": "2026-05-22T02:36:00.000Z",
+  "last_edited_time": "2026-06-15T12:43:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Context bleed occurs when detail from an earlier account discussion carries into a later one by misattributing action items or applying a constraint from one engagement to another. As conversation length grows, the probability increases and routing decisions degrade.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Context bleed occurs when detail from an earlier account discussion carries into a later one by misattributing action items or applying a constraint from one engagement to another. As conversation length grows, the probability increases and routing decisions degrade.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38094183-19f3-80e1-b155-f47fccf90c39",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-801f-9c87-f2dbf7041ddb"
+  },
+  "created_time": "2026-06-15T12:43:00.000Z",
+  "last_edited_time": "2026-06-15T12:43:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "18716060-ea4a-46b0-8929-e3925252477a",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-801f-9c87-f2dbf7041ddb"
+  },
+  "created_time": "2026-05-22T02:36:00.000Z",
+  "last_edited_time": "2026-05-25T00:03:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_2",
+  "heading_2": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "How failures cascade",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "How failures cascade",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "0bbf65b5-4fff-4289-915b-9922b835fd0d",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-801f-9c87-f2dbf7041ddb"
+  },
+  "created_time": "2026-06-12T01:44:00.000Z",
+  "last_edited_time": "2026-06-12T01:44:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Failures rarely stay contained within the node where they originate. A retrieval failure produces incorrect content that Agent Node A reasons from. That response enters session memory. The next turn injects it as established fact. Each step compounds the error. This is why production failures are more severe than isolated testing reveals. Individual nodes tested against clean inputs do not surface the failure modes that emerge from their interaction.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Failures rarely stay contained within the node where they originate. A retrieval failure produces incorrect content that Agent Node A reasons from. That response enters session memory. The next turn injects it as established fact. Each step compounds the error. This is why production failures are more severe than isolated testing reveals. Individual nodes tested against clean inputs do not surface the failure modes that emerge from their interaction.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "36b94183-19f3-8017-9b2c-cae8fe2d52ce",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-801f-9c87-f2dbf7041ddb"
+  },
+  "created_time": "2026-05-25T00:16:00.000Z",
+  "last_edited_time": "2026-05-25T00:16:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "image",
+  "image": {
+   "caption": [],
+   "type": "file",
+   "file": {
+    "url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/3a9085c4-df29-45e6-8bc7-6c9c0a25ea8c/c494cb5f-cf25-4bb3-b800-79e444590a97/a4df5e1f-437b-43e4-96a9-a1485aeaa324.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB4664KRRMAJP%2F20261022%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20261022T114902Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEKv%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJHMEUCIE7PyKUsAceXGYUgigEZrCGqgeh0ggujIjP0iXU7L7UWAiEArVGGd5SeYsHnpInaoLzaVRyK0l1BJ2atRf9XcT4P4Ogq%2FwMIcxAAGgw2Mzc0MjMxODM4MDUiDIzj3PrPa8k%2FjcN51yrcA1pmxjmY9p4HA8f4ztsY%2FauZvJNB9THKOttMvYIrRCkp%2FpapAeuIJy6KPSdmOCCb3AtLXGcl96qAmhbMCF%2FSueEcTe%2B5JgbSjyhUf9WTiA5BREkB%2BlQZYebTRmALY9T2UvME%2Fu7ibYTqfA8%2F3tm0g9SOedS8WVFhWvpF3VYiDYNnnngE5wnT4G4qz421KkvsGe8H9dTyXRv%2F0WmXNJ4J%2FjRxOXmz6hLCAM8t9COa6L2%2BHH%2By7JYkz80NUb0lw8v%2Fq0TSdZMcB45FWRy13kH5LTRdcPNlFkmYsr3b7alR3WdGtdgijYJeWgsqD%2FBXAZEmsBLit88aAZa2NnSDrX5v%2B7GoUh4c92GbYAGGmkC2obEFl5gfz3bBuqsCmOyjblrc1SRFeJQuxQW38aKpN8aowyfX9x%2BdEGFCE3ODZ97GCQy5BIfkvsBhSfF7Wyu9uT%2F%2BeA0XbCJEY%2FgJypmnFNT5wOWtWucGsWxBc8zDN9L%2FIhovWB50smIH%2BmaJrKkqRAq0oNVdS3MhsHzXBJKtsRpo5f07Alx8bQRDWsErlSrPrnmxcMWxK%2Bkmu1cG%2FpIBLx0FLa3xSeOoFL%2B4NRm%2BSVSE6YY2lKt17fs4zZ5Vmkj1M1lTnnOv8jRQ%2Ft02Dp%2BfMMfI59YGOqUBy1kjpFkZLzxEX6mZWCmB70fAliWP0GDfEzd7NF9si5cSXBnhe6RYWb1sR%2FnoPhTTF5ZY4N2hQq%2BwvlukHqxheMwR%2FO70Q9Wzf1SbaA7bXHYqZ3oia7jSF2YYYRPVBhzPGVe5fgZSCV4uzOjfHgQ%2FpxYDtGfjHxBQTWOFYylcMk6gdba7axphw2oD7%2FOieCj90Cwh9ShajIE6dmEwX5Dv2%2BB%2Bcbp0&X-Amz-Signature=eda63f30d44edd1a91d46ecfa0384748245c34d2b7e798216aad3486d002a006&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+    "expiry_time": "2026-10-22T12:49:02.724Z"
+   }
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38094183-19f3-80f1-b039-e30c241b3e26",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-801f-9c87-f2dbf7041ddb"
+  },
+  "created_time": "2026-06-15T12:43:00.000Z",
+  "last_edited_time": "2026-06-15T12:43:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "0cbd8401-a4d7-476d-8dd5-38ec8aa860aa",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-801f-9c87-f2dbf7041ddb"
+  },
+  "created_time": "2026-05-22T02:36:00.000Z",
+  "last_edited_time": "2026-05-25T00:04:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_2",
+  "heading_2": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Check for Understanding",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Check for Understanding",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38494183-19f3-802d-a9a9-cfa9c9538d12",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-801f-9c87-f2dbf7041ddb"
+  },
+  "created_time": "2026-06-19T05:33:00.000Z",
+  "last_edited_time": "2026-06-19T05:33:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": true,
+  "in_trash": false,
+  "type": "callout",
+  "callout": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Meridian's agent retrieves an outdated policy chunk and generates a response from it. The Agent Node stores this in session memory. What happens in the next turn?",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Meridian's agent retrieves an outdated policy chunk and generates a response from it. The Agent Node stores this in session memory. What happens in the next turn?",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "gray_background"
+  },
+  "archived": false,
+  "_children": [
+   {
+    "object": "block",
+    "id": "38494183-19f3-80ec-abc1-e8f728ab4b26",
+    "parent": {
+     "type": "block_id",
+     "block_id": "38494183-19f3-802d-a9a9-cfa9c9538d12"
+    },
+    "created_time": "2026-06-19T05:33:00.000Z",
+    "last_edited_time": "2026-06-19T05:33:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "embed",
+    "embed": {
+     "caption": [],
+     "url": "https://app.masterschool.com/campus/multi-choice-question/830a1d35-bf13-4019-8248-1fae4817685b"
+    },
+    "archived": false
+   }
+  ]
+ },
+ {
+  "object": "block",
+  "id": "74ccaf3e-7e82-4b31-a282-4eed05033e42",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-801f-9c87-f2dbf7041ddb"
+  },
+  "created_time": "2026-06-15T10:49:00.000Z",
+  "last_edited_time": "2026-06-19T05:33:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38094183-19f3-802f-8ba3-e6294fb1c89d",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-801f-9c87-f2dbf7041ddb"
+  },
+  "created_time": "2026-06-15T12:43:00.000Z",
+  "last_edited_time": "2026-06-15T12:43:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "36b94183-19f3-8068-b741-c2ba83815f2a",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-801f-9c87-f2dbf7041ddb"
+  },
+  "created_time": "2026-05-25T00:05:00.000Z",
+  "last_edited_time": "2026-06-15T12:44:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": true,
+  "in_trash": false,
+  "type": "callout",
+  "callout": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Takeaway:",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Takeaway:",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " ",
+     "href": null
+    }
+   ],
+   "icon": {
+    "type": "emoji",
+    "emoji": "\ud83d\udca1"
+   },
+   "color": "gray_background"
+  },
+  "archived": false,
+  "_children": [
+   {
+    "object": "block",
+    "id": "38094183-19f3-8072-b447-dcd0e2877e32",
+    "parent": {
+     "type": "block_id",
+     "block_id": "36b94183-19f3-8068-b741-c2ba83815f2a"
+    },
+    "created_time": "2026-06-15T12:44:00.000Z",
+    "last_edited_time": "2026-06-15T12:44:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+     "rich_text": [
+      {
+       "type": "text",
+       "text": {
+        "content": "Agentflow v2 builds fail at the connections between nodes. A prompt failure produces confident wrong answers. A retrieval failure poisons the context window. A tool failure triggers loops or Flow State contamination. ",
+        "link": null
+       },
+       "annotations": {
+        "bold": false,
+        "italic": false,
+        "strikethrough": false,
+        "underline": false,
+        "code": false,
+        "color": "default"
+       },
+       "plain_text": "Agentflow v2 builds fail at the connections between nodes. A prompt failure produces confident wrong answers. A retrieval failure poisons the context window. A tool failure triggers loops or Flow State contamination. ",
+       "href": null
+      }
+     ],
+     "icon": null,
+     "color": "default"
+    },
+    "archived": false
+   },
+   {
+    "object": "block",
+    "id": "38094183-19f3-807b-a217-c38157eef532",
+    "parent": {
+     "type": "block_id",
+     "block_id": "36b94183-19f3-8068-b741-c2ba83815f2a"
+    },
+    "created_time": "2026-06-15T12:44:00.000Z",
+    "last_edited_time": "2026-06-15T12:44:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+     "rich_text": [
+      {
+       "type": "text",
+       "text": {
+        "content": "A memory failure compounds all of the above across turns. Recognising these four failure categories is the diagnostic framework for Sprint 3 where loops, iteration, and approval checkpoints add new ways for each one to occur.",
+        "link": null
+       },
+       "annotations": {
+        "bold": false,
+        "italic": false,
+        "strikethrough": false,
+        "underline": false,
+        "code": false,
+        "color": "default"
+       },
+       "plain_text": "A memory failure compounds all of the above across turns. Recognising these four failure categories is the diagnostic framework for Sprint 3 where loops, iteration, and approval checkpoints add new ways for each one to occur.",
+       "href": null
+      }
+     ],
+     "icon": null,
+     "color": "default"
+    },
+    "archived": false
+   }
+  ]
+ },
+ {
+  "object": "block",
+  "id": "37d94183-19f3-801d-b311-e03308c15038",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-801f-9c87-f2dbf7041ddb"
+  },
+  "created_time": "2026-06-12T01:46:00.000Z",
+  "last_edited_time": "2026-06-12T01:46:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ }
+]

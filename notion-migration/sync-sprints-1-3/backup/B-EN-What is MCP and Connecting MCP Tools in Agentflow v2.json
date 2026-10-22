@@ -1,0 +1,2264 @@
+[
+ {
+  "object": "block",
+  "id": "36a94183-19f3-8008-ba2c-ebbac58e54cb",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-80d3-9e71-ffede85a6202"
+  },
+  "created_time": "2026-05-24T18:06:00.000Z",
+  "last_edited_time": "2026-05-24T18:06:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "callout",
+  "callout": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "What you will understand by the end of this lesson:",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "What you will understand by the end of this lesson:",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " Understand what MCP is, why it exists, and how MCP tools connect to Agentflow v2 nodes.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " Understand what MCP is, why it exists, and how MCP tools connect to Agentflow v2 nodes.",
+     "href": null
+    }
+   ],
+   "icon": {
+    "type": "emoji",
+    "emoji": "\ud83d\udca1"
+   },
+   "color": "gray_background"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38094183-19f3-8020-86a8-cae8cca6f8cf",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-80d3-9e71-ffede85a6202"
+  },
+  "created_time": "2026-06-15T12:47:00.000Z",
+  "last_edited_time": "2026-06-15T12:47:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "813a6e27-dd2f-425d-9f48-557e4aa06ec5",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-80d3-9e71-ffede85a6202"
+  },
+  "created_time": "2026-05-22T02:38:00.000Z",
+  "last_edited_time": "2026-06-12T05:58:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_2",
+  "heading_2": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Setting the scene",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Setting the scene",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "91a9fa7b-2d60-4f17-9344-1c7a148d82b1",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-80d3-9e71-ffede85a6202"
+  },
+  "created_time": "2026-06-12T05:58:00.000Z",
+  "last_edited_time": "2026-06-12T05:58:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Meridian's agent is connected to three capabilities: a Document Store, an HTTP Node for live data, and an iteration flow for briefings. Each connection required custom configuration: credentials, URL endpoints, response handling, and error logic written specifically for each integration.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Meridian's agent is connected to three capabilities: a Document Store, an HTTP Node for live data, and an iteration flow for briefings. Each connection required custom configuration: credentials, URL endpoints, response handling, and error logic written specifically for each integration.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "840afc97-bde4-46d2-97f0-b73aa399b6d8",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-80d3-9e71-ffede85a6202"
+  },
+  "created_time": "2026-06-12T05:58:00.000Z",
+  "last_edited_time": "2026-06-12T05:58:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "If Meridian were to rebuild the same agent in a different framework tomorrow, every integration would need to be reconfigured from scratch. If a client wanted to access Meridian's knowledge base from their own agent built on a different platform, the entire integration layer would need to be rebuilt again.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "If Meridian were to rebuild the same agent in a different framework tomorrow, every integration would need to be reconfigured from scratch. If a client wanted to access Meridian's knowledge base from their own agent built on a different platform, the entire integration layer would need to be rebuilt again.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "9b20202f-29b8-4157-b6a4-61fbde434f2d",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-80d3-9e71-ffede85a6202"
+  },
+  "created_time": "2026-06-12T05:58:00.000Z",
+  "last_edited_time": "2026-06-12T05:58:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "This is the integration problem that MCP solves.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "This is the integration problem that MCP solves.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38094183-19f3-8042-8d52-f6cca767f054",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-80d3-9e71-ffede85a6202"
+  },
+  "created_time": "2026-06-15T12:47:00.000Z",
+  "last_edited_time": "2026-06-15T12:47:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "65a4368d-7c28-48e2-92ee-33205d81f972",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-80d3-9e71-ffede85a6202"
+  },
+  "created_time": "2026-06-12T05:58:00.000Z",
+  "last_edited_time": "2026-06-12T05:59:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_2",
+  "heading_2": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "What MCP is",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "What MCP is",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "cacedb2e-0406-4176-b271-4e2b1bf224c1",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-80d3-9e71-ffede85a6202"
+  },
+  "created_time": "2026-06-12T05:58:00.000Z",
+  "last_edited_time": "2026-06-12T05:58:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "The Model Context Protocol is an open standard that defines a universal interface for how AI agents connect to external tools and data sources. It was introduced by Anthropic in late 2024 and has since been adopted across agent frameworks, development environments, and enterprise platforms.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "The Model Context Protocol is an open standard that defines a universal interface for how AI agents connect to external tools and data sources. It was introduced by Anthropic in late 2024 and has since been adopted across agent frameworks, development environments, and enterprise platforms.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "bf1fb7bf-b276-4cc0-b196-7ffc5257b0c4",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-80d3-9e71-ffede85a6202"
+  },
+  "created_time": "2026-06-12T05:58:00.000Z",
+  "last_edited_time": "2026-06-12T05:59:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "The analogy that captures it most clearly is USB-C. Before standardised ports, connecting a peripheral required knowing which specific connector each device used. USB-C provides a universal connection standard and any compatible peripheral connects to any compatible device through the same port. MCP does the same for AI agents and external tools.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "The analogy that captures it most clearly is USB-C. Before standardised ports, connecting a peripheral required knowing which specific connector each device used. USB-C provides a universal connection standard and any compatible peripheral connects to any compatible device through the same port. MCP does the same for AI agents and external tools.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "ac1f0c2c-bc6d-4c45-80d2-77e00b42c74e",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-80d3-9e71-ffede85a6202"
+  },
+  "created_time": "2026-06-12T05:58:00.000Z",
+  "last_edited_time": "2026-06-12T05:58:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "An MCP server exposes three categories of capability:",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "An MCP server exposes three categories of capability:",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "d72589a1-54a9-430f-a6ee-ee5f233f69dd",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-80d3-9e71-ffede85a6202"
+  },
+  "created_time": "2026-06-12T05:58:00.000Z",
+  "last_edited_time": "2026-06-15T12:47:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": true,
+  "in_trash": false,
+  "type": "table",
+  "table": {
+   "table_width": 2,
+   "has_column_header": true,
+   "has_row_header": false
+  },
+  "archived": false,
+  "_children": [
+   {
+    "object": "block",
+    "id": "69b75af2-0532-45a0-9efd-04bbd8a413b8",
+    "parent": {
+     "type": "block_id",
+     "block_id": "d72589a1-54a9-430f-a6ee-ee5f233f69dd"
+    },
+    "created_time": "2026-06-12T05:58:00.000Z",
+    "last_edited_time": "2026-06-12T05:58:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "231d872b-594c-81f2-a375-0002b8783aca"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "231d872b-594c-81f2-a375-0002b8783aca"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "table_row",
+    "table_row": {
+     "cells": [
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Category",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Category",
+        "href": null
+       }
+      ],
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "What it provides",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "What it provides",
+        "href": null
+       }
+      ]
+     ]
+    },
+    "archived": false
+   },
+   {
+    "object": "block",
+    "id": "b07c4638-75a8-4475-8f27-ee2bf0677bbb",
+    "parent": {
+     "type": "block_id",
+     "block_id": "d72589a1-54a9-430f-a6ee-ee5f233f69dd"
+    },
+    "created_time": "2026-06-12T05:58:00.000Z",
+    "last_edited_time": "2026-06-12T05:58:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "231d872b-594c-81f2-a375-0002b8783aca"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "231d872b-594c-81f2-a375-0002b8783aca"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "table_row",
+    "table_row": {
+     "cells": [
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Tools",
+         "link": null
+        },
+        "annotations": {
+         "bold": true,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Tools",
+        "href": null
+       }
+      ],
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Functions the agent can invoke to take actions or retrieve data",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Functions the agent can invoke to take actions or retrieve data",
+        "href": null
+       }
+      ]
+     ]
+    },
+    "archived": false
+   },
+   {
+    "object": "block",
+    "id": "d541975c-b0e3-440f-8ac5-0cb17cbe7e10",
+    "parent": {
+     "type": "block_id",
+     "block_id": "d72589a1-54a9-430f-a6ee-ee5f233f69dd"
+    },
+    "created_time": "2026-06-12T05:58:00.000Z",
+    "last_edited_time": "2026-06-12T05:58:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "231d872b-594c-81f2-a375-0002b8783aca"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "231d872b-594c-81f2-a375-0002b8783aca"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "table_row",
+    "table_row": {
+     "cells": [
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Resources",
+         "link": null
+        },
+        "annotations": {
+         "bold": true,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Resources",
+        "href": null
+       }
+      ],
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Data sources the agent can read from",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Data sources the agent can read from",
+        "href": null
+       }
+      ]
+     ]
+    },
+    "archived": false
+   },
+   {
+    "object": "block",
+    "id": "629ec376-7eb6-4686-9385-19732e82b563",
+    "parent": {
+     "type": "block_id",
+     "block_id": "d72589a1-54a9-430f-a6ee-ee5f233f69dd"
+    },
+    "created_time": "2026-06-12T05:58:00.000Z",
+    "last_edited_time": "2026-06-12T05:58:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "231d872b-594c-81f2-a375-0002b8783aca"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "231d872b-594c-81f2-a375-0002b8783aca"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "table_row",
+    "table_row": {
+     "cells": [
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Prompts",
+         "link": null
+        },
+        "annotations": {
+         "bold": true,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Prompts",
+        "href": null
+       }
+      ],
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Reusable prompt templates stored on the server",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Reusable prompt templates stored on the server",
+        "href": null
+       }
+      ]
+     ]
+    },
+    "archived": false
+   }
+  ]
+ },
+ {
+  "object": "block",
+  "id": "0e593a53-3921-48a3-ae42-2e0e6fd08785",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-80d3-9e71-ffede85a6202"
+  },
+  "created_time": "2026-06-12T05:58:00.000Z",
+  "last_edited_time": "2026-06-12T05:58:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "When a new tool or resource is added to an MCP server, connected agents discover it automatically without requiring updates to the agent configuration.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "When a new tool or resource is added to an MCP server, connected agents discover it automatically without requiring updates to the agent configuration.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38094183-19f3-80d7-a6b3-ee47cff26c91",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-80d3-9e71-ffede85a6202"
+  },
+  "created_time": "2026-06-15T12:47:00.000Z",
+  "last_edited_time": "2026-06-15T12:47:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "f99862d0-21aa-4fdc-a002-ca7c1a3a1458",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-80d3-9e71-ffede85a6202"
+  },
+  "created_time": "2026-06-12T05:58:00.000Z",
+  "last_edited_time": "2026-06-12T05:58:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_3",
+  "heading_3": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "How MCP works in Agentflow v2",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "How MCP works in Agentflow v2",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "d0d9d44b-3795-4bca-b08e-5809a31f6152",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-80d3-9e71-ffede85a6202"
+  },
+  "created_time": "2026-06-12T05:58:00.000Z",
+  "last_edited_time": "2026-06-12T05:59:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Agentflow v2 allows MCP tools to be connected as part of the workflow, rather than functioning solely as agent tools. Custom MCPs can also be created independently, without depending on platform-provided integrations. MCP is widely considered an industry standard and is typically supported and maintained by the official providers.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Agentflow v2 allows MCP tools to be connected as part of the workflow, rather than functioning solely as agent tools. Custom MCPs can also be created independently, without depending on platform-provided integrations. MCP is widely considered an industry standard and is typically supported and maintained by the official providers.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "b169e88b-652a-4cee-a4fa-24a80100bf64",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-80d3-9e71-ffede85a6202"
+  },
+  "created_time": "2026-06-12T05:58:00.000Z",
+  "last_edited_time": "2026-06-12T05:59:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "In Agentflow v2, MCP tools connect through the ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "In Agentflow v2, MCP tools connect through the ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "Agent Node's Tools configuration",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Agent Node's Tools configuration",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": ". Once an MCP server is configured in Flowise, its tools appear in the Agent Node's tool selector alongside native Flowise tools. The agent can then invoke them dynamically based on reasoning exactly like any other tool.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": ". Once an MCP server is configured in Flowise, its tools appear in the Agent Node's tool selector alongside native Flowise tools. The agent can then invoke them dynamically based on reasoning exactly like any other tool.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37d94183-19f3-80b1-be15-dd192d983d80",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-80d3-9e71-ffede85a6202"
+  },
+  "created_time": "2026-06-12T06:02:00.000Z",
+  "last_edited_time": "2026-06-12T06:02:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "image",
+  "image": {
+   "caption": [],
+   "type": "file",
+   "file": {
+    "url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/3a9085c4-df29-45e6-8bc7-6c9c0a25ea8c/cb1e893f-6b8d-4e18-a0ed-e49fc9478b20/image.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466YVOWIYW4%2F20261022%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20261022T114338Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEKv%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJIMEYCIQChJ%2BAFfbbQ0RuHkBz2zt0AFHPAdEvF1k0vvzkrgqW0KwIhAOWwqComhXu%2B%2BIfQy7GlnskAFWkLOnxVuvesfcQquAcnKv8DCHMQABoMNjM3NDIzMTgzODA1Igzv%2BNsnzlfB06TiQXIq3AM1poHCz3zajOnuy7AMUU3vfKP%2FwBEaTvIxS4eSxN%2FeH1XK1SYd195CEdwh42mEFHvdHMkUWpSK9IkVQq8ecP8GXAi3oF883tY0p%2BJoXzfdn8F1fs0TdlryTl5dsWxQ0Ap7A9J0zIFFeTd2JBKqBEVk19eZykzJqYPjzwVlbr8klE9zO%2B%2Bsn06N3DM8lKZa%2FVj7UCNxBGmH5IMZI68vKihcCCCODZ%2FmcJVm751Tr8MI2HZECt5RGofPNnC6T5BeU1WkIyeMWrodOhDQkiXzHF4Lzm%2F3R1Jp2E0Bpj19fr4v1zcQgCX1%2Bcw1%2BhJEznsQSFXlCpcFFkknQ8YmndFoEZRyYHUwEbR1iW2610p2xpQGLkG0rd0KpEj7ksz04x4zOKvNXq8dCNG5zZFyH%2BPlTM5LlANTyZWJKyIG8gz5RSgHYcfpF9TYre%2FVt1kH9i5FodmQ5MzEq8sIR%2B0F80jwtgR8hp9Dhv1XGIEUscP8%2BEe9Y8Ee9SlG%2BtuFYU%2Fpz2C4Uquk0eQ4lUyQECC1ZqpmB5iJvi3aTJ81r0p7sEVULK2Zm%2FD3u8toEbaOjA3BIG3wvm8c0VKtk3ZydPh1SwEt7XjWjoPPY%2B0rEqtA6Pt%2FnuKy6x%2BnbWgLZkp2cJeVvzCayefWBjqkAWNbV8laaLhTnZBb%2FsTEEwV3zQ%2Bd5UHfRYqzsbCquIlSn0aVdblGLQHUe5L1sztzAmQBaHWZaXMu3X4JnfffSPrEMdWsXmjrDpRziVHOQfkyY5IU%2B%2FKwsll%2BVX%2FXuYVDA6TX3X8UHRPEWcavhYLhivgwMMtEgqRfWarRFreNyOEaxrcGP7vLGj8QdFwL9ASrS4a3CUj5UhcCW805rpqqx2Le%2BwKJ&X-Amz-Signature=73b1c140cb6942d68477f1aa118fbc62fd108886ea2419e11793cf9ddb643e53&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+    "expiry_time": "2026-10-22T12:43:38.535Z"
+   }
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "f4acde37-f9ec-47dc-b8b4-8b7cd154d132",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-80d3-9e71-ffede85a6202"
+  },
+  "created_time": "2026-06-12T05:58:00.000Z",
+  "last_edited_time": "2026-06-12T05:59:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "This means Meridian's Agent Node A could connect to a Jira MCP server and create tickets, query a GitHub MCP server for repository context, or retrieve live data from a Brave Search MCP server, all without writing custom API integration code for each one.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "This means Meridian's Agent Node A could connect to a Jira MCP server and create tickets, query a GitHub MCP server for repository context, or retrieve live data from a Brave Search MCP server, all without writing custom API integration code for each one.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38094183-19f3-8036-9a3b-f9693b57e9bb",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-80d3-9e71-ffede85a6202"
+  },
+  "created_time": "2026-06-15T12:47:00.000Z",
+  "last_edited_time": "2026-06-15T12:47:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "a8e16d66-c09e-496b-995e-e19a7eee3f89",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-80d3-9e71-ffede85a6202"
+  },
+  "created_time": "2026-06-12T05:58:00.000Z",
+  "last_edited_time": "2026-06-12T05:58:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_3",
+  "heading_3": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Why MCP matters for the Meridian project",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Why MCP matters for the Meridian project",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "e9f27007-c985-4370-a46e-690fa84d7d43",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-80d3-9e71-ffede85a6202"
+  },
+  "created_time": "2026-06-12T05:58:00.000Z",
+  "last_edited_time": "2026-06-12T05:58:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Three specific benefits apply directly to what has been built:",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Three specific benefits apply directly to what has been built:",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "7b60a539-f1d9-4bb8-b8da-e584c523b704",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-80d3-9e71-ffede85a6202"
+  },
+  "created_time": "2026-06-12T05:58:00.000Z",
+  "last_edited_time": "2026-06-12T06:00:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Cross-framework interoperability:",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Cross-framework interoperability:",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " An MCP server built to expose Meridian's Document Store can be consumed by a Flowise agent, a Langflow agent, and a Claude environment simultaneously without rebuilding the integration for each platform.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " An MCP server built to expose Meridian's Document Store can be consumed by a Flowise agent, a Langflow agent, and a Claude environment simultaneously without rebuilding the integration for each platform.",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "e162f582-3650-4ed0-9572-e6a045d85c14",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-80d3-9e71-ffede85a6202"
+  },
+  "created_time": "2026-06-12T05:58:00.000Z",
+  "last_edited_time": "2026-06-12T05:59:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Reduced integration overhead:",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Reduced integration overhead:",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " Instead of writing custom connectors for every tool in every framework, a team builds one MCP server per tool. Any MCP-compatible agent can then access it through the same standardised interface.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " Instead of writing custom connectors for every tool in every framework, a team builds one MCP server per tool. Any MCP-compatible agent can then access it through the same standardised interface.",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "194fd0ba-2bb4-43ee-a151-331c377a9b53",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-80d3-9e71-ffede85a6202"
+  },
+  "created_time": "2026-06-12T05:58:00.000Z",
+  "last_edited_time": "2026-06-12T05:59:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Ecosystem composability:",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Ecosystem composability:",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " MCP transforms isolated agent frameworks into an interconnected ecosystem. A tool built for one platform becomes available to all platforms that support the standard.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " MCP transforms isolated agent frameworks into an interconnected ecosystem. A tool built for one platform becomes available to all platforms that support the standard.",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38094183-19f3-802e-9e9c-dc2e9a891887",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-80d3-9e71-ffede85a6202"
+  },
+  "created_time": "2026-06-15T12:47:00.000Z",
+  "last_edited_time": "2026-06-15T12:47:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "347b829c-655e-45d8-8cb5-5101ec96857b",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-80d3-9e71-ffede85a6202"
+  },
+  "created_time": "2026-06-12T05:58:00.000Z",
+  "last_edited_time": "2026-06-12T05:58:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_3",
+  "heading_3": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "MCP versus the HTTP Node",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "MCP versus the HTTP Node",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "e6eabab8-152d-4b36-b825-92fef58592e5",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-80d3-9e71-ffede85a6202"
+  },
+  "created_time": "2026-06-12T05:58:00.000Z",
+  "last_edited_time": "2026-06-12T05:58:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Students who have worked through Sprint 2 will notice a similarity between MCP tools and the HTTP Node. Both connect the agent to external systems. The difference is scope and standardisation:",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Students who have worked through Sprint 2 will notice a similarity between MCP tools and the HTTP Node. Both connect the agent to external systems. The difference is scope and standardisation:",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "63d0da85-ef10-4e9f-a68d-3fb276fb0c04",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-80d3-9e71-ffede85a6202"
+  },
+  "created_time": "2026-06-12T05:58:00.000Z",
+  "last_edited_time": "2026-06-12T06:00:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": true,
+  "in_trash": false,
+  "type": "table",
+  "table": {
+   "table_width": 3,
+   "has_column_header": true,
+   "has_row_header": false
+  },
+  "archived": false,
+  "_children": [
+   {
+    "object": "block",
+    "id": "08727e9f-1a9a-4eee-a795-b13812cec85c",
+    "parent": {
+     "type": "block_id",
+     "block_id": "63d0da85-ef10-4e9f-a68d-3fb276fb0c04"
+    },
+    "created_time": "2026-06-12T05:58:00.000Z",
+    "last_edited_time": "2026-06-12T05:58:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "231d872b-594c-81f2-a375-0002b8783aca"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "231d872b-594c-81f2-a375-0002b8783aca"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "table_row",
+    "table_row": {
+     "cells": [
+      [],
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "HTTP Node",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "HTTP Node",
+        "href": null
+       }
+      ],
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "MCP Tool",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "MCP Tool",
+        "href": null
+       }
+      ]
+     ]
+    },
+    "archived": false
+   },
+   {
+    "object": "block",
+    "id": "fd6807c0-3871-429e-90d6-9497d1086061",
+    "parent": {
+     "type": "block_id",
+     "block_id": "63d0da85-ef10-4e9f-a68d-3fb276fb0c04"
+    },
+    "created_time": "2026-06-12T05:58:00.000Z",
+    "last_edited_time": "2026-06-12T05:58:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "231d872b-594c-81f2-a375-0002b8783aca"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "231d872b-594c-81f2-a375-0002b8783aca"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "table_row",
+    "table_row": {
+     "cells": [
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Setup",
+         "link": null
+        },
+        "annotations": {
+         "bold": true,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Setup",
+        "href": null
+       }
+      ],
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Configure per endpoint",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Configure per endpoint",
+        "href": null
+       }
+      ],
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Configure once per server",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Configure once per server",
+        "href": null
+       }
+      ]
+     ]
+    },
+    "archived": false
+   },
+   {
+    "object": "block",
+    "id": "2b3c25f1-8db2-44ed-9ecc-afa54058c7b7",
+    "parent": {
+     "type": "block_id",
+     "block_id": "63d0da85-ef10-4e9f-a68d-3fb276fb0c04"
+    },
+    "created_time": "2026-06-12T05:58:00.000Z",
+    "last_edited_time": "2026-06-12T06:00:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "231d872b-594c-81f2-a375-0002b8783aca"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "231d872b-594c-81f2-a375-0002b8783aca"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "table_row",
+    "table_row": {
+     "cells": [
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Discovery",
+         "link": null
+        },
+        "annotations": {
+         "bold": true,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Discovery",
+        "href": null
+       }
+      ],
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Manual: You define each call",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Manual: You define each call",
+        "href": null
+       }
+      ],
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Automatic: Agent discovers available tools",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Automatic: Agent discovers available tools",
+        "href": null
+       }
+      ]
+     ]
+    },
+    "archived": false
+   },
+   {
+    "object": "block",
+    "id": "94fe07f9-d1ce-4d8a-a12e-46c6117769b0",
+    "parent": {
+     "type": "block_id",
+     "block_id": "63d0da85-ef10-4e9f-a68d-3fb276fb0c04"
+    },
+    "created_time": "2026-06-12T05:58:00.000Z",
+    "last_edited_time": "2026-06-12T05:58:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "231d872b-594c-81f2-a375-0002b8783aca"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "231d872b-594c-81f2-a375-0002b8783aca"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "table_row",
+    "table_row": {
+     "cells": [
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Portability",
+         "link": null
+        },
+        "annotations": {
+         "bold": true,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Portability",
+        "href": null
+       }
+      ],
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Specific to this canvas",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Specific to this canvas",
+        "href": null
+       }
+      ],
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Available to any MCP-compatible agent",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Available to any MCP-compatible agent",
+        "href": null
+       }
+      ]
+     ]
+    },
+    "archived": false
+   },
+   {
+    "object": "block",
+    "id": "416408b6-7013-476c-8717-82ba214a937b",
+    "parent": {
+     "type": "block_id",
+     "block_id": "63d0da85-ef10-4e9f-a68d-3fb276fb0c04"
+    },
+    "created_time": "2026-06-12T05:58:00.000Z",
+    "last_edited_time": "2026-06-12T05:58:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "231d872b-594c-81f2-a375-0002b8783aca"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "231d872b-594c-81f2-a375-0002b8783aca"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "table_row",
+    "table_row": {
+     "cells": [
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Best for",
+         "link": null
+        },
+        "annotations": {
+         "bold": true,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Best for",
+        "href": null
+       }
+      ],
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "One-off API calls",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "One-off API calls",
+        "href": null
+       }
+      ],
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Reusable, multi-tool integrations",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Reusable, multi-tool integrations",
+        "href": null
+       }
+      ]
+     ]
+    },
+    "archived": false
+   }
+  ]
+ },
+ {
+  "object": "block",
+  "id": "296f4204-6aca-41b8-b074-9022187c457a",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-80d3-9e71-ffede85a6202"
+  },
+  "created_time": "2026-06-12T05:58:00.000Z",
+  "last_edited_time": "2026-06-12T05:58:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "The HTTP Node is the right choice for a single specific API call. MCP is the right choice when a tool needs to be reusable, discoverable, and available across multiple agent frameworks.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "The HTTP Node is the right choice for a single specific API call. MCP is the right choice when a tool needs to be reusable, discoverable, and available across multiple agent frameworks.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38094183-19f3-8094-b20d-cded6a058cae",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-80d3-9e71-ffede85a6202"
+  },
+  "created_time": "2026-06-15T12:47:00.000Z",
+  "last_edited_time": "2026-06-15T12:47:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "2fd18a5d-af3e-4d51-8dee-9d5cddbe99d6",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-80d3-9e71-ffede85a6202"
+  },
+  "created_time": "2026-06-12T05:58:00.000Z",
+  "last_edited_time": "2026-06-12T06:00:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_2",
+  "heading_2": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Check for Understanding",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Check for Understanding",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38494183-19f3-80dd-851e-c1ff04ea4ddd",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-80d3-9e71-ffede85a6202"
+  },
+  "created_time": "2026-06-19T05:43:00.000Z",
+  "last_edited_time": "2026-06-19T05:43:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": true,
+  "in_trash": false,
+  "type": "callout",
+  "callout": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Meridian builds a single MCP server that exposes its Document Store as a resource. A client organisation wants to access the same knowledge base from their own Flowise agent. What does the client need to do?",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Meridian builds a single MCP server that exposes its Document Store as a resource. A client organisation wants to access the same knowledge base from their own Flowise agent. What does the client need to do?",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "gray_background"
+  },
+  "archived": false,
+  "_children": [
+   {
+    "object": "block",
+    "id": "38494183-19f3-801f-bbf0-c86d85f903d2",
+    "parent": {
+     "type": "block_id",
+     "block_id": "38494183-19f3-80dd-851e-c1ff04ea4ddd"
+    },
+    "created_time": "2026-06-19T05:43:00.000Z",
+    "last_edited_time": "2026-06-19T05:43:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "embed",
+    "embed": {
+     "caption": [],
+     "url": "https://app.masterschool.com/campus/multi-choice-question/0acaa5be-684a-45ac-9654-7df3e7f8ecfa"
+    },
+    "archived": false
+   }
+  ]
+ },
+ {
+  "object": "block",
+  "id": "67d9fa83-8fbd-4591-aeed-06ec72c9f9d1",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-80d3-9e71-ffede85a6202"
+  },
+  "created_time": "2026-06-12T05:58:00.000Z",
+  "last_edited_time": "2026-06-19T05:43:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37d94183-19f3-8025-8fd7-fab369c7a651",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-80d3-9e71-ffede85a6202"
+  },
+  "created_time": "2026-06-12T06:05:00.000Z",
+  "last_edited_time": "2026-06-12T06:05:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37d94183-19f3-8008-98e4-cb21e144a3a3",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-80d3-9e71-ffede85a6202"
+  },
+  "created_time": "2026-06-12T06:05:00.000Z",
+  "last_edited_time": "2026-06-15T12:47:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": true,
+  "in_trash": false,
+  "type": "callout",
+  "callout": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Takeaway: ",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Takeaway: ",
+     "href": null
+    }
+   ],
+   "icon": {
+    "type": "emoji",
+    "emoji": "\ud83d\udca1"
+   },
+   "color": "gray_background"
+  },
+  "archived": false,
+  "_children": [
+   {
+    "object": "block",
+    "id": "38094183-19f3-8058-b412-eaaeca6f0b12",
+    "parent": {
+     "type": "block_id",
+     "block_id": "37d94183-19f3-8008-98e4-cb21e144a3a3"
+    },
+    "created_time": "2026-06-15T12:47:00.000Z",
+    "last_edited_time": "2026-06-15T12:47:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+     "rich_text": [
+      {
+       "type": "text",
+       "text": {
+        "content": "MCP does for AI agent integrations what USB-C did for hardware connectivity \u2014 it replaces a fragmented landscape of custom connectors with a single universal standard. One MCP server per tool. Any compatible agent can use it. When a new capability is added to the server, all connected agents discover it automatically. For Meridian's agent and its clients, this means integrations built once become available everywhere.",
+        "link": null
+       },
+       "annotations": {
+        "bold": false,
+        "italic": false,
+        "strikethrough": false,
+        "underline": false,
+        "code": false,
+        "color": "default"
+       },
+       "plain_text": "MCP does for AI agent integrations what USB-C did for hardware connectivity \u2014 it replaces a fragmented landscape of custom connectors with a single universal standard. One MCP server per tool. Any compatible agent can use it. When a new capability is added to the server, all connected agents discover it automatically. For Meridian's agent and its clients, this means integrations built once become available everywhere.",
+       "href": null
+      }
+     ],
+     "icon": null,
+     "color": "default"
+    },
+    "archived": false
+   }
+  ]
+ }
+]

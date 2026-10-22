@@ -1,0 +1,4289 @@
+[
+ {
+  "object": "block",
+  "id": "39194183-19f3-8166-858e-e9222cf26b63",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38894183-19f3-80f2-ac25-f540b6579a22"
+  },
+  "created_time": "2026-07-02T10:16:00.000Z",
+  "last_edited_time": "2026-07-02T10:16:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "callout",
+  "callout": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "What you build here is the baseline for the Sprint 4 project. By the end of this walkthrough, your Flowise workspace contains the arXiv agent that Sprint 4 extends, evaluates, and debugs. Save the workflow.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "What you build here is the baseline for the Sprint 4 project. By the end of this walkthrough, your Flowise workspace contains the arXiv agent that Sprint 4 extends, evaluates, and debugs. Save the workflow.",
+     "href": null
+    }
+   ],
+   "icon": {
+    "type": "emoji",
+    "emoji": "\ud83c\udfaf"
+   },
+   "color": "green_background"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "39394183-19f3-8025-9a76-f58354a5d4d7",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38894183-19f3-80f2-ac25-f540b6579a22"
+  },
+  "created_time": "2026-07-04T07:41:00.000Z",
+  "last_edited_time": "2026-07-04T07:41:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "39194183-19f3-81c0-9a29-f87a615c2285",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38894183-19f3-80f2-ac25-f540b6579a22"
+  },
+  "created_time": "2026-07-02T10:16:00.000Z",
+  "last_edited_time": "2026-07-02T10:16:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Halcyon Labs now wants to extend the IT support system you designed in Sprint 1 with a research-retrieval capability: an agent that queries arXiv and returns papers to internal researchers. This lesson is where you build that capability. From this point onwards, you shift from watching Sofia build Cascadia's support automation as a teaching example to building your own project deliverable \u2014 the arXiv agent Halcyon Labs needs. The arXiv MCP server is real and public, its API sometimes rate-limits or times out, and the retrieve-then-summarise pattern is small enough to build in a walkthrough and real enough to fail interestingly \u2014 exactly the conditions the resilience patterns in this sprint were designed for.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Halcyon Labs now wants to extend the IT support system you designed in Sprint 1 with a research-retrieval capability: an agent that queries arXiv and returns papers to internal researchers. This lesson is where you build that capability. From this point onwards, you shift from watching Sofia build Cascadia's support automation as a teaching example to building your own project deliverable \u2014 the arXiv agent Halcyon Labs needs. The arXiv MCP server is real and public, its API sometimes rate-limits or times out, and the retrieve-then-summarise pattern is small enough to build in a walkthrough and real enough to fail interestingly \u2014 exactly the conditions the resilience patterns in this sprint were designed for.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "39194183-19f3-81b4-a1be-d2e5b3ca55f5",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38894183-19f3-80f2-ac25-f540b6579a22"
+  },
+  "created_time": "2026-07-02T10:16:00.000Z",
+  "last_edited_time": "2026-07-02T10:16:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "External tools do not always respond successfully. An MCP server may be rate-limited, unavailable, or slow. In an agent workflow, we do not want every temporary failure to immediately become a failed user experience. A retry pattern gives the system a second chance, while still keeping control over how many times it tries.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "External tools do not always respond successfully. An MCP server may be rate-limited, unavailable, or slow. In an agent workflow, we do not want every temporary failure to immediately become a failed user experience. A retry pattern gives the system a second chance, while still keeping control over how many times it tries.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "39394183-19f3-80d3-99a2-c110b17de420",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38894183-19f3-80f2-ac25-f540b6579a22"
+  },
+  "created_time": "2026-07-04T07:41:00.000Z",
+  "last_edited_time": "2026-07-04T07:41:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "39194183-19f3-817f-9bce-e7f75fb7227f",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38894183-19f3-80f2-ac25-f540b6579a22"
+  },
+  "created_time": "2026-07-02T10:16:00.000Z",
+  "last_edited_time": "2026-07-02T10:16:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_2",
+  "heading_2": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "What we are building",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "What we are building",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38994183-19f3-8025-a9f1-d4e7324edfaa",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38894183-19f3-80f2-ac25-f540b6579a22"
+  },
+  "created_time": "2026-06-24T08:26:00.000Z",
+  "last_edited_time": "2026-06-24T08:26:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "In this walkthrough, we will build an ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "In this walkthrough, we will build an ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "arXiv research agent",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "arXiv research agent",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " that tries to search academic papers through an arXiv MCP tool.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " that tries to search academic papers through an arXiv MCP tool.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38994183-19f3-8029-8418-f0d72b5bdb47",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38894183-19f3-80f2-ac25-f540b6579a22"
+  },
+  "created_time": "2026-06-24T08:26:00.000Z",
+  "last_edited_time": "2026-06-24T08:26:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "The workflow will:",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "The workflow will:",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38994183-19f3-809d-9a57-c741e6e79829",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38894183-19f3-80f2-ac25-f540b6579a22"
+  },
+  "created_time": "2026-06-24T08:26:00.000Z",
+  "last_edited_time": "2026-06-24T08:26:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "numbered_list_item",
+  "numbered_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Receive a user request.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Receive a user request.",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38994183-19f3-807f-b787-e115ad1c1ee1",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38894183-19f3-80f2-ac25-f540b6579a22"
+  },
+  "created_time": "2026-06-24T08:26:00.000Z",
+  "last_edited_time": "2026-06-24T08:26:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "numbered_list_item",
+  "numbered_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Ask the arXiv agent to search for papers.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Ask the arXiv agent to search for papers.",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38994183-19f3-8053-9630-d9ca4d59524c",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38894183-19f3-80f2-ac25-f540b6579a22"
+  },
+  "created_time": "2026-06-24T08:26:00.000Z",
+  "last_edited_time": "2026-06-24T08:26:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "numbered_list_item",
+  "numbered_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Parse the agent output for temporary failure signals.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Parse the agent output for temporary failure signals.",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38994183-19f3-806d-b168-d47049a01fb3",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38894183-19f3-80f2-ac25-f540b6579a22"
+  },
+  "created_time": "2026-06-24T08:26:00.000Z",
+  "last_edited_time": "2026-06-24T08:26:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "numbered_list_item",
+  "numbered_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "If the search worked, return the result to the user.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "If the search worked, return the result to the user.",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38994183-19f3-8046-8492-fd8abda5bf03",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38894183-19f3-80f2-ac25-f540b6579a22"
+  },
+  "created_time": "2026-06-24T08:26:00.000Z",
+  "last_edited_time": "2026-06-24T08:26:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "numbered_list_item",
+  "numbered_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "If the search hit a temporary failure, retry the same step.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "If the search hit a temporary failure, retry the same step.",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38994183-19f3-8077-bb51-c003a60b7941",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38894183-19f3-80f2-ac25-f540b6579a22"
+  },
+  "created_time": "2026-06-24T08:26:00.000Z",
+  "last_edited_time": "2026-06-24T08:26:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "numbered_list_item",
+  "numbered_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Stop retrying after the maximum loop count is reached.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Stop retrying after the maximum loop count is reached.",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38994183-19f3-804b-9f59-c6b260497b9a",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38894183-19f3-80f2-ac25-f540b6579a22"
+  },
+  "created_time": "2026-06-24T08:33:00.000Z",
+  "last_edited_time": "2026-06-24T08:33:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "numbered_list_item",
+  "numbered_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Add a fallback response.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Add a fallback response.",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "39394183-19f3-8098-b2cb-f0da4358e521",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38894183-19f3-80f2-ac25-f540b6579a22"
+  },
+  "created_time": "2026-07-04T07:41:00.000Z",
+  "last_edited_time": "2026-07-04T07:41:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38994183-19f3-809b-b763-f4f8d4ec8ed7",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38894183-19f3-80f2-ac25-f540b6579a22"
+  },
+  "created_time": "2026-06-24T08:33:00.000Z",
+  "last_edited_time": "2026-06-24T08:33:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_1",
+  "heading_1": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Workflow structure",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Workflow structure",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38994183-19f3-8005-9f80-c233dc89020e",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38894183-19f3-80f2-ac25-f540b6579a22"
+  },
+  "created_time": "2026-06-24T08:33:00.000Z",
+  "last_edited_time": "2026-06-24T08:38:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "code",
+  "code": {
+   "caption": [],
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Start\n  \u2193\nArxiv MCP Engine\n  \u2193\nParse Status & Errors\n  \u2193\nEvaluate Network State\n  \u251c\u2500\u2500 To_User_Chat \u2192 Direct Reply\n  \u2514\u2500\u2500 Trigger_Loop \u2192 Retry Counter Loop\n                          \u2502\n                          \u251c\u2500\u2500 Retry Available \u2192 Arxiv MCP Engine\n                          \u2502\n                          \u2514\u2500\u2500 Max Retries Reached \u2192 Fallback Reply",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Start\n  \u2193\nArxiv MCP Engine\n  \u2193\nParse Status & Errors\n  \u2193\nEvaluate Network State\n  \u251c\u2500\u2500 To_User_Chat \u2192 Direct Reply\n  \u2514\u2500\u2500 Trigger_Loop \u2192 Retry Counter Loop\n                          \u2502\n                          \u251c\u2500\u2500 Retry Available \u2192 Arxiv MCP Engine\n                          \u2502\n                          \u2514\u2500\u2500 Max Retries Reached \u2192 Fallback Reply",
+     "href": null
+    }
+   ],
+   "language": "plain text"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38994183-19f3-80ab-a693-d9106fd7f40a",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38894183-19f3-80f2-ac25-f540b6579a22"
+  },
+  "created_time": "2026-06-24T08:39:00.000Z",
+  "last_edited_time": "2026-06-24T08:39:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "callout",
+  "callout": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "The important idea is that the workflow does not retry every failure blindly. It retries only when the parsed output suggests a temporary problem, such as a rate limit or service unavailability.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "The important idea is that the workflow does not retry every failure blindly. It retries only when the parsed output suggests a temporary problem, such as a rate limit or service unavailability.",
+     "href": null
+    }
+   ],
+   "icon": {
+    "type": "emoji",
+    "emoji": "\u261d"
+   },
+   "color": "blue_background"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "39394183-19f3-80b4-a032-cad79b8be8ba",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38894183-19f3-80f2-ac25-f540b6579a22"
+  },
+  "created_time": "2026-07-04T07:41:00.000Z",
+  "last_edited_time": "2026-07-04T07:41:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38994183-19f3-809a-af36-fb6aab4b4cbc",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38894183-19f3-80f2-ac25-f540b6579a22"
+  },
+  "created_time": "2026-06-24T08:26:00.000Z",
+  "last_edited_time": "2026-06-24T08:39:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_2",
+  "heading_2": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Step 1: Create the arXiv agent",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Step 1: Create the arXiv agent",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38994183-19f3-80af-8822-e4e85195a975",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38894183-19f3-80f2-ac25-f540b6579a22"
+  },
+  "created_time": "2026-06-24T08:39:00.000Z",
+  "last_edited_time": "2026-06-24T08:40:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "In the Agentflows tab create a new worksheet and call it ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "In the Agentflows tab create a new worksheet and call it ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "Arxiv Agent.",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Arxiv Agent.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38994183-19f3-80f1-bc13-fb497a76a905",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38894183-19f3-80f2-ac25-f540b6579a22"
+  },
+  "created_time": "2026-06-24T08:40:00.000Z",
+  "last_edited_time": "2026-06-24T08:41:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Create an agent node called ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Create an agent node called ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "Arxiv MCP Engine",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": true,
+      "color": "default"
+     },
+     "plain_text": "Arxiv MCP Engine",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " .",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " .",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38994183-19f3-80fc-b418-d0d3d81ceb98",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38894183-19f3-80f2-ac25-f540b6579a22"
+  },
+  "created_time": "2026-06-24T08:41:00.000Z",
+  "last_edited_time": "2026-06-24T08:41:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Use the Gemini Flash Lite model and connect the arXiv MCP tool.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Use the Gemini Flash Lite model and connect the arXiv MCP tool.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38994183-19f3-805d-9ccd-f65d4a5eae96",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38894183-19f3-80f2-ac25-f540b6579a22"
+  },
+  "created_time": "2026-06-24T08:41:00.000Z",
+  "last_edited_time": "2026-06-24T08:41:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "The agent\u2019s job is simple: search arXiv and return useful paper information to the user.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "The agent\u2019s job is simple: search arXiv and return useful paper information to the user.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38994183-19f3-8067-8216-fa3ff366b2a4",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38894183-19f3-80f2-ac25-f540b6579a22"
+  },
+  "created_time": "2026-06-24T08:42:00.000Z",
+  "last_edited_time": "2026-06-24T08:42:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Add a system prompt:",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Add a system prompt:",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38994183-19f3-8007-8fb8-cbc531cd2a88",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38894183-19f3-80f2-ac25-f540b6579a22"
+  },
+  "created_time": "2026-06-24T08:42:00.000Z",
+  "last_edited_time": "2026-06-24T08:42:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "code",
+  "code": {
+   "caption": [],
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "You are an expert Research Assistant Agent specializing in fetching, analyzing, and synthesizing scientific papers from arXiv using the provided Model Context Protocol (MCP) tools.\n\nYour primary objective is to answer user queries with accurate, up-to-date academic context.\n\nOPERATIONAL INSTRUCTIONS:\n\n\nAlways translate the user's research query into precise, well-formatted keywords before calling the search_papers or get_details tools.\n\nIf a query returns multiple papers, select the most relevant ones and synthesize their findings. Do not just list them blindly.\n\nCRITICAL: TRANSIENT ERROR & RATE LIMIT HANDLING:\n\nThe arXiv API enforces strict rate limits. If you receive an error message from a tool execution containing \"429\", \"Rate Limit\", \"Too Many Requests\", or \"503 Service Unavailable\", you must immediately stop trying alternative tools and output the exact phrase: \"Error: 429 Rate limit exceeded by arXiv.\" \n\nDo not attempt to guess or hallucinate data if a tool fails. Outputting this exact error string allows the orchestration system to safely trigger a workflow retry loop on your behalf.\n\nFINAL ANSWER FORMATTING rules:\n\nWhen presenting the final answer to the user, DO NOT output raw JSON, tool parameters, or programming code.\nWrite your response in clear, concise, professional academic markdown.\nStructure your answer with clear headings, bullet points for key findings, and include the paper titles alongside their authors and publication years.\n\n",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "You are an expert Research Assistant Agent specializing in fetching, analyzing, and synthesizing scientific papers from arXiv using the provided Model Context Protocol (MCP) tools.\n\nYour primary objective is to answer user queries with accurate, up-to-date academic context.\n\nOPERATIONAL INSTRUCTIONS:\n\n\nAlways translate the user's research query into precise, well-formatted keywords before calling the search_papers or get_details tools.\n\nIf a query returns multiple papers, select the most relevant ones and synthesize their findings. Do not just list them blindly.\n\nCRITICAL: TRANSIENT ERROR & RATE LIMIT HANDLING:\n\nThe arXiv API enforces strict rate limits. If you receive an error message from a tool execution containing \"429\", \"Rate Limit\", \"Too Many Requests\", or \"503 Service Unavailable\", you must immediately stop trying alternative tools and output the exact phrase: \"Error: 429 Rate limit exceeded by arXiv.\" \n\nDo not attempt to guess or hallucinate data if a tool fails. Outputting this exact error string allows the orchestration system to safely trigger a workflow retry loop on your behalf.\n\nFINAL ANSWER FORMATTING rules:\n\nWhen presenting the final answer to the user, DO NOT output raw JSON, tool parameters, or programming code.\nWrite your response in clear, concise, professional academic markdown.\nStructure your answer with clear headings, bullet points for key findings, and include the paper titles alongside their authors and publication years.\n\n",
+     "href": null
+    }
+   ],
+   "language": "plain text"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38994183-19f3-804b-ba97-c645b390f3d3",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38894183-19f3-80f2-ac25-f540b6579a22"
+  },
+  "created_time": "2026-06-24T08:43:00.000Z",
+  "last_edited_time": "2026-06-24T08:43:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "image",
+  "image": {
+   "caption": [],
+   "type": "file",
+   "file": {
+    "url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/3a9085c4-df29-45e6-8bc7-6c9c0a25ea8c/dbb89dcd-e873-4f64-99d2-86a092f5558e/image.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466UZSEUZDR%2F20261022%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20261022T121031Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEKv%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJIMEYCIQDKCSJO%2BExtxBRfXONegOCKRE9g2UFer6qY2S9JrKlpoQIhAIaKPw8AFWDBxlzYP43%2FbGxH%2FaC0kpRWc%2BlFXbFfL8GXKv8DCHMQABoMNjM3NDIzMTgzODA1IgzElXD17bCfhmQyDv4q3AObcJWB9UOIW0heMM4BmbvCVdUWyaBpncbTv9TtCIAQ8s9c2UeiqdI7savzyHQs%2FqOswa89teo9EG2WvbTPugat0wHv%2B2pMYq%2B3MfeXc4e8EQsHxSaZ5oEPBkSCNsl2O9yRF%2F5UwioA10oBDstuwh%2Fbm2Ft5PyltgLdk7IJO3o0YsFoSNTCACnKIy8AKmQ%2B6ewMuKykAuJ9phxRKF2yLCSXUgbHkqxO9mfhlK2oMWRFJlvwtjGMP4mKfW1BrTlb9pTNsg0qYk1U2Pg%2Bgtuo5fV2vDb5K4pQ8gd%2Bc8wiEBDu6fuPc1WYzVIPRKSK0rBvAxWe7%2FPRaRZ%2BXo0bpoXtc1TvKzXVuSZIdpkQBKWS3944cRRZobZiA1oynupdxw3K8y6PDph4cKMQ8qFhhq2VfgywOoDdSxFkuAW4GLKyzB1%2FTfK8vBBO5EegesdJVY2pyyltSlNwHfTpbceSaLanvCbb1i9Qm5mG6bEsCfPmdpPqVGbY%2BK%2FGx3K539lwnoVHzyuUZGyKDEL2cySs7vjGUHMYh5tQNQ7ngg8y92r8SDIrsiHmaVYNohbgM%2B1V3KjwTWHHzRC2uZTpDZQA9Gnk0rgy0r7bjGDsPvSAnUGQhSrK%2FYCB9VRP3PEHwP4n2TCpx%2BfWBjqkATXU5CxF7kDU0mOI2iIhXDD2GuVOm6ENppQBR3oVdmKxh%2BV1lMOCFT64mzXsR9TC88G%2F1IFCgheUD2hEpO4P0g1%2BLkzItN7vu8H0HeP9Lhnf1AIafahrgxBnf4QfyLzQY61isgdmGIABBl4E9Z00%2Fiej2x4QYcMHI%2Bhvcvfx4QgY4z5%2BEZuajihA0%2BQpTwesEgPnuQYM1PY8rURmD57a0jsPFvy9&X-Amz-Signature=947e4263499b8c6a61169f979af46121111f2b33b7a23c5ea4cdb2267411cb73&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+    "expiry_time": "2026-10-22T13:10:31.004Z"
+   }
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "39394183-19f3-80fe-8b2a-d22e084e4e6d",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38894183-19f3-80f2-ac25-f540b6579a22"
+  },
+  "created_time": "2026-07-04T07:42:00.000Z",
+  "last_edited_time": "2026-07-04T07:42:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38994183-19f3-8006-acb5-f4a1c2d061c9",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38894183-19f3-80f2-ac25-f540b6579a22"
+  },
+  "created_time": "2026-06-24T08:44:00.000Z",
+  "last_edited_time": "2026-06-24T08:44:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_1",
+  "heading_1": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Step 2: Add a parser function",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Step 2: Add a parser function",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38994183-19f3-8078-b2e8-cf08ffb4d82a",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38894183-19f3-80f2-ac25-f540b6579a22"
+  },
+  "created_time": "2026-06-24T08:44:00.000Z",
+  "last_edited_time": "2026-06-24T08:44:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Add a custom function node after the arXiv agent.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Add a custom function node after the arXiv agent.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38994183-19f3-8045-bc0d-f07e5c8b7979",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38894183-19f3-80f2-ac25-f540b6579a22"
+  },
+  "created_time": "2026-06-24T08:44:00.000Z",
+  "last_edited_time": "2026-06-24T08:44:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Name it ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Name it ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "Parse Status & Errors",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": true,
+      "color": "default"
+     },
+     "plain_text": "Parse Status & Errors",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "004bda8d-25e0-47dc-98ad-d2b1db9bd128",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38894183-19f3-80f2-ac25-f540b6579a22"
+  },
+  "created_time": "2026-06-28T11:19:00.000Z",
+  "last_edited_time": "2026-06-28T11:19:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "106d872b-594c-814a-98f1-0002340e7046"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "106d872b-594c-814a-98f1-0002340e7046"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "// Grab the textual response from the agent trying to query arXiv\nconst assistantResponse = $input.text || \"\";",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "// Grab the textual response from the agent trying to query arXiv\nconst assistantResponse = $input.text || \"\";",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "8942ae30-8539-4875-b79d-89f17d8fd5de",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38894183-19f3-80f2-ac25-f540b6579a22"
+  },
+  "created_time": "2026-06-28T11:19:00.000Z",
+  "last_edited_time": "2026-06-28T11:19:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "106d872b-594c-814a-98f1-0002340e7046"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "106d872b-594c-814a-98f1-0002340e7046"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "// Detect if arXiv rate-limited the agent or dropped the connection\nif (assistantResponse.includes(\"429\") ||\nassistantResponse.includes(\"Rate limit\") ||\nassistantResponse.includes(\"503 Service Unavailable\")) {",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "// Detect if arXiv rate-limited the agent or dropped the connection\nif (assistantResponse.includes(\"429\") ||\nassistantResponse.includes(\"Rate limit\") ||\nassistantResponse.includes(\"503 Service Unavailable\")) {",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "24fb12f1-2d72-448f-b602-784ea52235b2",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38894183-19f3-80f2-ac25-f540b6579a22"
+  },
+  "created_time": "2026-06-28T11:19:00.000Z",
+  "last_edited_time": "2026-06-28T11:19:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "106d872b-594c-814a-98f1-0002340e7046"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "106d872b-594c-814a-98f1-0002340e7046"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "code",
+  "code": {
+   "caption": [],
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "return \"Trigger_Loop\"; // Matches the path leading to the Loop Node",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "return \"Trigger_Loop\"; // Matches the path leading to the Loop Node",
+     "href": null
+    }
+   ],
+   "language": "plain text"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "1ca8d5bf-0324-4b79-9cff-c632edf5a9b8",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38894183-19f3-80f2-ac25-f540b6579a22"
+  },
+  "created_time": "2026-06-28T11:19:00.000Z",
+  "last_edited_time": "2026-06-28T11:19:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "106d872b-594c-814a-98f1-0002340e7046"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "106d872b-594c-814a-98f1-0002340e7046"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "} else {\nreturn \"To_User_Chat\"; // Matches the path completing the workflow\n}",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "} else {\nreturn \"To_User_Chat\"; // Matches the path completing the workflow\n}",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38994183-19f3-80f0-ab92-fe52fcb5bd0f",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38894183-19f3-80f2-ac25-f540b6579a22"
+  },
+  "created_time": "2026-06-24T08:44:00.000Z",
+  "last_edited_time": "2026-06-24T08:44:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "image",
+  "image": {
+   "caption": [],
+   "type": "file",
+   "file": {
+    "url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/3a9085c4-df29-45e6-8bc7-6c9c0a25ea8c/86933c67-da38-4cad-812b-8854f791e9f5/image.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466UZSEUZDR%2F20261022%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20261022T121031Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEKv%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJIMEYCIQDKCSJO%2BExtxBRfXONegOCKRE9g2UFer6qY2S9JrKlpoQIhAIaKPw8AFWDBxlzYP43%2FbGxH%2FaC0kpRWc%2BlFXbFfL8GXKv8DCHMQABoMNjM3NDIzMTgzODA1IgzElXD17bCfhmQyDv4q3AObcJWB9UOIW0heMM4BmbvCVdUWyaBpncbTv9TtCIAQ8s9c2UeiqdI7savzyHQs%2FqOswa89teo9EG2WvbTPugat0wHv%2B2pMYq%2B3MfeXc4e8EQsHxSaZ5oEPBkSCNsl2O9yRF%2F5UwioA10oBDstuwh%2Fbm2Ft5PyltgLdk7IJO3o0YsFoSNTCACnKIy8AKmQ%2B6ewMuKykAuJ9phxRKF2yLCSXUgbHkqxO9mfhlK2oMWRFJlvwtjGMP4mKfW1BrTlb9pTNsg0qYk1U2Pg%2Bgtuo5fV2vDb5K4pQ8gd%2Bc8wiEBDu6fuPc1WYzVIPRKSK0rBvAxWe7%2FPRaRZ%2BXo0bpoXtc1TvKzXVuSZIdpkQBKWS3944cRRZobZiA1oynupdxw3K8y6PDph4cKMQ8qFhhq2VfgywOoDdSxFkuAW4GLKyzB1%2FTfK8vBBO5EegesdJVY2pyyltSlNwHfTpbceSaLanvCbb1i9Qm5mG6bEsCfPmdpPqVGbY%2BK%2FGx3K539lwnoVHzyuUZGyKDEL2cySs7vjGUHMYh5tQNQ7ngg8y92r8SDIrsiHmaVYNohbgM%2B1V3KjwTWHHzRC2uZTpDZQA9Gnk0rgy0r7bjGDsPvSAnUGQhSrK%2FYCB9VRP3PEHwP4n2TCpx%2BfWBjqkATXU5CxF7kDU0mOI2iIhXDD2GuVOm6ENppQBR3oVdmKxh%2BV1lMOCFT64mzXsR9TC88G%2F1IFCgheUD2hEpO4P0g1%2BLkzItN7vu8H0HeP9Lhnf1AIafahrgxBnf4QfyLzQY61isgdmGIABBl4E9Z00%2Fiej2x4QYcMHI%2Bhvcvfx4QgY4z5%2BEZuajihA0%2BQpTwesEgPnuQYM1PY8rURmD57a0jsPFvy9&X-Amz-Signature=321e9d09054d5ef08cc32f8e92787ab0dc581e7467b3b551b7fefe52ed3511d1&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+    "expiry_time": "2026-10-22T13:10:31.004Z"
+   }
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38994183-19f3-80df-a27c-ede02eb56e5e",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38894183-19f3-80f2-ac25-f540b6579a22"
+  },
+  "created_time": "2026-06-24T08:45:00.000Z",
+  "last_edited_time": "2026-06-24T08:45:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Use this function:",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Use this function:",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38994183-19f3-8055-b357-df571c1cba6b",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38894183-19f3-80f2-ac25-f540b6579a22"
+  },
+  "created_time": "2026-06-24T08:45:00.000Z",
+  "last_edited_time": "2026-06-24T08:45:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "code",
+  "code": {
+   "caption": [],
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "// Grab the textual response from the agent trying to query arXiv\nconst assistantResponse = $input.text || \"\";\n\n// Detect if arXiv rate-limited the agent or dropped the connection\nif (assistantResponse.includes(\"429\") || \n    assistantResponse.includes(\"Rate limit\") || \n    assistantResponse.includes(\"503 Service Unavailable\")) {\n    \n    return \"Trigger_Loop\"; // Matches the path leading to the Loop Node\n} else {\n    return \"To_User_Chat\"; // Matches the path completing the workflow\n}",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "// Grab the textual response from the agent trying to query arXiv\nconst assistantResponse = $input.text || \"\";\n\n// Detect if arXiv rate-limited the agent or dropped the connection\nif (assistantResponse.includes(\"429\") || \n    assistantResponse.includes(\"Rate limit\") || \n    assistantResponse.includes(\"503 Service Unavailable\")) {\n    \n    return \"Trigger_Loop\"; // Matches the path leading to the Loop Node\n} else {\n    return \"To_User_Chat\"; // Matches the path completing the workflow\n}",
+     "href": null
+    }
+   ],
+   "language": "javascript"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38994183-19f3-80e9-a0f0-f2689fc81f5f",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38894183-19f3-80f2-ac25-f540b6579a22"
+  },
+  "created_time": "2026-06-24T08:45:00.000Z",
+  "last_edited_time": "2026-06-24T08:46:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "This function converts a messy agent response into a clean routing decision. In this example, we are checking for temporary service failures that often recover on their own. Specifically, we look for ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "This function converts a messy agent response into a clean routing decision. In this example, we are checking for temporary service failures that often recover on their own. Specifically, we look for ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "429 (Too Many Requests)",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "429 (Too Many Requests)",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": ", which indicates a rate limit has been reached, ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": ", which indicates a rate limit has been reached, ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "\"Rate limit\"",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "\"Rate limit\"",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " messages returned by the tool or model, and ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " messages returned by the tool or model, and ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "503 Service Unavailable",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "503 Service Unavailable",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": ", which indicates the service is temporarily unable to process requests. These errors are good candidates for retries because a second or third attempt may succeed once the temporary condition has passed.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": ", which indicates the service is temporarily unable to process requests. These errors are good candidates for retries because a second or third attempt may succeed once the temporary condition has passed.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38994183-19f3-8015-9bd6-dd66e698757a",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38894183-19f3-80f2-ac25-f540b6579a22"
+  },
+  "created_time": "2026-06-24T08:45:00.000Z",
+  "last_edited_time": "2026-06-24T08:47:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "The function does not solve the problem itself. It only answers:",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "The function does not solve the problem itself. It only answers:",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38994183-19f3-800a-9cc4-cd654597fb13",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38894183-19f3-80f2-ac25-f540b6579a22"
+  },
+  "created_time": "2026-06-24T08:45:00.000Z",
+  "last_edited_time": "2026-06-24T08:45:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "quote",
+  "quote": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Should we retry, or should we return the result to the user? ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Should we retry, or should we return the result to the user? ",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38994183-19f3-80d3-b721-cbac99dea4fd",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38894183-19f3-80f2-ac25-f540b6579a22"
+  },
+  "created_time": "2026-06-24T08:45:00.000Z",
+  "last_edited_time": "2026-06-24T08:46:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "So it provides two outputs: ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "So it provides two outputs: ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "Trigger_Loop",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": true,
+      "color": "default"
+     },
+     "plain_text": "Trigger_Loop",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " in case something was broken or ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " in case something was broken or ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "To_User_Chat",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": true,
+      "color": "default"
+     },
+     "plain_text": "To_User_Chat",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " if the execution of the Agent was healthy.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " if the execution of the Agent was healthy.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "39394183-19f3-80c4-9685-e5e0e6737b38",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38894183-19f3-80f2-ac25-f540b6579a22"
+  },
+  "created_time": "2026-07-04T07:42:00.000Z",
+  "last_edited_time": "2026-07-04T07:42:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38994183-19f3-80af-8d2f-da0d6a810933",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38894183-19f3-80f2-ac25-f540b6579a22"
+  },
+  "created_time": "2026-06-24T08:47:00.000Z",
+  "last_edited_time": "2026-06-24T08:47:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_1",
+  "heading_1": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Step 3: Add the condition node",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Step 3: Add the condition node",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38994183-19f3-804c-a7cc-fab8ef817621",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38894183-19f3-80f2-ac25-f540b6579a22"
+  },
+  "created_time": "2026-06-24T08:47:00.000Z",
+  "last_edited_time": "2026-06-24T08:47:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Add a condition node called ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Add a condition node called ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "Evaluate Network State",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": true,
+      "color": "default"
+     },
+     "plain_text": "Evaluate Network State",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " .",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " .",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38994183-19f3-80a1-8c84-d9e2b92f7b50",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38894183-19f3-80f2-ac25-f540b6579a22"
+  },
+  "created_time": "2026-06-24T08:48:00.000Z",
+  "last_edited_time": "2026-06-24T08:48:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "image",
+  "image": {
+   "caption": [],
+   "type": "file",
+   "file": {
+    "url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/3a9085c4-df29-45e6-8bc7-6c9c0a25ea8c/27126e2f-69de-4d8f-8d0d-f8a2bd953a2c/image.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466UZSEUZDR%2F20261022%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20261022T121031Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEKv%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJIMEYCIQDKCSJO%2BExtxBRfXONegOCKRE9g2UFer6qY2S9JrKlpoQIhAIaKPw8AFWDBxlzYP43%2FbGxH%2FaC0kpRWc%2BlFXbFfL8GXKv8DCHMQABoMNjM3NDIzMTgzODA1IgzElXD17bCfhmQyDv4q3AObcJWB9UOIW0heMM4BmbvCVdUWyaBpncbTv9TtCIAQ8s9c2UeiqdI7savzyHQs%2FqOswa89teo9EG2WvbTPugat0wHv%2B2pMYq%2B3MfeXc4e8EQsHxSaZ5oEPBkSCNsl2O9yRF%2F5UwioA10oBDstuwh%2Fbm2Ft5PyltgLdk7IJO3o0YsFoSNTCACnKIy8AKmQ%2B6ewMuKykAuJ9phxRKF2yLCSXUgbHkqxO9mfhlK2oMWRFJlvwtjGMP4mKfW1BrTlb9pTNsg0qYk1U2Pg%2Bgtuo5fV2vDb5K4pQ8gd%2Bc8wiEBDu6fuPc1WYzVIPRKSK0rBvAxWe7%2FPRaRZ%2BXo0bpoXtc1TvKzXVuSZIdpkQBKWS3944cRRZobZiA1oynupdxw3K8y6PDph4cKMQ8qFhhq2VfgywOoDdSxFkuAW4GLKyzB1%2FTfK8vBBO5EegesdJVY2pyyltSlNwHfTpbceSaLanvCbb1i9Qm5mG6bEsCfPmdpPqVGbY%2BK%2FGx3K539lwnoVHzyuUZGyKDEL2cySs7vjGUHMYh5tQNQ7ngg8y92r8SDIrsiHmaVYNohbgM%2B1V3KjwTWHHzRC2uZTpDZQA9Gnk0rgy0r7bjGDsPvSAnUGQhSrK%2FYCB9VRP3PEHwP4n2TCpx%2BfWBjqkATXU5CxF7kDU0mOI2iIhXDD2GuVOm6ENppQBR3oVdmKxh%2BV1lMOCFT64mzXsR9TC88G%2F1IFCgheUD2hEpO4P0g1%2BLkzItN7vu8H0HeP9Lhnf1AIafahrgxBnf4QfyLzQY61isgdmGIABBl4E9Z00%2Fiej2x4QYcMHI%2Bhvcvfx4QgY4z5%2BEZuajihA0%2BQpTwesEgPnuQYM1PY8rURmD57a0jsPFvy9&X-Amz-Signature=251f4282d2c8dd859c0f5e7ec414776ad62eedd897b785d77df4422e0c97c5b8&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+    "expiry_time": "2026-10-22T13:10:31.005Z"
+   }
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38994183-19f3-80a7-af95-dd9d8ca13ec1",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38894183-19f3-80f2-ac25-f540b6579a22"
+  },
+  "created_time": "2026-06-24T08:48:00.000Z",
+  "last_edited_time": "2026-06-28T11:35:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "106d872b-594c-814a-98f1-0002340e7046"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "This node checks the output of the parser. ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "This node checks the output of the parser. ",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38994183-19f3-80d3-90b0-fd3c09166bf7",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38894183-19f3-80f2-ac25-f540b6579a22"
+  },
+  "created_time": "2026-06-24T08:48:00.000Z",
+  "last_edited_time": "2026-06-24T08:48:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Create two branches: ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Create two branches: ",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38994183-19f3-8090-b38b-c19f87b6a3eb",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38894183-19f3-80f2-ac25-f540b6579a22"
+  },
+  "created_time": "2026-06-24T08:48:00.000Z",
+  "last_edited_time": "2026-06-24T08:49:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "To_User_Chat",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "To_User_Chat",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38994183-19f3-80cd-af4a-e156714344c0",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38894183-19f3-80f2-ac25-f540b6579a22"
+  },
+  "created_time": "2026-06-24T08:49:00.000Z",
+  "last_edited_time": "2026-06-24T08:49:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Trigger_Loop",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Trigger_Loop",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38994183-19f3-8037-a64b-d12b422309e4",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38894183-19f3-80f2-ac25-f540b6579a22"
+  },
+  "created_time": "2026-06-24T08:49:00.000Z",
+  "last_edited_time": "2026-06-24T08:49:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "If the parser returns ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "If the parser returns ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "To_User_Chat",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": true,
+      "color": "default"
+     },
+     "plain_text": "To_User_Chat",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": ", the workflow goes to the direct reply node.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": ", the workflow goes to the direct reply node.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38994183-19f3-80cf-88dd-ec9121332c65",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38894183-19f3-80f2-ac25-f540b6579a22"
+  },
+  "created_time": "2026-06-24T08:49:00.000Z",
+  "last_edited_time": "2026-06-24T08:49:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "If the parser returns ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "If the parser returns ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "Trigger_Loop",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": true,
+      "color": "default"
+     },
+     "plain_text": "Trigger_Loop",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": ", the workflow goes to the retry loop.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": ", the workflow goes to the retry loop.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38994183-19f3-807a-a1d6-f0cda5968db0",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38894183-19f3-80f2-ac25-f540b6579a22"
+  },
+  "created_time": "2026-06-24T08:49:00.000Z",
+  "last_edited_time": "2026-06-24T08:49:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Open the node and place:",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Open the node and place:",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38994183-19f3-8005-a6b8-f0c96667e5cd",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38894183-19f3-80f2-ac25-f540b6579a22"
+  },
+  "created_time": "2026-06-24T08:49:00.000Z",
+  "last_edited_time": "2026-06-28T11:25:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "106d872b-594c-814a-98f1-0002340e7046"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "image",
+  "image": {
+   "caption": [],
+   "type": "file",
+   "file": {
+    "url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/3a9085c4-df29-45e6-8bc7-6c9c0a25ea8c/62927ff6-da95-462d-981e-461e0f15c343/image.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466UZSEUZDR%2F20261022%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20261022T121031Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEKv%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJIMEYCIQDKCSJO%2BExtxBRfXONegOCKRE9g2UFer6qY2S9JrKlpoQIhAIaKPw8AFWDBxlzYP43%2FbGxH%2FaC0kpRWc%2BlFXbFfL8GXKv8DCHMQABoMNjM3NDIzMTgzODA1IgzElXD17bCfhmQyDv4q3AObcJWB9UOIW0heMM4BmbvCVdUWyaBpncbTv9TtCIAQ8s9c2UeiqdI7savzyHQs%2FqOswa89teo9EG2WvbTPugat0wHv%2B2pMYq%2B3MfeXc4e8EQsHxSaZ5oEPBkSCNsl2O9yRF%2F5UwioA10oBDstuwh%2Fbm2Ft5PyltgLdk7IJO3o0YsFoSNTCACnKIy8AKmQ%2B6ewMuKykAuJ9phxRKF2yLCSXUgbHkqxO9mfhlK2oMWRFJlvwtjGMP4mKfW1BrTlb9pTNsg0qYk1U2Pg%2Bgtuo5fV2vDb5K4pQ8gd%2Bc8wiEBDu6fuPc1WYzVIPRKSK0rBvAxWe7%2FPRaRZ%2BXo0bpoXtc1TvKzXVuSZIdpkQBKWS3944cRRZobZiA1oynupdxw3K8y6PDph4cKMQ8qFhhq2VfgywOoDdSxFkuAW4GLKyzB1%2FTfK8vBBO5EegesdJVY2pyyltSlNwHfTpbceSaLanvCbb1i9Qm5mG6bEsCfPmdpPqVGbY%2BK%2FGx3K539lwnoVHzyuUZGyKDEL2cySs7vjGUHMYh5tQNQ7ngg8y92r8SDIrsiHmaVYNohbgM%2B1V3KjwTWHHzRC2uZTpDZQA9Gnk0rgy0r7bjGDsPvSAnUGQhSrK%2FYCB9VRP3PEHwP4n2TCpx%2BfWBjqkATXU5CxF7kDU0mOI2iIhXDD2GuVOm6ENppQBR3oVdmKxh%2BV1lMOCFT64mzXsR9TC88G%2F1IFCgheUD2hEpO4P0g1%2BLkzItN7vu8H0HeP9Lhnf1AIafahrgxBnf4QfyLzQY61isgdmGIABBl4E9Z00%2Fiej2x4QYcMHI%2Bhvcvfx4QgY4z5%2BEZuajihA0%2BQpTwesEgPnuQYM1PY8rURmD57a0jsPFvy9&X-Amz-Signature=e1da63a43e34dabeab75aefc9768855de06ad30a07f1130a74b1c93db69cb466&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+    "expiry_time": "2026-10-22T13:10:31.047Z"
+   }
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38994183-19f3-8029-b070-c99b07f35f85",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38894183-19f3-80f2-ac25-f540b6579a22"
+  },
+  "created_time": "2026-06-24T08:52:00.000Z",
+  "last_edited_time": "2026-06-24T08:53:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "We add a branch for ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "We add a branch for ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "Trigger_Loop",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": true,
+      "color": "default"
+     },
+     "plain_text": "Trigger_Loop",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "  which will result in Agent retries. Alternative healthy branch is going to be added automatically, so you do not have to add second condition.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "  which will result in Agent retries. Alternative healthy branch is going to be added automatically, so you do not have to add second condition.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "39394183-19f3-8007-8ecd-db8a004e23e2",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38894183-19f3-80f2-ac25-f540b6579a22"
+  },
+  "created_time": "2026-07-04T07:42:00.000Z",
+  "last_edited_time": "2026-07-04T07:42:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38994183-19f3-80fc-afc3-cf2474b35741",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38894183-19f3-80f2-ac25-f540b6579a22"
+  },
+  "created_time": "2026-06-24T08:53:00.000Z",
+  "last_edited_time": "2026-06-24T08:53:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_1",
+  "heading_1": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Step 4: Add the retry loop",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Step 4: Add the retry loop",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38994183-19f3-80d5-837c-f01151848b25",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38894183-19f3-80f2-ac25-f540b6579a22"
+  },
+  "created_time": "2026-06-24T08:53:00.000Z",
+  "last_edited_time": "2026-06-24T08:53:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Add a loop node called ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Add a loop node called ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "Retry Counter Loop",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": true,
+      "color": "default"
+     },
+     "plain_text": "Retry Counter Loop",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " . Connect the first branch of conditional node to it.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " . Connect the first branch of conditional node to it.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38994183-19f3-8043-b4c4-dc4ccb5ddcba",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38894183-19f3-80f2-ac25-f540b6579a22"
+  },
+  "created_time": "2026-06-24T08:54:00.000Z",
+  "last_edited_time": "2026-06-24T08:54:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "image",
+  "image": {
+   "caption": [],
+   "type": "file",
+   "file": {
+    "url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/3a9085c4-df29-45e6-8bc7-6c9c0a25ea8c/6d401b78-0f0b-409a-932a-9c75ccf6de90/image.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466UZSEUZDR%2F20261022%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20261022T121031Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEKv%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJIMEYCIQDKCSJO%2BExtxBRfXONegOCKRE9g2UFer6qY2S9JrKlpoQIhAIaKPw8AFWDBxlzYP43%2FbGxH%2FaC0kpRWc%2BlFXbFfL8GXKv8DCHMQABoMNjM3NDIzMTgzODA1IgzElXD17bCfhmQyDv4q3AObcJWB9UOIW0heMM4BmbvCVdUWyaBpncbTv9TtCIAQ8s9c2UeiqdI7savzyHQs%2FqOswa89teo9EG2WvbTPugat0wHv%2B2pMYq%2B3MfeXc4e8EQsHxSaZ5oEPBkSCNsl2O9yRF%2F5UwioA10oBDstuwh%2Fbm2Ft5PyltgLdk7IJO3o0YsFoSNTCACnKIy8AKmQ%2B6ewMuKykAuJ9phxRKF2yLCSXUgbHkqxO9mfhlK2oMWRFJlvwtjGMP4mKfW1BrTlb9pTNsg0qYk1U2Pg%2Bgtuo5fV2vDb5K4pQ8gd%2Bc8wiEBDu6fuPc1WYzVIPRKSK0rBvAxWe7%2FPRaRZ%2BXo0bpoXtc1TvKzXVuSZIdpkQBKWS3944cRRZobZiA1oynupdxw3K8y6PDph4cKMQ8qFhhq2VfgywOoDdSxFkuAW4GLKyzB1%2FTfK8vBBO5EegesdJVY2pyyltSlNwHfTpbceSaLanvCbb1i9Qm5mG6bEsCfPmdpPqVGbY%2BK%2FGx3K539lwnoVHzyuUZGyKDEL2cySs7vjGUHMYh5tQNQ7ngg8y92r8SDIrsiHmaVYNohbgM%2B1V3KjwTWHHzRC2uZTpDZQA9Gnk0rgy0r7bjGDsPvSAnUGQhSrK%2FYCB9VRP3PEHwP4n2TCpx%2BfWBjqkATXU5CxF7kDU0mOI2iIhXDD2GuVOm6ENppQBR3oVdmKxh%2BV1lMOCFT64mzXsR9TC88G%2F1IFCgheUD2hEpO4P0g1%2BLkzItN7vu8H0HeP9Lhnf1AIafahrgxBnf4QfyLzQY61isgdmGIABBl4E9Z00%2Fiej2x4QYcMHI%2Bhvcvfx4QgY4z5%2BEZuajihA0%2BQpTwesEgPnuQYM1PY8rURmD57a0jsPFvy9&X-Amz-Signature=b2ba143b3b15d59fa0ae7e5f3504089f5c95180fa88d8ba013f471c6b0a88b30&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+    "expiry_time": "2026-10-22T13:10:31.047Z"
+   }
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38994183-19f3-807d-a961-f7b01ad67a81",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38894183-19f3-80f2-ac25-f540b6579a22"
+  },
+  "created_time": "2026-06-24T08:54:00.000Z",
+  "last_edited_time": "2026-06-30T08:04:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Set the maximum loop count to 3. This is important. A retry pattern must always have a limit. Without a maximum count, the workflow could keep calling the same failing tool again and again.  Connect the loop back to Arxiv MCP Engine.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Set the maximum loop count to 3. This is important. A retry pattern must always have a limit. Without a maximum count, the workflow could keep calling the same failing tool again and again.  Connect the loop back to Arxiv MCP Engine.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38994183-19f3-8036-b7ef-d1270abe0caa",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38894183-19f3-80f2-ac25-f540b6579a22"
+  },
+  "created_time": "2026-06-24T08:54:00.000Z",
+  "last_edited_time": "2026-06-24T08:54:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "image",
+  "image": {
+   "caption": [],
+   "type": "file",
+   "file": {
+    "url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/3a9085c4-df29-45e6-8bc7-6c9c0a25ea8c/279672cd-104d-4399-bcc5-199d3d29133b/image.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466UZSEUZDR%2F20261022%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20261022T121031Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEKv%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJIMEYCIQDKCSJO%2BExtxBRfXONegOCKRE9g2UFer6qY2S9JrKlpoQIhAIaKPw8AFWDBxlzYP43%2FbGxH%2FaC0kpRWc%2BlFXbFfL8GXKv8DCHMQABoMNjM3NDIzMTgzODA1IgzElXD17bCfhmQyDv4q3AObcJWB9UOIW0heMM4BmbvCVdUWyaBpncbTv9TtCIAQ8s9c2UeiqdI7savzyHQs%2FqOswa89teo9EG2WvbTPugat0wHv%2B2pMYq%2B3MfeXc4e8EQsHxSaZ5oEPBkSCNsl2O9yRF%2F5UwioA10oBDstuwh%2Fbm2Ft5PyltgLdk7IJO3o0YsFoSNTCACnKIy8AKmQ%2B6ewMuKykAuJ9phxRKF2yLCSXUgbHkqxO9mfhlK2oMWRFJlvwtjGMP4mKfW1BrTlb9pTNsg0qYk1U2Pg%2Bgtuo5fV2vDb5K4pQ8gd%2Bc8wiEBDu6fuPc1WYzVIPRKSK0rBvAxWe7%2FPRaRZ%2BXo0bpoXtc1TvKzXVuSZIdpkQBKWS3944cRRZobZiA1oynupdxw3K8y6PDph4cKMQ8qFhhq2VfgywOoDdSxFkuAW4GLKyzB1%2FTfK8vBBO5EegesdJVY2pyyltSlNwHfTpbceSaLanvCbb1i9Qm5mG6bEsCfPmdpPqVGbY%2BK%2FGx3K539lwnoVHzyuUZGyKDEL2cySs7vjGUHMYh5tQNQ7ngg8y92r8SDIrsiHmaVYNohbgM%2B1V3KjwTWHHzRC2uZTpDZQA9Gnk0rgy0r7bjGDsPvSAnUGQhSrK%2FYCB9VRP3PEHwP4n2TCpx%2BfWBjqkATXU5CxF7kDU0mOI2iIhXDD2GuVOm6ENppQBR3oVdmKxh%2BV1lMOCFT64mzXsR9TC88G%2F1IFCgheUD2hEpO4P0g1%2BLkzItN7vu8H0HeP9Lhnf1AIafahrgxBnf4QfyLzQY61isgdmGIABBl4E9Z00%2Fiej2x4QYcMHI%2Bhvcvfx4QgY4z5%2BEZuajihA0%2BQpTwesEgPnuQYM1PY8rURmD57a0jsPFvy9&X-Amz-Signature=36fac80e28aa28a57ad4c90fd9c8396656bf5745015cd2bbfe9af3cc0b76860d&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+    "expiry_time": "2026-10-22T13:10:31.047Z"
+   }
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38994183-19f3-803e-bc96-cf2aeed5968d",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38894183-19f3-80f2-ac25-f540b6579a22"
+  },
+  "created_time": "2026-06-24T08:55:00.000Z",
+  "last_edited_time": "2026-06-24T08:55:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Now the workflow can try the arXiv search again when the error looks temporary.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Now the workflow can try the arXiv search again when the error looks temporary.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "39394183-19f3-8038-8635-fac0778bc401",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38894183-19f3-80f2-ac25-f540b6579a22"
+  },
+  "created_time": "2026-07-04T07:42:00.000Z",
+  "last_edited_time": "2026-07-04T07:42:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38994183-19f3-802b-8962-edea7d2ce65b",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38894183-19f3-80f2-ac25-f540b6579a22"
+  },
+  "created_time": "2026-06-24T08:55:00.000Z",
+  "last_edited_time": "2026-06-24T08:55:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_1",
+  "heading_1": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Step 5: Add the direct reply",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Step 5: Add the direct reply",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38994183-19f3-8026-ac07-e3c01a641e35",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38894183-19f3-80f2-ac25-f540b6579a22"
+  },
+  "created_time": "2026-06-24T08:55:00.000Z",
+  "last_edited_time": "2026-06-24T08:55:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Add a direct reply node for the successful path.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Add a direct reply node for the successful path.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38994183-19f3-80b2-ac50-f9045b003981",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38894183-19f3-80f2-ac25-f540b6579a22"
+  },
+  "created_time": "2026-06-24T08:55:00.000Z",
+  "last_edited_time": "2026-06-24T08:55:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "This node returns the agent\u2019s final output to the user.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "This node returns the agent\u2019s final output to the user.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38994183-19f3-80ec-b6d4-fd66f4c9a77f",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38894183-19f3-80f2-ac25-f540b6579a22"
+  },
+  "created_time": "2026-06-24T08:55:00.000Z",
+  "last_edited_time": "2026-06-24T08:55:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "You can keep the default name.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "You can keep the default name.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38994183-19f3-8030-8b6f-f98f16d66942",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38894183-19f3-80f2-ac25-f540b6579a22"
+  },
+  "created_time": "2026-06-24T08:56:00.000Z",
+  "last_edited_time": "2026-06-24T08:56:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "image",
+  "image": {
+   "caption": [],
+   "type": "file",
+   "file": {
+    "url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/3a9085c4-df29-45e6-8bc7-6c9c0a25ea8c/eb1956fa-95a9-4cbe-85c6-af8b8feba211/image.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466UZSEUZDR%2F20261022%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20261022T121031Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEKv%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJIMEYCIQDKCSJO%2BExtxBRfXONegOCKRE9g2UFer6qY2S9JrKlpoQIhAIaKPw8AFWDBxlzYP43%2FbGxH%2FaC0kpRWc%2BlFXbFfL8GXKv8DCHMQABoMNjM3NDIzMTgzODA1IgzElXD17bCfhmQyDv4q3AObcJWB9UOIW0heMM4BmbvCVdUWyaBpncbTv9TtCIAQ8s9c2UeiqdI7savzyHQs%2FqOswa89teo9EG2WvbTPugat0wHv%2B2pMYq%2B3MfeXc4e8EQsHxSaZ5oEPBkSCNsl2O9yRF%2F5UwioA10oBDstuwh%2Fbm2Ft5PyltgLdk7IJO3o0YsFoSNTCACnKIy8AKmQ%2B6ewMuKykAuJ9phxRKF2yLCSXUgbHkqxO9mfhlK2oMWRFJlvwtjGMP4mKfW1BrTlb9pTNsg0qYk1U2Pg%2Bgtuo5fV2vDb5K4pQ8gd%2Bc8wiEBDu6fuPc1WYzVIPRKSK0rBvAxWe7%2FPRaRZ%2BXo0bpoXtc1TvKzXVuSZIdpkQBKWS3944cRRZobZiA1oynupdxw3K8y6PDph4cKMQ8qFhhq2VfgywOoDdSxFkuAW4GLKyzB1%2FTfK8vBBO5EegesdJVY2pyyltSlNwHfTpbceSaLanvCbb1i9Qm5mG6bEsCfPmdpPqVGbY%2BK%2FGx3K539lwnoVHzyuUZGyKDEL2cySs7vjGUHMYh5tQNQ7ngg8y92r8SDIrsiHmaVYNohbgM%2B1V3KjwTWHHzRC2uZTpDZQA9Gnk0rgy0r7bjGDsPvSAnUGQhSrK%2FYCB9VRP3PEHwP4n2TCpx%2BfWBjqkATXU5CxF7kDU0mOI2iIhXDD2GuVOm6ENppQBR3oVdmKxh%2BV1lMOCFT64mzXsR9TC88G%2F1IFCgheUD2hEpO4P0g1%2BLkzItN7vu8H0HeP9Lhnf1AIafahrgxBnf4QfyLzQY61isgdmGIABBl4E9Z00%2Fiej2x4QYcMHI%2Bhvcvfx4QgY4z5%2BEZuajihA0%2BQpTwesEgPnuQYM1PY8rURmD57a0jsPFvy9&X-Amz-Signature=127726986589e04893198ff2013090e8b7d007e4e4d17e8abd37aac1a8e3bae0&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+    "expiry_time": "2026-10-22T13:10:31.047Z"
+   }
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38994183-19f3-80d9-abea-fccce2622d9f",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38894183-19f3-80f2-ac25-f540b6579a22"
+  },
+  "created_time": "2026-06-24T08:56:00.000Z",
+  "last_edited_time": "2026-06-24T08:57:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "This path is used when the parser does not detect a retryable error. The message of the direct reply node should contain the output from the agent:",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "This path is used when the parser does not detect a retryable error. The message of the direct reply node should contain the output from the agent:",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38994183-19f3-80c8-9f36-d26b76f9131a",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38894183-19f3-80f2-ac25-f540b6579a22"
+  },
+  "created_time": "2026-06-24T08:57:00.000Z",
+  "last_edited_time": "2026-06-24T08:57:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "image",
+  "image": {
+   "caption": [],
+   "type": "file",
+   "file": {
+    "url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/3a9085c4-df29-45e6-8bc7-6c9c0a25ea8c/474aa1a5-8beb-4011-a7cb-a2d440486644/image.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466UZSEUZDR%2F20261022%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20261022T121031Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEKv%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJIMEYCIQDKCSJO%2BExtxBRfXONegOCKRE9g2UFer6qY2S9JrKlpoQIhAIaKPw8AFWDBxlzYP43%2FbGxH%2FaC0kpRWc%2BlFXbFfL8GXKv8DCHMQABoMNjM3NDIzMTgzODA1IgzElXD17bCfhmQyDv4q3AObcJWB9UOIW0heMM4BmbvCVdUWyaBpncbTv9TtCIAQ8s9c2UeiqdI7savzyHQs%2FqOswa89teo9EG2WvbTPugat0wHv%2B2pMYq%2B3MfeXc4e8EQsHxSaZ5oEPBkSCNsl2O9yRF%2F5UwioA10oBDstuwh%2Fbm2Ft5PyltgLdk7IJO3o0YsFoSNTCACnKIy8AKmQ%2B6ewMuKykAuJ9phxRKF2yLCSXUgbHkqxO9mfhlK2oMWRFJlvwtjGMP4mKfW1BrTlb9pTNsg0qYk1U2Pg%2Bgtuo5fV2vDb5K4pQ8gd%2Bc8wiEBDu6fuPc1WYzVIPRKSK0rBvAxWe7%2FPRaRZ%2BXo0bpoXtc1TvKzXVuSZIdpkQBKWS3944cRRZobZiA1oynupdxw3K8y6PDph4cKMQ8qFhhq2VfgywOoDdSxFkuAW4GLKyzB1%2FTfK8vBBO5EegesdJVY2pyyltSlNwHfTpbceSaLanvCbb1i9Qm5mG6bEsCfPmdpPqVGbY%2BK%2FGx3K539lwnoVHzyuUZGyKDEL2cySs7vjGUHMYh5tQNQ7ngg8y92r8SDIrsiHmaVYNohbgM%2B1V3KjwTWHHzRC2uZTpDZQA9Gnk0rgy0r7bjGDsPvSAnUGQhSrK%2FYCB9VRP3PEHwP4n2TCpx%2BfWBjqkATXU5CxF7kDU0mOI2iIhXDD2GuVOm6ENppQBR3oVdmKxh%2BV1lMOCFT64mzXsR9TC88G%2F1IFCgheUD2hEpO4P0g1%2BLkzItN7vu8H0HeP9Lhnf1AIafahrgxBnf4QfyLzQY61isgdmGIABBl4E9Z00%2Fiej2x4QYcMHI%2Bhvcvfx4QgY4z5%2BEZuajihA0%2BQpTwesEgPnuQYM1PY8rURmD57a0jsPFvy9&X-Amz-Signature=542760422015f0b5b041fee548c69c83b231305b87836f88aadaa810ff0ee5ab&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+    "expiry_time": "2026-10-22T13:10:31.047Z"
+   }
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "39394183-19f3-80c4-87ce-e378f894a79f",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38894183-19f3-80f2-ac25-f540b6579a22"
+  },
+  "created_time": "2026-07-04T07:42:00.000Z",
+  "last_edited_time": "2026-07-04T07:42:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38994183-19f3-8092-b007-ce6ebc60c5ca",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38894183-19f3-80f2-ac25-f540b6579a22"
+  },
+  "created_time": "2026-06-24T08:57:00.000Z",
+  "last_edited_time": "2026-06-24T08:57:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_1",
+  "heading_1": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Checkpoint",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Checkpoint",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38994183-19f3-80e9-af40-ea1813cbb40a",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38894183-19f3-80f2-ac25-f540b6579a22"
+  },
+  "created_time": "2026-06-24T08:57:00.000Z",
+  "last_edited_time": "2026-06-24T08:57:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Test the workflow with a normal query:",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Test the workflow with a normal query:",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38994183-19f3-808e-bc1a-c893f6a0df61",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38894183-19f3-80f2-ac25-f540b6579a22"
+  },
+  "created_time": "2026-06-24T08:57:00.000Z",
+  "last_edited_time": "2026-06-24T08:59:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "quote",
+  "quote": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Find recent papers on transformers",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Find recent papers on transformers",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38994183-19f3-8053-bc13-c4e22f42c7b2",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38894183-19f3-80f2-ac25-f540b6579a22"
+  },
+  "created_time": "2026-06-24T09:02:00.000Z",
+  "last_edited_time": "2026-06-24T09:02:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "image",
+  "image": {
+   "caption": [],
+   "type": "file",
+   "file": {
+    "url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/3a9085c4-df29-45e6-8bc7-6c9c0a25ea8c/1c0b7e13-2736-4f9b-869c-b1621e4fee61/image.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466UZSEUZDR%2F20261022%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20261022T121031Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEKv%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJIMEYCIQDKCSJO%2BExtxBRfXONegOCKRE9g2UFer6qY2S9JrKlpoQIhAIaKPw8AFWDBxlzYP43%2FbGxH%2FaC0kpRWc%2BlFXbFfL8GXKv8DCHMQABoMNjM3NDIzMTgzODA1IgzElXD17bCfhmQyDv4q3AObcJWB9UOIW0heMM4BmbvCVdUWyaBpncbTv9TtCIAQ8s9c2UeiqdI7savzyHQs%2FqOswa89teo9EG2WvbTPugat0wHv%2B2pMYq%2B3MfeXc4e8EQsHxSaZ5oEPBkSCNsl2O9yRF%2F5UwioA10oBDstuwh%2Fbm2Ft5PyltgLdk7IJO3o0YsFoSNTCACnKIy8AKmQ%2B6ewMuKykAuJ9phxRKF2yLCSXUgbHkqxO9mfhlK2oMWRFJlvwtjGMP4mKfW1BrTlb9pTNsg0qYk1U2Pg%2Bgtuo5fV2vDb5K4pQ8gd%2Bc8wiEBDu6fuPc1WYzVIPRKSK0rBvAxWe7%2FPRaRZ%2BXo0bpoXtc1TvKzXVuSZIdpkQBKWS3944cRRZobZiA1oynupdxw3K8y6PDph4cKMQ8qFhhq2VfgywOoDdSxFkuAW4GLKyzB1%2FTfK8vBBO5EegesdJVY2pyyltSlNwHfTpbceSaLanvCbb1i9Qm5mG6bEsCfPmdpPqVGbY%2BK%2FGx3K539lwnoVHzyuUZGyKDEL2cySs7vjGUHMYh5tQNQ7ngg8y92r8SDIrsiHmaVYNohbgM%2B1V3KjwTWHHzRC2uZTpDZQA9Gnk0rgy0r7bjGDsPvSAnUGQhSrK%2FYCB9VRP3PEHwP4n2TCpx%2BfWBjqkATXU5CxF7kDU0mOI2iIhXDD2GuVOm6ENppQBR3oVdmKxh%2BV1lMOCFT64mzXsR9TC88G%2F1IFCgheUD2hEpO4P0g1%2BLkzItN7vu8H0HeP9Lhnf1AIafahrgxBnf4QfyLzQY61isgdmGIABBl4E9Z00%2Fiej2x4QYcMHI%2Bhvcvfx4QgY4z5%2BEZuajihA0%2BQpTwesEgPnuQYM1PY8rURmD57a0jsPFvy9&X-Amz-Signature=026b4db3bf372e92929552afaa7063646527c61b205271f97e48ca30c2df20d0&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+    "expiry_time": "2026-10-22T13:10:31.101Z"
+   }
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "39394183-19f3-801d-a011-dcc95671607f",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38894183-19f3-80f2-ac25-f540b6579a22"
+  },
+  "created_time": "2026-07-04T07:42:00.000Z",
+  "last_edited_time": "2026-07-04T07:42:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38994183-19f3-80d7-8ef7-f0030253f6b9",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38894183-19f3-80f2-ac25-f540b6579a22"
+  },
+  "created_time": "2026-06-24T10:02:00.000Z",
+  "last_edited_time": "2026-06-28T11:44:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "106d872b-594c-814a-98f1-0002340e7046"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_3",
+  "heading_3": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Step 6: Add a fallback response",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Step 6: Add a fallback response",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38994183-19f3-8041-b664-c4eb95032152",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38894183-19f3-80f2-ac25-f540b6579a22"
+  },
+  "created_time": "2026-06-24T10:02:00.000Z",
+  "last_edited_time": "2026-06-24T10:02:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "So far, the workflow retries the arXiv search up to three times. But what should happen if all three attempts fail?",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "So far, the workflow retries the arXiv search up to three times. But what should happen if all three attempts fail?",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38994183-19f3-80c2-821a-dae7baf3c5f8",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38894183-19f3-80f2-ac25-f540b6579a22"
+  },
+  "created_time": "2026-06-24T10:02:00.000Z",
+  "last_edited_time": "2026-06-24T10:02:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "A resilient workflow should not simply stop or return an error trace to the user. Instead, it should provide a controlled response that explains what happened and suggests a next step.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "A resilient workflow should not simply stop or return an error trace to the user. Instead, it should provide a controlled response that explains what happened and suggests a next step.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38994183-19f3-805a-86d5-d7c9be413592",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38894183-19f3-80f2-ac25-f540b6579a22"
+  },
+  "created_time": "2026-06-24T10:13:00.000Z",
+  "last_edited_time": "2026-06-24T10:13:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "callout",
+  "callout": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "In Flowise, the Loop node routes the workflow back to the selected retry step. It does not need a separate \u201cmax retries reached\u201d branch. Instead, we add a fallback message directly in the loop settings, so when the maximum loop count is reached, the workflow returns a controlled user-facing response instead of continuing to retry.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "In Flowise, the Loop node routes the workflow back to the selected retry step. It does not need a separate \u201cmax retries reached\u201d branch. Instead, we add a fallback message directly in the loop settings, so when the maximum loop count is reached, the workflow returns a controlled user-facing response instead of continuing to retry.",
+     "href": null
+    }
+   ],
+   "icon": {
+    "type": "emoji",
+    "emoji": "\u261d"
+   },
+   "color": "blue_background"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38994183-19f3-80e3-935c-f7729e3c393f",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38894183-19f3-80f2-ac25-f540b6579a22"
+  },
+  "created_time": "2026-06-24T10:02:00.000Z",
+  "last_edited_time": "2026-06-30T08:04:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Add a fallback message to your node:",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Add a fallback message to your node:",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38994183-19f3-8047-9f36-d4d23fd503e5",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38894183-19f3-80f2-ac25-f540b6579a22"
+  },
+  "created_time": "2026-06-24T10:13:00.000Z",
+  "last_edited_time": "2026-06-24T10:13:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": true,
+  "in_trash": false,
+  "type": "quote",
+  "quote": {
+   "rich_text": [],
+   "color": "default"
+  },
+  "archived": false,
+  "_children": [
+   {
+    "object": "block",
+    "id": "38994183-19f3-809e-b7ba-da2e6d177a64",
+    "parent": {
+     "type": "block_id",
+     "block_id": "38994183-19f3-8047-9f36-d4d23fd503e5"
+    },
+    "created_time": "2026-06-24T10:13:00.000Z",
+    "last_edited_time": "2026-06-24T10:13:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+     "rich_text": [
+      {
+       "type": "text",
+       "text": {
+        "content": "I\u2019m currently unable to retrieve results from arXiv because the service may be temporarily unavailable or rate-limited.",
+        "link": null
+       },
+       "annotations": {
+        "bold": false,
+        "italic": false,
+        "strikethrough": false,
+        "underline": false,
+        "code": false,
+        "color": "default"
+       },
+       "plain_text": "I\u2019m currently unable to retrieve results from arXiv because the service may be temporarily unavailable or rate-limited.",
+       "href": null
+      }
+     ],
+     "icon": null,
+     "color": "default"
+    },
+    "archived": false
+   },
+   {
+    "object": "block",
+    "id": "38994183-19f3-805a-86bf-ff60ca908b53",
+    "parent": {
+     "type": "block_id",
+     "block_id": "38994183-19f3-8047-9f36-d4d23fd503e5"
+    },
+    "created_time": "2026-06-24T10:13:00.000Z",
+    "last_edited_time": "2026-06-24T10:13:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+     "rich_text": [
+      {
+       "type": "text",
+       "text": {
+        "content": "Please try again in a few minutes, or simplify your search query and run it again.",
+        "link": null
+       },
+       "annotations": {
+        "bold": false,
+        "italic": false,
+        "strikethrough": false,
+        "underline": false,
+        "code": false,
+        "color": "default"
+       },
+       "plain_text": "Please try again in a few minutes, or simplify your search query and run it again.",
+       "href": null
+      }
+     ],
+     "icon": null,
+     "color": "default"
+    },
+    "archived": false
+   }
+  ]
+ },
+ {
+  "object": "block",
+  "id": "38994183-19f3-80b2-a6aa-c062c5c14163",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38894183-19f3-80f2-ac25-f540b6579a22"
+  },
+  "created_time": "2026-06-24T10:14:00.000Z",
+  "last_edited_time": "2026-06-24T10:14:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "image",
+  "image": {
+   "caption": [],
+   "type": "file",
+   "file": {
+    "url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/3a9085c4-df29-45e6-8bc7-6c9c0a25ea8c/0549c607-1b00-4713-86f0-d02ca994129b/image.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466UZSEUZDR%2F20261022%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20261022T121031Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEKv%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJIMEYCIQDKCSJO%2BExtxBRfXONegOCKRE9g2UFer6qY2S9JrKlpoQIhAIaKPw8AFWDBxlzYP43%2FbGxH%2FaC0kpRWc%2BlFXbFfL8GXKv8DCHMQABoMNjM3NDIzMTgzODA1IgzElXD17bCfhmQyDv4q3AObcJWB9UOIW0heMM4BmbvCVdUWyaBpncbTv9TtCIAQ8s9c2UeiqdI7savzyHQs%2FqOswa89teo9EG2WvbTPugat0wHv%2B2pMYq%2B3MfeXc4e8EQsHxSaZ5oEPBkSCNsl2O9yRF%2F5UwioA10oBDstuwh%2Fbm2Ft5PyltgLdk7IJO3o0YsFoSNTCACnKIy8AKmQ%2B6ewMuKykAuJ9phxRKF2yLCSXUgbHkqxO9mfhlK2oMWRFJlvwtjGMP4mKfW1BrTlb9pTNsg0qYk1U2Pg%2Bgtuo5fV2vDb5K4pQ8gd%2Bc8wiEBDu6fuPc1WYzVIPRKSK0rBvAxWe7%2FPRaRZ%2BXo0bpoXtc1TvKzXVuSZIdpkQBKWS3944cRRZobZiA1oynupdxw3K8y6PDph4cKMQ8qFhhq2VfgywOoDdSxFkuAW4GLKyzB1%2FTfK8vBBO5EegesdJVY2pyyltSlNwHfTpbceSaLanvCbb1i9Qm5mG6bEsCfPmdpPqVGbY%2BK%2FGx3K539lwnoVHzyuUZGyKDEL2cySs7vjGUHMYh5tQNQ7ngg8y92r8SDIrsiHmaVYNohbgM%2B1V3KjwTWHHzRC2uZTpDZQA9Gnk0rgy0r7bjGDsPvSAnUGQhSrK%2FYCB9VRP3PEHwP4n2TCpx%2BfWBjqkATXU5CxF7kDU0mOI2iIhXDD2GuVOm6ENppQBR3oVdmKxh%2BV1lMOCFT64mzXsR9TC88G%2F1IFCgheUD2hEpO4P0g1%2BLkzItN7vu8H0HeP9Lhnf1AIafahrgxBnf4QfyLzQY61isgdmGIABBl4E9Z00%2Fiej2x4QYcMHI%2Bhvcvfx4QgY4z5%2BEZuajihA0%2BQpTwesEgPnuQYM1PY8rURmD57a0jsPFvy9&X-Amz-Signature=d5949cd894821e7539c8d3363e7fc8edc340b021d60ebaaec4cfc303db600dae&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+    "expiry_time": "2026-10-22T13:10:31.102Z"
+   }
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "39394183-19f3-80c6-8540-d44a93bf959e",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38894183-19f3-80f2-ac25-f540b6579a22"
+  },
+  "created_time": "2026-07-04T07:42:00.000Z",
+  "last_edited_time": "2026-07-04T07:42:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38994183-19f3-809f-9aa8-dcf5f5ff195d",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38894183-19f3-80f2-ac25-f540b6579a22"
+  },
+  "created_time": "2026-06-24T10:02:00.000Z",
+  "last_edited_time": "2026-06-24T10:02:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_1",
+  "heading_1": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Watch out for",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Watch out for",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38994183-19f3-806c-ab02-eb5fc7c8284d",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38894183-19f3-80f2-ac25-f540b6579a22"
+  },
+  "created_time": "2026-06-24T10:02:00.000Z",
+  "last_edited_time": "2026-06-24T10:02:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "The most common mistake is retrying every error. Not every error should be retried. A missing input, invalid query, or broken prompt will probably fail again. Retries are best for temporary problems: rate limits, service unavailable errors, dropped connections, or short network issues.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "The most common mistake is retrying every error. Not every error should be retried. A missing input, invalid query, or broken prompt will probably fail again. Retries are best for temporary problems: rate limits, service unavailable errors, dropped connections, or short network issues.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38994183-19f3-8040-a731-f3befc7f2d2c",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38894183-19f3-80f2-ac25-f540b6579a22"
+  },
+  "created_time": "2026-06-24T10:02:00.000Z",
+  "last_edited_time": "2026-06-24T10:02:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Another common mistake is forgetting the retry limit. Always set a maximum loop count.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Another common mistake is forgetting the retry limit. Always set a maximum loop count.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "39394183-19f3-80f6-a8fc-fb9f403193c3",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38894183-19f3-80f2-ac25-f540b6579a22"
+  },
+  "created_time": "2026-07-04T07:42:00.000Z",
+  "last_edited_time": "2026-07-04T07:42:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38994183-19f3-80dd-b3c9-ee9ca49cfc2f",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38894183-19f3-80f2-ac25-f540b6579a22"
+  },
+  "created_time": "2026-06-24T10:13:00.000Z",
+  "last_edited_time": "2026-06-24T10:13:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_1",
+  "heading_1": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Summary",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Summary",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38994183-19f3-80bf-bb9f-f7cd45c2e205",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38894183-19f3-80f2-ac25-f540b6579a22"
+  },
+  "created_time": "2026-06-24T10:13:00.000Z",
+  "last_edited_time": "2026-06-24T10:13:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "You built a controlled retry pattern for an arXiv MCP agent. The workflow now checks whether a tool failure looks temporary, sends retryable failures back through a loop, and stops after a limited number of attempts.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "You built a controlled retry pattern for an arXiv MCP agent. The workflow now checks whether a tool failure looks temporary, sends retryable failures back through a loop, and stops after a limited number of attempts.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38994183-19f3-8080-a21d-ea61ea4b66d3",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38894183-19f3-80f2-ac25-f540b6579a22"
+  },
+  "created_time": "2026-06-24T10:13:00.000Z",
+  "last_edited_time": "2026-06-24T17:56:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "That is the core of a resilient orchestration pattern: the workflow does not panic after one failed call, but it also does not keep trying forever.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "That is the core of a resilient orchestration pattern: the workflow does not panic after one failed call, but it also does not keep trying forever.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ }
+]

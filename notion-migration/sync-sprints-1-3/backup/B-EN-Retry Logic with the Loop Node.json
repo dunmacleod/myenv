@@ -1,0 +1,5200 @@
+[
+ {
+  "object": "block",
+  "id": "36a94183-19f3-804d-9078-f3bf50903e9b",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8002-b22b-f1c6991c0305"
+  },
+  "created_time": "2026-05-24T18:12:00.000Z",
+  "last_edited_time": "2026-06-16T20:23:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "callout",
+  "callout": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "What you will understand by the end of this lesson:",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "What you will understand by the end of this lesson:",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " Students add a Loop Node to the Meridian Agentflow v2 to handle HTTP failures with automatic retry logic and a controlled exit path.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " Students add a Loop Node to the Meridian Agentflow v2 to handle HTTP failures with automatic retry logic and a controlled exit path.",
+     "href": null
+    }
+   ],
+   "icon": {
+    "type": "emoji",
+    "emoji": "\ud83d\udca1"
+   },
+   "color": "gray_background"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38094183-19f3-8083-b225-e78e68424fff",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8002-b22b-f1c6991c0305"
+  },
+  "created_time": "2026-06-15T12:44:00.000Z",
+  "last_edited_time": "2026-06-16T20:23:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "bc34932f-eaf4-471e-aa40-ea5c6d8c5300",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8002-b22b-f1c6991c0305"
+  },
+  "created_time": "2026-05-22T02:37:00.000Z",
+  "last_edited_time": "2026-06-16T20:23:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_2",
+  "heading_2": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Setting the Scene",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Setting the Scene",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "42f3662b-8c82-4869-b50e-63de0f22ea86",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8002-b22b-f1c6991c0305"
+  },
+  "created_time": "2026-06-12T03:45:00.000Z",
+  "last_edited_time": "2026-06-16T20:23:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Meridian's HTTP Node on Path B currently handles one response (success or failure). When the engagement status API is temporarily unavailable, Agent Node B returns a fallback message and the consultant has to try again manually. For a tool used frequently throughout the working day, that is friction the development team wants to eliminate.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Meridian's HTTP Node on Path B currently handles one response (success or failure). When the engagement status API is temporarily unavailable, Agent Node B returns a fallback message and the consultant has to try again manually. For a tool used frequently throughout the working day, that is friction the development team wants to eliminate.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "4e856fe3-109e-4d75-8dff-2b1d57c22828",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8002-b22b-f1c6991c0305"
+  },
+  "created_time": "2026-06-12T03:45:00.000Z",
+  "last_edited_time": "2026-06-16T20:23:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "The solution is retry logic by automatically re-attempting the HTTP call a defined number of times before falling back. The Loop Node enables the creation of cycles or iterative retries within a workflow. When execution reaches the Loop Node, it redirects back to a specified target node that has already been executed earlier in the current run, causing its re-execution along with any subsequent nodes in that part of the flow.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "The solution is retry logic by automatically re-attempting the HTTP call a defined number of times before falling back. The Loop Node enables the creation of cycles or iterative retries within a workflow. When execution reaches the Loop Node, it redirects back to a specified target node that has already been executed earlier in the current run, causing its re-execution along with any subsequent nodes in that part of the flow.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38094183-19f3-8010-8334-ebb9913e6f1e",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8002-b22b-f1c6991c0305"
+  },
+  "created_time": "2026-06-15T12:44:00.000Z",
+  "last_edited_time": "2026-06-16T20:23:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "5dae3c88-001a-49cc-a639-2f2920f77fd4",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8002-b22b-f1c6991c0305"
+  },
+  "created_time": "2026-05-22T02:37:00.000Z",
+  "last_edited_time": "2026-06-16T20:23:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_2",
+  "heading_2": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "What you are adding",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "What you are adding",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "30721ffa-bb34-4b6d-9aeb-5524cd70ff83",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8002-b22b-f1c6991c0305"
+  },
+  "created_time": "2026-05-22T02:37:00.000Z",
+  "last_edited_time": "2026-06-16T20:23:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "An updated Path B that retries the HTTP Node up to two times when the API returns an error, before routing to a fallback Direct Reply Node. The success path bypasses the retry logic entirely and goes straight to Agent Node B for formatting.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "An updated Path B that retries the HTTP Node up to two times when the API returns an error, before routing to a fallback Direct Reply Node. The success path bypasses the retry logic entirely and goes straight to Agent Node B for formatting.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37d94183-19f3-80c7-8087-c21b9d742716",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8002-b22b-f1c6991c0305"
+  },
+  "created_time": "2026-06-12T02:06:00.000Z",
+  "last_edited_time": "2026-06-16T20:23:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "callout",
+  "callout": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Before you begin, make sure you open your Docker Desktop. Under Actions, turn on Flowise and Qdrant. ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Before you begin, make sure you open your Docker Desktop. Under Actions, turn on Flowise and Qdrant. ",
+     "href": null
+    }
+   ],
+   "icon": {
+    "type": "emoji",
+    "emoji": "\u26a0\ufe0f"
+   },
+   "color": "gray_background"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38094183-19f3-809f-b01e-c7b005cd4865",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8002-b22b-f1c6991c0305"
+  },
+  "created_time": "2026-06-15T12:44:00.000Z",
+  "last_edited_time": "2026-06-16T20:23:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37d94183-19f3-8037-987e-f1a0fe81ba78",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8002-b22b-f1c6991c0305"
+  },
+  "created_time": "2026-06-12T03:46:00.000Z",
+  "last_edited_time": "2026-06-16T20:23:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_3",
+  "heading_3": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Step 1: Update the Condition Agent node",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Step 1: Update the Condition Agent node",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "b591b685-1044-4412-b203-e932e5109ae6",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8002-b22b-f1c6991c0305"
+  },
+  "created_time": "2026-06-12T03:46:00.000Z",
+  "last_edited_time": "2026-06-16T20:23:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Before adding the retry logic, the Condition Agent Node needs two updates to ensure reliable routing.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Before adding the retry logic, the Condition Agent Node needs two updates to ensure reliable routing.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "f48158db-14b5-427e-9679-f4696154bdb6",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8002-b22b-f1c6991c0305"
+  },
+  "created_time": "2026-06-12T03:46:00.000Z",
+  "last_edited_time": "2026-06-16T20:23:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Scenario order:",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Scenario order:",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "3c608d5e-23f4-4c11-87e3-a21539ab5cb9",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8002-b22b-f1c6991c0305"
+  },
+  "created_time": "2026-06-12T03:46:00.000Z",
+  "last_edited_time": "2026-06-16T20:23:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Scenario 0: ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Scenario 0: ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "status_request",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": true,
+      "color": "default"
+     },
+     "plain_text": "status_request",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "45f57213-3af9-4c27-8b40-d5858399aac9",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8002-b22b-f1c6991c0305"
+  },
+  "created_time": "2026-06-12T03:46:00.000Z",
+  "last_edited_time": "2026-06-16T20:23:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Scenario 1: ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Scenario 1: ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "knowledge_query",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": true,
+      "color": "default"
+     },
+     "plain_text": "knowledge_query",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "e643ac94-b88d-444a-b558-50a75a1ff026",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8002-b22b-f1c6991c0305"
+  },
+  "created_time": "2026-06-12T03:46:00.000Z",
+  "last_edited_time": "2026-06-16T20:23:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Rewire outputs:",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Rewire outputs:",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "44bf5cbd-d618-4b39-9ece-9a5d971e3a9c",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8002-b22b-f1c6991c0305"
+  },
+  "created_time": "2026-06-12T03:46:00.000Z",
+  "last_edited_time": "2026-06-16T20:23:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Output 0 \u2192 HTTP Node",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Output 0 \u2192 HTTP Node",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "6c8b9e94-b73e-45a9-be66-bbc0dd041ba4",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8002-b22b-f1c6991c0305"
+  },
+  "created_time": "2026-06-12T03:46:00.000Z",
+  "last_edited_time": "2026-06-16T20:23:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Output 1 \u2192 Agent Node A",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Output 1 \u2192 Agent Node A",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37d94183-19f3-809b-9eb2-c8492d4d47f8",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8002-b22b-f1c6991c0305"
+  },
+  "created_time": "2026-06-12T03:46:00.000Z",
+  "last_edited_time": "2026-06-16T20:23:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Replace the Instructions field with this:",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Replace the Instructions field with this:",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37d94183-19f3-801a-80ad-dd5d4660bc52",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8002-b22b-f1c6991c0305"
+  },
+  "created_time": "2026-06-12T03:47:00.000Z",
+  "last_edited_time": "2026-06-16T20:23:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": true,
+  "in_trash": false,
+  "type": "quote",
+  "quote": {
+   "rich_text": [],
+   "color": "default"
+  },
+  "archived": false,
+  "_children": [
+   {
+    "object": "block",
+    "id": "84dc8fa9-89c8-4634-9974-4c456c5ead05",
+    "parent": {
+     "type": "block_id",
+     "block_id": "37d94183-19f3-801a-80ad-dd5d4660bc52"
+    },
+    "created_time": "2026-06-12T03:47:00.000Z",
+    "last_edited_time": "2026-06-16T20:23:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "231d872b-594c-81f2-a375-0002b8783aca"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+     "rich_text": [
+      {
+       "type": "text",
+       "text": {
+        "content": "You are a query classifier for Meridian Consulting's internal agent.",
+        "link": null
+       },
+       "annotations": {
+        "bold": false,
+        "italic": false,
+        "strikethrough": false,
+        "underline": false,
+        "code": false,
+        "color": "default"
+       },
+       "plain_text": "You are a query classifier for Meridian Consulting's internal agent.",
+       "href": null
+      }
+     ],
+     "icon": null,
+     "color": "default"
+    },
+    "archived": false
+   },
+   {
+    "object": "block",
+    "id": "a5c435f8-9e52-43d9-88a1-244836870aea",
+    "parent": {
+     "type": "block_id",
+     "block_id": "37d94183-19f3-801a-80ad-dd5d4660bc52"
+    },
+    "created_time": "2026-06-12T03:47:00.000Z",
+    "last_edited_time": "2026-06-16T20:23:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "231d872b-594c-81f2-a375-0002b8783aca"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+     "rich_text": [
+      {
+       "type": "text",
+       "text": {
+        "content": "Classify the input as \"status_request\" FIRST if it contains any of these signals:",
+        "link": null
+       },
+       "annotations": {
+        "bold": false,
+        "italic": false,
+        "strikethrough": false,
+        "underline": false,
+        "code": false,
+        "color": "default"
+       },
+       "plain_text": "Classify the input as \"status_request\" FIRST if it contains any of these signals:",
+       "href": null
+      }
+     ],
+     "icon": null,
+     "color": "default"
+    },
+    "archived": false
+   },
+   {
+    "object": "block",
+    "id": "892bb2cd-dbf8-4dec-8ae4-dea04bf000a4",
+    "parent": {
+     "type": "block_id",
+     "block_id": "37d94183-19f3-801a-80ad-dd5d4660bc52"
+    },
+    "created_time": "2026-06-12T03:47:00.000Z",
+    "last_edited_time": "2026-06-16T20:23:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "231d872b-594c-81f2-a375-0002b8783aca"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "bulleted_list_item",
+    "bulleted_list_item": {
+     "rich_text": [
+      {
+       "type": "text",
+       "text": {
+        "content": "asks to \"check\", \"look up\", \"retrieve\", or \"pull up\"",
+        "link": null
+       },
+       "annotations": {
+        "bold": false,
+        "italic": false,
+        "strikethrough": false,
+        "underline": false,
+        "code": false,
+        "color": "default"
+       },
+       "plain_text": "asks to \"check\", \"look up\", \"retrieve\", or \"pull up\"",
+       "href": null
+      }
+     ],
+     "color": "default"
+    },
+    "archived": false
+   },
+   {
+    "object": "block",
+    "id": "292d2013-3f43-4688-a42a-0cd9465a8d55",
+    "parent": {
+     "type": "block_id",
+     "block_id": "37d94183-19f3-801a-80ad-dd5d4660bc52"
+    },
+    "created_time": "2026-06-12T03:47:00.000Z",
+    "last_edited_time": "2026-06-16T20:23:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "231d872b-594c-81f2-a375-0002b8783aca"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "bulleted_list_item",
+    "bulleted_list_item": {
+     "rich_text": [
+      {
+       "type": "text",
+       "text": {
+        "content": "mentions \"account\", \"account number\", or \"account reference\"",
+        "link": null
+       },
+       "annotations": {
+        "bold": false,
+        "italic": false,
+        "strikethrough": false,
+        "underline": false,
+        "code": false,
+        "color": "default"
+       },
+       "plain_text": "mentions \"account\", \"account number\", or \"account reference\"",
+       "href": null
+      }
+     ],
+     "color": "default"
+    },
+    "archived": false
+   },
+   {
+    "object": "block",
+    "id": "a0c8385c-f37b-4243-8563-64da042dbd86",
+    "parent": {
+     "type": "block_id",
+     "block_id": "37d94183-19f3-801a-80ad-dd5d4660bc52"
+    },
+    "created_time": "2026-06-12T03:47:00.000Z",
+    "last_edited_time": "2026-06-16T20:23:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "231d872b-594c-81f2-a375-0002b8783aca"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "bulleted_list_item",
+    "bulleted_list_item": {
+     "rich_text": [
+      {
+       "type": "text",
+       "text": {
+        "content": "asks for current status of a specific project or client",
+        "link": null
+       },
+       "annotations": {
+        "bold": false,
+        "italic": false,
+        "strikethrough": false,
+        "underline": false,
+        "code": false,
+        "color": "default"
+       },
+       "plain_text": "asks for current status of a specific project or client",
+       "href": null
+      }
+     ],
+     "color": "default"
+    },
+    "archived": false
+   },
+   {
+    "object": "block",
+    "id": "e8576c85-c28a-450a-bfa2-418158e38453",
+    "parent": {
+     "type": "block_id",
+     "block_id": "37d94183-19f3-801a-80ad-dd5d4660bc52"
+    },
+    "created_time": "2026-06-12T03:47:00.000Z",
+    "last_edited_time": "2026-06-16T20:23:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "231d872b-594c-81f2-a375-0002b8783aca"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+     "rich_text": [
+      {
+       "type": "text",
+       "text": {
+        "content": "Classify as \"knowledge_query\" only if none of the above apply. Default to \"status_request\" when uncertain.",
+        "link": null
+       },
+       "annotations": {
+        "bold": false,
+        "italic": false,
+        "strikethrough": false,
+        "underline": false,
+        "code": false,
+        "color": "default"
+       },
+       "plain_text": "Classify as \"knowledge_query\" only if none of the above apply. Default to \"status_request\" when uncertain.",
+       "href": null
+      }
+     ],
+     "icon": null,
+     "color": "default"
+    },
+    "archived": false
+   }
+  ]
+ },
+ {
+  "object": "block",
+  "id": "84dc2a8f-3345-4a38-8596-450346862115",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8002-b22b-f1c6991c0305"
+  },
+  "created_time": "2026-06-12T03:47:00.000Z",
+  "last_edited_time": "2026-06-16T20:23:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Confirm these settings:",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Confirm these settings:",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "75dbedb6-5179-459a-bbda-0ef7a5a20178",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8002-b22b-f1c6991c0305"
+  },
+  "created_time": "2026-06-12T03:47:00.000Z",
+  "last_edited_time": "2026-06-16T20:23:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Input: ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Input: ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "{{ $flow.input }}",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": true,
+      "color": "default"
+     },
+     "plain_text": "{{ $flow.input }}",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " typed manually, not selected from dropdown",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " typed manually, not selected from dropdown",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "27513528-796f-41e8-a1bb-5fd0b092d232",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8002-b22b-f1c6991c0305"
+  },
+  "created_time": "2026-06-12T03:47:00.000Z",
+  "last_edited_time": "2026-06-16T20:23:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Memory: ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Memory: ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "Off",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Off",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "d34ff49b-4e3b-481b-b5b0-a8ba90cc1e48",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8002-b22b-f1c6991c0305"
+  },
+  "created_time": "2026-06-12T03:47:00.000Z",
+  "last_edited_time": "2026-06-16T20:23:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Save the canvas.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Save the canvas.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38094183-19f3-805f-9fb2-cbe86035b4a7",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8002-b22b-f1c6991c0305"
+  },
+  "created_time": "2026-06-15T12:44:00.000Z",
+  "last_edited_time": "2026-06-16T20:23:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "4246edf4-a2c2-40ab-a0af-959457c1ac6f",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8002-b22b-f1c6991c0305"
+  },
+  "created_time": "2026-05-22T02:37:00.000Z",
+  "last_edited_time": "2026-06-16T20:23:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_3",
+  "heading_3": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Step 2: Add a retry counter to Flow State",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Step 2: Add a retry counter to Flow State",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37d94183-19f3-80bb-8012-c9b627e670f5",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8002-b22b-f1c6991c0305"
+  },
+  "created_time": "2026-06-12T02:01:00.000Z",
+  "last_edited_time": "2026-06-16T20:23:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Click the ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Click the ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "Start Node",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Start Node",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " and select ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " and select ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "+ Add Flow State. ",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "+ Add Flow State. ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "Enter the following:",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Enter the following:",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37d94183-19f3-8018-85b3-e3bd84714442",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8002-b22b-f1c6991c0305"
+  },
+  "created_time": "2026-06-12T02:01:00.000Z",
+  "last_edited_time": "2026-06-16T20:23:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Key",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Key",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": ": retry_count",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": ": retry_count",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37d94183-19f3-80d5-86ff-cf99dd4d43e3",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8002-b22b-f1c6991c0305"
+  },
+  "created_time": "2026-06-12T02:01:00.000Z",
+  "last_edited_time": "2026-06-16T20:23:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Initial value",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Initial value",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": ": 0",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": ": 0",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38094183-19f3-8024-999a-d20f1e1d3d8d",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8002-b22b-f1c6991c0305"
+  },
+  "created_time": "2026-06-15T12:44:00.000Z",
+  "last_edited_time": "2026-06-16T20:23:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "f053074e-6696-4291-b6da-1d320e4af0a6",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8002-b22b-f1c6991c0305"
+  },
+  "created_time": "2026-06-12T03:48:00.000Z",
+  "last_edited_time": "2026-06-16T20:23:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_3",
+  "heading_3": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Step 3: Add Condition node after the HTTP node",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Step 3: Add Condition node after the HTTP node",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "43aadf95-5d86-4dd6-bc16-ff75eae59510",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8002-b22b-f1c6991c0305"
+  },
+  "created_time": "2026-06-12T03:48:00.000Z",
+  "last_edited_time": "2026-06-16T20:23:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Add a ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Add a ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "Condition Node",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Condition Node",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " immediately after the HTTP Node on Path B. Connect the ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " immediately after the HTTP Node on Path B. Connect the ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "HTTP Node output",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "HTTP Node output",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " to ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " to ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "Condition input",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Condition input",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": ".",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": ".",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "ae131a45-8d80-4cb7-a824-070ae0a5c6d3",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8002-b22b-f1c6991c0305"
+  },
+  "created_time": "2026-06-12T03:48:00.000Z",
+  "last_edited_time": "2026-06-16T20:23:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Configure Condition A:",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Configure Condition A:",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "34ff349f-9e34-4c91-89c0-a245bc427ac1",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8002-b22b-f1c6991c0305"
+  },
+  "created_time": "2026-06-12T03:48:00.000Z",
+  "last_edited_time": "2026-06-16T20:23:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": true,
+  "in_trash": false,
+  "type": "table",
+  "table": {
+   "table_width": 2,
+   "has_column_header": true,
+   "has_row_header": false
+  },
+  "archived": false,
+  "_children": [
+   {
+    "object": "block",
+    "id": "ba8ecece-59a1-4941-a94b-8e08b417548d",
+    "parent": {
+     "type": "block_id",
+     "block_id": "34ff349f-9e34-4c91-89c0-a245bc427ac1"
+    },
+    "created_time": "2026-06-12T03:48:00.000Z",
+    "last_edited_time": "2026-06-16T20:23:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "231d872b-594c-81f2-a375-0002b8783aca"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "table_row",
+    "table_row": {
+     "cells": [
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Field",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Field",
+        "href": null
+       }
+      ],
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Value",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Value",
+        "href": null
+       }
+      ]
+     ]
+    },
+    "archived": false
+   },
+   {
+    "object": "block",
+    "id": "9d6ab530-217c-43e6-9193-634c36ccfc83",
+    "parent": {
+     "type": "block_id",
+     "block_id": "34ff349f-9e34-4c91-89c0-a245bc427ac1"
+    },
+    "created_time": "2026-06-12T03:48:00.000Z",
+    "last_edited_time": "2026-06-16T20:23:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "231d872b-594c-81f2-a375-0002b8783aca"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "table_row",
+    "table_row": {
+     "cells": [
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Type",
+         "link": null
+        },
+        "annotations": {
+         "bold": true,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Type",
+        "href": null
+       }
+      ],
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "String",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": true,
+         "color": "default"
+        },
+        "plain_text": "String",
+        "href": null
+       }
+      ]
+     ]
+    },
+    "archived": false
+   },
+   {
+    "object": "block",
+    "id": "b6db439c-bf6c-4621-894b-d0f2defb725e",
+    "parent": {
+     "type": "block_id",
+     "block_id": "34ff349f-9e34-4c91-89c0-a245bc427ac1"
+    },
+    "created_time": "2026-06-12T03:48:00.000Z",
+    "last_edited_time": "2026-06-16T20:23:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "231d872b-594c-81f2-a375-0002b8783aca"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "table_row",
+    "table_row": {
+     "cells": [
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Value 1",
+         "link": null
+        },
+        "annotations": {
+         "bold": true,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Value 1",
+        "href": null
+       }
+      ],
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "{{ httpAgentflow_0.data }}",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": true,
+         "color": "default"
+        },
+        "plain_text": "{{ httpAgentflow_0.data }}",
+        "href": null
+       }
+      ]
+     ]
+    },
+    "archived": false
+   },
+   {
+    "object": "block",
+    "id": "1cd223e9-4c87-4c5b-ac6c-7083df3ce981",
+    "parent": {
+     "type": "block_id",
+     "block_id": "34ff349f-9e34-4c91-89c0-a245bc427ac1"
+    },
+    "created_time": "2026-06-12T03:48:00.000Z",
+    "last_edited_time": "2026-06-16T20:23:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "231d872b-594c-81f2-a375-0002b8783aca"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "table_row",
+    "table_row": {
+     "cells": [
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Operation",
+         "link": null
+        },
+        "annotations": {
+         "bold": true,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Operation",
+        "href": null
+       }
+      ],
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Is Empty",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": true,
+         "color": "default"
+        },
+        "plain_text": "Is Empty",
+        "href": null
+       }
+      ]
+     ]
+    },
+    "archived": false
+   }
+  ]
+ },
+ {
+  "object": "block",
+  "id": "9e917649-4ec5-4ca7-95fa-d87cf46cee01",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8002-b22b-f1c6991c0305"
+  },
+  "created_time": "2026-06-12T03:48:00.000Z",
+  "last_edited_time": "2026-06-16T20:23:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "This checks whether the HTTP response contains data before deciding which path to take.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "This checks whether the HTTP response contains data before deciding which path to take.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "43abeb27-c45a-4f01-a358-ed78b581ebf9",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8002-b22b-f1c6991c0305"
+  },
+  "created_time": "2026-06-15T10:52:00.000Z",
+  "last_edited_time": "2026-06-16T20:23:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Output 0 (true: data is empty, HTTP failed):",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Output 0 (true: data is empty, HTTP failed):",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " Connect to the Custom Function node",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " Connect to the Custom Function node",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "d5c6462c-57d2-4fa5-aefd-c1c1604e9523",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8002-b22b-f1c6991c0305"
+  },
+  "created_time": "2026-06-15T10:52:00.000Z",
+  "last_edited_time": "2026-06-16T20:23:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Output 1 (false: data exists, HTTP succeeded):",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Output 1 (false: data exists, HTTP succeeded):",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " Connect to the Agent 2 node",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " Connect to the Agent 2 node",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38094183-19f3-8075-8400-ca5f06f5f3ac",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8002-b22b-f1c6991c0305"
+  },
+  "created_time": "2026-06-15T10:52:00.000Z",
+  "last_edited_time": "2026-06-16T20:23:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "872bf670-5453-4323-8f2b-725423c60201",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8002-b22b-f1c6991c0305"
+  },
+  "created_time": "2026-06-15T10:53:00.000Z",
+  "last_edited_time": "2026-06-16T20:23:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_3",
+  "heading_3": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Step 4: Add a Custom Function Node after Condition A",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Step 4: Add a Custom Function Node after Condition A",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "b9a256a5-881b-4afa-947d-4f3edb36e46a",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8002-b22b-f1c6991c0305"
+  },
+  "created_time": "2026-06-15T10:53:00.000Z",
+  "last_edited_time": "2026-06-16T20:23:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Click ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Click ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "(+)",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "(+)",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " and add a ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " and add a ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "Custom Function Node",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Custom Function Node",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " on the failure branch of Condition A. Connect ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " on the failure branch of Condition A. Connect ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "Condition A output 0",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Condition A output 0",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " (the empty/failed branch you wired in Step 3) to the Custom Function Node input. The Custom Function Node only runs when the HTTP call has returned no data, which is the only situation in which the retry counter should be incremented.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " (the empty/failed branch you wired in Step 3) to the Custom Function Node input. The Custom Function Node only runs when the HTTP call has returned no data, which is the only situation in which the retry counter should be incremented.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37d94183-19f3-8010-a845-d95db959206a",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8002-b22b-f1c6991c0305"
+  },
+  "created_time": "2026-06-12T02:10:00.000Z",
+  "last_edited_time": "2026-06-16T20:23:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "image",
+  "image": {
+   "caption": [],
+   "type": "file",
+   "file": {
+    "url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/3a9085c4-df29-45e6-8bc7-6c9c0a25ea8c/20de9825-5c17-4a92-b0e6-26d25d43fd81/image.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB4663I4WRT4H%2F20261022%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20261022T114501Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEKv%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJHMEUCIQDiTrKWawDvc%2FATP2sIkgVPwh3WT4Tb1qiuuUlk8%2Fa4aAIgJ%2F1%2FzMnDC2BzvQuvc5y5AmiL5y%2B7ULdeqd0W6jHX%2B5Yq%2FwMIcxAAGgw2Mzc0MjMxODM4MDUiDADZe9PGJvhSytvQNCrcA7lxKAmymOGcCxRhmAtYqlnHIyXGbh%2BpNAGmP%2FR1oUpnafW09szxPGmsVnfeTqQmYgLenOu1A25Zhm0Dkoe48KPAYcnsset6%2Bm2FuqaMdTFKRa1C15zXhywKEOotrXQpdQqqlbWlWXpIRAfp44U7to4%2B3Sfkt0IvrqLWEw3vfcBDMN%2BQTaW%2FokFHIHuISEyu%2FeOz0bEBvSuDUKsxgEk911xZ%2FMg0ZDXGK2gWIfXpg68FYH4CKuNwkQk6lD403%2FLt2TIOOTV3o999OSl82oSV3TqOY%2Ft8ohfxvGocuv8MUhXwJ8k5yYKMXSpkIt%2FxIxnbZgun7nVi0YXv3h9L%2BT8p3zxmFWHehF5ZcWg8Dn0S%2B26JtlKxGrbZHR1Rb%2BH4CrZA2eAVZY8HCSFHP%2BquSQCNoVu4ytRoiQMl0Tx6drMNX3z%2F1JchNt9KQQGegHZjuQ2pelpfJkXn4zMc3WpGr74dJNdk%2BvfaPVJkB3E1k7yW5jABU0hAmy5Uu5koBnCbC%2B213h%2BhorKZvLjeZi7REKOTpNgKp4Kdg4zBgKcojg145QSEtdIOQ7wyGcDDtjtfjJHb0q1QUcGMr%2Bjbz9NHldxF%2FPc0ibt%2B6fCR%2FSifZrXjvPbRUNynJRTJnChxluSIMNHJ59YGOqUBxKYUxZZ%2BZOj17NIDvlennqriWzikIAoHio%2FKHc%2FR6uPOHZsZ8pWUfn%2BmMWSJkuv7cehi%2BuUrHLD38iWt3QKaYJxkYwygOK1LdHZHfmKjT07ULpoUXinKGR9f8tAkMFqUETlJvjZGYCRHVXDsxqxWnwq4%2FSdi4vjkmnqZZKGeecLJQmbIEPmvMu25ZRM55fyVU68YVgSJxfKoG0g%2B0gS6575Py6ZM&X-Amz-Signature=22752748560ba15958210d434188b64333fef6b3a63ca90408823d998e36ab05&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+    "expiry_time": "2026-10-22T12:45:01.122Z"
+   }
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "6da03c3b-348e-4598-a592-eff6bfe2aeee",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8002-b22b-f1c6991c0305"
+  },
+  "created_time": "2026-06-12T02:08:00.000Z",
+  "last_edited_time": "2026-06-16T20:23:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Configure it as follows:",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Configure it as follows:",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37d94183-19f3-80f3-8473-d8f5eeea2283",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8002-b22b-f1c6991c0305"
+  },
+  "created_time": "2026-06-12T02:13:00.000Z",
+  "last_edited_time": "2026-06-16T20:23:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Input Variables:",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Input Variables:",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37d94183-19f3-80e4-9b18-fe9d349a6c90",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8002-b22b-f1c6991c0305"
+  },
+  "created_time": "2026-06-12T02:11:00.000Z",
+  "last_edited_time": "2026-06-16T20:23:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "image",
+  "image": {
+   "caption": [],
+   "type": "file",
+   "file": {
+    "url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/3a9085c4-df29-45e6-8bc7-6c9c0a25ea8c/f5288cfa-9928-4f33-98d9-c55479d9e139/image.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB4663I4WRT4H%2F20261022%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20261022T114501Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEKv%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJHMEUCIQDiTrKWawDvc%2FATP2sIkgVPwh3WT4Tb1qiuuUlk8%2Fa4aAIgJ%2F1%2FzMnDC2BzvQuvc5y5AmiL5y%2B7ULdeqd0W6jHX%2B5Yq%2FwMIcxAAGgw2Mzc0MjMxODM4MDUiDADZe9PGJvhSytvQNCrcA7lxKAmymOGcCxRhmAtYqlnHIyXGbh%2BpNAGmP%2FR1oUpnafW09szxPGmsVnfeTqQmYgLenOu1A25Zhm0Dkoe48KPAYcnsset6%2Bm2FuqaMdTFKRa1C15zXhywKEOotrXQpdQqqlbWlWXpIRAfp44U7to4%2B3Sfkt0IvrqLWEw3vfcBDMN%2BQTaW%2FokFHIHuISEyu%2FeOz0bEBvSuDUKsxgEk911xZ%2FMg0ZDXGK2gWIfXpg68FYH4CKuNwkQk6lD403%2FLt2TIOOTV3o999OSl82oSV3TqOY%2Ft8ohfxvGocuv8MUhXwJ8k5yYKMXSpkIt%2FxIxnbZgun7nVi0YXv3h9L%2BT8p3zxmFWHehF5ZcWg8Dn0S%2B26JtlKxGrbZHR1Rb%2BH4CrZA2eAVZY8HCSFHP%2BquSQCNoVu4ytRoiQMl0Tx6drMNX3z%2F1JchNt9KQQGegHZjuQ2pelpfJkXn4zMc3WpGr74dJNdk%2BvfaPVJkB3E1k7yW5jABU0hAmy5Uu5koBnCbC%2B213h%2BhorKZvLjeZi7REKOTpNgKp4Kdg4zBgKcojg145QSEtdIOQ7wyGcDDtjtfjJHb0q1QUcGMr%2Bjbz9NHldxF%2FPc0ibt%2B6fCR%2FSifZrXjvPbRUNynJRTJnChxluSIMNHJ59YGOqUBxKYUxZZ%2BZOj17NIDvlennqriWzikIAoHio%2FKHc%2FR6uPOHZsZ8pWUfn%2BmMWSJkuv7cehi%2BuUrHLD38iWt3QKaYJxkYwygOK1LdHZHfmKjT07ULpoUXinKGR9f8tAkMFqUETlJvjZGYCRHVXDsxqxWnwq4%2FSdi4vjkmnqZZKGeecLJQmbIEPmvMu25ZRM55fyVU68YVgSJxfKoG0g%2B0gS6575Py6ZM&X-Amz-Signature=7849afbd85708be34719e218dc40e4f6d6edb1156a612ec658667196fe9a9c42&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+    "expiry_time": "2026-10-22T12:45:01.122Z"
+   }
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "dc29f981-c4ec-45c5-a9c0-23500892f070",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8002-b22b-f1c6991c0305"
+  },
+  "created_time": "2026-06-12T02:08:00.000Z",
+  "last_edited_time": "2026-06-16T20:23:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "JavaScript Function:",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "JavaScript Function:",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "83377147-59a5-4bd1-a67a-0b76e1d216fe",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8002-b22b-f1c6991c0305"
+  },
+  "created_time": "2026-06-12T02:08:00.000Z",
+  "last_edited_time": "2026-06-16T20:23:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "code",
+  "code": {
+   "caption": [],
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "const count = parseInt($retryCount) || 0;\nreturn String(count + 1);",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "const count = parseInt($retryCount) || 0;\nreturn String(count + 1);",
+     "href": null
+    }
+   ],
+   "language": "javascript"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "68d8639b-4f9f-4df6-bf2f-79d8c9a59b9d",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8002-b22b-f1c6991c0305"
+  },
+  "created_time": "2026-06-12T02:08:00.000Z",
+  "last_edited_time": "2026-06-16T20:23:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Update Flow State:",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Update Flow State:",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37d94183-19f3-800e-8574-c950c3ade3d1",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8002-b22b-f1c6991c0305"
+  },
+  "created_time": "2026-06-12T02:13:00.000Z",
+  "last_edited_time": "2026-06-16T20:23:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "image",
+  "image": {
+   "caption": [],
+   "type": "file",
+   "file": {
+    "url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/3a9085c4-df29-45e6-8bc7-6c9c0a25ea8c/dfa4b32e-9a06-464a-a9dc-89b2d8ffacdd/image.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB4663I4WRT4H%2F20261022%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20261022T114501Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEKv%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJHMEUCIQDiTrKWawDvc%2FATP2sIkgVPwh3WT4Tb1qiuuUlk8%2Fa4aAIgJ%2F1%2FzMnDC2BzvQuvc5y5AmiL5y%2B7ULdeqd0W6jHX%2B5Yq%2FwMIcxAAGgw2Mzc0MjMxODM4MDUiDADZe9PGJvhSytvQNCrcA7lxKAmymOGcCxRhmAtYqlnHIyXGbh%2BpNAGmP%2FR1oUpnafW09szxPGmsVnfeTqQmYgLenOu1A25Zhm0Dkoe48KPAYcnsset6%2Bm2FuqaMdTFKRa1C15zXhywKEOotrXQpdQqqlbWlWXpIRAfp44U7to4%2B3Sfkt0IvrqLWEw3vfcBDMN%2BQTaW%2FokFHIHuISEyu%2FeOz0bEBvSuDUKsxgEk911xZ%2FMg0ZDXGK2gWIfXpg68FYH4CKuNwkQk6lD403%2FLt2TIOOTV3o999OSl82oSV3TqOY%2Ft8ohfxvGocuv8MUhXwJ8k5yYKMXSpkIt%2FxIxnbZgun7nVi0YXv3h9L%2BT8p3zxmFWHehF5ZcWg8Dn0S%2B26JtlKxGrbZHR1Rb%2BH4CrZA2eAVZY8HCSFHP%2BquSQCNoVu4ytRoiQMl0Tx6drMNX3z%2F1JchNt9KQQGegHZjuQ2pelpfJkXn4zMc3WpGr74dJNdk%2BvfaPVJkB3E1k7yW5jABU0hAmy5Uu5koBnCbC%2B213h%2BhorKZvLjeZi7REKOTpNgKp4Kdg4zBgKcojg145QSEtdIOQ7wyGcDDtjtfjJHb0q1QUcGMr%2Bjbz9NHldxF%2FPc0ibt%2B6fCR%2FSifZrXjvPbRUNynJRTJnChxluSIMNHJ59YGOqUBxKYUxZZ%2BZOj17NIDvlennqriWzikIAoHio%2FKHc%2FR6uPOHZsZ8pWUfn%2BmMWSJkuv7cehi%2BuUrHLD38iWt3QKaYJxkYwygOK1LdHZHfmKjT07ULpoUXinKGR9f8tAkMFqUETlJvjZGYCRHVXDsxqxWnwq4%2FSdi4vjkmnqZZKGeecLJQmbIEPmvMu25ZRM55fyVU68YVgSJxfKoG0g%2B0gS6575Py6ZM&X-Amz-Signature=1b7b7c9f5f56d6810c3844e1940bf8b21c3709969bb9900ab128779595575ee7&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+    "expiry_time": "2026-10-22T12:45:01.122Z"
+   }
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "2c5ccbbc-79f2-4cfc-acc7-0395ecb9c29d",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8002-b22b-f1c6991c0305"
+  },
+  "created_time": "2026-06-12T02:08:00.000Z",
+  "last_edited_time": "2026-06-16T20:23:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "This increments the retry counter each time the HTTP call is attempted.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "This increments the retry counter each time the HTTP call is attempted.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38094183-19f3-80e0-bb63-c6782764d6de",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8002-b22b-f1c6991c0305"
+  },
+  "created_time": "2026-06-15T12:45:00.000Z",
+  "last_edited_time": "2026-06-16T20:23:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "67ffc531-2232-4b94-a999-b018fe84e741",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8002-b22b-f1c6991c0305"
+  },
+  "created_time": "2026-06-12T02:08:00.000Z",
+  "last_edited_time": "2026-06-16T20:23:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_3",
+  "heading_3": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Step 5: Add a Condition Node to check retry count",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Step 5: Add a Condition Node to check retry count",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "5d9cd9da-8f3e-4608-b2b2-3e1d73a330e2",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8002-b22b-f1c6991c0305"
+  },
+  "created_time": "2026-06-12T02:08:00.000Z",
+  "last_edited_time": "2026-06-16T20:23:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Add a ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Add a ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "Condition ",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Condition ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "node after the ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "node after the ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "Custom Function",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Custom Function",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " node. ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " node. ",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37d94183-19f3-8087-84c8-c18bb35d8a53",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8002-b22b-f1c6991c0305"
+  },
+  "created_time": "2026-06-12T02:15:00.000Z",
+  "last_edited_time": "2026-06-16T20:23:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Configure it:",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Configure it:",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37d94183-19f3-802b-b10d-c6809c792d31",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8002-b22b-f1c6991c0305"
+  },
+  "created_time": "2026-06-12T02:16:00.000Z",
+  "last_edited_time": "2026-06-16T20:23:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "image",
+  "image": {
+   "caption": [],
+   "type": "file",
+   "file": {
+    "url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/3a9085c4-df29-45e6-8bc7-6c9c0a25ea8c/ed3ff2a9-7483-4bb5-a6ab-52797c61e022/image.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB4663I4WRT4H%2F20261022%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20261022T114501Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEKv%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJHMEUCIQDiTrKWawDvc%2FATP2sIkgVPwh3WT4Tb1qiuuUlk8%2Fa4aAIgJ%2F1%2FzMnDC2BzvQuvc5y5AmiL5y%2B7ULdeqd0W6jHX%2B5Yq%2FwMIcxAAGgw2Mzc0MjMxODM4MDUiDADZe9PGJvhSytvQNCrcA7lxKAmymOGcCxRhmAtYqlnHIyXGbh%2BpNAGmP%2FR1oUpnafW09szxPGmsVnfeTqQmYgLenOu1A25Zhm0Dkoe48KPAYcnsset6%2Bm2FuqaMdTFKRa1C15zXhywKEOotrXQpdQqqlbWlWXpIRAfp44U7to4%2B3Sfkt0IvrqLWEw3vfcBDMN%2BQTaW%2FokFHIHuISEyu%2FeOz0bEBvSuDUKsxgEk911xZ%2FMg0ZDXGK2gWIfXpg68FYH4CKuNwkQk6lD403%2FLt2TIOOTV3o999OSl82oSV3TqOY%2Ft8ohfxvGocuv8MUhXwJ8k5yYKMXSpkIt%2FxIxnbZgun7nVi0YXv3h9L%2BT8p3zxmFWHehF5ZcWg8Dn0S%2B26JtlKxGrbZHR1Rb%2BH4CrZA2eAVZY8HCSFHP%2BquSQCNoVu4ytRoiQMl0Tx6drMNX3z%2F1JchNt9KQQGegHZjuQ2pelpfJkXn4zMc3WpGr74dJNdk%2BvfaPVJkB3E1k7yW5jABU0hAmy5Uu5koBnCbC%2B213h%2BhorKZvLjeZi7REKOTpNgKp4Kdg4zBgKcojg145QSEtdIOQ7wyGcDDtjtfjJHb0q1QUcGMr%2Bjbz9NHldxF%2FPc0ibt%2B6fCR%2FSifZrXjvPbRUNynJRTJnChxluSIMNHJ59YGOqUBxKYUxZZ%2BZOj17NIDvlennqriWzikIAoHio%2FKHc%2FR6uPOHZsZ8pWUfn%2BmMWSJkuv7cehi%2BuUrHLD38iWt3QKaYJxkYwygOK1LdHZHfmKjT07ULpoUXinKGR9f8tAkMFqUETlJvjZGYCRHVXDsxqxWnwq4%2FSdi4vjkmnqZZKGeecLJQmbIEPmvMu25ZRM55fyVU68YVgSJxfKoG0g%2B0gS6575Py6ZM&X-Amz-Signature=2446fde86c4a41fb38f49a08f998e059e3792da6720ba84a86a8ab7663c619c4&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+    "expiry_time": "2026-10-22T12:45:01.177Z"
+   }
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "45a5dfa7-ea03-4996-a180-9be1a40a2583",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8002-b22b-f1c6991c0305"
+  },
+  "created_time": "2026-06-12T02:08:00.000Z",
+  "last_edited_time": "2026-06-16T20:23:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "This evaluates whether the retry count has exceeded 2.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "This evaluates whether the retry count has exceeded 2.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "903dbd1d-4b34-46ad-b3c6-adf3f30c0a48",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8002-b22b-f1c6991c0305"
+  },
+  "created_time": "2026-06-12T03:53:00.000Z",
+  "last_edited_time": "2026-06-16T20:23:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Output 0 (true: retry count exceeds 2):",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Output 0 (true: retry count exceeds 2):",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " Connect to ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " Connect to ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "Direct Reply C",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Direct Reply C",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "c6b73bf7-99e4-4b7c-aa35-7dccbd597175",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8002-b22b-f1c6991c0305"
+  },
+  "created_time": "2026-06-12T03:53:00.000Z",
+  "last_edited_time": "2026-06-16T20:23:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Output 1 (false: retry count is 2 or below):",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Output 1 (false: retry count is 2 or below):",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " Connect to the ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " Connect to the ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "Loop Node",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Loop Node",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38094183-19f3-80e3-a613-dd832a9f7cdb",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8002-b22b-f1c6991c0305"
+  },
+  "created_time": "2026-06-15T12:45:00.000Z",
+  "last_edited_time": "2026-06-16T20:23:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "665675af-56f9-4daf-ab18-278c0362bf21",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8002-b22b-f1c6991c0305"
+  },
+  "created_time": "2026-06-12T03:53:00.000Z",
+  "last_edited_time": "2026-06-16T20:23:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_3",
+  "heading_3": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Step 6: Add Direct Reply C",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Step 6: Add Direct Reply C",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "d918064a-f2c9-45fd-91a5-5bf7ab082230",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8002-b22b-f1c6991c0305"
+  },
+  "created_time": "2026-06-12T03:53:00.000Z",
+  "last_edited_time": "2026-06-16T20:23:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Add a ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Add a ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "Direct Reply ",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Direct Reply ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "node connected to ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "node connected to ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "Condition B output 0",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Condition B output 0",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": ".",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": ".",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37d94183-19f3-80cc-b13c-f99a17d970ce",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8002-b22b-f1c6991c0305"
+  },
+  "created_time": "2026-06-12T03:54:00.000Z",
+  "last_edited_time": "2026-06-16T20:23:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "In the message field, enter the following:",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "In the message field, enter the following:",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37d94183-19f3-80f4-95a8-e6add6e783a2",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8002-b22b-f1c6991c0305"
+  },
+  "created_time": "2026-06-12T03:54:00.000Z",
+  "last_edited_time": "2026-06-16T20:23:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": true,
+  "in_trash": false,
+  "type": "quote",
+  "quote": {
+   "rich_text": [],
+   "color": "default"
+  },
+  "archived": false,
+  "_children": [
+   {
+    "object": "block",
+    "id": "895b3e3f-4750-47fe-8745-c7df311c9b80",
+    "parent": {
+     "type": "block_id",
+     "block_id": "37d94183-19f3-80f4-95a8-e6add6e783a2"
+    },
+    "created_time": "2026-06-12T03:54:00.000Z",
+    "last_edited_time": "2026-06-16T20:23:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "231d872b-594c-81f2-a375-0002b8783aca"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+     "rich_text": [
+      {
+       "type": "text",
+       "text": {
+        "content": "The engagement status service is currently unavailable. Please contact your engagement manager directly for current project status.",
+        "link": null
+       },
+       "annotations": {
+        "bold": false,
+        "italic": false,
+        "strikethrough": false,
+        "underline": false,
+        "code": false,
+        "color": "default"
+       },
+       "plain_text": "The engagement status service is currently unavailable. Please contact your engagement manager directly for current project status.",
+       "href": null
+      }
+     ],
+     "icon": null,
+     "color": "default"
+    },
+    "archived": false
+   }
+  ]
+ },
+ {
+  "object": "block",
+  "id": "38094183-19f3-8063-98d9-c8c1d3ee2262",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8002-b22b-f1c6991c0305"
+  },
+  "created_time": "2026-06-15T12:45:00.000Z",
+  "last_edited_time": "2026-06-16T20:23:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "947b3669-a0a5-4390-8ae7-8de0eea9d04a",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8002-b22b-f1c6991c0305"
+  },
+  "created_time": "2026-06-12T03:54:00.000Z",
+  "last_edited_time": "2026-06-16T20:23:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_3",
+  "heading_3": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Step 7: Add the Loop Node",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Step 7: Add the Loop Node",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "5f0ca7f0-62c2-481d-9363-fae45a713349",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8002-b22b-f1c6991c0305"
+  },
+  "created_time": "2026-06-12T03:54:00.000Z",
+  "last_edited_time": "2026-06-16T20:23:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Add a ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Add a ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "Loop Node",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Loop Node",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " connected to ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " connected to ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "Condition B output 1",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Condition B output 1",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": ". Configure it:",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": ". Configure it:",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "dc8a7183-6761-4e00-8130-3ed16d1eae89",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8002-b22b-f1c6991c0305"
+  },
+  "created_time": "2026-06-12T03:54:00.000Z",
+  "last_edited_time": "2026-06-16T20:23:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": true,
+  "in_trash": false,
+  "type": "table",
+  "table": {
+   "table_width": 2,
+   "has_column_header": true,
+   "has_row_header": false
+  },
+  "archived": false,
+  "_children": [
+   {
+    "object": "block",
+    "id": "9dae149c-2903-4752-bfb8-f7b7eda09c7e",
+    "parent": {
+     "type": "block_id",
+     "block_id": "dc8a7183-6761-4e00-8130-3ed16d1eae89"
+    },
+    "created_time": "2026-06-12T03:54:00.000Z",
+    "last_edited_time": "2026-06-16T20:23:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "231d872b-594c-81f2-a375-0002b8783aca"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "table_row",
+    "table_row": {
+     "cells": [
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Field",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Field",
+        "href": null
+       }
+      ],
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Value",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Value",
+        "href": null
+       }
+      ]
+     ]
+    },
+    "archived": false
+   },
+   {
+    "object": "block",
+    "id": "15889674-f584-4489-8d17-5b3f27f5e3fa",
+    "parent": {
+     "type": "block_id",
+     "block_id": "dc8a7183-6761-4e00-8130-3ed16d1eae89"
+    },
+    "created_time": "2026-06-12T03:54:00.000Z",
+    "last_edited_time": "2026-06-16T20:23:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "231d872b-594c-81f2-a375-0002b8783aca"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "table_row",
+    "table_row": {
+     "cells": [
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Loop Back To",
+         "link": null
+        },
+        "annotations": {
+         "bold": true,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Loop Back To",
+        "href": null
+       }
+      ],
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Select the ",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Select the ",
+        "href": null
+       },
+       {
+        "type": "text",
+        "text": {
+         "content": "HTTP Node",
+         "link": null
+        },
+        "annotations": {
+         "bold": true,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "HTTP Node",
+        "href": null
+       }
+      ]
+     ]
+    },
+    "archived": false
+   },
+   {
+    "object": "block",
+    "id": "f226622e-3a6c-49c0-bbfc-e7ab222296e4",
+    "parent": {
+     "type": "block_id",
+     "block_id": "dc8a7183-6761-4e00-8130-3ed16d1eae89"
+    },
+    "created_time": "2026-06-12T03:54:00.000Z",
+    "last_edited_time": "2026-06-16T20:23:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "231d872b-594c-81f2-a375-0002b8783aca"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "table_row",
+    "table_row": {
+     "cells": [
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Max Loop Count",
+         "link": null
+        },
+        "annotations": {
+         "bold": true,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Max Loop Count",
+        "href": null
+       }
+      ],
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "2",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": true,
+         "color": "default"
+        },
+        "plain_text": "2",
+        "href": null
+       }
+      ]
+     ]
+    },
+    "archived": false
+   }
+  ]
+ },
+ {
+  "object": "block",
+  "id": "462ab193-c679-4540-ad4a-6c745cc0f3bb",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8002-b22b-f1c6991c0305"
+  },
+  "created_time": "2026-06-12T03:54:00.000Z",
+  "last_edited_time": "2026-06-16T20:23:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "The Loop Node does not have a standard forward-pointing output anchor. Its primary function is to redirect execution flow backward to the Loop Back To target node.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "The Loop Node does not have a standard forward-pointing output anchor. Its primary function is to redirect execution flow backward to the Loop Back To target node.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38094183-19f3-80a1-9455-c09071353b38",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8002-b22b-f1c6991c0305"
+  },
+  "created_time": "2026-06-15T12:45:00.000Z",
+  "last_edited_time": "2026-06-16T20:23:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "44051ab7-60cd-48bc-b31f-1e796084e447",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8002-b22b-f1c6991c0305"
+  },
+  "created_time": "2026-06-12T03:55:00.000Z",
+  "last_edited_time": "2026-06-16T20:23:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_3",
+  "heading_3": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Step 8: Connect Agent Node B and Direct Reply B",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Step 8: Connect Agent Node B and Direct Reply B",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "98f0cf39-a6f7-49b1-a956-80a0c7b9b9bc",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8002-b22b-f1c6991c0305"
+  },
+  "created_time": "2026-06-12T03:55:00.000Z",
+  "last_edited_time": "2026-06-16T20:23:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Connect ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Connect ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "Condition A output 1",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Condition A output 1",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " to ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " to ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "Agent 2 ",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Agent 2 ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "node. Confirm Agent 2 node is configured with your Gemini model, system message, and no document store is connected.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "node. Confirm Agent 2 node is configured with your Gemini model, system message, and no document store is connected.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "5fca7a82-a880-4459-99b0-f327745d0814",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8002-b22b-f1c6991c0305"
+  },
+  "created_time": "2026-06-12T03:55:00.000Z",
+  "last_edited_time": "2026-06-16T20:23:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Connect ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Connect ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "Agent 2 node output",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Agent 2 node output",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " to ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " to ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "Direct Reply B ",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Direct Reply B ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "node. In the Direct Reply B Message field, type ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "node. In the Direct Reply B Message field, type ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "{{",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": true,
+      "color": "default"
+     },
+     "plain_text": "{{",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " and select Agent Node B's output variable from the dropdown.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " and select Agent Node B's output variable from the dropdown.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38094183-19f3-8099-bccd-ea84fbc0dbf7",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8002-b22b-f1c6991c0305"
+  },
+  "created_time": "2026-06-15T12:45:00.000Z",
+  "last_edited_time": "2026-06-16T20:23:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "05984b98-8ead-4912-a103-4876adc67889",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8002-b22b-f1c6991c0305"
+  },
+  "created_time": "2026-06-12T02:08:00.000Z",
+  "last_edited_time": "2026-06-16T20:23:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_3",
+  "heading_3": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Here is the complete diagram",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Here is the complete diagram",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "3bc94183-19f3-8006-84bc-e47268ddbf79",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8002-b22b-f1c6991c0305"
+  },
+  "created_time": "2026-08-14T02:47:00.000Z",
+  "last_edited_time": "2026-08-14T02:47:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "image",
+  "image": {
+   "caption": [],
+   "type": "file",
+   "file": {
+    "url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/3a9085c4-df29-45e6-8bc7-6c9c0a25ea8c/602b8c3e-533f-42e9-8e5a-59bb043a3eed/image.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB4663I4WRT4H%2F20261022%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20261022T114501Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEKv%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJHMEUCIQDiTrKWawDvc%2FATP2sIkgVPwh3WT4Tb1qiuuUlk8%2Fa4aAIgJ%2F1%2FzMnDC2BzvQuvc5y5AmiL5y%2B7ULdeqd0W6jHX%2B5Yq%2FwMIcxAAGgw2Mzc0MjMxODM4MDUiDADZe9PGJvhSytvQNCrcA7lxKAmymOGcCxRhmAtYqlnHIyXGbh%2BpNAGmP%2FR1oUpnafW09szxPGmsVnfeTqQmYgLenOu1A25Zhm0Dkoe48KPAYcnsset6%2Bm2FuqaMdTFKRa1C15zXhywKEOotrXQpdQqqlbWlWXpIRAfp44U7to4%2B3Sfkt0IvrqLWEw3vfcBDMN%2BQTaW%2FokFHIHuISEyu%2FeOz0bEBvSuDUKsxgEk911xZ%2FMg0ZDXGK2gWIfXpg68FYH4CKuNwkQk6lD403%2FLt2TIOOTV3o999OSl82oSV3TqOY%2Ft8ohfxvGocuv8MUhXwJ8k5yYKMXSpkIt%2FxIxnbZgun7nVi0YXv3h9L%2BT8p3zxmFWHehF5ZcWg8Dn0S%2B26JtlKxGrbZHR1Rb%2BH4CrZA2eAVZY8HCSFHP%2BquSQCNoVu4ytRoiQMl0Tx6drMNX3z%2F1JchNt9KQQGegHZjuQ2pelpfJkXn4zMc3WpGr74dJNdk%2BvfaPVJkB3E1k7yW5jABU0hAmy5Uu5koBnCbC%2B213h%2BhorKZvLjeZi7REKOTpNgKp4Kdg4zBgKcojg145QSEtdIOQ7wyGcDDtjtfjJHb0q1QUcGMr%2Bjbz9NHldxF%2FPc0ibt%2B6fCR%2FSifZrXjvPbRUNynJRTJnChxluSIMNHJ59YGOqUBxKYUxZZ%2BZOj17NIDvlennqriWzikIAoHio%2FKHc%2FR6uPOHZsZ8pWUfn%2BmMWSJkuv7cehi%2BuUrHLD38iWt3QKaYJxkYwygOK1LdHZHfmKjT07ULpoUXinKGR9f8tAkMFqUETlJvjZGYCRHVXDsxqxWnwq4%2FSdi4vjkmnqZZKGeecLJQmbIEPmvMu25ZRM55fyVU68YVgSJxfKoG0g%2B0gS6575Py6ZM&X-Amz-Signature=9abd4efe82222124c7302fad7f9b724f9dce733f87c9edd03f745e12489cd492&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+    "expiry_time": "2026-10-22T12:45:01.178Z"
+   }
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "61f34f16-ad73-40a8-82c8-fd11e5dba608",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8002-b22b-f1c6991c0305"
+  },
+  "created_time": "2026-06-12T02:08:00.000Z",
+  "last_edited_time": "2026-06-16T20:23:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_3",
+  "heading_3": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Step 9: Test the retry logic",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Step 9: Test the retry logic",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "dcce2d5c-d966-4090-90ec-ad101724dfe5",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8002-b22b-f1c6991c0305"
+  },
+  "created_time": "2026-06-12T02:08:00.000Z",
+  "last_edited_time": "2026-06-16T20:23:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Test 1: Simulate API failure - ",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Test 1: Simulate API failure - ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "Change the HTTP Node URL to an invalid endpoint: ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Change the HTTP Node URL to an invalid endpoint: ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "https://jsonplaceholder.typicode.com/invalid/9999",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": true,
+      "color": "default"
+     },
+     "plain_text": "https://jsonplaceholder.typicode.com/invalid/9999",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37d94183-19f3-8001-858c-ec002c67049f",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8002-b22b-f1c6991c0305"
+  },
+  "created_time": "2026-06-12T03:34:00.000Z",
+  "last_edited_time": "2026-06-16T20:23:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Save and send: ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Save and send: ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "Can you check the engagement status for account 1?",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": true,
+      "color": "default"
+     },
+     "plain_text": "Can you check the engagement status for account 1?",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37d94183-19f3-80b2-bb1e-e82163fc03cf",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8002-b22b-f1c6991c0305"
+  },
+  "created_time": "2026-06-12T03:34:00.000Z",
+  "last_edited_time": "2026-06-16T20:23:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Expected",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Expected",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": ": The flow retries twice, then routes to the fallback Direct Reply.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": ": The flow retries twice, then routes to the fallback Direct Reply.",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "b6dc4f21-a47a-42be-af0a-0f4a33320a1c",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8002-b22b-f1c6991c0305"
+  },
+  "created_time": "2026-06-12T02:08:00.000Z",
+  "last_edited_time": "2026-06-16T20:23:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Test 2: Restore and confirm success path: - ",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Test 2: Restore and confirm success path: - ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "Restore the URL to: ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Restore the URL to: ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "https://jsonplaceholder.typicode.com/todos/1",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": true,
+      "color": "default"
+     },
+     "plain_text": "https://jsonplaceholder.typicode.com/todos/1",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "64ac43f9-00e9-409b-8b04-6b5af8ccfd04",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8002-b22b-f1c6991c0305"
+  },
+  "created_time": "2026-06-12T02:08:00.000Z",
+  "last_edited_time": "2026-06-16T20:23:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Send the same query. ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Send the same query. ",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37d94183-19f3-80af-983d-e80d60c0cef3",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8002-b22b-f1c6991c0305"
+  },
+  "created_time": "2026-06-12T03:34:00.000Z",
+  "last_edited_time": "2026-06-16T20:23:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Expected:",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Expected:",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " HTTP Node succeeds on the first attempt and Agent Node B returns a formatted status response.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " HTTP Node succeeds on the first attempt and Agent Node B returns a formatted status response.",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37d94183-19f3-80d5-840d-ca9d9760daad",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8002-b22b-f1c6991c0305"
+  },
+  "created_time": "2026-06-12T03:58:00.000Z",
+  "last_edited_time": "2026-06-16T20:23:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37d94183-19f3-80a3-9ac4-c40531b154cd",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8002-b22b-f1c6991c0305"
+  },
+  "created_time": "2026-06-12T03:58:00.000Z",
+  "last_edited_time": "2026-06-16T20:23:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": true,
+  "in_trash": false,
+  "type": "callout",
+  "callout": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Takeaway: ",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Takeaway: ",
+     "href": null
+    }
+   ],
+   "icon": {
+    "type": "emoji",
+    "emoji": "\ud83d\udca1"
+   },
+   "color": "gray_background"
+  },
+  "archived": false,
+  "_children": [
+   {
+    "object": "block",
+    "id": "38094183-19f3-80a1-b06a-cc83239235fd",
+    "parent": {
+     "type": "block_id",
+     "block_id": "37d94183-19f3-80a3-9ac4-c40531b154cd"
+    },
+    "created_time": "2026-06-15T12:45:00.000Z",
+    "last_edited_time": "2026-06-16T20:23:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+     "rich_text": [
+      {
+       "type": "text",
+       "text": {
+        "content": "The Loop Node adds resilience to Meridian's canvas by handling transient failures automatically. The key design principle is that the Loop Node provides the backward redirect, but the Condition Node provides the exit. Every loop needs both.",
+        "link": null
+       },
+       "annotations": {
+        "bold": false,
+        "italic": false,
+        "strikethrough": false,
+        "underline": false,
+        "code": false,
+        "color": "default"
+       },
+       "plain_text": "The Loop Node adds resilience to Meridian's canvas by handling transient failures automatically. The key design principle is that the Loop Node provides the backward redirect, but the Condition Node provides the exit. Every loop needs both.",
+       "href": null
+      }
+     ],
+     "icon": null,
+     "color": "default"
+    },
+    "archived": false
+   }
+  ]
+ }
+]

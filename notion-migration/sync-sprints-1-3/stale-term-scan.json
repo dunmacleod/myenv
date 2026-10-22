@@ -1,0 +1,658 @@
+[
+ {
+  "group": "BAA|A|1",
+  "lang": "EN",
+  "page": "Setting up the Environment",
+  "url": "https://app.notion.com/p/Setting-up-the-Environment-3999418319f380eda08ffe61b9e5b7d5",
+  "where": "quote",
+  "text": "Using OpenRouter instead of Gemini"
+ },
+ {
+  "group": "BAA|A|1",
+  "lang": "EN",
+  "page": "Setting up the Environment",
+  "url": "https://app.notion.com/p/Setting-up-the-Environment-3999418319f380eda08ffe61b9e5b7d5",
+  "where": "paragraph",
+  "text": "Before starting, read the setup guide: How-To: Using OpenRouter instead of Gemini "
+ },
+ {
+  "group": "BAA|A|1",
+  "lang": "DE",
+  "page": "Deine Umgebung einrichten",
+  "url": "https://app.notion.com/p/Deine-Umgebung-einrichten-4e99418319f382128f80810f27f78cf1",
+  "where": "quote",
+  "text": "OpenRouter statt Gemini verwenden"
+ },
+ {
+  "group": "BAA|A|1",
+  "lang": "DE",
+  "page": "Deine Umgebung einrichten",
+  "url": "https://app.notion.com/p/Deine-Umgebung-einrichten-4e99418319f382128f80810f27f78cf1",
+  "where": "paragraph",
+  "text": "Lies vor dem Start den Setup-Guide: How-To: OpenRouter statt Gemini verwenden"
+ },
+ {
+  "group": "BAA|A|1",
+  "lang": "EN",
+  "page": "Conversation History and Context Windows",
+  "url": "https://app.notion.com/p/Conversation-History-and-Context-Windows-3669418319f38059ac3df3c183809bca",
+  "where": "paragraph",
+  "text": "For this exercise, choose a lightweight Gemini model, such as Gemini Flash Lite. It is fast and sufficient for testing the agent's conversational behaviour and memory."
+ },
+ {
+  "group": "BAA|A|1",
+  "lang": "DE",
+  "page": "Conversation History und Context Windows",
+  "url": "https://app.notion.com/p/Conversation-History-und-Context-Windows-3779418319f380fbbce6c1752dde2a86",
+  "where": "paragraph",
+  "text": "Wähle für diese Übung ein leichtgewichtiges Gemini-Modell wie Gemini Flash Lite. Es ist schnell und für das Testen des dialogbasierten Verhaltens und Memory des Agents ausreichend."
+ },
+ {
+  "group": "BAA|A|1",
+  "lang": "EN",
+  "page": "Project Introduction",
+  "url": "https://app.notion.com/p/Project-Introduction-3669418319f380728775d90452b11fc5",
+  "where": "callout",
+  "text": "What this lesson covers: This lesson will introduce you to the project. You will work on completing the following policies: memory, conversation, and self-assessment. This validates your understanding of agent memory architecture and your ability to apply it. You will produce a written memory policy, run a multi-turn conversation test against your configured Chatflow, and complete a knowledge quiz. All three tasks are required."
+ },
+ {
+  "group": "BAA|A|1",
+  "lang": "EN",
+  "page": "Project Introduction",
+  "url": "https://app.notion.com/p/Project-Introduction-3669418319f380728775d90452b11fc5",
+  "where": "paragraph",
+  "text": "Write a one to two sentence rule defining what qualifies client information for storage in your Chatflow's Buffer Window Memory node. Your rule must be specific enough for a developer to implement in a system prompt."
+ },
+ {
+  "group": "BAA|A|1",
+  "lang": "EN",
+  "page": "Project Introduction",
+  "url": "https://app.notion.com/p/Project-Introduction-3669418319f380728775d90452b11fc5",
+  "where": "paragraph",
+  "text": "Write a one to two sentence rule defining what must never be written to your Chatflow's conversation history under any circumstances."
+ },
+ {
+  "group": "BAA|A|1",
+  "lang": "EN",
+  "page": "Project Introduction",
+  "url": "https://app.notion.com/p/Project-Introduction-3669418319f380728775d90452b11fc5",
+  "where": "paragraph",
+  "text": "Example of a strong rule: IBANs, dates of birth, national identity numbers, and health disclosures must never remain in the conversation history. IBANs must be passed to a secure tool and discarded. This is a capability your Chatflow will have later. Health disclosures must be dropped immediately unless the client has provided explicit consent."
+ },
+ {
+  "group": "BAA|A|1",
+  "lang": "EN",
+  "page": "Project Introduction",
+  "url": "https://app.notion.com/p/Project-Introduction-3669418319f380728775d90452b11fc5",
+  "where": "heading_3",
+  "text": "Task 2: Chatflow conversation validation"
+ },
+ {
+  "group": "BAA|A|1",
+  "lang": "EN",
+  "page": "Project Introduction",
+  "url": "https://app.notion.com/p/Project-Introduction-3669418319f380728775d90452b11fc5",
+  "where": "paragraph",
+  "text": "Run the following five-turn conversation. After each turn, check your agent's response against the expected behaviour before proceeding. Do not reveal the expected behaviour before you have observed and recorded the agent's actual response. This test validates only what your Chatflow has been built to do in Sprint 1: memory recall across turns, session isolation, and context window management."
+ },
+ {
+  "group": "BAA|A|1",
+  "lang": "EN",
+  "page": "Project Introduction",
+  "url": "https://app.notion.com/p/Project-Introduction-3669418319f380728775d90452b11fc5",
+  "where": "callout",
+  "text": "A Contigo client provides their IBAN during a conversation. Your current Chatflow has no tool connections yet. According to memory best practices, what is the correct behaviour for the agent right now?"
+ },
+ {
+  "group": "BAA|A|1",
+  "lang": "EN",
+  "page": "Project Introduction",
+  "url": "https://app.notion.com/p/Project-Introduction-3669418319f380728775d90452b11fc5",
+  "where": "callout",
+  "text": "What is the primary purpose of configuring a unique Session ID on the Buffer Window Memory node in your Chatflow?"
+ },
+ {
+  "group": "BAA|A|1",
+  "lang": "DE",
+  "page": "Projekteinführung",
+  "url": "https://app.notion.com/p/Projekteinf-hrung-3779418319f380ba9ff7efc6eaca55d8",
+  "where": "callout",
+  "text": "In dieser Lektion lernst du das Projekt kennen. Du arbeitest an drei Policies: Memory, Gespräch und Self-Assessment. Damit zeigst du, dass du die Agenten-Memory-Architektur verstehst und sie in deinem Agenten-Workflow anwenden kannst.. Du erstellst eine schriftliche Memory-Policy, führst einen Multi-Turn-Gesprächstest mit deinem konfigurierten Chatflow durch und absolvierst ein Wissensquiz. Alle drei Aufgaben musst du erledigen.\n"
+ },
+ {
+  "group": "BAA|A|1",
+  "lang": "DE",
+  "page": "Projekteinführung",
+  "url": "https://app.notion.com/p/Projekteinf-hrung-3779418319f380ba9ff7efc6eaca55d8",
+  "where": "paragraph",
+  "text": "Schreib eine Regel aus ein bis zwei Sätzen. Sie soll festlegen, welche Kundeninformationen sich für die Speicherung im Buffer-Window-Memory-Node deines Chatflows qualifizieren. Deine Regel muss so konkret sein, dass ein Entwickler sie direkt in einem System-Prompt umsetzen kann.\n"
+ },
+ {
+  "group": "BAA|A|1",
+  "lang": "DE",
+  "page": "Projekteinführung",
+  "url": "https://app.notion.com/p/Projekteinf-hrung-3779418319f380ba9ff7efc6eaca55d8",
+  "where": "paragraph",
+  "text": "Schreibe eine Regel aus ein bis zwei Sätzen, die definiert, was unter keinen Umständen in den Gesprächsverlauf deines Chatflows geschrieben werden darf."
+ },
+ {
+  "group": "BAA|A|1",
+  "lang": "DE",
+  "page": "Projekteinführung",
+  "url": "https://app.notion.com/p/Projekteinf-hrung-3779418319f380ba9ff7efc6eaca55d8",
+  "where": "paragraph",
+  "text": "Beispiel für eine starke Regel: IBANs, Geburtsdaten, nationale Identitätsnummern und Gesundheitsangaben dürfen niemals im Gesprächsverlauf verbleiben. IBANs müssen an ein sicheres Tool übergeben und verworfen werden. Diese Fähigkeit wird dein Chatflow später haben. Gesundheitsangaben müssen sofort fallengelassen werden, es sei denn, der Kunde hat ausdrücklich eingewilligt."
+ },
+ {
+  "group": "BAA|A|1",
+  "lang": "DE",
+  "page": "Projekteinführung",
+  "url": "https://app.notion.com/p/Projekteinf-hrung-3779418319f380ba9ff7efc6eaca55d8",
+  "where": "heading_3",
+  "text": "Aufgabe 2: Chatflow-Gespräch validieren"
+ },
+ {
+  "group": "BAA|A|1",
+  "lang": "DE",
+  "page": "Projekteinführung",
+  "url": "https://app.notion.com/p/Projekteinf-hrung-3779418319f380ba9ff7efc6eaca55d8",
+  "where": "paragraph",
+  "text": "Führ das folgende Gespräch mit fünf Turns. Prüf nach jedem Turn die Antwort deines Agenten anhand des erwarteten Verhaltens, bevor du weitermachst. Schau dir das erwartete Verhalten erst an, nachdem du die tatsächliche Antwort des Agenten beobachtet und dokumentiert hast. Dieser Test prüft nur das, wofür dein Chatflow in Sprint 1 gebaut wurde: Memory-Recall über Turns hinweg, Session-Isolation und Context-Window-Management."
+ },
+ {
+  "group": "BAA|A|1",
+  "lang": "DE",
+  "page": "Projekteinführung",
+  "url": "https://app.notion.com/p/Projekteinf-hrung-3779418319f380ba9ff7efc6eaca55d8",
+  "where": "callout",
+  "text": "Ein Contigo-Kunde gibt während eines Gesprächs seine IBAN an. Dein aktueller Chatflow hat noch keine Tool-Verbindungen. Was ist gemäß Memory-Best-Practices derzeit das korrekte Verhalten des Agenten?"
+ },
+ {
+  "group": "BAA|A|1",
+  "lang": "DE",
+  "page": "Projekteinführung",
+  "url": "https://app.notion.com/p/Projekteinf-hrung-3779418319f380ba9ff7efc6eaca55d8",
+  "where": "callout",
+  "text": "Was ist der Hauptzweck der Konfiguration einer eindeutigen Session ID im Buffer-Window-Memory-Node deines Chatflows?"
+ },
+ {
+  "group": "BAA|A|1",
+  "lang": "DE",
+  "page": "Worauf das hinausläuft — der Contigo-Agent, drei Sprints von jetzt",
+  "url": "https://app.notion.com/p/Worauf-das-hinausl-uft-der-Contigo-Agent-drei-Sprints-von-jetzt-3dd9418319f3818fb565fdd3bce7c984",
+  "where": "bulleted_list_item",
+  "text": "Der Chatflow-Export — die .json , die Canvas, Node-Konfiguration und Tool-Definitionen erfasst."
+ },
+ {
+  "group": "BAA|A|1",
+  "lang": "DE",
+  "page": "Worauf das hinausläuft — der Contigo-Agent, drei Sprints von jetzt",
+  "url": "https://app.notion.com/p/Worauf-das-hinausl-uft-der-Contigo-Agent-drei-Sprints-von-jetzt-3dd9418319f3818fb565fdd3bce7c984",
+  "where": "paragraph",
+  "text": "Sprint 1 — Wie Agenten sich erinnern. Diesen haben Sie gerade beendet. Sie haben einen Chatflow mit konfigurierter Memory, eine geschriebene Memory-Policy und ein Konversations-Test-Log. Das ist der Kern, aus dem das Projekt wächst."
+ },
+ {
+  "group": "BAA|A|1",
+  "lang": "DE",
+  "page": "Worauf das hinausläuft — der Contigo-Agent, drei Sprints von jetzt",
+  "url": "https://app.notion.com/p/Worauf-das-hinausl-uft-der-Contigo-Agent-drei-Sprints-von-jetzt-3dd9418319f3818fb565fdd3bce7c984",
+  "where": "paragraph",
+  "text": "Sprint 4 — Projekt-Integration und -Evaluation. Sie polieren den Chatflow, testen ihn end-to-end, ergänzen Sicherheits-Guardrails und Human-in-the-Loop, wo es zählt, dann präsentieren und reichen Sie ein."
+ },
+ {
+  "group": "BAA|A|1",
+  "lang": "DE",
+  "page": "Worauf das hinausläuft — der Contigo-Agent, drei Sprints von jetzt",
+  "url": "https://app.notion.com/p/Worauf-das-hinausl-uft-der-Contigo-Agent-drei-Sprints-von-jetzt-3dd9418319f3818fb565fdd3bce7c984",
+  "where": "paragraph",
+  "text": "Presentation Day ist der Termin, an dem Ihr Projekt bewertet wird. Sie reichen die vier Artefakte im Voraus ein und geben dann eine Live-Demo des Chatflows für die Klasse — inklusive mindestens einer Konversation, die Grounding belastet, einer, die ein Tool aufruft, und einer, die versucht, den Agenten aus dem Scope zu drängen. Ihre Note für das Modulprojekt ergibt sich aus dem, was Sie einreichen, und daraus, wie Sie präsentieren."
+ },
+ {
+  "group": "BAA|A|1",
+  "lang": "DE",
+  "page": "Worauf das hinausläuft — der Contigo-Agent, drei Sprints von jetzt",
+  "url": "https://app.notion.com/p/Worauf-das-hinausl-uft-der-Contigo-Agent-drei-Sprints-von-jetzt-3dd9418319f3818fb565fdd3bce7c984",
+  "where": "paragraph",
+  "text": "Code Clinic findet nach dem Presentation Day statt. Sie zählt nicht in die Note — es ist eine technische Support-Session für konkrete Fragen zu Ihrem eigenen Bau. Ein Retrieval, das nicht so rankt, wie Sie es erwarten würden, ein System-Prompt, der weiter driftet, ein Tool-Call, der leise ausfällt. Bringen Sie den Chatflow und konkrete Probleme mit, keine allgemeinen Fragen."
+ },
+ {
+  "group": "BAA|A|2",
+  "lang": "DE",
+  "page": "Retrieval-Evaluationsset und No-Answer-Fälle",
+  "url": "https://app.notion.com/p/Retrieval-Evaluationsset-und-No-Answer-F-lle-3779418319f380b2bdaefa4beb4aae3a",
+  "where": "to_do",
+  "text": "Google Gemini Embedding-Node auf dem Canvas mit deinem AI-Modell und dem Task Type RETRIEVAL_QUERY konfiguriert"
+ },
+ {
+  "group": "BAA|A|2",
+  "lang": "EN",
+  "page": "Connecting RAG to the Project Agent",
+  "url": "https://app.notion.com/p/Connecting-RAG-to-the-Project-Agent-3669418319f380e0a73fd6eac310d686",
+  "where": "numbered_list_item",
+  "text": "Attach Embeddings Google Gemini and select the same Gemini API credential, embedding model, and dimensions that were used in the successful Contigo - Knowledge Ingestion workflow. Check the model ID in the imported ingestion node (for example, gemini-embedding-001 if that is the model configured). Do not use OpenRouter/OpenAI embeddings for retrieval if the documents were indexed with Gemini. Start with Top K = 4."
+ },
+ {
+  "group": "BAA|A|2",
+  "lang": "EN",
+  "page": "Retrieval before generation",
+  "url": "https://app.notion.com/p/Retrieval-before-generation-3669418319f380f4a925e7a117371f82",
+  "where": "paragraph",
+  "text": "The tested workflow uses Embeddings Google Gemini, not Embeddings OpenAI. Configure a Google Gemini API credential with access to an embedding model (for example gemini-embedding-001 if offered in your n8n version). Your OpenRouter credential remains the chat model credential for the Sprint 1 agent, but is not used for the ingestion embeddings. Reuse the exact same Gemini embedding model and settings later for Qdrant retrieval."
+ },
+ {
+  "group": "BAA|A|2",
+  "lang": "EN",
+  "page": "Retrieval before generation",
+  "url": "https://app.notion.com/p/Retrieval-before-generation-3669418319f380f4a925e7a117371f82",
+  "where": "paragraph",
+  "text": "Download Contigo — Knowledge Ingestion workflow (n8n JSON) and import it into n8n (Import from File). The provided workflow uses a Form Trigger named Upload Contigo PDF, so you can upload the locally downloaded PDFs from your browser. Do not replace the Form Trigger with a Manual Trigger. You will upload the two documents one at a time. Select your own Qdrant and Gemini credentials after import; the JSON must not contain API secrets."
+ },
+ {
+  "group": "BAA|A|2",
+  "lang": "EN",
+  "page": "Retrieval before generation",
+  "url": "https://app.notion.com/p/Retrieval-before-generation-3669418319f380f4a925e7a117371f82",
+  "where": "paragraph",
+  "text": "The imported workflow already contains Default Data Loader, Recursive Character Text Splitter, and Embeddings Google Gemini, with their connections. Do not add or rebuild these nodes. Simply confirm that the loader receives binary PDFs, the splitter is connected, and the Gemini credential is selected. Keep the embedding model configured in the provided workflow; use the same model later for retrieval."
+ },
+ {
+  "group": "BAA|A|2",
+  "lang": "EN",
+  "page": "Retrieval before generation",
+  "url": "https://app.notion.com/p/Retrieval-before-generation-3669418319f380f4a925e7a117371f82",
+  "where": "numbered_list_item",
+  "text": "If indexing fails, inspect the Form Trigger binary output, Document sub-node connection, Gemini credential/model, Qdrant credential, and execution log. A green Default Data Loader alone does not prove documents were indexed."
+ },
+ {
+  "group": "BAA|A|2",
+  "lang": "DE",
+  "page": "Retrieval vor Generation",
+  "url": "https://app.notion.com/p/Retrieval-vor-Generation-3779418319f380c1b2b4eb3964361849",
+  "where": "paragraph",
+  "text": "Der getestete Workflow verwendet Embeddings Google Gemini, nicht Embeddings OpenAI. Richte ein Google-Gemini-API-Credential mit Zugriff auf ein Embedding-Modell ein (z. B. gemini-embedding-001, falls in deiner n8n-Version verfügbar). Das OpenRouter-Credential bleibt für das Chat Model des Sprint-1-Agenten bestehen, wird aber nicht für die Embeddings bei der Indexierung verwendet. Verwende später beim Retrieval genau dasselbe Gemini-Embedding-Modell mit denselben Einstellungen."
+ },
+ {
+  "group": "BAA|A|2",
+  "lang": "DE",
+  "page": "Retrieval vor Generation",
+  "url": "https://app.notion.com/p/Retrieval-vor-Generation-3779418319f380c1b2b4eb3964361849",
+  "where": "paragraph",
+  "text": "Lade den Contigo-Ingestion-Workflow (n8n JSON) herunter und importiere ihn in n8n (Import from File). Der bereitgestellte Workflow nutzt einen Form Trigger mit dem Namen Upload Contigo PDF. Damit kannst du die heruntergeladenen PDF-Dateien direkt im Browser hochladen. Ersetze den Form Trigger nicht durch einen Manual Trigger. Lade die beiden Dokumente nacheinander hoch. Wähle nach dem Import deine eigenen Qdrant- und Gemini-Credentials; API-Schlüssel gehören nicht in die JSON-Datei."
+ },
+ {
+  "group": "BAA|A|2",
+  "lang": "DE",
+  "page": "Retrieval vor Generation",
+  "url": "https://app.notion.com/p/Retrieval-vor-Generation-3779418319f380c1b2b4eb3964361849",
+  "where": "paragraph",
+  "text": "Der importierte Workflow enthält bereits Default Data Loader, Recursive Character Text Splitter und Embeddings Google Gemini samt Verbindungen. Du musst diese Nodes nicht selbst hinzufügen oder neu erstellen. Prüfe lediglich, ob der Loader PDF-Binärdaten erhält, der Text Splitter verbunden ist und das Gemini-Credential ausgewählt wurde. Behalte das im bereitgestellten Workflow konfigurierte Embedding-Modell bei; verwende es später auch beim Retrieval."
+ },
+ {
+  "group": "BAA|A|2",
+  "lang": "DE",
+  "page": "Retrieval vor Generation",
+  "url": "https://app.notion.com/p/Retrieval-vor-Generation-3779418319f380c1b2b4eb3964361849",
+  "where": "numbered_list_item",
+  "text": "Bei Fehlern prüfe die PDF-Binärdaten des Form Triggers, die Document-Sub-Node-Verbindung, Gemini-Credentials und -Modell, Qdrant-Credentials sowie die Execution-Logs. Ein grüner Default Data Loader allein beweist keine erfolgreiche Indexierung."
+ },
+ {
+  "group": "BAA|A|2",
+  "lang": "EN",
+  "page": "Embeddings and vector search",
+  "url": "https://app.notion.com/p/Embeddings-and-vector-search-3669418319f380d79dc8ccf39464760e",
+  "where": "bulleted_list_item",
+  "text": "Embedding model choice: Different models produce different vector spaces. For Contigo's n8n pipeline, a supported embeddings node such as Google Gemini Embeddings may be used with a configured model and credentials. For a multilingual deployment covering Germany, Austria, and the Netherlands, gemini-embedding-001 is appropriate as it supports multilingual semantic similarity out of the box."
+ },
+ {
+  "group": "BAA|A|2",
+  "lang": "DE",
+  "page": "Embeddings und Vektorsuche",
+  "url": "https://app.notion.com/p/Embeddings-und-Vektorsuche-3779418319f38013997fe17ca65932d7",
+  "where": "bulleted_list_item",
+  "text": "Während der Einpflegung: Im n8n-Ingestion-Workflow am Embeddings-Sub-Node des Qdrant Vector Store, zusammen mit Loader und Text Splitter. Hier wird text-embedding-004 ausgewählt und dein Gemini API-Key authentifiziert. Jeder Chunk, der in der Vektordatenbank gespeichert wird, wird mit diesem Modell eingebettet."
+ },
+ {
+  "group": "BAA|A|3",
+  "lang": "EN",
+  "page": "Tool Use and System Prompt Validation",
+  "url": "https://app.notion.com/p/Tool-Use-and-System-Prompt-Validation-3689418319f380ee9e49f361c19b51de",
+  "where": "to_do",
+  "text": "Retrieval uses the same Gemini embedding model and dimensions as ingestion"
+ },
+ {
+  "group": "BAA|A|3",
+  "lang": "DE",
+  "page": "Tool-Nutzung und System-Prompt-Validierung",
+  "url": "https://app.notion.com/p/Tool-Nutzung-und-System-Prompt-Validierung-3779418319f380db81e7eddddcd00855",
+  "where": "to_do",
+  "text": "Retrieval verwendet dasselbe Gemini-Embedding-Modell und dieselben Dimensionen wie die Indexierung"
+ },
+ {
+  "group": "BAA|A|3",
+  "lang": "EN",
+  "page": "Connecting Tools to Your n8n Agent",
+  "url": "https://app.notion.com/p/Connecting-Tools-to-Your-n8n-Agent-3689418319f380a5ad44c8e226b890d7",
+  "where": "bulleted_list_item",
+  "text": "the same Gemini embedding configuration used for ingestion and retrieval"
+ },
+ {
+  "group": "BAA|A|3",
+  "lang": "DE",
+  "page": "Tools mit deinem n8n-Agenten verbinden",
+  "url": "https://app.notion.com/p/Tools-mit-deinem-n8n-Agenten-verbinden-3779418319f3801982e2d52fbda7572a",
+  "where": "bulleted_list_item",
+  "text": "dieselbe Gemini-Embedding-Konfiguration für Indexierung und Retrieval"
+ },
+ {
+  "group": "BAA|B|2",
+  "lang": "EN",
+  "page": "Connecting Qdrant Retrieval to the n8n AI Agent",
+  "url": "https://app.notion.com/p/Connecting-Qdrant-Retrieval-to-the-n8n-AI-Agent-3669418319f38072beffe31abfa04d3b",
+  "where": "paragraph",
+  "text": "Open the n8n instance and the Sprint 1 workflow Meridian Base Agent. Preserve its trigger, configured model, credentials, session handling, and response behavior. If the previous workflow was exported, import the saved n8n JSON rather than rebuilding a Flowise canvas."
+ },
+ {
+  "group": "BAA|B|2",
+  "lang": "EN",
+  "page": "Connecting Qdrant Retrieval to the n8n AI Agent",
+  "url": "https://app.notion.com/p/Connecting-Qdrant-Retrieval-to-the-n8n-AI-Agent-3669418319f38072beffe31abfa04d3b",
+  "where": "numbered_list_item",
+  "text": "Attach Embeddings Google Gemini to the Qdrant Vector Store embedding input. Select the exact same Gemini embedding model and settings used in Meridian Knowledge Ingestion (check the imported ingestion workflow's node; the supplied JSON uses models/gemini-embedding-001). Using different embedding models can make the vectors incompatible."
+ },
+ {
+  "group": "BAA|B|2",
+  "lang": "DE",
+  "page": "Qdrant-Retrieval mit dem n8n AI Agent verbinden",
+  "url": "https://app.notion.com/p/Qdrant-Retrieval-mit-dem-n8n-AI-Agent-verbinden-3789418319f380d498f5e9d78796669d",
+  "where": "paragraph",
+  "text": "Öffne Meridian Base Agent aus Sprint 1 in n8n. Behalte Trigger, Modell, Credentials, Session-Konfiguration und Antwortlogik bei. Falls der Workflow exportiert wurde, importiere das n8n-JSON, statt den alten Flowise-Canvas nachzubauen."
+ },
+ {
+  "group": "BAA|B|2",
+  "lang": "DE",
+  "page": "Qdrant-Retrieval mit dem n8n AI Agent verbinden",
+  "url": "https://app.notion.com/p/Qdrant-Retrieval-mit-dem-n8n-AI-Agent-verbinden-3789418319f380d498f5e9d78796669d",
+  "where": "numbered_list_item",
+  "text": "Verbinde Embeddings Google Gemini mit dem Embedding-Anschluss des Qdrant Vector Store. Nutze exakt dasselbe Gemini-Embedding-Modell mit denselben Einstellungen wie im importierten Workflow Meridian Knowledge Ingestion (im bereitgestellten JSON: models/gemini-embedding-001). Unterschiedliche Embedding-Modelle können inkompatible Vektoren erzeugen."
+ },
+ {
+  "group": "BAA|B|2",
+  "lang": "EN",
+  "page": "System Prompt Best Practices for a Multi-Capability Agent",
+  "url": "https://app.notion.com/p/System-Prompt-Best-Practices-for-a-Multi-Capability-Agent-3669418319f38017aac3cc562b931472",
+  "where": "table_row",
+  "text": "Reasoning engine | Intelligence: Gemini reads, reasons, and generates"
+ },
+ {
+  "group": "BAA|B|2",
+  "lang": "EN",
+  "page": "System Prompt Best Practices for a Multi-Capability Agent",
+  "url": "https://app.notion.com/p/System-Prompt-Best-Practices-for-a-Multi-Capability-Agent-3669418319f38017aac3cc562b931472",
+  "where": "paragraph",
+  "text": "The fallback instruction governs what the agent does when none of its capabilities can resolve the query. Without a defined fallback, the agent produces one of two failure modes: it generates a plausible-sounding answer from Gemini's training data, or it produces a vague unhelpful response that leaves the consultant without a next step. Both are worse than an honest, specific fallback."
+ },
+ {
+  "group": "BAA|B|2",
+  "lang": "DE",
+  "page": "System-Prompt-Best-Practices für einen Multi-Capability-Agenten",
+  "url": "https://app.notion.com/p/System-Prompt-Best-Practices-f-r-einen-Multi-Capability-Agenten-3789418319f3805aaabdeebd26fa7da6",
+  "where": "table_row",
+  "text": "Reasoning Engine | Intelligenz: Gemini liest, führt Reasoning aus und generiert"
+ },
+ {
+  "group": "BAA|B|2",
+  "lang": "DE",
+  "page": "System-Prompt-Best-Practices für einen Multi-Capability-Agenten",
+  "url": "https://app.notion.com/p/System-Prompt-Best-Practices-f-r-einen-Multi-Capability-Agenten-3789418319f3805aaabdeebd26fa7da6",
+  "where": "paragraph",
+  "text": "Die Fallback-Anweisung steuert, was der Agent tut, wenn keine seiner Fähigkeiten die Query lösen kann. Ohne definierten Fallback erzeugt der Agent einen von zwei Fehlermodi: Er generiert eine plausibel klingende Antwort aus Geminis Trainingsdaten, oder er produziert eine vage, wenig hilfreiche Antwort, die dem Consultant keinen nächsten Schritt bietet. Beides ist schlechter als ein ehrlicher, spezifischer Fallback."
+ },
+ {
+  "group": "BAA|B|2",
+  "lang": "EN",
+  "page": "What is a Document Store?",
+  "url": "https://app.notion.com/p/What-is-a-Document-Store-3669418319f3804497d0d4e89886eea3",
+  "where": "paragraph",
+  "text": "Meridian Consulting's n8n AI workflow can hold a conversation, respond to instructions, and stay within its defined scope. But it only knows what Gemini was trained on. Ask it about Meridian's internal project classification tiers, escalation procedures, or knowledge-sharing protocols and it will either guess or fall back."
+ },
+ {
+  "group": "BAA|B|2",
+  "lang": "EN",
+  "page": "What is a Document Store?",
+  "url": "https://app.notion.com/p/What-is-a-Document-Store-3669418319f3804497d0d4e89886eea3",
+  "where": "paragraph",
+  "text": "In n8n, a searchable knowledge base is built from connected components rather than a single Flowise Document Store screen. An ingestion workflow loads the source files, splits the text into chunks, generates embeddings, and writes the chunks and metadata into a vector store (for example Qdrant). A retrieval workflow searches that store and provides relevant passages to the AI Agent or a question-answering chain. The vector store is a separate service or supported storage integration; adding files to n8n does not automatically index them."
+ },
+ {
+  "group": "BAA|B|2",
+  "lang": "DE",
+  "page": "Was ist ein Document Store?",
+  "url": "https://app.notion.com/p/Was-ist-ein-Document-Store-3789418319f3803fbd05f2757fec58e8",
+  "where": "paragraph",
+  "text": "Der n8n-Agent von Meridian Consulting kann eine Unterhaltung führen, auf Anweisungen reagieren und innerhalb seines definierten Scopes bleiben. Doch er kennt nur die Daten, mit denen Gemini trainiert wurde. Fragst du ihn nach Meridians internen Projektklassifizierungs-Tiers, Eskalationsverfahren oder Knowledge-Sharing-Protokollen, wird er entweder raten oder ausweichen."
+ },
+ {
+  "group": "BAA|B|2",
+  "lang": "DE",
+  "page": "Was ist ein Document Store?",
+  "url": "https://app.notion.com/p/Was-ist-ein-Document-Store-3789418319f3803fbd05f2757fec58e8",
+  "where": "paragraph",
+  "text": "In n8n entsteht eine durchsuchbare Wissensbasis aus mehreren verbundenen Komponenten, nicht über eine zentrale Flowise-Document-Store-Oberfläche. Ein Ingestion-Workflow lädt die Dokumente, teilt sie in Chunks, erzeugt Embeddings und speichert Chunks samt Metadaten in einem Vector Store wie Qdrant. Ein Retrieval-Workflow durchsucht diesen Store und übergibt passende Textstellen an den AI Agent oder eine Frage-Antwort-Kette. Der Vector Store wird separat konfiguriert; ein Datei-Upload in n8n erstellt noch keinen Suchindex."
+ },
+ {
+  "group": "BAA|B|2",
+  "lang": "EN",
+  "page": "Building Meridian's Retrieval Knowledge Base",
+  "url": "https://app.notion.com/p/Building-Meridian-s-Retrieval-Knowledge-Base-3669418319f380ee94bed826ffb28f7d",
+  "where": "callout",
+  "text": "What you will do: Download three synthetic Meridian TXT files, import the provided n8n ingestion workflow JSON, select your Qdrant and Google Gemini credentials, upload each file, and verify it was indexed. Do not build the nodes from scratch."
+ },
+ {
+  "group": "BAA|B|2",
+  "lang": "EN",
+  "page": "Building Meridian's Retrieval Knowledge Base",
+  "url": "https://app.notion.com/p/Building-Meridian-s-Retrieval-Knowledge-Base-3669418319f380ee94bed826ffb28f7d",
+  "where": "numbered_list_item",
+  "text": "Open Embeddings Google Gemini, select your Google Gemini API credential and confirm model models/gemini-embedding-001 (as configured in this starter JSON). Chat model credentials from Sprint 1 are separate; no OpenRouter embeddings node is required here."
+ },
+ {
+  "group": "BAA|B|2",
+  "lang": "EN",
+  "page": "Building Meridian's Retrieval Knowledge Base",
+  "url": "https://app.notion.com/p/Building-Meridian-s-Retrieval-Knowledge-Base-3669418319f380ee94bed826ffb28f7d",
+  "where": "paragraph",
+  "text": "In the next lesson, connect the same collection to your existing Meridian agent with Embeddings Google Gemini, using exactly the same model as ingestion. Once connected, test:"
+ },
+ {
+  "group": "BAA|B|2",
+  "lang": "EN",
+  "page": "Building Meridian's Retrieval Knowledge Base",
+  "url": "https://app.notion.com/p/Building-Meridian-s-Retrieval-Knowledge-Base-3669418319f380ee94bed826ffb28f7d",
+  "where": "to_do",
+  "text": "Qdrant and Gemini credentials selected"
+ },
+ {
+  "group": "BAA|B|2",
+  "lang": "DE",
+  "page": "Meridians Retrieval-Wissensbasis aufbauen",
+  "url": "https://app.notion.com/p/Meridians-Retrieval-Wissensbasis-aufbauen-3789418319f3808682fae4c27efb8af2",
+  "where": "callout",
+  "text": "Lernziel: Lade drei synthetische Meridian-TXT-Dateien herunter, importiere die bereitgestellte n8n-Workflow-JSON, wähle deine Qdrant- und Google-Gemini-Credentials, lade die Dateien hoch und überprüfe die Indexierung. Erstelle die Nodes nicht selbst."
+ },
+ {
+  "group": "BAA|B|2",
+  "lang": "DE",
+  "page": "Meridians Retrieval-Wissensbasis aufbauen",
+  "url": "https://app.notion.com/p/Meridians-Retrieval-Wissensbasis-aufbauen-3789418319f3808682fae4c27efb8af2",
+  "where": "numbered_list_item",
+  "text": "Öffne Embeddings Google Gemini, wähle deine Google-Gemini-API-Credentials und prüfe das Modell models/gemini-embedding-001 (wie in dieser Starter-JSON konfiguriert). Die Chat-Credentials aus Sprint 1 sind davon unabhängig."
+ },
+ {
+  "group": "BAA|B|2",
+  "lang": "DE",
+  "page": "Meridians Retrieval-Wissensbasis aufbauen",
+  "url": "https://app.notion.com/p/Meridians-Retrieval-Wissensbasis-aufbauen-3789418319f3808682fae4c27efb8af2",
+  "where": "paragraph",
+  "text": "In der nächsten Lektion verbindest du meridian-knowledge mit dem bestehenden Meridian-Agenten und verwendest Embeddings Google Gemini mit demselben Modell wie bei der Indexierung. Testfragen:"
+ },
+ {
+  "group": "BAA|B|2",
+  "lang": "DE",
+  "page": "Meridians Retrieval-Wissensbasis aufbauen",
+  "url": "https://app.notion.com/p/Meridians-Retrieval-Wissensbasis-aufbauen-3789418319f3808682fae4c27efb8af2",
+  "where": "to_do",
+  "text": "Qdrant- und Gemini-Credentials ausgewählt"
+ },
+ {
+  "group": "BAA|B|3",
+  "lang": "EN",
+  "page": "Sprint 3 Assessment",
+  "url": "https://app.notion.com/p/Sprint-3-Assessment-3669418319f380f58548c32d9cd2eb7a",
+  "where": "paragraph",
+  "text": "Throughout this sprint, Meridian Consulting's team has moved from debugging failing agent graphs to evaluating the platform landscape that surrounds the n8n environment they have been building in. The sprint covered where visual agent builds fail and how to read those failures in execution traces, how open-source visual builders compare and where each fits, how enterprise platforms like Copilot Studio and the Gemini Enterprise Agent Platform provide governance that open-source tools require teams to build themselves, and how MCP reduces integration overhead by providing a universal connection standard across frameworks."
+ },
+ {
+  "group": "BAA|B|3",
+  "lang": "EN",
+  "page": "Sprint 3 Assessment",
+  "url": "https://app.notion.com/p/Sprint-3-Assessment-3669418319f380f58548c32d9cd2eb7a",
+  "where": "callout",
+  "text": "A Meridian client successfully builds and tests an agent in Google AI Studio using real employee records to validate retrieval accuracy. Before moving to production their CISO requires migration to the Gemini Enterprise Agent Platform. Which two reasons most directly justify this requirement? Select all that apply."
+ },
+ {
+  "group": "AAS|A|1",
+  "lang": "EN",
+  "page": "Setting up your Environment",
+  "url": "https://app.notion.com/p/Setting-up-your-Environment-3999418319f380bf8a41dd4b781c3319",
+  "where": "paragraph",
+  "text": "Use your school-provisioned key. You do not need to generate a separate Gemini key for this sprint. The model is selected through OpenRouter."
+ },
+ {
+  "group": "AAS|A|1",
+  "lang": "EN",
+  "page": "Setting up your Environment",
+  "url": "https://app.notion.com/p/Setting-up-your-Environment-3999418319f380bf8a41dd4b781c3319",
+  "where": "paragraph",
+  "text": "School guide: Using OpenRouter instead of Gemini"
+ },
+ {
+  "group": "AAS|A|1",
+  "lang": "EN",
+  "page": "Setting up your Environment",
+  "url": "https://app.notion.com/p/Setting-up-your-Environment-3999418319f380bf8a41dd4b781c3319",
+  "where": "bulleted_list_item",
+  "text": "C. A separate Gemini API key and Redis server — Incorrect. Use OpenRouter; Redis is outside this sprint's setup."
+ },
+ {
+  "group": "AAS|A|1",
+  "lang": "DE",
+  "page": "Deine Umgebung einrichten",
+  "url": "https://app.notion.com/p/Deine-Umgebung-einrichten-f599418319f3837aa3e08111ace24330",
+  "where": "paragraph",
+  "text": "Verwende den von Masterschool bereitgestellten Key. Für diesen Sprint brauchst du keinen separaten Gemini-Key. Das Modell wird über OpenRouter ausgewählt."
+ },
+ {
+  "group": "AAS|A|1",
+  "lang": "DE",
+  "page": "Deine Umgebung einrichten",
+  "url": "https://app.notion.com/p/Deine-Umgebung-einrichten-f599418319f3837aa3e08111ace24330",
+  "where": "paragraph",
+  "text": "Masterschool-Anleitung: OpenRouter statt Gemini verwenden"
+ },
+ {
+  "group": "AAS|A|1",
+  "lang": "DE",
+  "page": "Deine Umgebung einrichten",
+  "url": "https://app.notion.com/p/Deine-Umgebung-einrichten-f599418319f3837aa3e08111ace24330",
+  "where": "bulleted_list_item",
+  "text": "C. Einen separaten Gemini-Key und einen Redis-Server — Falsch. Verwende OpenRouter; Redis gehört nicht zum Setup dieses Sprints."
+ },
+ {
+  "group": "AAS|B|1",
+  "lang": "EN",
+  "page": "Connecting an MCP tool to an n8n agent",
+  "url": "https://app.notion.com/p/Connecting-an-MCP-tool-to-an-n8n-agent-37e9418319f3807e8dccf27b8f23c646",
+  "where": "numbered_list_item",
+  "text": "Attach OpenRouter Chat Model using school credentials. In Model, select google/gemini-2.5-flash (Gemini 2.5 Flash)."
+ },
+ {
+  "group": "AAS|B|1",
+  "lang": "DE",
+  "page": "Ein MCP-Tool mit einem n8n-Agenten verbinden",
+  "url": "https://app.notion.com/p/Ein-MCP-Tool-mit-einem-n8n-Agenten-verbinden-4da9418319f383afbd138170b4ce228e",
+  "where": "numbered_list_item",
+  "text": "Verbinden Sie OpenRouter Chat Model mit den Schulzugangsdaten. Wählen Sie im Feld Model google/gemini-2.5-flash (Gemini 2.5 Flash)."
+ },
+ {
+  "group": "AAS|B|3",
+  "lang": "EN",
+  "page": "Resilient orchestration implementation",
+  "url": "https://app.notion.com/p/Resilient-orchestration-implementation-3899418319f380dc8ca0cbada2aa9b7f",
+  "where": "callout",
+  "text": "Start with your saved n8n workflow C3B-S3-Halcyon-arXiv-Resilience from Building the baseline agent: retries and fallbacks. Demonstrate its arXiv success path, bounded HTTP retries and error output before adding any additional resilience pattern. If using another project workflow, document an equivalent tested n8n baseline. Do not submit a Flowise canvas."
+ },
+ {
+  "group": "AAS|B|3",
+  "lang": "DE",
+  "page": "Implementierung resilienter Orchestrierung",
+  "url": "https://app.notion.com/p/Implementierung-resilienter-Orchestrierung-0479418319f38205b6298186c8c5eb70",
+  "where": "callout",
+  "text": "Beginne mit dem gespeicherten n8n-Workflow C3B-S3-Halcyon-arXiv-Resilience aus Den Baseline-Agenten bauen: Retries und Fallbacks. Zeige den arXiv-Erfolgspfad, begrenzte HTTP-Retries und den Error Output, bevor du weitere Resilienz-Patterns ergänzt. Nutzt du einen anderen Projektworkflow, dokumentiere eine gleichwertige getestete n8n-Baseline. Reiche keinen Flowise-Canvas ein."
+ },
+ {
+  "group": "AAS|B|3",
+  "lang": "EN",
+  "page": "Adding resilience to the project orchestration",
+  "url": "https://app.notion.com/p/Adding-resilience-to-the-project-orchestration-3899418319f380f1b97dfcf6b3a1cea0",
+  "where": "paragraph",
+  "text": "Use your saved C3B-S3-Halcyon-arXiv-Resilience n8n workflow from Building the baseline agent: retries and fallbacks as the starting point. The following requirements concern that actual workflow, not a Flowise project. Record settings you have implemented separately from those you only propose in your design."
+ },
+ {
+  "group": "AAS|B|3",
+  "lang": "DE",
+  "page": "Resilienz in die Projektorchestrierung einbauen",
+  "url": "https://app.notion.com/p/Resilienz-in-die-Projektorchestrierung-einbauen-66f9418319f383908fb8014a1ff89611",
+  "where": "paragraph",
+  "text": "Beginne mit deinem gespeicherten n8n-Workflow C3B-S3-Halcyon-arXiv-Resilience aus Den Baseline-Agenten bauen: Retries und Fallbacks. Die folgenden Anforderungen gelten für diesen echten Workflow, nicht für ein Flowise-Projekt. Unterscheide zwischen bereits implementierten Einstellungen und vorgeschlagenen Designentscheidungen."
+ },
+ {
+  "group": "AAS|B|3",
+  "lang": "EN",
+  "page": "Building the baseline agent: retries and fallbacks",
+  "url": "https://app.notion.com/p/Building-the-baseline-agent-retries-and-fallbacks-3889418319f380f2ac25f540b6579a22",
+  "where": "paragraph",
+  "text": "Halcyon Labs wants a small research-retrieval workflow that can recover when a public source is slow or unavailable. In this exercise, you build the n8n baseline for the Sprint 4 research project. No Flowise Agentflow, Gemini model, or Flowise Loop node is required."
+ },
+ {
+  "group": "AAS|B|3",
+  "lang": "EN",
+  "page": "Building the baseline agent: retries and fallbacks",
+  "url": "https://app.notion.com/p/Building-the-baseline-agent-retries-and-fallbacks-3889418319f380f2ac25f540b6579a22",
+  "where": "paragraph",
+  "text": "Add explicit n8n retry and error-handling settings to the HTTP Request node. All language-model steps use an OpenRouter Chat Model (Gemini Lite is an optional model choice where available)."
+ },
+ {
+  "group": "AAS|B|3",
+  "lang": "EN",
+  "page": "Building the baseline agent: retries and fallbacks",
+  "url": "https://app.notion.com/p/Building-the-baseline-agent-retries-and-fallbacks-3889418319f380f2ac25f540b6579a22",
+  "where": "paragraph",
+  "text": "The reliable pattern is retrieve → retry a bounded number of times on execution failure → isolate the error → summarize only retrieved evidence or return a safe message. This teaches the same resilience objective in native n8n without reproducing Flowise-only nodes."
+ },
+ {
+  "group": "AAS|B|3",
+  "lang": "DE",
+  "page": "Den Baseline-Agenten bauen: Retries und Fallbacks",
+  "url": "https://app.notion.com/p/Den-Baseline-Agenten-bauen-Retries-und-Fallbacks-a739418319f382bab89c81ce377a5b07",
+  "where": "paragraph",
+  "text": "Halcyon Labs benötigt einen Forschungs-Workflow, der bei langsamen oder nicht erreichbaren öffentlichen Quellen sicher reagiert. In dieser Übung baust du die n8n-Baseline für das Forschungsprojekt in Sprint 4. Flowise Agentflow, Gemini und der Flowise Loop Node werden nicht verwendet."
+ },
+ {
+  "group": "AAS|B|3",
+  "lang": "DE",
+  "page": "Den Baseline-Agenten bauen: Retries und Fallbacks",
+  "url": "https://app.notion.com/p/Den-Baseline-Agenten-bauen-Retries-und-Fallbacks-a739418319f382bab89c81ce377a5b07",
+  "where": "paragraph",
+  "text": "Retries und Fehlerbehandlung werden direkt im n8n-HTTP-Request konfiguriert. Alle Modellschritte verwenden OpenRouter Chat Model (Gemini Lite kann als alternative Modellwahl genutzt werden, falls verfügbar)."
+ }
+]

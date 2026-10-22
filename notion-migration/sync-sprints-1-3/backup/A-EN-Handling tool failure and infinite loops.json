@@ -1,0 +1,2773 @@
+[
+ {
+  "object": "block",
+  "id": "36a94183-19f3-805a-ac13-fecbf3cc150f",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36894183-19f3-8003-8bfa-fc2b9a1b9791"
+  },
+  "created_time": "2026-05-24T03:39:00.000Z",
+  "last_edited_time": "2026-05-24T03:39:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "callout",
+  "callout": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "What you will work on in this lesson:",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "What you will work on in this lesson:",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " Designing deterministic safeguards that prevent a Contigo agent from entering an infinite execution loop when a tool fails and writing a fallback protocol that degrades gracefully without fabricating an answer.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " Designing deterministic safeguards that prevent a Contigo agent from entering an infinite execution loop when a tool fails and writing a fallback protocol that degrades gracefully without fabricating an answer.",
+     "href": null
+    }
+   ],
+   "icon": {
+    "type": "emoji",
+    "emoji": "\ud83d\udca1"
+   },
+   "color": "gray_background"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37b94183-19f3-80be-b665-faa475baa8f9",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36894183-19f3-8003-8bfa-fc2b9a1b9791"
+  },
+  "created_time": "2026-06-10T03:13:00.000Z",
+  "last_edited_time": "2026-06-10T03:13:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "callout",
+  "callout": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "The tool failure scenario in this lesson describes behaviour you will configure in the next lesson when tools are connected to your Chatflow. The design decisions you make here (the Max Iterations value and the fallback instruction) will be implemented directly on the Tool Agent node in the next lesson. Complete the tasks now so your safeguards are ready before the tools go live.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "The tool failure scenario in this lesson describes behaviour you will configure in the next lesson when tools are connected to your Chatflow. The design decisions you make here (the Max Iterations value and the fallback instruction) will be implemented directly on the Tool Agent node in the next lesson. Complete the tasks now so your safeguards are ready before the tools go live.",
+     "href": null
+    }
+   ],
+   "icon": {
+    "type": "emoji",
+    "emoji": "\u27a1\ufe0f"
+   },
+   "color": "gray_background"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37c94183-19f3-80ee-a98c-dac68b72816c",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36894183-19f3-8003-8bfa-fc2b9a1b9791"
+  },
+  "created_time": "2026-06-11T07:09:00.000Z",
+  "last_edited_time": "2026-06-11T07:09:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "1a61d37c-f793-4fbd-aaac-4be7f80fcfc4",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36894183-19f3-8003-8bfa-fc2b9a1b9791"
+  },
+  "created_time": "2026-05-22T02:06:00.000Z",
+  "last_edited_time": "2026-05-24T03:39:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_2",
+  "heading_2": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Setting the scene",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Setting the scene",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "a178cd75-9184-413d-b9c6-bda1f25d795e",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36894183-19f3-8003-8bfa-fc2b9a1b9791"
+  },
+  "created_time": "2026-05-22T02:06:00.000Z",
+  "last_edited_time": "2026-06-10T03:12:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Contigo GmbH's loan status tool has been running in internal testing for two weeks without incident. Then, during a scheduled maintenance window, the core banking API goes offline. The tool begins returning a generic 503 error on every call. The agent receives the error, reasons that it has not yet fulfilled the client's request, and calls the tool again. The tool returns another 503. The agent tries again. And again. Within four minutes, the agent has made sixty-three consecutive tool calls against a downed API, consumed a significant portion of the sprint's token budget, and produced no response to the client.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Contigo GmbH's loan status tool has been running in internal testing for two weeks without incident. Then, during a scheduled maintenance window, the core banking API goes offline. The tool begins returning a generic 503 error on every call. The agent receives the error, reasons that it has not yet fulfilled the client's request, and calls the tool again. The tool returns another 503. The agent tries again. And again. Within four minutes, the agent has made sixty-three consecutive tool calls against a downed API, consumed a significant portion of the sprint's token budget, and produced no response to the client.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "0b9223ac-9339-456b-9323-f38d303c5ab7",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36894183-19f3-8003-8bfa-fc2b9a1b9791"
+  },
+  "created_time": "2026-05-22T02:06:00.000Z",
+  "last_edited_time": "2026-06-11T07:10:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "The problem is the agent has no instruction for what to do when those tools fail. Its system prompt tells it to retrieve the loan status before responding. The tool keeps failing. The agent keeps trying. Nothing in the architecture tells it to stop.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "The problem is the agent has no instruction for what to do when those tools fail. Its system prompt tells it to retrieve the loan status before responding. The tool keeps failing. The agent keeps trying. Nothing in the architecture tells it to stop.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "b8b6ea65-7a59-48b4-ad0e-780aa41be0e6",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36894183-19f3-8003-8bfa-fc2b9a1b9791"
+  },
+  "created_time": "2026-05-22T02:06:00.000Z",
+  "last_edited_time": "2026-05-24T03:39:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "This failure mode is one of the most operationally dangerous risks in production agent deployment. It is also entirely preventable with two targeted interventions: a deterministic iteration cap and an explicit fallback protocol.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "This failure mode is one of the most operationally dangerous risks in production agent deployment. It is also entirely preventable with two targeted interventions: a deterministic iteration cap and an explicit fallback protocol.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37c94183-19f3-8041-aed3-d5ff361411ff",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36894183-19f3-8003-8bfa-fc2b9a1b9791"
+  },
+  "created_time": "2026-06-11T07:09:00.000Z",
+  "last_edited_time": "2026-06-11T07:09:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "983a09af-8f24-42ab-9d56-aea8846d4293",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36894183-19f3-8003-8bfa-fc2b9a1b9791"
+  },
+  "created_time": "2026-05-22T02:06:00.000Z",
+  "last_edited_time": "2026-05-24T03:39:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_2",
+  "heading_2": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Why language model instructions alone are insufficient",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Why language model instructions alone are insufficient",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "9e35582a-cd78-4fd5-a932-0c64700e8978",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36894183-19f3-8003-8bfa-fc2b9a1b9791"
+  },
+  "created_time": "2026-05-22T02:06:00.000Z",
+  "last_edited_time": "2026-05-22T02:06:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "The instinctive response to this failure is to add a system prompt instruction: \"if the tool fails, stop trying and apologise to the client.\" This is necessary but not sufficient.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "The instinctive response to this failure is to add a system prompt instruction: \"if the tool fails, stop trying and apologise to the client.\" This is necessary but not sufficient.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "e7c7e994-0768-4ac9-a451-f877ca796c7d",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36894183-19f3-8003-8bfa-fc2b9a1b9791"
+  },
+  "created_time": "2026-05-22T02:06:00.000Z",
+  "last_edited_time": "2026-05-24T03:39:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Language models are probabilistic. An instruction to stop after a failure will reduce the frequency of looping. Under certain conditions, with certain query phrasings, or after a specific sequence of tool outputs, the model may reason its way past the instruction and retry the tool anyway. Probabilistic compliance is not an acceptable safety standard for a production system handling client-facing financial workflows.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Language models are probabilistic. An instruction to stop after a failure will reduce the frequency of looping. Under certain conditions, with certain query phrasings, or after a specific sequence of tool outputs, the model may reason its way past the instruction and retry the tool anyway. Probabilistic compliance is not an acceptable safety standard for a production system handling client-facing financial workflows.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "e1332e02-bbe5-4a8b-9a9f-018e7369bda7",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36894183-19f3-8003-8bfa-fc2b9a1b9791"
+  },
+  "created_time": "2026-05-22T02:06:00.000Z",
+  "last_edited_time": "2026-05-24T03:39:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "The only reliable way to cap execution is at the infrastructure level \u2014 a hard, deterministic limit enforced by the framework itself, independent of the model's reasoning. In Flowise, this is the ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "The only reliable way to cap execution is at the infrastructure level \u2014 a hard, deterministic limit enforced by the framework itself, independent of the model's reasoning. In Flowise, this is the ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "Max Iterations",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Max Iterations",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " parameter on the agent node. When this limit is reached, the framework terminates the execution cycle regardless of what the model would do next. It is a circuit breaker that the model cannot override.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " parameter on the agent node. When this limit is reached, the framework terminates the execution cycle regardless of what the model would do next. It is a circuit breaker that the model cannot override.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37b94183-19f3-8093-a558-fcab9114c9a9",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36894183-19f3-8003-8bfa-fc2b9a1b9791"
+  },
+  "created_time": "2026-06-10T03:14:00.000Z",
+  "last_edited_time": "2026-06-10T03:14:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "callout",
+  "callout": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Where this is configured in your Chatflow: ",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Where this is configured in your Chatflow: ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "In Flowise, the Max Iterations parameter is located in the ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "In Flowise, the Max Iterations parameter is located in the ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "Additional Parameters ",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Additional Parameters ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "of the Tool Agent node. It is a single integer field. Setting it before connecting any tools is the correct order of operations and the safeguard should be in place before the first live tool call is made.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "of the Tool Agent node. It is a single integer field. Setting it before connecting any tools is the correct order of operations and the safeguard should be in place before the first live tool call is made.",
+     "href": null
+    }
+   ],
+   "icon": {
+    "type": "emoji",
+    "emoji": "\u27a1\ufe0f"
+   },
+   "color": "gray_background"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "73775aba-1b86-4544-ada3-3870da202335",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36894183-19f3-8003-8bfa-fc2b9a1b9791"
+  },
+  "created_time": "2026-05-22T02:06:00.000Z",
+  "last_edited_time": "2026-05-24T03:40:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "The system prompt fallback is still required. It governs what the agent says to the client after the circuit breaker fires. But the instruction alone, without the infrastructure constraint, is not a safe architecture.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "The system prompt fallback is still required. It governs what the agent says to the client after the circuit breaker fires. But the instruction alone, without the infrastructure constraint, is not a safe architecture.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "36a94183-19f3-800a-8161-c765615d4abe",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36894183-19f3-8003-8bfa-fc2b9a1b9791"
+  },
+  "created_time": "2026-05-24T04:00:00.000Z",
+  "last_edited_time": "2026-05-24T04:00:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "image",
+  "image": {
+   "caption": [],
+   "type": "file",
+   "file": {
+    "url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/3a9085c4-df29-45e6-8bc7-6c9c0a25ea8c/462b7253-c1ef-4346-9cd0-5dbe9e22c687/image.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466UWYFZBVU%2F20261022%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20261022T113343Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEKv%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJHMEUCIHjGMHRUs7nB9hu6wzK8vIWk1kki9AxjuIvUIbi8cPpEAiEA69k8TyxTi2gVVDLyLn5evKPo7E4Z7WxHpwfLLeknaAQq%2FwMIcxAAGgw2Mzc0MjMxODM4MDUiDAWQHatYXFHDDh8KgircAzkufegND3%2FM%2FvFt9dMWsMVhJckI%2BfUjlkVdQhrtAppA1APKp0Bi%2B6tL%2BjwzfCPKgYYbJHTdo5FBiFnjPdO1I3fDKANQBOmbJLMpM12jnPRJnIpaiUCKvoVJbzX2hKdVGCKTSXLZvOkTdgPj%2F1ePlXuslF3nqe8FygfqhWd7%2Btk6m1AtGvv%2BqBi%2FTX%2Fthnt1T53%2F8lgYWz9aHhJ1aAIvUBqnCODFFhyqq%2BNgXGsRosavLlsDXMvwY%2FUxG1n3FCu8wXjzz%2Br4TAFJP4f7kD5K8GMKNDqEPb1gYuZcIcCyY4gMzgw7KTc1S15xa2ndlwwA4nqJs2cq%2F9qaw9YwB83aU42c2K9LMj9nBp6BrW%2FoXIM8RSznpFDzxx8LyQysyPiSlg5UeZk%2BoejoCvftR9kYGozn2jXSx%2FDZuptDak0ViemdLohaPaX8EN7lc%2F%2F2rRpT9E3NkZs7WDrkAljUwCoiH3qeDIn3nzkuY8bs6GpnlngSHsjfM1gi%2FsMp8EWOdGQvqs9uEsUlrgDLVCyUFcwONtXHKpUL%2FYI2RwZ7Fhpd4%2FRcq4q8VDQAflqNmiOxWiQ%2FeL8RaGsa5%2BVkS1S%2Bg5stf8MPCs9sSRyfnCt3grx64gzXVln7wwaldmjk6F6hMJzJ59YGOqUB1hAvSoDaEoUwugI2d9Tda4P159ORojT%2B7Uu8LXl6clufsNCfh2gLKMa5USDlwXxLRvBlxhOXz1qs%2FhzZ8PWf%2FeUxeJ242Okf5LjQ5RJwbwVC%2F4pQxMKHf4JOdCLZHpKF0Gx6tw9KWxUwSftHlA6rmmrFe6NW2EUGuUn7MSaTyL0yoh80DUMXvDlcHD7KJDC7RX%2BiTYf2ke2CkUGbhQ9e%2FKUn7ARe&X-Amz-Signature=cb81bcb6523d2fb39e6487d7260687c7a63bfb75ecd6ced19654e5707ad24915&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+    "expiry_time": "2026-10-22T12:33:43.653Z"
+   }
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37c94183-19f3-8030-8411-e53d4bd2f352",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36894183-19f3-8003-8bfa-fc2b9a1b9791"
+  },
+  "created_time": "2026-06-11T07:09:00.000Z",
+  "last_edited_time": "2026-06-11T07:09:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "c0550613-bf90-4a79-a597-2c55ae9c024f",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36894183-19f3-8003-8bfa-fc2b9a1b9791"
+  },
+  "created_time": "2026-05-22T02:06:00.000Z",
+  "last_edited_time": "2026-05-24T03:40:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_2",
+  "heading_2": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Your tasks",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Your tasks",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "c3e55f15-e1b0-4751-bd70-b1ec2e06fc2c",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36894183-19f3-8003-8bfa-fc2b9a1b9791"
+  },
+  "created_time": "2026-05-22T02:06:00.000Z",
+  "last_edited_time": "2026-06-11T07:09:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_3",
+  "heading_3": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Task A: Configure the circuit breaker",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Task A: Configure the circuit breaker",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "e4ffbafe-8036-42ae-b367-86c976c4c5ee",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36894183-19f3-8003-8bfa-fc2b9a1b9791"
+  },
+  "created_time": "2026-05-22T02:06:00.000Z",
+  "last_edited_time": "2026-06-10T03:17:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "The Tool Agent node you will add has a Max Iterations parameter in its Additional Parameters. Before you get there, decide what value you will set and document your justification. Consider the following. This parameter caps the total number of reasoning and tool-calling cycles the agent can execute before the framework terminates the loop.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "The Tool Agent node you will add has a Max Iterations parameter in its Additional Parameters. Before you get there, decide what value you will set and document your justification. Consider the following. This parameter caps the total number of reasoning and tool-calling cycles the agent can execute before the framework terminates the loop.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "2b38b866-ec1a-44fa-be5a-11df941c9c87",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36894183-19f3-8003-8bfa-fc2b9a1b9791"
+  },
+  "created_time": "2026-05-22T02:06:00.000Z",
+  "last_edited_time": "2026-05-22T02:06:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Set a value and write two to three sentences justifying your choice. Consider the following:",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Set a value and write two to three sentences justifying your choice. Consider the following:",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "a122bea1-3630-4dd9-a2e8-81b614db48df",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36894183-19f3-8003-8bfa-fc2b9a1b9791"
+  },
+  "created_time": "2026-05-22T02:06:00.000Z",
+  "last_edited_time": "2026-06-10T03:17:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "The typical number of tool calls a legitimate multi-step Contigo query requires. For example, a query that checks a loan status and then triggers a follow-up document retrieval might require two to three cycles",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "The typical number of tool calls a legitimate multi-step Contigo query requires. For example, a query that checks a loan status and then triggers a follow-up document retrieval might require two to three cycles",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "b3b0ace3-754c-433a-a2d6-9c45f656a906",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36894183-19f3-8003-8bfa-fc2b9a1b9791"
+  },
+  "created_time": "2026-05-22T02:06:00.000Z",
+  "last_edited_time": "2026-05-22T02:06:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "The point at which repeated calls to the same failing tool signal a loop rather than legitimate multi-step reasoning",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "The point at which repeated calls to the same failing tool signal a loop rather than legitimate multi-step reasoning",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "25ced2ea-4672-463f-bef8-703b9d9139e8",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36894183-19f3-8003-8bfa-fc2b9a1b9791"
+  },
+  "created_time": "2026-05-22T02:06:00.000Z",
+  "last_edited_time": "2026-06-10T03:17:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "The cost of setting the limit too high versus too low. This is a limit that is too generous allows significant resource drain before terminating; one that is too tight terminates legitimate multi-step queries prematurely",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "The cost of setting the limit too high versus too low. This is a limit that is too generous allows significant resource drain before terminating; one that is too tight terminates legitimate multi-step queries prematurely",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37c94183-19f3-80b2-bd03-d8a0d9270d1c",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36894183-19f3-8003-8bfa-fc2b9a1b9791"
+  },
+  "created_time": "2026-06-11T07:09:00.000Z",
+  "last_edited_time": "2026-06-11T07:09:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "58c06cb0-092d-426b-8b8c-d52d2dd2d4d2",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36894183-19f3-8003-8bfa-fc2b9a1b9791"
+  },
+  "created_time": "2026-05-22T02:06:00.000Z",
+  "last_edited_time": "2026-06-11T07:09:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_3",
+  "heading_3": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Task B: Write the fallback system prompt instruction",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Task B: Write the fallback system prompt instruction",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "0265fb43-5023-4bd8-a989-f374daf2218e",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36894183-19f3-8003-8bfa-fc2b9a1b9791"
+  },
+  "created_time": "2026-05-22T02:06:00.000Z",
+  "last_edited_time": "2026-06-10T03:18:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Draft a two to three sentence addition to the Contigo agent's system prompt that governs its behaviour when the Max Iterations limit is reached or when a tool returns a persistent error across consecutive calls. When you add the Tool Agent node in the next lesson, this instruction goes in its System Message field as a new paragraph after your existing grounding instruction. Draft it now so it is ready to copy in directly.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Draft a two to three sentence addition to the Contigo agent's system prompt that governs its behaviour when the Max Iterations limit is reached or when a tool returns a persistent error across consecutive calls. When you add the Tool Agent node in the next lesson, this instruction goes in its System Message field as a new paragraph after your existing grounding instruction. Draft it now so it is ready to copy in directly.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "cc1d53df-857d-474c-8c34-0b343cca37a3",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36894183-19f3-8003-8bfa-fc2b9a1b9791"
+  },
+  "created_time": "2026-05-22T02:06:00.000Z",
+  "last_edited_time": "2026-05-22T02:06:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Your instruction must address the following three requirements:",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Your instruction must address the following three requirements:",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "9c23a48e-eef5-45c5-871e-7c4023415606",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36894183-19f3-8003-8bfa-fc2b9a1b9791"
+  },
+  "created_time": "2026-05-22T02:06:00.000Z",
+  "last_edited_time": "2026-05-24T03:40:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Honest acknowledgement:",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Honest acknowledgement:",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " The agent must not fabricate a loan status, generate a plausible-sounding response from its training data, or imply the tool succeeded when it did not. The client must understand that the system encountered a problem.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " The agent must not fabricate a loan status, generate a plausible-sounding response from its training data, or imply the tool succeeded when it did not. The client must understand that the system encountered a problem.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "106b62de-3daf-4f2b-975a-e0ae23566387",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36894183-19f3-8003-8bfa-fc2b9a1b9791"
+  },
+  "created_time": "2026-05-22T02:06:00.000Z",
+  "last_edited_time": "2026-05-24T03:40:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "No technical exposure:",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "No technical exposure:",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " The instruction must tell the agent to communicate the failure in professional, client-appropriate language. Error codes, API terminology, and infrastructure references must not appear in the client-facing response.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " The instruction must tell the agent to communicate the failure in professional, client-appropriate language. Error codes, API terminology, and infrastructure references must not appear in the client-facing response.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "c8c2aabb-ea45-4b1f-90a3-420bbf123e96",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36894183-19f3-8003-8bfa-fc2b9a1b9791"
+  },
+  "created_time": "2026-05-22T02:06:00.000Z",
+  "last_edited_time": "2026-05-24T03:41:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Clear next step:",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Clear next step:",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " The agent must offer the client a specific alternative such as directing them to contact their assigned relationship manager or providing Contigo's direct support line.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " The agent must offer the client a specific alternative such as directing them to contact their assigned relationship manager or providing Contigo's direct support line.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38b44cac-2f70-4243-8689-afc0e2488105",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36894183-19f3-8003-8bfa-fc2b9a1b9791"
+  },
+  "created_time": "2026-05-22T02:06:00.000Z",
+  "last_edited_time": "2026-05-24T03:41:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_4",
+  "heading_4": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Task C: Evaluate the human-in-the-loop threshold",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Task C: Evaluate the human-in-the-loop threshold",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "fc3035f5-b43b-4402-a58a-871e8cd7708c",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36894183-19f3-8003-8bfa-fc2b9a1b9791"
+  },
+  "created_time": "2026-05-22T02:06:00.000Z",
+  "last_edited_time": "2026-05-24T03:41:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Not every tool failure warrants an automated fallback. For high-stakes operations, the appropriate response to a failure may not be an automated fallback but a mandatory pause for human review.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Not every tool failure warrants an automated fallback. For high-stakes operations, the appropriate response to a failure may not be an automated fallback but a mandatory pause for human review.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "45cef33d-d4e2-4787-b77d-b6006a55d492",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36894183-19f3-8003-8bfa-fc2b9a1b9791"
+  },
+  "created_time": "2026-05-22T02:06:00.000Z",
+  "last_edited_time": "2026-05-22T02:06:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Answer the following two questions:",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Answer the following two questions:",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "71414311-ade4-4403-9cd2-f94ea2f031a9",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36894183-19f3-8003-8bfa-fc2b9a1b9791"
+  },
+  "created_time": "2026-05-22T02:06:00.000Z",
+  "last_edited_time": "2026-05-24T03:41:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "For Contigo's loan status tool, is an automated fallback sufficient, or does a tool failure require human intervention? Justify your answer.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "For Contigo's loan status tool, is an automated fallback sufficient, or does a tool failure require human intervention? Justify your answer.",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "39627756-0263-4c03-9ef5-9dc011711df7",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36894183-19f3-8003-8bfa-fc2b9a1b9791"
+  },
+  "created_time": "2026-05-22T02:06:00.000Z",
+  "last_edited_time": "2026-05-24T03:42:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "For a hypothetical loan disbursement tool that transfers funds directly to a client's account, is the same automated fallback appropriate, or should the architecture enforce a human-in-the-loop step before any retry or alternative action? ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "For a hypothetical loan disbursement tool that transfers funds directly to a client's account, is the same automated fallback appropriate, or should the architecture enforce a human-in-the-loop step before any retry or alternative action? ",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "36a94183-19f3-8038-b0c7-c170bd0fefab",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36894183-19f3-8003-8bfa-fc2b9a1b9791"
+  },
+  "created_time": "2026-05-24T03:42:00.000Z",
+  "last_edited_time": "2026-05-24T03:42:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "6c2cffd2-1c79-4490-8e69-0b66ad6da5f6",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36894183-19f3-8003-8bfa-fc2b9a1b9791"
+  },
+  "created_time": "2026-05-22T02:06:00.000Z",
+  "last_edited_time": "2026-05-24T03:49:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": true,
+  "in_trash": false,
+  "type": "toggle",
+  "toggle": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Think about the following \u2026",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Think about the following \u2026",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false,
+  "_children": [
+   {
+    "object": "block",
+    "id": "b1da0dec-5bf2-4c99-a95e-be9f78169035",
+    "parent": {
+     "type": "block_id",
+     "block_id": "6c2cffd2-1c79-4490-8e69-0b66ad6da5f6"
+    },
+    "created_time": "2026-05-22T02:06:00.000Z",
+    "last_edited_time": "2026-06-10T03:19:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "231d872b-594c-81f2-a375-0002b8783aca"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "231d872b-594c-81f2-a375-0002b8783aca"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+     "rich_text": [
+      {
+       "type": "text",
+       "text": {
+        "content": "\ud83d\udd3d ",
+        "link": null
+       },
+       "annotations": {
+        "bold": false,
+        "italic": false,
+        "strikethrough": false,
+        "underline": false,
+        "code": false,
+        "color": "default"
+       },
+       "plain_text": "\ud83d\udd3d ",
+       "href": null
+      },
+      {
+       "type": "text",
+       "text": {
+        "content": "Checkpoint 1: Setting the Max Iterations value",
+        "link": null
+       },
+       "annotations": {
+        "bold": true,
+        "italic": false,
+        "strikethrough": false,
+        "underline": false,
+        "code": false,
+        "color": "default"
+       },
+       "plain_text": "Checkpoint 1: Setting the Max Iterations value",
+       "href": null
+      },
+      {
+       "type": "text",
+       "text": {
+        "content": " - A legitimate multi-step query needs enough iterations to complete its work. A looping failure needs to be caught before it drains the token budget. The gap between those two numbers is where your Max Iterations value should sit.",
+        "link": null
+       },
+       "annotations": {
+        "bold": false,
+        "italic": false,
+        "strikethrough": false,
+        "underline": false,
+        "code": false,
+        "color": "default"
+       },
+       "plain_text": " - A legitimate multi-step query needs enough iterations to complete its work. A looping failure needs to be caught before it drains the token budget. The gap between those two numbers is where your Max Iterations value should sit.",
+       "href": null
+      }
+     ],
+     "icon": null,
+     "color": "default"
+    },
+    "archived": false
+   },
+   {
+    "object": "block",
+    "id": "f0b4481e-8d7a-43a5-9231-56a6a53ee306",
+    "parent": {
+     "type": "block_id",
+     "block_id": "6c2cffd2-1c79-4490-8e69-0b66ad6da5f6"
+    },
+    "created_time": "2026-05-22T02:06:00.000Z",
+    "last_edited_time": "2026-06-10T03:19:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "231d872b-594c-81f2-a375-0002b8783aca"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "231d872b-594c-81f2-a375-0002b8783aca"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+     "rich_text": [
+      {
+       "type": "text",
+       "text": {
+        "content": "\ud83d\udd3d ",
+        "link": null
+       },
+       "annotations": {
+        "bold": false,
+        "italic": false,
+        "strikethrough": false,
+        "underline": false,
+        "code": false,
+        "color": "default"
+       },
+       "plain_text": "\ud83d\udd3d ",
+       "href": null
+      },
+      {
+       "type": "text",
+       "text": {
+        "content": "Checkpoint 2: The probabilistic compliance problem",
+        "link": null
+       },
+       "annotations": {
+        "bold": true,
+        "italic": false,
+        "strikethrough": false,
+        "underline": false,
+        "code": false,
+        "color": "default"
+       },
+       "plain_text": "Checkpoint 2: The probabilistic compliance problem",
+       "href": null
+      },
+      {
+       "type": "text",
+       "text": {
+        "content": " - A system prompt instruction reduces the frequency of looping. A Max Iterations cap stops it regardless of what the model reasons. One is probabilistic compliance. The other is a hard stop. For a client-facing financial services agent, consider which risk profile is acceptable.",
+        "link": null
+       },
+       "annotations": {
+        "bold": false,
+        "italic": false,
+        "strikethrough": false,
+        "underline": false,
+        "code": false,
+        "color": "default"
+       },
+       "plain_text": " - A system prompt instruction reduces the frequency of looping. A Max Iterations cap stops it regardless of what the model reasons. One is probabilistic compliance. The other is a hard stop. For a client-facing financial services agent, consider which risk profile is acceptable.",
+       "href": null
+      }
+     ],
+     "icon": null,
+     "color": "default"
+    },
+    "archived": false
+   },
+   {
+    "object": "block",
+    "id": "d87f7d9e-3984-441a-a900-e6d5b0a6c29f",
+    "parent": {
+     "type": "block_id",
+     "block_id": "6c2cffd2-1c79-4490-8e69-0b66ad6da5f6"
+    },
+    "created_time": "2026-05-22T02:06:00.000Z",
+    "last_edited_time": "2026-06-10T03:20:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "231d872b-594c-81f2-a375-0002b8783aca"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "231d872b-594c-81f2-a375-0002b8783aca"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+     "rich_text": [
+      {
+       "type": "text",
+       "text": {
+        "content": "\ud83d\udd3d ",
+        "link": null
+       },
+       "annotations": {
+        "bold": false,
+        "italic": false,
+        "strikethrough": false,
+        "underline": false,
+        "code": false,
+        "color": "default"
+       },
+       "plain_text": "\ud83d\udd3d ",
+       "href": null
+      },
+      {
+       "type": "text",
+       "text": {
+        "content": "Checkpoint 3: Designing the human-in-the-loop threshold",
+        "link": null
+       },
+       "annotations": {
+        "bold": true,
+        "italic": false,
+        "strikethrough": false,
+        "underline": false,
+        "code": false,
+        "color": "default"
+       },
+       "plain_text": "Checkpoint 3: Designing the human-in-the-loop threshold",
+       "href": null
+      },
+      {
+       "type": "text",
+       "text": {
+        "content": " - Not every failure carries the same consequence. A status lookup that fails inconveniences the client. A fund transfer that fails carries financial and regulatory consequences. The stakes of the operation determine whether human review is proportionate. ",
+        "link": null
+       },
+       "annotations": {
+        "bold": false,
+        "italic": false,
+        "strikethrough": false,
+        "underline": false,
+        "code": false,
+        "color": "default"
+       },
+       "plain_text": " - Not every failure carries the same consequence. A status lookup that fails inconveniences the client. A fund transfer that fails carries financial and regulatory consequences. The stakes of the operation determine whether human review is proportionate. ",
+       "href": null
+      }
+     ],
+     "icon": null,
+     "color": "default"
+    },
+    "archived": false
+   }
+  ]
+ },
+ {
+  "object": "block",
+  "id": "37c94183-19f3-80d0-b5fa-f66edae93945",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36894183-19f3-8003-8bfa-fc2b9a1b9791"
+  },
+  "created_time": "2026-06-11T07:09:00.000Z",
+  "last_edited_time": "2026-06-11T07:09:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "fd940836-211a-4b23-b163-020d50d1d3b8",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36894183-19f3-8003-8bfa-fc2b9a1b9791"
+  },
+  "created_time": "2026-05-22T02:06:00.000Z",
+  "last_edited_time": "2026-05-24T03:49:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_2",
+  "heading_2": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Check for Understanding",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Check for Understanding",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37c94183-19f3-801e-9c67-f975d6d305de",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36894183-19f3-8003-8bfa-fc2b9a1b9791"
+  },
+  "created_time": "2026-06-11T13:19:00.000Z",
+  "last_edited_time": "2026-06-11T13:19:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": true,
+  "in_trash": false,
+  "type": "callout",
+  "callout": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "A Contigo agent hits its Max Iterations limit after five consecutive 503 errors from the loan status tool. The system prompt does not include a fallback instruction. What is the most likely agent behaviour?",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "A Contigo agent hits its Max Iterations limit after five consecutive 503 errors from the loan status tool. The system prompt does not include a fallback instruction. What is the most likely agent behaviour?",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "gray_background"
+  },
+  "archived": false,
+  "_children": [
+   {
+    "object": "block",
+    "id": "37c94183-19f3-803a-ac7e-d3fadbdc30f5",
+    "parent": {
+     "type": "block_id",
+     "block_id": "37c94183-19f3-801e-9c67-f975d6d305de"
+    },
+    "created_time": "2026-06-11T13:19:00.000Z",
+    "last_edited_time": "2026-06-11T13:19:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "embed",
+    "embed": {
+     "caption": [],
+     "url": "https://app.masterschool.com/campus/multi-choice-question/e820b00b-4cf0-4abe-8c70-96b6bf6aafc0"
+    },
+    "archived": false
+   }
+  ]
+ },
+ {
+  "object": "block",
+  "id": "ebb3e023-0ace-496b-9528-0e8f69a994f1",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36894183-19f3-8003-8bfa-fc2b9a1b9791"
+  },
+  "created_time": "2026-05-22T02:06:00.000Z",
+  "last_edited_time": "2026-06-11T13:19:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37c94183-19f3-8057-abf2-f3ea02678015",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36894183-19f3-8003-8bfa-fc2b9a1b9791"
+  },
+  "created_time": "2026-06-11T07:09:00.000Z",
+  "last_edited_time": "2026-06-11T07:09:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "36a94183-19f3-80e4-ac7b-dcbaf84bb8db",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36894183-19f3-8003-8bfa-fc2b9a1b9791"
+  },
+  "created_time": "2026-05-24T03:50:00.000Z",
+  "last_edited_time": "2026-06-11T07:10:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": true,
+  "in_trash": false,
+  "type": "callout",
+  "callout": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Takeaway: ",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Takeaway: ",
+     "href": null
+    }
+   ],
+   "icon": {
+    "type": "emoji",
+    "emoji": "\ud83d\udca1"
+   },
+   "color": "gray_background"
+  },
+  "archived": false,
+  "_children": [
+   {
+    "object": "block",
+    "id": "37c94183-19f3-8023-9a67-e5ed6afb7e97",
+    "parent": {
+     "type": "block_id",
+     "block_id": "36a94183-19f3-80e4-ac7b-dcbaf84bb8db"
+    },
+    "created_time": "2026-06-11T07:09:00.000Z",
+    "last_edited_time": "2026-06-11T07:10:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+     "rich_text": [
+      {
+       "type": "text",
+       "text": {
+        "content": "Deterministic safeguards and probabilistic instructions serve different purposes. The Max Iterations cap guarantees the loop stops. The fallback instruction governs what happens after it stops. ",
+        "link": null
+       },
+       "annotations": {
+        "bold": false,
+        "italic": false,
+        "strikethrough": false,
+        "underline": false,
+        "code": false,
+        "color": "default"
+       },
+       "plain_text": "Deterministic safeguards and probabilistic instructions serve different purposes. The Max Iterations cap guarantees the loop stops. The fallback instruction governs what happens after it stops. ",
+       "href": null
+      }
+     ],
+     "icon": null,
+     "color": "default"
+    },
+    "archived": false
+   },
+   {
+    "object": "block",
+    "id": "37c94183-19f3-8053-a504-e8a82df7054c",
+    "parent": {
+     "type": "block_id",
+     "block_id": "36a94183-19f3-80e4-ac7b-dcbaf84bb8db"
+    },
+    "created_time": "2026-06-11T07:10:00.000Z",
+    "last_edited_time": "2026-06-11T07:10:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+     "rich_text": [
+      {
+       "type": "text",
+       "text": {
+        "content": "Together they ensure the client receives a professional, honest response rather than a fabricated answer or a raw error string. Both are required for a production-ready agent in a regulated financial services environment and both need to be designed before the first tool is connected, not after a failure reveals they are missing.",
+        "link": null
+       },
+       "annotations": {
+        "bold": false,
+        "italic": false,
+        "strikethrough": false,
+        "underline": false,
+        "code": false,
+        "color": "default"
+       },
+       "plain_text": "Together they ensure the client receives a professional, honest response rather than a fabricated answer or a raw error string. Both are required for a production-ready agent in a regulated financial services environment and both need to be designed before the first tool is connected, not after a failure reveals they are missing.",
+       "href": null
+      }
+     ],
+     "icon": null,
+     "color": "default"
+    },
+    "archived": false
+   }
+  ]
+ },
+ {
+  "object": "block",
+  "id": "37c94183-19f3-806d-964e-e178671f6d9f",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36894183-19f3-8003-8bfa-fc2b9a1b9791"
+  },
+  "created_time": "2026-06-11T07:09:00.000Z",
+  "last_edited_time": "2026-06-11T07:09:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37b94183-19f3-80ad-bf1a-f7621556c221",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36894183-19f3-8003-8bfa-fc2b9a1b9791"
+  },
+  "created_time": "2026-06-10T03:22:00.000Z",
+  "last_edited_time": "2026-06-11T07:10:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_2",
+  "heading_2": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Checklist for the next lesson",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Checklist for the next lesson",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37b94183-19f3-8016-854e-d32b186b36b0",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36894183-19f3-8003-8bfa-fc2b9a1b9791"
+  },
+  "created_time": "2026-06-10T03:22:00.000Z",
+  "last_edited_time": "2026-06-10T03:23:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Make sure you have the following done before moving to the next lesson.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Make sure you have the following done before moving to the next lesson.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37b94183-19f3-809d-8a34-d0ec20caa931",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36894183-19f3-8003-8bfa-fc2b9a1b9791"
+  },
+  "created_time": "2026-06-10T03:23:00.000Z",
+  "last_edited_time": "2026-06-10T03:23:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "From the previous lesson:",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "From the previous lesson:",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "9417b6e4-114d-4775-a898-0bb5e4a8bfb3",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36894183-19f3-8003-8bfa-fc2b9a1b9791"
+  },
+  "created_time": "2026-06-10T03:23:00.000Z",
+  "last_edited_time": "2026-06-10T03:23:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "to_do",
+  "to_do": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Three revised system prompt instructions written and documented: retrieval scope, account action boundary, and fallback behaviour",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Three revised system prompt instructions written and documented: retrieval scope, account action boundary, and fallback behaviour",
+     "href": null
+    }
+   ],
+   "checked": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "a44aabac-44ee-42d7-888f-0cd786d88c88",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36894183-19f3-8003-8bfa-fc2b9a1b9791"
+  },
+  "created_time": "2026-06-10T03:23:00.000Z",
+  "last_edited_time": "2026-06-10T03:23:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "to_do",
+  "to_do": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Six validation queries prepared (two per instruction) with the expected agent behaviour noted for each",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Six validation queries prepared (two per instruction) with the expected agent behaviour noted for each",
+     "href": null
+    }
+   ],
+   "checked": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "35189f4d-64d2-4231-8a79-69318f7f6adc",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36894183-19f3-8003-8bfa-fc2b9a1b9791"
+  },
+  "created_time": "2026-06-10T03:23:00.000Z",
+  "last_edited_time": "2026-06-10T03:23:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "to_do",
+  "to_do": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Any residual overlap between instructions identified and resolved",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Any residual overlap between instructions identified and resolved",
+     "href": null
+    }
+   ],
+   "checked": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37b94183-19f3-809f-a951-dbb70ea84b60",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36894183-19f3-8003-8bfa-fc2b9a1b9791"
+  },
+  "created_time": "2026-06-10T03:23:00.000Z",
+  "last_edited_time": "2026-06-10T03:23:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "From this lesson:",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "From this lesson:",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37b94183-19f3-80a7-973e-c6fbb041d509",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36894183-19f3-8003-8bfa-fc2b9a1b9791"
+  },
+  "created_time": "2026-06-10T03:23:00.000Z",
+  "last_edited_time": "2026-06-10T03:23:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "to_do",
+  "to_do": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Max Iterations value decided and justified in writing",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Max Iterations value decided and justified in writing",
+     "href": null
+    }
+   ],
+   "checked": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "3d88107b-f8f0-4c85-b5f8-bc18894c6d68",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36894183-19f3-8003-8bfa-fc2b9a1b9791"
+  },
+  "created_time": "2026-06-10T03:23:00.000Z",
+  "last_edited_time": "2026-06-10T03:23:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "to_do",
+  "to_do": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Fallback system prompt instruction drafted covering honest acknowledgement, no technical exposure, and a clear next step for the client",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Fallback system prompt instruction drafted covering honest acknowledgement, no technical exposure, and a clear next step for the client",
+     "href": null
+    }
+   ],
+   "checked": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "1bf4e68c-3c98-4bf2-88c3-b0083282937b",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36894183-19f3-8003-8bfa-fc2b9a1b9791"
+  },
+  "created_time": "2026-06-10T03:23:00.000Z",
+  "last_edited_time": "2026-06-10T03:23:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "to_do",
+  "to_do": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Human-in-the-loop threshold evaluated for the loan status tool and your conclusion documented",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Human-in-the-loop threshold evaluated for the loan status tool and your conclusion documented",
+     "href": null
+    }
+   ],
+   "checked": false,
+   "color": "default"
+  },
+  "archived": false
+ }
+]

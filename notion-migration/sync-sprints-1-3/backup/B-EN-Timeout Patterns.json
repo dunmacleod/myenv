@@ -1,0 +1,1883 @@
+[
+ {
+  "object": "block",
+  "id": "38894183-19f3-804f-b2b3-eacc5bd020c5",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38894183-19f3-8054-8779-f668dd242f1e"
+  },
+  "created_time": "2026-06-23T18:14:00.000Z",
+  "last_edited_time": "2026-07-02T09:30:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "A week into Cascadia's soft launch, Emil brings Sofia a specific complaint from Lena: some customer messages just hang. No error message, no failure notification \u2014 the workflow starts, an agent goes off to look something up, and nothing ever comes back. Sofia opens the logs and sees the same pattern each time: one component was waiting for another that never responded, and the whole workflow got stuck on that wait. Timeouts are how orchestrated systems refuse to wait forever. This lesson explains why waits happen, why leaving them uncapped is dangerous, and how timeouts protect the whole workflow when one component slows down.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "A week into Cascadia's soft launch, Emil brings Sofia a specific complaint from Lena: some customer messages just hang. No error message, no failure notification \u2014 the workflow starts, an agent goes off to look something up, and nothing ever comes back. Sofia opens the logs and sees the same pattern each time: one component was waiting for another that never responded, and the whole workflow got stuck on that wait. Timeouts are how orchestrated systems refuse to wait forever. This lesson explains why waits happen, why leaving them uncapped is dangerous, and how timeouts protect the whole workflow when one component slows down.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "39394183-19f3-8040-870f-f48f228d7240",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38894183-19f3-8054-8779-f668dd242f1e"
+  },
+  "created_time": "2026-07-04T07:38:00.000Z",
+  "last_edited_time": "2026-07-04T07:38:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38894183-19f3-808f-8f86-fd892906312f",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38894183-19f3-8054-8779-f668dd242f1e"
+  },
+  "created_time": "2026-06-23T18:14:00.000Z",
+  "last_edited_time": "2026-06-23T18:14:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_2",
+  "heading_2": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "What a timeout means",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "What a timeout means",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38894183-19f3-80de-a74f-dd9156f6aeaa",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38894183-19f3-8054-8779-f668dd242f1e"
+  },
+  "created_time": "2026-06-23T18:14:00.000Z",
+  "last_edited_time": "2026-06-23T18:14:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "A timeout is the maximum amount of time one system component is willing to wait for another component to respond.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "A timeout is the maximum amount of time one system component is willing to wait for another component to respond.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38894183-19f3-806c-be40-d7ccf60e8826",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38894183-19f3-8054-8779-f668dd242f1e"
+  },
+  "created_time": "2026-06-23T18:14:00.000Z",
+  "last_edited_time": "2026-06-23T18:14:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "For example, imagine a Flowise agent deployed behind a cloud proxy. The user sends a request, the proxy forwards it to Flowise, and Flowise starts generating a response. If the proxy has a 30-second timeout, it will stop waiting after 30 seconds.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "For example, imagine a Flowise agent deployed behind a cloud proxy. The user sends a request, the proxy forwards it to Flowise, and Flowise starts generating a response. If the proxy has a 30-second timeout, it will stop waiting after 30 seconds.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38894183-19f3-8083-bc99-c221f48882f3",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38894183-19f3-8054-8779-f668dd242f1e"
+  },
+  "created_time": "2026-06-23T18:14:00.000Z",
+  "last_edited_time": "2026-06-23T18:14:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "That does not always mean Flowise crashed. It may mean the response simply took too long.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "That does not always mean Flowise crashed. It may mean the response simply took too long.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38894183-19f3-8009-964f-fa7341a58beb",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38894183-19f3-8054-8779-f668dd242f1e"
+  },
+  "created_time": "2026-06-23T18:14:00.000Z",
+  "last_edited_time": "2026-06-23T18:14:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "The failure happens because the proxy, the backend service, the agent, and the user-facing interface do not all share the same expectation about response time.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "The failure happens because the proxy, the backend service, the agent, and the user-facing interface do not all share the same expectation about response time.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "39394183-19f3-8061-8a1c-e58d4e4c6e7d",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38894183-19f3-8054-8779-f668dd242f1e"
+  },
+  "created_time": "2026-07-04T07:38:00.000Z",
+  "last_edited_time": "2026-07-04T07:38:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38894183-19f3-80cb-888e-cf2bf0d2bf63",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38894183-19f3-8054-8779-f668dd242f1e"
+  },
+  "created_time": "2026-06-23T18:14:00.000Z",
+  "last_edited_time": "2026-06-23T18:14:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_2",
+  "heading_2": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Why timeouts matter in agent workflows",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Why timeouts matter in agent workflows",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38894183-19f3-80ad-bfe3-e4afdaa62624",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38894183-19f3-8054-8779-f668dd242f1e"
+  },
+  "created_time": "2026-06-23T18:14:00.000Z",
+  "last_edited_time": "2026-06-23T18:14:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Agent workflows can take longer than normal web requests because they may involve several steps.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Agent workflows can take longer than normal web requests because they may involve several steps.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38894183-19f3-80da-ae96-d566bb592bf7",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38894183-19f3-8054-8779-f668dd242f1e"
+  },
+  "created_time": "2026-06-23T18:14:00.000Z",
+  "last_edited_time": "2026-06-23T18:14:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "An agent might need to classify the request, call a tool, wait for an external system, retrieve context, generate a response, or pass work to another agent. Each step adds time.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "An agent might need to classify the request, call a tool, wait for an external system, retrieve context, generate a response, or pass work to another agent. Each step adds time.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38894183-19f3-801e-b025-ca52f8ca6a20",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38894183-19f3-8054-8779-f668dd242f1e"
+  },
+  "created_time": "2026-06-23T18:14:00.000Z",
+  "last_edited_time": "2026-06-23T18:14:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "In a simple app, 30 seconds may be enough. In an agent workflow, 30 seconds can be too short, especially when the workflow includes long model responses, tool calls, retrieval, or multi-agent handoffs.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "In a simple app, 30 seconds may be enough. In an agent workflow, 30 seconds can be too short, especially when the workflow includes long model responses, tool calls, retrieval, or multi-agent handoffs.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38894183-19f3-80f7-b4dc-c7f60ba3ad2b",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38894183-19f3-8054-8779-f668dd242f1e"
+  },
+  "created_time": "2026-06-23T18:14:00.000Z",
+  "last_edited_time": "2026-06-23T18:14:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "This creates a common resilience problem:",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "This creates a common resilience problem:",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38894183-19f3-80a1-b0b2-c57c662cd53e",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38894183-19f3-8054-8779-f668dd242f1e"
+  },
+  "created_time": "2026-06-23T18:14:00.000Z",
+  "last_edited_time": "2026-06-23T18:14:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "The workflow is still doing useful work, but the infrastructure gives up too early.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "The workflow is still doing useful work, but the infrastructure gives up too early.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "39394183-19f3-8097-8067-db699814a0c7",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38894183-19f3-8054-8779-f668dd242f1e"
+  },
+  "created_time": "2026-07-04T07:38:00.000Z",
+  "last_edited_time": "2026-07-04T07:38:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38894183-19f3-8024-8d82-e480b5017069",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38894183-19f3-8054-8779-f668dd242f1e"
+  },
+  "created_time": "2026-06-23T18:17:00.000Z",
+  "last_edited_time": "2026-06-23T18:17:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_2",
+  "heading_2": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Common causes of timeouts",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Common causes of timeouts",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38894183-19f3-8044-85dd-c61d750c7619",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38894183-19f3-8054-8779-f668dd242f1e"
+  },
+  "created_time": "2026-06-23T18:17:00.000Z",
+  "last_edited_time": "2026-06-23T18:17:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Timeouts often happen because:",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Timeouts often happen because:",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38894183-19f3-8053-b896-e68d74d1f972",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38894183-19f3-8054-8779-f668dd242f1e"
+  },
+  "created_time": "2026-06-23T18:17:00.000Z",
+  "last_edited_time": "2026-06-23T18:17:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "An agent is processing a large task.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "An agent is processing a large task.",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38894183-19f3-8044-8911-fc62659071a3",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38894183-19f3-8054-8779-f668dd242f1e"
+  },
+  "created_time": "2026-06-23T18:17:00.000Z",
+  "last_edited_time": "2026-06-23T18:17:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "A tool or API responds slowly.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "A tool or API responds slowly.",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38894183-19f3-80fe-95cd-cea7660046dd",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38894183-19f3-8054-8779-f668dd242f1e"
+  },
+  "created_time": "2026-06-23T18:17:00.000Z",
+  "last_edited_time": "2026-06-23T18:17:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "A service is temporarily unavailable.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "A service is temporarily unavailable.",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38894183-19f3-80cf-850c-d2548759780b",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38894183-19f3-8054-8779-f668dd242f1e"
+  },
+  "created_time": "2026-06-23T18:17:00.000Z",
+  "last_edited_time": "2026-06-23T18:17:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "A message is lost and never reaches its destination.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "A message is lost and never reaches its destination.",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38894183-19f3-80d6-909b-d8f3436c2e01",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38894183-19f3-8054-8779-f668dd242f1e"
+  },
+  "created_time": "2026-06-23T18:17:00.000Z",
+  "last_edited_time": "2026-06-23T18:17:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "The timeout itself is not the root cause. It is a signal that something took longer than expected.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "The timeout itself is not the root cause. It is a signal that something took longer than expected.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "39394183-19f3-806f-9094-cef0769d4993",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38894183-19f3-8054-8779-f668dd242f1e"
+  },
+  "created_time": "2026-07-04T07:38:00.000Z",
+  "last_edited_time": "2026-07-04T07:38:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38894183-19f3-8072-a2b9-fc1d2981780d",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38894183-19f3-8054-8779-f668dd242f1e"
+  },
+  "created_time": "2026-06-23T18:17:00.000Z",
+  "last_edited_time": "2026-06-23T18:17:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_3",
+  "heading_3": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "What happens after a timeout?",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "What happens after a timeout?",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38894183-19f3-80a0-956c-fe75f31589c7",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38894183-19f3-8054-8779-f668dd242f1e"
+  },
+  "created_time": "2026-06-23T18:17:00.000Z",
+  "last_edited_time": "2026-06-23T18:17:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Different systems handle timeouts differently.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Different systems handle timeouts differently.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38894183-19f3-8048-98f1-e42881dc99ef",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38894183-19f3-8054-8779-f668dd242f1e"
+  },
+  "created_time": "2026-06-23T18:17:00.000Z",
+  "last_edited_time": "2026-06-23T18:17:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "A workflow might:",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "A workflow might:",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38894183-19f3-8070-873f-d0b391699f42",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38894183-19f3-8054-8779-f668dd242f1e"
+  },
+  "created_time": "2026-06-23T18:17:00.000Z",
+  "last_edited_time": "2026-06-23T18:17:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Retry the task.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Retry the task.",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38894183-19f3-80f3-b493-e99987583891",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38894183-19f3-8054-8779-f668dd242f1e"
+  },
+  "created_time": "2026-06-23T18:17:00.000Z",
+  "last_edited_time": "2026-06-23T18:17:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Send the task to another agent.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Send the task to another agent.",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38894183-19f3-80e0-a41a-f57d4bf4eedf",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38894183-19f3-8054-8779-f668dd242f1e"
+  },
+  "created_time": "2026-06-23T18:17:00.000Z",
+  "last_edited_time": "2026-06-23T18:17:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Use a fallback response.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Use a fallback response.",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38894183-19f3-8061-a87a-c41bd1991f97",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38894183-19f3-8054-8779-f668dd242f1e"
+  },
+  "created_time": "2026-06-23T18:17:00.000Z",
+  "last_edited_time": "2026-06-23T18:17:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Escalate to a human.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Escalate to a human.",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38894183-19f3-8062-beb8-e01518dc5f1a",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38894183-19f3-8054-8779-f668dd242f1e"
+  },
+  "created_time": "2026-06-23T18:17:00.000Z",
+  "last_edited_time": "2026-06-23T18:17:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Stop the workflow and report an error.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Stop the workflow and report an error.",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38894183-19f3-8083-9118-d5849dc33b0e",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38894183-19f3-8054-8779-f668dd242f1e"
+  },
+  "created_time": "2026-06-23T18:17:00.000Z",
+  "last_edited_time": "2026-06-23T18:19:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "The right choice depends on the business situation. A customer support chatbot might retry.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "The right choice depends on the business situation. A customer support chatbot might retry.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38894183-19f3-8001-926a-f3b477720990",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38894183-19f3-8054-8779-f668dd242f1e"
+  },
+  "created_time": "2026-06-23T18:17:00.000Z",
+  "last_edited_time": "2026-06-23T18:19:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "A fraud detection workflow might escalate immediately.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "A fraud detection workflow might escalate immediately.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "39394183-19f3-80eb-8759-ce6f3d04b912",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38894183-19f3-8054-8779-f668dd242f1e"
+  },
+  "created_time": "2026-07-04T07:38:00.000Z",
+  "last_edited_time": "2026-07-04T07:38:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38894183-19f3-80f8-b178-c8358998c9d0",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38894183-19f3-8054-8779-f668dd242f1e"
+  },
+  "created_time": "2026-06-23T18:19:00.000Z",
+  "last_edited_time": "2026-06-23T18:19:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_3",
+  "heading_3": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Example",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Example",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38894183-19f3-8049-95c5-fa30b630a0ba",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38894183-19f3-8054-8779-f668dd242f1e"
+  },
+  "created_time": "2026-06-23T18:19:00.000Z",
+  "last_edited_time": "2026-06-23T18:19:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "An orchestrator sends a task to an agent.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "An orchestrator sends a task to an agent.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38894183-19f3-8019-a48e-d31ff385698d",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38894183-19f3-8054-8779-f668dd242f1e"
+  },
+  "created_time": "2026-06-23T18:20:00.000Z",
+  "last_edited_time": "2026-06-23T18:20:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Expected behavior",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Expected behavior",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "39494183-19f3-807e-ac75-e5fc93325975",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38894183-19f3-8054-8779-f668dd242f1e"
+  },
+  "created_time": "2026-07-05T11:55:00.000Z",
+  "last_edited_time": "2026-07-06T16:00:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "image",
+  "image": {
+   "caption": [],
+   "type": "file",
+   "file": {
+    "url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/3a9085c4-df29-45e6-8bc7-6c9c0a25ea8c/e5e47bec-88fa-4744-9a35-7ffa461cbab8/diagram_%287%29.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466WRZWTDAR%2F20261022%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20261022T120702Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEKv%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJGMEQCICd4kPvcl3iV9FTiIomovFxxxk3VrW1jef4k2bMQvXxGAiBxOK3C7KyhgeEEr8QyThBIM9V36xLmnruuDNxXwxd2Jyr%2FAwhzEAAaDDYzNzQyMzE4MzgwNSIMYOZD6MQwwlHSQgaHKtwD8Ux4Vz%2FrBERrEjWNq158nHMSLmKpiHU1Ukow7xRXzJQvdKma9erXV0tpiFBsHkkEZ66cWWb%2BGlCCbEm%2FLcwuDmV8c4i3m7hljInXPQZJHagbZIuQvatoIKRRG8Z%2FcMmyG%2Fzer2PTiCfJko5RdMc2%2BOm%2FO1Z2qZJsZN1FVPZhaAr3nSESyw08nJnK9f%2BRret%2BqO%2FgcaS7%2FiwZj7M3h8kr5aORgIhIyQIvnDN8ipM5aG8syHS0fI4KBuHGWDebsUTJ14%2F9JMg97108uxMZJMhX1YQxG%2FSwYKQZhPTE8ChyAKhMEK%2F72XhoBi%2FpWCi4v8kVb0eV6TwVZ7HQueHd%2BF1mACNY6qr6t1UaqtFQRgAHfFhdHchzh7tX8zqhITGE20Zkx2dPNBThMnCl6pMsS1IBOJmoelYw9oV12ws4wWHwTOzldw%2FOBHAs7nnsGPon8Am6Z7qSaV3%2FIP%2Bp1POiFomK6lH9z%2BHwe2kbIkYOHMJOkPorlBL4fr5VhHo5ESXhLx48WD2lTT7LHR2M%2FT3wJJGEbOMRhNbt%2B%2Fg7S6kdAaXrINnkNBm8ma7JBj%2FUv0lO29bmSnuqGq%2FFHS3dcdfNzexXOC79TZknKDwJWjOx3k%2F%2FSM%2FZsAuX0UXqos79lTMw98nn1gY6pgF43RhHcj%2FzHmfqnct9IGABsrWaqPyxHwsonMXDPtmkscfNeXptv44wrpITAqDsnRc2Lb8Rr4wsWyHMQ8q2eSYpbB5eZpe%2FqXIB8fGwo61S6AY7dxkiiFzyrRqGuuaEBIblpuPKYs9REE7d9kID802hmSm%2Fes61%2FXZRDNgHdSpPPI7lBLshPbspDbQb7d%2BGC4wGOS5%2B%2BkpfdkEM%2F99xhc1ZAKJ15QaC&X-Amz-Signature=f5ad3817e00324c98fa9f718ac77e94809fa5d59160d22baed466a4f39dbb653&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+    "expiry_time": "2026-10-22T13:07:02.951Z"
+   }
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38894183-19f3-805e-ac45-db169b7d9df9",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38894183-19f3-8054-8779-f668dd242f1e"
+  },
+  "created_time": "2026-06-23T18:20:00.000Z",
+  "last_edited_time": "2026-06-23T18:20:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Timeout behavior",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Timeout behavior",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "39494183-19f3-80b9-8d34-ebf53cb88f54",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38894183-19f3-8054-8779-f668dd242f1e"
+  },
+  "created_time": "2026-07-05T11:55:00.000Z",
+  "last_edited_time": "2026-07-06T14:28:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "image",
+  "image": {
+   "caption": [],
+   "type": "file",
+   "file": {
+    "url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/3a9085c4-df29-45e6-8bc7-6c9c0a25ea8c/5d436ea9-7017-4cfd-935f-11912837336c/diagram_%288%29.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466WRZWTDAR%2F20261022%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20261022T120702Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEKv%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJGMEQCICd4kPvcl3iV9FTiIomovFxxxk3VrW1jef4k2bMQvXxGAiBxOK3C7KyhgeEEr8QyThBIM9V36xLmnruuDNxXwxd2Jyr%2FAwhzEAAaDDYzNzQyMzE4MzgwNSIMYOZD6MQwwlHSQgaHKtwD8Ux4Vz%2FrBERrEjWNq158nHMSLmKpiHU1Ukow7xRXzJQvdKma9erXV0tpiFBsHkkEZ66cWWb%2BGlCCbEm%2FLcwuDmV8c4i3m7hljInXPQZJHagbZIuQvatoIKRRG8Z%2FcMmyG%2Fzer2PTiCfJko5RdMc2%2BOm%2FO1Z2qZJsZN1FVPZhaAr3nSESyw08nJnK9f%2BRret%2BqO%2FgcaS7%2FiwZj7M3h8kr5aORgIhIyQIvnDN8ipM5aG8syHS0fI4KBuHGWDebsUTJ14%2F9JMg97108uxMZJMhX1YQxG%2FSwYKQZhPTE8ChyAKhMEK%2F72XhoBi%2FpWCi4v8kVb0eV6TwVZ7HQueHd%2BF1mACNY6qr6t1UaqtFQRgAHfFhdHchzh7tX8zqhITGE20Zkx2dPNBThMnCl6pMsS1IBOJmoelYw9oV12ws4wWHwTOzldw%2FOBHAs7nnsGPon8Am6Z7qSaV3%2FIP%2Bp1POiFomK6lH9z%2BHwe2kbIkYOHMJOkPorlBL4fr5VhHo5ESXhLx48WD2lTT7LHR2M%2FT3wJJGEbOMRhNbt%2B%2Fg7S6kdAaXrINnkNBm8ma7JBj%2FUv0lO29bmSnuqGq%2FFHS3dcdfNzexXOC79TZknKDwJWjOx3k%2F%2FSM%2FZsAuX0UXqos79lTMw98nn1gY6pgF43RhHcj%2FzHmfqnct9IGABsrWaqPyxHwsonMXDPtmkscfNeXptv44wrpITAqDsnRc2Lb8Rr4wsWyHMQ8q2eSYpbB5eZpe%2FqXIB8fGwo61S6AY7dxkiiFzyrRqGuuaEBIblpuPKYs9REE7d9kID802hmSm%2Fes61%2FXZRDNgHdSpPPI7lBLshPbspDbQb7d%2BGC4wGOS5%2B%2BkpfdkEM%2F99xhc1ZAKJ15QaC&X-Amz-Signature=8dd2fc222639197d29b0a9d6f5003535144e365d37b83f3b7a3583ef6c107b4f&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+    "expiry_time": "2026-10-22T13:07:02.951Z"
+   }
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38894183-19f3-80e2-b71c-e5c91beb64af",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38894183-19f3-8054-8779-f668dd242f1e"
+  },
+  "created_time": "2026-06-23T18:21:00.000Z",
+  "last_edited_time": "2026-06-30T08:04:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "callout",
+  "callout": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "The important point is that the agent may not have failed. The orchestrator simply reached the maximum waiting time.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "The important point is that the agent may not have failed. The orchestrator simply reached the maximum waiting time.",
+     "href": null
+    }
+   ],
+   "icon": {
+    "type": "emoji",
+    "emoji": "\u261d"
+   },
+   "color": "blue_background"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "39394183-19f3-80e0-bd37-c641fcbc472e",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38894183-19f3-8054-8779-f668dd242f1e"
+  },
+  "created_time": "2026-07-04T07:39:00.000Z",
+  "last_edited_time": "2026-07-04T07:39:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38894183-19f3-8062-b827-e8eda5532658",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38894183-19f3-8054-8779-f668dd242f1e"
+  },
+  "created_time": "2026-06-23T18:21:00.000Z",
+  "last_edited_time": "2026-06-23T18:21:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_2",
+  "heading_2": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Summary",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Summary",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38894183-19f3-8020-97ba-d68b84fbd72a",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38894183-19f3-8054-8779-f668dd242f1e"
+  },
+  "created_time": "2026-06-23T18:21:00.000Z",
+  "last_edited_time": "2026-06-23T18:21:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Timeouts are one of the most common failure points in orchestrated systems. They happen when one part of the system stops waiting before another part finishes working.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Timeouts are one of the most common failure points in orchestrated systems. They happen when one part of the system stops waiting before another part finishes working.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38894183-19f3-80a8-9f1e-e6a910bdada8",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38894183-19f3-8054-8779-f668dd242f1e"
+  },
+  "created_time": "2026-06-23T18:21:00.000Z",
+  "last_edited_time": "2026-06-23T18:21:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Good timeout handling is not only about increasing a number. It is about understanding how long the workflow should reasonably take, where the timeout is enforced, and what should happen when work takes longer than expected.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Good timeout handling is not only about increasing a number. It is about understanding how long the workflow should reasonably take, where the timeout is enforced, and what should happen when work takes longer than expected.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ }
+]

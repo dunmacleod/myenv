@@ -1,0 +1,3684 @@
+[
+ {
+  "object": "block",
+  "id": "36a94183-19f3-809c-829c-f4e9b59f509d",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8057-b5d9-c0928ee0be54"
+  },
+  "created_time": "2026-05-24T19:28:00.000Z",
+  "last_edited_time": "2026-05-24T19:28:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "callout",
+  "callout": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "What you will understand by the end of this lesson:",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "What you will understand by the end of this lesson:",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " You will add an Iteration Node to a new Agentflow v2 to process a list of engagement records and generate a summary for each one.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " You will add an Iteration Node to a new Agentflow v2 to process a list of engagement records and generate a summary for each one.",
+     "href": null
+    }
+   ],
+   "icon": {
+    "type": "emoji",
+    "emoji": "\ud83d\udca1"
+   },
+   "color": "gray_background"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38094183-19f3-803a-af64-c741bf59280f",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8057-b5d9-c0928ee0be54"
+  },
+  "created_time": "2026-06-15T12:45:00.000Z",
+  "last_edited_time": "2026-06-15T12:45:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "16fe35c2-1bb5-472a-9faf-a17d1ecbd778",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8057-b5d9-c0928ee0be54"
+  },
+  "created_time": "2026-05-22T02:37:00.000Z",
+  "last_edited_time": "2026-06-12T04:01:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_2",
+  "heading_2": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Setting the Scene",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Setting the Scene",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "631ed073-b0ee-4331-bf01-c1b33b895fcb",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8057-b5d9-c0928ee0be54"
+  },
+  "created_time": "2026-06-12T04:01:00.000Z",
+  "last_edited_time": "2026-06-12T04:02:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Meridian's operations manager has requested a new capability, a weekly engagement briefing that loops through a list of active client accounts and produces a one-line status summary for each one. Rather than a consultant querying each account manually one at a time, the agent should process the entire list in a single execution and return all summaries together.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Meridian's operations manager has requested a new capability, a weekly engagement briefing that loops through a list of active client accounts and produces a one-line status summary for each one. Rather than a consultant querying each account manually one at a time, the agent should process the entire list in a single execution and return all summaries together.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "ab30fe45-1422-4f97-9377-3294eb86b120",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8057-b5d9-c0928ee0be54"
+  },
+  "created_time": "2026-06-12T04:01:00.000Z",
+  "last_edited_time": "2026-06-12T04:02:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "This is a fundamentally different pattern from what has been built so far. The existing canvas handles one query at a time. Processing a collection of items requires a different node. This is known as the Iteration Node.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "This is a fundamentally different pattern from what has been built so far. The existing canvas handles one query at a time. Processing a collection of items requires a different node. This is known as the Iteration Node.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38094183-19f3-8039-844d-ebb2cde0be08",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8057-b5d9-c0928ee0be54"
+  },
+  "created_time": "2026-06-15T12:45:00.000Z",
+  "last_edited_time": "2026-06-15T12:45:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "bab83373-8f8a-421a-b02b-f6fe714f73e5",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8057-b5d9-c0928ee0be54"
+  },
+  "created_time": "2026-06-12T04:02:00.000Z",
+  "last_edited_time": "2026-06-12T04:02:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_2",
+  "heading_2": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "What the Iteration Node does",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "What the Iteration Node does",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "312e1620-18c1-41de-b82b-dec6d17a9258",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8057-b5d9-c0928ee0be54"
+  },
+  "created_time": "2026-06-12T04:02:00.000Z",
+  "last_edited_time": "2026-06-12T04:02:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "The Iteration Node executes a defined sub-flow (a sequence of nodes nested within it) for each item in an input array, implementing a for-each loop. For every individual element within that array, the Iteration Node sequentially executes the sequence of nodes visually placed inside its boundaries on the canvas.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "The Iteration Node executes a defined sub-flow (a sequence of nodes nested within it) for each item in an input array, implementing a for-each loop. For every individual element within that array, the Iteration Node sequentially executes the sequence of nodes visually placed inside its boundaries on the canvas.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "25ba3c0f-5800-4d08-bf31-68020e4b9877",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8057-b5d9-c0928ee0be54"
+  },
+  "created_time": "2026-06-12T04:02:00.000Z",
+  "last_edited_time": "2026-06-12T04:02:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "This makes it the correct tool for any task where the same operation needs to run repeatedly across a collection of inputs by processing multiple documents, summarising multiple records, or validating a list of values.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "This makes it the correct tool for any task where the same operation needs to run repeatedly across a collection of inputs by processing multiple documents, summarising multiple records, or validating a list of values.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38094183-19f3-806d-9b07-e333ca8603fd",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8057-b5d9-c0928ee0be54"
+  },
+  "created_time": "2026-06-15T12:45:00.000Z",
+  "last_edited_time": "2026-06-15T12:45:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "d09b2981-94f9-4803-976a-ec782cfa8f68",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8057-b5d9-c0928ee0be54"
+  },
+  "created_time": "2026-06-12T04:03:00.000Z",
+  "last_edited_time": "2026-06-12T04:03:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_2",
+  "heading_2": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "What you are building",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "What you are building",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "17ab296c-fea6-41e3-9dce-35ba4d74ce57",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8057-b5d9-c0928ee0be54"
+  },
+  "created_time": "2026-06-12T04:03:00.000Z",
+  "last_edited_time": "2026-06-12T04:03:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "A new standalone Agentflow v2 called ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "A new standalone Agentflow v2 called ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "Meridian Engagement Briefing",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": true,
+      "color": "default"
+     },
+     "plain_text": "Meridian Engagement Briefing",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " that takes a hardcoded list of engagement records, iterates over each one using an LLM Node inside the Iteration Node, and returns a combined briefing summary.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " that takes a hardcoded list of engagement records, iterates over each one using an LLM Node inside the Iteration Node, and returns a combined briefing summary.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "a6e02ff4-017c-4f83-aea2-e6143fdbe42c",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8057-b5d9-c0928ee0be54"
+  },
+  "created_time": "2026-06-12T04:03:00.000Z",
+  "last_edited_time": "2026-06-12T04:03:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "This is built as a separate flow to keep the two use cases clean and independent.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "This is built as a separate flow to keep the two use cases clean and independent.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38094183-19f3-80bf-ae7c-e63d7930e2cf",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8057-b5d9-c0928ee0be54"
+  },
+  "created_time": "2026-06-15T12:45:00.000Z",
+  "last_edited_time": "2026-06-15T12:45:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "557f1b40-6e7f-4f68-be45-af6e1818eecf",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8057-b5d9-c0928ee0be54"
+  },
+  "created_time": "2026-06-12T04:03:00.000Z",
+  "last_edited_time": "2026-06-12T04:03:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_3",
+  "heading_3": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Step 1: Create a new Agentflow v2",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Step 1: Create a new Agentflow v2",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "33321612-81c2-4f0e-a97d-88c013a86e0e",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8057-b5d9-c0928ee0be54"
+  },
+  "created_time": "2026-06-12T04:03:00.000Z",
+  "last_edited_time": "2026-06-12T04:03:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Click ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Click ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "Agentflows",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Agentflows",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " in the left navigation and click ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " in the left navigation and click ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "+ Add New",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "+ Add New",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": ". Name it ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": ". Name it ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "Meridian Engagement Briefing",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": true,
+      "color": "default"
+     },
+     "plain_text": "Meridian Engagement Briefing",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " and save immediately.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " and save immediately.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38094183-19f3-8061-b15a-dd166b19b445",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8057-b5d9-c0928ee0be54"
+  },
+  "created_time": "2026-06-15T12:45:00.000Z",
+  "last_edited_time": "2026-06-15T12:45:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "00a133df-5693-4144-94e3-1e954e723eeb",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8057-b5d9-c0928ee0be54"
+  },
+  "created_time": "2026-06-12T04:03:00.000Z",
+  "last_edited_time": "2026-06-12T04:04:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_3",
+  "heading_3": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Step 2: Go to Start Node and initialise Flow State",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Step 2: Go to Start Node and initialise Flow State",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37d94183-19f3-80b1-b50f-c3870acb3a44",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8057-b5d9-c0928ee0be54"
+  },
+  "created_time": "2026-06-12T04:15:00.000Z",
+  "last_edited_time": "2026-06-12T04:15:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": true,
+  "in_trash": false,
+  "type": "column_list",
+  "column_list": {},
+  "archived": false,
+  "_children": [
+   {
+    "object": "block",
+    "id": "37d94183-19f3-8045-9cc8-f9253a7df2ec",
+    "parent": {
+     "type": "block_id",
+     "block_id": "37d94183-19f3-80b1-b50f-c3870acb3a44"
+    },
+    "created_time": "2026-06-12T04:15:00.000Z",
+    "last_edited_time": "2026-06-15T12:45:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "231d872b-594c-81f2-a375-0002b8783aca"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "has_children": true,
+    "in_trash": false,
+    "type": "column",
+    "column": {
+     "width_ratio": 0.8125
+    },
+    "archived": false,
+    "_children": [
+     {
+      "object": "block",
+      "id": "6c4945b7-5486-4980-ad2e-ca5a68d95e61",
+      "parent": {
+       "type": "block_id",
+       "block_id": "37d94183-19f3-8045-9cc8-f9253a7df2ec"
+      },
+      "created_time": "2026-06-12T04:03:00.000Z",
+      "last_edited_time": "2026-06-12T04:15:00.000Z",
+      "created_by": {
+       "object": "user",
+       "id": "231d872b-594c-81f2-a375-0002b8783aca"
+      },
+      "last_edited_by": {
+       "object": "user",
+       "id": "231d872b-594c-81f2-a375-0002b8783aca"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+       "rich_text": [
+        {
+         "type": "text",
+         "text": {
+          "content": "Add a ",
+          "link": null
+         },
+         "annotations": {
+          "bold": false,
+          "italic": false,
+          "strikethrough": false,
+          "underline": false,
+          "code": false,
+          "color": "default"
+         },
+         "plain_text": "Add a ",
+         "href": null
+        },
+        {
+         "type": "text",
+         "text": {
+          "content": "Start Node",
+          "link": null
+         },
+         "annotations": {
+          "bold": true,
+          "italic": false,
+          "strikethrough": false,
+          "underline": false,
+          "code": false,
+          "color": "default"
+         },
+         "plain_text": "Start Node",
+         "href": null
+        },
+        {
+         "type": "text",
+         "text": {
+          "content": ". In the Flow State section, add:",
+          "link": null
+         },
+         "annotations": {
+          "bold": false,
+          "italic": false,
+          "strikethrough": false,
+          "underline": false,
+          "code": false,
+          "color": "default"
+         },
+         "plain_text": ". In the Flow State section, add:",
+         "href": null
+        }
+       ],
+       "icon": null,
+       "color": "default"
+      },
+      "archived": false
+     },
+     {
+      "object": "block",
+      "id": "ef90a89c-2f0a-4724-ac55-0ae0f0339b15",
+      "parent": {
+       "type": "block_id",
+       "block_id": "37d94183-19f3-8045-9cc8-f9253a7df2ec"
+      },
+      "created_time": "2026-06-12T04:03:00.000Z",
+      "last_edited_time": "2026-06-12T04:15:00.000Z",
+      "created_by": {
+       "object": "user",
+       "id": "231d872b-594c-81f2-a375-0002b8783aca"
+      },
+      "last_edited_by": {
+       "object": "user",
+       "id": "231d872b-594c-81f2-a375-0002b8783aca"
+      },
+      "has_children": true,
+      "in_trash": false,
+      "type": "table",
+      "table": {
+       "table_width": 2,
+       "has_column_header": true,
+       "has_row_header": false
+      },
+      "archived": false,
+      "_children": [
+       {
+        "object": "block",
+        "id": "18d7176a-3397-47a3-9723-e495e264f5c1",
+        "parent": {
+         "type": "block_id",
+         "block_id": "ef90a89c-2f0a-4724-ac55-0ae0f0339b15"
+        },
+        "created_time": "2026-06-12T04:03:00.000Z",
+        "last_edited_time": "2026-06-12T04:03:00.000Z",
+        "created_by": {
+         "object": "user",
+         "id": "231d872b-594c-81f2-a375-0002b8783aca"
+        },
+        "last_edited_by": {
+         "object": "user",
+         "id": "231d872b-594c-81f2-a375-0002b8783aca"
+        },
+        "has_children": false,
+        "in_trash": false,
+        "type": "table_row",
+        "table_row": {
+         "cells": [
+          [
+           {
+            "type": "text",
+            "text": {
+             "content": "Key",
+             "link": null
+            },
+            "annotations": {
+             "bold": false,
+             "italic": false,
+             "strikethrough": false,
+             "underline": false,
+             "code": false,
+             "color": "default"
+            },
+            "plain_text": "Key",
+            "href": null
+           }
+          ],
+          [
+           {
+            "type": "text",
+            "text": {
+             "content": "Initial Value",
+             "link": null
+            },
+            "annotations": {
+             "bold": false,
+             "italic": false,
+             "strikethrough": false,
+             "underline": false,
+             "code": false,
+             "color": "default"
+            },
+            "plain_text": "Initial Value",
+            "href": null
+           }
+          ]
+         ]
+        },
+        "archived": false
+       },
+       {
+        "object": "block",
+        "id": "3966909f-f0e1-4d3d-ab74-ef52cc6a4377",
+        "parent": {
+         "type": "block_id",
+         "block_id": "ef90a89c-2f0a-4724-ac55-0ae0f0339b15"
+        },
+        "created_time": "2026-06-12T04:03:00.000Z",
+        "last_edited_time": "2026-06-12T04:03:00.000Z",
+        "created_by": {
+         "object": "user",
+         "id": "231d872b-594c-81f2-a375-0002b8783aca"
+        },
+        "last_edited_by": {
+         "object": "user",
+         "id": "231d872b-594c-81f2-a375-0002b8783aca"
+        },
+        "has_children": false,
+        "in_trash": false,
+        "type": "table_row",
+        "table_row": {
+         "cells": [
+          [
+           {
+            "type": "text",
+            "text": {
+             "content": "engagement_list",
+             "link": null
+            },
+            "annotations": {
+             "bold": false,
+             "italic": false,
+             "strikethrough": false,
+             "underline": false,
+             "code": true,
+             "color": "default"
+            },
+            "plain_text": "engagement_list",
+            "href": null
+           }
+          ],
+          [
+           {
+            "type": "text",
+            "text": {
+             "content": "[{\"id\":1,\"title\":\"Krauss Manufacturing\",\"completed\":false},{\"id\":2,\"title\":\"Bauer Logistics\",\"completed\":true},{\"id\":3,\"title\":\"Novak Retail\",\"completed\":false}]",
+             "link": null
+            },
+            "annotations": {
+             "bold": false,
+             "italic": false,
+             "strikethrough": false,
+             "underline": false,
+             "code": true,
+             "color": "default"
+            },
+            "plain_text": "[{\"id\":1,\"title\":\"Krauss Manufacturing\",\"completed\":false},{\"id\":2,\"title\":\"Bauer Logistics\",\"completed\":true},{\"id\":3,\"title\":\"Novak Retail\",\"completed\":false}]",
+            "href": null
+           }
+          ]
+         ]
+        },
+        "archived": false
+       },
+       {
+        "object": "block",
+        "id": "396624d7-bcd4-4186-b39b-0db520cbb995",
+        "parent": {
+         "type": "block_id",
+         "block_id": "ef90a89c-2f0a-4724-ac55-0ae0f0339b15"
+        },
+        "created_time": "2026-06-12T04:03:00.000Z",
+        "last_edited_time": "2026-06-12T04:03:00.000Z",
+        "created_by": {
+         "object": "user",
+         "id": "231d872b-594c-81f2-a375-0002b8783aca"
+        },
+        "last_edited_by": {
+         "object": "user",
+         "id": "231d872b-594c-81f2-a375-0002b8783aca"
+        },
+        "has_children": false,
+        "in_trash": false,
+        "type": "table_row",
+        "table_row": {
+         "cells": [
+          [
+           {
+            "type": "text",
+            "text": {
+             "content": "briefing_output",
+             "link": null
+            },
+            "annotations": {
+             "bold": false,
+             "italic": false,
+             "strikethrough": false,
+             "underline": false,
+             "code": true,
+             "color": "default"
+            },
+            "plain_text": "briefing_output",
+            "href": null
+           }
+          ],
+          [
+           {
+            "type": "text",
+            "text": {
+             "content": "``",
+             "link": null
+            },
+            "annotations": {
+             "bold": false,
+             "italic": false,
+             "strikethrough": false,
+             "underline": false,
+             "code": false,
+             "color": "default"
+            },
+            "plain_text": "``",
+            "href": null
+           }
+          ]
+         ]
+        },
+        "archived": false
+       }
+      ]
+     },
+     {
+      "object": "block",
+      "id": "38094183-19f3-80a2-b22d-ef9adb07b212",
+      "parent": {
+       "type": "block_id",
+       "block_id": "37d94183-19f3-8045-9cc8-f9253a7df2ec"
+      },
+      "created_time": "2026-06-15T12:45:00.000Z",
+      "last_edited_time": "2026-06-15T12:45:00.000Z",
+      "created_by": {
+       "object": "user",
+       "id": "114d872b-594c-8174-9474-0002954cf668"
+      },
+      "last_edited_by": {
+       "object": "user",
+       "id": "114d872b-594c-8174-9474-0002954cf668"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+       "rich_text": [],
+       "icon": null,
+       "color": "default"
+      },
+      "archived": false
+     }
+    ]
+   },
+   {
+    "object": "block",
+    "id": "37d94183-19f3-8096-bd6e-e3fef36cffba",
+    "parent": {
+     "type": "block_id",
+     "block_id": "37d94183-19f3-80b1-b50f-c3870acb3a44"
+    },
+    "created_time": "2026-06-12T04:15:00.000Z",
+    "last_edited_time": "2026-06-12T04:16:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "231d872b-594c-81f2-a375-0002b8783aca"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "231d872b-594c-81f2-a375-0002b8783aca"
+    },
+    "has_children": true,
+    "in_trash": false,
+    "type": "column",
+    "column": {
+     "width_ratio": 1
+    },
+    "archived": false,
+    "_children": [
+     {
+      "object": "block",
+      "id": "37d94183-19f3-80d7-9ef2-c3b7ab24d331",
+      "parent": {
+       "type": "block_id",
+       "block_id": "37d94183-19f3-8096-bd6e-e3fef36cffba"
+      },
+      "created_time": "2026-06-12T04:16:00.000Z",
+      "last_edited_time": "2026-06-12T04:16:00.000Z",
+      "created_by": {
+       "object": "user",
+       "id": "231d872b-594c-81f2-a375-0002b8783aca"
+      },
+      "last_edited_by": {
+       "object": "user",
+       "id": "231d872b-594c-81f2-a375-0002b8783aca"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "callout",
+      "callout": {
+       "rich_text": [
+        {
+         "type": "text",
+         "text": {
+          "content": "The ",
+          "link": null
+         },
+         "annotations": {
+          "bold": false,
+          "italic": false,
+          "strikethrough": false,
+          "underline": false,
+          "code": false,
+          "color": "default"
+         },
+         "plain_text": "The ",
+         "href": null
+        },
+        {
+         "type": "text",
+         "text": {
+          "content": "engagement_list",
+          "link": null
+         },
+         "annotations": {
+          "bold": false,
+          "italic": false,
+          "strikethrough": false,
+          "underline": false,
+          "code": true,
+          "color": "default"
+         },
+         "plain_text": "engagement_list",
+         "href": null
+        },
+        {
+         "type": "text",
+         "text": {
+          "content": " key holds a JSON array of three mock engagement records. The ",
+          "link": null
+         },
+         "annotations": {
+          "bold": false,
+          "italic": false,
+          "strikethrough": false,
+          "underline": false,
+          "code": false,
+          "color": "default"
+         },
+         "plain_text": " key holds a JSON array of three mock engagement records. The ",
+         "href": null
+        },
+        {
+         "type": "text",
+         "text": {
+          "content": "briefing_output",
+          "link": null
+         },
+         "annotations": {
+          "bold": false,
+          "italic": false,
+          "strikethrough": false,
+          "underline": false,
+          "code": true,
+          "color": "default"
+         },
+         "plain_text": "briefing_output",
+         "href": null
+        },
+        {
+         "type": "text",
+         "text": {
+          "content": " key will accumulate summaries as the iteration runs.",
+          "link": null
+         },
+         "annotations": {
+          "bold": false,
+          "italic": false,
+          "strikethrough": false,
+          "underline": false,
+          "code": false,
+          "color": "default"
+         },
+         "plain_text": " key will accumulate summaries as the iteration runs.",
+         "href": null
+        }
+       ],
+       "icon": {
+        "type": "emoji",
+        "emoji": "\u27a1\ufe0f"
+       },
+       "color": "gray_background"
+      },
+      "archived": false
+     },
+     {
+      "object": "block",
+      "id": "37d94183-19f3-80e9-8dc5-d0c2f5a76beb",
+      "parent": {
+       "type": "block_id",
+       "block_id": "37d94183-19f3-8096-bd6e-e3fef36cffba"
+      },
+      "created_time": "2026-06-12T04:16:00.000Z",
+      "last_edited_time": "2026-06-12T04:16:00.000Z",
+      "created_by": {
+       "object": "user",
+       "id": "231d872b-594c-81f2-a375-0002b8783aca"
+      },
+      "last_edited_by": {
+       "object": "user",
+       "id": "231d872b-594c-81f2-a375-0002b8783aca"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+       "rich_text": [
+        {
+         "type": "text",
+         "text": {
+          "content": "Save your ",
+          "link": null
+         },
+         "annotations": {
+          "bold": false,
+          "italic": false,
+          "strikethrough": false,
+          "underline": false,
+          "code": false,
+          "color": "default"
+         },
+         "plain_text": "Save your ",
+         "href": null
+        },
+        {
+         "type": "text",
+         "text": {
+          "content": "Start",
+          "link": null
+         },
+         "annotations": {
+          "bold": true,
+          "italic": false,
+          "strikethrough": false,
+          "underline": false,
+          "code": false,
+          "color": "default"
+         },
+         "plain_text": "Start",
+         "href": null
+        },
+        {
+         "type": "text",
+         "text": {
+          "content": " node.",
+          "link": null
+         },
+         "annotations": {
+          "bold": false,
+          "italic": false,
+          "strikethrough": false,
+          "underline": false,
+          "code": false,
+          "color": "default"
+         },
+         "plain_text": " node.",
+         "href": null
+        }
+       ],
+       "icon": null,
+       "color": "default"
+      },
+      "archived": false
+     },
+     {
+      "object": "block",
+      "id": "37d94183-19f3-80e2-b429-dfc099f6c0aa",
+      "parent": {
+       "type": "block_id",
+       "block_id": "37d94183-19f3-8096-bd6e-e3fef36cffba"
+      },
+      "created_time": "2026-06-12T04:16:00.000Z",
+      "last_edited_time": "2026-06-12T04:16:00.000Z",
+      "created_by": {
+       "object": "user",
+       "id": "231d872b-594c-81f2-a375-0002b8783aca"
+      },
+      "last_edited_by": {
+       "object": "user",
+       "id": "231d872b-594c-81f2-a375-0002b8783aca"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+       "rich_text": [],
+       "icon": null,
+       "color": "default"
+      },
+      "archived": false
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "object": "block",
+  "id": "4954b1a2-eea6-451c-9379-9df98b0cba61",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8057-b5d9-c0928ee0be54"
+  },
+  "created_time": "2026-06-12T04:03:00.000Z",
+  "last_edited_time": "2026-06-12T04:03:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_3",
+  "heading_3": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Step 3: Add a Custom Function Node to parse the list",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Step 3: Add a Custom Function Node to parse the list",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "1f097492-b7e5-4e76-b9a4-509b7f35a37d",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8057-b5d9-c0928ee0be54"
+  },
+  "created_time": "2026-06-12T04:03:00.000Z",
+  "last_edited_time": "2026-06-12T04:03:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Add a ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Add a ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "Custom Function Node",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Custom Function Node",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " after the Start Node.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " after the Start Node.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "2c9278af-bdd5-4913-906e-21c97b484fb5",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8057-b5d9-c0928ee0be54"
+  },
+  "created_time": "2026-06-12T04:03:00.000Z",
+  "last_edited_time": "2026-06-12T04:03:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Input Variables:",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Input Variables:",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "1e4a7cfc-29f9-46a1-b4b2-99e6bd1fce04",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8057-b5d9-c0928ee0be54"
+  },
+  "created_time": "2026-06-12T04:03:00.000Z",
+  "last_edited_time": "2026-06-12T04:16:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": true,
+  "in_trash": false,
+  "type": "table",
+  "table": {
+   "table_width": 2,
+   "has_column_header": true,
+   "has_row_header": false
+  },
+  "archived": false,
+  "_children": [
+   {
+    "object": "block",
+    "id": "e28f14e8-2ce1-4258-aa46-f847a2b39ca8",
+    "parent": {
+     "type": "block_id",
+     "block_id": "1e4a7cfc-29f9-46a1-b4b2-99e6bd1fce04"
+    },
+    "created_time": "2026-06-12T04:03:00.000Z",
+    "last_edited_time": "2026-06-12T04:03:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "231d872b-594c-81f2-a375-0002b8783aca"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "231d872b-594c-81f2-a375-0002b8783aca"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "table_row",
+    "table_row": {
+     "cells": [
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Variable Name",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Variable Name",
+        "href": null
+       }
+      ],
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Variable Value",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Variable Value",
+        "href": null
+       }
+      ]
+     ]
+    },
+    "archived": false
+   },
+   {
+    "object": "block",
+    "id": "11c13a73-179f-424e-b279-3a9b4d9dd528",
+    "parent": {
+     "type": "block_id",
+     "block_id": "1e4a7cfc-29f9-46a1-b4b2-99e6bd1fce04"
+    },
+    "created_time": "2026-06-12T04:03:00.000Z",
+    "last_edited_time": "2026-06-12T04:03:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "231d872b-594c-81f2-a375-0002b8783aca"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "231d872b-594c-81f2-a375-0002b8783aca"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "table_row",
+    "table_row": {
+     "cells": [
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "engagementList",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": true,
+         "color": "default"
+        },
+        "plain_text": "engagementList",
+        "href": null
+       }
+      ],
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "{{ $flow.state.engagement_list }}",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": true,
+         "color": "default"
+        },
+        "plain_text": "{{ $flow.state.engagement_list }}",
+        "href": null
+       }
+      ]
+     ]
+    },
+    "archived": false
+   }
+  ]
+ },
+ {
+  "object": "block",
+  "id": "1f111249-90be-49a1-9fd6-fba00a30049f",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8057-b5d9-c0928ee0be54"
+  },
+  "created_time": "2026-06-12T04:03:00.000Z",
+  "last_edited_time": "2026-06-12T04:03:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "JavaScript Function:",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "JavaScript Function:",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37d94183-19f3-808d-ad37-fcb1fee84f01",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8057-b5d9-c0928ee0be54"
+  },
+  "created_time": "2026-06-12T04:16:00.000Z",
+  "last_edited_time": "2026-06-12T04:17:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "code",
+  "code": {
+   "caption": [],
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "const list = JSON.parse($engagementList);\nreturn JSON.stringify(list);",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "const list = JSON.parse($engagementList);\nreturn JSON.stringify(list);",
+     "href": null
+    }
+   ],
+   "language": "javascript"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "625ee72c-3e0f-44b2-b934-82bc484eeeda",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8057-b5d9-c0928ee0be54"
+  },
+  "created_time": "2026-06-12T04:03:00.000Z",
+  "last_edited_time": "2026-06-12T04:03:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Update Flow State:",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Update Flow State:",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "68f5107e-a945-4fb1-921e-cf0110df531b",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8057-b5d9-c0928ee0be54"
+  },
+  "created_time": "2026-06-12T04:03:00.000Z",
+  "last_edited_time": "2026-06-12T04:17:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": true,
+  "in_trash": false,
+  "type": "table",
+  "table": {
+   "table_width": 2,
+   "has_column_header": true,
+   "has_row_header": false
+  },
+  "archived": false,
+  "_children": [
+   {
+    "object": "block",
+    "id": "2280da13-0e01-4f99-aebe-b922bd0bb653",
+    "parent": {
+     "type": "block_id",
+     "block_id": "68f5107e-a945-4fb1-921e-cf0110df531b"
+    },
+    "created_time": "2026-06-12T04:03:00.000Z",
+    "last_edited_time": "2026-06-12T04:03:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "231d872b-594c-81f2-a375-0002b8783aca"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "231d872b-594c-81f2-a375-0002b8783aca"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "table_row",
+    "table_row": {
+     "cells": [
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Key",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Key",
+        "href": null
+       }
+      ],
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Value",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Value",
+        "href": null
+       }
+      ]
+     ]
+    },
+    "archived": false
+   },
+   {
+    "object": "block",
+    "id": "225807b0-1f54-4eb7-a40d-ed1f5c51cbba",
+    "parent": {
+     "type": "block_id",
+     "block_id": "68f5107e-a945-4fb1-921e-cf0110df531b"
+    },
+    "created_time": "2026-06-12T04:03:00.000Z",
+    "last_edited_time": "2026-06-12T04:03:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "231d872b-594c-81f2-a375-0002b8783aca"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "231d872b-594c-81f2-a375-0002b8783aca"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "table_row",
+    "table_row": {
+     "cells": [
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "engagement_list",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": true,
+         "color": "default"
+        },
+        "plain_text": "engagement_list",
+        "href": null
+       }
+      ],
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "{{ customFunctionAgentflow_0.output }}",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": true,
+         "color": "default"
+        },
+        "plain_text": "{{ customFunctionAgentflow_0.output }}",
+        "href": null
+       }
+      ]
+     ]
+    },
+    "archived": false
+   }
+  ]
+ },
+ {
+  "object": "block",
+  "id": "c0ee3e2b-1872-4f92-b8f0-ef35203b76e5",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8057-b5d9-c0928ee0be54"
+  },
+  "created_time": "2026-06-12T04:03:00.000Z",
+  "last_edited_time": "2026-06-12T04:03:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "This confirms the list is valid JSON before passing it to the Iteration Node.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "This confirms the list is valid JSON before passing it to the Iteration Node.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38094183-19f3-8043-93db-dad0a7bd1c7c",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8057-b5d9-c0928ee0be54"
+  },
+  "created_time": "2026-06-15T12:45:00.000Z",
+  "last_edited_time": "2026-06-15T12:45:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "21999eed-0001-4840-8663-93d13ad388e9",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8057-b5d9-c0928ee0be54"
+  },
+  "created_time": "2026-06-12T04:03:00.000Z",
+  "last_edited_time": "2026-06-12T04:03:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_3",
+  "heading_3": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Step 4: Add an Iteration Node",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Step 4: Add an Iteration Node",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "e7e7ad2b-fdcb-4e39-8dd5-e5f94515d86a",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8057-b5d9-c0928ee0be54"
+  },
+  "created_time": "2026-06-12T04:03:00.000Z",
+  "last_edited_time": "2026-06-12T04:03:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Add an ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Add an ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "Iteration Node",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Iteration Node",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " after the Custom Function Node.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " after the Custom Function Node.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "ffb0fe03-8e87-4d7d-a89f-80260bd1ac01",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8057-b5d9-c0928ee0be54"
+  },
+  "created_time": "2026-06-12T04:03:00.000Z",
+  "last_edited_time": "2026-06-12T04:03:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Configure it:",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Configure it:",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "f50ba518-7175-43bc-bfd9-8360d3faa0e6",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8057-b5d9-c0928ee0be54"
+  },
+  "created_time": "2026-06-12T04:03:00.000Z",
+  "last_edited_time": "2026-06-12T04:17:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": true,
+  "in_trash": false,
+  "type": "table",
+  "table": {
+   "table_width": 2,
+   "has_column_header": true,
+   "has_row_header": false
+  },
+  "archived": false,
+  "_children": [
+   {
+    "object": "block",
+    "id": "d9b1e6aa-c9b5-4fa3-9efb-8af7b03a9086",
+    "parent": {
+     "type": "block_id",
+     "block_id": "f50ba518-7175-43bc-bfd9-8360d3faa0e6"
+    },
+    "created_time": "2026-06-12T04:03:00.000Z",
+    "last_edited_time": "2026-06-12T04:03:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "231d872b-594c-81f2-a375-0002b8783aca"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "231d872b-594c-81f2-a375-0002b8783aca"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "table_row",
+    "table_row": {
+     "cells": [
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Field",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Field",
+        "href": null
+       }
+      ],
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Value",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Value",
+        "href": null
+       }
+      ]
+     ]
+    },
+    "archived": false
+   },
+   {
+    "object": "block",
+    "id": "688d49f4-8f81-40d7-a586-a9ac1a8e9d64",
+    "parent": {
+     "type": "block_id",
+     "block_id": "f50ba518-7175-43bc-bfd9-8360d3faa0e6"
+    },
+    "created_time": "2026-06-12T04:03:00.000Z",
+    "last_edited_time": "2026-06-12T04:03:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "231d872b-594c-81f2-a375-0002b8783aca"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "231d872b-594c-81f2-a375-0002b8783aca"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "table_row",
+    "table_row": {
+     "cells": [
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Array Input",
+         "link": null
+        },
+        "annotations": {
+         "bold": true,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Array Input",
+        "href": null
+       }
+      ],
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "{{ $flow.state.engagement_list }}",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": true,
+         "color": "default"
+        },
+        "plain_text": "{{ $flow.state.engagement_list }}",
+        "href": null
+       }
+      ]
+     ]
+    },
+    "archived": false
+   }
+  ]
+ },
+ {
+  "object": "block",
+  "id": "b8278c66-8b5e-4672-ad3a-d2f9a3484c6a",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8057-b5d9-c0928ee0be54"
+  },
+  "created_time": "2026-06-12T04:03:00.000Z",
+  "last_edited_time": "2026-06-12T04:07:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "The Array Input specifies the input array the node will iterate over, provided by referencing a variable that holds an array from a previous node's output or from Flow State.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "The Array Input specifies the input array the node will iterate over, provided by referencing a variable that holds an array from a previous node's output or from Flow State.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38094183-19f3-8089-950c-d0ab85beef52",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8057-b5d9-c0928ee0be54"
+  },
+  "created_time": "2026-06-15T12:45:00.000Z",
+  "last_edited_time": "2026-06-15T12:45:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "65c62b90-9f97-4448-8123-6e484febbd3f",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8057-b5d9-c0928ee0be54"
+  },
+  "created_time": "2026-06-12T04:03:00.000Z",
+  "last_edited_time": "2026-06-12T04:03:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_3",
+  "heading_3": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Step 5: Add an LLM Node inside the Iteration Node",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Step 5: Add an LLM Node inside the Iteration Node",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "f1a064a6-42ec-4d12-a138-e52892a60ba8",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8057-b5d9-c0928ee0be54"
+  },
+  "created_time": "2026-06-12T04:03:00.000Z",
+  "last_edited_time": "2026-06-12T04:18:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Place an ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Place an ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "LLM Node",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "LLM Node",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " inside the Iteration Node boundaries on the canvas. ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " inside the Iteration Node boundaries on the canvas. ",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37d94183-19f3-80f4-b469-f64e68fff987",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8057-b5d9-c0928ee0be54"
+  },
+  "created_time": "2026-06-12T04:18:00.000Z",
+  "last_edited_time": "2026-06-12T04:18:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Configure it:",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Configure it:",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "de428a01-2987-47ed-8ecf-5d3d578f82d5",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8057-b5d9-c0928ee0be54"
+  },
+  "created_time": "2026-06-12T04:03:00.000Z",
+  "last_edited_time": "2026-06-12T04:18:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Model:",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Model:",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " Select your model and API credential.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " Select your model and API credential.",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37d94183-19f3-800e-9c00-eacebd1b0e7a",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8057-b5d9-c0928ee0be54"
+  },
+  "created_time": "2026-06-12T04:18:00.000Z",
+  "last_edited_time": "2026-06-12T04:18:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Messages - System role: ",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Messages - System role: ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "You are a briefing assistant for Meridian Consulting. Generate a single sentence engagement status summary from the data provided. Be concise and professional.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": true,
+      "color": "default"
+     },
+     "plain_text": "You are a briefing assistant for Meridian Consulting. Generate a single sentence engagement status summary from the data provided. Be concise and professional.",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37d94183-19f3-8077-99bf-d596c5078297",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8057-b5d9-c0928ee0be54"
+  },
+  "created_time": "2026-06-12T04:18:00.000Z",
+  "last_edited_time": "2026-06-12T04:18:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Messages - User role",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Messages - User role",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": ": ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": ": ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "Engagement data: {{ $iteration.item }}. Generate a one-sentence status summary.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": true,
+      "color": "default"
+     },
+     "plain_text": "Engagement data: {{ $iteration.item }}. Generate a one-sentence status summary.",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37d94183-19f3-80b4-946e-d38eac090af9",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8057-b5d9-c0928ee0be54"
+  },
+  "created_time": "2026-06-12T04:19:00.000Z",
+  "last_edited_time": "2026-06-12T04:19:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "callout",
+  "callout": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Note:",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Note:",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "{{ $iteration.item }}",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": true,
+      "color": "default"
+     },
+     "plain_text": "{{ $iteration.item }}",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " is the variable that holds the current item being processed inside the Iteration Node. Each time the loop runs, this variable contains one engagement record from the array.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " is the variable that holds the current item being processed inside the Iteration Node. Each time the loop runs, this variable contains one engagement record from the array.",
+     "href": null
+    }
+   ],
+   "icon": {
+    "type": "emoji",
+    "emoji": "\u27a1\ufe0f"
+   },
+   "color": "gray_background"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38094183-19f3-80ea-ae6b-f4c89598e9da",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8057-b5d9-c0928ee0be54"
+  },
+  "created_time": "2026-06-15T12:45:00.000Z",
+  "last_edited_time": "2026-06-15T12:45:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "6364bfc2-1e83-4dda-9450-60f32c55bda4",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8057-b5d9-c0928ee0be54"
+  },
+  "created_time": "2026-06-12T04:03:00.000Z",
+  "last_edited_time": "2026-06-12T04:03:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_3",
+  "heading_3": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Step 6: Add a Direct Reply Node",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Step 6: Add a Direct Reply Node",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "4d862234-9add-4f79-bc19-c8fd49ce0f0c",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8057-b5d9-c0928ee0be54"
+  },
+  "created_time": "2026-06-12T04:03:00.000Z",
+  "last_edited_time": "2026-06-12T04:19:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "The Iteration Node provides a single output anchor that becomes active only after the nested sub-flow has completed execution for all items in the input array. Add a ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "The Iteration Node provides a single output anchor that becomes active only after the nested sub-flow has completed execution for all items in the input array. Add a ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "Direct Reply Node",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Direct Reply Node",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " after the Iteration Node output. In the Message field, type ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " after the Iteration Node output. In the Message field, type ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "{{",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": true,
+      "color": "default"
+     },
+     "plain_text": "{{",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " and select the Iteration Node's output variable. ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " and select the Iteration Node's output variable. ",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37d94183-19f3-8091-9ce0-e8d239279b38",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8057-b5d9-c0928ee0be54"
+  },
+  "created_time": "2026-06-12T04:19:00.000Z",
+  "last_edited_time": "2026-06-12T04:19:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "It should be {{iterationAgentflow_0}}. ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "It should be {{iterationAgentflow_0}}. ",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "e43163ff-aabb-4f49-898e-81e48e8a92df",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8057-b5d9-c0928ee0be54"
+  },
+  "created_time": "2026-06-12T04:03:00.000Z",
+  "last_edited_time": "2026-06-12T04:15:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Save the canvas. It should look like this when you are done.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Save the canvas. It should look like this when you are done.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "3bc94183-19f3-8093-a9f9-db41cf5c28bc",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8057-b5d9-c0928ee0be54"
+  },
+  "created_time": "2026-08-14T02:49:00.000Z",
+  "last_edited_time": "2026-09-01T12:26:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "image",
+  "image": {
+   "caption": [],
+   "type": "file",
+   "file": {
+    "url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/3a9085c4-df29-45e6-8bc7-6c9c0a25ea8c/93a07ddd-6d55-4705-b930-3904cbee1b75/image.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466ZA7BLC7I%2F20261022%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20261022T114625Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEKv%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJHMEUCIQDFXcNbJegIVT92q04StcdAvfwwFWgrUZ0wXipvmZM%2BXwIgfnjcRTXmIWmz5rljLLc%2Fb%2FSt3KxZY7QNEmJUHh0cEqMq%2FwMIdBAAGgw2Mzc0MjMxODM4MDUiDCj2djc%2FiqJKPFGwuyrcA41jqUbX4zNDVHjorXPcRR%2FAqH0%2B4mDYRmpiYJJUgWttuq3DK%2BO7EeQImDp4CvcyDyK4VysblBq88jXCzJpeGLMPMIK%2FaKEB64RvDgswTskzyDU%2B6odCR9UnsZHgjrRrwtHRgulrGqP28HByniBxFBWaIPeaDG4e6jswFy3oaOhdRVhRL%2B1z7hvQJJ2u5gQ%2BuxaWodpy3gz3gGonrlvEM1jSb0epwmtej4cmA8GJE2reywnTstp8fJHBzqxOJSHr5b%2F%2BAI37Ym3XVDRhoA%2BdWmQCeT3%2FsiWUnqtAI8NAAYodpvT5%2BqyF7fUZg4uk3y%2F8bRMAN11SVY0XUUtAeWFSaGBxr6q12ByoqLXOCdAbJHBcJr4UPM4HzIiGy%2FNmFIoJGcFTxh6eMcfp0V6%2Fw%2F%2F%2Fr9O%2BG%2B%2Bf%2BWgU2aCq5fGCubKKW7LUkwmyWUtZDIiGr6YJBE1NbGCvO%2Bhy04xs1orVbktO00D16GdFDm1WqhLKI9CWm3c%2FcroaKhmm3h%2BVoBCcMoMuQbLJl05ezd9PhvGeSTnRtb6VG4teQMXCxW0pL0D%2FldVBXjKqDlRuzJshWYsVl3GPeqa9qCdSrWB%2BZmjEGaSi%2FioniC7IqbXfLqUW2ywlEyx8xVxD2auCqLaIMLfJ59YGOqUBs9FwXZXCN7SgYx%2Fwz9dTO7C0x%2FQ7jBeQ1s57%2BPBjNGWeIMbq8VjLWnaQjm5JQ%2BjLk941FnDf4yiIsQklJqRJI2YthPFWDfehxZBVWbvZso%2BueET2Jw4RkQ4xA4JhwWcoi44dhzcTk0uO33kLZar%2F5UDOSE3rGwCj%2F3FvRfB0YqARsaYMNg1sj6oevxp34nRGIUufzdluo1RJ53MYcunC5TdeZvCo&X-Amz-Signature=8ee3117b4dd902cf95827f66e947c1b0d4dfc7ec8b498eb2c7b0c120b73b0875&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+    "expiry_time": "2026-10-22T12:46:25.679Z"
+   }
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "7d2a2481-dcfb-4f20-8384-ae4682eff946",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8057-b5d9-c0928ee0be54"
+  },
+  "created_time": "2026-06-12T04:03:00.000Z",
+  "last_edited_time": "2026-06-12T04:03:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_3",
+  "heading_3": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Step 7: Test",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Step 7: Test",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "577022ce-7d25-412a-924d-d55f636a1615",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8057-b5d9-c0928ee0be54"
+  },
+  "created_time": "2026-06-12T04:03:00.000Z",
+  "last_edited_time": "2026-06-12T04:19:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Open the chat interface and send: ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Open the chat interface and send: ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "Generate the weekly engagement briefing",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": true,
+      "color": "default"
+     },
+     "plain_text": "Generate the weekly engagement briefing",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "00f405af-0ebb-43a1-a701-e52b609e2873",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8057-b5d9-c0928ee0be54"
+  },
+  "created_time": "2026-06-12T04:03:00.000Z",
+  "last_edited_time": "2026-06-12T04:19:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Expected",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Expected",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": ": The Iteration Node processes all three engagement records, the LLM Node generates a one-sentence summary for each, and the Direct Reply Node returns all three summaries together.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": ": The Iteration Node processes all three engagement records, the LLM Node generates a one-sentence summary for each, and the Direct Reply Node returns all three summaries together.",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37d94183-19f3-8035-873a-d7287ff1fbf3",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8057-b5d9-c0928ee0be54"
+  },
+  "created_time": "2026-06-12T04:21:00.000Z",
+  "last_edited_time": "2026-06-12T04:21:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37d94183-19f3-800a-8e6f-c712c8881cdb",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8057-b5d9-c0928ee0be54"
+  },
+  "created_time": "2026-06-12T04:19:00.000Z",
+  "last_edited_time": "2026-06-15T12:45:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": true,
+  "in_trash": false,
+  "type": "callout",
+  "callout": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Takeaway: ",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Takeaway: ",
+     "href": null
+    }
+   ],
+   "icon": {
+    "type": "emoji",
+    "emoji": "\ud83d\udca1"
+   },
+   "color": "gray_background"
+  },
+  "archived": false,
+  "_children": [
+   {
+    "object": "block",
+    "id": "38094183-19f3-800b-beb0-d6c7f4c7c803",
+    "parent": {
+     "type": "block_id",
+     "block_id": "37d94183-19f3-800a-8e6f-c712c8881cdb"
+    },
+    "created_time": "2026-06-15T12:45:00.000Z",
+    "last_edited_time": "2026-06-15T12:45:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+     "rich_text": [
+      {
+       "type": "text",
+       "text": {
+        "content": "The Iteration Node handles collection processing that would otherwise require multiple manual queries or a custom scripted loop. The key design principle is that nodes inside the Iteration Node boundary execute per item while nodes outside execute once after all items are processed. Understanding this boundary is what makes the difference between a flow that processes a list correctly and one that processes only the first item or collapses all items into a single pass.",
+        "link": null
+       },
+       "annotations": {
+        "bold": false,
+        "italic": false,
+        "strikethrough": false,
+        "underline": false,
+        "code": false,
+        "color": "default"
+       },
+       "plain_text": "The Iteration Node handles collection processing that would otherwise require multiple manual queries or a custom scripted loop. The key design principle is that nodes inside the Iteration Node boundary execute per item while nodes outside execute once after all items are processed. Understanding this boundary is what makes the difference between a flow that processes a list correctly and one that processes only the first item or collapses all items into a single pass.",
+       "href": null
+      }
+     ],
+     "icon": null,
+     "color": "default"
+    },
+    "archived": false
+   }
+  ]
+ },
+ {
+  "object": "block",
+  "id": "37d94183-19f3-8063-bf9c-cd31ef756a8d",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8057-b5d9-c0928ee0be54"
+  },
+  "created_time": "2026-06-12T04:21:00.000Z",
+  "last_edited_time": "2026-06-12T04:21:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ }
+]

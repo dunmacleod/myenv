@@ -1,0 +1,4118 @@
+[
+ {
+  "object": "block",
+  "id": "0a294183-19f3-82e2-b41b-0104b91495e1",
+  "parent": {
+   "type": "page_id",
+   "page_id": "a7394183-19f3-82ba-b89c-81ce377a5b07"
+  },
+  "created_time": "2026-07-03T09:39:00.000Z",
+  "last_edited_time": "2026-07-04T10:34:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "callout",
+  "callout": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Was du hier baust, ist die Baseline f\u00fcr das Sprint-4-Projekt. Am Ende dieses Walkthroughs enth\u00e4lt dein Flowise-Workspace den arXiv-Agenten, den Sprint 4 erweitert, evaluiert und debuggt. Speichere den Workflow.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Was du hier baust, ist die Baseline f\u00fcr das Sprint-4-Projekt. Am Ende dieses Walkthroughs enth\u00e4lt dein Flowise-Workspace den arXiv-Agenten, den Sprint 4 erweitert, evaluiert und debuggt. Speichere den Workflow.",
+     "href": null
+    }
+   ],
+   "icon": {
+    "type": "emoji",
+    "emoji": "\ud83c\udfaf"
+   },
+   "color": "green_background"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "f49b6a68-55f6-483d-8921-3f54c4481981",
+  "parent": {
+   "type": "page_id",
+   "page_id": "a7394183-19f3-82ba-b89c-81ce377a5b07"
+  },
+  "created_time": "2026-07-04T10:34:00.000Z",
+  "last_edited_time": "2026-07-04T10:34:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Halcyon Labs m\u00f6chte das IT-Support-System, das du in Sprint 1 entworfen hast, jetzt um eine Research-Retrieval-F\u00e4higkeit erweitern: einen Agenten, der arXiv abfragt und Papers an interne Researcher zur\u00fcckgibt. In dieser Lektion baust du genau diese F\u00e4higkeit. Ab diesem Punkt wechselst du davon, Sofia beim Aufbau von Cascadias Support-Automatisierung als Lehrbeispiel zuzusehen, hin zum Bau deiner eigenen Projektabgabe \u2014 dem arXiv-Agenten, den Halcyon Labs braucht. Der arXiv-MCP-Server ist real und \u00f6ffentlich, seine API l\u00e4uft manchmal in Rate Limits oder Timeouts, und das Retrieve-then-Summarise-Pattern ist klein genug, um es in einem Walkthrough zu bauen, und real genug, um auf interessante Weise zu scheitern \u2014 genau die Bedingungen, f\u00fcr die die Resilienz-Patterns in diesem Sprint entworfen wurden.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Halcyon Labs m\u00f6chte das IT-Support-System, das du in Sprint 1 entworfen hast, jetzt um eine Research-Retrieval-F\u00e4higkeit erweitern: einen Agenten, der arXiv abfragt und Papers an interne Researcher zur\u00fcckgibt. In dieser Lektion baust du genau diese F\u00e4higkeit. Ab diesem Punkt wechselst du davon, Sofia beim Aufbau von Cascadias Support-Automatisierung als Lehrbeispiel zuzusehen, hin zum Bau deiner eigenen Projektabgabe \u2014 dem arXiv-Agenten, den Halcyon Labs braucht. Der arXiv-MCP-Server ist real und \u00f6ffentlich, seine API l\u00e4uft manchmal in Rate Limits oder Timeouts, und das Retrieve-then-Summarise-Pattern ist klein genug, um es in einem Walkthrough zu bauen, und real genug, um auf interessante Weise zu scheitern \u2014 genau die Bedingungen, f\u00fcr die die Resilienz-Patterns in diesem Sprint entworfen wurden.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "2acfa98a-1a32-4bf2-9d49-b1e61ecab1e4",
+  "parent": {
+   "type": "page_id",
+   "page_id": "a7394183-19f3-82ba-b89c-81ce377a5b07"
+  },
+  "created_time": "2026-07-04T10:34:00.000Z",
+  "last_edited_time": "2026-07-04T10:34:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Externe Tools antworten nicht immer erfolgreich. Ein MCP-Server kann durch Rate Limiting eingeschr\u00e4nkt, nicht verf\u00fcgbar oder langsam sein. In einem Agenten-Workflow soll nicht jeder tempor\u00e4re Fehler sofort zu einer fehlgeschlagenen User Experience werden. Ein Retry-Pattern gibt dem System eine zweite Chance, beh\u00e4lt aber trotzdem die Kontrolle dar\u00fcber, wie oft es versucht.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Externe Tools antworten nicht immer erfolgreich. Ein MCP-Server kann durch Rate Limiting eingeschr\u00e4nkt, nicht verf\u00fcgbar oder langsam sein. In einem Agenten-Workflow soll nicht jeder tempor\u00e4re Fehler sofort zu einer fehlgeschlagenen User Experience werden. Ein Retry-Pattern gibt dem System eine zweite Chance, beh\u00e4lt aber trotzdem die Kontrolle dar\u00fcber, wie oft es versucht.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "1d0b1f40-a9f4-4e3c-b59c-201325a2df10",
+  "parent": {
+   "type": "page_id",
+   "page_id": "a7394183-19f3-82ba-b89c-81ce377a5b07"
+  },
+  "created_time": "2026-07-05T23:26:00.000Z",
+  "last_edited_time": "2026-07-05T23:27:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Halcyon Labs m\u00f6chte das IT-Support-System aus Sprint 1 nun um eine ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Halcyon Labs m\u00f6chte das IT-Support-System aus Sprint 1 nun um eine ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "Recherche-Komponente",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Recherche-Komponente",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " erweitern: einen Agenten, der arXiv nach wissenschaftlichen Arbeiten durchsucht und die Ergebnisse an das interne Research-Team weitergibt. In dieser Lektion entwickelst du genau diese Funktion. Damit wechselst du von der passiven Rolle, in der du Sofia beim Aufbau von Cascadias Support-Automatisierung \u00fcber die Schulter geschaut hast, zur aktiven Umsetzung deiner eigenen Projektabgabe.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " erweitern: einen Agenten, der arXiv nach wissenschaftlichen Arbeiten durchsucht und die Ergebnisse an das interne Research-Team weitergibt. In dieser Lektion entwickelst du genau diese Funktion. Damit wechselst du von der passiven Rolle, in der du Sofia beim Aufbau von Cascadias Support-Automatisierung \u00fcber die Schulter geschaut hast, zur aktiven Umsetzung deiner eigenen Projektabgabe.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "7793f03f-b9c1-4963-b6b0-5a7d8f3c6c08",
+  "parent": {
+   "type": "page_id",
+   "page_id": "a7394183-19f3-82ba-b89c-81ce377a5b07"
+  },
+  "created_time": "2026-07-05T23:26:00.000Z",
+  "last_edited_time": "2026-07-05T23:27:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Der arXiv-MCP-Server ist real und \u00f6ffentlich zug\u00e4nglich; seine API st\u00f6\u00dft gelegentlich an Rate Limits oder l\u00e4uft in Timeouts. Das ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Der arXiv-MCP-Server ist real und \u00f6ffentlich zug\u00e4nglich; seine API st\u00f6\u00dft gelegentlich an Rate Limits oder l\u00e4uft in Timeouts. Das ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "Retrieve-then-Summarize",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": true,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Retrieve-then-Summarize",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "-Muster ist kompakt genug f\u00fcr einen angeleiteten Walkthrough, bietet aber gleichzeitig gen\u00fcgend Praxisn\u00e4he, um auf unerwartete Weise fehlzuschlagen. Das sind exakt die Bedingungen, f\u00fcr die die ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "-Muster ist kompakt genug f\u00fcr einen angeleiteten Walkthrough, bietet aber gleichzeitig gen\u00fcgend Praxisn\u00e4he, um auf unerwartete Weise fehlzuschlagen. Das sind exakt die Bedingungen, f\u00fcr die die ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "Resilienz-Muster dieses Sprints",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Resilienz-Muster dieses Sprints",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " konzipiert wurden. Externe Tools antworten schlie\u00dflich nicht immer zuverl\u00e4ssig. Ein MCP-Server kann gedrosselt, tempor\u00e4r nicht verf\u00fcgbar oder schlicht langsam sein. Innerhalb eines Agenten-Workflows sollte ein solcher vor\u00fcbergehender Fehler jedoch nicht sofort das gesamte Nutzererlebnis ruinieren. Ein Retry-Muster erm\u00f6glicht dem System einen automatischen Neustart, beh\u00e4lt dabei aber stets die strikte Kontrolle \u00fcber die Anzahl der Versuche.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " konzipiert wurden. Externe Tools antworten schlie\u00dflich nicht immer zuverl\u00e4ssig. Ein MCP-Server kann gedrosselt, tempor\u00e4r nicht verf\u00fcgbar oder schlicht langsam sein. Innerhalb eines Agenten-Workflows sollte ein solcher vor\u00fcbergehender Fehler jedoch nicht sofort das gesamte Nutzererlebnis ruinieren. Ein Retry-Muster erm\u00f6glicht dem System einen automatischen Neustart, beh\u00e4lt dabei aber stets die strikte Kontrolle \u00fcber die Anzahl der Versuche.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "f9199a87-f695-4bc2-9ebf-8f97a7640d94",
+  "parent": {
+   "type": "page_id",
+   "page_id": "a7394183-19f3-82ba-b89c-81ce377a5b07"
+  },
+  "created_time": "2026-07-04T10:34:00.000Z",
+  "last_edited_time": "2026-07-04T10:34:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_2",
+  "heading_2": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Was du baust",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Was du baust",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "5994e290-e4df-467d-acbb-4c8dd23c6142",
+  "parent": {
+   "type": "page_id",
+   "page_id": "a7394183-19f3-82ba-b89c-81ce377a5b07"
+  },
+  "created_time": "2026-07-04T10:34:00.000Z",
+  "last_edited_time": "2026-07-04T10:34:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "In diesem Walkthrough baust du einen ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "In diesem Walkthrough baust du einen ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "arXiv-Research-Agenten",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "arXiv-Research-Agenten",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": ", der versucht, wissenschaftliche Papers \u00fcber ein arXiv-MCP-Tool zu suchen.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": ", der versucht, wissenschaftliche Papers \u00fcber ein arXiv-MCP-Tool zu suchen.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "ff1ffc3c-a577-44ba-8981-371ece43fc72",
+  "parent": {
+   "type": "page_id",
+   "page_id": "a7394183-19f3-82ba-b89c-81ce377a5b07"
+  },
+  "created_time": "2026-07-04T10:34:00.000Z",
+  "last_edited_time": "2026-07-04T10:34:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Der Workflow wird:",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Der Workflow wird:",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "41f58845-c46f-4ee0-a520-fb0670c154a0",
+  "parent": {
+   "type": "page_id",
+   "page_id": "a7394183-19f3-82ba-b89c-81ce377a5b07"
+  },
+  "created_time": "2026-07-04T10:34:00.000Z",
+  "last_edited_time": "2026-07-04T10:34:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "numbered_list_item",
+  "numbered_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "eine User-Anfrage erhalten.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "eine User-Anfrage erhalten.",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "725c3235-b920-4d43-8e30-006e81eef3d8",
+  "parent": {
+   "type": "page_id",
+   "page_id": "a7394183-19f3-82ba-b89c-81ce377a5b07"
+  },
+  "created_time": "2026-07-04T10:34:00.000Z",
+  "last_edited_time": "2026-07-04T10:34:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "numbered_list_item",
+  "numbered_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "den arXiv-Agenten bitten, nach Papers zu suchen.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "den arXiv-Agenten bitten, nach Papers zu suchen.",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "e74ccf4c-1122-402b-b55e-3495ccb15d4a",
+  "parent": {
+   "type": "page_id",
+   "page_id": "a7394183-19f3-82ba-b89c-81ce377a5b07"
+  },
+  "created_time": "2026-07-04T10:34:00.000Z",
+  "last_edited_time": "2026-07-04T10:34:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "numbered_list_item",
+  "numbered_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "den Agenten-Output auf tempor\u00e4re Fehlersignale parsen.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "den Agenten-Output auf tempor\u00e4re Fehlersignale parsen.",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "176f254b-d108-4cde-804b-036ed4d92016",
+  "parent": {
+   "type": "page_id",
+   "page_id": "a7394183-19f3-82ba-b89c-81ce377a5b07"
+  },
+  "created_time": "2026-07-04T10:34:00.000Z",
+  "last_edited_time": "2026-07-04T10:34:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "numbered_list_item",
+  "numbered_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "wenn die Suche funktioniert hat, das Ergebnis an den User zur\u00fcckgeben.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "wenn die Suche funktioniert hat, das Ergebnis an den User zur\u00fcckgeben.",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "803bfad3-18b3-45ba-9dc9-9ae8da1b1e3f",
+  "parent": {
+   "type": "page_id",
+   "page_id": "a7394183-19f3-82ba-b89c-81ce377a5b07"
+  },
+  "created_time": "2026-07-04T10:34:00.000Z",
+  "last_edited_time": "2026-07-04T10:34:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "numbered_list_item",
+  "numbered_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "wenn die Suche auf einen tempor\u00e4ren Fehler st\u00f6\u00dft, denselben Schritt erneut versuchen.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "wenn die Suche auf einen tempor\u00e4ren Fehler st\u00f6\u00dft, denselben Schritt erneut versuchen.",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "dc031975-d3aa-4783-ab13-f9b36b6b1a4f",
+  "parent": {
+   "type": "page_id",
+   "page_id": "a7394183-19f3-82ba-b89c-81ce377a5b07"
+  },
+  "created_time": "2026-07-04T10:34:00.000Z",
+  "last_edited_time": "2026-07-04T10:34:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "numbered_list_item",
+  "numbered_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "nach Erreichen der maximalen Loop-Anzahl mit den Retries aufh\u00f6ren.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "nach Erreichen der maximalen Loop-Anzahl mit den Retries aufh\u00f6ren.",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "e00e99f9-8961-426c-ac2f-f024bd84bf38",
+  "parent": {
+   "type": "page_id",
+   "page_id": "a7394183-19f3-82ba-b89c-81ce377a5b07"
+  },
+  "created_time": "2026-07-04T10:34:00.000Z",
+  "last_edited_time": "2026-07-04T10:34:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "numbered_list_item",
+  "numbered_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "eine Fallback-Antwort hinzuf\u00fcgen.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "eine Fallback-Antwort hinzuf\u00fcgen.",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "afec146a-b4be-4e62-a1ad-c287bf19b9d2",
+  "parent": {
+   "type": "page_id",
+   "page_id": "a7394183-19f3-82ba-b89c-81ce377a5b07"
+  },
+  "created_time": "2026-07-04T10:34:00.000Z",
+  "last_edited_time": "2026-07-04T10:34:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_1",
+  "heading_1": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Workflow-Struktur",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Workflow-Struktur",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "d4e94183-19f3-8287-bd5b-81083e2e230b",
+  "parent": {
+   "type": "page_id",
+   "page_id": "a7394183-19f3-82ba-b89c-81ce377a5b07"
+  },
+  "created_time": "2026-07-03T09:39:00.000Z",
+  "last_edited_time": "2026-07-03T09:39:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "code",
+  "code": {
+   "caption": [],
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Start\n  \u2193\nArxiv MCP Engine\n  \u2193\nParse Status & Errors\n  \u2193\nEvaluate Network State\n  \u251c\u2500\u2500 To_User_Chat \u2192 Direct Reply\n  \u2514\u2500\u2500 Trigger_Loop \u2192 Retry Counter Loop\n                          \u2502\n                          \u251c\u2500\u2500 Retry Available \u2192 Arxiv MCP Engine\n                          \u2502\n                          \u2514\u2500\u2500 Max Retries Reached \u2192 Fallback Reply",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Start\n  \u2193\nArxiv MCP Engine\n  \u2193\nParse Status & Errors\n  \u2193\nEvaluate Network State\n  \u251c\u2500\u2500 To_User_Chat \u2192 Direct Reply\n  \u2514\u2500\u2500 Trigger_Loop \u2192 Retry Counter Loop\n                          \u2502\n                          \u251c\u2500\u2500 Retry Available \u2192 Arxiv MCP Engine\n                          \u2502\n                          \u2514\u2500\u2500 Max Retries Reached \u2192 Fallback Reply",
+     "href": null
+    }
+   ],
+   "language": "plain text"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "bee94183-19f3-8295-86af-815294c3000f",
+  "parent": {
+   "type": "page_id",
+   "page_id": "a7394183-19f3-82ba-b89c-81ce377a5b07"
+  },
+  "created_time": "2026-07-03T09:39:00.000Z",
+  "last_edited_time": "2026-07-03T09:39:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "callout",
+  "callout": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Die wichtige Idee ist, dass der Workflow nicht jeden Fehler blind erneut versucht. Er versucht nur dann erneut, wenn der geparste Output auf ein tempor\u00e4res Problem hindeutet, zum Beispiel ein Rate Limit oder Service-Nichtverf\u00fcgbarkeit.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Die wichtige Idee ist, dass der Workflow nicht jeden Fehler blind erneut versucht. Er versucht nur dann erneut, wenn der geparste Output auf ein tempor\u00e4res Problem hindeutet, zum Beispiel ein Rate Limit oder Service-Nichtverf\u00fcgbarkeit.",
+     "href": null
+    }
+   ],
+   "icon": {
+    "type": "emoji",
+    "emoji": "\u261d"
+   },
+   "color": "blue_background"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "1db94183-19f3-8256-bd5a-810c364c41f0",
+  "parent": {
+   "type": "page_id",
+   "page_id": "a7394183-19f3-82ba-b89c-81ce377a5b07"
+  },
+  "created_time": "2026-07-03T09:39:00.000Z",
+  "last_edited_time": "2026-07-04T10:34:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_2",
+  "heading_2": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Schritt 1: Den arXiv-Agenten erstellen",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Schritt 1: Den arXiv-Agenten erstellen",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "2749aa8d-434a-4f04-bc61-428a7c187bf1",
+  "parent": {
+   "type": "page_id",
+   "page_id": "a7394183-19f3-82ba-b89c-81ce377a5b07"
+  },
+  "created_time": "2026-07-04T10:34:00.000Z",
+  "last_edited_time": "2026-07-04T10:34:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Erstelle im Agentflows-Tab ein neues Arbeitsblatt und nenne es ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Erstelle im Agentflows-Tab ein neues Arbeitsblatt und nenne es ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "Arxiv Agent",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Arxiv Agent",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": ".",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": ".",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "8a101496-091f-4dfc-bf54-af85ecf5accd",
+  "parent": {
+   "type": "page_id",
+   "page_id": "a7394183-19f3-82ba-b89c-81ce377a5b07"
+  },
+  "created_time": "2026-07-04T10:34:00.000Z",
+  "last_edited_time": "2026-07-04T10:34:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Erstelle einen Agent Node namens ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Erstelle einen Agent Node namens ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "Arxiv MCP Engine",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": true,
+      "color": "default"
+     },
+     "plain_text": "Arxiv MCP Engine",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": ".",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": ".",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "59678376-244c-4b70-9f95-d36ea623ce79",
+  "parent": {
+   "type": "page_id",
+   "page_id": "a7394183-19f3-82ba-b89c-81ce377a5b07"
+  },
+  "created_time": "2026-07-04T10:34:00.000Z",
+  "last_edited_time": "2026-07-04T10:34:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Nutze das Modell Gemini Flash Lite und verbinde das arXiv-MCP-Tool.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Nutze das Modell Gemini Flash Lite und verbinde das arXiv-MCP-Tool.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "20a45f5a-5173-45cf-92e8-44a713bfad33",
+  "parent": {
+   "type": "page_id",
+   "page_id": "a7394183-19f3-82ba-b89c-81ce377a5b07"
+  },
+  "created_time": "2026-07-04T10:34:00.000Z",
+  "last_edited_time": "2026-07-04T10:34:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Die Aufgabe des Agenten ist einfach: arXiv durchsuchen und n\u00fctzliche Paper-Informationen an den User zur\u00fcckgeben.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Die Aufgabe des Agenten ist einfach: arXiv durchsuchen und n\u00fctzliche Paper-Informationen an den User zur\u00fcckgeben.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "f25def95-d7e5-430e-9685-a2a779a4e689",
+  "parent": {
+   "type": "page_id",
+   "page_id": "a7394183-19f3-82ba-b89c-81ce377a5b07"
+  },
+  "created_time": "2026-07-04T10:34:00.000Z",
+  "last_edited_time": "2026-07-04T10:34:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "F\u00fcge einen System-Prompt hinzu:",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "F\u00fcge einen System-Prompt hinzu:",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "e8294183-19f3-824e-9f7e-016ff68b303c",
+  "parent": {
+   "type": "page_id",
+   "page_id": "a7394183-19f3-82ba-b89c-81ce377a5b07"
+  },
+  "created_time": "2026-07-03T09:39:00.000Z",
+  "last_edited_time": "2026-07-03T09:39:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "code",
+  "code": {
+   "caption": [],
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "You are an expert Research Assistant Agent specializing in fetching, analyzing, and synthesizing scientific papers from arXiv using the provided Model Context Protocol (MCP) tools.\n\nYour primary objective is to answer user queries with accurate, up-to-date academic context.\n\nOPERATIONAL INSTRUCTIONS:\n\n\nAlways translate the user's research query into precise, well-formatted keywords before calling the search_papers or get_details tools.\n\nIf a query returns multiple papers, select the most relevant ones and synthesize their findings. Do not just list them blindly.\n\nCRITICAL: TRANSIENT ERROR & RATE LIMIT HANDLING:\n\nThe arXiv API enforces strict rate limits. If you receive an error message from a tool execution containing \"429\", \"Rate Limit\", \"Too Many Requests\", or \"503 Service Unavailable\", you must immediately stop trying alternative tools and output the exact phrase: \"Error: 429 Rate limit exceeded by arXiv.\" \n\nDo not attempt to guess or hallucinate data if a tool fails. Outputting this exact error string allows the orchestration system to safely trigger a workflow retry loop on your behalf.\n\nFINAL ANSWER FORMATTING rules:\n\nWhen presenting the final answer to the user, DO NOT output raw JSON, tool parameters, or programming code.\nWrite your response in clear, concise, professional academic markdown.\nStructure your answer with clear headings, bullet points for key findings, and include the paper titles alongside their authors and publication years.\n\n",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "You are an expert Research Assistant Agent specializing in fetching, analyzing, and synthesizing scientific papers from arXiv using the provided Model Context Protocol (MCP) tools.\n\nYour primary objective is to answer user queries with accurate, up-to-date academic context.\n\nOPERATIONAL INSTRUCTIONS:\n\n\nAlways translate the user's research query into precise, well-formatted keywords before calling the search_papers or get_details tools.\n\nIf a query returns multiple papers, select the most relevant ones and synthesize their findings. Do not just list them blindly.\n\nCRITICAL: TRANSIENT ERROR & RATE LIMIT HANDLING:\n\nThe arXiv API enforces strict rate limits. If you receive an error message from a tool execution containing \"429\", \"Rate Limit\", \"Too Many Requests\", or \"503 Service Unavailable\", you must immediately stop trying alternative tools and output the exact phrase: \"Error: 429 Rate limit exceeded by arXiv.\" \n\nDo not attempt to guess or hallucinate data if a tool fails. Outputting this exact error string allows the orchestration system to safely trigger a workflow retry loop on your behalf.\n\nFINAL ANSWER FORMATTING rules:\n\nWhen presenting the final answer to the user, DO NOT output raw JSON, tool parameters, or programming code.\nWrite your response in clear, concise, professional academic markdown.\nStructure your answer with clear headings, bullet points for key findings, and include the paper titles alongside their authors and publication years.\n\n",
+     "href": null
+    }
+   ],
+   "language": "plain text"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "25a94183-19f3-8208-990a-017334a4ad17",
+  "parent": {
+   "type": "page_id",
+   "page_id": "a7394183-19f3-82ba-b89c-81ce377a5b07"
+  },
+  "created_time": "2026-07-03T09:39:00.000Z",
+  "last_edited_time": "2026-07-03T09:39:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "image",
+  "image": {
+   "caption": [],
+   "type": "file",
+   "file": {
+    "url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/3a9085c4-df29-45e6-8bc7-6c9c0a25ea8c/dbb89dcd-e873-4f64-99d2-86a092f5558e/image.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466ZB4QYRJQ%2F20261022%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20261022T121128Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEKv%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJGMEQCIExa7dl8cPXBh%2FR0F2yRUIZG0DW9VOBoNOiolhOb8hOBAiA1o3phCdFoZRJydajerE2WlapW7eY46thzZVm0EXdNNyr%2FAwhzEAAaDDYzNzQyMzE4MzgwNSIM%2BPD%2BqZqSWBYomk3UKtwDBm0dWq3fxqgNV1Y5TWm32DJ4vCLm41NON6yXB16M4ANg1P405h5hPLNQeYeydyyEq0UrdYghARAz%2Fjc3pfFgvirr0UozezTEBceM4p%2FXJim6d%2FjwqdM%2FU29c7LNGUxG7HKVeRktHHdi5%2FaSj9zAzmt8CcQZ0hGrJY3jx29ujS2y1yqOtQygcTqvWkvvNrQaqjg3GKySl%2BxDKaYiaIg2ZuDM2yjtbhiw5h6a4ine76W%2FmUZkDu%2BACyL0%2FsUW0noSJmp0tSsnVbALINCfQA7gbsVbu7BdH4h8RzzcmvbAGipij2YHxTosk7VxyxraWwq%2FLGneaNHHG3dXgFtCuj2auT1ywXqOZAOj%2BGYgJOL7mNkqdyJdxZyTGFyDMxVGaNnBEWUXjQocZT6dRQao8AudEk5agp8FPvQgVk8RmloLmf8fSGnpWDStb0zioHCJhZjg1waK%2BrYDmqEbLAz%2BK4EHk%2F9G76bmoXKoLgBB7V77%2BhwBrIpldV5KT0n5gYW%2BMz5nMY1eLKskIQWNXIkmdiObxSrt7K6KUD6H81D%2BaDim8xhs73UEDd6A7mzoEwFts6gIGY0kUq2QKc%2FzAOI0R1Ev08ELs1fD39Eu7ooxeRdVnDJC8D79dNqn6w76yAbEwyMnn1gY6pgFhyyUJlDwXxt59R23MkJIfchMZG91979uuxX0jALoS%2FfjbQ9GDhQCDHRkCP%2BRUJCsGUUUCjBLPtMlcvGNlbYSjRsn4wrcRgRcaHEQOHsVPDQQj1gZbi7TIMtcL8eWmzOoHPQmEzxYgnz3z1UIxfrYqnfEzIkgiQoLfpg8mT7XBIvKeliA3yW0gQTll0UXyF5tXmYt%2FxgikgdRsFZhXjTjj7xXyzrrX&X-Amz-Signature=366641ff6ba9e66830c37fb8e6ebb4167579efb2284c192251c670dbb9ec7049&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+    "expiry_time": "2026-10-22T13:11:28.782Z"
+   }
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "32394183-19f3-83d2-8ff0-015c15d8ca41",
+  "parent": {
+   "type": "page_id",
+   "page_id": "a7394183-19f3-82ba-b89c-81ce377a5b07"
+  },
+  "created_time": "2026-07-03T09:39:00.000Z",
+  "last_edited_time": "2026-07-04T10:35:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_1",
+  "heading_1": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Schritt 2: Eine Parser-Funktion hinzuf\u00fcgen",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Schritt 2: Eine Parser-Funktion hinzuf\u00fcgen",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "c17ccc0d-93a3-4d36-8614-bd1c563930a1",
+  "parent": {
+   "type": "page_id",
+   "page_id": "a7394183-19f3-82ba-b89c-81ce377a5b07"
+  },
+  "created_time": "2026-07-04T10:35:00.000Z",
+  "last_edited_time": "2026-07-04T10:35:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "F\u00fcge nach dem arXiv-Agenten einen Custom Function Node hinzu.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "F\u00fcge nach dem arXiv-Agenten einen Custom Function Node hinzu.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "4e2813b8-ab02-4331-8990-f5b212a80112",
+  "parent": {
+   "type": "page_id",
+   "page_id": "a7394183-19f3-82ba-b89c-81ce377a5b07"
+  },
+  "created_time": "2026-07-04T10:35:00.000Z",
+  "last_edited_time": "2026-07-04T10:35:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Nenne ihn ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Nenne ihn ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "Parse Status & Errors",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": true,
+      "color": "default"
+     },
+     "plain_text": "Parse Status & Errors",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "d3e94183-19f3-838d-991b-8120bc0fef5c",
+  "parent": {
+   "type": "page_id",
+   "page_id": "a7394183-19f3-82ba-b89c-81ce377a5b07"
+  },
+  "created_time": "2026-07-03T09:39:00.000Z",
+  "last_edited_time": "2026-07-03T09:39:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "// Grab the textual response from the agent trying to query arXiv\nconst assistantResponse = $input.text || \"\";",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "// Grab the textual response from the agent trying to query arXiv\nconst assistantResponse = $input.text || \"\";",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "d1894183-19f3-8218-b730-01cc547596d1",
+  "parent": {
+   "type": "page_id",
+   "page_id": "a7394183-19f3-82ba-b89c-81ce377a5b07"
+  },
+  "created_time": "2026-07-03T09:39:00.000Z",
+  "last_edited_time": "2026-07-03T09:39:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "// Detect if arXiv rate-limited the agent or dropped the connection\nif (assistantResponse.includes(\"429\") ||\nassistantResponse.includes(\"Rate limit\") ||\nassistantResponse.includes(\"503 Service Unavailable\")) {",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "// Detect if arXiv rate-limited the agent or dropped the connection\nif (assistantResponse.includes(\"429\") ||\nassistantResponse.includes(\"Rate limit\") ||\nassistantResponse.includes(\"503 Service Unavailable\")) {",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "d2a94183-19f3-8309-86db-0163078d13de",
+  "parent": {
+   "type": "page_id",
+   "page_id": "a7394183-19f3-82ba-b89c-81ce377a5b07"
+  },
+  "created_time": "2026-07-03T09:39:00.000Z",
+  "last_edited_time": "2026-07-03T09:39:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "code",
+  "code": {
+   "caption": [],
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "return \"Trigger_Loop\"; // Matches the path leading to the Loop Node",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "return \"Trigger_Loop\"; // Matches the path leading to the Loop Node",
+     "href": null
+    }
+   ],
+   "language": "plain text"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "dc094183-19f3-8369-8bb3-01ae9d1a5149",
+  "parent": {
+   "type": "page_id",
+   "page_id": "a7394183-19f3-82ba-b89c-81ce377a5b07"
+  },
+  "created_time": "2026-07-03T09:39:00.000Z",
+  "last_edited_time": "2026-07-03T09:39:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "} else {\nreturn \"To_User_Chat\"; // Matches the path completing the workflow\n}",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "} else {\nreturn \"To_User_Chat\"; // Matches the path completing the workflow\n}",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "7bb94183-19f3-8364-9e05-01f4c65891ec",
+  "parent": {
+   "type": "page_id",
+   "page_id": "a7394183-19f3-82ba-b89c-81ce377a5b07"
+  },
+  "created_time": "2026-07-03T09:39:00.000Z",
+  "last_edited_time": "2026-07-03T09:39:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "image",
+  "image": {
+   "caption": [],
+   "type": "file",
+   "file": {
+    "url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/3a9085c4-df29-45e6-8bc7-6c9c0a25ea8c/86933c67-da38-4cad-812b-8854f791e9f5/image.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466ZB4QYRJQ%2F20261022%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20261022T121128Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEKv%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJGMEQCIExa7dl8cPXBh%2FR0F2yRUIZG0DW9VOBoNOiolhOb8hOBAiA1o3phCdFoZRJydajerE2WlapW7eY46thzZVm0EXdNNyr%2FAwhzEAAaDDYzNzQyMzE4MzgwNSIM%2BPD%2BqZqSWBYomk3UKtwDBm0dWq3fxqgNV1Y5TWm32DJ4vCLm41NON6yXB16M4ANg1P405h5hPLNQeYeydyyEq0UrdYghARAz%2Fjc3pfFgvirr0UozezTEBceM4p%2FXJim6d%2FjwqdM%2FU29c7LNGUxG7HKVeRktHHdi5%2FaSj9zAzmt8CcQZ0hGrJY3jx29ujS2y1yqOtQygcTqvWkvvNrQaqjg3GKySl%2BxDKaYiaIg2ZuDM2yjtbhiw5h6a4ine76W%2FmUZkDu%2BACyL0%2FsUW0noSJmp0tSsnVbALINCfQA7gbsVbu7BdH4h8RzzcmvbAGipij2YHxTosk7VxyxraWwq%2FLGneaNHHG3dXgFtCuj2auT1ywXqOZAOj%2BGYgJOL7mNkqdyJdxZyTGFyDMxVGaNnBEWUXjQocZT6dRQao8AudEk5agp8FPvQgVk8RmloLmf8fSGnpWDStb0zioHCJhZjg1waK%2BrYDmqEbLAz%2BK4EHk%2F9G76bmoXKoLgBB7V77%2BhwBrIpldV5KT0n5gYW%2BMz5nMY1eLKskIQWNXIkmdiObxSrt7K6KUD6H81D%2BaDim8xhs73UEDd6A7mzoEwFts6gIGY0kUq2QKc%2FzAOI0R1Ev08ELs1fD39Eu7ooxeRdVnDJC8D79dNqn6w76yAbEwyMnn1gY6pgFhyyUJlDwXxt59R23MkJIfchMZG91979uuxX0jALoS%2FfjbQ9GDhQCDHRkCP%2BRUJCsGUUUCjBLPtMlcvGNlbYSjRsn4wrcRgRcaHEQOHsVPDQQj1gZbi7TIMtcL8eWmzOoHPQmEzxYgnz3z1UIxfrYqnfEzIkgiQoLfpg8mT7XBIvKeliA3yW0gQTll0UXyF5tXmYt%2FxgikgdRsFZhXjTjj7xXyzrrX&X-Amz-Signature=eb389e45f8632ce146bc9133e8cec4f806dad4e90979fc19984324058fd6cfdf&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+    "expiry_time": "2026-10-22T13:11:28.782Z"
+   }
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "30f94183-19f3-839f-8af7-8113e3e49ab7",
+  "parent": {
+   "type": "page_id",
+   "page_id": "a7394183-19f3-82ba-b89c-81ce377a5b07"
+  },
+  "created_time": "2026-07-03T09:39:00.000Z",
+  "last_edited_time": "2026-07-04T10:35:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Nutze diese Funktion:",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Nutze diese Funktion:",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "f8a94183-19f3-83f0-8c7f-8150802d6fc2",
+  "parent": {
+   "type": "page_id",
+   "page_id": "a7394183-19f3-82ba-b89c-81ce377a5b07"
+  },
+  "created_time": "2026-07-03T09:39:00.000Z",
+  "last_edited_time": "2026-07-03T09:39:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "code",
+  "code": {
+   "caption": [],
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "// Grab the textual response from the agent trying to query arXiv\nconst assistantResponse = $input.text || \"\";\n\n// Detect if arXiv rate-limited the agent or dropped the connection\nif (assistantResponse.includes(\"429\") || \n    assistantResponse.includes(\"Rate limit\") || \n    assistantResponse.includes(\"503 Service Unavailable\")) {\n    \n    return \"Trigger_Loop\"; // Matches the path leading to the Loop Node\n} else {\n    return \"To_User_Chat\"; // Matches the path completing the workflow\n}",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "// Grab the textual response from the agent trying to query arXiv\nconst assistantResponse = $input.text || \"\";\n\n// Detect if arXiv rate-limited the agent or dropped the connection\nif (assistantResponse.includes(\"429\") || \n    assistantResponse.includes(\"Rate limit\") || \n    assistantResponse.includes(\"503 Service Unavailable\")) {\n    \n    return \"Trigger_Loop\"; // Matches the path leading to the Loop Node\n} else {\n    return \"To_User_Chat\"; // Matches the path completing the workflow\n}",
+     "href": null
+    }
+   ],
+   "language": "javascript"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "80922802-ef20-4aff-a9c5-a0b1ed985039",
+  "parent": {
+   "type": "page_id",
+   "page_id": "a7394183-19f3-82ba-b89c-81ce377a5b07"
+  },
+  "created_time": "2026-07-04T10:35:00.000Z",
+  "last_edited_time": "2026-07-04T10:35:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Diese Funktion wandelt eine un\u00fcbersichtliche Agentenantwort in eine klare Routing-Entscheidung um. In diesem Beispiel pr\u00fcfen wir auf tempor\u00e4re Servicefehler, die sich oft von selbst erholen. Konkret suchen wir nach ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Diese Funktion wandelt eine un\u00fcbersichtliche Agentenantwort in eine klare Routing-Entscheidung um. In diesem Beispiel pr\u00fcfen wir auf tempor\u00e4re Servicefehler, die sich oft von selbst erholen. Konkret suchen wir nach ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "429 (Too Many Requests)",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "429 (Too Many Requests)",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": ", was darauf hinweist, dass ein Rate Limit erreicht wurde, nach ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": ", was darauf hinweist, dass ein Rate Limit erreicht wurde, nach ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "\u201eRate limit\u201c",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "\u201eRate limit\u201c",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "-Nachrichten, die vom Tool oder Modell zur\u00fcckgegeben werden, und nach ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "-Nachrichten, die vom Tool oder Modell zur\u00fcckgegeben werden, und nach ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "503 Service Unavailable",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "503 Service Unavailable",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": ", was bedeutet, dass der Service vor\u00fcbergehend keine Anfragen verarbeiten kann. Diese Fehler sind gute Kandidaten f\u00fcr Retries, weil ein zweiter oder dritter Versuch erfolgreich sein kann, sobald der tempor\u00e4re Zustand vorbei ist.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": ", was bedeutet, dass der Service vor\u00fcbergehend keine Anfragen verarbeiten kann. Diese Fehler sind gute Kandidaten f\u00fcr Retries, weil ein zweiter oder dritter Versuch erfolgreich sein kann, sobald der tempor\u00e4re Zustand vorbei ist.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "73ef8046-3aff-46ba-a0bc-ffbfab5c32c2",
+  "parent": {
+   "type": "page_id",
+   "page_id": "a7394183-19f3-82ba-b89c-81ce377a5b07"
+  },
+  "created_time": "2026-07-04T10:35:00.000Z",
+  "last_edited_time": "2026-07-04T10:35:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Die Funktion l\u00f6st das Problem nicht selbst. Sie beantwortet nur:",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Die Funktion l\u00f6st das Problem nicht selbst. Sie beantwortet nur:",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "f5efb9f7-f987-468f-9389-8fd84b4d2249",
+  "parent": {
+   "type": "page_id",
+   "page_id": "a7394183-19f3-82ba-b89c-81ce377a5b07"
+  },
+  "created_time": "2026-07-04T10:35:00.000Z",
+  "last_edited_time": "2026-07-04T10:35:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "quote",
+  "quote": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Sollen wir es erneut versuchen, oder sollen wir das Ergebnis an den User zur\u00fcckgeben?",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Sollen wir es erneut versuchen, oder sollen wir das Ergebnis an den User zur\u00fcckgeben?",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "1bd321dd-6533-4ad7-888a-7ddf278f7f45",
+  "parent": {
+   "type": "page_id",
+   "page_id": "a7394183-19f3-82ba-b89c-81ce377a5b07"
+  },
+  "created_time": "2026-07-04T10:35:00.000Z",
+  "last_edited_time": "2026-07-04T10:35:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Sie stellt also zwei Outputs bereit: ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Sie stellt also zwei Outputs bereit: ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "Trigger_Loop",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": true,
+      "color": "default"
+     },
+     "plain_text": "Trigger_Loop",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": ", falls etwas kaputt war, oder ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": ", falls etwas kaputt war, oder ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "To_User_Chat",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": true,
+      "color": "default"
+     },
+     "plain_text": "To_User_Chat",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": ", falls die Ausf\u00fchrung des Agenten gesund war.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": ", falls die Ausf\u00fchrung des Agenten gesund war.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "85d6d5a5-3c4e-489b-8e7a-cba4025c810b",
+  "parent": {
+   "type": "page_id",
+   "page_id": "a7394183-19f3-82ba-b89c-81ce377a5b07"
+  },
+  "created_time": "2026-07-04T10:35:00.000Z",
+  "last_edited_time": "2026-07-04T10:35:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_1",
+  "heading_1": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Schritt 3: Den Condition Node hinzuf\u00fcgen",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Schritt 3: Den Condition Node hinzuf\u00fcgen",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "1fb32c59-1bae-4876-81fb-79c54ee3fa05",
+  "parent": {
+   "type": "page_id",
+   "page_id": "a7394183-19f3-82ba-b89c-81ce377a5b07"
+  },
+  "created_time": "2026-07-04T10:35:00.000Z",
+  "last_edited_time": "2026-07-04T10:35:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "F\u00fcge einen Condition Node namens ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "F\u00fcge einen Condition Node namens ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "Evaluate Network State",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": true,
+      "color": "default"
+     },
+     "plain_text": "Evaluate Network State",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " hinzu.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " hinzu.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "9f994183-19f3-825e-9b80-81a9e0fb6bf2",
+  "parent": {
+   "type": "page_id",
+   "page_id": "a7394183-19f3-82ba-b89c-81ce377a5b07"
+  },
+  "created_time": "2026-07-03T09:39:00.000Z",
+  "last_edited_time": "2026-07-03T09:39:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "image",
+  "image": {
+   "caption": [],
+   "type": "file",
+   "file": {
+    "url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/3a9085c4-df29-45e6-8bc7-6c9c0a25ea8c/27126e2f-69de-4d8f-8d0d-f8a2bd953a2c/image.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466ZB4QYRJQ%2F20261022%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20261022T121128Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEKv%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJGMEQCIExa7dl8cPXBh%2FR0F2yRUIZG0DW9VOBoNOiolhOb8hOBAiA1o3phCdFoZRJydajerE2WlapW7eY46thzZVm0EXdNNyr%2FAwhzEAAaDDYzNzQyMzE4MzgwNSIM%2BPD%2BqZqSWBYomk3UKtwDBm0dWq3fxqgNV1Y5TWm32DJ4vCLm41NON6yXB16M4ANg1P405h5hPLNQeYeydyyEq0UrdYghARAz%2Fjc3pfFgvirr0UozezTEBceM4p%2FXJim6d%2FjwqdM%2FU29c7LNGUxG7HKVeRktHHdi5%2FaSj9zAzmt8CcQZ0hGrJY3jx29ujS2y1yqOtQygcTqvWkvvNrQaqjg3GKySl%2BxDKaYiaIg2ZuDM2yjtbhiw5h6a4ine76W%2FmUZkDu%2BACyL0%2FsUW0noSJmp0tSsnVbALINCfQA7gbsVbu7BdH4h8RzzcmvbAGipij2YHxTosk7VxyxraWwq%2FLGneaNHHG3dXgFtCuj2auT1ywXqOZAOj%2BGYgJOL7mNkqdyJdxZyTGFyDMxVGaNnBEWUXjQocZT6dRQao8AudEk5agp8FPvQgVk8RmloLmf8fSGnpWDStb0zioHCJhZjg1waK%2BrYDmqEbLAz%2BK4EHk%2F9G76bmoXKoLgBB7V77%2BhwBrIpldV5KT0n5gYW%2BMz5nMY1eLKskIQWNXIkmdiObxSrt7K6KUD6H81D%2BaDim8xhs73UEDd6A7mzoEwFts6gIGY0kUq2QKc%2FzAOI0R1Ev08ELs1fD39Eu7ooxeRdVnDJC8D79dNqn6w76yAbEwyMnn1gY6pgFhyyUJlDwXxt59R23MkJIfchMZG91979uuxX0jALoS%2FfjbQ9GDhQCDHRkCP%2BRUJCsGUUUCjBLPtMlcvGNlbYSjRsn4wrcRgRcaHEQOHsVPDQQj1gZbi7TIMtcL8eWmzOoHPQmEzxYgnz3z1UIxfrYqnfEzIkgiQoLfpg8mT7XBIvKeliA3yW0gQTll0UXyF5tXmYt%2FxgikgdRsFZhXjTjj7xXyzrrX&X-Amz-Signature=29351a152b14b1b7fcbfadc65a1a5cbc26d765cf6fd3f3e07f25e187510175db&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+    "expiry_time": "2026-10-22T13:11:28.782Z"
+   }
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "73d9ad35-5730-4a82-834b-2fd65eeb4826",
+  "parent": {
+   "type": "page_id",
+   "page_id": "a7394183-19f3-82ba-b89c-81ce377a5b07"
+  },
+  "created_time": "2026-07-04T10:35:00.000Z",
+  "last_edited_time": "2026-07-04T10:35:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Dieser Node pr\u00fcft den Output des Parsers.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Dieser Node pr\u00fcft den Output des Parsers.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "a2f97ed4-acdc-4db3-90ba-54b751440614",
+  "parent": {
+   "type": "page_id",
+   "page_id": "a7394183-19f3-82ba-b89c-81ce377a5b07"
+  },
+  "created_time": "2026-07-04T10:35:00.000Z",
+  "last_edited_time": "2026-07-04T10:35:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Erstelle zwei Branches:",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Erstelle zwei Branches:",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "ff0c200c-69b5-45fb-b48a-02f2b1733436",
+  "parent": {
+   "type": "page_id",
+   "page_id": "a7394183-19f3-82ba-b89c-81ce377a5b07"
+  },
+  "created_time": "2026-07-04T10:35:00.000Z",
+  "last_edited_time": "2026-07-04T10:35:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "To_User_Chat",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "To_User_Chat",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "cd3f35b3-d348-494f-b514-1fa35f1008b2",
+  "parent": {
+   "type": "page_id",
+   "page_id": "a7394183-19f3-82ba-b89c-81ce377a5b07"
+  },
+  "created_time": "2026-07-04T10:35:00.000Z",
+  "last_edited_time": "2026-07-04T10:35:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Trigger_Loop",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Trigger_Loop",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "517cf444-ea54-4ad5-b8af-f6558a4321f6",
+  "parent": {
+   "type": "page_id",
+   "page_id": "a7394183-19f3-82ba-b89c-81ce377a5b07"
+  },
+  "created_time": "2026-07-04T10:35:00.000Z",
+  "last_edited_time": "2026-07-04T10:35:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Wenn der Parser ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Wenn der Parser ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "To_User_Chat",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": true,
+      "color": "default"
+     },
+     "plain_text": "To_User_Chat",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " zur\u00fcckgibt, geht der Workflow zum Direct Reply Node.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " zur\u00fcckgibt, geht der Workflow zum Direct Reply Node.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "fc4fccba-0297-4edb-bb95-7d9228eaabc6",
+  "parent": {
+   "type": "page_id",
+   "page_id": "a7394183-19f3-82ba-b89c-81ce377a5b07"
+  },
+  "created_time": "2026-07-04T10:35:00.000Z",
+  "last_edited_time": "2026-07-04T10:35:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Wenn der Parser ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Wenn der Parser ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "Trigger_Loop",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": true,
+      "color": "default"
+     },
+     "plain_text": "Trigger_Loop",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " zur\u00fcckgibt, geht der Workflow zum Retry Loop.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " zur\u00fcckgibt, geht der Workflow zum Retry Loop.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "26fd4be1-8865-4cfd-9f77-99f79682fc24",
+  "parent": {
+   "type": "page_id",
+   "page_id": "a7394183-19f3-82ba-b89c-81ce377a5b07"
+  },
+  "created_time": "2026-07-04T10:35:00.000Z",
+  "last_edited_time": "2026-07-04T10:35:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "\u00d6ffne den Node und f\u00fcge Folgendes ein:",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "\u00d6ffne den Node und f\u00fcge Folgendes ein:",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "ad594183-19f3-83a5-9235-01011d40704c",
+  "parent": {
+   "type": "page_id",
+   "page_id": "a7394183-19f3-82ba-b89c-81ce377a5b07"
+  },
+  "created_time": "2026-07-03T09:39:00.000Z",
+  "last_edited_time": "2026-07-03T09:39:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "image",
+  "image": {
+   "caption": [],
+   "type": "file",
+   "file": {
+    "url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/3a9085c4-df29-45e6-8bc7-6c9c0a25ea8c/62927ff6-da95-462d-981e-461e0f15c343/image.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466ZB4QYRJQ%2F20261022%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20261022T121128Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEKv%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJGMEQCIExa7dl8cPXBh%2FR0F2yRUIZG0DW9VOBoNOiolhOb8hOBAiA1o3phCdFoZRJydajerE2WlapW7eY46thzZVm0EXdNNyr%2FAwhzEAAaDDYzNzQyMzE4MzgwNSIM%2BPD%2BqZqSWBYomk3UKtwDBm0dWq3fxqgNV1Y5TWm32DJ4vCLm41NON6yXB16M4ANg1P405h5hPLNQeYeydyyEq0UrdYghARAz%2Fjc3pfFgvirr0UozezTEBceM4p%2FXJim6d%2FjwqdM%2FU29c7LNGUxG7HKVeRktHHdi5%2FaSj9zAzmt8CcQZ0hGrJY3jx29ujS2y1yqOtQygcTqvWkvvNrQaqjg3GKySl%2BxDKaYiaIg2ZuDM2yjtbhiw5h6a4ine76W%2FmUZkDu%2BACyL0%2FsUW0noSJmp0tSsnVbALINCfQA7gbsVbu7BdH4h8RzzcmvbAGipij2YHxTosk7VxyxraWwq%2FLGneaNHHG3dXgFtCuj2auT1ywXqOZAOj%2BGYgJOL7mNkqdyJdxZyTGFyDMxVGaNnBEWUXjQocZT6dRQao8AudEk5agp8FPvQgVk8RmloLmf8fSGnpWDStb0zioHCJhZjg1waK%2BrYDmqEbLAz%2BK4EHk%2F9G76bmoXKoLgBB7V77%2BhwBrIpldV5KT0n5gYW%2BMz5nMY1eLKskIQWNXIkmdiObxSrt7K6KUD6H81D%2BaDim8xhs73UEDd6A7mzoEwFts6gIGY0kUq2QKc%2FzAOI0R1Ev08ELs1fD39Eu7ooxeRdVnDJC8D79dNqn6w76yAbEwyMnn1gY6pgFhyyUJlDwXxt59R23MkJIfchMZG91979uuxX0jALoS%2FfjbQ9GDhQCDHRkCP%2BRUJCsGUUUCjBLPtMlcvGNlbYSjRsn4wrcRgRcaHEQOHsVPDQQj1gZbi7TIMtcL8eWmzOoHPQmEzxYgnz3z1UIxfrYqnfEzIkgiQoLfpg8mT7XBIvKeliA3yW0gQTll0UXyF5tXmYt%2FxgikgdRsFZhXjTjj7xXyzrrX&X-Amz-Signature=ebb59bcf91b8b7e2dd4a003925dc6fd0d9a12021661d4f0884bf892515b6086f&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+    "expiry_time": "2026-10-22T13:11:28.833Z"
+   }
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "608df5b9-1706-45f0-8183-a8030f3369b9",
+  "parent": {
+   "type": "page_id",
+   "page_id": "a7394183-19f3-82ba-b89c-81ce377a5b07"
+  },
+  "created_time": "2026-07-04T10:36:00.000Z",
+  "last_edited_time": "2026-07-04T10:36:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Wir f\u00fcgen einen Branch f\u00fcr ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Wir f\u00fcgen einen Branch f\u00fcr ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "Trigger_Loop",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": true,
+      "color": "default"
+     },
+     "plain_text": "Trigger_Loop",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " hinzu, der zu Agenten-Retries f\u00fchrt. Der alternative gesunde Branch wird automatisch hinzugef\u00fcgt, du musst also keine zweite Bedingung hinzuf\u00fcgen.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " hinzu, der zu Agenten-Retries f\u00fchrt. Der alternative gesunde Branch wird automatisch hinzugef\u00fcgt, du musst also keine zweite Bedingung hinzuf\u00fcgen.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "e032c7a5-8c5c-4484-aaa2-b1b694044957",
+  "parent": {
+   "type": "page_id",
+   "page_id": "a7394183-19f3-82ba-b89c-81ce377a5b07"
+  },
+  "created_time": "2026-07-04T10:36:00.000Z",
+  "last_edited_time": "2026-07-04T10:36:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_1",
+  "heading_1": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Schritt 4: Den Retry Loop hinzuf\u00fcgen",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Schritt 4: Den Retry Loop hinzuf\u00fcgen",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "9d199a86-669d-4f49-bd5e-9bc2267c8ab9",
+  "parent": {
+   "type": "page_id",
+   "page_id": "a7394183-19f3-82ba-b89c-81ce377a5b07"
+  },
+  "created_time": "2026-07-04T10:36:00.000Z",
+  "last_edited_time": "2026-07-04T10:36:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "F\u00fcge einen Loop Node namens ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "F\u00fcge einen Loop Node namens ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "Retry Counter Loop",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": true,
+      "color": "default"
+     },
+     "plain_text": "Retry Counter Loop",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " hinzu. Verbinde den ersten Branch des Conditional Node mit ihm.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " hinzu. Verbinde den ersten Branch des Conditional Node mit ihm.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "98f94183-19f3-83c7-be09-81dd2faae542",
+  "parent": {
+   "type": "page_id",
+   "page_id": "a7394183-19f3-82ba-b89c-81ce377a5b07"
+  },
+  "created_time": "2026-07-03T09:39:00.000Z",
+  "last_edited_time": "2026-07-03T09:39:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "image",
+  "image": {
+   "caption": [],
+   "type": "file",
+   "file": {
+    "url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/3a9085c4-df29-45e6-8bc7-6c9c0a25ea8c/6d401b78-0f0b-409a-932a-9c75ccf6de90/image.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466ZB4QYRJQ%2F20261022%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20261022T121128Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEKv%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJGMEQCIExa7dl8cPXBh%2FR0F2yRUIZG0DW9VOBoNOiolhOb8hOBAiA1o3phCdFoZRJydajerE2WlapW7eY46thzZVm0EXdNNyr%2FAwhzEAAaDDYzNzQyMzE4MzgwNSIM%2BPD%2BqZqSWBYomk3UKtwDBm0dWq3fxqgNV1Y5TWm32DJ4vCLm41NON6yXB16M4ANg1P405h5hPLNQeYeydyyEq0UrdYghARAz%2Fjc3pfFgvirr0UozezTEBceM4p%2FXJim6d%2FjwqdM%2FU29c7LNGUxG7HKVeRktHHdi5%2FaSj9zAzmt8CcQZ0hGrJY3jx29ujS2y1yqOtQygcTqvWkvvNrQaqjg3GKySl%2BxDKaYiaIg2ZuDM2yjtbhiw5h6a4ine76W%2FmUZkDu%2BACyL0%2FsUW0noSJmp0tSsnVbALINCfQA7gbsVbu7BdH4h8RzzcmvbAGipij2YHxTosk7VxyxraWwq%2FLGneaNHHG3dXgFtCuj2auT1ywXqOZAOj%2BGYgJOL7mNkqdyJdxZyTGFyDMxVGaNnBEWUXjQocZT6dRQao8AudEk5agp8FPvQgVk8RmloLmf8fSGnpWDStb0zioHCJhZjg1waK%2BrYDmqEbLAz%2BK4EHk%2F9G76bmoXKoLgBB7V77%2BhwBrIpldV5KT0n5gYW%2BMz5nMY1eLKskIQWNXIkmdiObxSrt7K6KUD6H81D%2BaDim8xhs73UEDd6A7mzoEwFts6gIGY0kUq2QKc%2FzAOI0R1Ev08ELs1fD39Eu7ooxeRdVnDJC8D79dNqn6w76yAbEwyMnn1gY6pgFhyyUJlDwXxt59R23MkJIfchMZG91979uuxX0jALoS%2FfjbQ9GDhQCDHRkCP%2BRUJCsGUUUCjBLPtMlcvGNlbYSjRsn4wrcRgRcaHEQOHsVPDQQj1gZbi7TIMtcL8eWmzOoHPQmEzxYgnz3z1UIxfrYqnfEzIkgiQoLfpg8mT7XBIvKeliA3yW0gQTll0UXyF5tXmYt%2FxgikgdRsFZhXjTjj7xXyzrrX&X-Amz-Signature=1b48c2ec170672c7f82738592611eba73c37ed73f613d56e9db6ac63d19ee516&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+    "expiry_time": "2026-10-22T13:11:28.833Z"
+   }
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "9e194183-19f3-82e6-9fcf-812430e964be",
+  "parent": {
+   "type": "page_id",
+   "page_id": "a7394183-19f3-82ba-b89c-81ce377a5b07"
+  },
+  "created_time": "2026-07-03T09:39:00.000Z",
+  "last_edited_time": "2026-07-04T10:36:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Setze die maximale Loop-Anzahl auf 3. Das ist wichtig. Ein Retry-Pattern muss immer ein Limit haben. Ohne maximale Anzahl k\u00f6nnte der Workflow immer wieder dasselbe fehlschlagende Tool aufrufen. Verbinde den Loop zur\u00fcck mit Arxiv MCP Engine.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Setze die maximale Loop-Anzahl auf 3. Das ist wichtig. Ein Retry-Pattern muss immer ein Limit haben. Ohne maximale Anzahl k\u00f6nnte der Workflow immer wieder dasselbe fehlschlagende Tool aufrufen. Verbinde den Loop zur\u00fcck mit Arxiv MCP Engine.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "9ad94183-19f3-831e-bc7a-013cc110c966",
+  "parent": {
+   "type": "page_id",
+   "page_id": "a7394183-19f3-82ba-b89c-81ce377a5b07"
+  },
+  "created_time": "2026-07-03T09:39:00.000Z",
+  "last_edited_time": "2026-07-03T09:39:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "image",
+  "image": {
+   "caption": [],
+   "type": "file",
+   "file": {
+    "url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/3a9085c4-df29-45e6-8bc7-6c9c0a25ea8c/279672cd-104d-4399-bcc5-199d3d29133b/image.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466ZB4QYRJQ%2F20261022%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20261022T121128Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEKv%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJGMEQCIExa7dl8cPXBh%2FR0F2yRUIZG0DW9VOBoNOiolhOb8hOBAiA1o3phCdFoZRJydajerE2WlapW7eY46thzZVm0EXdNNyr%2FAwhzEAAaDDYzNzQyMzE4MzgwNSIM%2BPD%2BqZqSWBYomk3UKtwDBm0dWq3fxqgNV1Y5TWm32DJ4vCLm41NON6yXB16M4ANg1P405h5hPLNQeYeydyyEq0UrdYghARAz%2Fjc3pfFgvirr0UozezTEBceM4p%2FXJim6d%2FjwqdM%2FU29c7LNGUxG7HKVeRktHHdi5%2FaSj9zAzmt8CcQZ0hGrJY3jx29ujS2y1yqOtQygcTqvWkvvNrQaqjg3GKySl%2BxDKaYiaIg2ZuDM2yjtbhiw5h6a4ine76W%2FmUZkDu%2BACyL0%2FsUW0noSJmp0tSsnVbALINCfQA7gbsVbu7BdH4h8RzzcmvbAGipij2YHxTosk7VxyxraWwq%2FLGneaNHHG3dXgFtCuj2auT1ywXqOZAOj%2BGYgJOL7mNkqdyJdxZyTGFyDMxVGaNnBEWUXjQocZT6dRQao8AudEk5agp8FPvQgVk8RmloLmf8fSGnpWDStb0zioHCJhZjg1waK%2BrYDmqEbLAz%2BK4EHk%2F9G76bmoXKoLgBB7V77%2BhwBrIpldV5KT0n5gYW%2BMz5nMY1eLKskIQWNXIkmdiObxSrt7K6KUD6H81D%2BaDim8xhs73UEDd6A7mzoEwFts6gIGY0kUq2QKc%2FzAOI0R1Ev08ELs1fD39Eu7ooxeRdVnDJC8D79dNqn6w76yAbEwyMnn1gY6pgFhyyUJlDwXxt59R23MkJIfchMZG91979uuxX0jALoS%2FfjbQ9GDhQCDHRkCP%2BRUJCsGUUUCjBLPtMlcvGNlbYSjRsn4wrcRgRcaHEQOHsVPDQQj1gZbi7TIMtcL8eWmzOoHPQmEzxYgnz3z1UIxfrYqnfEzIkgiQoLfpg8mT7XBIvKeliA3yW0gQTll0UXyF5tXmYt%2FxgikgdRsFZhXjTjj7xXyzrrX&X-Amz-Signature=761ad04a3317924ccf7ca5e4d3539168b5beb4124e5472175b702d49be458933&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+    "expiry_time": "2026-10-22T13:11:28.833Z"
+   }
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "c1bc3cc7-53b4-4589-8a91-5086be5963cc",
+  "parent": {
+   "type": "page_id",
+   "page_id": "a7394183-19f3-82ba-b89c-81ce377a5b07"
+  },
+  "created_time": "2026-07-04T10:36:00.000Z",
+  "last_edited_time": "2026-07-04T10:36:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Jetzt kann der Workflow die arXiv-Suche erneut versuchen, wenn der Fehler tempor\u00e4r aussieht.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Jetzt kann der Workflow die arXiv-Suche erneut versuchen, wenn der Fehler tempor\u00e4r aussieht.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "e9eb683f-f73f-4b70-a8f1-639bf1ede7bd",
+  "parent": {
+   "type": "page_id",
+   "page_id": "a7394183-19f3-82ba-b89c-81ce377a5b07"
+  },
+  "created_time": "2026-07-04T10:36:00.000Z",
+  "last_edited_time": "2026-07-04T10:36:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_1",
+  "heading_1": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Schritt 5: Direct Reply hinzuf\u00fcgen",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Schritt 5: Direct Reply hinzuf\u00fcgen",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "b5f5f2e7-745e-441e-aa80-8a534f2e2d2d",
+  "parent": {
+   "type": "page_id",
+   "page_id": "a7394183-19f3-82ba-b89c-81ce377a5b07"
+  },
+  "created_time": "2026-07-04T10:36:00.000Z",
+  "last_edited_time": "2026-07-04T10:36:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "F\u00fcge einen Direct Reply Node f\u00fcr den erfolgreichen Pfad hinzu.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "F\u00fcge einen Direct Reply Node f\u00fcr den erfolgreichen Pfad hinzu.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "6b803c6b-e00f-47b8-b382-5331e45bd286",
+  "parent": {
+   "type": "page_id",
+   "page_id": "a7394183-19f3-82ba-b89c-81ce377a5b07"
+  },
+  "created_time": "2026-07-04T10:36:00.000Z",
+  "last_edited_time": "2026-07-04T10:36:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Dieser Node gibt den finalen Output des Agenten an den User zur\u00fcck.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Dieser Node gibt den finalen Output des Agenten an den User zur\u00fcck.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "b5404cee-997d-4a68-b3c5-0172133e3916",
+  "parent": {
+   "type": "page_id",
+   "page_id": "a7394183-19f3-82ba-b89c-81ce377a5b07"
+  },
+  "created_time": "2026-07-04T10:36:00.000Z",
+  "last_edited_time": "2026-07-04T10:36:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Du kannst den Standardnamen beibehalten.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Du kannst den Standardnamen beibehalten.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "faa94183-19f3-8278-be3a-0109e33fb77a",
+  "parent": {
+   "type": "page_id",
+   "page_id": "a7394183-19f3-82ba-b89c-81ce377a5b07"
+  },
+  "created_time": "2026-07-03T09:39:00.000Z",
+  "last_edited_time": "2026-07-03T09:39:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "image",
+  "image": {
+   "caption": [],
+   "type": "file",
+   "file": {
+    "url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/3a9085c4-df29-45e6-8bc7-6c9c0a25ea8c/eb1956fa-95a9-4cbe-85c6-af8b8feba211/image.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466ZB4QYRJQ%2F20261022%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20261022T121128Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEKv%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJGMEQCIExa7dl8cPXBh%2FR0F2yRUIZG0DW9VOBoNOiolhOb8hOBAiA1o3phCdFoZRJydajerE2WlapW7eY46thzZVm0EXdNNyr%2FAwhzEAAaDDYzNzQyMzE4MzgwNSIM%2BPD%2BqZqSWBYomk3UKtwDBm0dWq3fxqgNV1Y5TWm32DJ4vCLm41NON6yXB16M4ANg1P405h5hPLNQeYeydyyEq0UrdYghARAz%2Fjc3pfFgvirr0UozezTEBceM4p%2FXJim6d%2FjwqdM%2FU29c7LNGUxG7HKVeRktHHdi5%2FaSj9zAzmt8CcQZ0hGrJY3jx29ujS2y1yqOtQygcTqvWkvvNrQaqjg3GKySl%2BxDKaYiaIg2ZuDM2yjtbhiw5h6a4ine76W%2FmUZkDu%2BACyL0%2FsUW0noSJmp0tSsnVbALINCfQA7gbsVbu7BdH4h8RzzcmvbAGipij2YHxTosk7VxyxraWwq%2FLGneaNHHG3dXgFtCuj2auT1ywXqOZAOj%2BGYgJOL7mNkqdyJdxZyTGFyDMxVGaNnBEWUXjQocZT6dRQao8AudEk5agp8FPvQgVk8RmloLmf8fSGnpWDStb0zioHCJhZjg1waK%2BrYDmqEbLAz%2BK4EHk%2F9G76bmoXKoLgBB7V77%2BhwBrIpldV5KT0n5gYW%2BMz5nMY1eLKskIQWNXIkmdiObxSrt7K6KUD6H81D%2BaDim8xhs73UEDd6A7mzoEwFts6gIGY0kUq2QKc%2FzAOI0R1Ev08ELs1fD39Eu7ooxeRdVnDJC8D79dNqn6w76yAbEwyMnn1gY6pgFhyyUJlDwXxt59R23MkJIfchMZG91979uuxX0jALoS%2FfjbQ9GDhQCDHRkCP%2BRUJCsGUUUCjBLPtMlcvGNlbYSjRsn4wrcRgRcaHEQOHsVPDQQj1gZbi7TIMtcL8eWmzOoHPQmEzxYgnz3z1UIxfrYqnfEzIkgiQoLfpg8mT7XBIvKeliA3yW0gQTll0UXyF5tXmYt%2FxgikgdRsFZhXjTjj7xXyzrrX&X-Amz-Signature=f3f75f6bcc26e8614219056b51d35f0360d6f32b5e8a5c52ef149cf9d04adca0&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+    "expiry_time": "2026-10-22T13:11:28.834Z"
+   }
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "5af94183-19f3-838d-946a-016893ee2a2c",
+  "parent": {
+   "type": "page_id",
+   "page_id": "a7394183-19f3-82ba-b89c-81ce377a5b07"
+  },
+  "created_time": "2026-07-03T09:39:00.000Z",
+  "last_edited_time": "2026-07-05T23:31:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Dieser Pfad wird eingeschlagen, wenn der Parser keinen wiederholbaren Fehler erkennt. Die Nachricht des Direct-Reply-Nodes sollte die Ausgabe des Agenten enthalten:",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Dieser Pfad wird eingeschlagen, wenn der Parser keinen wiederholbaren Fehler erkennt. Die Nachricht des Direct-Reply-Nodes sollte die Ausgabe des Agenten enthalten:",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "59394183-19f3-829f-b09e-01a3f5a53da1",
+  "parent": {
+   "type": "page_id",
+   "page_id": "a7394183-19f3-82ba-b89c-81ce377a5b07"
+  },
+  "created_time": "2026-07-03T09:39:00.000Z",
+  "last_edited_time": "2026-07-03T09:39:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "image",
+  "image": {
+   "caption": [],
+   "type": "file",
+   "file": {
+    "url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/3a9085c4-df29-45e6-8bc7-6c9c0a25ea8c/474aa1a5-8beb-4011-a7cb-a2d440486644/image.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466ZB4QYRJQ%2F20261022%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20261022T121128Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEKv%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJGMEQCIExa7dl8cPXBh%2FR0F2yRUIZG0DW9VOBoNOiolhOb8hOBAiA1o3phCdFoZRJydajerE2WlapW7eY46thzZVm0EXdNNyr%2FAwhzEAAaDDYzNzQyMzE4MzgwNSIM%2BPD%2BqZqSWBYomk3UKtwDBm0dWq3fxqgNV1Y5TWm32DJ4vCLm41NON6yXB16M4ANg1P405h5hPLNQeYeydyyEq0UrdYghARAz%2Fjc3pfFgvirr0UozezTEBceM4p%2FXJim6d%2FjwqdM%2FU29c7LNGUxG7HKVeRktHHdi5%2FaSj9zAzmt8CcQZ0hGrJY3jx29ujS2y1yqOtQygcTqvWkvvNrQaqjg3GKySl%2BxDKaYiaIg2ZuDM2yjtbhiw5h6a4ine76W%2FmUZkDu%2BACyL0%2FsUW0noSJmp0tSsnVbALINCfQA7gbsVbu7BdH4h8RzzcmvbAGipij2YHxTosk7VxyxraWwq%2FLGneaNHHG3dXgFtCuj2auT1ywXqOZAOj%2BGYgJOL7mNkqdyJdxZyTGFyDMxVGaNnBEWUXjQocZT6dRQao8AudEk5agp8FPvQgVk8RmloLmf8fSGnpWDStb0zioHCJhZjg1waK%2BrYDmqEbLAz%2BK4EHk%2F9G76bmoXKoLgBB7V77%2BhwBrIpldV5KT0n5gYW%2BMz5nMY1eLKskIQWNXIkmdiObxSrt7K6KUD6H81D%2BaDim8xhs73UEDd6A7mzoEwFts6gIGY0kUq2QKc%2FzAOI0R1Ev08ELs1fD39Eu7ooxeRdVnDJC8D79dNqn6w76yAbEwyMnn1gY6pgFhyyUJlDwXxt59R23MkJIfchMZG91979uuxX0jALoS%2FfjbQ9GDhQCDHRkCP%2BRUJCsGUUUCjBLPtMlcvGNlbYSjRsn4wrcRgRcaHEQOHsVPDQQj1gZbi7TIMtcL8eWmzOoHPQmEzxYgnz3z1UIxfrYqnfEzIkgiQoLfpg8mT7XBIvKeliA3yW0gQTll0UXyF5tXmYt%2FxgikgdRsFZhXjTjj7xXyzrrX&X-Amz-Signature=6d1fb3ddd3a7a0bd0cc7dd0ed9dc4dda0a52ccde4e8a11820f6e741dc54d7fea&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+    "expiry_time": "2026-10-22T13:11:28.834Z"
+   }
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38794183-19f3-82ae-bab0-813426b0db96",
+  "parent": {
+   "type": "page_id",
+   "page_id": "a7394183-19f3-82ba-b89c-81ce377a5b07"
+  },
+  "created_time": "2026-07-03T09:39:00.000Z",
+  "last_edited_time": "2026-07-03T09:39:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_1",
+  "heading_1": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Checkpoint",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Checkpoint",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "678c1796-9b01-4a20-bd9c-de6ed5cafbff",
+  "parent": {
+   "type": "page_id",
+   "page_id": "a7394183-19f3-82ba-b89c-81ce377a5b07"
+  },
+  "created_time": "2026-07-04T10:36:00.000Z",
+  "last_edited_time": "2026-07-04T10:36:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Teste den Workflow mit einer normalen Anfrage:",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Teste den Workflow mit einer normalen Anfrage:",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "1f6f8843-6af5-47a3-86d0-52233889ad8a",
+  "parent": {
+   "type": "page_id",
+   "page_id": "a7394183-19f3-82ba-b89c-81ce377a5b07"
+  },
+  "created_time": "2026-07-04T10:36:00.000Z",
+  "last_edited_time": "2026-07-04T10:36:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "quote",
+  "quote": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Find recent papers on transformers",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Find recent papers on transformers",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "2e094183-19f3-830f-8063-014851e04789",
+  "parent": {
+   "type": "page_id",
+   "page_id": "a7394183-19f3-82ba-b89c-81ce377a5b07"
+  },
+  "created_time": "2026-07-03T09:39:00.000Z",
+  "last_edited_time": "2026-07-03T09:39:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "image",
+  "image": {
+   "caption": [],
+   "type": "file",
+   "file": {
+    "url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/3a9085c4-df29-45e6-8bc7-6c9c0a25ea8c/1c0b7e13-2736-4f9b-869c-b1621e4fee61/image.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466ZB4QYRJQ%2F20261022%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20261022T121128Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEKv%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJGMEQCIExa7dl8cPXBh%2FR0F2yRUIZG0DW9VOBoNOiolhOb8hOBAiA1o3phCdFoZRJydajerE2WlapW7eY46thzZVm0EXdNNyr%2FAwhzEAAaDDYzNzQyMzE4MzgwNSIM%2BPD%2BqZqSWBYomk3UKtwDBm0dWq3fxqgNV1Y5TWm32DJ4vCLm41NON6yXB16M4ANg1P405h5hPLNQeYeydyyEq0UrdYghARAz%2Fjc3pfFgvirr0UozezTEBceM4p%2FXJim6d%2FjwqdM%2FU29c7LNGUxG7HKVeRktHHdi5%2FaSj9zAzmt8CcQZ0hGrJY3jx29ujS2y1yqOtQygcTqvWkvvNrQaqjg3GKySl%2BxDKaYiaIg2ZuDM2yjtbhiw5h6a4ine76W%2FmUZkDu%2BACyL0%2FsUW0noSJmp0tSsnVbALINCfQA7gbsVbu7BdH4h8RzzcmvbAGipij2YHxTosk7VxyxraWwq%2FLGneaNHHG3dXgFtCuj2auT1ywXqOZAOj%2BGYgJOL7mNkqdyJdxZyTGFyDMxVGaNnBEWUXjQocZT6dRQao8AudEk5agp8FPvQgVk8RmloLmf8fSGnpWDStb0zioHCJhZjg1waK%2BrYDmqEbLAz%2BK4EHk%2F9G76bmoXKoLgBB7V77%2BhwBrIpldV5KT0n5gYW%2BMz5nMY1eLKskIQWNXIkmdiObxSrt7K6KUD6H81D%2BaDim8xhs73UEDd6A7mzoEwFts6gIGY0kUq2QKc%2FzAOI0R1Ev08ELs1fD39Eu7ooxeRdVnDJC8D79dNqn6w76yAbEwyMnn1gY6pgFhyyUJlDwXxt59R23MkJIfchMZG91979uuxX0jALoS%2FfjbQ9GDhQCDHRkCP%2BRUJCsGUUUCjBLPtMlcvGNlbYSjRsn4wrcRgRcaHEQOHsVPDQQj1gZbi7TIMtcL8eWmzOoHPQmEzxYgnz3z1UIxfrYqnfEzIkgiQoLfpg8mT7XBIvKeliA3yW0gQTll0UXyF5tXmYt%2FxgikgdRsFZhXjTjj7xXyzrrX&X-Amz-Signature=c0daaf70916e7cac3e5d77d57d9b0a4324a715b2cdfffad7b95fd3c801ec94c8&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+    "expiry_time": "2026-10-22T13:11:28.834Z"
+   }
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "a7c94183-19f3-82cf-ace9-819f9fea42b1",
+  "parent": {
+   "type": "page_id",
+   "page_id": "a7394183-19f3-82ba-b89c-81ce377a5b07"
+  },
+  "created_time": "2026-07-03T09:39:00.000Z",
+  "last_edited_time": "2026-07-04T10:36:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_3",
+  "heading_3": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Schritt 6: Eine Fallback-Antwort hinzuf\u00fcgen",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Schritt 6: Eine Fallback-Antwort hinzuf\u00fcgen",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "abcbaa20-cab8-487c-9b9f-3e0ba545ad56",
+  "parent": {
+   "type": "page_id",
+   "page_id": "a7394183-19f3-82ba-b89c-81ce377a5b07"
+  },
+  "created_time": "2026-07-04T10:36:00.000Z",
+  "last_edited_time": "2026-07-05T23:14:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Bislang f\u00fchrt der Workflow bis zu drei Startversuche f\u00fcr die arXiv-Suche durch. Was aber geschieht, wenn alle drei Versuche fehlschlagen? Ein resilienter Workflow sollte an dieser Stelle nicht einfach unvermittelt abbrechen oder dem Nutzer einen kryptischen Error-Trace ausgeben. Stattdessen sollte er eine definierte R\u00fcckmeldung liefern, die das Problem erkl\u00e4rt und direkt einen sinnvollen n\u00e4chsten Schritt vorschl\u00e4gt.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Bislang f\u00fchrt der Workflow bis zu drei Startversuche f\u00fcr die arXiv-Suche durch. Was aber geschieht, wenn alle drei Versuche fehlschlagen? Ein resilienter Workflow sollte an dieser Stelle nicht einfach unvermittelt abbrechen oder dem Nutzer einen kryptischen Error-Trace ausgeben. Stattdessen sollte er eine definierte R\u00fcckmeldung liefern, die das Problem erkl\u00e4rt und direkt einen sinnvollen n\u00e4chsten Schritt vorschl\u00e4gt.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "83494183-19f3-82bb-a889-810c1c90cbf1",
+  "parent": {
+   "type": "page_id",
+   "page_id": "a7394183-19f3-82ba-b89c-81ce377a5b07"
+  },
+  "created_time": "2026-07-03T09:39:00.000Z",
+  "last_edited_time": "2026-07-03T09:39:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "callout",
+  "callout": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "In Flowise routet der Loop Node den Workflow zur\u00fcck zum ausgew\u00e4hlten Retry-Schritt. Er braucht keinen separaten \u201emax retries reached\u201c-Branch. Stattdessen f\u00fcgen wir direkt in den Loop-Einstellungen eine Fallback-Nachricht hinzu. Wenn die maximale Loop-Anzahl erreicht ist, gibt der Workflow dadurch eine kontrollierte nutzerseitige Antwort zur\u00fcck, statt weiter zu wiederholen.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "In Flowise routet der Loop Node den Workflow zur\u00fcck zum ausgew\u00e4hlten Retry-Schritt. Er braucht keinen separaten \u201emax retries reached\u201c-Branch. Stattdessen f\u00fcgen wir direkt in den Loop-Einstellungen eine Fallback-Nachricht hinzu. Wenn die maximale Loop-Anzahl erreicht ist, gibt der Workflow dadurch eine kontrollierte nutzerseitige Antwort zur\u00fcck, statt weiter zu wiederholen.",
+     "href": null
+    }
+   ],
+   "icon": {
+    "type": "emoji",
+    "emoji": "\u261d"
+   },
+   "color": "blue_background"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "e36655fb-8ecd-4fcb-8c3d-5ed87d6a5682",
+  "parent": {
+   "type": "page_id",
+   "page_id": "a7394183-19f3-82ba-b89c-81ce377a5b07"
+  },
+  "created_time": "2026-07-04T10:37:00.000Z",
+  "last_edited_time": "2026-07-04T10:37:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "F\u00fcge deinem Node eine Fallback-Nachricht hinzu:",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "F\u00fcge deinem Node eine Fallback-Nachricht hinzu:",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "6c82265b-25e2-4a76-a2fc-7775b54afd23",
+  "parent": {
+   "type": "page_id",
+   "page_id": "a7394183-19f3-82ba-b89c-81ce377a5b07"
+  },
+  "created_time": "2026-07-04T10:37:00.000Z",
+  "last_edited_time": "2026-07-04T10:37:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": true,
+  "in_trash": false,
+  "type": "quote",
+  "quote": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "I\u2019m currently unable to retrieve results from arXiv because the service may be temporarily unavailable or rate-limited.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "I\u2019m currently unable to retrieve results from arXiv because the service may be temporarily unavailable or rate-limited.",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false,
+  "_children": [
+   {
+    "object": "block",
+    "id": "51684dd1-09aa-45fa-8ba0-e64d5b578971",
+    "parent": {
+     "type": "block_id",
+     "block_id": "6c82265b-25e2-4a76-a2fc-7775b54afd23"
+    },
+    "created_time": "2026-07-04T10:37:00.000Z",
+    "last_edited_time": "2026-07-05T23:19:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+     "rich_text": [
+      {
+       "type": "text",
+       "text": {
+        "content": "Please try again in a few minutes, or simplify your search query and run it again.",
+        "link": null
+       },
+       "annotations": {
+        "bold": false,
+        "italic": false,
+        "strikethrough": false,
+        "underline": false,
+        "code": false,
+        "color": "default"
+       },
+       "plain_text": "Please try again in a few minutes, or simplify your search query and run it again.",
+       "href": null
+      }
+     ],
+     "icon": null,
+     "color": "default"
+    },
+    "archived": false
+   }
+  ]
+ },
+ {
+  "object": "block",
+  "id": "4c494183-19f3-83ab-9a24-81717e2ba2cd",
+  "parent": {
+   "type": "page_id",
+   "page_id": "a7394183-19f3-82ba-b89c-81ce377a5b07"
+  },
+  "created_time": "2026-07-03T09:39:00.000Z",
+  "last_edited_time": "2026-07-03T09:39:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "image",
+  "image": {
+   "caption": [],
+   "type": "file",
+   "file": {
+    "url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/3a9085c4-df29-45e6-8bc7-6c9c0a25ea8c/0549c607-1b00-4713-86f0-d02ca994129b/image.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466ZB4QYRJQ%2F20261022%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20261022T121128Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEKv%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJGMEQCIExa7dl8cPXBh%2FR0F2yRUIZG0DW9VOBoNOiolhOb8hOBAiA1o3phCdFoZRJydajerE2WlapW7eY46thzZVm0EXdNNyr%2FAwhzEAAaDDYzNzQyMzE4MzgwNSIM%2BPD%2BqZqSWBYomk3UKtwDBm0dWq3fxqgNV1Y5TWm32DJ4vCLm41NON6yXB16M4ANg1P405h5hPLNQeYeydyyEq0UrdYghARAz%2Fjc3pfFgvirr0UozezTEBceM4p%2FXJim6d%2FjwqdM%2FU29c7LNGUxG7HKVeRktHHdi5%2FaSj9zAzmt8CcQZ0hGrJY3jx29ujS2y1yqOtQygcTqvWkvvNrQaqjg3GKySl%2BxDKaYiaIg2ZuDM2yjtbhiw5h6a4ine76W%2FmUZkDu%2BACyL0%2FsUW0noSJmp0tSsnVbALINCfQA7gbsVbu7BdH4h8RzzcmvbAGipij2YHxTosk7VxyxraWwq%2FLGneaNHHG3dXgFtCuj2auT1ywXqOZAOj%2BGYgJOL7mNkqdyJdxZyTGFyDMxVGaNnBEWUXjQocZT6dRQao8AudEk5agp8FPvQgVk8RmloLmf8fSGnpWDStb0zioHCJhZjg1waK%2BrYDmqEbLAz%2BK4EHk%2F9G76bmoXKoLgBB7V77%2BhwBrIpldV5KT0n5gYW%2BMz5nMY1eLKskIQWNXIkmdiObxSrt7K6KUD6H81D%2BaDim8xhs73UEDd6A7mzoEwFts6gIGY0kUq2QKc%2FzAOI0R1Ev08ELs1fD39Eu7ooxeRdVnDJC8D79dNqn6w76yAbEwyMnn1gY6pgFhyyUJlDwXxt59R23MkJIfchMZG91979uuxX0jALoS%2FfjbQ9GDhQCDHRkCP%2BRUJCsGUUUCjBLPtMlcvGNlbYSjRsn4wrcRgRcaHEQOHsVPDQQj1gZbi7TIMtcL8eWmzOoHPQmEzxYgnz3z1UIxfrYqnfEzIkgiQoLfpg8mT7XBIvKeliA3yW0gQTll0UXyF5tXmYt%2FxgikgdRsFZhXjTjj7xXyzrrX&X-Amz-Signature=39c363ab11b52e84773ed43aa115ea38f0d8e21ccff05790367c0c1e62cf2232&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+    "expiry_time": "2026-10-22T13:11:28.834Z"
+   }
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "04a94183-19f3-82bd-b72b-816d3064d8b8",
+  "parent": {
+   "type": "page_id",
+   "page_id": "a7394183-19f3-82ba-b89c-81ce377a5b07"
+  },
+  "created_time": "2026-07-03T09:39:00.000Z",
+  "last_edited_time": "2026-07-05T23:20:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_1",
+  "heading_1": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Worauf du achten solltest",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Worauf du achten solltest",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "877d7910-b225-499e-8cc4-2e426108f6bd",
+  "parent": {
+   "type": "page_id",
+   "page_id": "a7394183-19f3-82ba-b89c-81ce377a5b07"
+  },
+  "created_time": "2026-07-04T10:37:00.000Z",
+  "last_edited_time": "2026-07-05T23:20:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Der gr\u00f6\u00dfte Fehler ist es, blind jeden Fehler zu wiederholen. Nicht jedes Problem rechtfertigt einen erneuten Versuch. Eine fehlende Eingabe, eine ung\u00fcltige Anfrage oder ein fehlerhafter Prompt werden auch beim n\u00e4chsten Mal fehlschlagen. Retries sind f\u00fcr tempor\u00e4re Probleme gedacht: Rate Limits, kurzzeitige Dienstausf\u00e4lle (",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Der gr\u00f6\u00dfte Fehler ist es, blind jeden Fehler zu wiederholen. Nicht jedes Problem rechtfertigt einen erneuten Versuch. Eine fehlende Eingabe, eine ung\u00fcltige Anfrage oder ein fehlerhafter Prompt werden auch beim n\u00e4chsten Mal fehlschlagen. Retries sind f\u00fcr tempor\u00e4re Probleme gedacht: Rate Limits, kurzzeitige Dienstausf\u00e4lle (",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "Service Unavailable",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": true,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Service Unavailable",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "), Verbindungsabbr\u00fcche oder Netzwerkschluckaufe. Zudem darf das Retry-Limit nicht vergessen werden: Definiere immer eine maximale Anzahl an Schleifendurchl\u00e4ufen.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "), Verbindungsabbr\u00fcche oder Netzwerkschluckaufe. Zudem darf das Retry-Limit nicht vergessen werden: Definiere immer eine maximale Anzahl an Schleifendurchl\u00e4ufen.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "b1532134-37c1-4614-a6a0-c597f33dfbf4",
+  "parent": {
+   "type": "page_id",
+   "page_id": "a7394183-19f3-82ba-b89c-81ce377a5b07"
+  },
+  "created_time": "2026-07-04T10:37:00.000Z",
+  "last_edited_time": "2026-07-05T23:20:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_1",
+  "heading_1": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Zusammenfassung",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Zusammenfassung",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "39494183-19f3-80e7-8883-fb5a642ded15",
+  "parent": {
+   "type": "page_id",
+   "page_id": "a7394183-19f3-82ba-b89c-81ce377a5b07"
+  },
+  "created_time": "2026-07-05T23:34:00.000Z",
+  "last_edited_time": "2026-07-05T23:34:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Damit hast du ein kontrolliertes Retry-Muster f\u00fcr den arXiv-MCP-Agenten aufgesetzt. Der Workflow erkennt jetzt eigenst\u00e4ndig, ob ein Tool-Fehler nur vor\u00fcbergehend ist, f\u00fchrt betroffene Anfragen erneut aus und bricht nach Erreichen des Limits sicher ab. ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Damit hast du ein kontrolliertes Retry-Muster f\u00fcr den arXiv-MCP-Agenten aufgesetzt. Der Workflow erkennt jetzt eigenst\u00e4ndig, ob ein Tool-Fehler nur vor\u00fcbergehend ist, f\u00fchrt betroffene Anfragen erneut aus und bricht nach Erreichen des Limits sicher ab. ",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "39494183-19f3-8038-9ab1-f57dba475b25",
+  "parent": {
+   "type": "page_id",
+   "page_id": "a7394183-19f3-82ba-b89c-81ce377a5b07"
+  },
+  "created_time": "2026-07-05T23:34:00.000Z",
+  "last_edited_time": "2026-07-05T23:34:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Genau darum geht es bei resilienter Orchestrierung: Das System reagiert gelassen auf St\u00f6rungen, ohne sich in einer Endlosschleife zu verlieren.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Genau darum geht es bei resilienter Orchestrierung: Das System reagiert gelassen auf St\u00f6rungen, ohne sich in einer Endlosschleife zu verlieren.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "39494183-19f3-8054-b1fa-ebfddf2314ba",
+  "parent": {
+   "type": "page_id",
+   "page_id": "a7394183-19f3-82ba-b89c-81ce377a5b07"
+  },
+  "created_time": "2026-07-05T23:19:00.000Z",
+  "last_edited_time": "2026-07-05T23:33:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ }
+]

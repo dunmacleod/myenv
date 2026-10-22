@@ -1,0 +1,2834 @@
+[
+ {
+  "object": "block",
+  "id": "38894183-19f3-8038-b972-e8bff2d6005f",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38894183-19f3-808c-aad4-ec60e4ed53ce"
+  },
+  "created_time": "2026-06-23T18:56:00.000Z",
+  "last_edited_time": "2026-07-02T09:32:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Timeouts stop the workflow from waiting forever. Retries give it a second chance. But some failures aren't temporary and won't recover on retry \u2014 the warranty database is down for maintenance, or a customer's query genuinely cannot be answered by any single specialist. What should the workflow do then? Just fail? Sofia knows that means a customer waits, an agent looks broken, and Lena has to intervene manually. This lesson is about the third resilience pattern: the fallback \u2014 an alternative path the workflow takes when the preferred path cannot complete.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Timeouts stop the workflow from waiting forever. Retries give it a second chance. But some failures aren't temporary and won't recover on retry \u2014 the warranty database is down for maintenance, or a customer's query genuinely cannot be answered by any single specialist. What should the workflow do then? Just fail? Sofia knows that means a customer waits, an agent looks broken, and Lena has to intervene manually. This lesson is about the third resilience pattern: the fallback \u2014 an alternative path the workflow takes when the preferred path cannot complete.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "39394183-19f3-8028-810e-e18da064364a",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38894183-19f3-808c-aad4-ec60e4ed53ce"
+  },
+  "created_time": "2026-07-04T07:41:00.000Z",
+  "last_edited_time": "2026-07-04T07:41:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38894183-19f3-805e-951c-c2d77a1d4ca0",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38894183-19f3-808c-aad4-ec60e4ed53ce"
+  },
+  "created_time": "2026-06-23T18:56:00.000Z",
+  "last_edited_time": "2026-06-23T18:56:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_2",
+  "heading_2": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "What is a fallback?",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "What is a fallback?",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38894183-19f3-8081-a456-d45bcb811834",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38894183-19f3-808c-aad4-ec60e4ed53ce"
+  },
+  "created_time": "2026-06-23T18:56:00.000Z",
+  "last_edited_time": "2026-06-23T18:56:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "A fallback is an alternative path used when the preferred path cannot complete the task reliably.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "A fallback is an alternative path used when the preferred path cannot complete the task reliably.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38894183-19f3-80ae-a312-ed8d16684e89",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38894183-19f3-808c-aad4-ec60e4ed53ce"
+  },
+  "created_time": "2026-06-23T18:56:00.000Z",
+  "last_edited_time": "2026-06-23T18:56:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "In an agent workflow, the main path is usually the best option: the most capable model, the most accurate tool, or the most complete process. But if that path fails, the workflow should not always collapse. A fallback gives the system another safe option.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "In an agent workflow, the main path is usually the best option: the most capable model, the most accurate tool, or the most complete process. But if that path fails, the workflow should not always collapse. A fallback gives the system another safe option.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38894183-19f3-800a-953c-ebe86379e272",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38894183-19f3-808c-aad4-ec60e4ed53ce"
+  },
+  "created_time": "2026-06-23T18:56:00.000Z",
+  "last_edited_time": "2026-07-02T10:16:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "For example, Cascadia's Order Lookup Agent may first try to query the live order database through a connected tool. If that tool is rate-limited or unavailable, the workflow could switch to a fallback path, such as returning the last cached order status with a note that the data may be a few minutes stale.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "For example, Cascadia's Order Lookup Agent may first try to query the live order database through a connected tool. If that tool is rate-limited or unavailable, the workflow could switch to a fallback path, such as returning the last cached order status with a note that the data may be a few minutes stale.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38894183-19f3-8041-8eda-ca7bdfbe594f",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38894183-19f3-808c-aad4-ec60e4ed53ce"
+  },
+  "created_time": "2026-06-23T18:56:00.000Z",
+  "last_edited_time": "2026-06-23T18:56:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "The fallback does not pretend that nothing failed. It gives the best safe response available under the current conditions.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "The fallback does not pretend that nothing failed. It gives the best safe response available under the current conditions.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "39394183-19f3-8073-afce-d49ca16dc028",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38894183-19f3-808c-aad4-ec60e4ed53ce"
+  },
+  "created_time": "2026-07-04T07:41:00.000Z",
+  "last_edited_time": "2026-07-04T07:41:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38894183-19f3-80eb-ba20-f5977a023a79",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38894183-19f3-808c-aad4-ec60e4ed53ce"
+  },
+  "created_time": "2026-06-23T18:56:00.000Z",
+  "last_edited_time": "2026-06-23T18:56:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_2",
+  "heading_2": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Timeout, retry, and fallback",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Timeout, retry, and fallback",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38894183-19f3-8008-8391-df72a0f541e9",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38894183-19f3-808c-aad4-ec60e4ed53ce"
+  },
+  "created_time": "2026-06-23T18:56:00.000Z",
+  "last_edited_time": "2026-06-23T18:56:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "These three patterns are related, but they solve different problems.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "These three patterns are related, but they solve different problems.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38894183-19f3-80a4-a21c-f3e5f13b077e",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38894183-19f3-808c-aad4-ec60e4ed53ce"
+  },
+  "created_time": "2026-06-23T18:56:00.000Z",
+  "last_edited_time": "2026-07-05T11:41:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": true,
+  "in_trash": false,
+  "type": "table",
+  "table": {
+   "table_width": 3,
+   "has_column_header": true,
+   "has_row_header": false
+  },
+  "archived": false,
+  "_children": [
+   {
+    "object": "block",
+    "id": "38894183-19f3-80f3-8d26-fe68a21eeac2",
+    "parent": {
+     "type": "block_id",
+     "block_id": "38894183-19f3-80a4-a21c-f3e5f13b077e"
+    },
+    "created_time": "2026-06-23T18:56:00.000Z",
+    "last_edited_time": "2026-07-05T11:41:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "table_row",
+    "table_row": {
+     "cells": [
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Pattern",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Pattern",
+        "href": null
+       }
+      ],
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Main question",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Main question",
+        "href": null
+       }
+      ],
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "What it does",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "What it does",
+        "href": null
+       }
+      ]
+     ]
+    },
+    "archived": false
+   },
+   {
+    "object": "block",
+    "id": "38894183-19f3-8083-9298-e8c8cd3f150c",
+    "parent": {
+     "type": "block_id",
+     "block_id": "38894183-19f3-80a4-a21c-f3e5f13b077e"
+    },
+    "created_time": "2026-06-23T18:56:00.000Z",
+    "last_edited_time": "2026-07-05T11:41:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "table_row",
+    "table_row": {
+     "cells": [
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Timeout",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Timeout",
+        "href": null
+       }
+      ],
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "\u201cHow long should we wait?\u201d",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "\u201cHow long should we wait?\u201d",
+        "href": null
+       }
+      ],
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Stops a step that takes too long.",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Stops a step that takes too long.",
+        "href": null
+       }
+      ]
+     ]
+    },
+    "archived": false
+   },
+   {
+    "object": "block",
+    "id": "38894183-19f3-8069-b554-f893d9464dcc",
+    "parent": {
+     "type": "block_id",
+     "block_id": "38894183-19f3-80a4-a21c-f3e5f13b077e"
+    },
+    "created_time": "2026-06-23T18:56:00.000Z",
+    "last_edited_time": "2026-07-05T11:41:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "table_row",
+    "table_row": {
+     "cells": [
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Retry",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Retry",
+        "href": null
+       }
+      ],
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "\u201cShould we try the same path again?\u201d",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "\u201cShould we try the same path again?\u201d",
+        "href": null
+       }
+      ],
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Repeats the same action when the failure may be temporary.",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Repeats the same action when the failure may be temporary.",
+        "href": null
+       }
+      ]
+     ]
+    },
+    "archived": false
+   },
+   {
+    "object": "block",
+    "id": "38894183-19f3-8023-ad41-cacb8766db23",
+    "parent": {
+     "type": "block_id",
+     "block_id": "38894183-19f3-80a4-a21c-f3e5f13b077e"
+    },
+    "created_time": "2026-06-23T18:56:00.000Z",
+    "last_edited_time": "2026-07-05T11:41:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "table_row",
+    "table_row": {
+     "cells": [
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Fallback",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Fallback",
+        "href": null
+       }
+      ],
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "\u201cWhat should we do instead?\u201d",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "\u201cWhat should we do instead?\u201d",
+        "href": null
+       }
+      ],
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Switches to an alternative path when the main path is not reliable.",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Switches to an alternative path when the main path is not reliable.",
+        "href": null
+       }
+      ]
+     ]
+    },
+    "archived": false
+   }
+  ]
+ },
+ {
+  "object": "block",
+  "id": "38894183-19f3-8008-8ad3-c52bdce88325",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38894183-19f3-808c-aad4-ec60e4ed53ce"
+  },
+  "created_time": "2026-06-23T18:56:00.000Z",
+  "last_edited_time": "2026-06-23T18:56:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "A timeout protects the workflow from waiting forever. A retry gives the same path another chance. A fallback changes the strategy.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "A timeout protects the workflow from waiting forever. A retry gives the same path another chance. A fallback changes the strategy.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "39394183-19f3-807d-90f1-c5c97aa5937d",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38894183-19f3-808c-aad4-ec60e4ed53ce"
+  },
+  "created_time": "2026-07-04T07:41:00.000Z",
+  "last_edited_time": "2026-07-04T07:41:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38894183-19f3-8015-9302-d04c7510811e",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38894183-19f3-808c-aad4-ec60e4ed53ce"
+  },
+  "created_time": "2026-06-23T18:56:00.000Z",
+  "last_edited_time": "2026-06-23T18:56:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_2",
+  "heading_2": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Why fallback matters",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Why fallback matters",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38894183-19f3-8053-9347-cb5a18f1b96d",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38894183-19f3-808c-aad4-ec60e4ed53ce"
+  },
+  "created_time": "2026-06-23T18:56:00.000Z",
+  "last_edited_time": "2026-06-23T18:56:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Without fallback logic, a workflow often has only two outcomes: success or failure. That is too fragile for real systems.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Without fallback logic, a workflow often has only two outcomes: success or failure. That is too fragile for real systems.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38894183-19f3-80bc-92c9-cb83afb2bad0",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38894183-19f3-808c-aad4-ec60e4ed53ce"
+  },
+  "created_time": "2026-06-23T18:56:00.000Z",
+  "last_edited_time": "2026-06-23T18:56:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "A fallback pattern creates a middle option. The system may not complete the ideal path, but it can still respond usefully, safely, and transparently.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "A fallback pattern creates a middle option. The system may not complete the ideal path, but it can still respond usefully, safely, and transparently.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38894183-19f3-8060-90c3-e97a6e49821d",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38894183-19f3-808c-aad4-ec60e4ed53ce"
+  },
+  "created_time": "2026-06-23T18:56:00.000Z",
+  "last_edited_time": "2026-06-23T18:56:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "For example:",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "For example:",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38894183-19f3-8094-98b0-dcff53cc443f",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38894183-19f3-808c-aad4-ec60e4ed53ce"
+  },
+  "created_time": "2026-06-23T18:56:00.000Z",
+  "last_edited_time": "2026-07-02T10:16:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Cascadia's Warranty Agent tries to reach the warranty records service. The request fails because the service is unavailable. The workflow retries twice. The service still fails. Instead of looping forever or returning a confusing error, the workflow moves to a fallback path \u2014 sending an acknowledgement to the customer that a specialist will follow up manually within one business day.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Cascadia's Warranty Agent tries to reach the warranty records service. The request fails because the service is unavailable. The workflow retries twice. The service still fails. Instead of looping forever or returning a confusing error, the workflow moves to a fallback path \u2014 sending an acknowledgement to the customer that a specialist will follow up manually within one business day.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38894183-19f3-80df-8f1a-c0685c7c15ed",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38894183-19f3-808c-aad4-ec60e4ed53ce"
+  },
+  "created_time": "2026-06-23T18:56:00.000Z",
+  "last_edited_time": "2026-06-23T18:56:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "This makes the experience better for the user and safer for the system.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "This makes the experience better for the user and safer for the system.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "39394183-19f3-809c-be95-f83ffc0ac186",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38894183-19f3-808c-aad4-ec60e4ed53ce"
+  },
+  "created_time": "2026-07-04T07:41:00.000Z",
+  "last_edited_time": "2026-07-04T07:41:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38894183-19f3-804a-9050-fcd12af3d3de",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38894183-19f3-808c-aad4-ec60e4ed53ce"
+  },
+  "created_time": "2026-06-23T18:56:00.000Z",
+  "last_edited_time": "2026-06-23T18:56:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_2",
+  "heading_2": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Common fallback options",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Common fallback options",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38894183-19f3-80da-a166-c62886ebb818",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38894183-19f3-808c-aad4-ec60e4ed53ce"
+  },
+  "created_time": "2026-06-23T18:56:00.000Z",
+  "last_edited_time": "2026-06-23T18:56:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "A fallback can take different forms depending on the task.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "A fallback can take different forms depending on the task.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38894183-19f3-8009-ba43-eaefcc2106a3",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38894183-19f3-808c-aad4-ec60e4ed53ce"
+  },
+  "created_time": "2026-06-23T18:56:00.000Z",
+  "last_edited_time": "2026-06-23T18:56:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "One option is a simpler model path. If the main agent uses a tool and the tool fails, the workflow may route to a model-only answer with a clear limitation.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "One option is a simpler model path. If the main agent uses a tool and the tool fails, the workflow may route to a model-only answer with a clear limitation.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38894183-19f3-8054-8331-c7e7dfcb237b",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38894183-19f3-808c-aad4-ec60e4ed53ce"
+  },
+  "created_time": "2026-06-23T18:56:00.000Z",
+  "last_edited_time": "2026-06-23T18:56:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Another option is a different tool. If one search tool is unavailable, the workflow may try another source.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Another option is a different tool. If one search tool is unavailable, the workflow may try another source.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38894183-19f3-80f5-8ed2-ce222b45f6ff",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38894183-19f3-808c-aad4-ec60e4ed53ce"
+  },
+  "created_time": "2026-06-23T18:56:00.000Z",
+  "last_edited_time": "2026-06-23T18:56:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "A third option is a user-facing recovery message. If the system cannot continue safely, it should explain what happened and what the user can do next.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "A third option is a user-facing recovery message. If the system cannot continue safely, it should explain what happened and what the user can do next.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38894183-19f3-800b-89cb-cda1edb36673",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38894183-19f3-808c-aad4-ec60e4ed53ce"
+  },
+  "created_time": "2026-06-23T18:56:00.000Z",
+  "last_edited_time": "2026-06-23T18:56:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "The key is that the fallback should be intentional. It should not hide the failure or invent results.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "The key is that the fallback should be intentional. It should not hide the failure or invent results.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "39394183-19f3-80c2-baa7-c2046663f059",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38894183-19f3-808c-aad4-ec60e4ed53ce"
+  },
+  "created_time": "2026-07-04T07:41:00.000Z",
+  "last_edited_time": "2026-07-04T07:41:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38894183-19f3-80db-8f23-f366757736fd",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38894183-19f3-808c-aad4-ec60e4ed53ce"
+  },
+  "created_time": "2026-06-23T18:56:00.000Z",
+  "last_edited_time": "2026-06-23T18:56:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_2",
+  "heading_2": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "How fallback fits into a loop",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "How fallback fits into a loop",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38894183-19f3-80e1-9b5a-db5328e2d0e4",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38894183-19f3-808c-aad4-ec60e4ed53ce"
+  },
+  "created_time": "2026-06-23T18:56:00.000Z",
+  "last_edited_time": "2026-06-23T18:56:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Fallbacks are often used after retries.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Fallbacks are often used after retries.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38894183-19f3-80f7-99df-cfc523b1c7fe",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38894183-19f3-808c-aad4-ec60e4ed53ce"
+  },
+  "created_time": "2026-06-23T18:56:00.000Z",
+  "last_edited_time": "2026-06-23T18:56:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "A common structure is:",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "A common structure is:",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38894183-19f3-8034-858e-e67f08f69339",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38894183-19f3-808c-aad4-ec60e4ed53ce"
+  },
+  "created_time": "2026-06-23T18:56:00.000Z",
+  "last_edited_time": "2026-06-23T18:56:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Start with the main agent. Check whether the result is valid. If the result shows a temporary failure, retry the same path. If the workflow reaches the retry limit, stop retrying and switch to the fallback path.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Start with the main agent. Check whether the result is valid. If the result shows a temporary failure, retry the same path. If the workflow reaches the retry limit, stop retrying and switch to the fallback path.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38894183-19f3-80ca-a62f-c67355314fcf",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38894183-19f3-808c-aad4-ec60e4ed53ce"
+  },
+  "created_time": "2026-06-23T18:56:00.000Z",
+  "last_edited_time": "2026-06-23T18:56:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "This prevents endless loops. It also avoids giving up too early.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "This prevents endless loops. It also avoids giving up too early.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "39394183-19f3-800d-9087-cc1badfc0fde",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38894183-19f3-808c-aad4-ec60e4ed53ce"
+  },
+  "created_time": "2026-07-04T07:41:00.000Z",
+  "last_edited_time": "2026-07-04T07:41:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38894183-19f3-800c-b558-f7c0cc377077",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38894183-19f3-808c-aad4-ec60e4ed53ce"
+  },
+  "created_time": "2026-06-23T18:56:00.000Z",
+  "last_edited_time": "2026-06-23T18:56:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_2",
+  "heading_2": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Quick decision rule",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Quick decision rule",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38894183-19f3-801f-b812-f5a76637420f",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38894183-19f3-808c-aad4-ec60e4ed53ce"
+  },
+  "created_time": "2026-06-23T18:56:00.000Z",
+  "last_edited_time": "2026-06-23T18:56:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Use a timeout when the system is waiting too long.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Use a timeout when the system is waiting too long.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38894183-19f3-80fc-8445-e7ec199ea440",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38894183-19f3-808c-aad4-ec60e4ed53ce"
+  },
+  "created_time": "2026-06-23T18:56:00.000Z",
+  "last_edited_time": "2026-06-23T18:56:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Use a retry when the same path might work if attempted again.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Use a retry when the same path might work if attempted again.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38894183-19f3-80d6-bb3d-fd28101576b2",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38894183-19f3-808c-aad4-ec60e4ed53ce"
+  },
+  "created_time": "2026-06-23T18:56:00.000Z",
+  "last_edited_time": "2026-06-23T18:56:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Use a fallback when the same path has failed enough times or is not safe to trust.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Use a fallback when the same path has failed enough times or is not safe to trust.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38894183-19f3-8009-ad74-fade46452b63",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38894183-19f3-808c-aad4-ec60e4ed53ce"
+  },
+  "created_time": "2026-06-23T18:56:00.000Z",
+  "last_edited_time": "2026-06-23T18:56:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "A resilient workflow often uses all three together: timeout to limit waiting, retry to handle temporary issues, and fallback to recover when the main path cannot complete the job.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "A resilient workflow often uses all three together: timeout to limit waiting, retry to handle temporary issues, and fallback to recover when the main path cannot complete the job.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "39394183-19f3-8043-adaa-e6353b55f29a",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38894183-19f3-808c-aad4-ec60e4ed53ce"
+  },
+  "created_time": "2026-07-04T07:41:00.000Z",
+  "last_edited_time": "2026-07-04T07:41:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38894183-19f3-801d-a31d-ff42180f490c",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38894183-19f3-808c-aad4-ec60e4ed53ce"
+  },
+  "created_time": "2026-06-23T18:56:00.000Z",
+  "last_edited_time": "2026-06-23T18:56:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_2",
+  "heading_2": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Quiz",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Quiz",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38894183-19f3-80b2-b78d-dafc0e4db886",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38894183-19f3-808c-aad4-ec60e4ed53ce"
+  },
+  "created_time": "2026-06-23T18:56:00.000Z",
+  "last_edited_time": "2026-06-23T18:56:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_3",
+  "heading_3": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Question 1",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Question 1",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "39694183-19f3-8043-b8e0-e2a3b1a4fb7b",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38894183-19f3-808c-aad4-ec60e4ed53ce"
+  },
+  "created_time": "2026-07-07T09:15:00.000Z",
+  "last_edited_time": "2026-07-07T09:15:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": true,
+  "in_trash": false,
+  "type": "callout",
+  "callout": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "An agent calls a tool, but the tool takes too long to respond. Which pattern directly handles this situation?",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "An agent calls a tool, but the tool takes too long to respond. Which pattern directly handles this situation?",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "gray_background"
+  },
+  "archived": false,
+  "_children": [
+   {
+    "object": "block",
+    "id": "39694183-19f3-8043-9d4c-f48ec3c61b6e",
+    "parent": {
+     "type": "block_id",
+     "block_id": "39694183-19f3-8043-b8e0-e2a3b1a4fb7b"
+    },
+    "created_time": "2026-07-07T09:15:00.000Z",
+    "last_edited_time": "2026-07-07T09:15:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "embed",
+    "embed": {
+     "caption": [],
+     "url": "https://app.masterschool.com/campus/multi-choice-question/89f28fc9-f312-41c4-af58-3b508e2625e8"
+    },
+    "archived": false
+   }
+  ]
+ },
+ {
+  "object": "block",
+  "id": "39394183-19f3-809a-949c-f797cb36d08c",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38894183-19f3-808c-aad4-ec60e4ed53ce"
+  },
+  "created_time": "2026-07-04T07:41:00.000Z",
+  "last_edited_time": "2026-07-04T07:41:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38894183-19f3-8044-9d2f-e3f354a55421",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38894183-19f3-808c-aad4-ec60e4ed53ce"
+  },
+  "created_time": "2026-06-23T18:56:00.000Z",
+  "last_edited_time": "2026-06-23T18:56:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_3",
+  "heading_3": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Question 2",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Question 2",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "39694183-19f3-80a7-9a83-e36889590498",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38894183-19f3-808c-aad4-ec60e4ed53ce"
+  },
+  "created_time": "2026-07-07T09:17:00.000Z",
+  "last_edited_time": "2026-07-07T09:17:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": true,
+  "in_trash": false,
+  "type": "callout",
+  "callout": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "An archive search tool returns a rate-limit error. The workflow sends the same request again after a short wait. Which pattern is being used?",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "An archive search tool returns a rate-limit error. The workflow sends the same request again after a short wait. Which pattern is being used?",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "gray_background"
+  },
+  "archived": false,
+  "_children": [
+   {
+    "object": "block",
+    "id": "39694183-19f3-8058-bd03-ca8095201fa5",
+    "parent": {
+     "type": "block_id",
+     "block_id": "39694183-19f3-80a7-9a83-e36889590498"
+    },
+    "created_time": "2026-07-07T09:17:00.000Z",
+    "last_edited_time": "2026-07-07T09:17:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "embed",
+    "embed": {
+     "caption": [],
+     "url": "https://app.masterschool.com/campus/multi-choice-question/d0145db7-852d-4e5e-81cd-dfb10509aa6d"
+    },
+    "archived": false
+   }
+  ]
+ },
+ {
+  "object": "block",
+  "id": "39394183-19f3-80f5-9373-f575774b37ef",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38894183-19f3-808c-aad4-ec60e4ed53ce"
+  },
+  "created_time": "2026-07-04T07:41:00.000Z",
+  "last_edited_time": "2026-07-04T07:41:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38894183-19f3-8017-a49d-ce5be6ba0296",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38894183-19f3-808c-aad4-ec60e4ed53ce"
+  },
+  "created_time": "2026-06-23T18:56:00.000Z",
+  "last_edited_time": "2026-06-23T18:56:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_3",
+  "heading_3": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Question 3",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Question 3",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "39694183-19f3-80d4-a686-ccb23deb2518",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38894183-19f3-808c-aad4-ec60e4ed53ce"
+  },
+  "created_time": "2026-07-07T09:18:00.000Z",
+  "last_edited_time": "2026-07-07T09:18:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": true,
+  "in_trash": false,
+  "type": "callout",
+  "callout": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "A workflow retries a failed tool call three times. After the third failure, it switches to a simpler response that explains the limitation to the user. Which pattern is this final switch?",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "A workflow retries a failed tool call three times. After the third failure, it switches to a simpler response that explains the limitation to the user. Which pattern is this final switch?",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "gray_background"
+  },
+  "archived": false,
+  "_children": [
+   {
+    "object": "block",
+    "id": "39694183-19f3-8074-b645-cf90557b3d0c",
+    "parent": {
+     "type": "block_id",
+     "block_id": "39694183-19f3-80d4-a686-ccb23deb2518"
+    },
+    "created_time": "2026-07-07T09:18:00.000Z",
+    "last_edited_time": "2026-07-07T09:18:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "embed",
+    "embed": {
+     "caption": [],
+     "url": "https://app.masterschool.com/campus/multi-choice-question/0e422a4e-62e5-4f51-a2ce-8e72f400166e"
+    },
+    "archived": false
+   }
+  ]
+ },
+ {
+  "object": "block",
+  "id": "39394183-19f3-80cc-a9ba-c6e9dab2c729",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38894183-19f3-808c-aad4-ec60e4ed53ce"
+  },
+  "created_time": "2026-07-04T07:41:00.000Z",
+  "last_edited_time": "2026-07-04T07:41:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "39394183-19f3-8015-a47e-e6a83278c1f7",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38894183-19f3-808c-aad4-ec60e4ed53ce"
+  },
+  "created_time": "2026-07-04T07:41:00.000Z",
+  "last_edited_time": "2026-07-04T07:41:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38894183-19f3-80d0-b557-cb3f2582134f",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38894183-19f3-808c-aad4-ec60e4ed53ce"
+  },
+  "created_time": "2026-06-23T18:56:00.000Z",
+  "last_edited_time": "2026-06-23T18:56:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_3",
+  "heading_3": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Question 4",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Question 4",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "39694183-19f3-80e5-b89e-ed32a71ede5c",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38894183-19f3-808c-aad4-ec60e4ed53ce"
+  },
+  "created_time": "2026-07-07T09:20:00.000Z",
+  "last_edited_time": "2026-07-07T09:20:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": true,
+  "in_trash": false,
+  "type": "callout",
+  "callout": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Why should a fallback response be transparent?",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Why should a fallback response be transparent?",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "gray_background"
+  },
+  "archived": false,
+  "_children": [
+   {
+    "object": "block",
+    "id": "39694183-19f3-8013-91bf-dca9dba74de6",
+    "parent": {
+     "type": "block_id",
+     "block_id": "39694183-19f3-80e5-b89e-ed32a71ede5c"
+    },
+    "created_time": "2026-07-07T09:20:00.000Z",
+    "last_edited_time": "2026-07-07T09:20:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "embed",
+    "embed": {
+     "caption": [],
+     "url": "https://app.masterschool.com/campus/multi-choice-question/ce6c95bb-7fde-4981-ab53-c4d888f49df8"
+    },
+    "archived": false
+   }
+  ]
+ },
+ {
+  "object": "block",
+  "id": "39394183-19f3-80cb-8b26-ecfb256109b9",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38894183-19f3-808c-aad4-ec60e4ed53ce"
+  },
+  "created_time": "2026-07-04T07:41:00.000Z",
+  "last_edited_time": "2026-07-04T07:41:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38894183-19f3-8002-9036-fd77dd3a8608",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38894183-19f3-808c-aad4-ec60e4ed53ce"
+  },
+  "created_time": "2026-06-23T18:56:00.000Z",
+  "last_edited_time": "2026-06-23T18:56:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_3",
+  "heading_3": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Question 5",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Question 5",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "39694183-19f3-80b2-b6a1-e4db802e530d",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38894183-19f3-808c-aad4-ec60e4ed53ce"
+  },
+  "created_time": "2026-07-07T09:21:00.000Z",
+  "last_edited_time": "2026-07-07T09:21:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": true,
+  "in_trash": false,
+  "type": "callout",
+  "callout": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Which workflow design is the most resilient?",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Which workflow design is the most resilient?",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "gray_background"
+  },
+  "archived": false,
+  "_children": [
+   {
+    "object": "block",
+    "id": "39694183-19f3-8000-a784-c01f7b2c0276",
+    "parent": {
+     "type": "block_id",
+     "block_id": "39694183-19f3-80b2-b6a1-e4db802e530d"
+    },
+    "created_time": "2026-07-07T09:21:00.000Z",
+    "last_edited_time": "2026-07-07T09:21:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "embed",
+    "embed": {
+     "caption": [],
+     "url": "https://app.masterschool.com/campus/multi-choice-question/4d2ceb4c-fa09-41fb-adf1-db0e4d9b7ec4"
+    },
+    "archived": false
+   }
+  ]
+ },
+ {
+  "object": "block",
+  "id": "39394183-19f3-80dd-a0ff-cd6108885437",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38894183-19f3-808c-aad4-ec60e4ed53ce"
+  },
+  "created_time": "2026-07-04T07:41:00.000Z",
+  "last_edited_time": "2026-07-04T07:41:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38894183-19f3-80d4-a627-f672c71f5554",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38894183-19f3-808c-aad4-ec60e4ed53ce"
+  },
+  "created_time": "2026-06-23T18:56:00.000Z",
+  "last_edited_time": "2026-06-23T18:56:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_2",
+  "heading_2": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Summary",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Summary",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38894183-19f3-8079-afe1-f2e777fe26cc",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38894183-19f3-808c-aad4-ec60e4ed53ce"
+  },
+  "created_time": "2026-06-23T18:56:00.000Z",
+  "last_edited_time": "2026-06-23T18:56:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Fallback patterns help agent workflows recover when the preferred path cannot complete the task. A timeout controls waiting, a retry gives the same path another chance, and a fallback changes the path when continuing the same way is no longer useful. Together, these patterns make orchestrated systems more reliable, safer, and easier for users to trust.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Fallback patterns help agent workflows recover when the preferred path cannot complete the task. A timeout controls waiting, a retry gives the same path another chance, and a fallback changes the path when continuing the same way is no longer useful. Together, these patterns make orchestrated systems more reliable, safer, and easier for users to trust.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ }
+]
