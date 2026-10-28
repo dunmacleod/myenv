@@ -1,0 +1,6668 @@
+[
+ {
+  "object": "block",
+  "id": "b60d841a-4c66-47b8-8414-3a2aa5fe602c",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-8099-ab9c-c79b80403dcd"
+  },
+  "created_time": "2026-06-28T12:41:00.000Z",
+  "last_edited_time": "2026-06-28T12:41:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "By this point, the Vela Systems canvas has a defined memory architecture: boundaries between shared and private state, write ownership per key, a recovery path after interruptions, and four log positions that produce a trace across the full execution chain. The architecture is sound on paper. What it has not been tested against is the specific ways memory and state tend to fail in production \u2014 not because the architecture was wrong in design, but because edge cases in real usage expose gaps that controlled testing does not surface.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "By this point, the Vela Systems canvas has a defined memory architecture: boundaries between shared and private state, write ownership per key, a recovery path after interruptions, and four log positions that produce a trace across the full execution chain. The architecture is sound on paper. What it has not been tested against is the specific ways memory and state tend to fail in production \u2014 not because the architecture was wrong in design, but because edge cases in real usage expose gaps that controlled testing does not surface.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "2ae1e307-75a6-4c94-a145-a12d12b9afcd",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-8099-ab9c-c79b80403dcd"
+  },
+  "created_time": "2026-06-28T12:41:00.000Z",
+  "last_edited_time": "2026-06-28T12:41:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "The Vela team is preparing to hand the system to thirty users. Before that happens, they need to work through a set of scenarios that represent the realistic failure surface of a multi-agent system like theirs: cases where memory causes an agent to return irrelevant or stale output, cases where state causes incorrect routing or silent duplication, and cases where the combination of the two causes a failure that neither individually would produce. Your job in this lesson is to work through those scenarios on the Vela canvas and design a safeguard for each one.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "The Vela team is preparing to hand the system to thirty users. Before that happens, they need to work through a set of scenarios that represent the realistic failure surface of a multi-agent system like theirs: cases where memory causes an agent to return irrelevant or stale output, cases where state causes incorrect routing or silent duplication, and cases where the combination of the two causes a failure that neither individually would produce. Your job in this lesson is to work through those scenarios on the Vela canvas and design a safeguard for each one.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38d94183-19f3-803a-a656-fb6cf50e4e1e",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-8099-ab9c-c79b80403dcd"
+  },
+  "created_time": "2026-06-28T13:05:00.000Z",
+  "last_edited_time": "2026-06-28T13:05:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "callout",
+  "callout": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "In this lesson, you will identify cases where memory or state causes irrelevant, stale, or unsafe agent behavior, and design a concrete safeguard for each.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "In this lesson, you will identify cases where memory or state causes irrelevant, stale, or unsafe agent behavior, and design a concrete safeguard for each.",
+     "href": null
+    }
+   ],
+   "icon": {
+    "type": "emoji",
+    "emoji": "\ud83d\udca1"
+   },
+   "color": "gray_background"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "39094183-19f3-80ac-ac31-cd2974fc49e4",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-8099-ab9c-c79b80403dcd"
+  },
+  "created_time": "2026-07-01T10:30:00.000Z",
+  "last_edited_time": "2026-07-01T10:30:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "50ccb768-d27c-4c27-b51e-95f08e6c7821",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-8099-ab9c-c79b80403dcd"
+  },
+  "created_time": "2026-06-28T12:41:00.000Z",
+  "last_edited_time": "2026-06-28T12:41:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_2",
+  "heading_2": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "What this exercise builds",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "What this exercise builds",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "68325bb1-4fb6-4230-aa5d-f21bcb38b02a",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-8099-ab9c-c79b80403dcd"
+  },
+  "created_time": "2026-06-28T12:41:00.000Z",
+  "last_edited_time": "2026-06-28T12:41:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Identifying failure modes is a design skill, not a debugging skill. A debugger finds failures after they happen. A designer anticipates them before they do and builds the system so that when they occur, the damage is contained.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Identifying failure modes is a design skill, not a debugging skill. A debugger finds failures after they happen. A designer anticipates them before they do and builds the system so that when they occur, the damage is contained.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "c90d1c8b-27fa-42e8-b31d-0d5eb6a3ed0b",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-8099-ab9c-c79b80403dcd"
+  },
+  "created_time": "2026-06-28T12:41:00.000Z",
+  "last_edited_time": "2026-06-28T12:41:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "The failure modes in this lesson are not hypothetical edge cases invented for the exercise. They are the categories of memory and state failure that appear repeatedly in production multi-agent systems. The Vela canvas is the context you know well \u2014 use it to anchor your analysis. But the patterns you identify here apply to any multi-agent system, including your own project.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "The failure modes in this lesson are not hypothetical edge cases invented for the exercise. They are the categories of memory and state failure that appear repeatedly in production multi-agent systems. The Vela canvas is the context you know well \u2014 use it to anchor your analysis. But the patterns you identify here apply to any multi-agent system, including your own project.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "d1dbb23c-df6d-4b05-a8b8-bee2f8b74410",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-8099-ab9c-c79b80403dcd"
+  },
+  "created_time": "2026-06-28T12:41:00.000Z",
+  "last_edited_time": "2026-06-28T12:41:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Three categories structure the exercise:",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Three categories structure the exercise:",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38d94183-19f3-8014-a09b-ed591fe26d36",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-8099-ab9c-c79b80403dcd"
+  },
+  "created_time": "2026-06-28T12:48:00.000Z",
+  "last_edited_time": "2026-06-28T12:48:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "image",
+  "image": {
+   "caption": [],
+   "type": "file",
+   "file": {
+    "url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/3a9085c4-df29-45e6-8bc7-6c9c0a25ea8c/4c023c67-1b62-428b-a812-6aca67cc6c16/memory-state-failure-categories__01__en.svg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466UIQUEAQJ%2F20261028%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20261028T102037Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEDgaCXVzLXdlc3QtMiJHMEUCIQCcpfw7a1JXEYS5rLokKQKV3c5K%2Fq1wc6JnPV8cz4Io5wIgbygL5ytmhS5i6LcWBtDqZ1VbP8eATtwwdrAFd1oeZZ0q%2FwMIABAAGgw2Mzc0MjMxODM4MDUiDB5hIxV660bMSJgbwSrcAysQZsVl4IWbSFhpI%2FEeSeTzXK%2BSl%2F72zn2nv%2FUqEK0gKpvkCcmSMlyngb46wqorcXMyYfZ8myRpMvz9Fa84MNSJ17OKN4H3B1eEMoxiQ7a9xf1ofErcyaCBfsfjPnIFFSjbsHMg8pr3Ajjf0B%2BoJQ4jWdN3opztAqK%2FvR7Le8497fhBB6WxSOORABJf%2FlZRE6nVcTNbDE0CUlqJwVW6kl4YmULvuNYGeQEIFdsbF3p2YQGKzVeyRsDzTtlyDk566zzVQQeuJvGVIC%2FtUv3sy0Mn2VP%2BmdwQR%2Fld84V0vHQcYrTruY7s8IKnyPmdLkFqVqnCvX9c23ix8ApCbIY1k2uORZH3%2Bn4Ey%2F8zEsXA2xjJBukVL3fSS7nLGNgp9UqhHaVYvAdN7o6tVqLTrKAeYEu%2FGoElScNy%2FLZe0dwZ1sdxHsgTTqApPhk7xJKYyVBwvyMY9MhqNzvBVMFX7ULijxcfoL3M78RdkVPHMt5dW375IVgNWpN3RNbattBtnf9HUedPiWZt96ujeulaygd%2FscFSdsHEL5Yj29ckYJv8%2FIbHoem0pgeTM4Obxz5TPIyRzqwRFwDX6mGVPLWFBvJsBuh3x3m7HOBEoZC%2FWIjXLbUCgrcZ33ln6YzkWdUrMPjUhtcGOqUBMNKdHXn3%2FIfZi7LqOZ%2BbRn2DwTQhOmgZ8QdzSu4CQpAFfkdVyDAmu1%2FlO%2F%2FaDFlQQi02Mtjx%2Bw4pzApSyT4dk6SNBMzmvBA8yaNYxV5pvRhHJE0rrZiLUx21B1axi4XTbGOzW6Qj6ZMvtiCQsCsyJNM5xuTO7dR5wSbs9q0cXmNF20RaLFJZXRIqyLHprE4Rf3huWBHxpxhP3CbSfVMc%2FRQxi9fr&X-Amz-Signature=be7918339c7158096a73b39cebaf647056ab9f1f86fd22708fde2ad495bd2742&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+    "expiry_time": "2026-10-28T11:20:37.302Z"
+   }
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "39094183-19f3-80b9-afa9-e6e429680b82",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-8099-ab9c-c79b80403dcd"
+  },
+  "created_time": "2026-07-01T10:30:00.000Z",
+  "last_edited_time": "2026-07-01T10:30:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38d94183-19f3-803c-808b-dc86755cb3f3",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-8099-ab9c-c79b80403dcd"
+  },
+  "created_time": "2026-06-28T12:48:00.000Z",
+  "last_edited_time": "2026-06-28T12:48:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_2",
+  "heading_2": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Working with documentation",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Working with documentation",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "e663accf-aef7-43cd-b889-d6bc49253553",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-8099-ab9c-c79b80403dcd"
+  },
+  "created_time": "2026-06-28T12:41:00.000Z",
+  "last_edited_time": "2026-06-28T12:48:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Before starting the scenario analysis, review the Flowise Agentflow V2 documentation for the two mechanisms you will be working with: ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Before starting the scenario analysis, review the Flowise Agentflow V2 documentation for the two mechanisms you will be working with: ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "Flow State",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Flow State",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " (the shared key-value store written and read across nodes) and the ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " (the shared key-value store written and read across nodes) and the ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "Update Flow State",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Update Flow State",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " configuration on Agent Nodes. The distinction between what is written, when it is written, and who reads it is the source of all three failure categories above.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " configuration on Agent Nodes. The distinction between what is written, when it is written, and who reads it is the source of all three failure categories above.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "61870fd5-005b-4b84-b4d4-c9f393597822",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-8099-ab9c-c79b80403dcd"
+  },
+  "created_time": "2026-06-28T12:41:00.000Z",
+  "last_edited_time": "2026-07-01T10:30:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": true,
+  "in_trash": false,
+  "type": "table",
+  "table": {
+   "table_width": 3,
+   "has_column_header": true,
+   "has_row_header": false
+  },
+  "archived": false,
+  "_children": [
+   {
+    "object": "block",
+    "id": "68bcd21b-ea46-4831-b82f-3931695aca72",
+    "parent": {
+     "type": "block_id",
+     "block_id": "61870fd5-005b-4b84-b4d4-c9f393597822"
+    },
+    "created_time": "2026-06-28T12:41:00.000Z",
+    "last_edited_time": "2026-06-28T12:41:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "231d872b-594c-81f2-a375-0002b8783aca"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "231d872b-594c-81f2-a375-0002b8783aca"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "table_row",
+    "table_row": {
+     "cells": [
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Mechanism",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Mechanism",
+        "href": null
+       }
+      ],
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "What it does",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "What it does",
+        "href": null
+       }
+      ],
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Where to look",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Where to look",
+        "href": null
+       }
+      ]
+     ]
+    },
+    "archived": false
+   },
+   {
+    "object": "block",
+    "id": "673e67a1-af64-4507-9994-ebd015a94ae5",
+    "parent": {
+     "type": "block_id",
+     "block_id": "61870fd5-005b-4b84-b4d4-c9f393597822"
+    },
+    "created_time": "2026-06-28T12:41:00.000Z",
+    "last_edited_time": "2026-06-28T12:41:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "231d872b-594c-81f2-a375-0002b8783aca"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "231d872b-594c-81f2-a375-0002b8783aca"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "table_row",
+    "table_row": {
+     "cells": [
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Flow State",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Flow State",
+        "href": null
+       }
+      ],
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Shared key-value store available to all nodes in the canvas for the duration of a flow run",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Shared key-value store available to all nodes in the canvas for the duration of a flow run",
+        "href": null
+       }
+      ],
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Flowise docs \u2192 Agentflow V2 \u2192 Flow State",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Flowise docs \u2192 Agentflow V2 \u2192 Flow State",
+        "href": null
+       }
+      ]
+     ]
+    },
+    "archived": false
+   },
+   {
+    "object": "block",
+    "id": "e98afc7b-e63a-4c56-a815-22673d01c32a",
+    "parent": {
+     "type": "block_id",
+     "block_id": "61870fd5-005b-4b84-b4d4-c9f393597822"
+    },
+    "created_time": "2026-06-28T12:41:00.000Z",
+    "last_edited_time": "2026-06-28T12:41:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "231d872b-594c-81f2-a375-0002b8783aca"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "231d872b-594c-81f2-a375-0002b8783aca"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "table_row",
+    "table_row": {
+     "cells": [
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Update Flow State (Agent Node)",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Update Flow State (Agent Node)",
+        "href": null
+       }
+      ],
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Configuration that writes key-value pairs from the agent's output into Flow State after the node completes",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Configuration that writes key-value pairs from the agent's output into Flow State after the node completes",
+        "href": null
+       }
+      ],
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Flowise docs \u2192 Agentflow V2 \u2192 Agent Node \u2192 Update Flow State",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Flowise docs \u2192 Agentflow V2 \u2192 Agent Node \u2192 Update Flow State",
+        "href": null
+       }
+      ]
+     ]
+    },
+    "archived": false
+   },
+   {
+    "object": "block",
+    "id": "d091ec51-d381-4a17-82dd-e9ef14360a55",
+    "parent": {
+     "type": "block_id",
+     "block_id": "61870fd5-005b-4b84-b4d4-c9f393597822"
+    },
+    "created_time": "2026-06-28T12:41:00.000Z",
+    "last_edited_time": "2026-06-28T13:05:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "231d872b-594c-81f2-a375-0002b8783aca"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "231d872b-594c-81f2-a375-0002b8783aca"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "table_row",
+    "table_row": {
+     "cells": [
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Context window",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Context window",
+        "href": null
+       }
+      ],
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "The conversation history visible to a single agent node within its own execution, not shared across nodes",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "The conversation history visible to a single agent node within its own execution, not shared across nodes",
+        "href": null
+       }
+      ],
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Flowise docs \u2192 Agentflow V2 \u2192 Memory",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Flowise docs \u2192 Agentflow V2 \u2192 Memory",
+        "href": null
+       }
+      ]
+     ]
+    },
+    "archived": false
+   },
+   {
+    "object": "block",
+    "id": "4253600b-c954-4ed8-a159-bde4a983accc",
+    "parent": {
+     "type": "block_id",
+     "block_id": "61870fd5-005b-4b84-b4d4-c9f393597822"
+    },
+    "created_time": "2026-06-28T12:41:00.000Z",
+    "last_edited_time": "2026-06-28T12:41:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "231d872b-594c-81f2-a375-0002b8783aca"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "231d872b-594c-81f2-a375-0002b8783aca"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "table_row",
+    "table_row": {
+     "cells": [
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Session scope",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Session scope",
+        "href": null
+       }
+      ],
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "The boundary within which Flow State keys persist \u2014 ends when the session ends",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "The boundary within which Flow State keys persist \u2014 ends when the session ends",
+        "href": null
+       }
+      ],
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Flowise docs \u2192 Agentflow V2 \u2192 Sessions",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Flowise docs \u2192 Agentflow V2 \u2192 Sessions",
+        "href": null
+       }
+      ]
+     ]
+    },
+    "archived": false
+   }
+  ]
+ },
+ {
+  "object": "block",
+  "id": "3f9e226e-705d-4b13-8fbf-11ccaacd67db",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-8099-ab9c-c79b80403dcd"
+  },
+  "created_time": "2026-06-28T12:41:00.000Z",
+  "last_edited_time": "2026-06-28T13:05:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "The reference above is not a checklist to copy. It is a pointer to the documentation you should have open while you work through each scenario. The analysis in each scenario requires you to reason about ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "The reference above is not a checklist to copy. It is a pointer to the documentation you should have open while you work through each scenario. The analysis in each scenario requires you to reason about ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "which mechanism",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": true,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "which mechanism",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " is involved, not just what the symptom is.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " is involved, not just what the symptom is.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "39094183-19f3-805a-ac96-cfed1321be65",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-8099-ab9c-c79b80403dcd"
+  },
+  "created_time": "2026-07-01T10:30:00.000Z",
+  "last_edited_time": "2026-07-01T10:30:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "e74cbf5b-5036-408e-bd6a-9d9120af518b",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-8099-ab9c-c79b80403dcd"
+  },
+  "created_time": "2026-06-28T12:41:00.000Z",
+  "last_edited_time": "2026-06-28T12:41:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_2",
+  "heading_2": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Your task",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Your task",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "39094183-19f3-811a-ae2c-fd8738d5a873",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-8099-ab9c-c79b80403dcd"
+  },
+  "created_time": "2026-07-01T10:10:00.000Z",
+  "last_edited_time": "2026-07-01T10:24:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "callout",
+  "callout": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Before you start, make a copy of ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Before you start, make a copy of ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "this template",
+      "link": {
+       "url": "https://docs.google.com/spreadsheets/d/1V3bXN29pxgbgw4s3mu1gAmvvDXf3lDrD/edit?usp=drive_link&ouid=100710650023709537572&rtpof=true&sd=true"
+      }
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "this template",
+     "href": "https://docs.google.com/spreadsheets/d/1V3bXN29pxgbgw4s3mu1gAmvvDXf3lDrD/edit?usp=drive_link&ouid=100710650023709537572&rtpof=true&sd=true"
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": ". It mirrors the structure of this lesson \u2014 one tab per scenario, with context, category, mechanism, guiding questions, and a safeguard field, plus a short checkpoint sheet.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": ". It mirrors the structure of this lesson \u2014 one tab per scenario, with context, category, mechanism, guiding questions, and a safeguard field, plus a short checkpoint sheet.",
+     "href": null
+    }
+   ],
+   "icon": {
+    "type": "emoji",
+    "emoji": "\ud83d\udd25"
+   },
+   "color": "green_background"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "5a3b23d5-d347-479e-8f5a-99ea237b125e",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-8099-ab9c-c79b80403dcd"
+  },
+  "created_time": "2026-06-28T12:41:00.000Z",
+  "last_edited_time": "2026-06-28T12:41:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Work through the five scenarios below. For each one:",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Work through the five scenarios below. For each one:",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "f31a813e-dc37-4860-82f9-925ff1b0c8cd",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-8099-ab9c-c79b80403dcd"
+  },
+  "created_time": "2026-06-28T12:41:00.000Z",
+  "last_edited_time": "2026-06-28T12:41:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "numbered_list_item",
+  "numbered_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Identify the failure category (stale memory, state contamination, or unsafe persistence).",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Identify the failure category (stale memory, state contamination, or unsafe persistence).",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "486a88a9-1732-42ef-8851-24b479efc85b",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-8099-ab9c-c79b80403dcd"
+  },
+  "created_time": "2026-06-28T12:41:00.000Z",
+  "last_edited_time": "2026-06-28T13:05:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "numbered_list_item",
+  "numbered_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Describe what the Vela user would experience, what the output looks like, and why it is wrong.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Describe what the Vela user would experience, what the output looks like, and why it is wrong.",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "0cadb492-a524-4b6e-bdbe-0ad205ecce82",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-8099-ab9c-c79b80403dcd"
+  },
+  "created_time": "2026-06-28T12:41:00.000Z",
+  "last_edited_time": "2026-06-28T12:41:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "numbered_list_item",
+  "numbered_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Identify the specific mechanism on the Vela canvas that allows the failure to occur.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Identify the specific mechanism on the Vela canvas that allows the failure to occur.",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "cfc4019a-035c-480e-aa5a-8ce0d06fa052",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-8099-ab9c-c79b80403dcd"
+  },
+  "created_time": "2026-06-28T12:41:00.000Z",
+  "last_edited_time": "2026-06-28T13:05:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "numbered_list_item",
+  "numbered_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Design a concrete safeguard, a specific change to the canvas configuration, to the memory architecture, or to the agent's write behavior \u2014 that prevents or contains the failure.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Design a concrete safeguard, a specific change to the canvas configuration, to the memory architecture, or to the agent's write behavior \u2014 that prevents or contains the failure.",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "300a7bc8-2d61-40b9-8ad3-412bdfbc511a",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-8099-ab9c-c79b80403dcd"
+  },
+  "created_time": "2026-06-28T12:41:00.000Z",
+  "last_edited_time": "2026-06-28T12:41:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Write your safeguard as a concrete design decision: not \"add a check\" but \"the Classifier node resets ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Write your safeguard as a concrete design decision: not \"add a check\" but \"the Classifier node resets ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "query_type",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": true,
+      "color": "default"
+     },
+     "plain_text": "query_type",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " to ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " to ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "null",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": true,
+      "color": "default"
+     },
+     "plain_text": "null",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " before writing a new value, so a missed write always produces a detectable null rather than a stale classification.\"",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " before writing a new value, so a missed write always produces a detectable null rather than a stale classification.\"",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "36b2bc5a-8740-47af-b3df-16bc28e91f7d",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-8099-ab9c-c79b80403dcd"
+  },
+  "created_time": "2026-06-28T12:41:00.000Z",
+  "last_edited_time": "2026-06-28T12:41:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "The goal is a set of five safeguard decisions that you can carry directly into your integration work in the next lesson.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "The goal is a set of five safeguard decisions that you can carry directly into your integration work in the next lesson.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "39094183-19f3-8076-8d91-d318e4a2d90b",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-8099-ab9c-c79b80403dcd"
+  },
+  "created_time": "2026-07-01T10:30:00.000Z",
+  "last_edited_time": "2026-07-01T10:30:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "7f0bbf16-e6e0-4d3c-87e7-0d49faf92214",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-8099-ab9c-c79b80403dcd"
+  },
+  "created_time": "2026-06-28T12:41:00.000Z",
+  "last_edited_time": "2026-06-28T13:05:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_3",
+  "heading_3": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Scenario 1: The Classifier does not reset ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Scenario 1: The Classifier does not reset ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "query_type",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": true,
+      "color": "default"
+     },
+     "plain_text": "query_type",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " between queries in the same session",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " between queries in the same session",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "82d5b115-5c9c-467f-9f24-1e347938081d",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-8099-ab9c-c79b80403dcd"
+  },
+  "created_time": "2026-06-28T12:41:00.000Z",
+  "last_edited_time": "2026-06-28T12:41:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "A Vela user sends two queries in the same session. The first is an account inquiry, which the Classifier correctly classifies as ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "A Vela user sends two queries in the same session. The first is an account inquiry, which the Classifier correctly classifies as ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "account",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": true,
+      "color": "default"
+     },
+     "plain_text": "account",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": ". The Classifier writes ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": ". The Classifier writes ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "query_type: \"account\"",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": true,
+      "color": "default"
+     },
+     "plain_text": "query_type: \"account\"",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " to Flow State and routes to Specialist B. The specialist returns a correct reply.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " to Flow State and routes to Specialist B. The specialist returns a correct reply.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "cb1fbe9b-d3dc-49d6-b07e-3315a08a0f93",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-8099-ab9c-c79b80403dcd"
+  },
+  "created_time": "2026-06-28T12:41:00.000Z",
+  "last_edited_time": "2026-06-28T13:07:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "The same user immediately sends a second query: \"Any open support tickets for that client?\" This is a support query. The correct classification is ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "The same user immediately sends a second query: \"Any open support tickets for that client?\" This is a support query. The correct classification is ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "support",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": true,
+      "color": "default"
+     },
+     "plain_text": "support",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": ", which should route to Specialist A.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": ", which should route to Specialist A.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "3c364906-f4fb-4fe4-a1c1-b1da5795e6df",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-8099-ab9c-c79b80403dcd"
+  },
+  "created_time": "2026-06-28T12:41:00.000Z",
+  "last_edited_time": "2026-06-28T12:41:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "But the Classifier's LLM, processing a short follow-up query in a fast session, produces a malformed output. The Update Flow State step does not execute correctly for the second query. ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "But the Classifier's LLM, processing a short follow-up query in a fast session, produces a malformed output. The Update Flow State step does not execute correctly for the second query. ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "query_type",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": true,
+      "color": "default"
+     },
+     "plain_text": "query_type",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " in Flow State still holds ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " in Flow State still holds ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "\"account\"",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": true,
+      "color": "default"
+     },
+     "plain_text": "\"account\"",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " from the first query.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " from the first query.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "099edad8-ccf1-404d-93dc-7567e78c7c5a",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-8099-ab9c-c79b80403dcd"
+  },
+  "created_time": "2026-06-28T12:41:00.000Z",
+  "last_edited_time": "2026-06-28T13:07:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "The Condition Node reads ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "The Condition Node reads ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "query_type: \"account\"",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": true,
+      "color": "default"
+     },
+     "plain_text": "query_type: \"account\"",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " and routes to Specialist B again. Specialist B handles account queries. It returns account information for the same client, not the support ticket history the user asked for.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " and routes to Specialist B again. Specialist B handles account queries. It returns account information for the same client, not the support ticket history the user asked for.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "8d1e4f15-8026-42be-a6c3-8296c28bb956",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-8099-ab9c-c79b80403dcd"
+  },
+  "created_time": "2026-06-28T12:41:00.000Z",
+  "last_edited_time": "2026-06-28T12:41:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Questions to guide your analysis:",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Questions to guide your analysis:",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "699aae16-ee4b-49dc-94b4-d44c048336f1",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-8099-ab9c-c79b80403dcd"
+  },
+  "created_time": "2026-06-28T12:41:00.000Z",
+  "last_edited_time": "2026-06-28T12:41:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Which Flow State key is at the centre of this failure?",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Which Flow State key is at the centre of this failure?",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "874e2382-0cb5-4b6e-af1a-4feae4564942",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-8099-ab9c-c79b80403dcd"
+  },
+  "created_time": "2026-06-28T12:41:00.000Z",
+  "last_edited_time": "2026-06-28T12:41:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "At what point in the execution sequence should the key be reset?",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "At what point in the execution sequence should the key be reset?",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "917a42c8-9645-4a64-8e37-aa10e23b7ec4",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-8099-ab9c-c79b80403dcd"
+  },
+  "created_time": "2026-06-28T12:41:00.000Z",
+  "last_edited_time": "2026-06-28T12:41:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "What value should it be reset to, and which node is responsible for that reset?",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "What value should it be reset to, and which node is responsible for that reset?",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "135ee62d-8a84-4442-9931-49c969b6aa28",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-8099-ab9c-c79b80403dcd"
+  },
+  "created_time": "2026-06-28T12:41:00.000Z",
+  "last_edited_time": "2026-06-28T12:41:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "How does the log at Position 1 (from the previous lesson) help you detect this failure after it occurs?",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "How does the log at Position 1 (from the previous lesson) help you detect this failure after it occurs?",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "39094183-19f3-8042-8f11-d171f983b1b6",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-8099-ab9c-c79b80403dcd"
+  },
+  "created_time": "2026-07-01T10:30:00.000Z",
+  "last_edited_time": "2026-07-01T10:30:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "c3484840-1f7d-4ca7-8adf-fc4e3eac9d60",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-8099-ab9c-c79b80403dcd"
+  },
+  "created_time": "2026-06-28T12:41:00.000Z",
+  "last_edited_time": "2026-06-28T13:07:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_3",
+  "heading_3": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Scenario 2: A specialist agent writes a summary into Flow State that is read by the next query",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Scenario 2: A specialist agent writes a summary into Flow State that is read by the next query",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "686de3fe-4e7e-4d39-aa3f-a0f599d4c237",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-8099-ab9c-c79b80403dcd"
+  },
+  "created_time": "2026-06-28T12:41:00.000Z",
+  "last_edited_time": "2026-06-28T13:07:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "The Vela canvas is configured so that Specialist B writes a brief account summary into a Flow State key called ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "The Vela canvas is configured so that Specialist B writes a brief account summary into a Flow State key called ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "last_account_summary",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": true,
+      "color": "default"
+     },
+     "plain_text": "last_account_summary",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " after every query it handles. This was added as a convenience. The idea was that the summary could be referenced by the final reply node to avoid re-summarising the same content.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " after every query it handles. This was added as a convenience. The idea was that the summary could be referenced by the final reply node to avoid re-summarising the same content.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "f7a1e1ad-d2b1-4541-ad5f-ff40ac526fe8",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-8099-ab9c-c79b80403dcd"
+  },
+  "created_time": "2026-06-28T12:41:00.000Z",
+  "last_edited_time": "2026-06-28T12:41:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "A user sends a query about Client A. Specialist B runs and writes ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "A user sends a query about Client A. Specialist B runs and writes ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "last_account_summary: \"Client A \u2014 renewal due Q3, no open tickets\"",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": true,
+      "color": "default"
+     },
+     "plain_text": "last_account_summary: \"Client A \u2014 renewal due Q3, no open tickets\"",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " to Flow State.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " to Flow State.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "e73692ab-abd6-44bd-a15b-04d3ac8ea697",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-8099-ab9c-c79b80403dcd"
+  },
+  "created_time": "2026-06-28T12:41:00.000Z",
+  "last_edited_time": "2026-06-28T12:41:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "The same user, later in the same session, sends a query about Client B. Client B is a different account entirely. The Classifier correctly classifies this as an account query and routes to Specialist B. Specialist B runs and generates a reply about Client B. But the final reply node reads ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "The same user, later in the same session, sends a query about Client B. Client B is a different account entirely. The Classifier correctly classifies this as an account query and routes to Specialist B. Specialist B runs and generates a reply about Client B. But the final reply node reads ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "last_account_summary",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": true,
+      "color": "default"
+     },
+     "plain_text": "last_account_summary",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " from Flow State \u2014 and that key still holds the Client A summary from earlier in the session.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " from Flow State \u2014 and that key still holds the Client A summary from earlier in the session.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "326ddfe7-0fbb-483b-b4df-9840306ad592",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-8099-ab9c-c79b80403dcd"
+  },
+  "created_time": "2026-06-28T12:41:00.000Z",
+  "last_edited_time": "2026-06-28T12:41:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "The reply to the Client B query contains an embedded reference to Client A's renewal date.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "The reply to the Client B query contains an embedded reference to Client A's renewal date.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "91a7eeb2-259a-452d-91a1-7e374d6e3f71",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-8099-ab9c-c79b80403dcd"
+  },
+  "created_time": "2026-06-28T12:41:00.000Z",
+  "last_edited_time": "2026-06-28T12:41:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Questions to guide your analysis:",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Questions to guide your analysis:",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "b307d90d-cd08-429c-9548-930bd40e553b",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-8099-ab9c-c79b80403dcd"
+  },
+  "created_time": "2026-06-28T12:41:00.000Z",
+  "last_edited_time": "2026-06-28T12:41:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Is this a stale memory failure, a state contamination failure, or both?",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Is this a stale memory failure, a state contamination failure, or both?",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "825c5252-6e4f-4d9c-b13c-0a05dc3ce922",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-8099-ab9c-c79b80403dcd"
+  },
+  "created_time": "2026-06-28T12:41:00.000Z",
+  "last_edited_time": "2026-06-28T12:41:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "What is the write ownership problem in the original design?",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "What is the write ownership problem in the original design?",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "2219c525-61e2-4eb1-9a95-05080ae5ce15",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-8099-ab9c-c79b80403dcd"
+  },
+  "created_time": "2026-06-28T12:41:00.000Z",
+  "last_edited_time": "2026-06-28T12:41:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "How should ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "How should ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "last_account_summary",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": true,
+      "color": "default"
+     },
+     "plain_text": "last_account_summary",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " be scoped to prevent cross-query contamination within a session?",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " be scoped to prevent cross-query contamination within a session?",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "71839d0b-d5ed-4748-b0f1-4c8263924797",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-8099-ab9c-c79b80403dcd"
+  },
+  "created_time": "2026-06-28T12:41:00.000Z",
+  "last_edited_time": "2026-06-28T12:41:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "If you decided to keep the key, what reset rule would make it safe?",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "If you decided to keep the key, what reset rule would make it safe?",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "39094183-19f3-8086-b582-f0a85e012621",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-8099-ab9c-c79b80403dcd"
+  },
+  "created_time": "2026-07-01T10:30:00.000Z",
+  "last_edited_time": "2026-07-01T10:30:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "e637593b-965a-412a-b0e2-d77ee70cd09d",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-8099-ab9c-c79b80403dcd"
+  },
+  "created_time": "2026-06-28T12:41:00.000Z",
+  "last_edited_time": "2026-06-28T13:08:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_3",
+  "heading_3": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Scenario 3: A persistent memory store is written with session-specific content",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Scenario 3: A persistent memory store is written with session-specific content",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "db7a6382-0ad1-42ab-8bd8-3c2a23218a6d",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-8099-ab9c-c79b80403dcd"
+  },
+  "created_time": "2026-06-28T12:41:00.000Z",
+  "last_edited_time": "2026-06-28T13:08:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "The Vela team added a Qdrant collection to the canvas to store customer account notes. A persistent memory that agents can query across sessions. During a support query, a Vela user types the following: \"The client mentioned in our last call that they are considering cancellation. Route this to the account team.\"",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "The Vela team added a Qdrant collection to the canvas to store customer account notes. A persistent memory that agents can query across sessions. During a support query, a Vela user types the following: \"The client mentioned in our last call that they are considering cancellation. Route this to the account team.\"",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "4dc4cb75-979e-485a-ab57-2a8f33a8830a",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-8099-ab9c-c79b80403dcd"
+  },
+  "created_time": "2026-06-28T12:41:00.000Z",
+  "last_edited_time": "2026-06-28T12:41:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "The support specialist agent, following its system prompt, writes the user's full input to the Qdrant collection as a note associated with the client account. The note persists across sessions.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "The support specialist agent, following its system prompt, writes the user's full input to the Qdrant collection as a note associated with the client account. The note persists across sessions.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "82b6bf0b-163f-4dc7-bb61-dcb1b42636cc",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-8099-ab9c-c79b80403dcd"
+  },
+  "created_time": "2026-06-28T12:41:00.000Z",
+  "last_edited_time": "2026-06-28T13:08:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Three days later, a different Vela user handles the same client account. They run an account query. Specialist B retrieves the stored notes from Qdrant. The retrieved note contains the first user's verbatim input (including the phrase \"considering cancellation\") which was accurate three days ago but has since been resolved. The second user's reply to the client is informed by a stale and now-incorrect status.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Three days later, a different Vela user handles the same client account. They run an account query. Specialist B retrieves the stored notes from Qdrant. The retrieved note contains the first user's verbatim input (including the phrase \"considering cancellation\") which was accurate three days ago but has since been resolved. The second user's reply to the client is informed by a stale and now-incorrect status.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "2297c2dd-6fcb-4703-b015-f783801cddab",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-8099-ab9c-c79b80403dcd"
+  },
+  "created_time": "2026-06-28T12:41:00.000Z",
+  "last_edited_time": "2026-06-28T12:41:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Questions to guide your analysis:",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Questions to guide your analysis:",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "e4857568-5ed7-4ef1-970c-6d137a77b891",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-8099-ab9c-c79b80403dcd"
+  },
+  "created_time": "2026-06-28T12:41:00.000Z",
+  "last_edited_time": "2026-06-28T12:41:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Which category does this failure belong to, and what makes it more serious than a within-session contamination?",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Which category does this failure belong to, and what makes it more serious than a within-session contamination?",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "647b7fe1-87d5-4de3-94ab-5a26110f8917",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-8099-ab9c-c79b80403dcd"
+  },
+  "created_time": "2026-06-28T12:41:00.000Z",
+  "last_edited_time": "2026-06-28T12:41:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "What property of persistent memory makes this failure possible even when the session architecture is correct?",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "What property of persistent memory makes this failure possible even when the session architecture is correct?",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "c26e61af-2586-417f-ba30-46d965371c81",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-8099-ab9c-c79b80403dcd"
+  },
+  "created_time": "2026-06-28T12:41:00.000Z",
+  "last_edited_time": "2026-06-28T12:41:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "What should the write rule for the Qdrant collection specify about the content of notes \u2014 specifically what must not be written?",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "What should the write rule for the Qdrant collection specify about the content of notes \u2014 specifically what must not be written?",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "cebf9645-899f-469c-9011-abed0ce95f83",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-8099-ab9c-c79b80403dcd"
+  },
+  "created_time": "2026-06-28T12:41:00.000Z",
+  "last_edited_time": "2026-06-28T12:41:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "What expiry or invalidation mechanism would reduce the risk of stale persistent notes?",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "What expiry or invalidation mechanism would reduce the risk of stale persistent notes?",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "39094183-19f3-808e-8866-ede77d27ac32",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-8099-ab9c-c79b80403dcd"
+  },
+  "created_time": "2026-07-01T10:30:00.000Z",
+  "last_edited_time": "2026-07-01T10:30:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "ae420e1a-c54e-460b-a381-deb74049f5e3",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-8099-ab9c-c79b80403dcd"
+  },
+  "created_time": "2026-06-28T12:41:00.000Z",
+  "last_edited_time": "2026-06-28T13:08:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_3",
+  "heading_3": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Scenario 4: Two concurrent sessions write to the same Flow State key",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Scenario 4: Two concurrent sessions write to the same Flow State key",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "6164c65c-55e1-4d9f-8554-24d202ecf436",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-8099-ab9c-c79b80403dcd"
+  },
+  "created_time": "2026-06-28T12:41:00.000Z",
+  "last_edited_time": "2026-06-28T12:41:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Two Vela users are running queries simultaneously. User A sends an account query. The Classifier writes ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Two Vela users are running queries simultaneously. User A sends an account query. The Classifier writes ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "query_type: \"account\"",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": true,
+      "color": "default"
+     },
+     "plain_text": "query_type: \"account\"",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " to Flow State. At almost the same moment, User B sends a support query. The Classifier for User B's session writes ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " to Flow State. At almost the same moment, User B sends a support query. The Classifier for User B's session writes ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "query_type: \"support\"",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": true,
+      "color": "default"
+     },
+     "plain_text": "query_type: \"support\"",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " to Flow State.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " to Flow State.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "fc5a990e-0e58-4405-9db4-3580243b7faa",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-8099-ab9c-c79b80403dcd"
+  },
+  "created_time": "2026-06-28T12:41:00.000Z",
+  "last_edited_time": "2026-06-28T13:08:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Both sessions are writing to a Flow State key that is not namespaced by session ID. There is only one ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Both sessions are writing to a Flow State key that is not namespaced by session ID. There is only one ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "query_type",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": true,
+      "color": "default"
+     },
+     "plain_text": "query_type",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " key on the canvas, shared across all sessions.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " key on the canvas, shared across all sessions.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "904b0ffd-8ac6-4da2-a8de-e0e828f8b56e",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-8099-ab9c-c79b80403dcd"
+  },
+  "created_time": "2026-06-28T12:41:00.000Z",
+  "last_edited_time": "2026-06-28T13:08:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "User A's Condition Node reads ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "User A's Condition Node reads ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "query_type",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": true,
+      "color": "default"
+     },
+     "plain_text": "query_type",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " and receives ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " and receives ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "\"support\"",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": true,
+      "color": "default"
+     },
+     "plain_text": "\"support\"",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " the value written by User B's session. User A is routed to Specialist A instead of Specialist B. Specialist A handles a support query on behalf of User A's account context. The reply is incorrect for User A's original question.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " the value written by User B's session. User A is routed to Specialist A instead of Specialist B. Specialist A handles a support query on behalf of User A's account context. The reply is incorrect for User A's original question.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "614ff5f3-3e93-4d3d-a741-5adfa77bc03d",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-8099-ab9c-c79b80403dcd"
+  },
+  "created_time": "2026-06-28T12:41:00.000Z",
+  "last_edited_time": "2026-06-28T12:41:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Questions to guide your analysis:",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Questions to guide your analysis:",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "e688cd4a-8989-4ea5-8d38-99467a399df8",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-8099-ab9c-c79b80403dcd"
+  },
+  "created_time": "2026-06-28T12:41:00.000Z",
+  "last_edited_time": "2026-06-28T12:41:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "What is the specific mechanism that allows User B's write to overwrite User A's value?",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "What is the specific mechanism that allows User B's write to overwrite User A's value?",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "d1bd14c7-548d-4b30-ae8b-42111d1d77e6",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-8099-ab9c-c79b80403dcd"
+  },
+  "created_time": "2026-06-28T12:41:00.000Z",
+  "last_edited_time": "2026-06-28T12:41:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "How does session-namespacing a Flow State key prevent this failure?",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "How does session-namespacing a Flow State key prevent this failure?",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "32519f8a-30cc-486a-84ad-484a38f5aebf",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-8099-ab9c-c79b80403dcd"
+  },
+  "created_time": "2026-06-28T12:41:00.000Z",
+  "last_edited_time": "2026-06-28T12:41:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Write out the namespaced key name pattern you would use for ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Write out the namespaced key name pattern you would use for ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "query_type",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": true,
+      "color": "default"
+     },
+     "plain_text": "query_type",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " on the Vela canvas, and identify which node is responsible for writing it and which node reads it.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " on the Vela canvas, and identify which node is responsible for writing it and which node reads it.",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "15d0c4d9-8bce-4357-96cd-9189cdd39db2",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-8099-ab9c-c79b80403dcd"
+  },
+  "created_time": "2026-06-28T12:41:00.000Z",
+  "last_edited_time": "2026-06-28T12:41:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Can this failure be detected from the log at Position 1? What would you look for?",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Can this failure be detected from the log at Position 1? What would you look for?",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "39094183-19f3-80b3-a8b8-fa27237bfbee",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-8099-ab9c-c79b80403dcd"
+  },
+  "created_time": "2026-07-01T10:30:00.000Z",
+  "last_edited_time": "2026-07-01T10:30:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "f029a383-076d-4d1d-a6d8-bbe95a3199b0",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-8099-ab9c-c79b80403dcd"
+  },
+  "created_time": "2026-06-28T12:41:00.000Z",
+  "last_edited_time": "2026-06-28T13:08:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_3",
+  "heading_3": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Scenario 5: A recovery path restores state to the wrong safe state",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Scenario 5: A recovery path restores state to the wrong safe state",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "db2ecde6-7e01-4461-a563-28dedd92d691",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-8099-ab9c-c79b80403dcd"
+  },
+  "created_time": "2026-06-28T12:41:00.000Z",
+  "last_edited_time": "2026-06-28T12:41:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "The Vela canvas has a recovery path: if a specialist agent fails after the Classifier has already written ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "The Vela canvas has a recovery path: if a specialist agent fails after the Classifier has already written ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "query_type",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": true,
+      "color": "default"
+     },
+     "plain_text": "query_type",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " to Flow State, the system recovers by resetting ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " to Flow State, the system recovers by resetting ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "query_type",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": true,
+      "color": "default"
+     },
+     "plain_text": "query_type",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " to ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " to ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "null",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": true,
+      "color": "default"
+     },
+     "plain_text": "null",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " and routing back to the Classifier.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " and routing back to the Classifier.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "5933741a-6e3f-4715-bacf-c46832f2569a",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-8099-ab9c-c79b80403dcd"
+  },
+  "created_time": "2026-06-28T12:41:00.000Z",
+  "last_edited_time": "2026-06-28T13:08:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "During a session, Specialist C fails mid-execution. The recovery path activates. It resets ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "During a session, Specialist C fails mid-execution. The recovery path activates. It resets ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "query_type",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": true,
+      "color": "default"
+     },
+     "plain_text": "query_type",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " to ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " to ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "null",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": true,
+      "color": "default"
+     },
+     "plain_text": "null",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " correct so far. But it also reads ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " correct so far. But it also reads ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "last_routed_agent",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": true,
+      "color": "default"
+     },
+     "plain_text": "last_routed_agent",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " from Flow State (a key that records which specialist last ran) and writes that value into the reply as a diagnostic message: \"Routing to support agent was interrupted. Please re-send your query.\"",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " from Flow State (a key that records which specialist last ran) and writes that value into the reply as a diagnostic message: \"Routing to support agent was interrupted. Please re-send your query.\"",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "39d5c03c-e849-4ab4-9a7a-9b78aff075ae",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-8099-ab9c-c79b80403dcd"
+  },
+  "created_time": "2026-06-28T12:41:00.000Z",
+  "last_edited_time": "2026-06-28T13:08:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "The problem: ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "The problem: ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "last_routed_agent",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": true,
+      "color": "default"
+     },
+     "plain_text": "last_routed_agent",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " holds the value ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " holds the value ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "\"specialist_c\"",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": true,
+      "color": "default"
+     },
+     "plain_text": "\"specialist_c\"",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " from the current session correct. But the diagnostic message says \"support agent,\" which is Specialist A, not Specialist C (which handles escalation queries). The label was hardcoded in the reply template and does not match the actual value in ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " from the current session correct. But the diagnostic message says \"support agent,\" which is Specialist A, not Specialist C (which handles escalation queries). The label was hardcoded in the reply template and does not match the actual value in ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "last_routed_agent",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": true,
+      "color": "default"
+     },
+     "plain_text": "last_routed_agent",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": ".",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": ".",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "0b376951-2a1d-4339-916d-1446009f3f4c",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-8099-ab9c-c79b80403dcd"
+  },
+  "created_time": "2026-06-28T12:41:00.000Z",
+  "last_edited_time": "2026-06-28T12:41:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "A second problem: ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "A second problem: ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "last_routed_agent",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": true,
+      "color": "default"
+     },
+     "plain_text": "last_routed_agent",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " is not reset after the recovery path runs. A subsequent query in the same session reads ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " is not reset after the recovery path runs. A subsequent query in the same session reads ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "last_routed_agent: \"specialist_c\"",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": true,
+      "color": "default"
+     },
+     "plain_text": "last_routed_agent: \"specialist_c\"",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " even though the new query has not yet been classified and routed. If anything in the canvas reads ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " even though the new query has not yet been classified and routed. If anything in the canvas reads ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "last_routed_agent",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": true,
+      "color": "default"
+     },
+     "plain_text": "last_routed_agent",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " as an input to a decision, it will read a stale value.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " as an input to a decision, it will read a stale value.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "915c1aad-aaec-4544-af1c-473cb59e2a88",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-8099-ab9c-c79b80403dcd"
+  },
+  "created_time": "2026-06-28T12:41:00.000Z",
+  "last_edited_time": "2026-06-28T12:41:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Questions to guide your analysis:",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Questions to guide your analysis:",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "31c06399-fae5-449c-9e28-5e7ed738a6c3",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-8099-ab9c-c79b80403dcd"
+  },
+  "created_time": "2026-06-28T12:41:00.000Z",
+  "last_edited_time": "2026-06-28T12:41:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "This scenario involves two separate safeguard failures. Name each one clearly.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "This scenario involves two separate safeguard failures. Name each one clearly.",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "06e15e2f-4021-4bc7-ba1f-0a86bdd6e246",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-8099-ab9c-c79b80403dcd"
+  },
+  "created_time": "2026-06-28T12:41:00.000Z",
+  "last_edited_time": "2026-06-28T12:41:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "For the first failure: what is the correct design rule for user-facing diagnostic messages that reference Flow State values?",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "For the first failure: what is the correct design rule for user-facing diagnostic messages that reference Flow State values?",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "edd6971a-9382-4807-91d1-c5e07ce3dfbb",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-8099-ab9c-c79b80403dcd"
+  },
+  "created_time": "2026-06-28T12:41:00.000Z",
+  "last_edited_time": "2026-06-28T12:41:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "For the second failure: at what point in the recovery sequence should ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "For the second failure: at what point in the recovery sequence should ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "last_routed_agent",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": true,
+      "color": "default"
+     },
+     "plain_text": "last_routed_agent",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " be reset, and to what value?",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " be reset, and to what value?",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "b15a0beb-c739-439f-8737-2201dbe446b1",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-8099-ab9c-c79b80403dcd"
+  },
+  "created_time": "2026-06-28T12:41:00.000Z",
+  "last_edited_time": "2026-06-28T12:41:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "How does a completion signal (a ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "How does a completion signal (a ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "status",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": true,
+      "color": "default"
+     },
+     "plain_text": "status",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " key) interact with ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " key) interact with ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "last_routed_agent",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": true,
+      "color": "default"
+     },
+     "plain_text": "last_routed_agent",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " to make this failure more detectable?",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " to make this failure more detectable?",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "39094183-19f3-8051-af9f-ed1011d645e6",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-8099-ab9c-c79b80403dcd"
+  },
+  "created_time": "2026-07-01T10:30:00.000Z",
+  "last_edited_time": "2026-07-01T10:30:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "dce21bbb-5bc3-4092-a735-c462de734a77",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-8099-ab9c-c79b80403dcd"
+  },
+  "created_time": "2026-06-28T12:41:00.000Z",
+  "last_edited_time": "2026-06-28T12:41:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_2",
+  "heading_2": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Hints",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Hints",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38d94183-19f3-8050-afaf-c1666791b1aa",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-8099-ab9c-c79b80403dcd"
+  },
+  "created_time": "2026-06-28T13:09:00.000Z",
+  "last_edited_time": "2026-06-28T13:09:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": true,
+  "in_trash": false,
+  "type": "toggle",
+  "toggle": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Use these if you need them.",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Use these if you need them.",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false,
+  "_children": [
+   {
+    "object": "block",
+    "id": "263fa8e6-3263-4c39-ba4f-bfcd7318728d",
+    "parent": {
+     "type": "block_id",
+     "block_id": "38d94183-19f3-8050-afaf-c1666791b1aa"
+    },
+    "created_time": "2026-06-28T12:41:00.000Z",
+    "last_edited_time": "2026-06-28T13:09:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "231d872b-594c-81f2-a375-0002b8783aca"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "231d872b-594c-81f2-a375-0002b8783aca"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "bulleted_list_item",
+    "bulleted_list_item": {
+     "rich_text": [
+      {
+       "type": "text",
+       "text": {
+        "content": "If a Flow State key is read by more than one node and written by only one, the failure is likely a ",
+        "link": null
+       },
+       "annotations": {
+        "bold": false,
+        "italic": false,
+        "strikethrough": false,
+        "underline": false,
+        "code": false,
+        "color": "default"
+       },
+       "plain_text": "If a Flow State key is read by more than one node and written by only one, the failure is likely a ",
+       "href": null
+      },
+      {
+       "type": "text",
+       "text": {
+        "content": "timing or reset problem;",
+        "link": null
+       },
+       "annotations": {
+        "bold": true,
+        "italic": false,
+        "strikethrough": false,
+        "underline": false,
+        "code": false,
+        "color": "default"
+       },
+       "plain_text": "timing or reset problem;",
+       "href": null
+      },
+      {
+       "type": "text",
+       "text": {
+        "content": " ask when the write happens relative to the read.",
+        "link": null
+       },
+       "annotations": {
+        "bold": false,
+        "italic": false,
+        "strikethrough": false,
+        "underline": false,
+        "code": false,
+        "color": "default"
+       },
+       "plain_text": " ask when the write happens relative to the read.",
+       "href": null
+      }
+     ],
+     "color": "default"
+    },
+    "archived": false
+   },
+   {
+    "object": "block",
+    "id": "4dd27785-b7f9-4f69-b321-16e07caaee7a",
+    "parent": {
+     "type": "block_id",
+     "block_id": "38d94183-19f3-8050-afaf-c1666791b1aa"
+    },
+    "created_time": "2026-06-28T12:41:00.000Z",
+    "last_edited_time": "2026-06-28T13:09:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "231d872b-594c-81f2-a375-0002b8783aca"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "231d872b-594c-81f2-a375-0002b8783aca"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "bulleted_list_item",
+    "bulleted_list_item": {
+     "rich_text": [
+      {
+       "type": "text",
+       "text": {
+        "content": "If a key carries information from a previous query into a new query, the fix is almost always a ",
+        "link": null
+       },
+       "annotations": {
+        "bold": false,
+        "italic": false,
+        "strikethrough": false,
+        "underline": false,
+        "code": false,
+        "color": "default"
+       },
+       "plain_text": "If a key carries information from a previous query into a new query, the fix is almost always a ",
+       "href": null
+      },
+      {
+       "type": "text",
+       "text": {
+        "content": "reset at session start or query start;",
+        "link": null
+       },
+       "annotations": {
+        "bold": true,
+        "italic": false,
+        "strikethrough": false,
+        "underline": false,
+        "code": false,
+        "color": "default"
+       },
+       "plain_text": "reset at session start or query start;",
+       "href": null
+      },
+      {
+       "type": "text",
+       "text": {
+        "content": " not a change to who reads it.",
+        "link": null
+       },
+       "annotations": {
+        "bold": false,
+        "italic": false,
+        "strikethrough": false,
+        "underline": false,
+        "code": false,
+        "color": "default"
+       },
+       "plain_text": " not a change to who reads it.",
+       "href": null
+      }
+     ],
+     "color": "default"
+    },
+    "archived": false
+   },
+   {
+    "object": "block",
+    "id": "cb5f79f8-03e3-461a-a0f9-b1a2e3b8fbe4",
+    "parent": {
+     "type": "block_id",
+     "block_id": "38d94183-19f3-8050-afaf-c1666791b1aa"
+    },
+    "created_time": "2026-06-28T12:41:00.000Z",
+    "last_edited_time": "2026-06-28T13:09:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "231d872b-594c-81f2-a375-0002b8783aca"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "231d872b-594c-81f2-a375-0002b8783aca"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "bulleted_list_item",
+    "bulleted_list_item": {
+     "rich_text": [
+      {
+       "type": "text",
+       "text": {
+        "content": "If a key is written to a persistent store, ask whether the content is ",
+        "link": null
+       },
+       "annotations": {
+        "bold": false,
+        "italic": false,
+        "strikethrough": false,
+        "underline": false,
+        "code": false,
+        "color": "default"
+       },
+       "plain_text": "If a key is written to a persistent store, ask whether the content is ",
+       "href": null
+      },
+      {
+       "type": "text",
+       "text": {
+        "content": "session-specific or account-level;",
+        "link": null
+       },
+       "annotations": {
+        "bold": true,
+        "italic": false,
+        "strikethrough": false,
+        "underline": false,
+        "code": false,
+        "color": "default"
+       },
+       "plain_text": "session-specific or account-level;",
+       "href": null
+      },
+      {
+       "type": "text",
+       "text": {
+        "content": " only account-level, time-stable content belongs in a persistent store.",
+        "link": null
+       },
+       "annotations": {
+        "bold": false,
+        "italic": false,
+        "strikethrough": false,
+        "underline": false,
+        "code": false,
+        "color": "default"
+       },
+       "plain_text": " only account-level, time-stable content belongs in a persistent store.",
+       "href": null
+      }
+     ],
+     "color": "default"
+    },
+    "archived": false
+   },
+   {
+    "object": "block",
+    "id": "ddd8f803-c0e0-4629-9342-a0d0066718ad",
+    "parent": {
+     "type": "block_id",
+     "block_id": "38d94183-19f3-8050-afaf-c1666791b1aa"
+    },
+    "created_time": "2026-06-28T12:41:00.000Z",
+    "last_edited_time": "2026-06-28T13:09:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "231d872b-594c-81f2-a375-0002b8783aca"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "231d872b-594c-81f2-a375-0002b8783aca"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "bulleted_list_item",
+    "bulleted_list_item": {
+     "rich_text": [
+      {
+       "type": "text",
+       "text": {
+        "content": "If two sessions share a key name, the fix is ",
+        "link": null
+       },
+       "annotations": {
+        "bold": false,
+        "italic": false,
+        "strikethrough": false,
+        "underline": false,
+        "code": false,
+        "color": "default"
+       },
+       "plain_text": "If two sessions share a key name, the fix is ",
+       "href": null
+      },
+      {
+       "type": "text",
+       "text": {
+        "content": "namespacing by session ID;",
+        "link": null
+       },
+       "annotations": {
+        "bold": true,
+        "italic": false,
+        "strikethrough": false,
+        "underline": false,
+        "code": false,
+        "color": "default"
+       },
+       "plain_text": "namespacing by session ID;",
+       "href": null
+      },
+      {
+       "type": "text",
+       "text": {
+        "content": " the key name becomes ",
+        "link": null
+       },
+       "annotations": {
+        "bold": false,
+        "italic": false,
+        "strikethrough": false,
+        "underline": false,
+        "code": false,
+        "color": "default"
+       },
+       "plain_text": " the key name becomes ",
+       "href": null
+      },
+      {
+       "type": "text",
+       "text": {
+        "content": "query_type:{session_id}",
+        "link": null
+       },
+       "annotations": {
+        "bold": false,
+        "italic": false,
+        "strikethrough": false,
+        "underline": false,
+        "code": true,
+        "color": "default"
+       },
+       "plain_text": "query_type:{session_id}",
+       "href": null
+      },
+      {
+       "type": "text",
+       "text": {
+        "content": " rather than a single global ",
+        "link": null
+       },
+       "annotations": {
+        "bold": false,
+        "italic": false,
+        "strikethrough": false,
+        "underline": false,
+        "code": false,
+        "color": "default"
+       },
+       "plain_text": " rather than a single global ",
+       "href": null
+      },
+      {
+       "type": "text",
+       "text": {
+        "content": "query_type",
+        "link": null
+       },
+       "annotations": {
+        "bold": false,
+        "italic": false,
+        "strikethrough": false,
+        "underline": false,
+        "code": true,
+        "color": "default"
+       },
+       "plain_text": "query_type",
+       "href": null
+      },
+      {
+       "type": "text",
+       "text": {
+        "content": ".",
+        "link": null
+       },
+       "annotations": {
+        "bold": false,
+        "italic": false,
+        "strikethrough": false,
+        "underline": false,
+        "code": false,
+        "color": "default"
+       },
+       "plain_text": ".",
+       "href": null
+      }
+     ],
+     "color": "default"
+    },
+    "archived": false
+   },
+   {
+    "object": "block",
+    "id": "4a9acf1a-bc54-448c-adee-6a8dde6f5d58",
+    "parent": {
+     "type": "block_id",
+     "block_id": "38d94183-19f3-8050-afaf-c1666791b1aa"
+    },
+    "created_time": "2026-06-28T12:41:00.000Z",
+    "last_edited_time": "2026-06-28T13:09:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "231d872b-594c-81f2-a375-0002b8783aca"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "231d872b-594c-81f2-a375-0002b8783aca"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "bulleted_list_item",
+    "bulleted_list_item": {
+     "rich_text": [
+      {
+       "type": "text",
+       "text": {
+        "content": "If a recovery message references a Flow State value, the message text must be ",
+        "link": null
+       },
+       "annotations": {
+        "bold": false,
+        "italic": false,
+        "strikethrough": false,
+        "underline": false,
+        "code": false,
+        "color": "default"
+       },
+       "plain_text": "If a recovery message references a Flow State value, the message text must be ",
+       "href": null
+      },
+      {
+       "type": "text",
+       "text": {
+        "content": "derived from the actual key value at runtime",
+        "link": null
+       },
+       "annotations": {
+        "bold": true,
+        "italic": false,
+        "strikethrough": false,
+        "underline": false,
+        "code": false,
+        "color": "default"
+       },
+       "plain_text": "derived from the actual key value at runtime",
+       "href": null
+      },
+      {
+       "type": "text",
+       "text": {
+        "content": ", not hardcoded in the template.",
+        "link": null
+       },
+       "annotations": {
+        "bold": false,
+        "italic": false,
+        "strikethrough": false,
+        "underline": false,
+        "code": false,
+        "color": "default"
+       },
+       "plain_text": ", not hardcoded in the template.",
+       "href": null
+      }
+     ],
+     "color": "default"
+    },
+    "archived": false
+   }
+  ]
+ },
+ {
+  "object": "block",
+  "id": "39094183-19f3-8070-a368-fc4a72102b4d",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-8099-ab9c-c79b80403dcd"
+  },
+  "created_time": "2026-07-01T10:30:00.000Z",
+  "last_edited_time": "2026-07-01T10:30:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "39094183-19f3-8010-a334-c0288da8a58c",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-8099-ab9c-c79b80403dcd"
+  },
+  "created_time": "2026-07-01T10:31:00.000Z",
+  "last_edited_time": "2026-07-01T10:31:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": true,
+  "in_trash": false,
+  "type": "callout",
+  "callout": {
+   "rich_text": [],
+   "icon": null,
+   "color": "gray_background"
+  },
+  "archived": false,
+  "_children": [
+   {
+    "object": "block",
+    "id": "9d935fe9-d30a-455c-8ed0-b1c13eef4f9f",
+    "parent": {
+     "type": "block_id",
+     "block_id": "39094183-19f3-8010-a334-c0288da8a58c"
+    },
+    "created_time": "2026-06-28T12:41:00.000Z",
+    "last_edited_time": "2026-07-01T10:31:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "231d872b-594c-81f2-a375-0002b8783aca"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "heading_3",
+    "heading_3": {
+     "rich_text": [
+      {
+       "type": "text",
+       "text": {
+        "content": "\ud83d\udd25 ",
+        "link": null
+       },
+       "annotations": {
+        "bold": false,
+        "italic": false,
+        "strikethrough": false,
+        "underline": false,
+        "code": false,
+        "color": "default"
+       },
+       "plain_text": "\ud83d\udd25 ",
+       "href": null
+      },
+      {
+       "type": "text",
+       "text": {
+        "content": "Using AI when you get stuck",
+        "link": null
+       },
+       "annotations": {
+        "bold": true,
+        "italic": false,
+        "strikethrough": false,
+        "underline": false,
+        "code": false,
+        "color": "default"
+       },
+       "plain_text": "Using AI when you get stuck",
+       "href": null
+      }
+     ],
+     "is_toggleable": false,
+     "color": "default"
+    },
+    "archived": false
+   },
+   {
+    "object": "block",
+    "id": "06e5dc37-56b1-4bff-bbfa-8c0688f5b1d4",
+    "parent": {
+     "type": "block_id",
+     "block_id": "39094183-19f3-8010-a334-c0288da8a58c"
+    },
+    "created_time": "2026-06-28T12:41:00.000Z",
+    "last_edited_time": "2026-07-01T10:31:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "231d872b-594c-81f2-a375-0002b8783aca"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+     "rich_text": [
+      {
+       "type": "text",
+       "text": {
+        "content": "If you are working through a scenario and cannot identify the specific mechanism causing the failure, a useful workflow is:",
+        "link": null
+       },
+       "annotations": {
+        "bold": false,
+        "italic": false,
+        "strikethrough": false,
+        "underline": false,
+        "code": false,
+        "color": "default"
+       },
+       "plain_text": "If you are working through a scenario and cannot identify the specific mechanism causing the failure, a useful workflow is:",
+       "href": null
+      }
+     ],
+     "icon": null,
+     "color": "default"
+    },
+    "archived": false
+   },
+   {
+    "object": "block",
+    "id": "e6f62de7-b12b-4836-a7f6-b5ea1f9cc025",
+    "parent": {
+     "type": "block_id",
+     "block_id": "39094183-19f3-8010-a334-c0288da8a58c"
+    },
+    "created_time": "2026-06-28T12:41:00.000Z",
+    "last_edited_time": "2026-07-01T10:31:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "231d872b-594c-81f2-a375-0002b8783aca"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "numbered_list_item",
+    "numbered_list_item": {
+     "rich_text": [
+      {
+       "type": "text",
+       "text": {
+        "content": "Name the symptom first in plain language: \"The user received the wrong specialist's reply.\"",
+        "link": null
+       },
+       "annotations": {
+        "bold": false,
+        "italic": false,
+        "strikethrough": false,
+        "underline": false,
+        "code": false,
+        "color": "default"
+       },
+       "plain_text": "Name the symptom first in plain language: \"The user received the wrong specialist's reply.\"",
+       "href": null
+      }
+     ],
+     "color": "default"
+    },
+    "archived": false
+   },
+   {
+    "object": "block",
+    "id": "3e9b5617-9795-4756-ae77-584b26b1b04b",
+    "parent": {
+     "type": "block_id",
+     "block_id": "39094183-19f3-8010-a334-c0288da8a58c"
+    },
+    "created_time": "2026-06-28T12:41:00.000Z",
+    "last_edited_time": "2026-07-01T10:31:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "231d872b-594c-81f2-a375-0002b8783aca"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "numbered_list_item",
+    "numbered_list_item": {
+     "rich_text": [
+      {
+       "type": "text",
+       "text": {
+        "content": "Trace backward one step: \"What did the Condition Node read to make that routing decision?\"",
+        "link": null
+       },
+       "annotations": {
+        "bold": false,
+        "italic": false,
+        "strikethrough": false,
+        "underline": false,
+        "code": false,
+        "color": "default"
+       },
+       "plain_text": "Trace backward one step: \"What did the Condition Node read to make that routing decision?\"",
+       "href": null
+      }
+     ],
+     "color": "default"
+    },
+    "archived": false
+   },
+   {
+    "object": "block",
+    "id": "b6ab1dee-9c0a-450e-a266-34f79bf66670",
+    "parent": {
+     "type": "block_id",
+     "block_id": "39094183-19f3-8010-a334-c0288da8a58c"
+    },
+    "created_time": "2026-06-28T12:41:00.000Z",
+    "last_edited_time": "2026-07-01T10:31:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "231d872b-594c-81f2-a375-0002b8783aca"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "numbered_list_item",
+    "numbered_list_item": {
+     "rich_text": [
+      {
+       "type": "text",
+       "text": {
+        "content": "Ask where that value was written and when.",
+        "link": null
+       },
+       "annotations": {
+        "bold": false,
+        "italic": false,
+        "strikethrough": false,
+        "underline": false,
+        "code": false,
+        "color": "default"
+       },
+       "plain_text": "Ask where that value was written and when.",
+       "href": null
+      }
+     ],
+     "color": "default"
+    },
+    "archived": false
+   },
+   {
+    "object": "block",
+    "id": "9bc83ce8-b3e8-433a-889a-6f3348ab23ec",
+    "parent": {
+     "type": "block_id",
+     "block_id": "39094183-19f3-8010-a334-c0288da8a58c"
+    },
+    "created_time": "2026-06-28T12:41:00.000Z",
+    "last_edited_time": "2026-07-01T10:31:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "231d872b-594c-81f2-a375-0002b8783aca"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "numbered_list_item",
+    "numbered_list_item": {
+     "rich_text": [
+      {
+       "type": "text",
+       "text": {
+        "content": "Then ask AI to confirm your diagnosis: ",
+        "link": null
+       },
+       "annotations": {
+        "bold": false,
+        "italic": false,
+        "strikethrough": false,
+        "underline": false,
+        "code": false,
+        "color": "default"
+       },
+       "plain_text": "Then ask AI to confirm your diagnosis: ",
+       "href": null
+      },
+      {
+       "type": "text",
+       "text": {
+        "content": "\"In Flowise Agentflow V2, if a Flow State key is written by the Classifier and then read by a Condition Node, what happens to that key value if the Classifier's Update Flow State step fails to execute? Does the Condition Node read the previous value or null?\"",
+        "link": null
+       },
+       "annotations": {
+        "bold": false,
+        "italic": true,
+        "strikethrough": false,
+        "underline": false,
+        "code": false,
+        "color": "default"
+       },
+       "plain_text": "\"In Flowise Agentflow V2, if a Flow State key is written by the Classifier and then read by a Condition Node, what happens to that key value if the Classifier's Update Flow State step fails to execute? Does the Condition Node read the previous value or null?\"",
+       "href": null
+      }
+     ],
+     "color": "default"
+    },
+    "archived": false
+   },
+   {
+    "object": "block",
+    "id": "a25a9ca3-a5d1-4b4c-8c6b-ee63794d461d",
+    "parent": {
+     "type": "block_id",
+     "block_id": "39094183-19f3-8010-a334-c0288da8a58c"
+    },
+    "created_time": "2026-06-28T12:41:00.000Z",
+    "last_edited_time": "2026-07-01T10:31:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "231d872b-594c-81f2-a375-0002b8783aca"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+     "rich_text": [
+      {
+       "type": "text",
+       "text": {
+        "content": "Use AI to clarify the mechanism, not to do the diagnosis for you. The safeguard you design must be grounded in your own reasoning about the canvas. An AI-generated safeguard that you do not understand will not hold up in your project defense.",
+        "link": null
+       },
+       "annotations": {
+        "bold": false,
+        "italic": false,
+        "strikethrough": false,
+        "underline": false,
+        "code": false,
+        "color": "default"
+       },
+       "plain_text": "Use AI to clarify the mechanism, not to do the diagnosis for you. The safeguard you design must be grounded in your own reasoning about the canvas. An AI-generated safeguard that you do not understand will not hold up in your project defense.",
+       "href": null
+      }
+     ],
+     "icon": null,
+     "color": "default"
+    },
+    "archived": false
+   }
+  ]
+ },
+ {
+  "object": "block",
+  "id": "39094183-19f3-8072-9231-e543abf71822",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-8099-ab9c-c79b80403dcd"
+  },
+  "created_time": "2026-07-01T10:31:00.000Z",
+  "last_edited_time": "2026-07-01T10:31:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "42ad6ede-01ca-4786-b6c3-3e7255c31dc6",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-8099-ab9c-c79b80403dcd"
+  },
+  "created_time": "2026-06-28T12:41:00.000Z",
+  "last_edited_time": "2026-06-28T12:41:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_2",
+  "heading_2": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Checkpoints",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Checkpoints",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "acca281b-c85d-4580-91a6-6ac246d2cdd2",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-8099-ab9c-c79b80403dcd"
+  },
+  "created_time": "2026-06-28T12:41:00.000Z",
+  "last_edited_time": "2026-06-28T12:41:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "As you complete each scenario, check your safeguard against these questions:",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "As you complete each scenario, check your safeguard against these questions:",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "90112a0f-dac8-4ae9-b541-5ded11217f13",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-8099-ab9c-c79b80403dcd"
+  },
+  "created_time": "2026-06-28T12:41:00.000Z",
+  "last_edited_time": "2026-06-28T13:10:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "to_do",
+  "to_do": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Is the safeguard a ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Is the safeguard a ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "concrete design decision",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "concrete design decision",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " (naming a specific node, key, value, or configuration) or is it still a general principle? A general principle is not a safeguard.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " (naming a specific node, key, value, or configuration) or is it still a general principle? A general principle is not a safeguard.",
+     "href": null
+    }
+   ],
+   "checked": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "c5229adb-e145-44ff-bd01-ffc4d996e6b3",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-8099-ab9c-c79b80403dcd"
+  },
+  "created_time": "2026-06-28T12:41:00.000Z",
+  "last_edited_time": "2026-06-28T13:10:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "to_do",
+  "to_do": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Does the safeguard ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Does the safeguard ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "prevent",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "prevent",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " the failure, ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " the failure, ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "contain",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "contain",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " the damage, or ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " the damage, or ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "make the failure detectable",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "make the failure detectable",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "? Name which one it does. A single safeguard does not have to do all three.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "? Name which one it does. A single safeguard does not have to do all three.",
+     "href": null
+    }
+   ],
+   "checked": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "b2c0558e-b16b-45cc-ae27-4985a0d20230",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-8099-ab9c-c79b80403dcd"
+  },
+  "created_time": "2026-06-28T12:41:00.000Z",
+  "last_edited_time": "2026-06-28T13:10:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "to_do",
+  "to_do": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Does the safeguard introduce a ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Does the safeguard introduce a ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "new risk, ",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "new risk, ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "for example, a reset that fires too early and wipes a key that another node still needs?",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "for example, a reset that fires too early and wipes a key that another node still needs?",
+     "href": null
+    }
+   ],
+   "checked": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "c6501722-e226-459c-aed3-ed58e7559a28",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-8099-ab9c-c79b80403dcd"
+  },
+  "created_time": "2026-06-28T12:41:00.000Z",
+  "last_edited_time": "2026-06-28T13:10:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "to_do",
+  "to_do": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Can the failure be detected from the ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Can the failure be detected from the ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "four log positions",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "four log positions",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " designed in the previous lesson? If yes, which position would surface it, and what would you look for in the log?",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " designed in the previous lesson? If yes, which position would surface it, and what would you look for in the log?",
+     "href": null
+    }
+   ],
+   "checked": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "f3605efe-e0c3-4c34-8bdc-9cc3049a714b",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-8099-ab9c-c79b80403dcd"
+  },
+  "created_time": "2026-06-28T12:41:00.000Z",
+  "last_edited_time": "2026-06-28T12:41:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "If a safeguard introduces a new risk you cannot resolve, note it explicitly. A documented tradeoff is better than a safeguard that creates a hidden problem.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "If a safeguard introduces a new risk you cannot resolve, note it explicitly. A documented tradeoff is better than a safeguard that creates a hidden problem.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "39094183-19f3-8084-bbd9-e55d4d2c71cd",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-8099-ab9c-c79b80403dcd"
+  },
+  "created_time": "2026-07-01T10:31:00.000Z",
+  "last_edited_time": "2026-07-01T10:31:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "a30c8d40-ad53-49b5-8a8c-3bfef403e00c",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-8099-ab9c-c79b80403dcd"
+  },
+  "created_time": "2026-06-28T12:41:00.000Z",
+  "last_edited_time": "2026-06-28T12:41:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_2",
+  "heading_2": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Summary",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Summary",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "171bb8d2-a876-4cb5-b3d8-db9ad88b72bb",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-8099-ab9c-c79b80403dcd"
+  },
+  "created_time": "2026-06-28T12:41:00.000Z",
+  "last_edited_time": "2026-06-28T12:41:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Anticipating failure modes before integration is the difference between a system that works in a controlled test and one that holds up under real usage. The five scenarios in this lesson represent the categories of memory and state failure that appear in production multi-agent systems: stale memory caused by reset timing, state contamination within a session, unsafe persistence to a shared store, concurrent-session key collision, and recovery paths that restore to an incorrect or stale state.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Anticipating failure modes before integration is the difference between a system that works in a controlled test and one that holds up under real usage. The five scenarios in this lesson represent the categories of memory and state failure that appear in production multi-agent systems: stale memory caused by reset timing, state contamination within a session, unsafe persistence to a shared store, concurrent-session key collision, and recovery paths that restore to an incorrect or stale state.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "3e2e1475-f33b-4bc4-b1dd-c5b996a6ff3c",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-8099-ab9c-c79b80403dcd"
+  },
+  "created_time": "2026-06-28T12:41:00.000Z",
+  "last_edited_time": "2026-06-28T13:10:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Each safeguard you designed is a concrete design decision for your Vela analysis and a direct input into your own project's integration work in the next lesson. In the next lesson, you will apply the architecture decisions from Sprints 1 through 3 to your own canvas, with the failure modes from this lesson as the lens for validating that the integration is sound.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Each safeguard you designed is a concrete design decision for your Vela analysis and a direct input into your own project's integration work in the next lesson. In the next lesson, you will apply the architecture decisions from Sprints 1 through 3 to your own canvas, with the failure modes from this lesson as the lens for validating that the integration is sound.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ }
+]

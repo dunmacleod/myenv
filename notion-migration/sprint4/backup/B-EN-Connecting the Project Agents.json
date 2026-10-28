@@ -1,0 +1,3496 @@
+[
+ {
+  "object": "block",
+  "id": "38d94183-19f3-8005-8d74-e205f8eccf08",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38d94183-19f3-8037-ba13-d11a670815a2"
+  },
+  "created_time": "2026-06-28T19:13:00.000Z",
+  "last_edited_time": "2026-07-02T09:37:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Throughout the course, you explored the individual building blocks of the arXiv research assistant \u2014 communication protocols in Sprint 1, orchestration patterns in Sprint 2, and resilience patterns in Sprint 3. In the previous Sprint 4 lessons, you extended the baseline agent with a Research Summary Agent, evaluated the extended workflow, and debugged failures across protocol and orchestration layers.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Throughout the course, you explored the individual building blocks of the arXiv research assistant \u2014 communication protocols in Sprint 1, orchestration patterns in Sprint 2, and resilience patterns in Sprint 3. In the previous Sprint 4 lessons, you extended the baseline agent with a Research Summary Agent, evaluated the extended workflow, and debugged failures across protocol and orchestration layers.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38d94183-19f3-8040-a3ff-f23c4babc24a",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38d94183-19f3-8037-ba13-d11a670815a2"
+  },
+  "created_time": "2026-06-28T19:13:00.000Z",
+  "last_edited_time": "2026-07-02T09:37:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Now it is time to bring those pieces together into the complete project.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Now it is time to bring those pieces together into the complete project.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38d94183-19f3-806b-b047-eb3667ba8121",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38d94183-19f3-8037-ba13-d11a670815a2"
+  },
+  "created_time": "2026-06-28T19:13:00.000Z",
+  "last_edited_time": "2026-07-02T09:37:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "In this lesson, you will create the complete arXiv research assistant by assembling the agents and integrations into one orchestrated workflow.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "In this lesson, you will create the complete arXiv research assistant by assembling the agents and integrations into one orchestrated workflow.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38d94183-19f3-807e-9c4f-c297436d20c4",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38d94183-19f3-8037-ba13-d11a670815a2"
+  },
+  "created_time": "2026-06-28T19:13:00.000Z",
+  "last_edited_time": "2026-06-28T19:13:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "By the end of the lesson, your project should be able to receive a user request, route it to the appropriate specialist, use external tools when needed, recover from temporary failures, and return a response to the user.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "By the end of the lesson, your project should be able to receive a user request, route it to the appropriate specialist, use external tools when needed, recover from temporary failures, and return a response to the user.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "39394183-19f3-804e-b0a2-c304651c207f",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38d94183-19f3-8037-ba13-d11a670815a2"
+  },
+  "created_time": "2026-07-04T07:46:00.000Z",
+  "last_edited_time": "2026-07-04T07:46:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38d94183-19f3-8036-9f23-d0b24d458676",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38d94183-19f3-8037-ba13-d11a670815a2"
+  },
+  "created_time": "2026-06-28T19:13:00.000Z",
+  "last_edited_time": "2026-06-28T19:13:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_2",
+  "heading_2": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Your task",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Your task",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38d94183-19f3-807b-b3b4-de0a401c76a4",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38d94183-19f3-8037-ba13-d11a670815a2"
+  },
+  "created_time": "2026-06-28T19:13:00.000Z",
+  "last_edited_time": "2026-07-02T09:37:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Create the complete workflow for your arXiv research assistant.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Create the complete workflow for your arXiv research assistant.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38d94183-19f3-8093-a98c-d34c76180d2b",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38d94183-19f3-8037-ba13-d11a670815a2"
+  },
+  "created_time": "2026-06-28T19:13:00.000Z",
+  "last_edited_time": "2026-06-28T19:13:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "The final workflow should include:",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "The final workflow should include:",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38d94183-19f3-8070-ab35-ec06e1fbe33a",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38d94183-19f3-8037-ba13-d11a670815a2"
+  },
+  "created_time": "2026-06-28T19:13:00.000Z",
+  "last_edited_time": "2026-06-28T19:13:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "an Intake Agent",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "an Intake Agent",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38d94183-19f3-80e0-840a-fb62e6b0c756",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38d94183-19f3-8037-ba13-d11a670815a2"
+  },
+  "created_time": "2026-06-28T19:13:00.000Z",
+  "last_edited_time": "2026-06-28T19:13:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "one or more Specialist Agents",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "one or more Specialist Agents",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38d94183-19f3-80f8-a3aa-cc83f819de77",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38d94183-19f3-8037-ba13-d11a670815a2"
+  },
+  "created_time": "2026-06-28T19:13:00.000Z",
+  "last_edited_time": "2026-06-28T19:13:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "an orchestration layer",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "an orchestration layer",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38d94183-19f3-80f3-9472-def6e7a37dc3",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38d94183-19f3-8037-ba13-d11a670815a2"
+  },
+  "created_time": "2026-06-28T19:13:00.000Z",
+  "last_edited_time": "2026-06-28T19:13:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "the MCP-enabled tools required by your project",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "the MCP-enabled tools required by your project",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38d94183-19f3-802d-891c-cd14b7155cf6",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38d94183-19f3-8037-ba13-d11a670815a2"
+  },
+  "created_time": "2026-06-28T19:13:00.000Z",
+  "last_edited_time": "2026-06-28T19:13:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "agent-to-agent delegation",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "agent-to-agent delegation",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38d94183-19f3-8007-a493-ff7cb7b6f64c",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38d94183-19f3-8037-ba13-d11a670815a2"
+  },
+  "created_time": "2026-06-28T19:13:00.000Z",
+  "last_edited_time": "2026-06-28T19:13:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "retry and fallback logic where appropriate",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "retry and fallback logic where appropriate",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38d94183-19f3-80fc-828a-f5c6f025556b",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38d94183-19f3-8037-ba13-d11a670815a2"
+  },
+  "created_time": "2026-06-28T19:13:00.000Z",
+  "last_edited_time": "2026-06-28T19:13:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "The exact implementation may differ depending on your project design, but the workflow should demonstrate all of these capabilities working together.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "The exact implementation may differ depending on your project design, but the workflow should demonstrate all of these capabilities working together.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "39394183-19f3-805f-94f6-e91da35bb1ec",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38d94183-19f3-8037-ba13-d11a670815a2"
+  },
+  "created_time": "2026-07-04T07:46:00.000Z",
+  "last_edited_time": "2026-07-04T07:46:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38d94183-19f3-80f6-9909-d73acf4cc92e",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38d94183-19f3-8037-ba13-d11a670815a2"
+  },
+  "created_time": "2026-06-28T19:13:00.000Z",
+  "last_edited_time": "2026-06-28T19:13:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_2",
+  "heading_2": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Step 1: Create the project structure",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Step 1: Create the project structure",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38d94183-19f3-80f4-bfd7-c79bf1015344",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38d94183-19f3-8037-ba13-d11a670815a2"
+  },
+  "created_time": "2026-06-28T19:13:00.000Z",
+  "last_edited_time": "2026-06-28T19:13:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Start a new AgentFlow for your project.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Start a new AgentFlow for your project.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38d94183-19f3-803c-a35f-c1491bc95f86",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38d94183-19f3-8037-ba13-d11a670815a2"
+  },
+  "created_time": "2026-06-28T19:13:00.000Z",
+  "last_edited_time": "2026-06-28T19:13:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Create the high-level workflow that represents the complete customer journey, beginning with the user request and ending with the final response.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Create the high-level workflow that represents the complete customer journey, beginning with the user request and ending with the final response.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38d94183-19f3-8040-a580-f80d0c4619c1",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38d94183-19f3-8037-ba13-d11a670815a2"
+  },
+  "created_time": "2026-06-28T19:13:00.000Z",
+  "last_edited_time": "2026-06-28T19:13:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "At this stage, focus on the overall architecture rather than the detailed configuration of each node.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "At this stage, focus on the overall architecture rather than the detailed configuration of each node.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "39394183-19f3-80f4-b6ed-e37c22c74805",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38d94183-19f3-8037-ba13-d11a670815a2"
+  },
+  "created_time": "2026-07-04T07:46:00.000Z",
+  "last_edited_time": "2026-07-04T07:46:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38d94183-19f3-80fb-a0d0-f998362db398",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38d94183-19f3-8037-ba13-d11a670815a2"
+  },
+  "created_time": "2026-06-28T19:13:00.000Z",
+  "last_edited_time": "2026-06-28T19:13:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_2",
+  "heading_2": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Step 2: Add the Intake Agent",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Step 2: Add the Intake Agent",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38d94183-19f3-80b2-bc15-e0a7bc39356b",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38d94183-19f3-8037-ba13-d11a670815a2"
+  },
+  "created_time": "2026-06-28T19:13:00.000Z",
+  "last_edited_time": "2026-06-28T19:13:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Add the Intake Agent to your workflow.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Add the Intake Agent to your workflow.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38d94183-19f3-80fd-8dc3-c450ea8a342e",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38d94183-19f3-8037-ba13-d11a670815a2"
+  },
+  "created_time": "2026-06-28T19:13:00.000Z",
+  "last_edited_time": "2026-06-28T19:13:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "This agent should receive the user's request, determine what type of issue is being reported, and prepare the request for delegation.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "This agent should receive the user's request, determine what type of issue is being reported, and prepare the request for delegation.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38d94183-19f3-805b-9238-c8d06c6b690f",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38d94183-19f3-8037-ba13-d11a670815a2"
+  },
+  "created_time": "2026-06-28T19:13:00.000Z",
+  "last_edited_time": "2026-06-28T19:13:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "The Intake Agent should focus on understanding the request rather than solving it.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "The Intake Agent should focus on understanding the request rather than solving it.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "39394183-19f3-8035-a135-c1c8b05979f0",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38d94183-19f3-8037-ba13-d11a670815a2"
+  },
+  "created_time": "2026-07-04T07:46:00.000Z",
+  "last_edited_time": "2026-07-04T07:46:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38d94183-19f3-80db-a5ec-cb8f0320c23f",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38d94183-19f3-8037-ba13-d11a670815a2"
+  },
+  "created_time": "2026-06-28T19:13:00.000Z",
+  "last_edited_time": "2026-06-28T19:13:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_2",
+  "heading_2": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Step 3: Add the Specialist Agents",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Step 3: Add the Specialist Agents",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38d94183-19f3-801d-ba0a-ec27690ab97e",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38d94183-19f3-8037-ba13-d11a670815a2"
+  },
+  "created_time": "2026-06-28T19:13:00.000Z",
+  "last_edited_time": "2026-06-28T19:13:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Create the specialist agents required by your project.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Create the specialist agents required by your project.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38d94183-19f3-80e6-80ec-e8676d1b07ef",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38d94183-19f3-8037-ba13-d11a670815a2"
+  },
+  "created_time": "2026-06-28T19:13:00.000Z",
+  "last_edited_time": "2026-06-28T19:13:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "For example, your workflow might include agents responsible for:",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "For example, your workflow might include agents responsible for:",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38d94183-19f3-809a-ba2f-f51e7865416d",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38d94183-19f3-8037-ba13-d11a670815a2"
+  },
+  "created_time": "2026-06-28T19:13:00.000Z",
+  "last_edited_time": "2026-06-28T19:13:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Billing",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Billing",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38d94183-19f3-80c9-91e3-e1c5564d7733",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38d94183-19f3-8037-ba13-d11a670815a2"
+  },
+  "created_time": "2026-06-28T19:13:00.000Z",
+  "last_edited_time": "2026-06-28T19:13:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Technical Support",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Technical Support",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38d94183-19f3-80c4-b078-e1ebfd43effd",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38d94183-19f3-8037-ba13-d11a670815a2"
+  },
+  "created_time": "2026-06-28T19:13:00.000Z",
+  "last_edited_time": "2026-06-28T19:13:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Account Management",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Account Management",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38d94183-19f3-8051-bdbd-c0ff51ac63aa",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38d94183-19f3-8037-ba13-d11a670815a2"
+  },
+  "created_time": "2026-06-28T19:13:00.000Z",
+  "last_edited_time": "2026-06-28T19:13:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Security",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Security",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38d94183-19f3-8042-8119-ec64cefc3d80",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38d94183-19f3-8037-ba13-d11a670815a2"
+  },
+  "created_time": "2026-06-28T19:13:00.000Z",
+  "last_edited_time": "2026-06-28T19:13:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Each specialist should have a clearly defined responsibility.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Each specialist should have a clearly defined responsibility.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38d94183-19f3-806e-8622-c893595a41ed",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38d94183-19f3-8037-ba13-d11a670815a2"
+  },
+  "created_time": "2026-06-28T19:13:00.000Z",
+  "last_edited_time": "2026-06-28T19:13:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Avoid giving multiple agents overlapping roles whenever possible.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Avoid giving multiple agents overlapping roles whenever possible.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "39394183-19f3-8053-8e3b-d5212ccb8186",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38d94183-19f3-8037-ba13-d11a670815a2"
+  },
+  "created_time": "2026-07-04T07:46:00.000Z",
+  "last_edited_time": "2026-07-04T07:46:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38d94183-19f3-80ac-8bb1-f1ae1b623c3e",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38d94183-19f3-8037-ba13-d11a670815a2"
+  },
+  "created_time": "2026-06-28T19:13:00.000Z",
+  "last_edited_time": "2026-06-28T19:13:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_2",
+  "heading_2": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Step 4: Configure the orchestration",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Step 4: Configure the orchestration",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38d94183-19f3-80e0-851e-f0ae1b786cc5",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38d94183-19f3-8037-ba13-d11a670815a2"
+  },
+  "created_time": "2026-06-28T19:13:00.000Z",
+  "last_edited_time": "2026-06-28T19:13:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Connect the agents using the orchestration pattern you selected during the project design.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Connect the agents using the orchestration pattern you selected during the project design.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38d94183-19f3-8051-b22c-d2011187703d",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38d94183-19f3-8037-ba13-d11a670815a2"
+  },
+  "created_time": "2026-06-28T19:13:00.000Z",
+  "last_edited_time": "2026-06-28T19:13:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Verify that requests are routed to the correct specialist and that each agent performs only the task assigned to it.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Verify that requests are routed to the correct specialist and that each agent performs only the task assigned to it.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38d94183-19f3-8095-a769-e1222557baaf",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38d94183-19f3-8037-ba13-d11a670815a2"
+  },
+  "created_time": "2026-06-28T19:13:00.000Z",
+  "last_edited_time": "2026-06-28T19:13:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "If your workflow contains multiple specialist agents, ensure the orchestration can delegate work appropriately.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "If your workflow contains multiple specialist agents, ensure the orchestration can delegate work appropriately.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "39394183-19f3-8058-ba0e-c9dfb28b29b9",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38d94183-19f3-8037-ba13-d11a670815a2"
+  },
+  "created_time": "2026-07-04T07:46:00.000Z",
+  "last_edited_time": "2026-07-04T07:46:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38d94183-19f3-80cd-95b4-df08cdda8e0e",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38d94183-19f3-8037-ba13-d11a670815a2"
+  },
+  "created_time": "2026-06-28T19:13:00.000Z",
+  "last_edited_time": "2026-06-28T19:13:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_2",
+  "heading_2": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Step 5: Connect the MCP-enabled tools",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Step 5: Connect the MCP-enabled tools",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38d94183-19f3-8063-bd48-ddcca98b0e13",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38d94183-19f3-8037-ba13-d11a670815a2"
+  },
+  "created_time": "2026-06-28T19:13:00.000Z",
+  "last_edited_time": "2026-06-28T19:13:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Connect the MCP-enabled tool or tools required by your project.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Connect the MCP-enabled tool or tools required by your project.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38d94183-19f3-808f-b705-c05009e01e94",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38d94183-19f3-8037-ba13-d11a670815a2"
+  },
+  "created_time": "2026-06-28T19:13:00.000Z",
+  "last_edited_time": "2026-06-28T19:13:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Depending on your design, these tools may provide access to external data, documentation, repositories, APIs, or other services.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Depending on your design, these tools may provide access to external data, documentation, repositories, APIs, or other services.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38d94183-19f3-8041-af10-cdd7119bcbcc",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38d94183-19f3-8037-ba13-d11a670815a2"
+  },
+  "created_time": "2026-06-28T19:13:00.000Z",
+  "last_edited_time": "2026-06-28T19:13:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Verify that the appropriate specialist agent can access the required tool when needed.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Verify that the appropriate specialist agent can access the required tool when needed.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "39394183-19f3-80aa-b280-c0980a568e71",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38d94183-19f3-8037-ba13-d11a670815a2"
+  },
+  "created_time": "2026-07-04T07:46:00.000Z",
+  "last_edited_time": "2026-07-04T07:46:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38d94183-19f3-80d3-9a33-c458969d1556",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38d94183-19f3-8037-ba13-d11a670815a2"
+  },
+  "created_time": "2026-06-28T19:13:00.000Z",
+  "last_edited_time": "2026-06-28T19:13:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_2",
+  "heading_2": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Step 6: Configure agent-to-agent delegation",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Step 6: Configure agent-to-agent delegation",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38d94183-19f3-806d-aea9-fe9c323baba8",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38d94183-19f3-8037-ba13-d11a670815a2"
+  },
+  "created_time": "2026-06-28T19:13:00.000Z",
+  "last_edited_time": "2026-06-28T19:13:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Configure the workflow so agents can delegate work to one another.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Configure the workflow so agents can delegate work to one another.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38d94183-19f3-8081-94aa-f913089b9853",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38d94183-19f3-8037-ba13-d11a670815a2"
+  },
+  "created_time": "2026-06-28T19:13:00.000Z",
+  "last_edited_time": "2026-06-28T19:13:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "The receiving agent should have enough context to complete its task without asking the user to repeat information that has already been collected.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "The receiving agent should have enough context to complete its task without asking the user to repeat information that has already been collected.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38d94183-19f3-8055-a97a-e0bff5645274",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38d94183-19f3-8037-ba13-d11a670815a2"
+  },
+  "created_time": "2026-06-28T19:13:00.000Z",
+  "last_edited_time": "2026-06-28T19:13:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Each agent should complete its specialized task before returning the result to the workflow.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Each agent should complete its specialized task before returning the result to the workflow.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "39394183-19f3-80c8-ba4c-e5431b4b3319",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38d94183-19f3-8037-ba13-d11a670815a2"
+  },
+  "created_time": "2026-07-04T07:46:00.000Z",
+  "last_edited_time": "2026-07-04T07:46:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38d94183-19f3-804c-a031-efdad39dca66",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38d94183-19f3-8037-ba13-d11a670815a2"
+  },
+  "created_time": "2026-06-28T19:13:00.000Z",
+  "last_edited_time": "2026-06-28T19:13:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_2",
+  "heading_2": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Step 7: Add resilience",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Step 7: Add resilience",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38d94183-19f3-808c-9567-c3d82aac7020",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38d94183-19f3-8037-ba13-d11a670815a2"
+  },
+  "created_time": "2026-06-28T19:13:00.000Z",
+  "last_edited_time": "2026-06-28T19:13:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Review the workflow and identify the steps where failures are most likely to occur.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Review the workflow and identify the steps where failures are most likely to occur.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38d94183-19f3-8082-a7b0-d71df7d49fbe",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38d94183-19f3-8037-ba13-d11a670815a2"
+  },
+  "created_time": "2026-06-28T19:13:00.000Z",
+  "last_edited_time": "2026-06-28T19:13:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Where appropriate, add:",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Where appropriate, add:",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38d94183-19f3-80f4-a877-c9af756b4d9e",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38d94183-19f3-8037-ba13-d11a670815a2"
+  },
+  "created_time": "2026-06-28T19:13:00.000Z",
+  "last_edited_time": "2026-06-28T19:13:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "retry logic for temporary failures",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "retry logic for temporary failures",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38d94183-19f3-80a9-83e8-e5846f4eadbf",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38d94183-19f3-8037-ba13-d11a670815a2"
+  },
+  "created_time": "2026-06-28T19:13:00.000Z",
+  "last_edited_time": "2026-06-28T19:13:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "fallback paths when retries are exhausted",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "fallback paths when retries are exhausted",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38d94183-19f3-80c3-b26d-d37227658f44",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38d94183-19f3-8037-ba13-d11a670815a2"
+  },
+  "created_time": "2026-06-28T19:13:00.000Z",
+  "last_edited_time": "2026-06-28T19:13:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "user-friendly responses when recovery is not possible",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "user-friendly responses when recovery is not possible",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38d94183-19f3-8094-bb73-ebb3879f32d3",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38d94183-19f3-8037-ba13-d11a670815a2"
+  },
+  "created_time": "2026-06-28T19:13:00.000Z",
+  "last_edited_time": "2026-06-28T19:13:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Not every node requires resilience. Focus on the parts of the workflow where failures would have the greatest impact.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Not every node requires resilience. Focus on the parts of the workflow where failures would have the greatest impact.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "39394183-19f3-8091-8ff8-d4597611e334",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38d94183-19f3-8037-ba13-d11a670815a2"
+  },
+  "created_time": "2026-07-04T07:46:00.000Z",
+  "last_edited_time": "2026-07-04T07:46:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38d94183-19f3-80b7-9622-ddfa22b13a50",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38d94183-19f3-8037-ba13-d11a670815a2"
+  },
+  "created_time": "2026-06-28T19:13:00.000Z",
+  "last_edited_time": "2026-06-28T19:13:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_2",
+  "heading_2": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Step 8: Test the complete workflow",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Step 8: Test the complete workflow",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38d94183-19f3-80e6-aa6c-ff72b2b67254",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38d94183-19f3-8037-ba13-d11a670815a2"
+  },
+  "created_time": "2026-06-28T19:13:00.000Z",
+  "last_edited_time": "2026-06-28T19:13:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Run your project using several different support requests.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Run your project using several different support requests.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38d94183-19f3-8021-a3da-ed4f50eb9ed9",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38d94183-19f3-8037-ba13-d11a670815a2"
+  },
+  "created_time": "2026-06-28T19:13:00.000Z",
+  "last_edited_time": "2026-06-28T19:13:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "For each request, verify that:",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "For each request, verify that:",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38d94183-19f3-8061-9cb0-d1a6f6255df9",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38d94183-19f3-8037-ba13-d11a670815a2"
+  },
+  "created_time": "2026-06-28T19:13:00.000Z",
+  "last_edited_time": "2026-06-28T19:13:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "the Intake Agent correctly understands the request",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "the Intake Agent correctly understands the request",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38d94183-19f3-808b-8fc0-f3a73d29808c",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38d94183-19f3-8037-ba13-d11a670815a2"
+  },
+  "created_time": "2026-06-28T19:13:00.000Z",
+  "last_edited_time": "2026-06-28T19:13:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "the request is delegated to the correct specialist",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "the request is delegated to the correct specialist",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38d94183-19f3-809d-8a30-c88af1f28dcd",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38d94183-19f3-8037-ba13-d11a670815a2"
+  },
+  "created_time": "2026-06-28T19:13:00.000Z",
+  "last_edited_time": "2026-06-28T19:13:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "MCP-enabled tools are used when appropriate",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "MCP-enabled tools are used when appropriate",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38d94183-19f3-80a1-bd08-ea4f6ce78d08",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38d94183-19f3-8037-ba13-d11a670815a2"
+  },
+  "created_time": "2026-06-28T19:13:00.000Z",
+  "last_edited_time": "2026-06-28T19:13:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "agent-to-agent delegation works as expected",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "agent-to-agent delegation works as expected",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38d94183-19f3-8014-9cc9-e49a05f7a606",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38d94183-19f3-8037-ba13-d11a670815a2"
+  },
+  "created_time": "2026-06-28T19:13:00.000Z",
+  "last_edited_time": "2026-06-28T19:13:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "retry and fallback behavior operate correctly",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "retry and fallback behavior operate correctly",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38d94183-19f3-8083-8858-d985460423c0",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38d94183-19f3-8037-ba13-d11a670815a2"
+  },
+  "created_time": "2026-06-28T19:13:00.000Z",
+  "last_edited_time": "2026-06-28T19:13:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "the user receives a complete response",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "the user receives a complete response",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38d94183-19f3-8075-9398-ea302186ba6b",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38d94183-19f3-8037-ba13-d11a670815a2"
+  },
+  "created_time": "2026-06-28T19:13:00.000Z",
+  "last_edited_time": "2026-06-28T19:13:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Test both successful requests and at least one scenario that triggers your resilience logic.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Test both successful requests and at least one scenario that triggers your resilience logic.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "39394183-19f3-8063-b54b-e27f2a725b10",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38d94183-19f3-8037-ba13-d11a670815a2"
+  },
+  "created_time": "2026-07-04T07:46:00.000Z",
+  "last_edited_time": "2026-07-04T07:46:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38d94183-19f3-807a-9d10-c6c712dde441",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38d94183-19f3-8037-ba13-d11a670815a2"
+  },
+  "created_time": "2026-06-28T19:13:00.000Z",
+  "last_edited_time": "2026-06-28T19:13:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_2",
+  "heading_2": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Common issues",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Common issues",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38d94183-19f3-8056-8277-ca64f22f28c0",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38d94183-19f3-8037-ba13-d11a670815a2"
+  },
+  "created_time": "2026-06-28T19:13:00.000Z",
+  "last_edited_time": "2026-06-28T19:13:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "As you test the workflow, you may encounter some common integration problems:",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "As you test the workflow, you may encounter some common integration problems:",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38d94183-19f3-803a-b2f7-fb680d4e13d9",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38d94183-19f3-8037-ba13-d11a670815a2"
+  },
+  "created_time": "2026-06-28T19:13:00.000Z",
+  "last_edited_time": "2026-06-28T19:13:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Requests are routed to the wrong specialist.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Requests are routed to the wrong specialist.",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38d94183-19f3-8037-a3ab-cd1d7efe9ae7",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38d94183-19f3-8037-ba13-d11a670815a2"
+  },
+  "created_time": "2026-06-28T19:13:00.000Z",
+  "last_edited_time": "2026-06-28T19:13:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Multiple agents perform the same task.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Multiple agents perform the same task.",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38d94183-19f3-8043-947c-d8c9bc7f2643",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38d94183-19f3-8037-ba13-d11a670815a2"
+  },
+  "created_time": "2026-06-28T19:13:00.000Z",
+  "last_edited_time": "2026-06-28T19:13:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "MCP tools are connected but never used.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "MCP tools are connected but never used.",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38d94183-19f3-80c3-bc1b-cc5b86ad4442",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38d94183-19f3-8037-ba13-d11a670815a2"
+  },
+  "created_time": "2026-06-28T19:13:00.000Z",
+  "last_edited_time": "2026-06-28T19:13:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Context is lost during agent handoff.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Context is lost during agent handoff.",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38d94183-19f3-8001-b11b-d6f75e401d98",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38d94183-19f3-8037-ba13-d11a670815a2"
+  },
+  "created_time": "2026-06-28T19:13:00.000Z",
+  "last_edited_time": "2026-06-28T19:13:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Retry loops never terminate.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Retry loops never terminate.",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38d94183-19f3-80f8-bb67-fc885235a624",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38d94183-19f3-8037-ba13-d11a670815a2"
+  },
+  "created_time": "2026-06-28T19:13:00.000Z",
+  "last_edited_time": "2026-06-28T19:13:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Fallback paths bypass important workflow steps.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Fallback paths bypass important workflow steps.",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38d94183-19f3-80af-97d4-fe6271f63955",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38d94183-19f3-8037-ba13-d11a670815a2"
+  },
+  "created_time": "2026-06-28T19:13:00.000Z",
+  "last_edited_time": "2026-06-28T19:13:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "If you encounter one of these issues, trace the execution path through your workflow before making changes.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "If you encounter one of these issues, trace the execution path through your workflow before making changes.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "39394183-19f3-8074-892e-ec661a175a70",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38d94183-19f3-8037-ba13-d11a670815a2"
+  },
+  "created_time": "2026-07-04T07:46:00.000Z",
+  "last_edited_time": "2026-07-04T07:46:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38d94183-19f3-8015-b65b-db384fe609bc",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38d94183-19f3-8037-ba13-d11a670815a2"
+  },
+  "created_time": "2026-06-28T19:13:00.000Z",
+  "last_edited_time": "2026-06-28T19:13:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_2",
+  "heading_2": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Summary",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Summary",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38d94183-19f3-8031-8e72-cd192da37703",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38d94183-19f3-8037-ba13-d11a670815a2"
+  },
+  "created_time": "2026-06-28T19:13:00.000Z",
+  "last_edited_time": "2026-07-02T09:37:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "You have assembled the complete arXiv research assistant by integrating specialized agents, orchestration, MCP-enabled tools, agent-to-agent delegation, and resilience mechanisms into a single workflow. Rather than developing individual components in isolation, you focused on making the entire system operate as one coordinated solution\u2014a key milestone in building production-ready AI agent systems.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "You have assembled the complete arXiv research assistant by integrating specialized agents, orchestration, MCP-enabled tools, agent-to-agent delegation, and resilience mechanisms into a single workflow. Rather than developing individual components in isolation, you focused on making the entire system operate as one coordinated solution\u2014a key milestone in building production-ready AI agent systems.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38d94183-19f3-80fb-b0f0-ed832d12119f",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38d94183-19f3-8037-ba13-d11a670815a2"
+  },
+  "created_time": "2026-06-28T19:15:00.000Z",
+  "last_edited_time": "2026-06-28T19:15:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ }
+]

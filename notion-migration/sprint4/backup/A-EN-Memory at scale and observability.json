@@ -1,0 +1,3016 @@
+[
+ {
+  "object": "block",
+  "id": "aa9e38df-213b-40c3-bb70-e0f4c2c58f2d",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-8024-ad21-cc1bb917ef91"
+  },
+  "created_time": "2026-06-28T12:36:00.000Z",
+  "last_edited_time": "2026-06-28T12:58:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Vela Systems has been running its multi-agent internal tooling for a few weeks. In a single-session test with one agent and one user, everything worked. The memory boundary decisions held. The state handoffs completed cleanly. State recovered correctly when the session was interrupted. But now the Vela team is planning to open the system to their full customer operations group, thirty users across two teams, running queries simultaneously across the three specialist agents. And the question on the table is not \"does it work?\" They've already established that. The question is: \"does it still work at scale, and will we know when it doesn't?\"",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Vela Systems has been running its multi-agent internal tooling for a few weeks. In a single-session test with one agent and one user, everything worked. The memory boundary decisions held. The state handoffs completed cleanly. State recovered correctly when the session was interrupted. But now the Vela team is planning to open the system to their full customer operations group, thirty users across two teams, running queries simultaneously across the three specialist agents. And the question on the table is not \"does it work?\" They've already established that. The question is: \"does it still work at scale, and will we know when it doesn't?\"",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "0bc7dd57-bdd8-4871-a8a7-01e16b7fe8cd",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-8024-ad21-cc1bb917ef91"
+  },
+  "created_time": "2026-06-28T12:36:00.000Z",
+  "last_edited_time": "2026-06-28T12:58:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "This lesson addresses both halves of that question. The first half is about how memory and state behave differently when the system is under load from multiple concurrent users. The second half is about observability, specifically, what to log so that when something goes wrong across a multi-agent system, you can trace the failure rather than guess at it.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "This lesson addresses both halves of that question. The first half is about how memory and state behave differently when the system is under load from multiple concurrent users. The second half is about observability, specifically, what to log so that when something goes wrong across a multi-agent system, you can trace the failure rather than guess at it.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38d94183-19f3-80da-b42e-d628d20989f2",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-8024-ad21-cc1bb917ef91"
+  },
+  "created_time": "2026-06-28T12:59:00.000Z",
+  "last_edited_time": "2026-06-28T12:59:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "callout",
+  "callout": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "In this lesson, you will learn how memory and state behave under concurrent load, and what to log for observability across a multi-agent system.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "In this lesson, you will learn how memory and state behave under concurrent load, and what to log for observability across a multi-agent system.",
+     "href": null
+    }
+   ],
+   "icon": {
+    "type": "emoji",
+    "emoji": "\ud83d\udca1"
+   },
+   "color": "gray_background"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "39094183-19f3-8087-9890-e1cde711d010",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-8024-ad21-cc1bb917ef91"
+  },
+  "created_time": "2026-07-01T10:29:00.000Z",
+  "last_edited_time": "2026-07-01T10:29:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "7f986121-62a3-4d5f-950b-aa3a54b05259",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-8024-ad21-cc1bb917ef91"
+  },
+  "created_time": "2026-06-28T12:36:00.000Z",
+  "last_edited_time": "2026-06-28T12:36:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_2",
+  "heading_2": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "How scale changes the memory picture",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "How scale changes the memory picture",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "e34af464-ea26-4dfc-8746-28829e6b2c71",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-8024-ad21-cc1bb917ef91"
+  },
+  "created_time": "2026-06-28T12:36:00.000Z",
+  "last_edited_time": "2026-06-28T12:36:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "When one user runs one query, memory boundaries feel clean and self-evident. The context window belongs to the session. Flow State keys update in a clear sequence. Nothing competes for write access.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "When one user runs one query, memory boundaries feel clean and self-evident. The context window belongs to the session. Flow State keys update in a clear sequence. Nothing competes for write access.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "812cb235-3d52-4550-9b8f-47220e0bb0cb",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-8024-ad21-cc1bb917ef91"
+  },
+  "created_time": "2026-06-28T12:36:00.000Z",
+  "last_edited_time": "2026-06-28T12:59:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "When thirty users run queries concurrently, some hitting the Classifier, some mid-handoff to a specialist, some waiting on a second-agent reply, the picture gets more complicated in two specific ways.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "When thirty users run queries concurrently, some hitting the Classifier, some mid-handoff to a specialist, some waiting on a second-agent reply, the picture gets more complicated in two specific ways.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38d94183-19f3-804c-a8b4-f36db5a9f41e",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-8024-ad21-cc1bb917ef91"
+  },
+  "created_time": "2026-06-28T12:59:00.000Z",
+  "last_edited_time": "2026-06-28T12:59:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": true,
+  "in_trash": false,
+  "type": "column_list",
+  "column_list": {},
+  "archived": false,
+  "_children": [
+   {
+    "object": "block",
+    "id": "38d94183-19f3-80ae-a327-d9b15e4c257e",
+    "parent": {
+     "type": "block_id",
+     "block_id": "38d94183-19f3-804c-a8b4-f36db5a9f41e"
+    },
+    "created_time": "2026-06-28T12:59:00.000Z",
+    "last_edited_time": "2026-06-28T12:59:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "231d872b-594c-81f2-a375-0002b8783aca"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "231d872b-594c-81f2-a375-0002b8783aca"
+    },
+    "has_children": true,
+    "in_trash": false,
+    "type": "column",
+    "column": {},
+    "archived": false,
+    "_children": [
+     {
+      "object": "block",
+      "id": "38d94183-19f3-8083-ae31-f7face5966b4",
+      "parent": {
+       "type": "block_id",
+       "block_id": "38d94183-19f3-80ae-a327-d9b15e4c257e"
+      },
+      "created_time": "2026-06-28T12:59:00.000Z",
+      "last_edited_time": "2026-06-28T12:59:00.000Z",
+      "created_by": {
+       "object": "user",
+       "id": "231d872b-594c-81f2-a375-0002b8783aca"
+      },
+      "last_edited_by": {
+       "object": "user",
+       "id": "231d872b-594c-81f2-a375-0002b8783aca"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+       "rich_text": [
+        {
+         "type": "text",
+         "text": {
+          "content": "Context windows scale cleanly. Flow State does not.",
+          "link": null
+         },
+         "annotations": {
+          "bold": true,
+          "italic": false,
+          "strikethrough": false,
+          "underline": false,
+          "code": false,
+          "color": "default"
+         },
+         "plain_text": "Context windows scale cleanly. Flow State does not.",
+         "href": null
+        }
+       ],
+       "icon": null,
+       "color": "default"
+      },
+      "archived": false
+     },
+     {
+      "object": "block",
+      "id": "38d94183-19f3-809d-8487-e46c72eebf65",
+      "parent": {
+       "type": "block_id",
+       "block_id": "38d94183-19f3-80ae-a327-d9b15e4c257e"
+      },
+      "created_time": "2026-06-28T12:59:00.000Z",
+      "last_edited_time": "2026-06-28T12:59:00.000Z",
+      "created_by": {
+       "object": "user",
+       "id": "231d872b-594c-81f2-a375-0002b8783aca"
+      },
+      "last_edited_by": {
+       "object": "user",
+       "id": "231d872b-594c-81f2-a375-0002b8783aca"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+       "rich_text": [
+        {
+         "type": "text",
+         "text": {
+          "content": "Each user session gets its own context window. There is no sharing, no competition, no cross-contamination. The architecture already isolates sessions by design, so concurrency at the context-window level is not a problem.",
+          "link": null
+         },
+         "annotations": {
+          "bold": false,
+          "italic": false,
+          "strikethrough": false,
+          "underline": false,
+          "code": false,
+          "color": "default"
+         },
+         "plain_text": "Each user session gets its own context window. There is no sharing, no competition, no cross-contamination. The architecture already isolates sessions by design, so concurrency at the context-window level is not a problem.",
+         "href": null
+        }
+       ],
+       "icon": null,
+       "color": "default"
+      },
+      "archived": false
+     },
+     {
+      "object": "block",
+      "id": "38d94183-19f3-80a4-bf83-c22ecb8aa240",
+      "parent": {
+       "type": "block_id",
+       "block_id": "38d94183-19f3-80ae-a327-d9b15e4c257e"
+      },
+      "created_time": "2026-06-28T12:59:00.000Z",
+      "last_edited_time": "2026-06-28T12:59:00.000Z",
+      "created_by": {
+       "object": "user",
+       "id": "231d872b-594c-81f2-a375-0002b8783aca"
+      },
+      "last_edited_by": {
+       "object": "user",
+       "id": "231d872b-594c-81f2-a375-0002b8783aca"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+       "rich_text": [
+        {
+         "type": "text",
+         "text": {
+          "content": "Flow State is different. If your agents write to a shared Flow State key (a key that is not scoped per session), then thirty concurrent sessions are writing to the same location. The last write wins. Earlier writes are silently overwritten. This is not a bug you will see in testing; it only surfaces when two sessions are mid-execution at the same moment.",
+          "link": null
+         },
+         "annotations": {
+          "bold": false,
+          "italic": false,
+          "strikethrough": false,
+          "underline": false,
+          "code": false,
+          "color": "default"
+         },
+         "plain_text": "Flow State is different. If your agents write to a shared Flow State key (a key that is not scoped per session), then thirty concurrent sessions are writing to the same location. The last write wins. Earlier writes are silently overwritten. This is not a bug you will see in testing; it only surfaces when two sessions are mid-execution at the same moment.",
+         "href": null
+        }
+       ],
+       "icon": null,
+       "color": "default"
+      },
+      "archived": false
+     },
+     {
+      "object": "block",
+      "id": "38d94183-19f3-8088-902d-f2f01451dbec",
+      "parent": {
+       "type": "block_id",
+       "block_id": "38d94183-19f3-80ae-a327-d9b15e4c257e"
+      },
+      "created_time": "2026-06-28T12:59:00.000Z",
+      "last_edited_time": "2026-06-28T12:59:00.000Z",
+      "created_by": {
+       "object": "user",
+       "id": "231d872b-594c-81f2-a375-0002b8783aca"
+      },
+      "last_edited_by": {
+       "object": "user",
+       "id": "231d872b-594c-81f2-a375-0002b8783aca"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+       "rich_text": [
+        {
+         "type": "text",
+         "text": {
+          "content": "The fix is the same principle from Sprint 3: ",
+          "link": null
+         },
+         "annotations": {
+          "bold": false,
+          "italic": false,
+          "strikethrough": false,
+          "underline": false,
+          "code": false,
+          "color": "default"
+         },
+         "plain_text": "The fix is the same principle from Sprint 3: ",
+         "href": null
+        },
+        {
+         "type": "text",
+         "text": {
+          "content": "write ownership per key, scoped per session",
+          "link": null
+         },
+         "annotations": {
+          "bold": true,
+          "italic": false,
+          "strikethrough": false,
+          "underline": false,
+          "code": false,
+          "color": "default"
+         },
+         "plain_text": "write ownership per key, scoped per session",
+         "href": null
+        },
+        {
+         "type": "text",
+         "text": {
+          "content": ". Any key that carries per-user context must be namespaced by session identifier, not written globally. This is a production consequence of the memory boundary decisions you already made.",
+          "link": null
+         },
+         "annotations": {
+          "bold": false,
+          "italic": false,
+          "strikethrough": false,
+          "underline": false,
+          "code": false,
+          "color": "default"
+         },
+         "plain_text": ". Any key that carries per-user context must be namespaced by session identifier, not written globally. This is a production consequence of the memory boundary decisions you already made.",
+         "href": null
+        }
+       ],
+       "icon": null,
+       "color": "default"
+      },
+      "archived": false
+     }
+    ]
+   },
+   {
+    "object": "block",
+    "id": "38d94183-19f3-801c-857b-e0e2dd276951",
+    "parent": {
+     "type": "block_id",
+     "block_id": "38d94183-19f3-804c-a8b4-f36db5a9f41e"
+    },
+    "created_time": "2026-06-28T12:59:00.000Z",
+    "last_edited_time": "2026-06-28T13:00:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "231d872b-594c-81f2-a375-0002b8783aca"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "231d872b-594c-81f2-a375-0002b8783aca"
+    },
+    "has_children": true,
+    "in_trash": false,
+    "type": "column",
+    "column": {},
+    "archived": false,
+    "_children": [
+     {
+      "object": "block",
+      "id": "38d94183-19f3-800f-921b-e35aa2efd089",
+      "parent": {
+       "type": "block_id",
+       "block_id": "38d94183-19f3-801c-857b-e0e2dd276951"
+      },
+      "created_time": "2026-06-28T12:59:00.000Z",
+      "last_edited_time": "2026-06-28T12:59:00.000Z",
+      "created_by": {
+       "object": "user",
+       "id": "231d872b-594c-81f2-a375-0002b8783aca"
+      },
+      "last_edited_by": {
+       "object": "user",
+       "id": "231d872b-594c-81f2-a375-0002b8783aca"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+       "rich_text": [
+        {
+         "type": "text",
+         "text": {
+          "content": "Persistent store reads accumulate.",
+          "link": null
+         },
+         "annotations": {
+          "bold": true,
+          "italic": false,
+          "strikethrough": false,
+          "underline": false,
+          "code": false,
+          "color": "default"
+         },
+         "plain_text": "Persistent store reads accumulate.",
+         "href": null
+        }
+       ],
+       "icon": null,
+       "color": "default"
+      },
+      "archived": false
+     },
+     {
+      "object": "block",
+      "id": "38d94183-19f3-802e-bc43-f98e159908e8",
+      "parent": {
+       "type": "block_id",
+       "block_id": "38d94183-19f3-801c-857b-e0e2dd276951"
+      },
+      "created_time": "2026-06-28T12:59:00.000Z",
+      "last_edited_time": "2026-06-28T13:00:00.000Z",
+      "created_by": {
+       "object": "user",
+       "id": "231d872b-594c-81f2-a375-0002b8783aca"
+      },
+      "last_edited_by": {
+       "object": "user",
+       "id": "231d872b-594c-81f2-a375-0002b8783aca"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+       "rich_text": [
+        {
+         "type": "text",
+         "text": {
+          "content": "In a single-session system, a lookup to a persistent store (a Qdrant collection, an Airtable base, an external API) is one call per query. In a thirty-user concurrent system, those calls multiply. The total lookup volume is determined by how many agents perform reads and how many sessions are running simultaneously. ",
+          "link": null
+         },
+         "annotations": {
+          "bold": false,
+          "italic": false,
+          "strikethrough": false,
+          "underline": false,
+          "code": false,
+          "color": "default"
+         },
+         "plain_text": "In a single-session system, a lookup to a persistent store (a Qdrant collection, an Airtable base, an external API) is one call per query. In a thirty-user concurrent system, those calls multiply. The total lookup volume is determined by how many agents perform reads and how many sessions are running simultaneously. ",
+         "href": null
+        }
+       ],
+       "icon": null,
+       "color": "default"
+      },
+      "archived": false
+     },
+     {
+      "object": "block",
+      "id": "38d94183-19f3-80c2-af9b-c297b3e2b6bc",
+      "parent": {
+       "type": "block_id",
+       "block_id": "38d94183-19f3-801c-857b-e0e2dd276951"
+      },
+      "created_time": "2026-06-28T13:00:00.000Z",
+      "last_edited_time": "2026-06-28T13:00:00.000Z",
+      "created_by": {
+       "object": "user",
+       "id": "231d872b-594c-81f2-a375-0002b8783aca"
+      },
+      "last_edited_by": {
+       "object": "user",
+       "id": "231d872b-594c-81f2-a375-0002b8783aca"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+       "rich_text": [
+        {
+         "type": "text",
+         "text": {
+          "content": "Systems that performed one persistent-store call per query in testing may perform thirty in production during peak load. This is a reason to be deliberate about which agent performs them, and whether a result can be carried forward in Flow State rather than re-fetched by each agent in the chain.",
+          "link": null
+         },
+         "annotations": {
+          "bold": false,
+          "italic": false,
+          "strikethrough": false,
+          "underline": false,
+          "code": false,
+          "color": "default"
+         },
+         "plain_text": "Systems that performed one persistent-store call per query in testing may perform thirty in production during peak load. This is a reason to be deliberate about which agent performs them, and whether a result can be carried forward in Flow State rather than re-fetched by each agent in the chain.",
+         "href": null
+        }
+       ],
+       "icon": null,
+       "color": "default"
+      },
+      "archived": false
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "object": "block",
+  "id": "39094183-19f3-8097-9491-c84bc2f32bc9",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-8024-ad21-cc1bb917ef91"
+  },
+  "created_time": "2026-07-01T10:30:00.000Z",
+  "last_edited_time": "2026-07-01T10:30:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "16c0b24b-1cce-4910-b823-a5ca2b8d497f",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-8024-ad21-cc1bb917ef91"
+  },
+  "created_time": "2026-06-28T12:36:00.000Z",
+  "last_edited_time": "2026-06-28T12:36:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_2",
+  "heading_2": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "What observability means for a multi-agent system",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "What observability means for a multi-agent system",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "0250d4e3-2a1f-4066-9b9a-5bbdf9a6ca4b",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-8024-ad21-cc1bb917ef91"
+  },
+  "created_time": "2026-06-28T12:36:00.000Z",
+  "last_edited_time": "2026-06-28T13:00:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Observability is logging ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Observability is logging ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "the right things in the right places",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "the right things in the right places",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " so that when the system behaves unexpectedly (an agent returns stale output, a handoff completes but carries the wrong state, a session recovers to the wrong safe state) you can read the logs and identify ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " so that when the system behaves unexpectedly (an agent returns stale output, a handoff completes but carries the wrong state, a session recovers to the wrong safe state) you can read the logs and identify ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "where",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": true,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "where",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " the failure happened without having to reproduce the session from scratch.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " the failure happened without having to reproduce the session from scratch.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "502c4a55-fdaa-4cfd-9864-4ddbc533b317",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-8024-ad21-cc1bb917ef91"
+  },
+  "created_time": "2026-06-28T12:36:00.000Z",
+  "last_edited_time": "2026-06-28T12:36:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "In a single-agent system, tracing a failure is relatively simple: the agent either completed or it did not, and the output is the evidence. In a multi-agent system, a failure can occur at any of several decision points: at the Classifier, in the handoff contract between agents, in a specialist's state write, or in the recovery logic after an interruption. Log nothing, and all you know is that the output was wrong. Log the right things, and you can read backward from the output to the specific agent and decision that produced it.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "In a single-agent system, tracing a failure is relatively simple: the agent either completed or it did not, and the output is the evidence. In a multi-agent system, a failure can occur at any of several decision points: at the Classifier, in the handoff contract between agents, in a specialist's state write, or in the recovery logic after an interruption. Log nothing, and all you know is that the output was wrong. Log the right things, and you can read backward from the output to the specific agent and decision that produced it.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "39094183-19f3-80e1-808f-c7762e577b4a",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-8024-ad21-cc1bb917ef91"
+  },
+  "created_time": "2026-07-01T10:30:00.000Z",
+  "last_edited_time": "2026-07-01T10:30:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "c2333641-f10c-46e6-83a1-882852765c90",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-8024-ad21-cc1bb917ef91"
+  },
+  "created_time": "2026-06-28T12:36:00.000Z",
+  "last_edited_time": "2026-06-28T12:36:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_2",
+  "heading_2": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "The four positions to log",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "The four positions to log",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "f209bd07-f056-4ebf-82ec-c512a70ee407",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-8024-ad21-cc1bb917ef91"
+  },
+  "created_time": "2026-06-28T12:36:00.000Z",
+  "last_edited_time": "2026-06-28T13:00:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "For a multi-agent Agentflow V2 system, observability coverage comes from logging at four positions. Each position corresponds to a decision the system makes that is invisible without a log entry.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "For a multi-agent Agentflow V2 system, observability coverage comes from logging at four positions. Each position corresponds to a decision the system makes that is invisible without a log entry.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "7eb3169c-8a03-4d8c-8431-aa28a6432c9e",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-8024-ad21-cc1bb917ef91"
+  },
+  "created_time": "2026-06-28T12:36:00.000Z",
+  "last_edited_time": "2026-06-28T13:00:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": true,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Position 1: Query received and classified",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Position 1: Query received and classified",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false,
+  "_children": [
+   {
+    "object": "block",
+    "id": "38d94183-19f3-8050-abce-d55b4a0dbe7e",
+    "parent": {
+     "type": "block_id",
+     "block_id": "7eb3169c-8a03-4d8c-8431-aa28a6432c9e"
+    },
+    "created_time": "2026-06-28T13:00:00.000Z",
+    "last_edited_time": "2026-06-28T13:00:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "231d872b-594c-81f2-a375-0002b8783aca"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "231d872b-594c-81f2-a375-0002b8783aca"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "bulleted_list_item",
+    "bulleted_list_item": {
+     "rich_text": [
+      {
+       "type": "text",
+       "text": {
+        "content": "Log: the raw input, the ",
+        "link": null
+       },
+       "annotations": {
+        "bold": false,
+        "italic": false,
+        "strikethrough": false,
+        "underline": false,
+        "code": false,
+        "color": "default"
+       },
+       "plain_text": "Log: the raw input, the ",
+       "href": null
+      },
+      {
+       "type": "text",
+       "text": {
+        "content": "query_type",
+        "link": null
+       },
+       "annotations": {
+        "bold": false,
+        "italic": false,
+        "strikethrough": false,
+        "underline": false,
+        "code": true,
+        "color": "default"
+       },
+       "plain_text": "query_type",
+       "href": null
+      },
+      {
+       "type": "text",
+       "text": {
+        "content": " value written to Flow State, and the session identifier. This is the first decision the system makes. If the output of the whole chain is wrong, this log tells you whether the Classifier made the right call before anything else ran.",
+        "link": null
+       },
+       "annotations": {
+        "bold": false,
+        "italic": false,
+        "strikethrough": false,
+        "underline": false,
+        "code": false,
+        "color": "default"
+       },
+       "plain_text": " value written to Flow State, and the session identifier. This is the first decision the system makes. If the output of the whole chain is wrong, this log tells you whether the Classifier made the right call before anything else ran.",
+       "href": null
+      }
+     ],
+     "color": "default"
+    },
+    "archived": false
+   },
+   {
+    "object": "block",
+    "id": "38d94183-19f3-8024-9db4-ca32431427eb",
+    "parent": {
+     "type": "block_id",
+     "block_id": "7eb3169c-8a03-4d8c-8431-aa28a6432c9e"
+    },
+    "created_time": "2026-06-28T13:00:00.000Z",
+    "last_edited_time": "2026-06-28T13:00:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "231d872b-594c-81f2-a375-0002b8783aca"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "231d872b-594c-81f2-a375-0002b8783aca"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "bulleted_list_item",
+    "bulleted_list_item": {
+     "rich_text": [
+      {
+       "type": "text",
+       "text": {
+        "content": "What to log: ",
+        "link": null
+       },
+       "annotations": {
+        "bold": false,
+        "italic": false,
+        "strikethrough": false,
+        "underline": false,
+        "code": false,
+        "color": "default"
+       },
+       "plain_text": "What to log: ",
+       "href": null
+      },
+      {
+       "type": "text",
+       "text": {
+        "content": "{ session_id, timestamp, raw_query, query_type_written }",
+        "link": null
+       },
+       "annotations": {
+        "bold": false,
+        "italic": false,
+        "strikethrough": false,
+        "underline": false,
+        "code": true,
+        "color": "default"
+       },
+       "plain_text": "{ session_id, timestamp, raw_query, query_type_written }",
+       "href": null
+      }
+     ],
+     "color": "default"
+    },
+    "archived": false
+   }
+  ]
+ },
+ {
+  "object": "block",
+  "id": "0e3b68ad-f505-4acc-aa93-e78d3d84c847",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-8024-ad21-cc1bb917ef91"
+  },
+  "created_time": "2026-06-28T12:36:00.000Z",
+  "last_edited_time": "2026-06-28T13:01:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": true,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Position 2: State written before handoff",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Position 2: State written before handoff",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false,
+  "_children": [
+   {
+    "object": "block",
+    "id": "38d94183-19f3-8058-aefe-e75606d611ce",
+    "parent": {
+     "type": "block_id",
+     "block_id": "0e3b68ad-f505-4acc-aa93-e78d3d84c847"
+    },
+    "created_time": "2026-06-28T13:01:00.000Z",
+    "last_edited_time": "2026-06-28T13:01:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "231d872b-594c-81f2-a375-0002b8783aca"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "231d872b-594c-81f2-a375-0002b8783aca"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "bulleted_list_item",
+    "bulleted_list_item": {
+     "rich_text": [
+      {
+       "type": "text",
+       "text": {
+        "content": "Log: every Flow State key the Classifier or coordinator writes before control passes to a specialist. This is the handoff contract which is a set of values the receiving agent will read. If the specialist later returns stale or incorrect output, this log tells you whether the input it received was correct.",
+        "link": null
+       },
+       "annotations": {
+        "bold": false,
+        "italic": false,
+        "strikethrough": false,
+        "underline": false,
+        "code": false,
+        "color": "default"
+       },
+       "plain_text": "Log: every Flow State key the Classifier or coordinator writes before control passes to a specialist. This is the handoff contract which is a set of values the receiving agent will read. If the specialist later returns stale or incorrect output, this log tells you whether the input it received was correct.",
+       "href": null
+      }
+     ],
+     "color": "default"
+    },
+    "archived": false
+   },
+   {
+    "object": "block",
+    "id": "38d94183-19f3-80f4-b37e-ef590104b922",
+    "parent": {
+     "type": "block_id",
+     "block_id": "0e3b68ad-f505-4acc-aa93-e78d3d84c847"
+    },
+    "created_time": "2026-06-28T13:01:00.000Z",
+    "last_edited_time": "2026-06-28T13:01:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "231d872b-594c-81f2-a375-0002b8783aca"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "231d872b-594c-81f2-a375-0002b8783aca"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "bulleted_list_item",
+    "bulleted_list_item": {
+     "rich_text": [
+      {
+       "type": "text",
+       "text": {
+        "content": "What to log: ",
+        "link": null
+       },
+       "annotations": {
+        "bold": false,
+        "italic": false,
+        "strikethrough": false,
+        "underline": false,
+        "code": false,
+        "color": "default"
+       },
+       "plain_text": "What to log: ",
+       "href": null
+      },
+      {
+       "type": "text",
+       "text": {
+        "content": "{ session_id, timestamp, handoff_state_snapshot }",
+        "link": null
+       },
+       "annotations": {
+        "bold": false,
+        "italic": false,
+        "strikethrough": false,
+        "underline": false,
+        "code": true,
+        "color": "default"
+       },
+       "plain_text": "{ session_id, timestamp, handoff_state_snapshot }",
+       "href": null
+      }
+     ],
+     "color": "default"
+    },
+    "archived": false
+   }
+  ]
+ },
+ {
+  "object": "block",
+  "id": "7a140b7e-8936-49a1-a347-0df1e74daca6",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-8024-ad21-cc1bb917ef91"
+  },
+  "created_time": "2026-06-28T12:36:00.000Z",
+  "last_edited_time": "2026-06-28T13:03:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": true,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Position 3: State read on specialist entry",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Position 3: State read on specialist entry",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false,
+  "_children": [
+   {
+    "object": "block",
+    "id": "38d94183-19f3-803b-b455-f2b0d735c7b4",
+    "parent": {
+     "type": "block_id",
+     "block_id": "7a140b7e-8936-49a1-a347-0df1e74daca6"
+    },
+    "created_time": "2026-06-28T13:03:00.000Z",
+    "last_edited_time": "2026-06-28T13:03:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "231d872b-594c-81f2-a375-0002b8783aca"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "231d872b-594c-81f2-a375-0002b8783aca"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "bulleted_list_item",
+    "bulleted_list_item": {
+     "rich_text": [
+      {
+       "type": "text",
+       "text": {
+        "content": "Log: the Flow State values the specialist reads at the moment it begins execution. This is the receiving side of the handoff. Comparing Position 2 and Position 3 logs for the same session tells you whether the handoff contract was delivered intact.",
+        "link": null
+       },
+       "annotations": {
+        "bold": false,
+        "italic": false,
+        "strikethrough": false,
+        "underline": false,
+        "code": false,
+        "color": "default"
+       },
+       "plain_text": "Log: the Flow State values the specialist reads at the moment it begins execution. This is the receiving side of the handoff. Comparing Position 2 and Position 3 logs for the same session tells you whether the handoff contract was delivered intact.",
+       "href": null
+      }
+     ],
+     "color": "default"
+    },
+    "archived": false
+   },
+   {
+    "object": "block",
+    "id": "38d94183-19f3-80b4-8077-d57b477aeb1c",
+    "parent": {
+     "type": "block_id",
+     "block_id": "7a140b7e-8936-49a1-a347-0df1e74daca6"
+    },
+    "created_time": "2026-06-28T13:03:00.000Z",
+    "last_edited_time": "2026-06-28T13:03:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "231d872b-594c-81f2-a375-0002b8783aca"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "231d872b-594c-81f2-a375-0002b8783aca"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "bulleted_list_item",
+    "bulleted_list_item": {
+     "rich_text": [
+      {
+       "type": "text",
+       "text": {
+        "content": "What to log: ",
+        "link": null
+       },
+       "annotations": {
+        "bold": false,
+        "italic": false,
+        "strikethrough": false,
+        "underline": false,
+        "code": false,
+        "color": "default"
+       },
+       "plain_text": "What to log: ",
+       "href": null
+      },
+      {
+       "type": "text",
+       "text": {
+        "content": "{ session_id, timestamp, agent_id, state_read_on_entry }",
+        "link": null
+       },
+       "annotations": {
+        "bold": false,
+        "italic": false,
+        "strikethrough": false,
+        "underline": false,
+        "code": true,
+        "color": "default"
+       },
+       "plain_text": "{ session_id, timestamp, agent_id, state_read_on_entry }",
+       "href": null
+      }
+     ],
+     "color": "default"
+    },
+    "archived": false
+   }
+  ]
+ },
+ {
+  "object": "block",
+  "id": "823b62f8-b46a-4656-9d29-87a64516ab8b",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-8024-ad21-cc1bb917ef91"
+  },
+  "created_time": "2026-06-28T12:36:00.000Z",
+  "last_edited_time": "2026-06-28T13:03:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": true,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Position 4: Reply written",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Position 4: Reply written",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false,
+  "_children": [
+   {
+    "object": "block",
+    "id": "10ab2d43-45dc-435c-8da0-a969b45a4f27",
+    "parent": {
+     "type": "block_id",
+     "block_id": "823b62f8-b46a-4656-9d29-87a64516ab8b"
+    },
+    "created_time": "2026-06-28T12:36:00.000Z",
+    "last_edited_time": "2026-06-28T13:03:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "231d872b-594c-81f2-a375-0002b8783aca"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "231d872b-594c-81f2-a375-0002b8783aca"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "bulleted_list_item",
+    "bulleted_list_item": {
+     "rich_text": [
+      {
+       "type": "text",
+       "text": {
+        "content": "Log: the output the agent writes along with the session identifier and a completion signal. If a session does not produce a Position 4 log, it did not complete, and you know exactly where to look.",
+        "link": null
+       },
+       "annotations": {
+        "bold": false,
+        "italic": false,
+        "strikethrough": false,
+        "underline": false,
+        "code": false,
+        "color": "default"
+       },
+       "plain_text": "Log: the output the agent writes along with the session identifier and a completion signal. If a session does not produce a Position 4 log, it did not complete, and you know exactly where to look.",
+       "href": null
+      }
+     ],
+     "color": "default"
+    },
+    "archived": false
+   },
+   {
+    "object": "block",
+    "id": "38d94183-19f3-8012-9702-cafafb6837b9",
+    "parent": {
+     "type": "block_id",
+     "block_id": "823b62f8-b46a-4656-9d29-87a64516ab8b"
+    },
+    "created_time": "2026-06-28T13:03:00.000Z",
+    "last_edited_time": "2026-06-28T13:03:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "231d872b-594c-81f2-a375-0002b8783aca"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "231d872b-594c-81f2-a375-0002b8783aca"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "bulleted_list_item",
+    "bulleted_list_item": {
+     "rich_text": [
+      {
+       "type": "text",
+       "text": {
+        "content": "What to log: ",
+        "link": null
+       },
+       "annotations": {
+        "bold": false,
+        "italic": false,
+        "strikethrough": false,
+        "underline": false,
+        "code": false,
+        "color": "default"
+       },
+       "plain_text": "What to log: ",
+       "href": null
+      },
+      {
+       "type": "text",
+       "text": {
+        "content": "{ session_id, timestamp, agent_id, output_summary, status_written }",
+        "link": null
+       },
+       "annotations": {
+        "bold": false,
+        "italic": false,
+        "strikethrough": false,
+        "underline": false,
+        "code": true,
+        "color": "default"
+       },
+       "plain_text": "{ session_id, timestamp, agent_id, output_summary, status_written }",
+       "href": null
+      }
+     ],
+     "color": "default"
+    },
+    "archived": false
+   }
+  ]
+ },
+ {
+  "object": "block",
+  "id": "56d61ab3-06b6-4f72-83ed-8a9a1e5363dd",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-8024-ad21-cc1bb917ef91"
+  },
+  "created_time": "2026-06-28T12:36:00.000Z",
+  "last_edited_time": "2026-06-28T13:03:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "The four positions together form a trace from the classification decision, through the handoff contract, through the specialist's read, to the final output. Any gap in that trace tells you that the session started but did not finish, and the last log entry before the gap tells you where it stopped.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "The four positions together form a trace from the classification decision, through the handoff contract, through the specialist's read, to the final output. Any gap in that trace tells you that the session started but did not finish, and the last log entry before the gap tells you where it stopped.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "4d01ea4d-64c9-4f7a-b5fc-3dc6a3ee1c8a",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-8024-ad21-cc1bb917ef91"
+  },
+  "created_time": "2026-06-28T12:36:00.000Z",
+  "last_edited_time": "2026-07-01T10:30:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": true,
+  "in_trash": false,
+  "type": "table",
+  "table": {
+   "table_width": 3,
+   "has_column_header": true,
+   "has_row_header": false
+  },
+  "archived": false,
+  "_children": [
+   {
+    "object": "block",
+    "id": "5f675588-0b88-4a0b-993a-ff2064944682",
+    "parent": {
+     "type": "block_id",
+     "block_id": "4d01ea4d-64c9-4f7a-b5fc-3dc6a3ee1c8a"
+    },
+    "created_time": "2026-06-28T12:36:00.000Z",
+    "last_edited_time": "2026-06-28T12:36:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "231d872b-594c-81f2-a375-0002b8783aca"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "231d872b-594c-81f2-a375-0002b8783aca"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "table_row",
+    "table_row": {
+     "cells": [
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Position",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Position",
+        "href": null
+       }
+      ],
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "What it captures",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "What it captures",
+        "href": null
+       }
+      ],
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "What it tells you when something goes wrong",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "What it tells you when something goes wrong",
+        "href": null
+       }
+      ]
+     ]
+    },
+    "archived": false
+   },
+   {
+    "object": "block",
+    "id": "da49271b-d3ad-40b2-bac1-e2f5c3f542eb",
+    "parent": {
+     "type": "block_id",
+     "block_id": "4d01ea4d-64c9-4f7a-b5fc-3dc6a3ee1c8a"
+    },
+    "created_time": "2026-06-28T12:36:00.000Z",
+    "last_edited_time": "2026-06-28T13:03:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "231d872b-594c-81f2-a375-0002b8783aca"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "231d872b-594c-81f2-a375-0002b8783aca"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "table_row",
+    "table_row": {
+     "cells": [
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "1 - Query classified",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "1 - Query classified",
+        "href": null
+       }
+      ],
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Raw input, ",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Raw input, ",
+        "href": null
+       },
+       {
+        "type": "text",
+        "text": {
+         "content": "query_type",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": true,
+         "color": "default"
+        },
+        "plain_text": "query_type",
+        "href": null
+       },
+       {
+        "type": "text",
+        "text": {
+         "content": ", session ID",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": ", session ID",
+        "href": null
+       }
+      ],
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Whether the Classifier made the right call",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Whether the Classifier made the right call",
+        "href": null
+       }
+      ]
+     ]
+    },
+    "archived": false
+   },
+   {
+    "object": "block",
+    "id": "68584335-0f99-4499-8388-a11b4f6634d6",
+    "parent": {
+     "type": "block_id",
+     "block_id": "4d01ea4d-64c9-4f7a-b5fc-3dc6a3ee1c8a"
+    },
+    "created_time": "2026-06-28T12:36:00.000Z",
+    "last_edited_time": "2026-06-28T13:03:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "231d872b-594c-81f2-a375-0002b8783aca"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "231d872b-594c-81f2-a375-0002b8783aca"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "table_row",
+    "table_row": {
+     "cells": [
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "2 - State written before handoff",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "2 - State written before handoff",
+        "href": null
+       }
+      ],
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Full handoff state snapshot",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Full handoff state snapshot",
+        "href": null
+       }
+      ],
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Whether the specialist received the correct inputs",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Whether the specialist received the correct inputs",
+        "href": null
+       }
+      ]
+     ]
+    },
+    "archived": false
+   },
+   {
+    "object": "block",
+    "id": "b0304a8e-c940-4bf6-919e-6e360cc647b4",
+    "parent": {
+     "type": "block_id",
+     "block_id": "4d01ea4d-64c9-4f7a-b5fc-3dc6a3ee1c8a"
+    },
+    "created_time": "2026-06-28T12:36:00.000Z",
+    "last_edited_time": "2026-06-28T13:03:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "231d872b-594c-81f2-a375-0002b8783aca"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "231d872b-594c-81f2-a375-0002b8783aca"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "table_row",
+    "table_row": {
+     "cells": [
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "3 - State read on entry",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "3 - State read on entry",
+        "href": null
+       }
+      ],
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "State values the specialist actually read",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "State values the specialist actually read",
+        "href": null
+       }
+      ],
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Whether the handoff contract arrived intact",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Whether the handoff contract arrived intact",
+        "href": null
+       }
+      ]
+     ]
+    },
+    "archived": false
+   },
+   {
+    "object": "block",
+    "id": "eecf3279-fa94-4918-bff4-34bd9f469068",
+    "parent": {
+     "type": "block_id",
+     "block_id": "4d01ea4d-64c9-4f7a-b5fc-3dc6a3ee1c8a"
+    },
+    "created_time": "2026-06-28T12:36:00.000Z",
+    "last_edited_time": "2026-06-28T13:03:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "231d872b-594c-81f2-a375-0002b8783aca"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "231d872b-594c-81f2-a375-0002b8783aca"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "table_row",
+    "table_row": {
+     "cells": [
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "4 - Reply written",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "4 - Reply written",
+        "href": null
+       }
+      ],
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Output, status key, completion signal",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Output, status key, completion signal",
+        "href": null
+       }
+      ],
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Whether the session completed and with what output",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Whether the session completed and with what output",
+        "href": null
+       }
+      ]
+     ]
+    },
+    "archived": false
+   }
+  ]
+ },
+ {
+  "object": "block",
+  "id": "39094183-19f3-8005-9542-c824f13bf4a7",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-8024-ad21-cc1bb917ef91"
+  },
+  "created_time": "2026-07-01T10:30:00.000Z",
+  "last_edited_time": "2026-07-01T10:30:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "13988b2f-22c2-4ed6-b7e6-765c6bfb8d95",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-8024-ad21-cc1bb917ef91"
+  },
+  "created_time": "2026-06-28T12:36:00.000Z",
+  "last_edited_time": "2026-06-28T12:36:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_2",
+  "heading_2": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "What not to log",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "What not to log",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "1a0e5f19-2fde-4ef6-9e4e-ac70554c8d6f",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-8024-ad21-cc1bb917ef91"
+  },
+  "created_time": "2026-06-28T12:36:00.000Z",
+  "last_edited_time": "2026-06-28T13:04:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Logging has costs: storage, read time, and privacy exposure. Three categories of content should not appear in logs.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Logging has costs: storage, read time, and privacy exposure. Three categories of content should not appear in logs.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "692db186-d5e0-4b04-aae9-d07968bfb958",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-8024-ad21-cc1bb917ef91"
+  },
+  "created_time": "2026-06-28T12:36:00.000Z",
+  "last_edited_time": "2026-06-28T13:04:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "User-identifiable content.",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "User-identifiable content.",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " The raw query text often contains names, account references, or internal details. The ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " The raw query text often contains names, account references, or internal details. The ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "raw_query",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": true,
+      "color": "default"
+     },
+     "plain_text": "raw_query",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " field at Position 1 is useful for debugging, but in a production system it should be stored only in a log channel with appropriate access controls, and never in a shared or public log stream.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " field at Position 1 is useful for debugging, but in a production system it should be stored only in a log channel with appropriate access controls, and never in a shared or public log stream.",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "98051467-60bd-4cea-a875-1261dbdb2062",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-8024-ad21-cc1bb917ef91"
+  },
+  "created_time": "2026-06-28T12:36:00.000Z",
+  "last_edited_time": "2026-06-28T13:04:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Credentials and tokens.",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Credentials and tokens.",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " Any value that provides access to an external system (API keys, bearer tokens, session cookies) must never appear in a log entry. If a log step writes these values, the log itself becomes a security vulnerability.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " Any value that provides access to an external system (API keys, bearer tokens, session cookies) must never appear in a log entry. If a log step writes these values, the log itself becomes a security vulnerability.",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "8b85a4f0-08ce-4c3d-b128-ac3a47fd1133",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-8024-ad21-cc1bb917ef91"
+  },
+  "created_time": "2026-06-28T12:36:00.000Z",
+  "last_edited_time": "2026-06-28T13:04:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Content that must never persist.",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Content that must never persist.",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " The same rules that govern memory ownership (from Sprint 3) apply to logs. If a piece of information was identified as \"must not persist\" in the memory architecture, it should not appear in a log entry. Logs are persistence.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " The same rules that govern memory ownership (from Sprint 3) apply to logs. If a piece of information was identified as \"must not persist\" in the memory architecture, it should not appear in a log entry. Logs are persistence.",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "39094183-19f3-807f-bf64-e033e3a79107",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-8024-ad21-cc1bb917ef91"
+  },
+  "created_time": "2026-07-01T10:30:00.000Z",
+  "last_edited_time": "2026-07-01T10:30:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "79c03f90-6f10-4238-8668-97048d227197",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-8024-ad21-cc1bb917ef91"
+  },
+  "created_time": "2026-06-28T12:36:00.000Z",
+  "last_edited_time": "2026-06-28T12:36:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_2",
+  "heading_2": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Connecting this to your project",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Connecting this to your project",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "54a5723f-2c8c-44f9-ad24-0437f4411601",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-8024-ad21-cc1bb917ef91"
+  },
+  "created_time": "2026-06-28T12:36:00.000Z",
+  "last_edited_time": "2026-06-28T12:36:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "The memory and state architecture you defined in Sprint 3 specified what to store, where it lives, and who can access it. Observability is the production complement to that specification: it defines ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "The memory and state architecture you defined in Sprint 3 specified what to store, where it lives, and who can access it. Observability is the production complement to that specification: it defines ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "when",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": true,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "when",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " to write a record of what happened, so that the architecture's behaviour is inspectable after the fact.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " to write a record of what happened, so that the architecture's behaviour is inspectable after the fact.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "8d677502-5a23-4b19-9847-eecf50246ef4",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-8024-ad21-cc1bb917ef91"
+  },
+  "created_time": "2026-06-28T12:36:00.000Z",
+  "last_edited_time": "2026-06-28T12:36:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Before Sprint 4 integration work begins, the four log positions above should map to your project canvas. For each position, you should be able to answer: which node in my architecture is responsible for writing this log entry, and what specific keys does it log? If a position has no owning node, it is an unmonitored gap in the system.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Before Sprint 4 integration work begins, the four log positions above should map to your project canvas. For each position, you should be able to answer: which node in my architecture is responsible for writing this log entry, and what specific keys does it log? If a position has no owning node, it is an unmonitored gap in the system.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "573fb04e-ac2a-4740-a908-0e72f38dd2e1",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-8024-ad21-cc1bb917ef91"
+  },
+  "created_time": "2026-06-28T12:36:00.000Z",
+  "last_edited_time": "2026-06-28T13:04:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "In your project, the Classifier (or coordinator) owns Positions 1 and 2. Each specialist agent owns Position 3. The final reply node owns Position 4. The specifics depend on your chosen archetype (Router, Coordinator, or Evaluator) but the four positions apply in each case.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "In your project, the Classifier (or coordinator) owns Positions 1 and 2. Each specialist agent owns Position 3. The final reply node owns Position 4. The specifics depend on your chosen archetype (Router, Coordinator, or Evaluator) but the four positions apply in each case.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "39094183-19f3-80ce-b192-ef6352e2145e",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-8024-ad21-cc1bb917ef91"
+  },
+  "created_time": "2026-07-01T10:30:00.000Z",
+  "last_edited_time": "2026-07-01T10:30:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "002dd4a1-08e3-4384-ad5e-00ae277974b2",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-8024-ad21-cc1bb917ef91"
+  },
+  "created_time": "2026-06-28T12:36:00.000Z",
+  "last_edited_time": "2026-06-28T12:36:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_2",
+  "heading_2": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Summary",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Summary",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "6cc3d3ab-068d-4c12-88f3-affff58399f3",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-8024-ad21-cc1bb917ef91"
+  },
+  "created_time": "2026-06-28T12:36:00.000Z",
+  "last_edited_time": "2026-06-28T13:04:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "A multi-agent system that works in testing can fail in production under concurrent load, and the failures are difficult to diagnose without the right log entries. Context windows scale cleanly because they are session-isolated by design. Flow State does not scale cleanly if any key is written globally rather than per session. This is a production consequence of the memory boundary decisions from Sprint 3, not a new problem.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "A multi-agent system that works in testing can fail in production under concurrent load, and the failures are difficult to diagnose without the right log entries. Context windows scale cleanly because they are session-isolated by design. Flow State does not scale cleanly if any key is written globally rather than per session. This is a production consequence of the memory boundary decisions from Sprint 3, not a new problem.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "fb229393-3f41-4db5-bb51-19bdf32bc50e",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-8024-ad21-cc1bb917ef91"
+  },
+  "created_time": "2026-06-28T12:36:00.000Z",
+  "last_edited_time": "2026-06-28T12:36:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Observability across a multi-agent system requires logging at four positions: query classification, state written before handoff, state read on specialist entry, and reply written. Together these four positions form a trace that spans the entire execution chain. Any gap in the trace identifies the specific agent and handoff where a failure occurred.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Observability across a multi-agent system requires logging at four positions: query classification, state written before handoff, state read on specialist entry, and reply written. Together these four positions form a trace that spans the entire execution chain. Any gap in the trace identifies the specific agent and handoff where a failure occurred.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "2f11d1e6-ce5d-4255-a745-05dd4f724362",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-8024-ad21-cc1bb917ef91"
+  },
+  "created_time": "2026-06-28T12:36:00.000Z",
+  "last_edited_time": "2026-06-28T13:05:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "In the next lesson, you will identify the specific cases where memory or state causes failure, including how to recognise them in the logs you will now be producing, and design safeguards before integrating your redesigned agent in full.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "In the next lesson, you will identify the specific cases where memory or state causes failure, including how to recognise them in the logs you will now be producing, and design safeguards before integrating your redesigned agent in full.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ }
+]

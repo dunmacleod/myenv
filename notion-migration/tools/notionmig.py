@@ -116,6 +116,7 @@ def norm(blocks, remap=None):
 # ---------------------------------------------------------------- build payloads
 
 UNRESOLVED = []
+SYNCED_DEREFERENCED = []
 
 def build_rt(rts, remap=None):
     out = []
@@ -227,6 +228,17 @@ class Builder:
             return {"object": "block", "type": "table_row",
                     "table_row": {"cells": [build_rt(c, self.remap) for c in v.get("cells", [])]}}
 
+        if t == "synced_block":
+            inner = [self.block(c) for c in kids]
+            inner = [c for c in inner if c]
+            if (v or {}).get("synced_from"):
+                # a mirror of a block in the SOURCE workspace: referencing it would point the
+                # live page at draft content, so copy the visible content inline instead
+                SYNCED_DEREFERENCED.append(b["id"])
+                return inner or None
+            return {"object": "block", "type": "synced_block",
+                    "synced_block": {"synced_from": None, "children": inner}}
+
         if t == "column_list":
             cols = [self.block(c) for c in kids]
             cols = [c for c in cols if c]
@@ -236,8 +248,11 @@ class Builder:
             inner = [self.block(c) for c in kids]
             inner = [c for c in inner if c]
             p = {"children": inner}
-            if v.get("width_ratio"):
-                p["width_ratio"] = v["width_ratio"]
+            wr = v.get("width_ratio")
+            # Notion accepts a ratio only in (0, 1); a full-width column reports 1 on read
+            # but is rejected on create, so it is simply omitted and the default applies.
+            if isinstance(wr, (int, float)) and 0 < wr < 1:
+                p["width_ratio"] = wr
             return {"object": "block", "type": "column", "column": p}
 
         if t in TEXTY:
@@ -263,7 +278,9 @@ class Builder:
         out = []
         for b in blocks:
             p = self.block(b)
-            if p:
+            if isinstance(p, list):
+                out.extend(p)
+            elif p:
                 out.append(p)
         return out
 

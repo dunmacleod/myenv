@@ -1,0 +1,2071 @@
+[
+ {
+  "object": "block",
+  "id": "36d94183-19f3-802a-ae3c-deb277d80476",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36894183-19f3-8020-86c3-db115a057add"
+  },
+  "created_time": "2026-05-27T19:27:00.000Z",
+  "last_edited_time": "2026-05-27T19:27:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "callout",
+  "callout": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "What you will understand by the end of this lesson:",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "What you will understand by the end of this lesson:",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " How long-running agent sessions degrade in quality as the context window fills, why a large context window does not solve this problem, and how the Buffer Window Memory configuration you made in Sprint 1 fits into the broader landscape of context management strategies used in production deployments.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " How long-running agent sessions degrade in quality as the context window fills, why a large context window does not solve this problem, and how the Buffer Window Memory configuration you made in Sprint 1 fits into the broader landscape of context management strategies used in production deployments.",
+     "href": null
+    }
+   ],
+   "icon": {
+    "type": "emoji",
+    "emoji": "\ud83d\udca1"
+   },
+   "color": "gray_background"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37c94183-19f3-8099-8013-cf9de1e9e197",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36894183-19f3-8020-86c3-db115a057add"
+  },
+  "created_time": "2026-06-11T07:21:00.000Z",
+  "last_edited_time": "2026-06-11T07:21:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "2786558a-2aa5-410e-98c8-b0567aab6269",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36894183-19f3-8020-86c3-db115a057add"
+  },
+  "created_time": "2026-05-22T02:15:00.000Z",
+  "last_edited_time": "2026-05-27T19:27:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_2",
+  "heading_2": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "The myth of infinite context",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "The myth of infinite context",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "e6f75e0c-8f1f-4b6f-b3c1-f73bf8f1e738",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36894183-19f3-8020-86c3-db115a057add"
+  },
+  "created_time": "2026-06-10T15:08:00.000Z",
+  "last_edited_time": "2026-06-10T15:09:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Contigo GmbH's agent handles multi-turn client conversations that can run to twenty or thirty exchanges in complex loan assessment or compliance sessions. Each turn adds to the context window, conversation history from the Buffer Window Memory node, retrieved document chunks from the Qdrant knowledge base, tool outputs from the loan status lookup and Calculator. Over the course of a long session, this accumulation grows significant.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Contigo GmbH's agent handles multi-turn client conversations that can run to twenty or thirty exchanges in complex loan assessment or compliance sessions. Each turn adds to the context window, conversation history from the Buffer Window Memory node, retrieved document chunks from the Qdrant knowledge base, tool outputs from the loan status lookup and Calculator. Over the course of a long session, this accumulation grows significant.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "7a638b92-5aec-44f7-abcb-c3dee40055fb",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36894183-19f3-8020-86c3-db115a057add"
+  },
+  "created_time": "2026-06-10T15:08:00.000Z",
+  "last_edited_time": "2026-06-10T15:09:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "A common assumption is that using a model with a large context window solves this problem entirely. It does not. Research consistently shows that reasoning performance degrades as input length increases, often breaking down long before the advertised context limit is reached. A model processing a 200,000-token prompt does not reason as well as the same model processing a 10,000-token prompt, even if both are within the technical limit.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "A common assumption is that using a model with a large context window solves this problem entirely. It does not. Research consistently shows that reasoning performance degrades as input length increases, often breaking down long before the advertised context limit is reached. A model processing a 200,000-token prompt does not reason as well as the same model processing a 10,000-token prompt, even if both are within the technical limit.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "55ca72ea-fb58-4dfa-9528-267a17667c0c",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36894183-19f3-8020-86c3-db115a057add"
+  },
+  "created_time": "2026-06-10T15:08:00.000Z",
+  "last_edited_time": "2026-06-10T15:08:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "This degradation has a name: ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "This degradation has a name: ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "context drift",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "context drift",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": ". And its operational consequence is one of the most common and costly failure modes in production agent deployments.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": ". And its operational consequence is one of the most common and costly failure modes in production agent deployments.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37c94183-19f3-807b-9b8c-c0096ebcd86c",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36894183-19f3-8020-86c3-db115a057add"
+  },
+  "created_time": "2026-06-11T07:21:00.000Z",
+  "last_edited_time": "2026-06-11T07:21:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "de22cc00-9895-4c05-8025-f1b249a82983",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36894183-19f3-8020-86c3-db115a057add"
+  },
+  "created_time": "2026-05-22T02:15:00.000Z",
+  "last_edited_time": "2026-05-27T19:27:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_2",
+  "heading_2": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "How context drift manifests",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "How context drift manifests",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "18c0b303-719c-4c80-97a4-cbe494a52026",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36894183-19f3-8020-86c3-db115a057add"
+  },
+  "created_time": "2026-05-22T02:15:00.000Z",
+  "last_edited_time": "2026-06-10T15:09:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "As the context window fills, the model's attention becomes distributed across an increasingly large input. Three specific failure patterns emerge.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "As the context window fills, the model's attention becomes distributed across an increasingly large input. Three specific failure patterns emerge.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "1e217404-08dd-4803-aa30-1b37a65f5b53",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36894183-19f3-8020-86c3-db115a057add"
+  },
+  "created_time": "2026-05-22T02:15:00.000Z",
+  "last_edited_time": "2026-06-11T07:21:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Degraded reasoning:",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Degraded reasoning:",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " The agent begins ignoring its system prompt or the client's immediate instruction in favour of older content that dominates the context by volume. A client who pivots from discussing personal loans to asking about SME products may find the agent continues reasoning about personal loan parameters because that content fills more of the context than the new query.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " The agent begins ignoring its system prompt or the client's immediate instruction in favour of older content that dominates the context by volume. A client who pivots from discussing personal loans to asking about SME products may find the agent continues reasoning about personal loan parameters because that content fills more of the context than the new query.",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "f588b201-2bbe-4984-861e-12dfbd29d306",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36894183-19f3-8020-86c3-db115a057add"
+  },
+  "created_time": "2026-05-22T02:15:00.000Z",
+  "last_edited_time": "2026-06-11T07:22:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Tool selection errors:",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Tool selection errors:",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " An agent that was routing correctly at Turn 5 may begin invoking the wrong tool at Turn 25 because the tool descriptions are being outweighed by the volume of accumulated history. The model's attention to the routing instructions dilutes as the context grows. This connects directly to the context dilution and tool bloat failure modes introduced in an earlier lesson.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " An agent that was routing correctly at Turn 5 may begin invoking the wrong tool at Turn 25 because the tool descriptions are being outweighed by the volume of accumulated history. The model's attention to the routing instructions dilutes as the context grows. This connects directly to the context dilution and tool bloat failure modes introduced in an earlier lesson.",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "e9d35980-4cc3-4228-bb87-8dad11d8ad33",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36894183-19f3-8020-86c3-db115a057add"
+  },
+  "created_time": "2026-05-22T02:15:00.000Z",
+  "last_edited_time": "2026-06-11T07:21:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Cost and latency spikes:",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Cost and latency spikes:",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " Every reasoning step processes the entire context window. A session that grows from 8,000 tokens to 80,000 tokens over thirty turns increases the token cost of each individual step by a factor of ten and increases latency proportionally. For Contigo's deployment across hundreds of concurrent client sessions, this cost multiplication is operationally significant.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " Every reasoning step processes the entire context window. A session that grows from 8,000 tokens to 80,000 tokens over thirty turns increases the token cost of each individual step by a factor of ten and increases latency proportionally. For Contigo's deployment across hundreds of concurrent client sessions, this cost multiplication is operationally significant.",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "36d94183-19f3-80b5-afcd-d55f5bf9bf26",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36894183-19f3-8020-86c3-db115a057add"
+  },
+  "created_time": "2026-05-27T19:45:00.000Z",
+  "last_edited_time": "2026-05-27T19:45:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "image",
+  "image": {
+   "caption": [],
+   "type": "file",
+   "file": {
+    "url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/3a9085c4-df29-45e6-8bc7-6c9c0a25ea8c/0466655c-0522-4f35-a285-1b7cca5dd106/b361dd7c-2fd9-4cd8-aad1-002ddd4ffe78.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466VQMDYPVE%2F20261028%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20261028T095721Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEDgaCXVzLXdlc3QtMiJGMEQCIF9FP2MpdPl85U%2Bi5aC7R8ci7bWeshQAwCM5sqsyzOtiAiBdUHNNsdnHS1wwsDMa4KamUSPy4%2BzR4vlfgU1kMG42aCr%2FAwgAEAAaDDYzNzQyMzE4MzgwNSIMmwlhCZVIcB8lm148KtwDXoJiBmQVkfqsZbSin%2BCf3XzcEqs0CCCeKYLkDg5bi9lL5RVxcZKbG%2FF37nmkXhVVqLAEQloMpfLdbPOdivgHatL%2BBIHvsl0HXuFmjXMNyrg98RymPd03yaicIh52rXYQ21ijYyihggV5BnoB%2FTnhO1vgBusDToVBOKYrkmwi2NSNj4fw4mOUvv2TLyTWSJkWchSTjDN0JRdP1vvNRaLazfVNcBwG0t0uDSOILjAFXFIK98hNhVSFZaRwGICl75cU9GyCCRXDJJ3YfS1UNocJT1JlaI3MhkSUwP8flEgCaCufNFntyj3fg6gvt%2FFu9%2Fiu1uejMqBjHTSECb9gY6EX4qr%2ByejWu2FNkgzf6xJtoq6M6vOWbEn%2FGhZJzvguBltPiEeRhNv9SX7aWCGm1CMY4pXusFF3X%2BB%2BgjYJt4B29RU0H57TmCyANBOsHPrG5hfw8SP2Z8Jf2F7PK87TrCR%2FFlw9BR59HHo0Bj%2FCMH%2FqGMAY8kD4q4DaUeScPH9wQB6ql5hTftVQ85CcZ35zICxEVO%2FjxxYPGHCvae9PuLpO0pa%2B6TbaGa32BRf3zjwb%2FXO9zs%2F9U9GghT%2FAH%2FTnUIbFCT37dNgzQ5SICh26bPJw0nnME2NaEaYktdlp1CkwrNWG1wY6pgFWzZoCCiYMD9JthtgbW%2FAtCXzhbpWskjl5%2Ffyr04pKmiELEkFh0CwiH63j2D4fwTYV8ehqsOUevx8yjRSYbhYr5lHjN3hQA3SWV%2FtjI143t5%2F9xgZ4%2Fs7CAV5HAhCDg5Km3PzJlmLscLp9ZfvtP3QhYnNbq9G0lAnH6v1uVnJGEUNqJU3tginpm4kWrabUcmqFl8%2Fc8qYitrNHu5LC5KqOP%2BmqBFk%2B&X-Amz-Signature=7be14844a46e09688b9fa587dd2c0117a96eef68af40e71e6838bbd3981137dc&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+    "expiry_time": "2026-10-28T10:57:21.162Z"
+   }
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37c94183-19f3-8003-9e02-eb25c6ccd3ac",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36894183-19f3-8020-86c3-db115a057add"
+  },
+  "created_time": "2026-06-11T07:21:00.000Z",
+  "last_edited_time": "2026-06-11T07:21:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "2424b5a7-f9b1-47f1-a7e9-7dd04b5c88e7",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36894183-19f3-8020-86c3-db115a057add"
+  },
+  "created_time": "2026-06-10T15:11:00.000Z",
+  "last_edited_time": "2026-06-10T15:11:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_2",
+  "heading_2": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "How your Sprint 1 configuration addresses this",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "How your Sprint 1 configuration addresses this",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "ed50ad87-7e4b-4e66-9d80-44a6a63e1729",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36894183-19f3-8020-86c3-db115a057add"
+  },
+  "created_time": "2026-06-10T15:11:00.000Z",
+  "last_edited_time": "2026-06-10T15:11:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "The Buffer Window Memory node configured uses a sliding window approach. It retains only the most recent K message pairs in the active context and drops everything older. This directly limits the volume of conversation history injected into each prompt turn.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "The Buffer Window Memory node configured uses a sliding window approach. It retains only the most recent K message pairs in the active context and drops everything older. This directly limits the volume of conversation history injected into each prompt turn.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "567731bc-e9e6-45ea-ae63-aa04eaf32732",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36894183-19f3-8020-86c3-db115a057add"
+  },
+  "created_time": "2026-06-10T15:11:00.000Z",
+  "last_edited_time": "2026-06-10T15:11:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "The window size you chose was a deliberate trade-off. A window that is too small drops important context too early. A client's case reference from Turn 1 may be outside the active window by Turn 7. A window that is too large reintroduces context pressure by retaining more history than is genuinely needed for the current turn.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "The window size you chose was a deliberate trade-off. A window that is too small drops important context too early. A client's case reference from Turn 1 may be outside the active window by Turn 7. A window that is too large reintroduces context pressure by retaining more history than is genuinely needed for the current turn.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "6bea74a9-a78c-4748-8c5a-d740dea011b3",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36894183-19f3-8020-86c3-db115a057add"
+  },
+  "created_time": "2026-06-10T15:11:00.000Z",
+  "last_edited_time": "2026-06-10T15:12:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "For Contigo's typical support conversation (product questions, eligibility queries, and status checks), the window size you configured is the correct and sufficient mechanism. It keeps the active context focused without losing the conversational continuity that makes the agent useful.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "For Contigo's typical support conversation (product questions, eligibility queries, and status checks), the window size you configured is the correct and sufficient mechanism. It keeps the active context focused without losing the conversational continuity that makes the agent useful.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37c94183-19f3-8004-ab9e-d17eae3a942a",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36894183-19f3-8020-86c3-db115a057add"
+  },
+  "created_time": "2026-06-11T07:21:00.000Z",
+  "last_edited_time": "2026-06-11T07:21:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "c09e49af-09ae-4ef5-8283-908980aaa26e",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36894183-19f3-8020-86c3-db115a057add"
+  },
+  "created_time": "2026-05-22T02:15:00.000Z",
+  "last_edited_time": "2026-05-27T19:28:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_2",
+  "heading_2": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Four strategies to manage context",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Four strategies to manage context",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "1014734b-ba23-4dd6-a7bc-fc48316a1011",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36894183-19f3-8020-86c3-db115a057add"
+  },
+  "created_time": "2026-06-10T15:12:00.000Z",
+  "last_edited_time": "2026-06-10T15:12:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Your sliding window configuration is one of four strategies used to manage context in production deployments. Understanding the others positions your current build in the broader landscape and prepares you for more complex deployments.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Your sliding window configuration is one of four strategies used to manage context in production deployments. Understanding the others positions your current build in the broader landscape and prepares you for more complex deployments.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37c94183-19f3-80f5-a74d-d322caf53ec0",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36894183-19f3-8020-86c3-db115a057add"
+  },
+  "created_time": "2026-06-11T07:21:00.000Z",
+  "last_edited_time": "2026-06-11T07:21:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "d38e138d-f916-4f07-98f5-9491d6f26332",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36894183-19f3-8020-86c3-db115a057add"
+  },
+  "created_time": "2026-06-10T15:12:00.000Z",
+  "last_edited_time": "2026-06-10T15:14:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_4",
+  "heading_4": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Strategy 1: Sliding window (your current implementation)",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Strategy 1: Sliding window (your current implementation)",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37b94183-19f3-804f-b2d1-d76eeb652543",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36894183-19f3-8020-86c3-db115a057add"
+  },
+  "created_time": "2026-06-10T15:12:00.000Z",
+  "last_edited_time": "2026-06-10T15:12:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Only the most recent N turns are retained in full. Older turns are dropped. The system prompt and current task instructions are always present regardless of how many turns have passed. Simple to configure and directly implemented by your Buffer Window Memory node.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Only the most recent N turns are retained in full. Older turns are dropped. The system prompt and current task instructions are always present regardless of how many turns have passed. Simple to configure and directly implemented by your Buffer Window Memory node.",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37b94183-19f3-8086-a674-eeb46c348baf",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36894183-19f3-8020-86c3-db115a057add"
+  },
+  "created_time": "2026-06-10T15:12:00.000Z",
+  "last_edited_time": "2026-06-10T15:12:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Limitation:",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": true,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Limitation:",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " Important information from early in a long session (a case reference and a stated preference) can fall outside the window and be lost entirely.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " Important information from early in a long session (a case reference and a stated preference) can fall outside the window and be lost entirely.",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37c94183-19f3-803c-8c38-d368620b0601",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36894183-19f3-8020-86c3-db115a057add"
+  },
+  "created_time": "2026-06-11T07:21:00.000Z",
+  "last_edited_time": "2026-06-11T07:21:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "10385433-2cef-4357-9f10-694e34c4995e",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36894183-19f3-8020-86c3-db115a057add"
+  },
+  "created_time": "2026-06-10T15:12:00.000Z",
+  "last_edited_time": "2026-06-10T15:14:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_4",
+  "heading_4": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Strategy 2: Compression and summarisation",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Strategy 2: Compression and summarisation",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37b94183-19f3-800f-9aa1-f2511395b14e",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36894183-19f3-8020-86c3-db115a057add"
+  },
+  "created_time": "2026-06-10T15:13:00.000Z",
+  "last_edited_time": "2026-06-10T15:13:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Rather than retaining raw tool outputs and full exchange transcripts, the system compresses older content. A series of five exchanges about loan eligibility is summarised into two sentences that preserve the conclusion without the verbose back-and-forth. The summary replaces the raw history, keeping the context window lean while preserving the essential meaning.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Rather than retaining raw tool outputs and full exchange transcripts, the system compresses older content. A series of five exchanges about loan eligibility is summarised into two sentences that preserve the conclusion without the verbose back-and-forth. The summary replaces the raw history, keeping the context window lean while preserving the essential meaning.",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37b94183-19f3-8083-ad59-e8409e525b71",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36894183-19f3-8020-86c3-db115a057add"
+  },
+  "created_time": "2026-06-10T15:13:00.000Z",
+  "last_edited_time": "2026-06-10T15:13:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Limitation:",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": true,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Limitation:",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " Summarisation requires an additional model call, adding latency and cost. The summary is an approximation and specific details can be lost in compression.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " Summarisation requires an additional model call, adding latency and cost. The summary is an approximation and specific details can be lost in compression.",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37c94183-19f3-80f4-b652-ee0435c2dd70",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36894183-19f3-8020-86c3-db115a057add"
+  },
+  "created_time": "2026-06-11T07:21:00.000Z",
+  "last_edited_time": "2026-06-11T07:21:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "19b95ead-291c-4baa-a513-0c1ceaa40ae0",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36894183-19f3-8020-86c3-db115a057add"
+  },
+  "created_time": "2026-06-10T15:12:00.000Z",
+  "last_edited_time": "2026-06-10T15:14:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_4",
+  "heading_4": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Strategy 3: Token budgeting",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Strategy 3: Token budgeting",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37b94183-19f3-80ca-989e-d7f3730901d7",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36894183-19f3-8020-86c3-db115a057add"
+  },
+  "created_time": "2026-06-10T15:13:00.000Z",
+  "last_edited_time": "2026-06-10T15:13:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Fixed token allocations are reserved for the system prompt, tool schemas, and generation headroom. History and retrieved content fill only what remains. When the budget is approached, the lowest-priority content is dropped first. This is typically older conversation turns rather than retrieved chunks or system instructions.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Fixed token allocations are reserved for the system prompt, tool schemas, and generation headroom. History and retrieved content fill only what remains. When the budget is approached, the lowest-priority content is dropped first. This is typically older conversation turns rather than retrieved chunks or system instructions.",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37b94183-19f3-805c-810d-d21244dc9f65",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36894183-19f3-8020-86c3-db115a057add"
+  },
+  "created_time": "2026-06-10T15:13:00.000Z",
+  "last_edited_time": "2026-06-10T15:13:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Limitation:",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": true,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Limitation:",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " Requires careful calibration. A budget that is too restrictive drops important context. A budget that is too generous reintroduces context pressure.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " Requires careful calibration. A budget that is too restrictive drops important context. A budget that is too generous reintroduces context pressure.",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37c94183-19f3-80ab-94ff-ef291fdfc291",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36894183-19f3-8020-86c3-db115a057add"
+  },
+  "created_time": "2026-06-11T07:21:00.000Z",
+  "last_edited_time": "2026-06-11T07:21:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "1252c83c-2817-4620-a2e5-ceef1e018147",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36894183-19f3-8020-86c3-db115a057add"
+  },
+  "created_time": "2026-06-10T15:12:00.000Z",
+  "last_edited_time": "2026-06-10T15:14:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_4",
+  "heading_4": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Strategy 4: Tiered memory",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Strategy 4: Tiered memory",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37b94183-19f3-80e7-bc62-d2b4206efcde",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36894183-19f3-8020-86c3-db115a057add"
+  },
+  "created_time": "2026-06-10T15:14:00.000Z",
+  "last_edited_time": "2026-06-10T15:14:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Recent turns are held in fast working memory equivalent to your Buffer Window Memory node. Older turns are archived to a vector store and retrieved only when semantically relevant to the current query. The active context window stays small. The full history remains accessible without occupying prompt space permanently.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Recent turns are held in fast working memory equivalent to your Buffer Window Memory node. Older turns are archived to a vector store and retrieved only when semantically relevant to the current query. The active context window stays small. The full history remains accessible without occupying prompt space permanently.",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37b94183-19f3-8051-baa4-fae1cf2dc134",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36894183-19f3-8020-86c3-db115a057add"
+  },
+  "created_time": "2026-06-10T15:14:00.000Z",
+  "last_edited_time": "2026-06-10T15:14:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Limitation:",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": true,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Limitation:",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " Significantly more complex to implement. Requires a persistent vector store configured for long-term memory retrieval. This would be a different use of Qdrant than the knowledge base configuration built in Sprint 2.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " Significantly more complex to implement. Requires a persistent vector store configured for long-term memory retrieval. This would be a different use of Qdrant than the knowledge base configuration built in Sprint 2.",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37b94183-19f3-809e-a22e-fe7fab1e19ce",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36894183-19f3-8020-86c3-db115a057add"
+  },
+  "created_time": "2026-06-10T15:14:00.000Z",
+  "last_edited_time": "2026-06-10T15:15:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "For Contigo's support use case (short-to-medium focused conversations where session continuity matters but long-term cross-session history is not required), the sliding window is the correct and sufficient strategy.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "For Contigo's support use case (short-to-medium focused conversations where session continuity matters but long-term cross-session history is not required), the sliding window is the correct and sufficient strategy.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37c94183-19f3-8044-9985-c3f40ad456d2",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36894183-19f3-8020-86c3-db115a057add"
+  },
+  "created_time": "2026-06-11T07:21:00.000Z",
+  "last_edited_time": "2026-06-11T07:21:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "8bff368d-bafe-4b03-a234-9d26d46cb40e",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36894183-19f3-8020-86c3-db115a057add"
+  },
+  "created_time": "2026-05-22T02:15:00.000Z",
+  "last_edited_time": "2026-05-27T19:28:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_2",
+  "heading_2": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Check for Understanding",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Check for Understanding",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37c94183-19f3-8062-9253-e4bf98c90d87",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36894183-19f3-8020-86c3-db115a057add"
+  },
+  "created_time": "2026-06-11T13:27:00.000Z",
+  "last_edited_time": "2026-06-11T13:27:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": true,
+  "in_trash": false,
+  "type": "callout",
+  "callout": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "A Contigo agent handles a 25-turn compliance session correctly through Turn 15 but begins ignoring its grounding instruction and fabricating regulatory figures in Turns 16 through 25. No configuration changes were made during the session. What is the most likely cause?",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "A Contigo agent handles a 25-turn compliance session correctly through Turn 15 but begins ignoring its grounding instruction and fabricating regulatory figures in Turns 16 through 25. No configuration changes were made during the session. What is the most likely cause?",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "gray_background"
+  },
+  "archived": false,
+  "_children": [
+   {
+    "object": "block",
+    "id": "37c94183-19f3-80a8-b2ce-fd6043342895",
+    "parent": {
+     "type": "block_id",
+     "block_id": "37c94183-19f3-8062-9253-e4bf98c90d87"
+    },
+    "created_time": "2026-06-11T13:27:00.000Z",
+    "last_edited_time": "2026-06-11T13:27:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "embed",
+    "embed": {
+     "caption": [],
+     "url": "https://app.masterschool.com/campus/multi-choice-question/f7cfc817-3fd5-46d1-a0c9-38470991ad6d"
+    },
+    "archived": false
+   }
+  ]
+ },
+ {
+  "object": "block",
+  "id": "82e3b8a7-cecc-4bba-9432-79ac82e61261",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36894183-19f3-8020-86c3-db115a057add"
+  },
+  "created_time": "2026-05-22T02:15:00.000Z",
+  "last_edited_time": "2026-06-11T13:27:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37c94183-19f3-80a0-904e-f2ed6aa3bca9",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36894183-19f3-8020-86c3-db115a057add"
+  },
+  "created_time": "2026-06-11T07:21:00.000Z",
+  "last_edited_time": "2026-06-11T07:21:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "36d94183-19f3-807e-9f39-fa21090a0317",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36894183-19f3-8020-86c3-db115a057add"
+  },
+  "created_time": "2026-05-27T19:29:00.000Z",
+  "last_edited_time": "2026-06-11T07:21:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": true,
+  "in_trash": false,
+  "type": "callout",
+  "callout": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Takeaway:",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Takeaway:",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " ",
+     "href": null
+    }
+   ],
+   "icon": {
+    "type": "emoji",
+    "emoji": "\ud83d\udca1"
+   },
+   "color": "gray_background"
+  },
+  "archived": false,
+  "_children": [
+   {
+    "object": "block",
+    "id": "37c94183-19f3-809a-964b-eee8ea43dbba",
+    "parent": {
+     "type": "block_id",
+     "block_id": "36d94183-19f3-807e-9f39-fa21090a0317"
+    },
+    "created_time": "2026-06-11T07:21:00.000Z",
+    "last_edited_time": "2026-06-11T07:21:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+     "rich_text": [
+      {
+       "type": "text",
+       "text": {
+        "content": "Context is a budget, not a warehouse. Every token injected into the prompt competes for the model's attention. The Buffer Window Memory configuration you built in Sprint 1 is your primary mechanism for managing that budget by keeping the active context focused on what the current turn actually needs. ",
+        "link": null
+       },
+       "annotations": {
+        "bold": false,
+        "italic": false,
+        "strikethrough": false,
+        "underline": false,
+        "code": false,
+        "color": "default"
+       },
+       "plain_text": "Context is a budget, not a warehouse. Every token injected into the prompt competes for the model's attention. The Buffer Window Memory configuration you built in Sprint 1 is your primary mechanism for managing that budget by keeping the active context focused on what the current turn actually needs. ",
+       "href": null
+      }
+     ],
+     "icon": null,
+     "color": "default"
+    },
+    "archived": false
+   },
+   {
+    "object": "block",
+    "id": "37c94183-19f3-802a-a44b-c5c76393619e",
+    "parent": {
+     "type": "block_id",
+     "block_id": "36d94183-19f3-807e-9f39-fa21090a0317"
+    },
+    "created_time": "2026-06-11T07:21:00.000Z",
+    "last_edited_time": "2026-06-11T07:21:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+     "rich_text": [
+      {
+       "type": "text",
+       "text": {
+        "content": "Understanding the three additional strategies used in production deployments positions your current build accurately: it is the correct and sufficient architecture for Contigo's support use case, and the starting point for more sophisticated context management when the deployment scale demands it.",
+        "link": null
+       },
+       "annotations": {
+        "bold": false,
+        "italic": false,
+        "strikethrough": false,
+        "underline": false,
+        "code": false,
+        "color": "default"
+       },
+       "plain_text": "Understanding the three additional strategies used in production deployments positions your current build accurately: it is the correct and sufficient architecture for Contigo's support use case, and the starting point for more sophisticated context management when the deployment scale demands it.",
+       "href": null
+      }
+     ],
+     "icon": null,
+     "color": "default"
+    },
+    "archived": false
+   }
+  ]
+ }
+]

@@ -1,0 +1,1957 @@
+[
+ {
+  "object": "block",
+  "id": "37c94183-19f3-8088-bca7-dfad588b260c",
+  "parent": {
+   "type": "page_id",
+   "page_id": "37794183-19f3-8022-8235-d01653b2ccb6"
+  },
+  "created_time": "2026-06-11T11:55:00.000Z",
+  "last_edited_time": "2026-08-04T11:05:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "callout",
+  "callout": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Das nimmst du aus dieser Lektion mit:",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Das nimmst du aus dieser Lektion mit:",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " Du lernst die vier Arten kennen, wie unkontrolliertes Memory Agentenverhalten irrelevant, veraltet oder unsicher werden l\u00e4sst. Und du siehst, wie die Memory-Konfigurationsentscheidungen aus Sprint 1 jeden dieser Fehlermodi direkt adressieren.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " Du lernst die vier Arten kennen, wie unkontrolliertes Memory Agentenverhalten irrelevant, veraltet oder unsicher werden l\u00e4sst. Und du siehst, wie die Memory-Konfigurationsentscheidungen aus Sprint 1 jeden dieser Fehlermodi direkt adressieren.",
+     "href": null
+    }
+   ],
+   "icon": {
+    "type": "emoji",
+    "emoji": "\ud83d\udca1"
+   },
+   "color": "gray_background"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37c94183-19f3-80cd-b865-ecb66ffac260",
+  "parent": {
+   "type": "page_id",
+   "page_id": "37794183-19f3-8022-8235-d01653b2ccb6"
+  },
+  "created_time": "2026-06-11T11:55:00.000Z",
+  "last_edited_time": "2026-06-11T11:55:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37c94183-19f3-8095-9211-e221efa6abae",
+  "parent": {
+   "type": "page_id",
+   "page_id": "37794183-19f3-8022-8235-d01653b2ccb6"
+  },
+  "created_time": "2026-06-11T11:55:00.000Z",
+  "last_edited_time": "2026-08-04T11:07:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_2",
+  "heading_2": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Memory als Liability",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Memory als Liability",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "7376f0cf-017f-41a5-b38a-26d6fbe26ced",
+  "parent": {
+   "type": "page_id",
+   "page_id": "37794183-19f3-8022-8235-d01653b2ccb6"
+  },
+  "created_time": "2026-08-04T11:05:00.000Z",
+  "last_edited_time": "2026-08-04T11:05:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Der Agent von Contigo GmbH beh\u00e4lt Gespr\u00e4chskontext \u00fcber Turns hinweg, isoliert Sessions nach Session ID und erzwingt eine feste Window Size. Diese verhindert, dass das Context Window mit irrelevantem Verlauf volll\u00e4uft. Das waren bewusste Entscheidungen aus Sprint 1. Trotzdem lohnt es sich zu verstehen, was passiert, wenn diese Entscheidungen fehlen. Memory, das nicht aktiv gesteuert wird, wird eher zur Liability als zum Asset.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Der Agent von Contigo GmbH beh\u00e4lt Gespr\u00e4chskontext \u00fcber Turns hinweg, isoliert Sessions nach Session ID und erzwingt eine feste Window Size. Diese verhindert, dass das Context Window mit irrelevantem Verlauf volll\u00e4uft. Das waren bewusste Entscheidungen aus Sprint 1. Trotzdem lohnt es sich zu verstehen, was passiert, wenn diese Entscheidungen fehlen. Memory, das nicht aktiv gesteuert wird, wird eher zur Liability als zum Asset.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "cd24d263-24a9-43c6-8a4b-ed1ced1d1291",
+  "parent": {
+   "type": "page_id",
+   "page_id": "37794183-19f3-8022-8235-d01653b2ccb6"
+  },
+  "created_time": "2026-08-04T11:05:00.000Z",
+  "last_edited_time": "2026-08-04T11:05:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Derselbe Mechanismus sorgt daf\u00fcr, dass der Agent f\u00fcr einen Kunden koh\u00e4rent wirkt. Genau er macht den Agenten aber auch anf\u00e4llig f\u00fcr veraltete, falsche oder b\u00f6sartig injizierte Informationen. In Produktion sammeln sich Sessions \u00fcber Tage und Wochen an. Dabei verst\u00e4rken sich Memory-Fehler auf eine Weise, die schwer zu erkennen und teuer zu beheben ist.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Derselbe Mechanismus sorgt daf\u00fcr, dass der Agent f\u00fcr einen Kunden koh\u00e4rent wirkt. Genau er macht den Agenten aber auch anf\u00e4llig f\u00fcr veraltete, falsche oder b\u00f6sartig injizierte Informationen. In Produktion sammeln sich Sessions \u00fcber Tage und Wochen an. Dabei verst\u00e4rken sich Memory-Fehler auf eine Weise, die schwer zu erkennen und teuer zu beheben ist.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "4c55bccc-33e7-4da2-aae0-2dbb69c20ce1",
+  "parent": {
+   "type": "page_id",
+   "page_id": "37794183-19f3-8022-8235-d01653b2ccb6"
+  },
+  "created_time": "2026-08-04T11:05:00.000Z",
+  "last_edited_time": "2026-08-04T11:05:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Es gibt vier unterschiedliche Fehlermodi. Jeder davon l\u00e4sst sich direkt einer Entscheidung zuordnen, die du in Sprint 1 getroffen hast.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Es gibt vier unterschiedliche Fehlermodi. Jeder davon l\u00e4sst sich direkt einer Entscheidung zuordnen, die du in Sprint 1 getroffen hast.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "67067c03-31f0-44dd-ac55-817c9577d958",
+  "parent": {
+   "type": "page_id",
+   "page_id": "37794183-19f3-8022-8235-d01653b2ccb6"
+  },
+  "created_time": "2026-08-04T11:05:00.000Z",
+  "last_edited_time": "2026-08-04T11:05:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_2",
+  "heading_2": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Die vier Fehlermodi",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Die vier Fehlermodi",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "7634eda4-35ee-4b9c-adb9-749697fdeffd",
+  "parent": {
+   "type": "page_id",
+   "page_id": "37794183-19f3-8022-8235-d01653b2ccb6"
+  },
+  "created_time": "2026-08-04T11:05:00.000Z",
+  "last_edited_time": "2026-08-04T11:05:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_3",
+  "heading_3": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Fehlermodus 1: Context Degradation und Relevance Decay",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Fehlermodus 1: Context Degradation und Relevance Decay",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "a162cbc0-647b-4c73-a79f-ba4fa1b3e607",
+  "parent": {
+   "type": "page_id",
+   "page_id": "37794183-19f3-8022-8235-d01653b2ccb6"
+  },
+  "created_time": "2026-08-04T11:05:00.000Z",
+  "last_edited_time": "2026-08-04T11:05:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Wenn ein Agent Gespr\u00e4chsverlauf ansammelt, verschlechtert das Injizieren des gesamten Verlaufs in das Context Window bei jedem Turn die Reasoning-Performance. Forschung zeigt konsistent, dass die Aufmerksamkeitsqualit\u00e4t von Modellen mit steigender Input-L\u00e4nge abnimmt. Das passiert oft schon lange, bevor das Modell sein angegebenes Context Limit erreicht.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Wenn ein Agent Gespr\u00e4chsverlauf ansammelt, verschlechtert das Injizieren des gesamten Verlaufs in das Context Window bei jedem Turn die Reasoning-Performance. Forschung zeigt konsistent, dass die Aufmerksamkeitsqualit\u00e4t von Modellen mit steigender Input-L\u00e4nge abnimmt. Das passiert oft schon lange, bevor das Modell sein angegebenes Context Limit erreicht.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "6e3c0a0f-6750-49b4-bbaa-a88e150ac3b7",
+  "parent": {
+   "type": "page_id",
+   "page_id": "37794183-19f3-8022-8235-d01653b2ccb6"
+  },
+  "created_time": "2026-08-04T11:05:00.000Z",
+  "last_edited_time": "2026-08-04T11:05:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Das Ergebnis ist ein Agent, der von \u00e4lteren, irrelevanten Details abgelenkt wird. Ein Kunde, der vor drei Wochen nach Privatkrediten gefragt hat, sollte diesen Austausch nicht das Reasoning des Agenten zu seinem aktuellen SME-Antrag beeinflussen lassen. Alles zu injizieren erzeugt einen Agenten, der mit jeder weiteren Session weniger fokussiert wird.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Das Ergebnis ist ein Agent, der von \u00e4lteren, irrelevanten Details abgelenkt wird. Ein Kunde, der vor drei Wochen nach Privatkrediten gefragt hat, sollte diesen Austausch nicht das Reasoning des Agenten zu seinem aktuellen SME-Antrag beeinflussen lassen. Alles zu injizieren erzeugt einen Agenten, der mit jeder weiteren Session weniger fokussiert wird.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37c94183-19f3-80e5-a2f3-cb9d48022599",
+  "parent": {
+   "type": "page_id",
+   "page_id": "37794183-19f3-8022-8235-d01653b2ccb6"
+  },
+  "created_time": "2026-06-11T11:55:00.000Z",
+  "last_edited_time": "2026-08-04T11:08:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "callout",
+  "callout": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Wie deine Sprint-1-Konfiguration dies adressiert:",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Wie deine Sprint-1-Konfiguration dies adressiert:",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " Der Buffer Window Memory Node, den du konfiguriert hast, begrenzt den aktiven Kontext auf die letzten K Nachrichtenpaare. Nur die j\u00fcngsten Turns werden in den Prompt injiziert. \u00c4ltere Austausche werden automatisch verworfen. Die Window Size, die du im ersten Sprint eingerichtet hast, war deine direkte Antwort auf diesen Fehlermodus. Ein zu gro\u00dfes Window f\u00fchrt Context Degradation wieder ein. Ein zu kleines Window verwirft wichtigen Kontext zu fr\u00fch. Der Wert, den du gew\u00e4hlt hast, war ein bewusster Trade-off zwischen diesen beiden Risiken.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " Der Buffer Window Memory Node, den du konfiguriert hast, begrenzt den aktiven Kontext auf die letzten K Nachrichtenpaare. Nur die j\u00fcngsten Turns werden in den Prompt injiziert. \u00c4ltere Austausche werden automatisch verworfen. Die Window Size, die du im ersten Sprint eingerichtet hast, war deine direkte Antwort auf diesen Fehlermodus. Ein zu gro\u00dfes Window f\u00fchrt Context Degradation wieder ein. Ein zu kleines Window verwirft wichtigen Kontext zu fr\u00fch. Der Wert, den du gew\u00e4hlt hast, war ein bewusster Trade-off zwischen diesen beiden Risiken.",
+     "href": null
+    }
+   ],
+   "icon": {
+    "type": "emoji",
+    "emoji": "\u27a1\ufe0f"
+   },
+   "color": "gray_background"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37c94183-19f3-8069-9d32-e1ea61f1fa27",
+  "parent": {
+   "type": "page_id",
+   "page_id": "37794183-19f3-8022-8235-d01653b2ccb6"
+  },
+  "created_time": "2026-06-11T11:55:00.000Z",
+  "last_edited_time": "2026-06-11T11:55:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37c94183-19f3-80a1-be4e-d73547c718e4",
+  "parent": {
+   "type": "page_id",
+   "page_id": "37794183-19f3-8022-8235-d01653b2ccb6"
+  },
+  "created_time": "2026-06-11T11:55:00.000Z",
+  "last_edited_time": "2026-08-04T11:08:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_4",
+  "heading_4": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Fehlermodus 2: State Drift und veraltete Informationen",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Fehlermodus 2: State Drift und veraltete Informationen",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "fe6484c2-c881-41cd-8d4e-33e2c580cdc6",
+  "parent": {
+   "type": "page_id",
+   "page_id": "37794183-19f3-8022-8235-d01653b2ccb6"
+  },
+  "created_time": "2026-08-04T11:08:00.000Z",
+  "last_edited_time": "2026-08-04T11:08:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "In langlebigen Systemen wird Memory State veraltet. Ein Agent, der letzte Woche eine Compliance-Query erfolgreich gel\u00f6st hat, kann diesen gecachten Kontext abrufen, wenn derselbe Kunde zur\u00fcckkehrt. Die regulatorische Guidance kann sich in der Zwischenzeit aber ge\u00e4ndert haben. Kann der Agent nicht zwischen historischem Memory und aktueller Realit\u00e4t unterscheiden, erzeugt er Antworten auf Basis von Informationen, die nicht mehr korrekt sind.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "In langlebigen Systemen wird Memory State veraltet. Ein Agent, der letzte Woche eine Compliance-Query erfolgreich gel\u00f6st hat, kann diesen gecachten Kontext abrufen, wenn derselbe Kunde zur\u00fcckkehrt. Die regulatorische Guidance kann sich in der Zwischenzeit aber ge\u00e4ndert haben. Kann der Agent nicht zwischen historischem Memory und aktueller Realit\u00e4t unterscheiden, erzeugt er Antworten auf Basis von Informationen, die nicht mehr korrekt sind.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "f8e2a9de-25ca-4b6b-a359-0e4f7fca275e",
+  "parent": {
+   "type": "page_id",
+   "page_id": "37794183-19f3-8022-8235-d01653b2ccb6"
+  },
+  "created_time": "2026-08-04T11:08:00.000Z",
+  "last_edited_time": "2026-08-04T11:08:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "F\u00fcr Contigo ist das besonders kritisch. EU-Finanzregulierung entwickelt sich weiter. Produktbedingungen werden quartalsweise aktualisiert. Ein Memory Store, der nie aufgefrischt wird, h\u00e4lt am Ende nur noch fest, wie Dinge fr\u00fcher waren.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "F\u00fcr Contigo ist das besonders kritisch. EU-Finanzregulierung entwickelt sich weiter. Produktbedingungen werden quartalsweise aktualisiert. Ein Memory Store, der nie aufgefrischt wird, h\u00e4lt am Ende nur noch fest, wie Dinge fr\u00fcher waren.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37c94183-19f3-80c3-bb9d-d06a2eadb743",
+  "parent": {
+   "type": "page_id",
+   "page_id": "37794183-19f3-8022-8235-d01653b2ccb6"
+  },
+  "created_time": "2026-06-11T11:55:00.000Z",
+  "last_edited_time": "2026-08-04T11:09:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "callout",
+  "callout": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Wie deine Sprint-1-Konfiguration dies adressiert:",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Wie deine Sprint-1-Konfiguration dies adressiert:",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " Der Buffer Window Memory Node speichert nur die j\u00fcngsten Turns der aktuellen Session. Er persistiert Informationen nicht \u00fcber Sessions hinweg, sofern er nicht entsprechend konfiguriert ist. Wenn eine neue Session mit demselben Kunden beginnt, startet sie mit einem frischen Context Window. Historische Austausche aus fr\u00fcheren Sessions werden nicht \u00fcbernommen und beeinflussen die Antworten der aktuellen Session nicht. Die Session ID, die du konfiguriert hast, stellt sicher, dass jede Session isoliert ist. Das bedeutet auch, dass jede Session ohne den angesammelten State Drift fr\u00fcherer Interaktionen startet.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " Der Buffer Window Memory Node speichert nur die j\u00fcngsten Turns der aktuellen Session. Er persistiert Informationen nicht \u00fcber Sessions hinweg, sofern er nicht entsprechend konfiguriert ist. Wenn eine neue Session mit demselben Kunden beginnt, startet sie mit einem frischen Context Window. Historische Austausche aus fr\u00fcheren Sessions werden nicht \u00fcbernommen und beeinflussen die Antworten der aktuellen Session nicht. Die Session ID, die du konfiguriert hast, stellt sicher, dass jede Session isoliert ist. Das bedeutet auch, dass jede Session ohne den angesammelten State Drift fr\u00fcherer Interaktionen startet.",
+     "href": null
+    }
+   ],
+   "icon": {
+    "type": "emoji",
+    "emoji": "\u27a1\ufe0f"
+   },
+   "color": "gray_background"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37c94183-19f3-800f-89b5-c16dcf5178e7",
+  "parent": {
+   "type": "page_id",
+   "page_id": "37794183-19f3-8022-8235-d01653b2ccb6"
+  },
+  "created_time": "2026-06-11T11:55:00.000Z",
+  "last_edited_time": "2026-06-11T11:55:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "3c20cf9a-49e9-4869-ac5c-6ab5a7b9a07e",
+  "parent": {
+   "type": "page_id",
+   "page_id": "37794183-19f3-8022-8235-d01653b2ccb6"
+  },
+  "created_time": "2026-06-11T11:57:00.000Z",
+  "last_edited_time": "2026-08-04T11:10:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_3",
+  "heading_3": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Fehlermodus 3: Memory Poisoning und sich verst\u00e4rkende Fehler",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Fehlermodus 3: Memory Poisoning und sich verst\u00e4rkende Fehler",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "088f304f-2845-46f0-b110-dfc63b51db93",
+  "parent": {
+   "type": "page_id",
+   "page_id": "37794183-19f3-8022-8235-d01653b2ccb6"
+  },
+  "created_time": "2026-08-04T11:09:00.000Z",
+  "last_edited_time": "2026-08-04T11:10:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Die Agenten behandeln ihre Memory Stores als Ground Truth. Schl\u00e4gt ein Tool fehl und halluziniert der Agent eine Tatsache, etwa einen falschen Kreditantragsstatus, landet diese Halluzination oft im Gespr\u00e4chsverlauf. Von da an baut jeder nachfolgende Reasoning-Schritt in dieser Session auf besch\u00e4digtem State auf. Ein einzelner Fehler verst\u00e4rkt sich nichtlinear \u00fcber den Execution Loop hinweg.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Die Agenten behandeln ihre Memory Stores als Ground Truth. Schl\u00e4gt ein Tool fehl und halluziniert der Agent eine Tatsache, etwa einen falschen Kreditantragsstatus, landet diese Halluzination oft im Gespr\u00e4chsverlauf. Von da an baut jeder nachfolgende Reasoning-Schritt in dieser Session auf besch\u00e4digtem State auf. Ein einzelner Fehler verst\u00e4rkt sich nichtlinear \u00fcber den Execution Loop hinweg.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "7247e2e2-10c5-433f-900a-52bf2ef5d69d",
+  "parent": {
+   "type": "page_id",
+   "page_id": "37794183-19f3-8022-8235-d01653b2ccb6"
+  },
+  "created_time": "2026-08-04T11:09:00.000Z",
+  "last_edited_time": "2026-08-04T11:09:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Dieser Fehlermodus ist heimt\u00fcckisch, weil der Agent konsistent wirkt. Er liegt konsistent falsch, und zwar auf eine Weise, die sich auf einen vergifteten Eintrag zur\u00fcckf\u00fchren l\u00e4sst. Dieser Eintrag wurde nie validiert oder korrigiert.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Dieser Fehlermodus ist heimt\u00fcckisch, weil der Agent konsistent wirkt. Er liegt konsistent falsch, und zwar auf eine Weise, die sich auf einen vergifteten Eintrag zur\u00fcckf\u00fchren l\u00e4sst. Dieser Eintrag wurde nie validiert oder korrigiert.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37c94183-19f3-807d-a71f-e56558482396",
+  "parent": {
+   "type": "page_id",
+   "page_id": "37794183-19f3-8022-8235-d01653b2ccb6"
+  },
+  "created_time": "2026-06-11T11:55:00.000Z",
+  "last_edited_time": "2026-08-04T11:10:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "callout",
+  "callout": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Wie deine Sprint-1- und Sprint-3-Konfiguration dies adressiert:",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Wie deine Sprint-1- und Sprint-3-Konfiguration dies adressiert:",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " Die Tool-Failure-Fallback-Anweisung, die du geschrieben und implementiert hast, adressiert dies direkt. Schl\u00e4gt das Loan-Status-Tool fehl, muss der Agent das ehrlich zugeben. Er darf keinen Status erfinden. Ein erfundener Status, der in den Gespr\u00e4chsverlauf geschrieben wird, w\u00fcrde jeden nachfolgenden Turn in dieser Session vergiften. Die Fallback-Anweisung verhindert die Fabrication und verhindert dadurch das Poisoning.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " Die Tool-Failure-Fallback-Anweisung, die du geschrieben und implementiert hast, adressiert dies direkt. Schl\u00e4gt das Loan-Status-Tool fehl, muss der Agent das ehrlich zugeben. Er darf keinen Status erfinden. Ein erfundener Status, der in den Gespr\u00e4chsverlauf geschrieben wird, w\u00fcrde jeden nachfolgenden Turn in dieser Session vergiften. Die Fallback-Anweisung verhindert die Fabrication und verhindert dadurch das Poisoning.",
+     "href": null
+    }
+   ],
+   "icon": {
+    "type": "emoji",
+    "emoji": "\u27a1\ufe0f"
+   },
+   "color": "gray_background"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37c94183-19f3-80b5-a929-d7aa531ed154",
+  "parent": {
+   "type": "page_id",
+   "page_id": "37794183-19f3-8022-8235-d01653b2ccb6"
+  },
+  "created_time": "2026-06-11T11:55:00.000Z",
+  "last_edited_time": "2026-06-11T11:55:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "b0a0d8c8-a28f-40e8-bac8-a933b86e0a47",
+  "parent": {
+   "type": "page_id",
+   "page_id": "37794183-19f3-8022-8235-d01653b2ccb6"
+  },
+  "created_time": "2026-06-11T11:58:00.000Z",
+  "last_edited_time": "2026-08-04T11:11:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_3",
+  "heading_3": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Fehlermodus 4: Persistente Sicherheitskompromittierung",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Fehlermodus 4: Persistente Sicherheitskompromittierung",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "18cd0808-5e8d-478a-ab8c-55b9a55045a3",
+  "parent": {
+   "type": "page_id",
+   "page_id": "37794183-19f3-8022-8235-d01653b2ccb6"
+  },
+  "created_time": "2026-08-04T11:11:00.000Z",
+  "last_edited_time": "2026-08-04T11:11:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Ein zustandsloser Chatbot setzt sich zur\u00fcck, sobald das Fenster geschlossen wird. Ein Memory-enabled Agent dagegen tr\u00e4gt State \u00fcber Sessions hinweg, wenn er entsprechend konfiguriert ist. Ein b\u00f6swilliger Nutzer k\u00f6nnte zum Beispiel erfolgreich die Anweisung injizieren, Refund Requests oberhalb eines bestimmten Schwellenwerts immer zu genehmigen. Landet eine solche Anweisung im langfristigen persistenten Memory, bleibt sie \u00fcber Neustarts hinweg bestehen und wirkt sich auch auf zuk\u00fcnftige Sessions mit anderen Kunden aus. Dadurch wird ein Prompt-Injection-Angriff von einem Single-Session-Vorfall zu einer persistenten Systemkompromittierung.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Ein zustandsloser Chatbot setzt sich zur\u00fcck, sobald das Fenster geschlossen wird. Ein Memory-enabled Agent dagegen tr\u00e4gt State \u00fcber Sessions hinweg, wenn er entsprechend konfiguriert ist. Ein b\u00f6swilliger Nutzer k\u00f6nnte zum Beispiel erfolgreich die Anweisung injizieren, Refund Requests oberhalb eines bestimmten Schwellenwerts immer zu genehmigen. Landet eine solche Anweisung im langfristigen persistenten Memory, bleibt sie \u00fcber Neustarts hinweg bestehen und wirkt sich auch auf zuk\u00fcnftige Sessions mit anderen Kunden aus. Dadurch wird ein Prompt-Injection-Angriff von einem Single-Session-Vorfall zu einer persistenten Systemkompromittierung.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37c94183-19f3-80fa-b2bc-da262008cebc",
+  "parent": {
+   "type": "page_id",
+   "page_id": "37794183-19f3-8022-8235-d01653b2ccb6"
+  },
+  "created_time": "2026-06-11T11:55:00.000Z",
+  "last_edited_time": "2026-08-04T11:12:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "callout",
+  "callout": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Wie deine Sprint-4-Konfiguration dies adressiert:",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Wie deine Sprint-4-Konfiguration dies adressiert:",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " Der Simple Prompt Moderation Node, den du hinzugef\u00fcgt hast, f\u00e4ngt Injection-Versuche ab, bevor sie den Tool Agent erreichen. Die Anti-Injection-Anweisung im System-Prompt steuert das Modellverhalten f\u00fcr Versuche, die den Filter passieren. Zusammen reduzieren sie die Wahrscheinlichkeit, dass eine b\u00f6sartige Anweisung den Gespr\u00e4chsverlauf erreicht und in nachfolgenden Turns als Ground Truth behandelt wird.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " Der Simple Prompt Moderation Node, den du hinzugef\u00fcgt hast, f\u00e4ngt Injection-Versuche ab, bevor sie den Tool Agent erreichen. Die Anti-Injection-Anweisung im System-Prompt steuert das Modellverhalten f\u00fcr Versuche, die den Filter passieren. Zusammen reduzieren sie die Wahrscheinlichkeit, dass eine b\u00f6sartige Anweisung den Gespr\u00e4chsverlauf erreicht und in nachfolgenden Turns als Ground Truth behandelt wird.",
+     "href": null
+    }
+   ],
+   "icon": {
+    "type": "emoji",
+    "emoji": "\u27a1\ufe0f"
+   },
+   "color": "gray_background"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37c94183-19f3-80bf-a62b-ed3517a4edac",
+  "parent": {
+   "type": "page_id",
+   "page_id": "37794183-19f3-8022-8235-d01653b2ccb6"
+  },
+  "created_time": "2026-06-11T11:55:00.000Z",
+  "last_edited_time": "2026-06-11T11:55:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37c94183-19f3-80e8-ac28-cf8235b17c45",
+  "parent": {
+   "type": "page_id",
+   "page_id": "37794183-19f3-8022-8235-d01653b2ccb6"
+  },
+  "created_time": "2026-06-11T11:55:00.000Z",
+  "last_edited_time": "2026-08-04T11:13:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_2",
+  "heading_2": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Das zugrunde liegende Prinzip",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Das zugrunde liegende Prinzip",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "5ffca856-7c58-4847-972d-f67153287e72",
+  "parent": {
+   "type": "page_id",
+   "page_id": "37794183-19f3-8022-8235-d01653b2ccb6"
+  },
+  "created_time": "2026-08-04T11:13:00.000Z",
+  "last_edited_time": "2026-08-04T11:13:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Alle vier Fehlermodi teilen eine Ursache: Memory, das passiv angesammelt wird, ohne aktiv gesteuert zu werden. Die Mitigation f\u00fcr jeden ist dasselbe Designprinzip. Memory muss aktiv verwaltet werden.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Alle vier Fehlermodi teilen eine Ursache: Memory, das passiv angesammelt wird, ohne aktiv gesteuert zu werden. Die Mitigation f\u00fcr jeden ist dasselbe Designprinzip. Memory muss aktiv verwaltet werden.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "e88e0905-178a-4c06-8f3f-ad32e3f37bae",
+  "parent": {
+   "type": "page_id",
+   "page_id": "37794183-19f3-8022-8235-d01653b2ccb6"
+  },
+  "created_time": "2026-08-04T11:13:00.000Z",
+  "last_edited_time": "2026-08-04T11:13:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Praktische Governance-Mechanismen umfassen:",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Praktische Governance-Mechanismen umfassen:",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "f9b4ebc3-b9f7-4360-b45b-a551837822ea",
+  "parent": {
+   "type": "page_id",
+   "page_id": "37794183-19f3-8022-8235-d01653b2ccb6"
+  },
+  "created_time": "2026-08-04T11:13:00.000Z",
+  "last_edited_time": "2026-08-04T11:13:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Time-based Decay:",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Time-based Decay:",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " Eintr\u00e4ge nach einem definierten Zeitraum automatisch herabstufen oder entfernen",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " Eintr\u00e4ge nach einem definierten Zeitraum automatisch herabstufen oder entfernen",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "3eeb10ec-1c60-4f82-b8f1-811bde23e138",
+  "parent": {
+   "type": "page_id",
+   "page_id": "37794183-19f3-8022-8235-d01653b2ccb6"
+  },
+  "created_time": "2026-08-04T11:13:00.000Z",
+  "last_edited_time": "2026-08-04T11:13:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Importance-based Retention:",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Importance-based Retention:",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " Informationen verwerfen, die sich f\u00fcr nachfolgende Queries nicht als relevant erwiesen haben",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " Informationen verwerfen, die sich f\u00fcr nachfolgende Queries nicht als relevant erwiesen haben",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "46f4ce9c-6d7b-4019-83c8-7f0d23c7ba8f",
+  "parent": {
+   "type": "page_id",
+   "page_id": "37794183-19f3-8022-8235-d01653b2ccb6"
+  },
+  "created_time": "2026-08-04T11:13:00.000Z",
+  "last_edited_time": "2026-08-04T11:13:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Periodic Validation:",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Periodic Validation:",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " Gespeicherte Fakten gegen den aktuellen Systemzustand pr\u00fcfen, bevor sie in Antworten verwendet werden",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " Gespeicherte Fakten gegen den aktuellen Systemzustand pr\u00fcfen, bevor sie in Antworten verwendet werden",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "cbc888ca-ed86-409a-845b-f610178735bc",
+  "parent": {
+   "type": "page_id",
+   "page_id": "37794183-19f3-8022-8235-d01653b2ccb6"
+  },
+  "created_time": "2026-08-04T11:13:00.000Z",
+  "last_edited_time": "2026-08-04T11:13:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Session Isolation:",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Session Isolation:",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " Sicherstellen, dass der Verlauf eines Kunden die Session eines anderen Kunden nicht beeinflussen kann",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " Sicherstellen, dass der Verlauf eines Kunden die Session eines anderen Kunden nicht beeinflussen kann",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37c94183-19f3-80fc-a7ca-c113c0164955",
+  "parent": {
+   "type": "page_id",
+   "page_id": "37794183-19f3-8022-8235-d01653b2ccb6"
+  },
+  "created_time": "2026-06-11T11:55:00.000Z",
+  "last_edited_time": "2026-06-11T12:02:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "image",
+  "image": {
+   "caption": [],
+   "type": "file",
+   "file": {
+    "url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/3a9085c4-df29-45e6-8bc7-6c9c0a25ea8c/1fa250de-250d-4833-83b5-db766d84972c/failure_mitigation_cards_de.svg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466ZNZ4BELK%2F20261028%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20261028T095637Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEDgaCXVzLXdlc3QtMiJHMEUCIQCtZU6%2FKIcoIOroUtoPRbPo8l%2B5bdOPpUxvgr4ZEzWWfQIgaGt6uDur7k93Rxfl40LpMEEpiOY8zFPvZzFpNtDYTd4q%2FwMIABAAGgw2Mzc0MjMxODM4MDUiDEA5BWorudYPb%2Fvb2CrcA7fWPbcSEHHyRczR5X%2Byh23RbS6yvwlwn3aegJX3%2BLMgCf9QiuKYj9OnnytOjowQIWomQHUiAybKZ9dAd73gZ%2FqxD%2B1MLIrLTZARL%2BgVTFnodH97%2FZ7HLpn8Mi1byZyLLU1bF0EVRpBx7x52Q0Wo0RSjUIx5QWtGQKvgj10bIBIA15kj%2BxPfltAyLKtlPwlMpECOg0DhDdWtarYyscqbR4em1faPi84NCCMyHBFDMkj9ekXyV1tTTl1x6CYPjKJ%2FZGSjJoyPKQb%2F8cFimzaiDFfJXZTmAyyoxJFZ1MwwXxwHK5QFZoYAKDOynqAZBVibhmnqv0sDzkeuzFH6iPDb9aLQTPx0i25p1dESmMdc9hWG27GOvlINUIGBuQx0PWOlZTEM5cihbrk6mTtZLgM6b0ihdRjEv54jT7x7axhqhVh1foAFWlRJHCnsEM7WyrYH02iKiKLLtg4ce4PrVgWpYX0oKNwZ9INaR0kMtFR1pJTCHkdrrt8eYD2RGWWg9twZ8iQvi1pYaTavSdrmXRREsJ4D6Sn401UgSw5mfTBVgQzNYfYzc6y3vwsXEZeknzEHv26qLdUeGjS412PynynOyuSiNd0xFy84QfbJdKqx1SKTAdrPmCipxizw3HAWMMfXhtcGOqUBxgvvCRzBZ9x8KuSbIXhge2w%2FdMevwhPhUogGF3p%2F9lIUTSaTPC6pSSt8MlKXdqVQfJ7SaH6OiHnmJTketQfGD%2Fw1TU5Omdwmr3BOUqUUizrmJnGSdWdGuJK9wTWztHe1hKeCzlLyxeLGFSHtYaAj453KYio%2Fa6vQiQFIJxrsNcHfTeKopdMToMfTP6l1Xcm%2BALfyKORPMBG%2B7Hk1ACxUwM5IS4Tn&X-Amz-Signature=e0127bbb13d7a01d354ae491bdd0ad695bfc1fb27aaa049800a6cee03f488ffd&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+    "expiry_time": "2026-10-28T10:56:37.279Z"
+   }
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37c94183-19f3-80dd-a28d-fac0fce29bef",
+  "parent": {
+   "type": "page_id",
+   "page_id": "37794183-19f3-8022-8235-d01653b2ccb6"
+  },
+  "created_time": "2026-06-11T11:55:00.000Z",
+  "last_edited_time": "2026-06-11T11:55:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37c94183-19f3-80ac-b4ff-e9f9e5060a12",
+  "parent": {
+   "type": "page_id",
+   "page_id": "37794183-19f3-8022-8235-d01653b2ccb6"
+  },
+  "created_time": "2026-06-11T11:55:00.000Z",
+  "last_edited_time": "2026-08-04T11:14:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_2",
+  "heading_2": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Verst\u00e4ndnischeck",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Verst\u00e4ndnischeck",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37c94183-19f3-80c3-b6bb-e124095b8f83",
+  "parent": {
+   "type": "page_id",
+   "page_id": "37794183-19f3-8022-8235-d01653b2ccb6"
+  },
+  "created_time": "2026-06-11T13:26:00.000Z",
+  "last_edited_time": "2026-08-04T11:14:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "has_children": true,
+  "in_trash": false,
+  "type": "callout",
+  "callout": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Ein Contigo-Agent ruft eine gecachte Compliance-Interpretation von vor drei Monaten ab und pr\u00e4sentiert sie einem Kunden als aktuelle Guidance. Die zugrunde liegende Regulierung wurde vor sechs Wochen aktualisiert. Welchen Memory-Fehlermodus beschreibt dies?",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Ein Contigo-Agent ruft eine gecachte Compliance-Interpretation von vor drei Monaten ab und pr\u00e4sentiert sie einem Kunden als aktuelle Guidance. Die zugrunde liegende Regulierung wurde vor sechs Wochen aktualisiert. Welchen Memory-Fehlermodus beschreibt dies?",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "gray_background"
+  },
+  "archived": false,
+  "_children": [
+   {
+    "object": "block",
+    "id": "37c94183-19f3-800d-81b1-ca592f43a707",
+    "parent": {
+     "type": "block_id",
+     "block_id": "37c94183-19f3-80c3-b6bb-e124095b8f83"
+    },
+    "created_time": "2026-06-11T13:26:00.000Z",
+    "last_edited_time": "2026-06-11T13:26:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "embed",
+    "embed": {
+     "caption": [],
+     "url": "https://app.masterschool.com/campus/multi-choice-question/7a61dd91-7c71-40b6-9765-f8e96a143807"
+    },
+    "archived": false
+   }
+  ]
+ },
+ {
+  "object": "block",
+  "id": "afafaaca-8258-4cbf-97a0-e5cb1d474e0e",
+  "parent": {
+   "type": "page_id",
+   "page_id": "37794183-19f3-8022-8235-d01653b2ccb6"
+  },
+  "created_time": "2026-06-11T12:01:00.000Z",
+  "last_edited_time": "2026-06-11T13:26:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37c94183-19f3-80c3-8cda-fdc089dbdbf9",
+  "parent": {
+   "type": "page_id",
+   "page_id": "37794183-19f3-8022-8235-d01653b2ccb6"
+  },
+  "created_time": "2026-06-11T11:55:00.000Z",
+  "last_edited_time": "2026-06-11T11:55:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37c94183-19f3-804c-81ab-c191d9d895b9",
+  "parent": {
+   "type": "page_id",
+   "page_id": "37794183-19f3-8022-8235-d01653b2ccb6"
+  },
+  "created_time": "2026-06-11T11:55:00.000Z",
+  "last_edited_time": "2026-08-04T11:15:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "has_children": true,
+  "in_trash": false,
+  "type": "callout",
+  "callout": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Fazit:",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Fazit:",
+     "href": null
+    }
+   ],
+   "icon": {
+    "type": "emoji",
+    "emoji": "\ud83d\udca1"
+   },
+   "color": "gray_background"
+  },
+  "archived": false,
+  "_children": [
+   {
+    "object": "block",
+    "id": "33a8e71a-52b8-41c1-9fa6-ed27fafe83cc",
+    "parent": {
+     "type": "block_id",
+     "block_id": "37c94183-19f3-804c-81ab-c191d9d895b9"
+    },
+    "created_time": "2026-08-04T11:14:00.000Z",
+    "last_edited_time": "2026-08-04T11:14:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+     "rich_text": [
+      {
+       "type": "text",
+       "text": {
+        "content": "Die vier Memory-Fehlermodi (Context Degradation, State Drift, Memory Poisoning und persistente Sicherheitskompromittierung) sind keine Edge Cases. Sie sind vorhersehbare Folgen von Memory, das ohne Governance anw\u00e4chst.",
+        "link": null
+       },
+       "annotations": {
+        "bold": false,
+        "italic": false,
+        "strikethrough": false,
+        "underline": false,
+        "code": false,
+        "color": "default"
+       },
+       "plain_text": "Die vier Memory-Fehlermodi (Context Degradation, State Drift, Memory Poisoning und persistente Sicherheitskompromittierung) sind keine Edge Cases. Sie sind vorhersehbare Folgen von Memory, das ohne Governance anw\u00e4chst.",
+       "href": null
+      }
+     ],
+     "icon": null,
+     "color": "default"
+    },
+    "archived": false
+   },
+   {
+    "object": "block",
+    "id": "bc651ced-29f2-4059-9cef-631e73bbb85a",
+    "parent": {
+     "type": "block_id",
+     "block_id": "37c94183-19f3-804c-81ab-c191d9d895b9"
+    },
+    "created_time": "2026-08-04T11:14:00.000Z",
+    "last_edited_time": "2026-08-04T11:14:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+     "rich_text": [
+      {
+       "type": "text",
+       "text": {
+        "content": "\u00dcber Sprint 1 bis 4 hinweg hast du die Buffer-Window-Memory-Konfiguration, die Session-ID-Isolation, die Tool-Failure-Fallback-Anweisung und die Input Moderation gebaut. Jede davon adressiert direkt einen oder mehrere dieser Fehlermodi. Die Fehlermodi zu verstehen, gibt dir das Vokabular, um diese Designentscheidungen w\u00e4hrend deiner Pr\u00e4sentation zu erkl\u00e4ren und zu verteidigen.",
+        "link": null
+       },
+       "annotations": {
+        "bold": false,
+        "italic": false,
+        "strikethrough": false,
+        "underline": false,
+        "code": false,
+        "color": "default"
+       },
+       "plain_text": "\u00dcber Sprint 1 bis 4 hinweg hast du die Buffer-Window-Memory-Konfiguration, die Session-ID-Isolation, die Tool-Failure-Fallback-Anweisung und die Input Moderation gebaut. Jede davon adressiert direkt einen oder mehrere dieser Fehlermodi. Die Fehlermodi zu verstehen, gibt dir das Vokabular, um diese Designentscheidungen w\u00e4hrend deiner Pr\u00e4sentation zu erkl\u00e4ren und zu verteidigen.",
+       "href": null
+      }
+     ],
+     "icon": null,
+     "color": "default"
+    },
+    "archived": false
+   }
+  ]
+ },
+ {
+  "object": "block",
+  "id": "37c94183-19f3-80b2-a1f9-fb7315fd2fbd",
+  "parent": {
+   "type": "page_id",
+   "page_id": "37794183-19f3-8022-8235-d01653b2ccb6"
+  },
+  "created_time": "2026-06-11T12:02:00.000Z",
+  "last_edited_time": "2026-06-11T12:02:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ }
+]

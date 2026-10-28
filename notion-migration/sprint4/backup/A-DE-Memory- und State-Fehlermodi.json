@@ -1,0 +1,6484 @@
+[
+ {
+  "object": "block",
+  "id": "78efccdb-2cef-4441-998c-2352c2aa1759",
+  "parent": {
+   "type": "page_id",
+   "page_id": "09694183-19f3-8258-9a29-81e6d6b3c973"
+  },
+  "created_time": "2026-07-04T20:03:00.000Z",
+  "last_edited_time": "2026-07-04T20:03:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "An diesem Punkt hat die Vela-Systems-Canvas eine definierte Memory-Architektur: Grenzen zwischen geteiltem und privatem State, Schreib-Ownership pro Schl\u00fcssel, einen Recovery-Pfad nach Unterbrechungen und vier Log-Positionen, die einen Trace \u00fcber die vollst\u00e4ndige Ausf\u00fchrungskette erzeugen. Die Architektur ist auf dem Papier solide. Noch nicht getestet sind die spezifischen Arten, wie Memory und State in Produktion typischerweise scheitern. Die Architektur war im Design nicht falsch. Grenzf\u00e4lle in echter Nutzung machen einfach L\u00fccken sichtbar, die kontrolliertes Testing nicht aufdeckt.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "An diesem Punkt hat die Vela-Systems-Canvas eine definierte Memory-Architektur: Grenzen zwischen geteiltem und privatem State, Schreib-Ownership pro Schl\u00fcssel, einen Recovery-Pfad nach Unterbrechungen und vier Log-Positionen, die einen Trace \u00fcber die vollst\u00e4ndige Ausf\u00fchrungskette erzeugen. Die Architektur ist auf dem Papier solide. Noch nicht getestet sind die spezifischen Arten, wie Memory und State in Produktion typischerweise scheitern. Die Architektur war im Design nicht falsch. Grenzf\u00e4lle in echter Nutzung machen einfach L\u00fccken sichtbar, die kontrolliertes Testing nicht aufdeckt.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "d2eb2770-a477-495b-a266-7f0b43bb44bf",
+  "parent": {
+   "type": "page_id",
+   "page_id": "09694183-19f3-8258-9a29-81e6d6b3c973"
+  },
+  "created_time": "2026-07-04T20:03:00.000Z",
+  "last_edited_time": "2026-07-04T20:03:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Das Vela-Team bereitet sich darauf vor, das System an drei\u00dfig Nutzer zu \u00fcbergeben. Bevor das passiert, m\u00fcssen sie eine Reihe von Szenarien durcharbeiten, die die realistische Fehleroberfl\u00e4che eines Multi-Agent-Systems wie ihres abbilden: F\u00e4lle, in denen Memory einen Agenten dazu bringt, irrelevante oder veraltete Ausgabe zur\u00fcckzugeben, F\u00e4lle, in denen State falsches Routing oder stille Duplikation verursacht, und F\u00e4lle, in denen die Kombination aus beidem einen Fehler erzeugt, den keines von beiden allein verursacht h\u00e4tte. Deine Aufgabe in dieser Lektion ist es, diese Szenarien auf der Vela-Canvas durchzuarbeiten und f\u00fcr jedes eine Schutzma\u00dfnahme zu entwerfen.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Das Vela-Team bereitet sich darauf vor, das System an drei\u00dfig Nutzer zu \u00fcbergeben. Bevor das passiert, m\u00fcssen sie eine Reihe von Szenarien durcharbeiten, die die realistische Fehleroberfl\u00e4che eines Multi-Agent-Systems wie ihres abbilden: F\u00e4lle, in denen Memory einen Agenten dazu bringt, irrelevante oder veraltete Ausgabe zur\u00fcckzugeben, F\u00e4lle, in denen State falsches Routing oder stille Duplikation verursacht, und F\u00e4lle, in denen die Kombination aus beidem einen Fehler erzeugt, den keines von beiden allein verursacht h\u00e4tte. Deine Aufgabe in dieser Lektion ist es, diese Szenarien auf der Vela-Canvas durchzuarbeiten und f\u00fcr jedes eine Schutzma\u00dfnahme zu entwerfen.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "b1894183-19f3-8216-beb8-01a63e9e55f3",
+  "parent": {
+   "type": "page_id",
+   "page_id": "09694183-19f3-8258-9a29-81e6d6b3c973"
+  },
+  "created_time": "2026-07-03T13:15:00.000Z",
+  "last_edited_time": "2026-07-03T13:15:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "callout",
+  "callout": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "In dieser Lektion identifizierst du F\u00e4lle, in denen Memory oder State irrelevantes, veraltetes oder unsicheres Agentenverhalten verursacht, und entwirfst f\u00fcr jeden Fall eine konkrete Schutzma\u00dfnahme.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "In dieser Lektion identifizierst du F\u00e4lle, in denen Memory oder State irrelevantes, veraltetes oder unsicheres Agentenverhalten verursacht, und entwirfst f\u00fcr jeden Fall eine konkrete Schutzma\u00dfnahme.",
+     "href": null
+    }
+   ],
+   "icon": {
+    "type": "emoji",
+    "emoji": "\ud83d\udca1"
+   },
+   "color": "gray_background"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "9b0a899d-00b9-4bb4-b6fa-0604cb0743f9",
+  "parent": {
+   "type": "page_id",
+   "page_id": "09694183-19f3-8258-9a29-81e6d6b3c973"
+  },
+  "created_time": "2026-07-04T20:05:00.000Z",
+  "last_edited_time": "2026-07-04T20:05:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_2",
+  "heading_2": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Was diese \u00dcbung aufbaut",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Was diese \u00dcbung aufbaut",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "39394183-19f3-802a-b1c3-ee531f29b84b",
+  "parent": {
+   "type": "page_id",
+   "page_id": "09694183-19f3-8258-9a29-81e6d6b3c973"
+  },
+  "created_time": "2026-07-04T20:07:00.000Z",
+  "last_edited_time": "2026-07-04T20:07:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Das Erkennen potenzieller Fehlerquellen ist eine Kernaufgabe des Designs, nicht des Debuggings. Beim Debugging sucht man nach Fehlern, die bereits aufgetreten sind. Ein gutes Design hingegen nimmt diese vorweg und strukturiert das System so, dass die Auswirkungen im Fehlerfall von vornherein minimiert werden.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Das Erkennen potenzieller Fehlerquellen ist eine Kernaufgabe des Designs, nicht des Debuggings. Beim Debugging sucht man nach Fehlern, die bereits aufgetreten sind. Ein gutes Design hingegen nimmt diese vorweg und strukturiert das System so, dass die Auswirkungen im Fehlerfall von vornherein minimiert werden.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "861136fb-7140-4dec-ad35-8a09fd5ad0a6",
+  "parent": {
+   "type": "page_id",
+   "page_id": "09694183-19f3-8258-9a29-81e6d6b3c973"
+  },
+  "created_time": "2026-07-04T20:05:00.000Z",
+  "last_edited_time": "2026-07-04T20:05:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Die Fehlermodi in dieser Lektion sind keine hypothetischen Grenzf\u00e4lle, die f\u00fcr die \u00dcbung erfunden wurden. Es sind die Kategorien von Memory- und State-Fehlern, die in produktiven Multi-Agent-Systemen wiederholt auftreten. Die Vela-Canvas ist der Kontext, den du gut kennst. Nutze sie, um deine Analyse zu verankern. Aber die Muster, die du hier identifizierst, gelten f\u00fcr jedes Multi-Agent-System, einschlie\u00dflich deines eigenen Projekts.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Die Fehlermodi in dieser Lektion sind keine hypothetischen Grenzf\u00e4lle, die f\u00fcr die \u00dcbung erfunden wurden. Es sind die Kategorien von Memory- und State-Fehlern, die in produktiven Multi-Agent-Systemen wiederholt auftreten. Die Vela-Canvas ist der Kontext, den du gut kennst. Nutze sie, um deine Analyse zu verankern. Aber die Muster, die du hier identifizierst, gelten f\u00fcr jedes Multi-Agent-System, einschlie\u00dflich deines eigenen Projekts.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "f3f8106d-5f5c-4caa-9482-8ff5127950a2",
+  "parent": {
+   "type": "page_id",
+   "page_id": "09694183-19f3-8258-9a29-81e6d6b3c973"
+  },
+  "created_time": "2026-07-04T20:05:00.000Z",
+  "last_edited_time": "2026-07-04T20:05:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Drei Kategorien strukturieren die \u00dcbung:",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Drei Kategorien strukturieren die \u00dcbung:",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "8d994183-19f3-825d-b97c-01deca74fbd3",
+  "parent": {
+   "type": "page_id",
+   "page_id": "09694183-19f3-8258-9a29-81e6d6b3c973"
+  },
+  "created_time": "2026-07-03T13:15:00.000Z",
+  "last_edited_time": "2026-07-04T07:32:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "image",
+  "image": {
+   "caption": [],
+   "type": "file",
+   "file": {
+    "url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/3a9085c4-df29-45e6-8bc7-6c9c0a25ea8c/3359266a-560f-46dd-a7c9-67e1cf2c85d9/memory_state_failure_categories_de.svg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466W7IA2MQ7%2F20261028%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20261028T102148Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEDgaCXVzLXdlc3QtMiJIMEYCIQC7V2OcqG1NnIGG6oTo5%2B0t4CBep%2BA0a%2FbnZAXr2o2H6wIhAImn4Z2ZYn4EgaegTN%2BPpmgNIu8zbw%2BZNBuFW0PX1afIKv8DCAAQABoMNjM3NDIzMTgzODA1IgyP67cpM5Xpj7iFgpgq3APq%2F%2FRaRb07t7%2BSrSZssn89lVYcX4Xe7b8WK%2BNe2Grmba86R2Y8P9RaoqtES8tjo%2F%2BSUlX9poIhHcv5kcbcVrC6pSG%2FgGNjFA5t07jFWCmfQlZrLb7KeKZMLAea2yHEMBk6og6pIQ11syAO9SaM%2F4ENuXgQnpxYa7A3wBcaHmTPJPR%2BTcfk2KyrCUiAgWlsa2XZOyxAbttePLfx4VII9KVFvMpmYooWLwQ3LBtKfgSU2LejWk9GBTFLPNKBCxsaMjhHtqugBlezPLvY7Ljmkl9u%2F6tKaprdIwa33dPygB49F5Z3HEVjP%2F62q7hdNxcGQNECy%2BUtItavJH4JeMcTXoLMPnVe5dG%2FDA1hds%2BwVJ5ZtvFl%2BfgGpz4BXLt7NVjvY4tM0NGhvYgHvgfggVsLwuIPUexjcDo19F2E0Ol5T5PChSieyIO210LFTcpU8P8nd2eN1U2ZqGBmeG0ayHGYb5Y1uC%2BQt7dU78h8pAibH0codBaJV0hhu0gUcPm7Z11mBBSIcxisQoN1CBjLjpc7E2FH7ALSoOSfPtrec3CZSx4PJbt%2BBck%2F6p2sl39g%2Fqq8u8aWO41sHMXbS0eODDri0lTwR0lMEBF7jx4mc48PPAPnCdooxE0zN8WM0WTjRDDw1YbXBjqkAcjqjaCpCycstCx2KYqH3lQMOilcvDIGvRvucVo3TAM02nDPoPNcqQGuADNt9wM39GL6cFEr5Yy6ed2m4f2UYbMB8qX8HAIxicJ%2FEymv%2F2v0DylgLkSBaDca%2BX2NzcR%2BZbho0cqJtmFF%2B7mX8ZUsBc5UQHlRCFm82FHSFwZCpH3HG4OPJns0wfglF7Qj8hkW1DeSTLPx9CvHthLO6f9Luxt2Yd0v&X-Amz-Signature=de197ecdce155a6f3b22b1461a33cfa697439a3831d765f8096f1c3ecd97142b&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+    "expiry_time": "2026-10-28T11:21:48.223Z"
+   }
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "c0794183-19f3-820f-97e8-818889ecdcf4",
+  "parent": {
+   "type": "page_id",
+   "page_id": "09694183-19f3-8258-9a29-81e6d6b3c973"
+  },
+  "created_time": "2026-07-03T13:15:00.000Z",
+  "last_edited_time": "2026-07-03T13:15:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "c9094183-19f3-8201-9f7f-01e75b6189a6",
+  "parent": {
+   "type": "page_id",
+   "page_id": "09694183-19f3-8258-9a29-81e6d6b3c973"
+  },
+  "created_time": "2026-07-03T13:15:00.000Z",
+  "last_edited_time": "2026-07-04T07:35:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_2",
+  "heading_2": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Mit Dokumentation arbeiten",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Mit Dokumentation arbeiten",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "39394183-19f3-80d0-9221-f16dd00fa45a",
+  "parent": {
+   "type": "page_id",
+   "page_id": "09694183-19f3-8258-9a29-81e6d6b3c973"
+  },
+  "created_time": "2026-07-04T20:09:00.000Z",
+  "last_edited_time": "2026-07-04T20:10:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Bevor du mit der Szenarioanalyse startest, solltest du dich in der Dokumentation zu Flowise Agentflow V2 mit zwei zentralen Mechanismen vertraut machen. Zum einen mit dem ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Bevor du mit der Szenarioanalyse startest, solltest du dich in der Dokumentation zu Flowise Agentflow V2 mit zwei zentralen Mechanismen vertraut machen. Zum einen mit dem ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "Flow State",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": true,
+      "color": "default"
+     },
+     "plain_text": "Flow State",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " , also dem gemeinsamen Key-Value-Store, auf den knoten\u00fcbergreifend schreibend und lesend zugegriffen wird. Zum anderen mit der Konfiguration von ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " , also dem gemeinsamen Key-Value-Store, auf den knoten\u00fcbergreifend schreibend und lesend zugegriffen wird. Zum anderen mit der Konfiguration von ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "Update Flow State",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": true,
+      "color": "default"
+     },
+     "plain_text": "Update Flow State",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " innerhalb der Agent-Nodes. Denn unklare Definitionen dar\u00fcber, was exakt wann geschrieben und von wem gelesen wird, sind der eigentliche Ausl\u00f6ser f\u00fcr alle drei der oben beschriebenen Fehlerkategorien.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " innerhalb der Agent-Nodes. Denn unklare Definitionen dar\u00fcber, was exakt wann geschrieben und von wem gelesen wird, sind der eigentliche Ausl\u00f6ser f\u00fcr alle drei der oben beschriebenen Fehlerkategorien.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "0825fdf2-a4d2-47b0-baeb-de6b8b5e2126",
+  "parent": {
+   "type": "page_id",
+   "page_id": "09694183-19f3-8258-9a29-81e6d6b3c973"
+  },
+  "created_time": "2026-07-04T07:35:00.000Z",
+  "last_edited_time": "2026-07-04T07:36:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": true,
+  "in_trash": false,
+  "type": "table",
+  "table": {
+   "table_width": 3,
+   "has_column_header": true,
+   "has_row_header": false
+  },
+  "archived": false,
+  "_children": [
+   {
+    "object": "block",
+    "id": "be403a6a-c32a-4913-aaed-314e21d0ecbb",
+    "parent": {
+     "type": "block_id",
+     "block_id": "0825fdf2-a4d2-47b0-baeb-de6b8b5e2126"
+    },
+    "created_time": "2026-07-04T07:35:00.000Z",
+    "last_edited_time": "2026-07-04T07:35:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "table_row",
+    "table_row": {
+     "cells": [
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Mechanismus",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Mechanismus",
+        "href": null
+       }
+      ],
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Was er tut",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Was er tut",
+        "href": null
+       }
+      ],
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Wo du nachschauen solltest",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Wo du nachschauen solltest",
+        "href": null
+       }
+      ]
+     ]
+    },
+    "archived": false
+   },
+   {
+    "object": "block",
+    "id": "354135f2-642d-4ab4-afa2-04f8c68e1900",
+    "parent": {
+     "type": "block_id",
+     "block_id": "0825fdf2-a4d2-47b0-baeb-de6b8b5e2126"
+    },
+    "created_time": "2026-07-04T07:35:00.000Z",
+    "last_edited_time": "2026-07-04T07:35:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "table_row",
+    "table_row": {
+     "cells": [
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Flow State",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Flow State",
+        "href": null
+       }
+      ],
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Geteilter Key-Value-Store, der allen Nodes in der Canvas f\u00fcr die Dauer eines Flow-Runs zur Verf\u00fcgung steht",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Geteilter Key-Value-Store, der allen Nodes in der Canvas f\u00fcr die Dauer eines Flow-Runs zur Verf\u00fcgung steht",
+        "href": null
+       }
+      ],
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Flowise-Dokumentation \u2192 Agentflow V2 \u2192 Flow State",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Flowise-Dokumentation \u2192 Agentflow V2 \u2192 Flow State",
+        "href": null
+       }
+      ]
+     ]
+    },
+    "archived": false
+   },
+   {
+    "object": "block",
+    "id": "3516e420-e0ad-4c41-bf79-f6af5b19ebb2",
+    "parent": {
+     "type": "block_id",
+     "block_id": "0825fdf2-a4d2-47b0-baeb-de6b8b5e2126"
+    },
+    "created_time": "2026-07-04T07:35:00.000Z",
+    "last_edited_time": "2026-07-04T07:35:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "table_row",
+    "table_row": {
+     "cells": [
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Update Flow State (Agent Node)",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Update Flow State (Agent Node)",
+        "href": null
+       }
+      ],
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Konfiguration, die Key-Value-Paare aus der Ausgabe des Agenten in Flow State schreibt, nachdem der Node abgeschlossen ist",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Konfiguration, die Key-Value-Paare aus der Ausgabe des Agenten in Flow State schreibt, nachdem der Node abgeschlossen ist",
+        "href": null
+       }
+      ],
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Flowise-Dokumentation \u2192 Agentflow V2 \u2192 Agent Node \u2192 Update Flow State",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Flowise-Dokumentation \u2192 Agentflow V2 \u2192 Agent Node \u2192 Update Flow State",
+        "href": null
+       }
+      ]
+     ]
+    },
+    "archived": false
+   },
+   {
+    "object": "block",
+    "id": "d00794c3-4866-4fae-991f-ac701f8175ed",
+    "parent": {
+     "type": "block_id",
+     "block_id": "0825fdf2-a4d2-47b0-baeb-de6b8b5e2126"
+    },
+    "created_time": "2026-07-04T07:35:00.000Z",
+    "last_edited_time": "2026-07-04T07:35:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "table_row",
+    "table_row": {
+     "cells": [
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Kontextfenster",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Kontextfenster",
+        "href": null
+       }
+      ],
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Die Konversationshistorie, die f\u00fcr einen einzelnen Agent-Node innerhalb seiner eigenen Ausf\u00fchrung sichtbar ist, nicht \u00fcber Nodes hinweg geteilt",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Die Konversationshistorie, die f\u00fcr einen einzelnen Agent-Node innerhalb seiner eigenen Ausf\u00fchrung sichtbar ist, nicht \u00fcber Nodes hinweg geteilt",
+        "href": null
+       }
+      ],
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Flowise-Dokumentation \u2192 Agentflow V2 \u2192 Memory",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Flowise-Dokumentation \u2192 Agentflow V2 \u2192 Memory",
+        "href": null
+       }
+      ]
+     ]
+    },
+    "archived": false
+   },
+   {
+    "object": "block",
+    "id": "881c8dae-85be-4d20-93a7-f07d0875c2dc",
+    "parent": {
+     "type": "block_id",
+     "block_id": "0825fdf2-a4d2-47b0-baeb-de6b8b5e2126"
+    },
+    "created_time": "2026-07-04T07:35:00.000Z",
+    "last_edited_time": "2026-07-04T07:35:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "table_row",
+    "table_row": {
+     "cells": [
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Session-Scope",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Session-Scope",
+        "href": null
+       }
+      ],
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Die Grenze, innerhalb der Flow-State-Schl\u00fcssel persistieren \u2014 endet, wenn die Session endet",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Die Grenze, innerhalb der Flow-State-Schl\u00fcssel persistieren \u2014 endet, wenn die Session endet",
+        "href": null
+       }
+      ],
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Flowise-Dokumentation \u2192 Agentflow V2 \u2192 Sessions",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Flowise-Dokumentation \u2192 Agentflow V2 \u2192 Sessions",
+        "href": null
+       }
+      ]
+     ]
+    },
+    "archived": false
+   }
+  ]
+ },
+ {
+  "object": "block",
+  "id": "01d65b4a-6dfe-49e0-b0a7-bc78e597b2cc",
+  "parent": {
+   "type": "page_id",
+   "page_id": "09694183-19f3-8258-9a29-81e6d6b3c973"
+  },
+  "created_time": "2026-07-04T07:35:00.000Z",
+  "last_edited_time": "2026-07-04T07:35:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Die Referenz oben ist keine Checkliste zum Kopieren. Sie ist ein Hinweis auf die Dokumentation, die du offen haben solltest, w\u00e4hrend du jedes Szenario durcharbeitest. Die Analyse in jedem Szenario verlangt, dass du dar\u00fcber nachdenkst, ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Die Referenz oben ist keine Checkliste zum Kopieren. Sie ist ein Hinweis auf die Dokumentation, die du offen haben solltest, w\u00e4hrend du jedes Szenario durcharbeitest. Die Analyse in jedem Szenario verlangt, dass du dar\u00fcber nachdenkst, ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "welcher Mechanismus",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": true,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "welcher Mechanismus",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " beteiligt ist, nicht nur, was das Symptom ist.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " beteiligt ist, nicht nur, was das Symptom ist.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "d4829d5d-c561-46c1-ac7e-96ea68eb83eb",
+  "parent": {
+   "type": "page_id",
+   "page_id": "09694183-19f3-8258-9a29-81e6d6b3c973"
+  },
+  "created_time": "2026-07-04T07:35:00.000Z",
+  "last_edited_time": "2026-07-04T07:35:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_2",
+  "heading_2": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Deine Aufgabe",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Deine Aufgabe",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "30a94183-19f3-8256-be2a-0117269b8372",
+  "parent": {
+   "type": "page_id",
+   "page_id": "09694183-19f3-8258-9a29-81e6d6b3c973"
+  },
+  "created_time": "2026-07-03T13:15:00.000Z",
+  "last_edited_time": "2026-07-04T20:11:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "callout",
+  "callout": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Bevor du beginnst, erstelle eine Kopie von ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Bevor du beginnst, erstelle eine Kopie von ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "dieser Vorlage",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "dieser Vorlage",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": ". Sie spiegelt die Struktur dieser Lektion wider: ein Tab pro Szenario, mit Kontext, Kategorie, Mechanismus, Leitfragen und einem Feld f\u00fcr die Schutzma\u00dfnahme, plus ein kurzes Checkpoint-Sheet.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": ". Sie spiegelt die Struktur dieser Lektion wider: ein Tab pro Szenario, mit Kontext, Kategorie, Mechanismus, Leitfragen und einem Feld f\u00fcr die Schutzma\u00dfnahme, plus ein kurzes Checkpoint-Sheet.",
+     "href": null
+    }
+   ],
+   "icon": {
+    "type": "emoji",
+    "emoji": "\ud83d\udd25"
+   },
+   "color": "green_background"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "0abdcbea-7fab-4bda-8ec9-e71511dab420",
+  "parent": {
+   "type": "page_id",
+   "page_id": "09694183-19f3-8258-9a29-81e6d6b3c973"
+  },
+  "created_time": "2026-07-04T07:36:00.000Z",
+  "last_edited_time": "2026-07-04T07:36:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Arbeite die f\u00fcnf Szenarien unten durch. F\u00fcr jedes Szenario:",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Arbeite die f\u00fcnf Szenarien unten durch. F\u00fcr jedes Szenario:",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "6974351b-4837-4cec-a222-4b7001863ed1",
+  "parent": {
+   "type": "page_id",
+   "page_id": "09694183-19f3-8258-9a29-81e6d6b3c973"
+  },
+  "created_time": "2026-07-04T07:36:00.000Z",
+  "last_edited_time": "2026-07-04T07:36:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "numbered_list_item",
+  "numbered_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Identifiziere die Fehlerkategorie (Stale Memory, State Contamination oder Unsafe Persistence).",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Identifiziere die Fehlerkategorie (Stale Memory, State Contamination oder Unsafe Persistence).",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "8a83dd11-7b01-49ad-9306-ec7e5c31eb4d",
+  "parent": {
+   "type": "page_id",
+   "page_id": "09694183-19f3-8258-9a29-81e6d6b3c973"
+  },
+  "created_time": "2026-07-04T07:36:00.000Z",
+  "last_edited_time": "2026-07-04T07:36:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "numbered_list_item",
+  "numbered_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Beschreibe, was der Vela-Nutzer erleben w\u00fcrde, wie die Ausgabe aussieht und warum sie falsch ist.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Beschreibe, was der Vela-Nutzer erleben w\u00fcrde, wie die Ausgabe aussieht und warum sie falsch ist.",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "2e42899f-1c8d-432d-81c9-1866b28e6686",
+  "parent": {
+   "type": "page_id",
+   "page_id": "09694183-19f3-8258-9a29-81e6d6b3c973"
+  },
+  "created_time": "2026-07-04T07:36:00.000Z",
+  "last_edited_time": "2026-07-04T07:36:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "numbered_list_item",
+  "numbered_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Identifiziere den konkreten Mechanismus auf der Vela-Canvas, der den Fehler erm\u00f6glicht.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Identifiziere den konkreten Mechanismus auf der Vela-Canvas, der den Fehler erm\u00f6glicht.",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "39394183-19f3-80dd-815d-ca7aec3b9b71",
+  "parent": {
+   "type": "page_id",
+   "page_id": "09694183-19f3-8258-9a29-81e6d6b3c973"
+  },
+  "created_time": "2026-07-04T20:11:00.000Z",
+  "last_edited_time": "2026-07-04T20:11:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "numbered_list_item",
+  "numbered_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Entwirf eine konkrete Schutzma\u00dfnahme, eine spezifische \u00c4nderung an der Canvas-Konfiguration, an der Memory-Architektur oder am Schreibverhalten des Agenten, die den Fehler verhindert oder eind\u00e4mmt.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Entwirf eine konkrete Schutzma\u00dfnahme, eine spezifische \u00c4nderung an der Canvas-Konfiguration, an der Memory-Architektur oder am Schreibverhalten des Agenten, die den Fehler verhindert oder eind\u00e4mmt.",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "000d2925-bf01-4267-99a4-919e5ae3f693",
+  "parent": {
+   "type": "page_id",
+   "page_id": "09694183-19f3-8258-9a29-81e6d6b3c973"
+  },
+  "created_time": "2026-07-04T07:36:00.000Z",
+  "last_edited_time": "2026-07-04T07:36:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Schreibe deine Schutzma\u00dfnahme als konkrete Designentscheidung: nicht \u201eeine Pr\u00fcfung hinzuf\u00fcgen\", sondern \u201eder Classifier-Node setzt ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Schreibe deine Schutzma\u00dfnahme als konkrete Designentscheidung: nicht \u201eeine Pr\u00fcfung hinzuf\u00fcgen\", sondern \u201eder Classifier-Node setzt ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "query_type",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": true,
+      "color": "default"
+     },
+     "plain_text": "query_type",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " auf ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " auf ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "null",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": true,
+      "color": "default"
+     },
+     "plain_text": "null",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " zur\u00fcck, bevor er einen neuen Wert schreibt, sodass ein fehlgeschlagener Schreibvorgang immer ein erkennbares null statt einer veralteten Klassifizierung erzeugt.\"",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " zur\u00fcck, bevor er einen neuen Wert schreibt, sodass ein fehlgeschlagener Schreibvorgang immer ein erkennbares null statt einer veralteten Klassifizierung erzeugt.\"",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "9f8b39cb-6639-4aec-889c-4401302bee10",
+  "parent": {
+   "type": "page_id",
+   "page_id": "09694183-19f3-8258-9a29-81e6d6b3c973"
+  },
+  "created_time": "2026-07-04T07:36:00.000Z",
+  "last_edited_time": "2026-07-04T07:36:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Ziel ist eine Reihe von f\u00fcnf Schutzma\u00dfnahmen-Entscheidungen, die du direkt in deine Integrationsarbeit in der n\u00e4chsten Lektion \u00fcbernehmen kannst.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Ziel ist eine Reihe von f\u00fcnf Schutzma\u00dfnahmen-Entscheidungen, die du direkt in deine Integrationsarbeit in der n\u00e4chsten Lektion \u00fcbernehmen kannst.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "ed813906-1790-4911-8f1d-82f1601d5144",
+  "parent": {
+   "type": "page_id",
+   "page_id": "09694183-19f3-8258-9a29-81e6d6b3c973"
+  },
+  "created_time": "2026-07-04T07:36:00.000Z",
+  "last_edited_time": "2026-07-04T07:36:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_3",
+  "heading_3": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Szenario 1: Der Classifier setzt ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Szenario 1: Der Classifier setzt ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "query_type",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": true,
+      "color": "default"
+     },
+     "plain_text": "query_type",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " zwischen Anfragen in derselben Session nicht zur\u00fcck",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " zwischen Anfragen in derselben Session nicht zur\u00fcck",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "7b2b6462-bf5a-4e8e-86a2-1f1206b35c42",
+  "parent": {
+   "type": "page_id",
+   "page_id": "09694183-19f3-8258-9a29-81e6d6b3c973"
+  },
+  "created_time": "2026-07-04T07:36:00.000Z",
+  "last_edited_time": "2026-07-04T07:36:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Ein Vela-Nutzer sendet zwei Anfragen in derselben Session. Die erste ist eine Account-Anfrage, die der Classifier korrekt als ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Ein Vela-Nutzer sendet zwei Anfragen in derselben Session. Die erste ist eine Account-Anfrage, die der Classifier korrekt als ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "account",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": true,
+      "color": "default"
+     },
+     "plain_text": "account",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " klassifiziert. Der Classifier schreibt ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " klassifiziert. Der Classifier schreibt ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "query_type: \"account\"",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": true,
+      "color": "default"
+     },
+     "plain_text": "query_type: \"account\"",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " in Flow State und routet zu Specialist B. Der Spezialist gibt eine korrekte Antwort zur\u00fcck.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " in Flow State und routet zu Specialist B. Der Spezialist gibt eine korrekte Antwort zur\u00fcck.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "952d942d-7759-4856-9063-44d6e95aed59",
+  "parent": {
+   "type": "page_id",
+   "page_id": "09694183-19f3-8258-9a29-81e6d6b3c973"
+  },
+  "created_time": "2026-07-04T07:36:00.000Z",
+  "last_edited_time": "2026-07-04T07:36:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Derselbe Nutzer sendet unmittelbar danach eine zweite Anfrage: \u201eAny open support tickets for that client?\" Das ist eine Supportanfrage. Die korrekte Klassifizierung ist ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Derselbe Nutzer sendet unmittelbar danach eine zweite Anfrage: \u201eAny open support tickets for that client?\" Das ist eine Supportanfrage. Die korrekte Klassifizierung ist ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "support",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": true,
+      "color": "default"
+     },
+     "plain_text": "support",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": ", was zu Specialist A routen sollte.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": ", was zu Specialist A routen sollte.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "70c58f3b-406a-4e55-a548-4086b5539907",
+  "parent": {
+   "type": "page_id",
+   "page_id": "09694183-19f3-8258-9a29-81e6d6b3c973"
+  },
+  "created_time": "2026-07-04T07:36:00.000Z",
+  "last_edited_time": "2026-07-04T07:36:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Aber das LLM des Classifier erzeugt bei der Verarbeitung einer kurzen Folgefrage in einer schnellen Session einen fehlerhaften Output. Der Update-Flow-State-Schritt wird f\u00fcr die zweite Anfrage nicht korrekt ausgef\u00fchrt. ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Aber das LLM des Classifier erzeugt bei der Verarbeitung einer kurzen Folgefrage in einer schnellen Session einen fehlerhaften Output. Der Update-Flow-State-Schritt wird f\u00fcr die zweite Anfrage nicht korrekt ausgef\u00fchrt. ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "query_type",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": true,
+      "color": "default"
+     },
+     "plain_text": "query_type",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " in Flow State enth\u00e4lt weiterhin ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " in Flow State enth\u00e4lt weiterhin ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "\"account\"",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": true,
+      "color": "default"
+     },
+     "plain_text": "\"account\"",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " aus der ersten Anfrage.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " aus der ersten Anfrage.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "56903b91-3abd-49d6-8b6b-292d3dddc989",
+  "parent": {
+   "type": "page_id",
+   "page_id": "09694183-19f3-8258-9a29-81e6d6b3c973"
+  },
+  "created_time": "2026-07-04T07:36:00.000Z",
+  "last_edited_time": "2026-07-04T07:36:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Der Condition Node liest ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Der Condition Node liest ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "query_type: \"account\"",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": true,
+      "color": "default"
+     },
+     "plain_text": "query_type: \"account\"",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " und routet erneut zu Specialist B. Specialist B bearbeitet Account-Anfragen. Er gibt Account-Informationen f\u00fcr denselben Kunden zur\u00fcck, nicht die Support-Ticket-Historie, nach der der Nutzer gefragt hatte.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " und routet erneut zu Specialist B. Specialist B bearbeitet Account-Anfragen. Er gibt Account-Informationen f\u00fcr denselben Kunden zur\u00fcck, nicht die Support-Ticket-Historie, nach der der Nutzer gefragt hatte.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "05b0ffc1-d8f8-4081-8b46-66b5cd336d12",
+  "parent": {
+   "type": "page_id",
+   "page_id": "09694183-19f3-8258-9a29-81e6d6b3c973"
+  },
+  "created_time": "2026-07-04T07:36:00.000Z",
+  "last_edited_time": "2026-07-04T07:36:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Fragen zur Orientierung deiner Analyse:",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Fragen zur Orientierung deiner Analyse:",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "a8cda153-a1c6-4276-9ae7-182bfba2fa62",
+  "parent": {
+   "type": "page_id",
+   "page_id": "09694183-19f3-8258-9a29-81e6d6b3c973"
+  },
+  "created_time": "2026-07-04T07:36:00.000Z",
+  "last_edited_time": "2026-07-04T07:36:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Welcher Flow-State-Schl\u00fcssel steht im Zentrum dieses Fehlers?",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Welcher Flow-State-Schl\u00fcssel steht im Zentrum dieses Fehlers?",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "3873dafb-ce75-4442-a9d5-d3f947831c5f",
+  "parent": {
+   "type": "page_id",
+   "page_id": "09694183-19f3-8258-9a29-81e6d6b3c973"
+  },
+  "created_time": "2026-07-04T07:36:00.000Z",
+  "last_edited_time": "2026-07-04T07:36:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "An welchem Punkt in der Ausf\u00fchrungssequenz sollte der Schl\u00fcssel zur\u00fcckgesetzt werden?",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "An welchem Punkt in der Ausf\u00fchrungssequenz sollte der Schl\u00fcssel zur\u00fcckgesetzt werden?",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "e56a4dae-0de4-42fb-bfc1-d0facc0c59b8",
+  "parent": {
+   "type": "page_id",
+   "page_id": "09694183-19f3-8258-9a29-81e6d6b3c973"
+  },
+  "created_time": "2026-07-04T07:36:00.000Z",
+  "last_edited_time": "2026-07-04T07:36:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Auf welchen Wert sollte er zur\u00fcckgesetzt werden, und welcher Node ist f\u00fcr diesen Reset verantwortlich?",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Auf welchen Wert sollte er zur\u00fcckgesetzt werden, und welcher Node ist f\u00fcr diesen Reset verantwortlich?",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "0f51e26b-6469-4b1d-a9b4-3e3f0e55ea7e",
+  "parent": {
+   "type": "page_id",
+   "page_id": "09694183-19f3-8258-9a29-81e6d6b3c973"
+  },
+  "created_time": "2026-07-04T07:36:00.000Z",
+  "last_edited_time": "2026-07-04T07:36:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Wie hilft dir das Log an Position 1 (aus der vorherigen Lektion), diesen Fehler nachtr\u00e4glich zu erkennen?",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Wie hilft dir das Log an Position 1 (aus der vorherigen Lektion), diesen Fehler nachtr\u00e4glich zu erkennen?",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "2055f1fc-a247-4b65-ad3e-0b399fd9bd49",
+  "parent": {
+   "type": "page_id",
+   "page_id": "09694183-19f3-8258-9a29-81e6d6b3c973"
+  },
+  "created_time": "2026-07-04T07:36:00.000Z",
+  "last_edited_time": "2026-07-04T07:36:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_3",
+  "heading_3": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Szenario 2: Ein Spezialagent schreibt eine Zusammenfassung in Flow State, die von der n\u00e4chsten Anfrage gelesen wird",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Szenario 2: Ein Spezialagent schreibt eine Zusammenfassung in Flow State, die von der n\u00e4chsten Anfrage gelesen wird",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "4bb63bcb-3e79-4956-ab31-12d35bd1c78e",
+  "parent": {
+   "type": "page_id",
+   "page_id": "09694183-19f3-8258-9a29-81e6d6b3c973"
+  },
+  "created_time": "2026-07-04T07:36:00.000Z",
+  "last_edited_time": "2026-07-04T07:36:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Die Vela-Canvas ist so konfiguriert, dass Specialist B nach jeder von ihm bearbeiteten Anfrage eine kurze Account-Zusammenfassung in einen Flow-State-Schl\u00fcssel namens ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Die Vela-Canvas ist so konfiguriert, dass Specialist B nach jeder von ihm bearbeiteten Anfrage eine kurze Account-Zusammenfassung in einen Flow-State-Schl\u00fcssel namens ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "last_account_summary",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": true,
+      "color": "default"
+     },
+     "plain_text": "last_account_summary",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " schreibt. Das wurde aus Bequemlichkeit hinzugef\u00fcgt. Die Idee war, dass die Zusammenfassung vom finalen Reply-Node referenziert werden k\u00f6nnte, um denselben Inhalt nicht erneut zusammenzufassen.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " schreibt. Das wurde aus Bequemlichkeit hinzugef\u00fcgt. Die Idee war, dass die Zusammenfassung vom finalen Reply-Node referenziert werden k\u00f6nnte, um denselben Inhalt nicht erneut zusammenzufassen.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "042f053d-a929-412c-b8d3-8c8f3a2077f7",
+  "parent": {
+   "type": "page_id",
+   "page_id": "09694183-19f3-8258-9a29-81e6d6b3c973"
+  },
+  "created_time": "2026-07-04T07:36:00.000Z",
+  "last_edited_time": "2026-07-04T07:36:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Ein Nutzer sendet eine Anfrage zu Client A. Specialist B l\u00e4uft und schreibt ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Ein Nutzer sendet eine Anfrage zu Client A. Specialist B l\u00e4uft und schreibt ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "last_account_summary: \"Client A \u2014 renewal due Q3, no open tickets\"",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": true,
+      "color": "default"
+     },
+     "plain_text": "last_account_summary: \"Client A \u2014 renewal due Q3, no open tickets\"",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " in Flow State.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " in Flow State.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "e06a1c1d-42ce-494d-b4fc-93b37c57a3c7",
+  "parent": {
+   "type": "page_id",
+   "page_id": "09694183-19f3-8258-9a29-81e6d6b3c973"
+  },
+  "created_time": "2026-07-04T07:36:00.000Z",
+  "last_edited_time": "2026-07-04T20:13:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Derselbe Nutzer sendet sp\u00e4ter in derselben Session eine Anfrage zu Client B. Client B ist ein v\u00f6llig anderer Account. Der Classifier klassifiziert dies korrekt als Account-Anfrage und routet zu Specialist B. Specialist B l\u00e4uft und erzeugt eine Antwort zu Client B. Aber der finale Reply-Node liest ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Derselbe Nutzer sendet sp\u00e4ter in derselben Session eine Anfrage zu Client B. Client B ist ein v\u00f6llig anderer Account. Der Classifier klassifiziert dies korrekt als Account-Anfrage und routet zu Specialist B. Specialist B l\u00e4uft und erzeugt eine Antwort zu Client B. Aber der finale Reply-Node liest ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "last_account_summary",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": true,
+      "color": "default"
+     },
+     "plain_text": "last_account_summary",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " aus Flow State und dieser Schl\u00fcssel enth\u00e4lt weiterhin die Zusammenfassung zu Client A von fr\u00fcher in der Session.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " aus Flow State und dieser Schl\u00fcssel enth\u00e4lt weiterhin die Zusammenfassung zu Client A von fr\u00fcher in der Session.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "d6291f2e-2ec8-4750-a8e5-df8803e3b80d",
+  "parent": {
+   "type": "page_id",
+   "page_id": "09694183-19f3-8258-9a29-81e6d6b3c973"
+  },
+  "created_time": "2026-07-04T07:36:00.000Z",
+  "last_edited_time": "2026-07-04T07:36:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Die Antwort auf die Anfrage zu Client B enth\u00e4lt einen eingebetteten Hinweis auf das Verl\u00e4ngerungsdatum von Client A.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Die Antwort auf die Anfrage zu Client B enth\u00e4lt einen eingebetteten Hinweis auf das Verl\u00e4ngerungsdatum von Client A.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "8206671e-1b65-411a-98f1-f2aa53b8b03f",
+  "parent": {
+   "type": "page_id",
+   "page_id": "09694183-19f3-8258-9a29-81e6d6b3c973"
+  },
+  "created_time": "2026-07-04T07:36:00.000Z",
+  "last_edited_time": "2026-07-04T07:36:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Fragen zur Orientierung deiner Analyse:",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Fragen zur Orientierung deiner Analyse:",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "22b01a02-a0e2-4f6d-806d-0654017cca6e",
+  "parent": {
+   "type": "page_id",
+   "page_id": "09694183-19f3-8258-9a29-81e6d6b3c973"
+  },
+  "created_time": "2026-07-04T07:36:00.000Z",
+  "last_edited_time": "2026-07-04T07:36:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Ist das ein Stale-Memory-Fehler, ein State-Contamination-Fehler oder beides?",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Ist das ein Stale-Memory-Fehler, ein State-Contamination-Fehler oder beides?",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "ab290f9f-87b8-426a-9c37-560693c6dfcd",
+  "parent": {
+   "type": "page_id",
+   "page_id": "09694183-19f3-8258-9a29-81e6d6b3c973"
+  },
+  "created_time": "2026-07-04T07:36:00.000Z",
+  "last_edited_time": "2026-07-04T07:36:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Was ist das Write-Ownership-Problem im urspr\u00fcnglichen Design?",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Was ist das Write-Ownership-Problem im urspr\u00fcnglichen Design?",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "cdc616df-c6a5-45d2-adda-511e5eccd1cd",
+  "parent": {
+   "type": "page_id",
+   "page_id": "09694183-19f3-8258-9a29-81e6d6b3c973"
+  },
+  "created_time": "2026-07-04T07:36:00.000Z",
+  "last_edited_time": "2026-07-04T07:36:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Wie sollte ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Wie sollte ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "last_account_summary",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": true,
+      "color": "default"
+     },
+     "plain_text": "last_account_summary",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " gescoped werden, um Cross-Query-Contamination innerhalb einer Session zu verhindern?",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " gescoped werden, um Cross-Query-Contamination innerhalb einer Session zu verhindern?",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "68acfb8a-3f4b-4a0b-af4a-2c7c30c3f94e",
+  "parent": {
+   "type": "page_id",
+   "page_id": "09694183-19f3-8258-9a29-81e6d6b3c973"
+  },
+  "created_time": "2026-07-04T07:36:00.000Z",
+  "last_edited_time": "2026-07-04T07:36:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Wenn du dich entscheidest, den Schl\u00fcssel beizubehalten, welche Reset-Regel w\u00fcrde ihn sicher machen?",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Wenn du dich entscheidest, den Schl\u00fcssel beizubehalten, welche Reset-Regel w\u00fcrde ihn sicher machen?",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "b2668c68-7b62-4d9b-a8a7-07bcd758a69e",
+  "parent": {
+   "type": "page_id",
+   "page_id": "09694183-19f3-8258-9a29-81e6d6b3c973"
+  },
+  "created_time": "2026-07-04T07:36:00.000Z",
+  "last_edited_time": "2026-07-04T07:36:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_3",
+  "heading_3": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Szenario 3: Ein persistenter Memory Store wird mit session-spezifischem Inhalt beschrieben",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Szenario 3: Ein persistenter Memory Store wird mit session-spezifischem Inhalt beschrieben",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "f9287eb7-126c-40d5-931e-68cbb18a3f37",
+  "parent": {
+   "type": "page_id",
+   "page_id": "09694183-19f3-8258-9a29-81e6d6b3c973"
+  },
+  "created_time": "2026-07-04T07:36:00.000Z",
+  "last_edited_time": "2026-07-04T07:36:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Das Vela-Team hat der Canvas eine Qdrant-Collection hinzugef\u00fcgt, um Customer-Account-Notes zu speichern. Eine persistente Memory, die Agenten \u00fcber Sessions hinweg abfragen k\u00f6nnen. W\u00e4hrend einer Supportanfrage tippt ein Vela-Nutzer Folgendes: \u201eThe client mentioned in our last call that they are considering cancellation. Route this to the account team.\"",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Das Vela-Team hat der Canvas eine Qdrant-Collection hinzugef\u00fcgt, um Customer-Account-Notes zu speichern. Eine persistente Memory, die Agenten \u00fcber Sessions hinweg abfragen k\u00f6nnen. W\u00e4hrend einer Supportanfrage tippt ein Vela-Nutzer Folgendes: \u201eThe client mentioned in our last call that they are considering cancellation. Route this to the account team.\"",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "079a0068-9ed6-4493-9111-518a4455879a",
+  "parent": {
+   "type": "page_id",
+   "page_id": "09694183-19f3-8258-9a29-81e6d6b3c973"
+  },
+  "created_time": "2026-07-04T07:36:00.000Z",
+  "last_edited_time": "2026-07-04T07:36:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Der Support-Spezialist-Agent schreibt gem\u00e4\u00df seinem System-Prompt die vollst\u00e4ndige Eingabe des Nutzers als Notiz, die mit dem Kundenaccount verkn\u00fcpft ist, in die Qdrant-Collection. Die Notiz persistiert \u00fcber Sessions hinweg.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Der Support-Spezialist-Agent schreibt gem\u00e4\u00df seinem System-Prompt die vollst\u00e4ndige Eingabe des Nutzers als Notiz, die mit dem Kundenaccount verkn\u00fcpft ist, in die Qdrant-Collection. Die Notiz persistiert \u00fcber Sessions hinweg.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "1c3eb54e-8745-4d03-b0db-1f96d0023238",
+  "parent": {
+   "type": "page_id",
+   "page_id": "09694183-19f3-8258-9a29-81e6d6b3c973"
+  },
+  "created_time": "2026-07-04T07:36:00.000Z",
+  "last_edited_time": "2026-07-04T07:36:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Drei Tage sp\u00e4ter bearbeitet ein anderer Vela-Nutzer denselben Kundenaccount. Er f\u00fchrt eine Account-Anfrage aus. Specialist B ruft die gespeicherten Notizen aus Qdrant ab. Die abgerufene Notiz enth\u00e4lt die wortgetreue Eingabe des ersten Nutzers (einschlie\u00dflich der Phrase \u201econsidering cancellation\"), die vor drei Tagen korrekt war, inzwischen aber gel\u00f6st wurde. Die Antwort des zweiten Nutzers an den Kunden wird durch einen veralteten und nun falschen Status beeinflusst.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Drei Tage sp\u00e4ter bearbeitet ein anderer Vela-Nutzer denselben Kundenaccount. Er f\u00fchrt eine Account-Anfrage aus. Specialist B ruft die gespeicherten Notizen aus Qdrant ab. Die abgerufene Notiz enth\u00e4lt die wortgetreue Eingabe des ersten Nutzers (einschlie\u00dflich der Phrase \u201econsidering cancellation\"), die vor drei Tagen korrekt war, inzwischen aber gel\u00f6st wurde. Die Antwort des zweiten Nutzers an den Kunden wird durch einen veralteten und nun falschen Status beeinflusst.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "3ae493fe-f2dc-4913-9b44-d9639d5b069e",
+  "parent": {
+   "type": "page_id",
+   "page_id": "09694183-19f3-8258-9a29-81e6d6b3c973"
+  },
+  "created_time": "2026-07-04T07:36:00.000Z",
+  "last_edited_time": "2026-07-04T07:36:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Fragen zur Orientierung deiner Analyse:",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Fragen zur Orientierung deiner Analyse:",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "8c8679d0-b2bd-4a58-ad00-23371412d23e",
+  "parent": {
+   "type": "page_id",
+   "page_id": "09694183-19f3-8258-9a29-81e6d6b3c973"
+  },
+  "created_time": "2026-07-04T07:36:00.000Z",
+  "last_edited_time": "2026-07-04T07:36:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Zu welcher Kategorie geh\u00f6rt dieser Fehler, und was macht ihn ernster als eine Contamination innerhalb der Session?",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Zu welcher Kategorie geh\u00f6rt dieser Fehler, und was macht ihn ernster als eine Contamination innerhalb der Session?",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "20fdfff8-f31c-41b7-a5a9-ddbde6730df7",
+  "parent": {
+   "type": "page_id",
+   "page_id": "09694183-19f3-8258-9a29-81e6d6b3c973"
+  },
+  "created_time": "2026-07-04T07:36:00.000Z",
+  "last_edited_time": "2026-07-04T07:36:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Welche Eigenschaft persistenter Memory macht diesen Fehler m\u00f6glich, selbst wenn die Session-Architektur korrekt ist?",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Welche Eigenschaft persistenter Memory macht diesen Fehler m\u00f6glich, selbst wenn die Session-Architektur korrekt ist?",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "39394183-19f3-801b-9cce-c78b11ae22ad",
+  "parent": {
+   "type": "page_id",
+   "page_id": "09694183-19f3-8258-9a29-81e6d6b3c973"
+  },
+  "created_time": "2026-07-04T20:16:00.000Z",
+  "last_edited_time": "2026-07-04T20:16:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Was sollte die Schreibregel f\u00fcr die Qdrant-Collection \u00fcber den Inhalt von Notizen festlegen, insbesondere dar\u00fcber, was nicht geschrieben werden darf?",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Was sollte die Schreibregel f\u00fcr die Qdrant-Collection \u00fcber den Inhalt von Notizen festlegen, insbesondere dar\u00fcber, was nicht geschrieben werden darf?",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "e68023fd-386e-496c-8b59-e016f8298ec5",
+  "parent": {
+   "type": "page_id",
+   "page_id": "09694183-19f3-8258-9a29-81e6d6b3c973"
+  },
+  "created_time": "2026-07-04T07:36:00.000Z",
+  "last_edited_time": "2026-07-04T07:36:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Welcher Ablauf- oder Invalidation-Mechanismus w\u00fcrde das Risiko veralteter persistenter Notizen reduzieren?",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Welcher Ablauf- oder Invalidation-Mechanismus w\u00fcrde das Risiko veralteter persistenter Notizen reduzieren?",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "4103da59-eca2-4998-bf5b-e0e48db045bb",
+  "parent": {
+   "type": "page_id",
+   "page_id": "09694183-19f3-8258-9a29-81e6d6b3c973"
+  },
+  "created_time": "2026-07-04T07:36:00.000Z",
+  "last_edited_time": "2026-07-04T07:36:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_3",
+  "heading_3": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Szenario 4: Zwei gleichzeitige Sessions schreiben in denselben Flow-State-Schl\u00fcssel",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Szenario 4: Zwei gleichzeitige Sessions schreiben in denselben Flow-State-Schl\u00fcssel",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "1363a13f-2113-40b4-b9d1-d6b07f591064",
+  "parent": {
+   "type": "page_id",
+   "page_id": "09694183-19f3-8258-9a29-81e6d6b3c973"
+  },
+  "created_time": "2026-07-04T07:36:00.000Z",
+  "last_edited_time": "2026-07-04T07:36:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Zwei Vela-Nutzer f\u00fchren gleichzeitig Anfragen aus. User A sendet eine Account-Anfrage. Der Classifier schreibt ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Zwei Vela-Nutzer f\u00fchren gleichzeitig Anfragen aus. User A sendet eine Account-Anfrage. Der Classifier schreibt ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "query_type: \"account\"",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": true,
+      "color": "default"
+     },
+     "plain_text": "query_type: \"account\"",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " in Flow State. Fast im selben Moment sendet User B eine Supportanfrage. Der Classifier f\u00fcr die Session von User B schreibt ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " in Flow State. Fast im selben Moment sendet User B eine Supportanfrage. Der Classifier f\u00fcr die Session von User B schreibt ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "query_type: \"support\"",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": true,
+      "color": "default"
+     },
+     "plain_text": "query_type: \"support\"",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " in Flow State.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " in Flow State.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "7be2149f-ae73-41d1-9881-23c21a5f1a38",
+  "parent": {
+   "type": "page_id",
+   "page_id": "09694183-19f3-8258-9a29-81e6d6b3c973"
+  },
+  "created_time": "2026-07-04T07:36:00.000Z",
+  "last_edited_time": "2026-07-04T07:36:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Beide Sessions schreiben in einen Flow-State-Schl\u00fcssel, der nicht nach Session-ID namespaced ist. Es gibt nur einen ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Beide Sessions schreiben in einen Flow-State-Schl\u00fcssel, der nicht nach Session-ID namespaced ist. Es gibt nur einen ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "query_type",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": true,
+      "color": "default"
+     },
+     "plain_text": "query_type",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "-Schl\u00fcssel auf der Canvas, geteilt \u00fcber alle Sessions hinweg.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "-Schl\u00fcssel auf der Canvas, geteilt \u00fcber alle Sessions hinweg.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "998dcc0f-2a89-41c9-a8c7-646968833a97",
+  "parent": {
+   "type": "page_id",
+   "page_id": "09694183-19f3-8258-9a29-81e6d6b3c973"
+  },
+  "created_time": "2026-07-04T07:36:00.000Z",
+  "last_edited_time": "2026-07-04T07:36:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Der Condition Node von User A liest ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Der Condition Node von User A liest ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "query_type",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": true,
+      "color": "default"
+     },
+     "plain_text": "query_type",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " und erh\u00e4lt ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " und erh\u00e4lt ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "\"support\"",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": true,
+      "color": "default"
+     },
+     "plain_text": "\"support\"",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": ", den Wert, den die Session von User B geschrieben hat. User A wird zu Specialist A statt zu Specialist B geroutet. Specialist A bearbeitet eine Supportanfrage im Namen des Account-Kontexts von User A. Die Antwort ist falsch f\u00fcr die urspr\u00fcngliche Frage von User A.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": ", den Wert, den die Session von User B geschrieben hat. User A wird zu Specialist A statt zu Specialist B geroutet. Specialist A bearbeitet eine Supportanfrage im Namen des Account-Kontexts von User A. Die Antwort ist falsch f\u00fcr die urspr\u00fcngliche Frage von User A.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "c8e8a442-4b2f-4e3e-abe2-91724e5a401d",
+  "parent": {
+   "type": "page_id",
+   "page_id": "09694183-19f3-8258-9a29-81e6d6b3c973"
+  },
+  "created_time": "2026-07-04T07:36:00.000Z",
+  "last_edited_time": "2026-07-04T07:36:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Fragen zur Orientierung deiner Analyse:",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Fragen zur Orientierung deiner Analyse:",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "66dd271f-22f6-4711-8b5c-cc4b13d18324",
+  "parent": {
+   "type": "page_id",
+   "page_id": "09694183-19f3-8258-9a29-81e6d6b3c973"
+  },
+  "created_time": "2026-07-04T07:36:00.000Z",
+  "last_edited_time": "2026-07-04T07:36:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Welcher konkrete Mechanismus erlaubt es dem Schreibvorgang von User B, den Wert von User A zu \u00fcberschreiben?",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Welcher konkrete Mechanismus erlaubt es dem Schreibvorgang von User B, den Wert von User A zu \u00fcberschreiben?",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "777f1ed9-dc85-41fc-925c-475f58390b98",
+  "parent": {
+   "type": "page_id",
+   "page_id": "09694183-19f3-8258-9a29-81e6d6b3c973"
+  },
+  "created_time": "2026-07-04T07:36:00.000Z",
+  "last_edited_time": "2026-07-04T07:36:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Wie verhindert Session-Namespacing eines Flow-State-Schl\u00fcssels diesen Fehler?",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Wie verhindert Session-Namespacing eines Flow-State-Schl\u00fcssels diesen Fehler?",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "3291c131-a477-4a88-8610-94a97fdb87d6",
+  "parent": {
+   "type": "page_id",
+   "page_id": "09694183-19f3-8258-9a29-81e6d6b3c973"
+  },
+  "created_time": "2026-07-04T07:36:00.000Z",
+  "last_edited_time": "2026-07-04T07:36:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Schreibe das Namespaced-Key-Pattern auf, das du f\u00fcr ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Schreibe das Namespaced-Key-Pattern auf, das du f\u00fcr ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "query_type",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": true,
+      "color": "default"
+     },
+     "plain_text": "query_type",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " auf der Vela-Canvas verwenden w\u00fcrdest, und identifiziere, welcher Node es schreibt und welcher Node es liest.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " auf der Vela-Canvas verwenden w\u00fcrdest, und identifiziere, welcher Node es schreibt und welcher Node es liest.",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "cceb78a3-520a-461a-86c0-6fda7b092e4d",
+  "parent": {
+   "type": "page_id",
+   "page_id": "09694183-19f3-8258-9a29-81e6d6b3c973"
+  },
+  "created_time": "2026-07-04T07:36:00.000Z",
+  "last_edited_time": "2026-07-04T07:36:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Kann dieser Fehler aus dem Log an Position 1 erkannt werden? Wonach w\u00fcrdest du suchen?",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Kann dieser Fehler aus dem Log an Position 1 erkannt werden? Wonach w\u00fcrdest du suchen?",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "5b95e677-0eb3-437c-881c-bb9af549b414",
+  "parent": {
+   "type": "page_id",
+   "page_id": "09694183-19f3-8258-9a29-81e6d6b3c973"
+  },
+  "created_time": "2026-07-04T07:36:00.000Z",
+  "last_edited_time": "2026-07-04T07:36:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_3",
+  "heading_3": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Szenario 5: Ein Recovery-Pfad stellt State auf den falschen sicheren State zur\u00fcck",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Szenario 5: Ein Recovery-Pfad stellt State auf den falschen sicheren State zur\u00fcck",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "083cc6b5-3879-4952-b528-68c17f39cc31",
+  "parent": {
+   "type": "page_id",
+   "page_id": "09694183-19f3-8258-9a29-81e6d6b3c973"
+  },
+  "created_time": "2026-07-04T07:36:00.000Z",
+  "last_edited_time": "2026-07-04T07:36:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Die Vela-Canvas hat einen Recovery-Pfad: Wenn ein Spezialagent scheitert, nachdem der Classifier bereits ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Die Vela-Canvas hat einen Recovery-Pfad: Wenn ein Spezialagent scheitert, nachdem der Classifier bereits ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "query_type",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": true,
+      "color": "default"
+     },
+     "plain_text": "query_type",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " in Flow State geschrieben hat, recovered das System, indem es ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " in Flow State geschrieben hat, recovered das System, indem es ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "query_type",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": true,
+      "color": "default"
+     },
+     "plain_text": "query_type",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " auf ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " auf ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "null",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": true,
+      "color": "default"
+     },
+     "plain_text": "null",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " zur\u00fccksetzt und zur\u00fcck zum Classifier routet.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " zur\u00fccksetzt und zur\u00fcck zum Classifier routet.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "ec4c1ac5-a244-4c69-971d-0b24c6d7f407",
+  "parent": {
+   "type": "page_id",
+   "page_id": "09694183-19f3-8258-9a29-81e6d6b3c973"
+  },
+  "created_time": "2026-07-04T07:36:00.000Z",
+  "last_edited_time": "2026-07-04T20:16:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "W\u00e4hrend einer Session scheitert Specialist C mitten in der Ausf\u00fchrung. Der Recovery-Pfad wird aktiviert. Er setzt ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "W\u00e4hrend einer Session scheitert Specialist C mitten in der Ausf\u00fchrung. Der Recovery-Pfad wird aktiviert. Er setzt ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "query_type",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": true,
+      "color": "default"
+     },
+     "plain_text": "query_type",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " auf ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " auf ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "null",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": true,
+      "color": "default"
+     },
+     "plain_text": "null",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " zur\u00fcck, soweit korrekt. Aber er liest auch ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " zur\u00fcck, soweit korrekt. Aber er liest auch ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "last_routed_agent",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": true,
+      "color": "default"
+     },
+     "plain_text": "last_routed_agent",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " aus Flow State (einen Schl\u00fcssel, der aufzeichnet, welcher Spezialist zuletzt lief) und schreibt diesen Wert als Diagnosemeldung in die Antwort: \u201eRouting to support agent was interrupted. Please re-send your query.\"",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " aus Flow State (einen Schl\u00fcssel, der aufzeichnet, welcher Spezialist zuletzt lief) und schreibt diesen Wert als Diagnosemeldung in die Antwort: \u201eRouting to support agent was interrupted. Please re-send your query.\"",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "c5f82e65-266d-4aba-a243-5ecdd84905a9",
+  "parent": {
+   "type": "page_id",
+   "page_id": "09694183-19f3-8258-9a29-81e6d6b3c973"
+  },
+  "created_time": "2026-07-04T07:36:00.000Z",
+  "last_edited_time": "2026-07-04T20:16:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Das Problem: ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Das Problem: ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "last_routed_agent",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": true,
+      "color": "default"
+     },
+     "plain_text": "last_routed_agent",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " enth\u00e4lt den Wert ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " enth\u00e4lt den Wert ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "\"specialist_c\"",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": true,
+      "color": "default"
+     },
+     "plain_text": "\"specialist_c\"",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " aus der aktuellen Session, korrekt. Aber die Diagnosemeldung sagt \u201esupport agent\", also Specialist A, nicht Specialist C (der Eskalationsanfragen bearbeitet). Das Label war im Reply-Template hardcodiert und passt nicht zum tats\u00e4chlichen Wert in ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " aus der aktuellen Session, korrekt. Aber die Diagnosemeldung sagt \u201esupport agent\", also Specialist A, nicht Specialist C (der Eskalationsanfragen bearbeitet). Das Label war im Reply-Template hardcodiert und passt nicht zum tats\u00e4chlichen Wert in ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "last_routed_agent",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": true,
+      "color": "default"
+     },
+     "plain_text": "last_routed_agent",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": ".",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": ".",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "a1477c7a-e146-4f26-8df9-c995a2ba01bf",
+  "parent": {
+   "type": "page_id",
+   "page_id": "09694183-19f3-8258-9a29-81e6d6b3c973"
+  },
+  "created_time": "2026-07-04T07:36:00.000Z",
+  "last_edited_time": "2026-07-04T07:36:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Ein zweites Problem: ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Ein zweites Problem: ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "last_routed_agent",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": true,
+      "color": "default"
+     },
+     "plain_text": "last_routed_agent",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " wird nach dem Recovery-Pfad nicht zur\u00fcckgesetzt. Eine nachfolgende Anfrage in derselben Session liest ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " wird nach dem Recovery-Pfad nicht zur\u00fcckgesetzt. Eine nachfolgende Anfrage in derselben Session liest ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "last_routed_agent: \"specialist_c\"",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": true,
+      "color": "default"
+     },
+     "plain_text": "last_routed_agent: \"specialist_c\"",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": ", obwohl die neue Anfrage noch nicht klassifiziert und geroutet wurde. Wenn irgendetwas in der Canvas ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": ", obwohl die neue Anfrage noch nicht klassifiziert und geroutet wurde. Wenn irgendetwas in der Canvas ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "last_routed_agent",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": true,
+      "color": "default"
+     },
+     "plain_text": "last_routed_agent",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " als Eingabe f\u00fcr eine Entscheidung liest, liest es einen veralteten Wert.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " als Eingabe f\u00fcr eine Entscheidung liest, liest es einen veralteten Wert.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "36fd3b5d-1172-4c08-9fb7-e3278dcf0930",
+  "parent": {
+   "type": "page_id",
+   "page_id": "09694183-19f3-8258-9a29-81e6d6b3c973"
+  },
+  "created_time": "2026-07-04T07:36:00.000Z",
+  "last_edited_time": "2026-07-04T07:36:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Fragen zur Orientierung deiner Analyse:",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Fragen zur Orientierung deiner Analyse:",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "6bc9a4e6-1459-45f3-aa98-094fbfd1213c",
+  "parent": {
+   "type": "page_id",
+   "page_id": "09694183-19f3-8258-9a29-81e6d6b3c973"
+  },
+  "created_time": "2026-07-04T07:36:00.000Z",
+  "last_edited_time": "2026-07-04T07:36:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Dieses Szenario umfasst zwei separate fehlgeschlagene Schutzma\u00dfnahmen. Benenne beide klar.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Dieses Szenario umfasst zwei separate fehlgeschlagene Schutzma\u00dfnahmen. Benenne beide klar.",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "cf735c36-9195-400b-8d8c-3ebd35bc782b",
+  "parent": {
+   "type": "page_id",
+   "page_id": "09694183-19f3-8258-9a29-81e6d6b3c973"
+  },
+  "created_time": "2026-07-04T07:36:00.000Z",
+  "last_edited_time": "2026-07-04T07:36:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "F\u00fcr den ersten Fehler: Was ist die korrekte Designregel f\u00fcr nutzerseitige Diagnosemeldungen, die Flow-State-Werte referenzieren?",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "F\u00fcr den ersten Fehler: Was ist die korrekte Designregel f\u00fcr nutzerseitige Diagnosemeldungen, die Flow-State-Werte referenzieren?",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "7dddf993-30e9-437c-ad4f-5683ff504aa3",
+  "parent": {
+   "type": "page_id",
+   "page_id": "09694183-19f3-8258-9a29-81e6d6b3c973"
+  },
+  "created_time": "2026-07-04T07:36:00.000Z",
+  "last_edited_time": "2026-07-04T07:36:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "F\u00fcr den zweiten Fehler: An welchem Punkt in der Recovery-Sequenz sollte ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "F\u00fcr den zweiten Fehler: An welchem Punkt in der Recovery-Sequenz sollte ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "last_routed_agent",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": true,
+      "color": "default"
+     },
+     "plain_text": "last_routed_agent",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " zur\u00fcckgesetzt werden, und auf welchen Wert?",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " zur\u00fcckgesetzt werden, und auf welchen Wert?",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "19b1580d-23af-4d03-baf9-1615ddb6fa19",
+  "parent": {
+   "type": "page_id",
+   "page_id": "09694183-19f3-8258-9a29-81e6d6b3c973"
+  },
+  "created_time": "2026-07-04T07:36:00.000Z",
+  "last_edited_time": "2026-07-04T07:36:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Wie interagiert ein Completion-Signal (ein ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Wie interagiert ein Completion-Signal (ein ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "status",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": true,
+      "color": "default"
+     },
+     "plain_text": "status",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "Schl\u00fcssel) mit ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Schl\u00fcssel) mit ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "last_routed_agent",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": true,
+      "color": "default"
+     },
+     "plain_text": "last_routed_agent",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": ", um diesen Fehler besser erkennbar zu machen?",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": ", um diesen Fehler besser erkennbar zu machen?",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "f7394183-19f3-8212-b783-811c0031052d",
+  "parent": {
+   "type": "page_id",
+   "page_id": "09694183-19f3-8258-9a29-81e6d6b3c973"
+  },
+  "created_time": "2026-07-03T13:15:00.000Z",
+  "last_edited_time": "2026-07-04T07:36:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_2",
+  "heading_2": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Hinweise",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Hinweise",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "4de94183-19f3-8287-83a1-012fbe3ad243",
+  "parent": {
+   "type": "page_id",
+   "page_id": "09694183-19f3-8258-9a29-81e6d6b3c973"
+  },
+  "created_time": "2026-07-03T13:15:00.000Z",
+  "last_edited_time": "2026-07-04T07:37:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": true,
+  "in_trash": false,
+  "type": "toggle",
+  "toggle": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Nutze diese, wenn du sie brauchst.",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Nutze diese, wenn du sie brauchst.",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false,
+  "_children": [
+   {
+    "object": "block",
+    "id": "5fa94183-19f3-8352-bcb1-8131598ede53",
+    "parent": {
+     "type": "block_id",
+     "block_id": "4de94183-19f3-8287-83a1-012fbe3ad243"
+    },
+    "created_time": "2026-07-03T13:15:00.000Z",
+    "last_edited_time": "2026-07-04T07:37:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "bulleted_list_item",
+    "bulleted_list_item": {
+     "rich_text": [
+      {
+       "type": "text",
+       "text": {
+        "content": "Wenn ein Flow-State-Schl\u00fcssel von mehr als einem Node gelesen und nur von einem geschrieben wird, ist der Fehler wahrscheinlich ein ",
+        "link": null
+       },
+       "annotations": {
+        "bold": false,
+        "italic": false,
+        "strikethrough": false,
+        "underline": false,
+        "code": false,
+        "color": "default"
+       },
+       "plain_text": "Wenn ein Flow-State-Schl\u00fcssel von mehr als einem Node gelesen und nur von einem geschrieben wird, ist der Fehler wahrscheinlich ein ",
+       "href": null
+      },
+      {
+       "type": "text",
+       "text": {
+        "content": "Timing- oder Reset-Problem",
+        "link": null
+       },
+       "annotations": {
+        "bold": true,
+        "italic": false,
+        "strikethrough": false,
+        "underline": false,
+        "code": false,
+        "color": "default"
+       },
+       "plain_text": "Timing- oder Reset-Problem",
+       "href": null
+      },
+      {
+       "type": "text",
+       "text": {
+        "content": "; frage, wann der Schreibvorgang relativ zum Lesevorgang passiert.",
+        "link": null
+       },
+       "annotations": {
+        "bold": false,
+        "italic": false,
+        "strikethrough": false,
+        "underline": false,
+        "code": false,
+        "color": "default"
+       },
+       "plain_text": "; frage, wann der Schreibvorgang relativ zum Lesevorgang passiert.",
+       "href": null
+      }
+     ],
+     "color": "default"
+    },
+    "archived": false
+   },
+   {
+    "object": "block",
+    "id": "39394183-19f3-8069-bc57-c60be164f7e8",
+    "parent": {
+     "type": "block_id",
+     "block_id": "4de94183-19f3-8287-83a1-012fbe3ad243"
+    },
+    "created_time": "2026-07-04T07:37:00.000Z",
+    "last_edited_time": "2026-07-04T07:37:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "bulleted_list_item",
+    "bulleted_list_item": {
+     "rich_text": [
+      {
+       "type": "text",
+       "text": {
+        "content": "Wenn ein Schl\u00fcssel Informationen aus einer fr\u00fcheren Anfrage in eine neue Anfrage tr\u00e4gt, ist der Fix fast immer ein ",
+        "link": null
+       },
+       "annotations": {
+        "bold": false,
+        "italic": false,
+        "strikethrough": false,
+        "underline": false,
+        "code": false,
+        "color": "default"
+       },
+       "plain_text": "Wenn ein Schl\u00fcssel Informationen aus einer fr\u00fcheren Anfrage in eine neue Anfrage tr\u00e4gt, ist der Fix fast immer ein ",
+       "href": null
+      },
+      {
+       "type": "text",
+       "text": {
+        "content": "Reset bei Session-Start oder Query-Start",
+        "link": null
+       },
+       "annotations": {
+        "bold": true,
+        "italic": false,
+        "strikethrough": false,
+        "underline": false,
+        "code": false,
+        "color": "default"
+       },
+       "plain_text": "Reset bei Session-Start oder Query-Start",
+       "href": null
+      },
+      {
+       "type": "text",
+       "text": {
+        "content": "; nicht eine \u00c4nderung daran, wer ihn liest.",
+        "link": null
+       },
+       "annotations": {
+        "bold": false,
+        "italic": false,
+        "strikethrough": false,
+        "underline": false,
+        "code": false,
+        "color": "default"
+       },
+       "plain_text": "; nicht eine \u00c4nderung daran, wer ihn liest.",
+       "href": null
+      }
+     ],
+     "color": "default"
+    },
+    "archived": false
+   },
+   {
+    "object": "block",
+    "id": "39394183-19f3-80fb-8b3d-daa68646291c",
+    "parent": {
+     "type": "block_id",
+     "block_id": "4de94183-19f3-8287-83a1-012fbe3ad243"
+    },
+    "created_time": "2026-07-04T07:37:00.000Z",
+    "last_edited_time": "2026-07-04T07:37:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "bulleted_list_item",
+    "bulleted_list_item": {
+     "rich_text": [
+      {
+       "type": "text",
+       "text": {
+        "content": "Wenn ein Schl\u00fcssel in einen persistenten Store geschrieben wird, frage, ob der Inhalt ",
+        "link": null
+       },
+       "annotations": {
+        "bold": false,
+        "italic": false,
+        "strikethrough": false,
+        "underline": false,
+        "code": false,
+        "color": "default"
+       },
+       "plain_text": "Wenn ein Schl\u00fcssel in einen persistenten Store geschrieben wird, frage, ob der Inhalt ",
+       "href": null
+      },
+      {
+       "type": "text",
+       "text": {
+        "content": "session-spezifisch oder account-level",
+        "link": null
+       },
+       "annotations": {
+        "bold": true,
+        "italic": false,
+        "strikethrough": false,
+        "underline": false,
+        "code": false,
+        "color": "default"
+       },
+       "plain_text": "session-spezifisch oder account-level",
+       "href": null
+      },
+      {
+       "type": "text",
+       "text": {
+        "content": " ist; nur account-level, zeitstabiler Inhalt geh\u00f6rt in einen persistenten Store.",
+        "link": null
+       },
+       "annotations": {
+        "bold": false,
+        "italic": false,
+        "strikethrough": false,
+        "underline": false,
+        "code": false,
+        "color": "default"
+       },
+       "plain_text": " ist; nur account-level, zeitstabiler Inhalt geh\u00f6rt in einen persistenten Store.",
+       "href": null
+      }
+     ],
+     "color": "default"
+    },
+    "archived": false
+   },
+   {
+    "object": "block",
+    "id": "39394183-19f3-80b8-beab-ecc508bf8524",
+    "parent": {
+     "type": "block_id",
+     "block_id": "4de94183-19f3-8287-83a1-012fbe3ad243"
+    },
+    "created_time": "2026-07-04T07:37:00.000Z",
+    "last_edited_time": "2026-07-04T07:37:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "bulleted_list_item",
+    "bulleted_list_item": {
+     "rich_text": [
+      {
+       "type": "text",
+       "text": {
+        "content": "Wenn zwei Sessions denselben Schl\u00fcsselnamen teilen, ist der Fix ",
+        "link": null
+       },
+       "annotations": {
+        "bold": false,
+        "italic": false,
+        "strikethrough": false,
+        "underline": false,
+        "code": false,
+        "color": "default"
+       },
+       "plain_text": "Wenn zwei Sessions denselben Schl\u00fcsselnamen teilen, ist der Fix ",
+       "href": null
+      },
+      {
+       "type": "text",
+       "text": {
+        "content": "Namespacing nach Session-ID",
+        "link": null
+       },
+       "annotations": {
+        "bold": true,
+        "italic": false,
+        "strikethrough": false,
+        "underline": false,
+        "code": false,
+        "color": "default"
+       },
+       "plain_text": "Namespacing nach Session-ID",
+       "href": null
+      },
+      {
+       "type": "text",
+       "text": {
+        "content": "; der Schl\u00fcsselname wird zu ",
+        "link": null
+       },
+       "annotations": {
+        "bold": false,
+        "italic": false,
+        "strikethrough": false,
+        "underline": false,
+        "code": false,
+        "color": "default"
+       },
+       "plain_text": "; der Schl\u00fcsselname wird zu ",
+       "href": null
+      },
+      {
+       "type": "text",
+       "text": {
+        "content": "query_type:{session_id}",
+        "link": null
+       },
+       "annotations": {
+        "bold": false,
+        "italic": false,
+        "strikethrough": false,
+        "underline": false,
+        "code": true,
+        "color": "default"
+       },
+       "plain_text": "query_type:{session_id}",
+       "href": null
+      },
+      {
+       "type": "text",
+       "text": {
+        "content": " statt einem einzelnen globalen ",
+        "link": null
+       },
+       "annotations": {
+        "bold": false,
+        "italic": false,
+        "strikethrough": false,
+        "underline": false,
+        "code": false,
+        "color": "default"
+       },
+       "plain_text": " statt einem einzelnen globalen ",
+       "href": null
+      },
+      {
+       "type": "text",
+       "text": {
+        "content": "query_type",
+        "link": null
+       },
+       "annotations": {
+        "bold": false,
+        "italic": false,
+        "strikethrough": false,
+        "underline": false,
+        "code": true,
+        "color": "default"
+       },
+       "plain_text": "query_type",
+       "href": null
+      },
+      {
+       "type": "text",
+       "text": {
+        "content": ".",
+        "link": null
+       },
+       "annotations": {
+        "bold": false,
+        "italic": false,
+        "strikethrough": false,
+        "underline": false,
+        "code": false,
+        "color": "default"
+       },
+       "plain_text": ".",
+       "href": null
+      }
+     ],
+     "color": "default"
+    },
+    "archived": false
+   },
+   {
+    "object": "block",
+    "id": "39394183-19f3-80d7-a3b0-e0b73de5d581",
+    "parent": {
+     "type": "block_id",
+     "block_id": "4de94183-19f3-8287-83a1-012fbe3ad243"
+    },
+    "created_time": "2026-07-04T07:37:00.000Z",
+    "last_edited_time": "2026-07-04T07:37:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "bulleted_list_item",
+    "bulleted_list_item": {
+     "rich_text": [
+      {
+       "type": "text",
+       "text": {
+        "content": "Wenn eine Recovery-Nachricht einen Flow-State-Wert referenziert, muss der Nachrichtentext ",
+        "link": null
+       },
+       "annotations": {
+        "bold": false,
+        "italic": false,
+        "strikethrough": false,
+        "underline": false,
+        "code": false,
+        "color": "default"
+       },
+       "plain_text": "Wenn eine Recovery-Nachricht einen Flow-State-Wert referenziert, muss der Nachrichtentext ",
+       "href": null
+      },
+      {
+       "type": "text",
+       "text": {
+        "content": "zur Laufzeit aus dem tats\u00e4chlichen Schl\u00fcsselwert abgeleitet",
+        "link": null
+       },
+       "annotations": {
+        "bold": true,
+        "italic": false,
+        "strikethrough": false,
+        "underline": false,
+        "code": false,
+        "color": "default"
+       },
+       "plain_text": "zur Laufzeit aus dem tats\u00e4chlichen Schl\u00fcsselwert abgeleitet",
+       "href": null
+      },
+      {
+       "type": "text",
+       "text": {
+        "content": " werden, nicht im Template hardcodiert sein.",
+        "link": null
+       },
+       "annotations": {
+        "bold": false,
+        "italic": false,
+        "strikethrough": false,
+        "underline": false,
+        "code": false,
+        "color": "default"
+       },
+       "plain_text": " werden, nicht im Template hardcodiert sein.",
+       "href": null
+      }
+     ],
+     "color": "default"
+    },
+    "archived": false
+   }
+  ]
+ },
+ {
+  "object": "block",
+  "id": "8c694183-19f3-83db-865f-8130263666fb",
+  "parent": {
+   "type": "page_id",
+   "page_id": "09694183-19f3-8258-9a29-81e6d6b3c973"
+  },
+  "created_time": "2026-07-03T13:15:00.000Z",
+  "last_edited_time": "2026-07-03T13:15:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "41094183-19f3-8379-a6be-81de8c85f377",
+  "parent": {
+   "type": "page_id",
+   "page_id": "09694183-19f3-8258-9a29-81e6d6b3c973"
+  },
+  "created_time": "2026-07-03T13:15:00.000Z",
+  "last_edited_time": "2026-07-04T07:38:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": true,
+  "in_trash": false,
+  "type": "callout",
+  "callout": {
+   "rich_text": [],
+   "icon": null,
+   "color": "gray_background"
+  },
+  "archived": false,
+  "_children": [
+   {
+    "object": "block",
+    "id": "11294183-19f3-82c9-af09-0188eba8955b",
+    "parent": {
+     "type": "block_id",
+     "block_id": "41094183-19f3-8379-a6be-81de8c85f377"
+    },
+    "created_time": "2026-07-03T13:15:00.000Z",
+    "last_edited_time": "2026-07-04T07:37:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "heading_3",
+    "heading_3": {
+     "rich_text": [
+      {
+       "type": "text",
+       "text": {
+        "content": "\ud83d\udd25 AI nutzen, wenn du feststeckst",
+        "link": null
+       },
+       "annotations": {
+        "bold": false,
+        "italic": false,
+        "strikethrough": false,
+        "underline": false,
+        "code": false,
+        "color": "default"
+       },
+       "plain_text": "\ud83d\udd25 AI nutzen, wenn du feststeckst",
+       "href": null
+      }
+     ],
+     "is_toggleable": false,
+     "color": "default"
+    },
+    "archived": false
+   },
+   {
+    "object": "block",
+    "id": "2dd0218d-49df-488d-88f3-c0e576cada13",
+    "parent": {
+     "type": "block_id",
+     "block_id": "41094183-19f3-8379-a6be-81de8c85f377"
+    },
+    "created_time": "2026-07-04T07:38:00.000Z",
+    "last_edited_time": "2026-07-04T07:38:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+     "rich_text": [
+      {
+       "type": "text",
+       "text": {
+        "content": "Wenn du ein Szenario durcharbeitest und den konkreten Mechanismus, der den Fehler verursacht, nicht identifizieren kannst, ist ein sinnvoller Workflow:",
+        "link": null
+       },
+       "annotations": {
+        "bold": false,
+        "italic": false,
+        "strikethrough": false,
+        "underline": false,
+        "code": false,
+        "color": "default"
+       },
+       "plain_text": "Wenn du ein Szenario durcharbeitest und den konkreten Mechanismus, der den Fehler verursacht, nicht identifizieren kannst, ist ein sinnvoller Workflow:",
+       "href": null
+      }
+     ],
+     "icon": null,
+     "color": "default"
+    },
+    "archived": false
+   },
+   {
+    "object": "block",
+    "id": "20c2b8ce-7400-4388-a788-7146d85b4a5c",
+    "parent": {
+     "type": "block_id",
+     "block_id": "41094183-19f3-8379-a6be-81de8c85f377"
+    },
+    "created_time": "2026-07-04T07:38:00.000Z",
+    "last_edited_time": "2026-07-04T07:38:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "numbered_list_item",
+    "numbered_list_item": {
+     "rich_text": [
+      {
+       "type": "text",
+       "text": {
+        "content": "Benenne zuerst das Symptom in einfacher Sprache: \u201eDer Nutzer erhielt die Antwort des falschen Spezialisten.\"",
+        "link": null
+       },
+       "annotations": {
+        "bold": false,
+        "italic": false,
+        "strikethrough": false,
+        "underline": false,
+        "code": false,
+        "color": "default"
+       },
+       "plain_text": "Benenne zuerst das Symptom in einfacher Sprache: \u201eDer Nutzer erhielt die Antwort des falschen Spezialisten.\"",
+       "href": null
+      }
+     ],
+     "color": "default"
+    },
+    "archived": false
+   },
+   {
+    "object": "block",
+    "id": "0777133d-8e84-4fa7-ac76-274dc9004f42",
+    "parent": {
+     "type": "block_id",
+     "block_id": "41094183-19f3-8379-a6be-81de8c85f377"
+    },
+    "created_time": "2026-07-04T07:38:00.000Z",
+    "last_edited_time": "2026-07-04T07:38:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "numbered_list_item",
+    "numbered_list_item": {
+     "rich_text": [
+      {
+       "type": "text",
+       "text": {
+        "content": "Verfolge einen Schritt zur\u00fcck: \u201eWas hat der Condition Node gelesen, um diese Routing-Entscheidung zu treffen?\"",
+        "link": null
+       },
+       "annotations": {
+        "bold": false,
+        "italic": false,
+        "strikethrough": false,
+        "underline": false,
+        "code": false,
+        "color": "default"
+       },
+       "plain_text": "Verfolge einen Schritt zur\u00fcck: \u201eWas hat der Condition Node gelesen, um diese Routing-Entscheidung zu treffen?\"",
+       "href": null
+      }
+     ],
+     "color": "default"
+    },
+    "archived": false
+   },
+   {
+    "object": "block",
+    "id": "0374afb4-08ef-4ada-b7f4-41a412364656",
+    "parent": {
+     "type": "block_id",
+     "block_id": "41094183-19f3-8379-a6be-81de8c85f377"
+    },
+    "created_time": "2026-07-04T07:38:00.000Z",
+    "last_edited_time": "2026-07-04T07:38:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "numbered_list_item",
+    "numbered_list_item": {
+     "rich_text": [
+      {
+       "type": "text",
+       "text": {
+        "content": "Frage, wo dieser Wert geschrieben wurde und wann.",
+        "link": null
+       },
+       "annotations": {
+        "bold": false,
+        "italic": false,
+        "strikethrough": false,
+        "underline": false,
+        "code": false,
+        "color": "default"
+       },
+       "plain_text": "Frage, wo dieser Wert geschrieben wurde und wann.",
+       "href": null
+      }
+     ],
+     "color": "default"
+    },
+    "archived": false
+   },
+   {
+    "object": "block",
+    "id": "e50dd417-bfbd-41fe-8693-a24c90176c05",
+    "parent": {
+     "type": "block_id",
+     "block_id": "41094183-19f3-8379-a6be-81de8c85f377"
+    },
+    "created_time": "2026-07-04T07:38:00.000Z",
+    "last_edited_time": "2026-07-04T07:38:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "numbered_list_item",
+    "numbered_list_item": {
+     "rich_text": [
+      {
+       "type": "text",
+       "text": {
+        "content": "Bitte dann AI, deine Diagnose zu best\u00e4tigen: ",
+        "link": null
+       },
+       "annotations": {
+        "bold": false,
+        "italic": false,
+        "strikethrough": false,
+        "underline": false,
+        "code": false,
+        "color": "default"
+       },
+       "plain_text": "Bitte dann AI, deine Diagnose zu best\u00e4tigen: ",
+       "href": null
+      },
+      {
+       "type": "text",
+       "text": {
+        "content": "\u201eIn Flowise Agentflow V2, if a Flow State key is written by the Classifier and then read by a Condition Node, what happens to that key value if the Classifier's Update Flow State step fails to execute? Does the Condition Node read the previous value or null?\"",
+        "link": null
+       },
+       "annotations": {
+        "bold": false,
+        "italic": true,
+        "strikethrough": false,
+        "underline": false,
+        "code": false,
+        "color": "default"
+       },
+       "plain_text": "\u201eIn Flowise Agentflow V2, if a Flow State key is written by the Classifier and then read by a Condition Node, what happens to that key value if the Classifier's Update Flow State step fails to execute? Does the Condition Node read the previous value or null?\"",
+       "href": null
+      }
+     ],
+     "color": "default"
+    },
+    "archived": false
+   },
+   {
+    "object": "block",
+    "id": "dc1f06c9-265f-4f3c-a63e-aaa2cc5e7e43",
+    "parent": {
+     "type": "block_id",
+     "block_id": "41094183-19f3-8379-a6be-81de8c85f377"
+    },
+    "created_time": "2026-07-04T07:38:00.000Z",
+    "last_edited_time": "2026-07-04T07:38:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+     "rich_text": [
+      {
+       "type": "text",
+       "text": {
+        "content": "Nutze AI, um den Mechanismus zu kl\u00e4ren, nicht um die Diagnose f\u00fcr dich zu erledigen. Die Schutzma\u00dfnahme, die du entwirfst, muss in deinem eigenen Reasoning \u00fcber die Canvas verankert sein. Eine AI-generierte Schutzma\u00dfnahme, die du nicht verstehst, wird in deiner Projektverteidigung nicht standhalten.",
+        "link": null
+       },
+       "annotations": {
+        "bold": false,
+        "italic": false,
+        "strikethrough": false,
+        "underline": false,
+        "code": false,
+        "color": "default"
+       },
+       "plain_text": "Nutze AI, um den Mechanismus zu kl\u00e4ren, nicht um die Diagnose f\u00fcr dich zu erledigen. Die Schutzma\u00dfnahme, die du entwirfst, muss in deinem eigenen Reasoning \u00fcber die Canvas verankert sein. Eine AI-generierte Schutzma\u00dfnahme, die du nicht verstehst, wird in deiner Projektverteidigung nicht standhalten.",
+       "href": null
+      }
+     ],
+     "icon": null,
+     "color": "default"
+    },
+    "archived": false
+   }
+  ]
+ },
+ {
+  "object": "block",
+  "id": "d6194183-19f3-8274-be00-0106fced2542",
+  "parent": {
+   "type": "page_id",
+   "page_id": "09694183-19f3-8258-9a29-81e6d6b3c973"
+  },
+  "created_time": "2026-07-03T13:15:00.000Z",
+  "last_edited_time": "2026-07-03T13:15:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "73194183-19f3-8336-8d92-01fabb1d5598",
+  "parent": {
+   "type": "page_id",
+   "page_id": "09694183-19f3-8258-9a29-81e6d6b3c973"
+  },
+  "created_time": "2026-07-03T13:15:00.000Z",
+  "last_edited_time": "2026-07-03T13:15:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_2",
+  "heading_2": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Checkpoints",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Checkpoints",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "a8e94afa-84c7-45f0-9156-86d3ac8309dc",
+  "parent": {
+   "type": "page_id",
+   "page_id": "09694183-19f3-8258-9a29-81e6d6b3c973"
+  },
+  "created_time": "2026-07-04T07:38:00.000Z",
+  "last_edited_time": "2026-07-04T07:38:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Pr\u00fcfe deine Schutzma\u00dfnahme bei jedem Szenario anhand dieser Fragen:",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Pr\u00fcfe deine Schutzma\u00dfnahme bei jedem Szenario anhand dieser Fragen:",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "e4d5b062-5e0a-4194-a0b5-b19331591762",
+  "parent": {
+   "type": "page_id",
+   "page_id": "09694183-19f3-8258-9a29-81e6d6b3c973"
+  },
+  "created_time": "2026-07-04T07:38:00.000Z",
+  "last_edited_time": "2026-07-04T07:38:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "to_do",
+  "to_do": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Ist die Schutzma\u00dfnahme eine ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Ist die Schutzma\u00dfnahme eine ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "konkrete Designentscheidung",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "konkrete Designentscheidung",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " (mit einem spezifischen Node, Schl\u00fcssel, Wert oder einer Konfiguration), oder ist sie noch ein allgemeines Prinzip? Ein allgemeines Prinzip ist keine Schutzma\u00dfnahme.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " (mit einem spezifischen Node, Schl\u00fcssel, Wert oder einer Konfiguration), oder ist sie noch ein allgemeines Prinzip? Ein allgemeines Prinzip ist keine Schutzma\u00dfnahme.",
+     "href": null
+    }
+   ],
+   "checked": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "63873af3-f758-4f41-9cd2-2ebc8b2a6de8",
+  "parent": {
+   "type": "page_id",
+   "page_id": "09694183-19f3-8258-9a29-81e6d6b3c973"
+  },
+  "created_time": "2026-07-04T07:38:00.000Z",
+  "last_edited_time": "2026-07-04T07:38:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "to_do",
+  "to_do": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Verhindert",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Verhindert",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " die Schutzma\u00dfnahme den Fehler, ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " die Schutzma\u00dfnahme den Fehler, ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "begrenzt",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "begrenzt",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " sie den Schaden oder ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " sie den Schaden oder ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "macht sie den Fehler erkennbar",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "macht sie den Fehler erkennbar",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "? Benenne, was sie tut. Eine einzelne Schutzma\u00dfnahme muss nicht alle drei leisten.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "? Benenne, was sie tut. Eine einzelne Schutzma\u00dfnahme muss nicht alle drei leisten.",
+     "href": null
+    }
+   ],
+   "checked": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "96dfb0be-381e-4adb-b01e-50a0c393c63b",
+  "parent": {
+   "type": "page_id",
+   "page_id": "09694183-19f3-8258-9a29-81e6d6b3c973"
+  },
+  "created_time": "2026-07-04T07:38:00.000Z",
+  "last_edited_time": "2026-07-04T07:38:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "to_do",
+  "to_do": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "F\u00fchrt die Schutzma\u00dfnahme ein ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "F\u00fchrt die Schutzma\u00dfnahme ein ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "neues Risiko",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "neues Risiko",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " ein, zum Beispiel einen Reset, der zu fr\u00fch feuert und einen Schl\u00fcssel l\u00f6scht, den ein anderer Node noch braucht?",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " ein, zum Beispiel einen Reset, der zu fr\u00fch feuert und einen Schl\u00fcssel l\u00f6scht, den ein anderer Node noch braucht?",
+     "href": null
+    }
+   ],
+   "checked": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "454e476e-0a07-40d5-9c4b-92913d3b3688",
+  "parent": {
+   "type": "page_id",
+   "page_id": "09694183-19f3-8258-9a29-81e6d6b3c973"
+  },
+  "created_time": "2026-07-04T07:38:00.000Z",
+  "last_edited_time": "2026-07-04T07:38:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "to_do",
+  "to_do": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Kann der Fehler \u00fcber die ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Kann der Fehler \u00fcber die ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "vier Log-Positionen",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "vier Log-Positionen",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " erkannt werden, die in der vorherigen Lektion entworfen wurden? Wenn ja, welche Position w\u00fcrde ihn sichtbar machen, und wonach w\u00fcrdest du im Log suchen?",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " erkannt werden, die in der vorherigen Lektion entworfen wurden? Wenn ja, welche Position w\u00fcrde ihn sichtbar machen, und wonach w\u00fcrdest du im Log suchen?",
+     "href": null
+    }
+   ],
+   "checked": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "093d3710-f4a6-4f2c-b84c-efc8b25e489e",
+  "parent": {
+   "type": "page_id",
+   "page_id": "09694183-19f3-8258-9a29-81e6d6b3c973"
+  },
+  "created_time": "2026-07-04T07:38:00.000Z",
+  "last_edited_time": "2026-07-04T07:38:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Wenn eine Schutzma\u00dfnahme ein neues Risiko einf\u00fchrt, das du nicht l\u00f6sen kannst, notiere es explizit. Ein dokumentierter Tradeoff ist besser als eine Schutzma\u00dfnahme, die ein verstecktes Problem erzeugt.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Wenn eine Schutzma\u00dfnahme ein neues Risiko einf\u00fchrt, das du nicht l\u00f6sen kannst, notiere es explizit. Ein dokumentierter Tradeoff ist besser als eine Schutzma\u00dfnahme, die ein verstecktes Problem erzeugt.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "2799968f-6ece-4b3d-a7b9-7afc4bad36aa",
+  "parent": {
+   "type": "page_id",
+   "page_id": "09694183-19f3-8258-9a29-81e6d6b3c973"
+  },
+  "created_time": "2026-07-04T07:38:00.000Z",
+  "last_edited_time": "2026-07-04T07:38:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_2",
+  "heading_2": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Zusammenfassung",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Zusammenfassung",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "975b2979-279c-4137-9b10-dac732b9c90f",
+  "parent": {
+   "type": "page_id",
+   "page_id": "09694183-19f3-8258-9a29-81e6d6b3c973"
+  },
+  "created_time": "2026-07-04T20:20:00.000Z",
+  "last_edited_time": "2026-07-04T20:20:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Fehlerquellen rechtzeitig vor der Integration vorauszusehen, macht den Unterschied zwischen einem System, das im Labor funktioniert, und einem, das der Realit\u00e4t standh\u00e4lt. Die f\u00fcnf Szenarien dieser Lektion repr\u00e4sentieren exakt jene Memory- und ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Fehlerquellen rechtzeitig vor der Integration vorauszusehen, macht den Unterschied zwischen einem System, das im Labor funktioniert, und einem, das der Realit\u00e4t standh\u00e4lt. Die f\u00fcnf Szenarien dieser Lektion repr\u00e4sentieren exakt jene Memory- und ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "State",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": true,
+      "color": "default"
+     },
+     "plain_text": "State",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "-Fehler, die in produktiven Multi-Agent-Systemen auftreten: Stale Memory (durch falsches Reset-Timing), State Contamination (innerhalb einer Session), Unsafe Persistence (in einem Shared Store), Key Collision (bei parallelen Sessions) sowie Recovery-Pfade, die einen veralteten ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "-Fehler, die in produktiven Multi-Agent-Systemen auftreten: Stale Memory (durch falsches Reset-Timing), State Contamination (innerhalb einer Session), Unsafe Persistence (in einem Shared Store), Key Collision (bei parallelen Sessions) sowie Recovery-Pfade, die einen veralteten ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "State",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": true,
+      "color": "default"
+     },
+     "plain_text": "State",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " laden.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " laden.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "70e8491d-f4fa-498d-84b3-3143a86f27eb",
+  "parent": {
+   "type": "page_id",
+   "page_id": "09694183-19f3-8258-9a29-81e6d6b3c973"
+  },
+  "created_time": "2026-07-04T20:20:00.000Z",
+  "last_edited_time": "2026-07-04T20:20:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Jede deiner entworfenen Schutzma\u00dfnahmen ist eine konkrete Designentscheidung f\u00fcr die Vela-Analyse und bereitet die Integration deines eigenen Projekts vor. In der n\u00e4chsten Lektion wendest du die Architekturentscheidungen der Sprints 1 bis 3 auf deine eigene Canvas an \u2013 und nutzt die Fehlerszenarien von heute als Ma\u00dfstab, um deine Integration auf Herz und Nieren zu pr\u00fcfen.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Jede deiner entworfenen Schutzma\u00dfnahmen ist eine konkrete Designentscheidung f\u00fcr die Vela-Analyse und bereitet die Integration deines eigenen Projekts vor. In der n\u00e4chsten Lektion wendest du die Architekturentscheidungen der Sprints 1 bis 3 auf deine eigene Canvas an \u2013 und nutzt die Fehlerszenarien von heute als Ma\u00dfstab, um deine Integration auf Herz und Nieren zu pr\u00fcfen.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "39394183-19f3-80e1-9eb8-e3f6876792d1",
+  "parent": {
+   "type": "page_id",
+   "page_id": "09694183-19f3-8258-9a29-81e6d6b3c973"
+  },
+  "created_time": "2026-07-04T20:20:00.000Z",
+  "last_edited_time": "2026-07-04T20:20:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ }
+]
