@@ -1,0 +1,3319 @@
+[
+ {
+  "object": "block",
+  "id": "3f894183-19f3-818e-8aef-c84b414014ba",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8001-a4a2-eeee3cca18a2"
+  },
+  "created_time": "2026-10-13T10:18:00.000Z",
+  "last_edited_time": "2026-10-13T10:18:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "callout",
+  "callout": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "What you will work on in this lesson:",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "What you will work on in this lesson:",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " Diagnosing a grounding failure in a deployed RAG agent, rewriting the system prompt to enforce evidence-aware behaviour, and defining a fallback protocol that handles missing information safely and professionally.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " Diagnosing a grounding failure in a deployed RAG agent, rewriting the system prompt to enforce evidence-aware behaviour, and defining a fallback protocol that handles missing information safely and professionally.",
+     "href": null
+    }
+   ],
+   "icon": {
+    "type": "emoji",
+    "emoji": "\ud83d\udca1"
+   },
+   "color": "gray_background"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "3f894183-19f3-81a7-81db-fdbf763eae13",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8001-a4a2-eeee3cca18a2"
+  },
+  "created_time": "2026-10-13T10:18:00.000Z",
+  "last_edited_time": "2026-10-13T10:18:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "3f894183-19f3-814b-98fa-deca50bab8fb",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8001-a4a2-eeee3cca18a2"
+  },
+  "created_time": "2026-10-13T10:18:00.000Z",
+  "last_edited_time": "2026-10-13T10:18:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_2",
+  "heading_2": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "The Scenario",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "The Scenario",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "3f894183-19f3-813b-b81f-f5f8d2e4373e",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8001-a4a2-eeee3cca18a2"
+  },
+  "created_time": "2026-10-13T10:18:00.000Z",
+  "last_edited_time": "2026-10-13T10:18:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Contigo GmbH's RAG pipeline is live in internal testing. The retrieval configuration is working and the correct chunks are being returned for most queries. But the compliance team has flagged a critical behavioural failure that the retrieval configuration alone cannot fix.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Contigo GmbH's RAG pipeline is live in internal testing. The retrieval configuration is working and the correct chunks are being returned for most queries. But the compliance team has flagged a critical behavioural failure that the retrieval configuration alone cannot fix.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "3f894183-19f3-81cd-9b0b-fa5e46610807",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8001-a4a2-eeee3cca18a2"
+  },
+  "created_time": "2026-10-13T10:18:00.000Z",
+  "last_edited_time": "2026-10-13T10:18:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "During a test session, a compliance officer asked the agent: ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "During a test session, a compliance officer asked the agent: ",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "3f894183-19f3-81cc-80c1-ec0ba01760cd",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8001-a4a2-eeee3cca18a2"
+  },
+  "created_time": "2026-10-13T10:18:00.000Z",
+  "last_edited_time": "2026-10-13T10:18:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "quote",
+  "quote": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "\"What is Contigo's approved budget ceiling for client entertainment in the Netherlands?\"",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": true,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "\"What is Contigo's approved budget ceiling for client entertainment in the Netherlands?\"",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "3f894183-19f3-81e7-9ad0-ee1c7d649bae",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8001-a4a2-eeee3cca18a2"
+  },
+  "created_time": "2026-10-13T10:18:00.000Z",
+  "last_edited_time": "2026-10-13T10:18:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "The Qdrant vector database returned no relevant chunks. The topic had not yet been added to the knowledge base. Rather than acknowledging the gap, the agent responded with a confident, specific figure and presented it as Contigo policy.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "The Qdrant vector database returned no relevant chunks. The topic had not yet been added to the knowledge base. Rather than acknowledging the gap, the agent responded with a confident, specific figure and presented it as Contigo policy.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "3f894183-19f3-81ce-8d5b-e425d77c9dca",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8001-a4a2-eeee3cca18a2"
+  },
+  "created_time": "2026-10-13T10:18:00.000Z",
+  "last_edited_time": "2026-10-13T10:18:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "A junior analyst on the team, unaware this was a test, forwarded the figure to a client-facing colleague who used it in a client briefing. The compliance team caught the error before it reached the client, but the incident exposed a structural vulnerability. The agent was connected to a knowledge base but was not constrained to use it. When retrieval failed, the language model filled the gap with fabricated specificity.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "A junior analyst on the team, unaware this was a test, forwarded the figure to a client-facing colleague who used it in a client briefing. The compliance team caught the error before it reached the client, but the incident exposed a structural vulnerability. The agent was connected to a knowledge base but was not constrained to use it. When retrieval failed, the language model filled the gap with fabricated specificity.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "3f894183-19f3-8121-a244-f56abd764ee7",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8001-a4a2-eeee3cca18a2"
+  },
+  "created_time": "2026-10-13T10:18:00.000Z",
+  "last_edited_time": "2026-10-13T10:18:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "The grounding instruction in the current system prompt reads: ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "The grounding instruction in the current system prompt reads: ",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "3f894183-19f3-8136-9d2d-f747dec23c83",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8001-a4a2-eeee3cca18a2"
+  },
+  "created_time": "2026-10-13T10:18:00.000Z",
+  "last_edited_time": "2026-10-13T10:18:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "quote",
+  "quote": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "\u201cYou are a helpful compliance assistant. Read the retrieved documents and use them to help answer the user's questions about Contigo's policies. Always be polite and provide a comprehensive answer.\"",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": true,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "\u201cYou are a helpful compliance assistant. Read the retrieved documents and use them to help answer the user's questions about Contigo's policies. Always be polite and provide a comprehensive answer.\"",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "3f894183-19f3-81af-b7ff-d3bfb601b22d",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8001-a4a2-eeee3cca18a2"
+  },
+  "created_time": "2026-10-13T10:18:00.000Z",
+  "last_edited_time": "2026-10-13T10:18:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "This prompt is insufficient. It encourages the model to use retrieved documents but does not prohibit it from using outside knowledge when documents are absent. The fix must come from the prompt.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "This prompt is insufficient. It encourages the model to use retrieved documents but does not prohibit it from using outside knowledge when documents are absent. The fix must come from the prompt.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "3f894183-19f3-8117-9b85-f6851745947f",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8001-a4a2-eeee3cca18a2"
+  },
+  "created_time": "2026-10-13T10:18:00.000Z",
+  "last_edited_time": "2026-10-13T10:18:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "3f894183-19f3-81cc-9176-d537ebe76700",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8001-a4a2-eeee3cca18a2"
+  },
+  "created_time": "2026-10-13T10:18:00.000Z",
+  "last_edited_time": "2026-10-13T10:18:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_2",
+  "heading_2": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Why prompt grounding matters",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Why prompt grounding matters",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "3f894183-19f3-819e-8389-d68aec1035a4",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8001-a4a2-eeee3cca18a2"
+  },
+  "created_time": "2026-10-13T10:18:00.000Z",
+  "last_edited_time": "2026-10-13T10:18:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Connecting a language model to a vector database does not automatically constrain it to that database. The model retains access to everything it learned during training. In the absence of a strict instruction, its default behaviour is to be helpful.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Connecting a language model to a vector database does not automatically constrain it to that database. The model retains access to everything it learned during training. In the absence of a strict instruction, its default behaviour is to be helpful.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "3f894183-19f3-8168-9321-fc9d75098185",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8001-a4a2-eeee3cca18a2"
+  },
+  "created_time": "2026-10-13T10:18:00.000Z",
+  "last_edited_time": "2026-10-13T10:18:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "This is the core tension in RAG system design. The retrieval pipeline is built to provide grounded evidence. But the language model will use that evidence only if it is explicitly instructed to do so and explicitly prohibited from doing otherwise. A weak instruction that says \"use the documents\" leaves open the possibility of supplementing them. A strong instruction that says \"use only the documents and nothing else\" closes that gap.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "This is the core tension in RAG system design. The retrieval pipeline is built to provide grounded evidence. But the language model will use that evidence only if it is explicitly instructed to do so and explicitly prohibited from doing otherwise. A weak instruction that says \"use the documents\" leaves open the possibility of supplementing them. A strong instruction that says \"use only the documents and nothing else\" closes that gap.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "3f894183-19f3-81b8-9592-d4ffeb27bbc7",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8001-a4a2-eeee3cca18a2"
+  },
+  "created_time": "2026-10-13T10:18:00.000Z",
+  "last_edited_time": "2026-10-13T10:18:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "In a regulated financial services environment like Contigo's, the difference between those two instructions is the difference between a compliant agent and a liability.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "In a regulated financial services environment like Contigo's, the difference between those two instructions is the difference between a compliant agent and a liability.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "3f894183-19f3-81a7-834d-ff9ef63b77e2",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8001-a4a2-eeee3cca18a2"
+  },
+  "created_time": "2026-10-13T10:18:00.000Z",
+  "last_edited_time": "2026-10-13T10:18:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "image",
+  "image": {
+   "caption": [],
+   "type": "file",
+   "file": {
+    "url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/3a9085c4-df29-45e6-8bc7-6c9c0a25ea8c/1a02e001-cdbb-4bdb-866a-1d3e1b7fea6d/image.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466XQANO52F%2F20261028%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20261028T112201Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEDsaCXVzLXdlc3QtMiJGMEQCIAi2kQb815yVWB6OCwn%2BTtaAh%2BVqMcu36Gv0vzFqlF%2FgAiA04pzvKRrcjM%2FNWnTBIp7Ca%2Bhf6GfZlKyEGe8VreAegyr%2FAwgEEAAaDDYzNzQyMzE4MzgwNSIMsqKsz0KY%2BBZUsunBKtwD0xXi4ZDYoqwd9mwR4bPYf9lw5wHQTeu9XHqMoG6jEZG2sLfI%2B%2F85OmZGlO0Xi0u9kmzjCOLZmVcsz1uNh9XnjKeQkAKKtsfoWH3qBP4cgtGOsDeOFbKBBtG9RBsdZztyGPj3xAr2Yf8lbBTlCu2ymQFr8%2BC7%2FD8I0QXEvXKAkYVtQVS0qOnE%2BfhNCo0WVrUVAlkmmA1VkXygtvZwSlax86ye9LA0wbcT%2F1xnvF%2F%2ByHn8MLk3VzwjmL%2BkHvo%2BTe1X8nz6%2BSAY8I8Ck%2FmgXcmcx65cx037rc6JNc%2FnsS2i%2B7o37AxSlFQFy5HIhpgIx6y0SQ0HW%2FItKy5k0NoJNssRPDnZD2FiwKXO4DZBQRjnpUf9zzV%2BcfxlxK618zkMzjjq5xVtneP35jWrC9egw%2B7oFMvYsDmk5dC6AeLT%2FCzb5%2Bdxh0iQOl9XjtPtLjAow1QYZB4nPrXxC9u1PCWON7A9Hg9%2FAwpbURjonIEncJPHijG9cBnRO4sbygBmLMvHPcQF4%2BPyJwebj1KZjCtJQitMPJcJDiZe0u9e7jZe9qW386TefRy0CDEdyg9Nizqx6dr%2BVpOFssvHpIYt0DRDCdOJ%2BZ3twEyslJ%2FU9%2B2HvYeWWkyko8nSRSZAqFcCTeIwsaeH1wY6pgEFL%2Bsd65arzp2Ut2F10b8gnR%2FQyKDS1u2Tl54n5uRQpnSm9UKlRxqTD2UpF%2BlNk9QTNj1uzGeWOHS2MkU160dsMWhGtHUgvBom8BpSdFdKEtflyF%2BEKVz413hk1etyahNGiup9zMUl2qn4P%2FeEbV83%2BpFXlYApFPgcP9Gcv1HfhE3%2Fjw4tMa7cEqz4VLYhNA8F0Z%2BSBxm9KpnRAYg4U0fe6JDD3eVL&X-Amz-Signature=d5df4206bde0a5dfb385b8957e82fd3c6c9bdf34dc4f955678ac24864355ef03&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+    "expiry_time": "2026-10-28T12:22:01.557Z"
+   }
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "3f894183-19f3-81b9-9d26-dfeed2cd4f31",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8001-a4a2-eeee3cca18a2"
+  },
+  "created_time": "2026-10-13T10:18:00.000Z",
+  "last_edited_time": "2026-10-13T10:18:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "3f894183-19f3-81f8-ad58-c6e7a0bb5691",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8001-a4a2-eeee3cca18a2"
+  },
+  "created_time": "2026-10-13T10:18:00.000Z",
+  "last_edited_time": "2026-10-13T10:18:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_2",
+  "heading_2": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "The failing prompt",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "The failing prompt",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "3f894183-19f3-8106-af54-c8990ede4850",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8001-a4a2-eeee3cca18a2"
+  },
+  "created_time": "2026-10-13T10:18:00.000Z",
+  "last_edited_time": "2026-10-13T10:18:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Review the current system prompt carefully before beginning the task.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Review the current system prompt carefully before beginning the task.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "3f894183-19f3-81f6-bdf7-cc684a21e73f",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8001-a4a2-eeee3cca18a2"
+  },
+  "created_time": "2026-10-13T10:18:00.000Z",
+  "last_edited_time": "2026-10-13T10:18:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "quote",
+  "quote": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "\"You are a helpful compliance assistant. Read the retrieved documents and use them to help answer the user's questions about Contigo's policies. Always be polite and provide a comprehensive answer.\"",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": true,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "\"You are a helpful compliance assistant. Read the retrieved documents and use them to help answer the user's questions about Contigo's policies. Always be polite and provide a comprehensive answer.\"",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "3f894183-19f3-81f1-ad1b-c65b8e1e9b19",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8001-a4a2-eeee3cca18a2"
+  },
+  "created_time": "2026-10-13T10:18:00.000Z",
+  "last_edited_time": "2026-10-13T10:18:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Identify the specific weaknesses in this prompt before writing your replacement. A precise diagnosis of what is missing will produce a more effective revision than a general rewrite.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Identify the specific weaknesses in this prompt before writing your replacement. A precise diagnosis of what is missing will produce a more effective revision than a general rewrite.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "3f894183-19f3-8159-a5eb-e1c4e3226ef3",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8001-a4a2-eeee3cca18a2"
+  },
+  "created_time": "2026-10-13T10:18:00.000Z",
+  "last_edited_time": "2026-10-13T10:18:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "3f894183-19f3-81ef-8821-fad76c224461",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8001-a4a2-eeee3cca18a2"
+  },
+  "created_time": "2026-10-13T10:18:00.000Z",
+  "last_edited_time": "2026-10-13T10:18:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_2",
+  "heading_2": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Your Tasks",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Your Tasks",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "3f894183-19f3-81b5-9825-f3165aa9820e",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8001-a4a2-eeee3cca18a2"
+  },
+  "created_time": "2026-10-13T10:18:00.000Z",
+  "last_edited_time": "2026-10-13T10:18:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "3f894183-19f3-81c6-ad30-d5698b8782a6",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8001-a4a2-eeee3cca18a2"
+  },
+  "created_time": "2026-10-13T10:18:00.000Z",
+  "last_edited_time": "2026-10-13T10:18:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "callout",
+  "callout": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Template:",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Template:",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "Contigo Prompt Grounding worksheet ",
+      "link": {
+       "url": "https://docs.google.com/spreadsheets/d/1lqDW8qfxFRn2T3oHfwpJshdIi25vpuqYs1QmeqqdsXw/copy"
+      }
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Contigo Prompt Grounding worksheet ",
+     "href": "https://docs.google.com/spreadsheets/d/1lqDW8qfxFRn2T3oHfwpJshdIi25vpuqYs1QmeqqdsXw/copy"
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "\u2014 make a copy (File \u2192 Make a copy) and use it to record your diagnosis, draft and check your revised prompt, then capture the agent's behaviour on each of the three test queries.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "\u2014 make a copy (File \u2192 Make a copy) and use it to record your diagnosis, draft and check your revised prompt, then capture the agent's behaviour on each of the three test queries.",
+     "href": null
+    }
+   ],
+   "icon": {
+    "type": "emoji",
+    "emoji": "\ud83d\udd25"
+   },
+   "color": "gray_background"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "3f894183-19f3-8154-ba1a-c1c58509d17f",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8001-a4a2-eeee3cca18a2"
+  },
+  "created_time": "2026-10-13T10:18:00.000Z",
+  "last_edited_time": "2026-10-13T10:18:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "3f894183-19f3-814f-811f-c9d3cd69a4fe",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8001-a4a2-eeee3cca18a2"
+  },
+  "created_time": "2026-10-13T10:18:00.000Z",
+  "last_edited_time": "2026-10-13T10:18:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_4",
+  "heading_4": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Task A: Diagnose the prompt failure",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Task A: Diagnose the prompt failure",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "3f894183-19f3-8100-ae5b-caf79d7b0806",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8001-a4a2-eeee3cca18a2"
+  },
+  "created_time": "2026-10-13T10:18:00.000Z",
+  "last_edited_time": "2026-10-13T10:18:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Identify at least three specific weaknesses in the current system prompt that allow the grounding failure described above to occur. For each weakness, write one sentence explaining what the prompt fails to specify and what behaviour that omission enables. Do not rewrite the prompt yet. Focus entirely on diagnosis. A weak diagnosis produces a weak revision.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Identify at least three specific weaknesses in the current system prompt that allow the grounding failure described above to occur. For each weakness, write one sentence explaining what the prompt fails to specify and what behaviour that omission enables. Do not rewrite the prompt yet. Focus entirely on diagnosis. A weak diagnosis produces a weak revision.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "3f894183-19f3-81fb-8397-d7da1d67e3ae",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8001-a4a2-eeee3cca18a2"
+  },
+  "created_time": "2026-10-13T10:18:00.000Z",
+  "last_edited_time": "2026-10-13T10:18:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "3f894183-19f3-813b-8466-d96fe7947eca",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8001-a4a2-eeee3cca18a2"
+  },
+  "created_time": "2026-10-13T10:18:00.000Z",
+  "last_edited_time": "2026-10-13T10:18:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_4",
+  "heading_4": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Task B: Draft the revised system prompt",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Task B: Draft the revised system prompt",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "3f894183-19f3-814c-b354-f945468ae524",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8001-a4a2-eeee3cca18a2"
+  },
+  "created_time": "2026-10-13T10:18:00.000Z",
+  "last_edited_time": "2026-10-13T10:18:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Write a replacement system prompt for the Contigo compliance agent. Your prompt must be between four and six sentences and must explicitly address all three weaknesses identified in Task A. Your revised prompt must include the following three elements:",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Write a replacement system prompt for the Contigo compliance agent. Your prompt must be between four and six sentences and must explicitly address all three weaknesses identified in Task A. Your revised prompt must include the following three elements:",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "3f894183-19f3-81ba-98c0-f5c62f9105eb",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8001-a4a2-eeee3cca18a2"
+  },
+  "created_time": "2026-10-13T10:18:00.000Z",
+  "last_edited_time": "2026-10-13T10:18:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "A strict evidence constraint:",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "A strict evidence constraint:",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " A clear instruction that the agent must answer only from the retrieved context provided. The constraint must be phrased as a prohibition, not a preference.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " A clear instruction that the agent must answer only from the retrieved context provided. The constraint must be phrased as a prohibition, not a preference.",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "3f894183-19f3-8162-ad0c-c59273bfc4c0",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8001-a4a2-eeee3cca18a2"
+  },
+  "created_time": "2026-10-13T10:18:00.000Z",
+  "last_edited_time": "2026-10-13T10:18:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "A fallback protocol: ",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "A fallback protocol: ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "A concise instruction specifying the exact phrase the agent must output when the retrieved context does not contain the answer. The phrase should be professional, acknowledge the limitation honestly, and direct the client toward an appropriate alternative. ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "A concise instruction specifying the exact phrase the agent must output when the retrieved context does not contain the answer. The phrase should be professional, acknowledge the limitation honestly, and direct the client toward an appropriate alternative. ",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "3f894183-19f3-81f5-917d-f2a771cf8300",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8001-a4a2-eeee3cca18a2"
+  },
+  "created_time": "2026-10-13T10:18:00.000Z",
+  "last_edited_time": "2026-10-13T10:18:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "A scope definition:",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "A scope definition:",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " A brief statement of what the agent is and what it is authorised to answer about. Without a scope definition, the model has no frame for deciding whether a query is within its remit or outside it.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " A brief statement of what the agent is and what it is authorised to answer about. Without a scope definition, the model has no frame for deciding whether a query is within its remit or outside it.",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "3f894183-19f3-81d1-a031-d62fdda8167f",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8001-a4a2-eeee3cca18a2"
+  },
+  "created_time": "2026-10-13T10:18:00.000Z",
+  "last_edited_time": "2026-10-13T10:18:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "3f894183-19f3-81ca-ae70-e3ef89b54a4a",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8001-a4a2-eeee3cca18a2"
+  },
+  "created_time": "2026-10-13T10:18:00.000Z",
+  "last_edited_time": "2026-10-13T10:18:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_4",
+  "heading_4": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Task C: Test the revised prompt",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Task C: Test the revised prompt",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "3f894183-19f3-81d4-b89e-ff550bed4529",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8001-a4a2-eeee3cca18a2"
+  },
+  "created_time": "2026-10-13T10:18:00.000Z",
+  "last_edited_time": "2026-10-13T10:18:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "In n8n, open the existing ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "In n8n, open the existing ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "Contigo - Short-Term Memory",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Contigo - Short-Term Memory",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " workflow from Sprint 1 (Chat Trigger \u2192 AI Agent, with OpenRouter Chat Model and Simple Memory). Continue from the Sprint 2 ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " workflow from Sprint 1 (Chat Trigger \u2192 AI Agent, with OpenRouter Chat Model and Simple Memory). Continue from the Sprint 2 ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "Retrieval before generation",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Retrieval before generation",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " lesson, which adds the Qdrant collection ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " lesson, which adds the Qdrant collection ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "contigo_knowledge",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": true,
+      "color": "default"
+     },
+     "plain_text": "contigo_knowledge",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " as the agent's retrieval tool. Enter your revised prompt in the AI Agent node's System Message, preserving the session and memory rules. Run the following three queries in the test chat. For each execution, record the contigo_knowledge tool call, returned passages and source metadata, and the final response. A plausible answer is not a pass unless the retrieved evidence supports it. Prompts reduce grounding failures but do not guarantee compliance; failed tests require investigation and, where appropriate, an additional validation or human-review step.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " as the agent's retrieval tool. Enter your revised prompt in the AI Agent node's System Message, preserving the session and memory rules. Run the following three queries in the test chat. For each execution, record the contigo_knowledge tool call, returned passages and source metadata, and the final response. A plausible answer is not a pass unless the retrieved evidence supports it. Prompts reduce grounding failures but do not guarantee compliance; failed tests require investigation and, where appropriate, an additional validation or human-review step.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "3f894183-19f3-81e5-9b5d-f6dafefb1713",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8001-a4a2-eeee3cca18a2"
+  },
+  "created_time": "2026-10-13T10:18:00.000Z",
+  "last_edited_time": "2026-10-13T10:18:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "3f894183-19f3-811d-bc93-e44b7d5a9c28",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8001-a4a2-eeee3cca18a2"
+  },
+  "created_time": "2026-10-13T10:18:00.000Z",
+  "last_edited_time": "2026-10-13T10:18:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Test 1: In-domain query with retrievable answer:",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Test 1: In-domain query with retrievable answer:",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " ",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "3f894183-19f3-8123-b6dc-f5d91b97699b",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8001-a4a2-eeee3cca18a2"
+  },
+  "created_time": "2026-10-13T10:18:00.000Z",
+  "last_edited_time": "2026-10-13T10:18:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "quote",
+  "quote": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "\"What documents must a client submit with an SME loan application?\"",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": true,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "\"What documents must a client submit with an SME loan application?\"",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "3f894183-19f3-81c9-b200-c934cd083447",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8001-a4a2-eeee3cca18a2"
+  },
+  "created_time": "2026-10-13T10:18:00.000Z",
+  "last_edited_time": "2026-10-13T10:18:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Expected behaviour",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Expected behaviour",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": ": The agent retrieves the relevant checklist chunk and answers specifically from it.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": ": The agent retrieves the relevant checklist chunk and answers specifically from it.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "3f894183-19f3-81d0-ac2c-e02243611852",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8001-a4a2-eeee3cca18a2"
+  },
+  "created_time": "2026-10-13T10:18:00.000Z",
+  "last_edited_time": "2026-10-13T10:18:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "3f894183-19f3-8132-b8a7-f01da5434af3",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8001-a4a2-eeee3cca18a2"
+  },
+  "created_time": "2026-10-13T10:18:00.000Z",
+  "last_edited_time": "2026-10-13T10:18:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Test 2: Out-of-domain query with no retrievable answer:",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Test 2: Out-of-domain query with no retrievable answer:",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " ",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "3f894183-19f3-81ec-97e1-f66566aa42e5",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8001-a4a2-eeee3cca18a2"
+  },
+  "created_time": "2026-10-13T10:18:00.000Z",
+  "last_edited_time": "2026-10-13T10:18:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "quote",
+  "quote": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "\"What is Contigo's approved budget for client entertainment in the Netherlands?\"",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": true,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "\"What is Contigo's approved budget for client entertainment in the Netherlands?\"",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " ",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "3f894183-19f3-81bd-8fff-d53e0a003d70",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8001-a4a2-eeee3cca18a2"
+  },
+  "created_time": "2026-10-13T10:18:00.000Z",
+  "last_edited_time": "2026-10-13T10:18:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Expected behaviour",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Expected behaviour",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": ": The agent outputs your defined fallback phrase.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": ": The agent outputs your defined fallback phrase.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "3f894183-19f3-816c-871d-d9ce1cbfc8b9",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8001-a4a2-eeee3cca18a2"
+  },
+  "created_time": "2026-10-13T10:18:00.000Z",
+  "last_edited_time": "2026-10-13T10:18:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "3f894183-19f3-8107-8c36-fe108c5b40c1",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8001-a4a2-eeee3cca18a2"
+  },
+  "created_time": "2026-10-13T10:18:00.000Z",
+  "last_edited_time": "2026-10-13T10:18:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Test 3: Boundary query that sounds in-domain",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Test 3: Boundary query that sounds in-domain",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "3f894183-19f3-813c-835b-f3951409f10a",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8001-a4a2-eeee3cca18a2"
+  },
+  "created_time": "2026-10-13T10:18:00.000Z",
+  "last_edited_time": "2026-10-13T10:18:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "quote",
+  "quote": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "\u201cBased on standard EU financial services practice, what would a typical loan processing time be?\"",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": true,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "\u201cBased on standard EU financial services practice, what would a typical loan processing time be?\"",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " ",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "3f894183-19f3-817c-ade4-d30e010c40ac",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8001-a4a2-eeee3cca18a2"
+  },
+  "created_time": "2026-10-13T10:18:00.000Z",
+  "last_edited_time": "2026-10-13T10:18:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Expected behaviour",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Expected behaviour",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": ": The agent recognises that \"standard EU financial services practice\" is outside the retrieved context and does not supplement with training data. If it answers with a general figure, the evidence constraint needs strengthening.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": ": The agent recognises that \"standard EU financial services practice\" is outside the retrieved context and does not supplement with training data. If it answers with a general figure, the evidence constraint needs strengthening.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "3f894183-19f3-811a-ab5b-de1fdba19563",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8001-a4a2-eeee3cca18a2"
+  },
+  "created_time": "2026-10-13T10:18:00.000Z",
+  "last_edited_time": "2026-10-13T10:18:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": true,
+  "in_trash": false,
+  "type": "toggle",
+  "toggle": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Think about the following \u2026",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Think about the following \u2026",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false,
+  "_children": [
+   {
+    "object": "block",
+    "id": "3f894183-19f3-8158-ab4f-df918cae9fe7",
+    "parent": {
+     "type": "block_id",
+     "block_id": "3f894183-19f3-811a-ab5b-de1fdba19563"
+    },
+    "created_time": "2026-10-13T10:18:00.000Z",
+    "last_edited_time": "2026-10-13T10:18:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+     "rich_text": [
+      {
+       "type": "text",
+       "text": {
+        "content": "\ud83d\udd3d ",
+        "link": null
+       },
+       "annotations": {
+        "bold": false,
+        "italic": false,
+        "strikethrough": false,
+        "underline": false,
+        "code": false,
+        "color": "default"
+       },
+       "plain_text": "\ud83d\udd3d ",
+       "href": null
+      },
+      {
+       "type": "text",
+       "text": {
+        "content": "Checkpoint 1: Diagnosing the comprehensiveness problem",
+        "link": null
+       },
+       "annotations": {
+        "bold": true,
+        "italic": false,
+        "strikethrough": false,
+        "underline": false,
+        "code": false,
+        "color": "default"
+       },
+       "plain_text": "Checkpoint 1: Diagnosing the comprehensiveness problem",
+       "href": null
+      },
+      {
+       "type": "text",
+       "text": {
+        "content": " - The agent cited a figure that does not appear in any retrieved chunk. This means the system prompt is not preventing the model from supplementing retrieved content with general training knowledge. The grounding instruction needs to be more explicit and restrictive.",
+        "link": null
+       },
+       "annotations": {
+        "bold": false,
+        "italic": false,
+        "strikethrough": false,
+        "underline": false,
+        "code": false,
+        "color": "default"
+       },
+       "plain_text": " - The agent cited a figure that does not appear in any retrieved chunk. This means the system prompt is not preventing the model from supplementing retrieved content with general training knowledge. The grounding instruction needs to be more explicit and restrictive.",
+       "href": null
+      }
+     ],
+     "icon": null,
+     "color": "default"
+    },
+    "archived": false
+   },
+   {
+    "object": "block",
+    "id": "3f894183-19f3-819e-ac58-f4a7765f34f9",
+    "parent": {
+     "type": "block_id",
+     "block_id": "3f894183-19f3-811a-ab5b-de1fdba19563"
+    },
+    "created_time": "2026-10-13T10:18:00.000Z",
+    "last_edited_time": "2026-10-13T10:18:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+     "rich_text": [
+      {
+       "type": "text",
+       "text": {
+        "content": "\ud83d\udd3d ",
+        "link": null
+       },
+       "annotations": {
+        "bold": false,
+        "italic": false,
+        "strikethrough": false,
+        "underline": false,
+        "code": false,
+        "color": "default"
+       },
+       "plain_text": "\ud83d\udd3d ",
+       "href": null
+      },
+      {
+       "type": "text",
+       "text": {
+        "content": "Checkpoint 2: Writing an effective prohibition -",
+        "link": null
+       },
+       "annotations": {
+        "bold": true,
+        "italic": false,
+        "strikethrough": false,
+        "underline": false,
+        "code": false,
+        "color": "default"
+       },
+       "plain_text": "Checkpoint 2: Writing an effective prohibition -",
+       "href": null
+      },
+      {
+       "type": "text",
+       "text": {
+        "content": " When retrieved chunks contain no relevant information, the model defaults to generating from general training rather than acknowledging the gap. A well-designed system prompt gives the agent an explicit fallback phrase to use when the retrieved context is insufficient to answer confidently.",
+        "link": null
+       },
+       "annotations": {
+        "bold": false,
+        "italic": false,
+        "strikethrough": false,
+        "underline": false,
+        "code": false,
+        "color": "default"
+       },
+       "plain_text": " When retrieved chunks contain no relevant information, the model defaults to generating from general training rather than acknowledging the gap. A well-designed system prompt gives the agent an explicit fallback phrase to use when the retrieved context is insufficient to answer confidently.",
+       "href": null
+      }
+     ],
+     "icon": null,
+     "color": "default"
+    },
+    "archived": false
+   },
+   {
+    "object": "block",
+    "id": "3f894183-19f3-81f9-aaea-d9f3097db740",
+    "parent": {
+     "type": "block_id",
+     "block_id": "3f894183-19f3-811a-ab5b-de1fdba19563"
+    },
+    "created_time": "2026-10-13T10:18:00.000Z",
+    "last_edited_time": "2026-10-13T10:18:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+     "rich_text": [
+      {
+       "type": "text",
+       "text": {
+        "content": "\ud83d\udd3d ",
+        "link": null
+       },
+       "annotations": {
+        "bold": false,
+        "italic": false,
+        "strikethrough": false,
+        "underline": false,
+        "code": false,
+        "color": "default"
+       },
+       "plain_text": "\ud83d\udd3d ",
+       "href": null
+      },
+      {
+       "type": "text",
+       "text": {
+        "content": "Checkpoint 3: Designing the fallback phrase",
+        "link": null
+       },
+       "annotations": {
+        "bold": true,
+        "italic": false,
+        "strikethrough": false,
+        "underline": false,
+        "code": false,
+        "color": "default"
+       },
+       "plain_text": "Checkpoint 3: Designing the fallback phrase",
+       "href": null
+      },
+      {
+       "type": "text",
+       "text": {
+        "content": " - Grounding constraints and tone guidance are not mutually exclusive. A system prompt can be explicit about restricting the model to retrieved content while also specifying how responses should be phrased and what communication style is expected of a Contigo support agent.",
+        "link": null
+       },
+       "annotations": {
+        "bold": false,
+        "italic": false,
+        "strikethrough": false,
+        "underline": false,
+        "code": false,
+        "color": "default"
+       },
+       "plain_text": " - Grounding constraints and tone guidance are not mutually exclusive. A system prompt can be explicit about restricting the model to retrieved content while also specifying how responses should be phrased and what communication style is expected of a Contigo support agent.",
+       "href": null
+      }
+     ],
+     "icon": null,
+     "color": "default"
+    },
+    "archived": false
+   },
+   {
+    "object": "block",
+    "id": "3f894183-19f3-8121-8c1d-d090a9773af1",
+    "parent": {
+     "type": "block_id",
+     "block_id": "3f894183-19f3-811a-ab5b-de1fdba19563"
+    },
+    "created_time": "2026-10-13T10:18:00.000Z",
+    "last_edited_time": "2026-10-13T10:18:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+     "rich_text": [
+      {
+       "type": "text",
+       "text": {
+        "content": "\ud83d\udd3d ",
+        "link": null
+       },
+       "annotations": {
+        "bold": false,
+        "italic": false,
+        "strikethrough": false,
+        "underline": false,
+        "code": false,
+        "color": "default"
+       },
+       "plain_text": "\ud83d\udd3d ",
+       "href": null
+      },
+      {
+       "type": "text",
+       "text": {
+        "content": "Checkpoint 4: Handling Test 3",
+        "link": null
+       },
+       "annotations": {
+        "bold": true,
+        "italic": false,
+        "strikethrough": false,
+        "underline": false,
+        "code": false,
+        "color": "default"
+       },
+       "plain_text": "Checkpoint 4: Handling Test 3",
+       "href": null
+      },
+      {
+       "type": "text",
+       "text": {
+        "content": " - If the agent still returns a confident answer after the system prompt update, there are two places to look. First, check whether the grounding instruction is unambiguous enough that the model cannot interpret it loosely. Second, check whether the retrieved chunks accidentally contain content close enough to the query to trigger a response.",
+        "link": null
+       },
+       "annotations": {
+        "bold": false,
+        "italic": false,
+        "strikethrough": false,
+        "underline": false,
+        "code": false,
+        "color": "default"
+       },
+       "plain_text": " - If the agent still returns a confident answer after the system prompt update, there are two places to look. First, check whether the grounding instruction is unambiguous enough that the model cannot interpret it loosely. Second, check whether the retrieved chunks accidentally contain content close enough to the query to trigger a response.",
+       "href": null
+      }
+     ],
+     "icon": null,
+     "color": "default"
+    },
+    "archived": false
+   }
+  ]
+ },
+ {
+  "object": "block",
+  "id": "3f894183-19f3-81ab-8578-fee2d5fdee6d",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8001-a4a2-eeee3cca18a2"
+  },
+  "created_time": "2026-10-13T10:18:00.000Z",
+  "last_edited_time": "2026-10-13T10:18:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "3f894183-19f3-8156-864b-d1665a5f91ab",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8001-a4a2-eeee3cca18a2"
+  },
+  "created_time": "2026-10-13T10:18:00.000Z",
+  "last_edited_time": "2026-10-13T10:18:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_2",
+  "heading_2": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Check for Understanding",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Check for Understanding",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "3f894183-19f3-818d-b54e-c6d4378bef93",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8001-a4a2-eeee3cca18a2"
+  },
+  "created_time": "2026-10-13T10:18:00.000Z",
+  "last_edited_time": "2026-10-13T10:18:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Question 1",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Question 1",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "3f894183-19f3-8131-9cea-d500e8f10861",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8001-a4a2-eeee3cca18a2"
+  },
+  "created_time": "2026-10-13T10:18:00.000Z",
+  "last_edited_time": "2026-10-13T10:18:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": true,
+  "in_trash": false,
+  "type": "callout",
+  "callout": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Contigo's agent delivers hundreds of fallback responses daily when queries cannot be resolved from the knowledge base. Which process most effectively uses fallback frequency as a signal for knowledge base gaps?",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Contigo's agent delivers hundreds of fallback responses daily when queries cannot be resolved from the knowledge base. Which process most effectively uses fallback frequency as a signal for knowledge base gaps?",
+     "href": null
+    }
+   ],
+   "icon": {
+    "type": "emoji",
+    "emoji": "\ud83d\udca1"
+   },
+   "color": "gray_background"
+  },
+  "archived": false,
+  "_children": [
+   {
+    "object": "block",
+    "id": "3f894183-19f3-81ed-a250-c7c29cff015a",
+    "parent": {
+     "type": "block_id",
+     "block_id": "3f894183-19f3-8131-9cea-d500e8f10861"
+    },
+    "created_time": "2026-10-13T10:18:00.000Z",
+    "last_edited_time": "2026-10-13T10:18:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "embed",
+    "embed": {
+     "caption": [],
+     "url": "https://app.masterschool.com/campus/multi-choice-question/f1de49c9-79c3-46b4-ad0f-2e6fea071a14"
+    },
+    "archived": false
+   }
+  ]
+ },
+ {
+  "object": "block",
+  "id": "3f894183-19f3-81a6-917c-ccdff4533734",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8001-a4a2-eeee3cca18a2"
+  },
+  "created_time": "2026-10-13T10:18:00.000Z",
+  "last_edited_time": "2026-10-13T10:18:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "3f894183-19f3-8151-990f-c2b33d7f89d8",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8001-a4a2-eeee3cca18a2"
+  },
+  "created_time": "2026-10-13T10:18:00.000Z",
+  "last_edited_time": "2026-10-13T10:18:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Question 2",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Question 2",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "3f894183-19f3-818e-8540-ce32f9343128",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8001-a4a2-eeee3cca18a2"
+  },
+  "created_time": "2026-10-13T10:18:00.000Z",
+  "last_edited_time": "2026-10-13T10:18:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": true,
+  "in_trash": false,
+  "type": "callout",
+  "callout": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Contigo's system prompt instructs the agent to answer only from retrieved context. A sophisticated adversarial input causes the model to reason past this instruction and supplement its response with training data. Which architectural mechanism most reliably provides a second grounding enforcement layer independent of the model's instruction compliance?",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Contigo's system prompt instructs the agent to answer only from retrieved context. A sophisticated adversarial input causes the model to reason past this instruction and supplement its response with training data. Which architectural mechanism most reliably provides a second grounding enforcement layer independent of the model's instruction compliance?",
+     "href": null
+    }
+   ],
+   "icon": {
+    "type": "emoji",
+    "emoji": "\ud83d\udca1"
+   },
+   "color": "gray_background"
+  },
+  "archived": false,
+  "_children": [
+   {
+    "object": "block",
+    "id": "3f894183-19f3-817e-b57f-c3c479038256",
+    "parent": {
+     "type": "block_id",
+     "block_id": "3f894183-19f3-818e-8540-ce32f9343128"
+    },
+    "created_time": "2026-10-13T10:18:00.000Z",
+    "last_edited_time": "2026-10-13T10:18:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "embed",
+    "embed": {
+     "caption": [],
+     "url": "https://app.masterschool.com/campus/multi-choice-question/b4c0a673-1442-4de1-89bd-54bcb2f09aa7"
+    },
+    "archived": false
+   }
+  ]
+ },
+ {
+  "object": "block",
+  "id": "3f894183-19f3-8113-8641-ce9a29ea64d0",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8001-a4a2-eeee3cca18a2"
+  },
+  "created_time": "2026-10-13T10:18:00.000Z",
+  "last_edited_time": "2026-10-13T10:18:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "3f894183-19f3-81c1-8873-f9c5e6ad36e0",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8001-a4a2-eeee3cca18a2"
+  },
+  "created_time": "2026-10-13T10:18:00.000Z",
+  "last_edited_time": "2026-10-13T10:18:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "3f894183-19f3-8160-8f5d-c0d531779248",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8001-a4a2-eeee3cca18a2"
+  },
+  "created_time": "2026-10-13T10:18:00.000Z",
+  "last_edited_time": "2026-10-13T10:18:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": true,
+  "in_trash": false,
+  "type": "callout",
+  "callout": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Takeaway:",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Takeaway:",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " ",
+     "href": null
+    }
+   ],
+   "icon": {
+    "type": "emoji",
+    "emoji": "\ud83d\udca1"
+   },
+   "color": "gray_background"
+  },
+  "archived": false,
+  "_children": [
+   {
+    "object": "block",
+    "id": "3f894183-19f3-8141-aaf1-f5f0ab8377c7",
+    "parent": {
+     "type": "block_id",
+     "block_id": "3f894183-19f3-8160-8f5d-c0d531779248"
+    },
+    "created_time": "2026-10-13T10:18:00.000Z",
+    "last_edited_time": "2026-10-13T10:18:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+     "rich_text": [
+      {
+       "type": "text",
+       "text": {
+        "content": "Retrieval and grounding are two separate problems that require two separate solutions. Retrieval is solved by the pipeline architecture (the vector store, the embedding model, and the Top K configuration). Grounding is solved by the system prompt. ",
+        "link": null
+       },
+       "annotations": {
+        "bold": false,
+        "italic": false,
+        "strikethrough": false,
+        "underline": false,
+        "code": false,
+        "color": "default"
+       },
+       "plain_text": "Retrieval and grounding are two separate problems that require two separate solutions. Retrieval is solved by the pipeline architecture (the vector store, the embedding model, and the Top K configuration). Grounding is solved by the system prompt. ",
+       "href": null
+      }
+     ],
+     "icon": null,
+     "color": "default"
+    },
+    "archived": false
+   },
+   {
+    "object": "block",
+    "id": "3f894183-19f3-8140-a9cc-e225559fdaf5",
+    "parent": {
+     "type": "block_id",
+     "block_id": "3f894183-19f3-8160-8f5d-c0d531779248"
+    },
+    "created_time": "2026-10-13T10:18:00.000Z",
+    "last_edited_time": "2026-10-13T10:18:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+     "rich_text": [
+      {
+       "type": "text",
+       "text": {
+        "content": "A well-configured retrieval pipeline connected to a weakly written system prompt is still an ungrounded agent. Both must be correct for the system to be trustworthy.",
+        "link": null
+       },
+       "annotations": {
+        "bold": false,
+        "italic": false,
+        "strikethrough": false,
+        "underline": false,
+        "code": false,
+        "color": "default"
+       },
+       "plain_text": "A well-configured retrieval pipeline connected to a weakly written system prompt is still an ungrounded agent. Both must be correct for the system to be trustworthy.",
+       "href": null
+      }
+     ],
+     "icon": null,
+     "color": "default"
+    },
+    "archived": false
+   }
+  ]
+ },
+ {
+  "object": "block",
+  "id": "3f894183-19f3-81d1-adc7-d67698e24d69",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8001-a4a2-eeee3cca18a2"
+  },
+  "created_time": "2026-10-13T10:18:00.000Z",
+  "last_edited_time": "2026-10-13T10:18:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ }
+]

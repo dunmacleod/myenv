@@ -1,0 +1,1783 @@
+[
+ {
+  "object": "block",
+  "id": "36994183-19f3-8058-b9fa-caaef943efc6",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8098-9a75-d90eec3aca5c"
+  },
+  "created_time": "2026-05-23T23:56:00.000Z",
+  "last_edited_time": "2026-05-23T23:56:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "callout",
+  "callout": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "What you will understand by the end of this lesson:",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "What you will understand by the end of this lesson:",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " Why standard language models produce unreliable answers without external data, and how Retrieval-Augmented Generation solves that problem for business agents.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " Why standard language models produce unreliable answers without external data, and how Retrieval-Augmented Generation solves that problem for business agents.",
+     "href": null
+    }
+   ],
+   "icon": {
+    "type": "emoji",
+    "emoji": "\ud83d\udca1"
+   },
+   "color": "gray_background"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "36e94183-19f3-8094-aaac-c2ecfe462342",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8098-9a75-d90eec3aca5c"
+  },
+  "created_time": "2026-05-28T11:02:00.000Z",
+  "last_edited_time": "2026-05-28T11:02:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "c9dd80fc-0149-49cb-9485-7622d57fec44",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8098-9a75-d90eec3aca5c"
+  },
+  "created_time": "2026-05-22T01:59:00.000Z",
+  "last_edited_time": "2026-05-23T23:56:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_2",
+  "heading_2": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "A new kind of failure",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "A new kind of failure",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "f17eaa90-2d42-403e-a938-ea21e3c5f87d",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8098-9a75-d90eec3aca5c"
+  },
+  "created_time": "2026-05-22T01:59:00.000Z",
+  "last_edited_time": "2026-05-22T01:59:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Contigo GmbH's support agent has memory, session isolation, and a well-designed retention policy. In multi-turn conversations about things the agent already knows from its training, it performs reliably. But when clients ask about Contigo's specific loan products, current interest rates, or internal compliance procedures, something goes wrong.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Contigo GmbH's support agent has memory, session isolation, and a well-designed retention policy. In multi-turn conversations about things the agent already knows from its training, it performs reliably. But when clients ask about Contigo's specific loan products, current interest rates, or internal compliance procedures, something goes wrong.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "b2de21ab-1969-4afa-b0b1-2cd5cb5f223e",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8098-9a75-d90eec3aca5c"
+  },
+  "created_time": "2026-05-22T01:59:00.000Z",
+  "last_edited_time": "2026-05-22T01:59:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "The agent answers confidently. The answers are fluent, professionally phrased, and completely wrong.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "The agent answers confidently. The answers are fluent, professionally phrased, and completely wrong.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "ae53beeb-323f-44ab-8ec5-c5c9461f2dbc",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8098-9a75-d90eec3aca5c"
+  },
+  "created_time": "2026-05-22T01:59:00.000Z",
+  "last_edited_time": "2026-05-22T01:59:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "A client asks about the maximum loan amount available under Contigo's SME financing programme. The agent cites a figure from a general financial services context it encountered during training. The actual Contigo limit is different. The client proceeds on the basis of incorrect information. The compliance team flags the interaction as a serious incident.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "A client asks about the maximum loan amount available under Contigo's SME financing programme. The agent cites a figure from a general financial services context it encountered during training. The actual Contigo limit is different. The client proceeds on the basis of incorrect information. The compliance team flags the interaction as a serious incident.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "43783a8d-4749-45e6-8807-d891e1a5eaf3",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8098-9a75-d90eec3aca5c"
+  },
+  "created_time": "2026-05-22T01:59:00.000Z",
+  "last_edited_time": "2026-05-23T23:57:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "This is a knowledge problem and memory alone cannot fix it.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "This is a knowledge problem and memory alone cannot fix it.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37994183-19f3-8066-a5f2-fd067653615e",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8098-9a75-d90eec3aca5c"
+  },
+  "created_time": "2026-06-08T14:58:00.000Z",
+  "last_edited_time": "2026-06-08T14:58:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "d58a1361-27a5-491a-8480-d073e7e0cac7",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8098-9a75-d90eec3aca5c"
+  },
+  "created_time": "2026-05-22T01:59:00.000Z",
+  "last_edited_time": "2026-05-23T23:56:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_2",
+  "heading_2": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Why language models hallucinate",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Why language models hallucinate",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "9e349282-8779-4a1e-b778-20c4fcaed250",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8098-9a75-d90eec3aca5c"
+  },
+  "created_time": "2026-05-22T01:59:00.000Z",
+  "last_edited_time": "2026-05-22T01:59:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "A large language model is trained on a vast body of text up to a fixed point in time. After training, its internal knowledge is frozen. It cannot access information that postdates its training cutoff, it has no visibility into private or proprietary business data, and it has no mechanism for knowing what it does not know.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "A large language model is trained on a vast body of text up to a fixed point in time. After training, its internal knowledge is frozen. It cannot access information that postdates its training cutoff, it has no visibility into private or proprietary business data, and it has no mechanism for knowing what it does not know.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "69ac2a5e-5e8d-4d07-8517-15009ecb78e9",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8098-9a75-d90eec3aca5c"
+  },
+  "created_time": "2026-05-22T01:59:00.000Z",
+  "last_edited_time": "2026-05-23T23:57:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "When a question falls outside what the model genuinely knows, it does not stop and say so. It generates the most plausible-sounding continuation of the prompt it can produce. The result is a confident, fluent, and potentially fabricated answer; known as hallucination.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "When a question falls outside what the model genuinely knows, it does not stop and say so. It generates the most plausible-sounding continuation of the prompt it can produce. The result is a confident, fluent, and potentially fabricated answer; known as hallucination.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "8373776d-b7b6-43d4-afc7-8b080545fe2e",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8098-9a75-d90eec3aca5c"
+  },
+  "created_time": "2026-05-22T01:59:00.000Z",
+  "last_edited_time": "2026-05-22T01:59:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "For a consumer chatbot, hallucination is an embarrassment. For a financial services agent operating under EU regulatory oversight, it is a liability. Contigo cannot deploy an agent that invents loan terms, fabricates compliance thresholds, or misquotes product conditions to clients.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "For a consumer chatbot, hallucination is an embarrassment. For a financial services agent operating under EU regulatory oversight, it is a liability. Contigo cannot deploy an agent that invents loan terms, fabricates compliance thresholds, or misquotes product conditions to clients.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37994183-19f3-80e7-977a-cbb4974ba14f",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8098-9a75-d90eec3aca5c"
+  },
+  "created_time": "2026-06-08T15:00:00.000Z",
+  "last_edited_time": "2026-06-08T15:00:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "c0995ac8-e514-45d6-9d6c-71a906d295a5",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8098-9a75-d90eec3aca5c"
+  },
+  "created_time": "2026-05-22T01:59:00.000Z",
+  "last_edited_time": "2026-05-23T23:57:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_2",
+  "heading_2": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "What RAG does",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "What RAG does",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "f4cd3e71-f294-40ea-9e3c-42dae3683994",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8098-9a75-d90eec3aca5c"
+  },
+  "created_time": "2026-05-22T01:59:00.000Z",
+  "last_edited_time": "2026-05-22T01:59:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Retrieval-Augmented Generation (RAG) is an architectural pattern that addresses this problem directly. Instead of relying on the model's frozen internal knowledge, RAG gives the agent access to an external, up-to-date knowledge base at query time.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Retrieval-Augmented Generation (RAG) is an architectural pattern that addresses this problem directly. Instead of relying on the model's frozen internal knowledge, RAG gives the agent access to an external, up-to-date knowledge base at query time.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "82e30dc8-fce9-4532-ad33-c00ddce37b1b",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8098-9a75-d90eec3aca5c"
+  },
+  "created_time": "2026-05-22T01:59:00.000Z",
+  "last_edited_time": "2026-05-22T01:59:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "The process works in three steps. When a client submits a query, the system searches an external database to retrieve document chunks that are relevant to that query. Those chunks are appended to the prompt as context. The language model then generates its response based on that retrieved context rather than relying on its general training.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "The process works in three steps. When a client submits a query, the system searches an external database to retrieve document chunks that are relevant to that query. Those chunks are appended to the prompt as context. The language model then generates its response based on that retrieved context rather than relying on its general training.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "ab786c96-25ce-41af-8e31-98ecf6cac161",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8098-9a75-d90eec3aca5c"
+  },
+  "created_time": "2026-05-22T01:59:00.000Z",
+  "last_edited_time": "2026-05-22T01:59:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "The result is an agent that answers from evidence rather than from approximation. When a Contigo client asks about the SME loan limit, the agent retrieves the current product documentation, reads the actual figure, and responds accurately. When the information is not in the knowledge base, the agent can be instructed to say so explicitly rather than fabricating an answer.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "The result is an agent that answers from evidence rather than from approximation. When a Contigo client asks about the SME loan limit, the agent retrieves the current product documentation, reads the actual figure, and responds accurately. When the information is not in the knowledge base, the agent can be instructed to say so explicitly rather than fabricating an answer.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "36a94183-19f3-8091-bdec-e59835a6f17f",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8098-9a75-d90eec3aca5c"
+  },
+  "created_time": "2026-05-24T00:28:00.000Z",
+  "last_edited_time": "2026-06-04T18:51:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "image",
+  "image": {
+   "caption": [],
+   "type": "file",
+   "file": {
+    "url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/3a9085c4-df29-45e6-8bc7-6c9c0a25ea8c/d4245e55-bef7-4819-8d00-83bafddf2d8b/image.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466WB2YUBST%2F20261028%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20261028T111851Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEDsaCXVzLXdlc3QtMiJHMEUCIEe9D24dTOtbh7yJjmAGE4aIQFprdAfeCXZglQZ9EvQLAiEAkobLKSXEfHlacDJW4zc6ZSaBkdbgtO0wZHPXdETR6Zoq%2FwMIAxAAGgw2Mzc0MjMxODM4MDUiDIkvQgoMcx3oPsLVgyrcAx9cdzFYmtGSjUbX4%2F4kfF5%2BQJCQD0jjd8km3BvXMza9nApJUHRUk5kEw83h4gHQzE4hkT2lCvLE2BDvcPSQMT1yPpeeVfZw6EnzsZfd5ut67DycPQziKPjgfMUnv%2Be9kYa8Ij9sFCHluDW2nfPB%2BbcXxooyeKU0Uxz4WCg2YZV3OybX9jeQn8DoSvEl6yiw5%2FtSb0Wt1OT3E4yU4wMfbAPwDmdSrPqlNshzsCh8PhevwZj3a7smNbM3SIz0CjVL9XnApMJcWMz1vFSkQcwLZruWm5EhnLywN1H1tJIcHxdKNeGzNjqnZIaOQcwAQtoBsnyfAAiZTbVCwvAohNBIgJ66uaVXrh0JKHX3eMurfpudNuXq81E1GzsY%2BCWcuFMKcMGt0EmdltvHQeakU7IGai71g7kDbI1BBb7H0jlrYELg38qiw4MQ3xSPHWXcVpSBeG9OSf8MsRH%2FwFcV0vwfer3FSLzx9XET5YZ9ibqgoC8eUFqXO%2Fn%2FeL%2FiA1YvpbIIkV3qaE8VQQ2mOyqLpi05N1QdrKH7vM5mje39vc0nr0MysSBy68TRBU3aCafP4S8n%2Bt28NBFxvxYCIs29Fk3a4huWzdrn%2BUKxjIs%2FAiulyKdjggv4GsV2kR9AFx%2BAMIilh9cGOqUB1krItha1DEK7yL61amPPVTrkqd7ctyllwZiVaCUohimrswuNFdqr7IsnGiKYRZdL477kqbVC%2F8Kx5JBVI%2FwHbEw%2BMrclUwB3KfouvSgyHUCvuBOe9m9zB4ZBAU5czVi4BKmhS2EO2T8OogWqTk9XAP78%2Fb%2BeW2MxVNVsGowIIl7u60UO4pdz9bkG6gQg1ZDrgzeSMZd9uEWfByXhe6IXFu2Jc07Y&X-Amz-Signature=6debdcdc62ba4518fc0383f7e5b990c9b36247a4b93340eaa33482576ac36f25&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+    "expiry_time": "2026-10-28T12:18:51.341Z"
+   }
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37994183-19f3-8049-91ad-e72f0e36caf5",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8098-9a75-d90eec3aca5c"
+  },
+  "created_time": "2026-06-08T15:02:00.000Z",
+  "last_edited_time": "2026-06-08T15:02:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "09615c86-b07e-4fa0-8d8b-3478446bbf90",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8098-9a75-d90eec3aca5c"
+  },
+  "created_time": "2026-05-22T01:59:00.000Z",
+  "last_edited_time": "2026-05-23T23:57:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_2",
+  "heading_2": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "What RAG changes for Contigo",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "What RAG changes for Contigo",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "cc580f60-772c-4702-af1b-817d00a7f766",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8098-9a75-d90eec3aca5c"
+  },
+  "created_time": "2026-05-22T01:59:00.000Z",
+  "last_edited_time": "2026-05-22T01:59:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "The practical implications for Contigo's agent are significant across three dimensions.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "The practical implications for Contigo's agent are significant across three dimensions.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "4ffef486-f5be-47f2-b8c0-e05172c6c769",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8098-9a75-d90eec3aca5c"
+  },
+  "created_time": "2026-05-22T01:59:00.000Z",
+  "last_edited_time": "2026-06-08T15:02:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Accuracy:",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Accuracy:",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " Responses are grounded in the actual content of Contigo's documents rather than in what the language model's training data happened to contain about financial services in general.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " Responses are grounded in the actual content of Contigo's documents rather than in what the language model's training data happened to contain about financial services in general.",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "3729c75a-bc44-4670-a219-b39ac976d423",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8098-9a75-d90eec3aca5c"
+  },
+  "created_time": "2026-05-22T01:59:00.000Z",
+  "last_edited_time": "2026-06-08T15:02:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Currency:",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Currency:",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " The knowledge base can be updated as products change, rates are revised, or compliance requirements evolve. The model itself does not need to be retrained.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " The knowledge base can be updated as products change, rates are revised, or compliance requirements evolve. The model itself does not need to be retrained.",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "e8c8dbbc-ca57-44bf-a296-65821e538ae1",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8098-9a75-d90eec3aca5c"
+  },
+  "created_time": "2026-05-22T01:59:00.000Z",
+  "last_edited_time": "2026-06-08T15:02:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Auditability:",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Auditability:",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " Because responses are tied to specific retrieved documents, it becomes possible to trace which source material informed a given answer. In a regulated environment, this traceability is a compliance asset.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " Because responses are tied to specific retrieved documents, it becomes possible to trace which source material informed a given answer. In a regulated environment, this traceability is a compliance asset.",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37994183-19f3-805c-8ab7-eb7034b01afa",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8098-9a75-d90eec3aca5c"
+  },
+  "created_time": "2026-06-08T15:02:00.000Z",
+  "last_edited_time": "2026-06-08T15:02:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "b22fd878-52f3-4457-91d0-790e03c04add",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8098-9a75-d90eec3aca5c"
+  },
+  "created_time": "2026-05-22T01:59:00.000Z",
+  "last_edited_time": "2026-06-08T15:02:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": true,
+  "in_trash": false,
+  "type": "table",
+  "table": {
+   "table_width": 3,
+   "has_column_header": false,
+   "has_row_header": false
+  },
+  "archived": false,
+  "_children": [
+   {
+    "object": "block",
+    "id": "b3742470-0f34-4ef6-93f9-ec2b91296c64",
+    "parent": {
+     "type": "block_id",
+     "block_id": "b22fd878-52f3-4457-91d0-790e03c04add"
+    },
+    "created_time": "2026-05-22T01:59:00.000Z",
+    "last_edited_time": "2026-05-28T11:05:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "231d872b-594c-81f2-a375-0002b8783aca"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "table_row",
+    "table_row": {
+     "cells": [
+      [],
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Without RAG",
+         "link": null
+        },
+        "annotations": {
+         "bold": true,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Without RAG",
+        "href": null
+       }
+      ],
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "With RAG",
+         "link": null
+        },
+        "annotations": {
+         "bold": true,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "With RAG",
+        "href": null
+       }
+      ]
+     ]
+    },
+    "archived": false
+   },
+   {
+    "object": "block",
+    "id": "4a68c705-cce9-40ff-900e-2676e9d9b388",
+    "parent": {
+     "type": "block_id",
+     "block_id": "b22fd878-52f3-4457-91d0-790e03c04add"
+    },
+    "created_time": "2026-05-22T01:59:00.000Z",
+    "last_edited_time": "2026-05-22T01:59:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "231d872b-594c-81f2-a375-0002b8783aca"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "231d872b-594c-81f2-a375-0002b8783aca"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "table_row",
+    "table_row": {
+     "cells": [
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Knowledge source",
+         "link": null
+        },
+        "annotations": {
+         "bold": true,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Knowledge source",
+        "href": null
+       }
+      ],
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Frozen training data",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Frozen training data",
+        "href": null
+       }
+      ],
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "External, updatable knowledge base",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "External, updatable knowledge base",
+        "href": null
+       }
+      ]
+     ]
+    },
+    "archived": false
+   },
+   {
+    "object": "block",
+    "id": "79bec1a5-8d86-43b1-8150-57850db3f875",
+    "parent": {
+     "type": "block_id",
+     "block_id": "b22fd878-52f3-4457-91d0-790e03c04add"
+    },
+    "created_time": "2026-05-22T01:59:00.000Z",
+    "last_edited_time": "2026-05-22T01:59:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "231d872b-594c-81f2-a375-0002b8783aca"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "231d872b-594c-81f2-a375-0002b8783aca"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "table_row",
+    "table_row": {
+     "cells": [
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Response to unknown queries",
+         "link": null
+        },
+        "annotations": {
+         "bold": true,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Response to unknown queries",
+        "href": null
+       }
+      ],
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Hallucinated plausible answer",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Hallucinated plausible answer",
+        "href": null
+       }
+      ],
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Retrieves evidence or states information is missing",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Retrieves evidence or states information is missing",
+        "href": null
+       }
+      ]
+     ]
+    },
+    "archived": false
+   },
+   {
+    "object": "block",
+    "id": "f7e03e06-13fc-467b-86a2-242c331a173e",
+    "parent": {
+     "type": "block_id",
+     "block_id": "b22fd878-52f3-4457-91d0-790e03c04add"
+    },
+    "created_time": "2026-05-22T01:59:00.000Z",
+    "last_edited_time": "2026-05-22T01:59:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "231d872b-594c-81f2-a375-0002b8783aca"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "231d872b-594c-81f2-a375-0002b8783aca"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "table_row",
+    "table_row": {
+     "cells": [
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Domain specificity",
+         "link": null
+        },
+        "annotations": {
+         "bold": true,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Domain specificity",
+        "href": null
+       }
+      ],
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "General financial services context",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "General financial services context",
+        "href": null
+       }
+      ],
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Contigo's actual products and policies",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Contigo's actual products and policies",
+        "href": null
+       }
+      ]
+     ]
+    },
+    "archived": false
+   },
+   {
+    "object": "block",
+    "id": "b58949e5-2b0d-4aa4-89bf-9d275f7c7fc5",
+    "parent": {
+     "type": "block_id",
+     "block_id": "b22fd878-52f3-4457-91d0-790e03c04add"
+    },
+    "created_time": "2026-05-22T01:59:00.000Z",
+    "last_edited_time": "2026-05-22T01:59:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "231d872b-594c-81f2-a375-0002b8783aca"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "231d872b-594c-81f2-a375-0002b8783aca"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "table_row",
+    "table_row": {
+     "cells": [
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Auditability",
+         "link": null
+        },
+        "annotations": {
+         "bold": true,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Auditability",
+        "href": null
+       }
+      ],
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Cannot cite sources",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Cannot cite sources",
+        "href": null
+       }
+      ],
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Can reference specific documents retrieved",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Can reference specific documents retrieved",
+        "href": null
+       }
+      ]
+     ]
+    },
+    "archived": false
+   }
+  ]
+ },
+ {
+  "object": "block",
+  "id": "37994183-19f3-802d-af06-fb1050ba1358",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8098-9a75-d90eec3aca5c"
+  },
+  "created_time": "2026-06-08T15:02:00.000Z",
+  "last_edited_time": "2026-06-08T15:02:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "aeffab42-028b-4486-afff-794535a1bc0d",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8098-9a75-d90eec3aca5c"
+  },
+  "created_time": "2026-05-22T01:59:00.000Z",
+  "last_edited_time": "2026-05-23T23:58:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_2",
+  "heading_2": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Check for Understanding",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Check for Understanding",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "36e94183-19f3-8038-8783-d6a92ea8d0d0",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8098-9a75-d90eec3aca5c"
+  },
+  "created_time": "2026-05-28T11:21:00.000Z",
+  "last_edited_time": "2026-05-28T11:21:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": true,
+  "in_trash": false,
+  "type": "callout",
+  "callout": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "A Contigo client asks the support agent about the current SME loan limit. The agent responds confidently with an incorrect figure not found in any Contigo document. What is the most likely cause?",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "A Contigo client asks the support agent about the current SME loan limit. The agent responds confidently with an incorrect figure not found in any Contigo document. What is the most likely cause?",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "gray_background"
+  },
+  "archived": false,
+  "_children": [
+   {
+    "object": "block",
+    "id": "36e94183-19f3-80bd-a866-c72aaee4961d",
+    "parent": {
+     "type": "block_id",
+     "block_id": "36e94183-19f3-8038-8783-d6a92ea8d0d0"
+    },
+    "created_time": "2026-05-28T11:21:00.000Z",
+    "last_edited_time": "2026-05-28T11:21:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "embed",
+    "embed": {
+     "caption": [],
+     "url": "https://app.masterschool.com/campus/multi-choice-question/b944a2d7-4cec-49ae-80b0-91feca042d98"
+    },
+    "archived": false
+   }
+  ]
+ },
+ {
+  "object": "block",
+  "id": "1013b05d-45a3-4215-8822-07d7c0bc33a1",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8098-9a75-d90eec3aca5c"
+  },
+  "created_time": "2026-05-22T01:59:00.000Z",
+  "last_edited_time": "2026-05-28T11:21:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "36994183-19f3-80b3-9d20-e165862678f8",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8098-9a75-d90eec3aca5c"
+  },
+  "created_time": "2026-05-23T23:58:00.000Z",
+  "last_edited_time": "2026-05-28T11:20:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": true,
+  "in_trash": false,
+  "type": "callout",
+  "callout": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Takeaway:",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Takeaway:",
+     "href": null
+    }
+   ],
+   "icon": {
+    "type": "emoji",
+    "emoji": "\ud83d\udca1"
+   },
+   "color": "gray_background"
+  },
+  "archived": false,
+  "_children": [
+   {
+    "object": "block",
+    "id": "36e94183-19f3-8052-8c39-ca8192e88b88",
+    "parent": {
+     "type": "block_id",
+     "block_id": "36994183-19f3-80b3-9d20-e165862678f8"
+    },
+    "created_time": "2026-05-28T11:20:00.000Z",
+    "last_edited_time": "2026-05-28T11:20:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+     "rich_text": [
+      {
+       "type": "text",
+       "text": {
+        "content": "Memory gives an agent continuity. RAG gives it accuracy. A business agent that can hold a coherent conversation but cannot access the organisation's actual knowledge is still unreliable at the moment it matters most when a client asks a specific question that only the business can answer correctly.",
+        "link": null
+       },
+       "annotations": {
+        "bold": false,
+        "italic": false,
+        "strikethrough": false,
+        "underline": false,
+        "code": false,
+        "color": "default"
+       },
+       "plain_text": "Memory gives an agent continuity. RAG gives it accuracy. A business agent that can hold a coherent conversation but cannot access the organisation's actual knowledge is still unreliable at the moment it matters most when a client asks a specific question that only the business can answer correctly.",
+       "href": null
+      }
+     ],
+     "icon": null,
+     "color": "default"
+    },
+    "archived": false
+   }
+  ]
+ }
+]

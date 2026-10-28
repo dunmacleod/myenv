@@ -1,0 +1,3684 @@
+[
+ {
+  "object": "block",
+  "id": "6828cee5-d495-4a94-b141-0d18792dcffe",
+  "parent": {
+   "type": "page_id",
+   "page_id": "cd694183-19f3-82a7-9f5f-811d07e40f1d"
+  },
+  "created_time": "2026-07-05T16:46:00.000Z",
+  "last_edited_time": "2026-07-05T16:46:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Bei Cascadia laufen die meisten Supportanfragen durch eine vorhersehbare Reihe von Schritten: Nachricht klassifizieren, Bestellung nachschlagen, Garantie pr\u00fcfen, Antwort entwerfen. Jeder Schritt h\u00e4ngt vom vorherigen ab. Sofia wei\u00df: Daf\u00fcr braucht sie keine Agenten, die spontan miteinander sprechen. Sie braucht einen sequenziellen Workflow. Ein Schritt wird abgeschlossen, dann beginnt der n\u00e4chste und nutzt den Output des vorherigen Schritts.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Bei Cascadia laufen die meisten Supportanfragen durch eine vorhersehbare Reihe von Schritten: Nachricht klassifizieren, Bestellung nachschlagen, Garantie pr\u00fcfen, Antwort entwerfen. Jeder Schritt h\u00e4ngt vom vorherigen ab. Sofia wei\u00df: Daf\u00fcr braucht sie keine Agenten, die spontan miteinander sprechen. Sie braucht einen sequenziellen Workflow. Ein Schritt wird abgeschlossen, dann beginnt der n\u00e4chste und nutzt den Output des vorherigen Schritts.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "89d8561f-24ac-46d0-a9c9-1d938cf1c0a5",
+  "parent": {
+   "type": "page_id",
+   "page_id": "cd694183-19f3-82a7-9f5f-811d07e40f1d"
+  },
+  "created_time": "2026-07-05T16:46:00.000Z",
+  "last_edited_time": "2026-07-05T16:46:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Sequenzielle Orchestrierung (auch Chaining genannt) ist das einfachste Orchestrierungsmuster und der nat\u00fcrliche Ausgangspunkt, wenn Aufgaben klare Abh\u00e4ngigkeiten haben. Diese Lektion zeigt, wie sequenzielle Workflows funktionieren, wann sie passen und wo sie an Grenzen sto\u00dfen.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Sequenzielle Orchestrierung (auch Chaining genannt) ist das einfachste Orchestrierungsmuster und der nat\u00fcrliche Ausgangspunkt, wenn Aufgaben klare Abh\u00e4ngigkeiten haben. Diese Lektion zeigt, wie sequenzielle Workflows funktionieren, wann sie passen und wo sie an Grenzen sto\u00dfen.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "31a575ea-d90a-4809-a399-f2b128a81586",
+  "parent": {
+   "type": "page_id",
+   "page_id": "cd694183-19f3-82a7-9f5f-811d07e40f1d"
+  },
+  "created_time": "2026-07-05T16:46:00.000Z",
+  "last_edited_time": "2026-10-13T14:56:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "In n8n entsteht ein sequenzieller Workflow durch Nodes, die in Ausf\u00fchrungsreihenfolge verbunden sind. Jeder Node erh\u00e4lt Daten vom vorherigen Schritt; sp\u00e4tere Nodes k\u00f6nnen \u00fcber Expressions auf fr\u00fchere Outputs zugreifen. ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "In n8n entsteht ein sequenzieller Workflow durch Nodes, die in Ausf\u00fchrungsreihenfolge verbunden sind. Jeder Node erh\u00e4lt Daten vom vorherigen Schritt; sp\u00e4tere Nodes k\u00f6nnen \u00fcber Expressions auf fr\u00fchere Outputs zugreifen. ",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "ba168f2e-05d0-4d57-9de6-b6f226ca3b2a",
+  "parent": {
+   "type": "page_id",
+   "page_id": "cd694183-19f3-82a7-9f5f-811d07e40f1d"
+  },
+  "created_time": "2026-07-05T16:46:00.000Z",
+  "last_edited_time": "2026-07-05T16:46:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_2",
+  "heading_2": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Die Kernidee",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Die Kernidee",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "ae5f01c8-cf2c-4e0e-8e59-ca8cc3f309b3",
+  "parent": {
+   "type": "page_id",
+   "page_id": "cd694183-19f3-82a7-9f5f-811d07e40f1d"
+  },
+  "created_time": "2026-07-05T16:46:00.000Z",
+  "last_edited_time": "2026-07-05T16:46:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Sequenzielle Orchestrierung folgt einer einfachen Regel:",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Sequenzielle Orchestrierung folgt einer einfachen Regel:",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "ecea76bc-9cf2-4218-9183-4ea838f08d6d",
+  "parent": {
+   "type": "page_id",
+   "page_id": "cd694183-19f3-82a7-9f5f-811d07e40f1d"
+  },
+  "created_time": "2026-07-05T16:46:00.000Z",
+  "last_edited_time": "2026-07-05T16:46:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "quote",
+  "quote": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Ein Schritt wird abgeschlossen, bevor der n\u00e4chste Schritt beginnt.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Ein Schritt wird abgeschlossen, bevor der n\u00e4chste Schritt beginnt.",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "6d7df154-6d14-4215-933e-5689ab76af7b",
+  "parent": {
+   "type": "page_id",
+   "page_id": "cd694183-19f3-82a7-9f5f-811d07e40f1d"
+  },
+  "created_time": "2026-07-05T16:46:00.000Z",
+  "last_edited_time": "2026-07-05T16:46:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Jeder Agent erh\u00e4lt Informationen, f\u00fchrt seine Aufgabe aus und gibt das Ergebnis weiter.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Jeder Agent erh\u00e4lt Informationen, f\u00fchrt seine Aufgabe aus und gibt das Ergebnis weiter.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "dd2187fb-0c99-41e6-8546-c415e9d57cf9",
+  "parent": {
+   "type": "page_id",
+   "page_id": "cd694183-19f3-82a7-9f5f-811d07e40f1d"
+  },
+  "created_time": "2026-07-05T16:46:00.000Z",
+  "last_edited_time": "2026-07-05T16:46:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Stell es dir wie einen Staffellauf vor.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Stell es dir wie einen Staffellauf vor.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "b9117885-ec13-416e-a37c-67ea0aaaaca9",
+  "parent": {
+   "type": "page_id",
+   "page_id": "cd694183-19f3-82a7-9f5f-811d07e40f1d"
+  },
+  "created_time": "2026-07-05T16:46:00.000Z",
+  "last_edited_time": "2026-07-05T16:46:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Der erste L\u00e4ufer beendet seinen Abschnitt und \u00fcbergibt den Staffelstab an den zweiten L\u00e4ufer. Der zweite L\u00e4ufer kann erst starten, wenn er den Staffelstab erhalten hat.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Der erste L\u00e4ufer beendet seinen Abschnitt und \u00fcbergibt den Staffelstab an den zweiten L\u00e4ufer. Der zweite L\u00e4ufer kann erst starten, wenn er den Staffelstab erhalten hat.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "c8abc392-02ed-4985-8a7d-871246fe68ba",
+  "parent": {
+   "type": "page_id",
+   "page_id": "cd694183-19f3-82a7-9f5f-811d07e40f1d"
+  },
+  "created_time": "2026-07-05T16:46:00.000Z",
+  "last_edited_time": "2026-07-05T16:46:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Dasselbe Prinzip gilt f\u00fcr Agenten.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Dasselbe Prinzip gilt f\u00fcr Agenten.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "fd594183-19f3-8377-852d-816bfc9e9c01",
+  "parent": {
+   "type": "page_id",
+   "page_id": "cd694183-19f3-82a7-9f5f-811d07e40f1d"
+  },
+  "created_time": "2026-07-03T09:30:00.000Z",
+  "last_edited_time": "2026-07-04T08:41:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "image",
+  "image": {
+   "caption": [],
+   "type": "file",
+   "file": {
+    "url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/3a9085c4-df29-45e6-8bc7-6c9c0a25ea8c/71154602-7dfb-49f0-94af-a2ad998d6ce7/image_german_%281%29.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466XEMMVPYJ%2F20261028%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20261028T113910Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEDsaCXVzLXdlc3QtMiJHMEUCIBi%2BkB5hZB3z21jweLES1uS7QGh5KemVaRNL4keXeRfOAiEAttB%2FSOJ14YDTZqzjKmEeZ9wDrK%2BlTEqs83qZCbhzPTEq%2FwMIBBAAGgw2Mzc0MjMxODM4MDUiDN%2F2E%2BQx9mXWxJ5MPyrcA6KWx2nnaC463kTYCgpaiL6u%2FBi0L7QG7T46KyPi8zpUSLsU7e8bv1vZa9i0Q1I2w9w9t1yX%2ByZaZRbFswLLGsgraTXht3TCz8EBgYNdcgVOssDny8b8j6ryfUiiS68WVuwCfh3zWrA6z7hR90oPvs74hs8bUrxw2k%2F1x4wDNAL4yfRhFbXBJO%2FYrlcISuYSnsyPzUiT8dsDwc7RGN0bUUr5%2B6DqY6s3vPdihIkj6ceoFn6LjiRPzehQhmIZua5mTr9GM99GOXHg%2Be7L0v3PW6zk8d9xANANVMiBcZuD1Xher8MsXaPnvrvi%2FnNO%2FYFrr%2FIXejoDVMNZ3efj8T4ll%2BWq4nC79yFAzPHXIUs%2FlL0hlETKvnygaOgD9da8ji%2FTAYDswRIySB1LkpiX7d8ya5PDXT8EqNXexoOuT28PTzWFgUUBbXQ7rjlPzl%2B66POIS1ZS7PpAbsBFOX74ggwHm6dP43DooEU2VMunAe%2BTCL8%2F84bZZCGPTqEJ%2BLjsHXWyqs1Hrb7i2SYEUMp7XvjUwdCTPV1FBvu0KsSNByYOz8opQT%2BhfjNqeufwwW9DpYnJNpU5OXCjjxXaoe4DpoFiLtPtf%2B7Y%2BegjOM1W8JnN6k1qfafjJsrKGD%2FYMp9cMLKnh9cGOqUBmCX8CuXiPx5Su59EQq1hFXq3PVhPzvJiuMClERe%2BiBINS9OMttyXiOpN4qtq7DGhvbduL4jrX%2BQpBJlPKuqoPzcRcCgtoZsDtNTEjYjXoxRvi%2Fcev4J4MuwqMw9b%2B5JL5pQuF7XgiDa4PFUvkJdlqnSYp%2Bf7gyvYVyQ%2FA7hrLg8QmjgVVz5SDoD5WeBYvOvyUy5Nd7icdL62L%2Ft2RZ2i2ruNFkcq&X-Amz-Signature=79cf87668a1feac527f093888159d36eabc5d0f605d783b769dfcc950ef006e3&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+    "expiry_time": "2026-10-28T12:39:10.353Z"
+   }
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "ec094183-19f3-833a-8b53-015e4cd7d2f4",
+  "parent": {
+   "type": "page_id",
+   "page_id": "cd694183-19f3-82a7-9f5f-811d07e40f1d"
+  },
+  "created_time": "2026-07-03T09:30:00.000Z",
+  "last_edited_time": "2026-07-04T08:48:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_2",
+  "heading_2": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Beispiel: Eine Kundenanfrage bearbeiten",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Beispiel: Eine Kundenanfrage bearbeiten",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "17720be5-ced8-4c73-97b3-f7b9e8341500",
+  "parent": {
+   "type": "page_id",
+   "page_id": "cd694183-19f3-82a7-9f5f-811d07e40f1d"
+  },
+  "created_time": "2026-07-04T08:48:00.000Z",
+  "last_edited_time": "2026-07-04T08:48:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Stell dir vor, ein Unternehmen erh\u00e4lt ein Customer-Support-Ticket.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Stell dir vor, ein Unternehmen erh\u00e4lt ein Customer-Support-Ticket.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "eae4f2ec-37f4-49a6-81bc-ebe5dde9633a",
+  "parent": {
+   "type": "page_id",
+   "page_id": "cd694183-19f3-82a7-9f5f-811d07e40f1d"
+  },
+  "created_time": "2026-07-04T08:48:00.000Z",
+  "last_edited_time": "2026-07-04T08:48:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Der Workflow k\u00f6nnte so aussehen:",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Der Workflow k\u00f6nnte so aussehen:",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "78d1fbea-533f-458e-8854-eb425b69ed4c",
+  "parent": {
+   "type": "page_id",
+   "page_id": "cd694183-19f3-82a7-9f5f-811d07e40f1d"
+  },
+  "created_time": "2026-07-04T08:48:00.000Z",
+  "last_edited_time": "2026-07-04T08:48:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "numbered_list_item",
+  "numbered_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Request Analyzer identifiziert die Art der Anfrage.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Request Analyzer identifiziert die Art der Anfrage.",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "52455c22-55ac-4e9e-9fac-78be10ec7701",
+  "parent": {
+   "type": "page_id",
+   "page_id": "cd694183-19f3-82a7-9f5f-811d07e40f1d"
+  },
+  "created_time": "2026-07-04T08:48:00.000Z",
+  "last_edited_time": "2026-07-04T08:48:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "numbered_list_item",
+  "numbered_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Priority Agent bestimmt die Dringlichkeit.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Priority Agent bestimmt die Dringlichkeit.",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "9412ceef-7ff1-46d2-8510-ff6709bf2abb",
+  "parent": {
+   "type": "page_id",
+   "page_id": "cd694183-19f3-82a7-9f5f-811d07e40f1d"
+  },
+  "created_time": "2026-07-04T08:48:00.000Z",
+  "last_edited_time": "2026-07-04T08:48:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "numbered_list_item",
+  "numbered_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Response Agent entwirft eine Antwort.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Response Agent entwirft eine Antwort.",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "7148fde7-7849-4970-9057-6ca02c666697",
+  "parent": {
+   "type": "page_id",
+   "page_id": "cd694183-19f3-82a7-9f5f-811d07e40f1d"
+  },
+  "created_time": "2026-07-04T08:48:00.000Z",
+  "last_edited_time": "2026-07-04T08:48:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "numbered_list_item",
+  "numbered_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Review Agent pr\u00fcft die Qualit\u00e4t.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Review Agent pr\u00fcft die Qualit\u00e4t.",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "dfa0467e-0a32-4abe-ad8a-ba767f479b2b",
+  "parent": {
+   "type": "page_id",
+   "page_id": "cd694183-19f3-82a7-9f5f-811d07e40f1d"
+  },
+  "created_time": "2026-07-04T08:48:00.000Z",
+  "last_edited_time": "2026-07-04T08:48:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "numbered_list_item",
+  "numbered_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Final Response wird an den Kunden zur\u00fcckgegeben.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Final Response wird an den Kunden zur\u00fcckgegeben.",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "8d36ae62-62fd-492a-85c9-4e3ea4778212",
+  "parent": {
+   "type": "page_id",
+   "page_id": "cd694183-19f3-82a7-9f5f-811d07e40f1d"
+  },
+  "created_time": "2026-07-04T08:48:00.000Z",
+  "last_edited_time": "2026-07-04T08:48:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Jeder Schritt ben\u00f6tigt Informationen aus dem vorherigen Schritt.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Jeder Schritt ben\u00f6tigt Informationen aus dem vorherigen Schritt.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "eb990ab2-2e67-4ea4-bf16-3b1986b10aa7",
+  "parent": {
+   "type": "page_id",
+   "page_id": "cd694183-19f3-82a7-9f5f-811d07e40f1d"
+  },
+  "created_time": "2026-07-04T08:48:00.000Z",
+  "last_edited_time": "2026-07-04T08:48:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Der Response Agent kann keine Antwort erstellen, bevor die Anfrage analysiert wurde.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Der Response Agent kann keine Antwort erstellen, bevor die Anfrage analysiert wurde.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "e1001f3d-6071-4fbd-871d-517fe653626c",
+  "parent": {
+   "type": "page_id",
+   "page_id": "cd694183-19f3-82a7-9f5f-811d07e40f1d"
+  },
+  "created_time": "2026-07-04T08:48:00.000Z",
+  "last_edited_time": "2026-07-04T08:48:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Der Review Agent kann keine Antwort pr\u00fcfen, die noch nicht existiert.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Der Review Agent kann keine Antwort pr\u00fcfen, die noch nicht existiert.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "39394183-19f3-80f4-8869-e9f42b9300bf",
+  "parent": {
+   "type": "page_id",
+   "page_id": "cd694183-19f3-82a7-9f5f-811d07e40f1d"
+  },
+  "created_time": "2026-07-04T09:00:00.000Z",
+  "last_edited_time": "2026-07-04T09:00:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "image",
+  "image": {
+   "caption": [],
+   "type": "file",
+   "file": {
+    "url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/3a9085c4-df29-45e6-8bc7-6c9c0a25ea8c/3e5c39bd-20e6-499c-8913-c345c1deba87/customer_service_six_step_de.svg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466XEMMVPYJ%2F20261028%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20261028T113910Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEDsaCXVzLXdlc3QtMiJHMEUCIBi%2BkB5hZB3z21jweLES1uS7QGh5KemVaRNL4keXeRfOAiEAttB%2FSOJ14YDTZqzjKmEeZ9wDrK%2BlTEqs83qZCbhzPTEq%2FwMIBBAAGgw2Mzc0MjMxODM4MDUiDN%2F2E%2BQx9mXWxJ5MPyrcA6KWx2nnaC463kTYCgpaiL6u%2FBi0L7QG7T46KyPi8zpUSLsU7e8bv1vZa9i0Q1I2w9w9t1yX%2ByZaZRbFswLLGsgraTXht3TCz8EBgYNdcgVOssDny8b8j6ryfUiiS68WVuwCfh3zWrA6z7hR90oPvs74hs8bUrxw2k%2F1x4wDNAL4yfRhFbXBJO%2FYrlcISuYSnsyPzUiT8dsDwc7RGN0bUUr5%2B6DqY6s3vPdihIkj6ceoFn6LjiRPzehQhmIZua5mTr9GM99GOXHg%2Be7L0v3PW6zk8d9xANANVMiBcZuD1Xher8MsXaPnvrvi%2FnNO%2FYFrr%2FIXejoDVMNZ3efj8T4ll%2BWq4nC79yFAzPHXIUs%2FlL0hlETKvnygaOgD9da8ji%2FTAYDswRIySB1LkpiX7d8ya5PDXT8EqNXexoOuT28PTzWFgUUBbXQ7rjlPzl%2B66POIS1ZS7PpAbsBFOX74ggwHm6dP43DooEU2VMunAe%2BTCL8%2F84bZZCGPTqEJ%2BLjsHXWyqs1Hrb7i2SYEUMp7XvjUwdCTPV1FBvu0KsSNByYOz8opQT%2BhfjNqeufwwW9DpYnJNpU5OXCjjxXaoe4DpoFiLtPtf%2B7Y%2BegjOM1W8JnN6k1qfafjJsrKGD%2FYMp9cMLKnh9cGOqUBmCX8CuXiPx5Su59EQq1hFXq3PVhPzvJiuMClERe%2BiBINS9OMttyXiOpN4qtq7DGhvbduL4jrX%2BQpBJlPKuqoPzcRcCgtoZsDtNTEjYjXoxRvi%2Fcev4J4MuwqMw9b%2B5JL5pQuF7XgiDa4PFUvkJdlqnSYp%2Bf7gyvYVyQ%2FA7hrLg8QmjgVVz5SDoD5WeBYvOvyUy5Nd7icdL62L%2Ft2RZ2i2ruNFkcq&X-Amz-Signature=c369ff8750c076cde9e4695acf1f41d2c1746041657d4e558a65752156e3267a&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+    "expiry_time": "2026-10-28T12:39:10.353Z"
+   }
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "4d494183-19f3-8238-8cc9-81a3550062b5",
+  "parent": {
+   "type": "page_id",
+   "page_id": "cd694183-19f3-82a7-9f5f-811d07e40f1d"
+  },
+  "created_time": "2026-07-03T09:30:00.000Z",
+  "last_edited_time": "2026-07-04T09:01:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_2",
+  "heading_2": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Wie Informationen flie\u00dfen",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Wie Informationen flie\u00dfen",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "8e9185a2-400d-4cbf-83c9-0929610befdb",
+  "parent": {
+   "type": "page_id",
+   "page_id": "cd694183-19f3-82a7-9f5f-811d07e40f1d"
+  },
+  "created_time": "2026-07-04T09:01:00.000Z",
+  "last_edited_time": "2026-07-04T09:01:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Ein Grund, warum sequenzielle Workflows beliebt sind, ist, dass der Informationsfluss leicht nachzuvollziehen ist.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Ein Grund, warum sequenzielle Workflows beliebt sind, ist, dass der Informationsfluss leicht nachzuvollziehen ist.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "f6b340e5-2639-476e-a362-8992cb1bcc55",
+  "parent": {
+   "type": "page_id",
+   "page_id": "cd694183-19f3-82a7-9f5f-811d07e40f1d"
+  },
+  "created_time": "2026-07-04T09:01:00.000Z",
+  "last_edited_time": "2026-07-04T09:01:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Jeder Schritt erh\u00e4lt:",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Jeder Schritt erh\u00e4lt:",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "bd256996-6a7e-49db-a219-1be0c3d9d40b",
+  "parent": {
+   "type": "page_id",
+   "page_id": "cd694183-19f3-82a7-9f5f-811d07e40f1d"
+  },
+  "created_time": "2026-07-04T09:01:00.000Z",
+  "last_edited_time": "2026-07-04T09:01:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "die urspr\u00fcngliche Anfrage",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "die urspr\u00fcngliche Anfrage",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "56803265-d35d-4afe-8710-bc4ea65e90ca",
+  "parent": {
+   "type": "page_id",
+   "page_id": "cd694183-19f3-82a7-9f5f-811d07e40f1d"
+  },
+  "created_time": "2026-07-04T09:01:00.000Z",
+  "last_edited_time": "2026-07-04T09:01:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "vorherige Outputs",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "vorherige Outputs",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "d5818cad-3eb4-4f8b-9b1c-979dc6e4dc43",
+  "parent": {
+   "type": "page_id",
+   "page_id": "cd694183-19f3-82a7-9f5f-811d07e40f1d"
+  },
+  "created_time": "2026-07-04T09:01:00.000Z",
+  "last_edited_time": "2026-07-04T09:01:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "geteilten Workflow-State",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "geteilten Workflow-State",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "524177a9-1cc5-465b-b691-0ec4449035b0",
+  "parent": {
+   "type": "page_id",
+   "page_id": "cd694183-19f3-82a7-9f5f-811d07e40f1d"
+  },
+  "created_time": "2026-07-04T09:01:00.000Z",
+  "last_edited_time": "2026-07-04T09:01:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Dann f\u00fcgt er neue Informationen hinzu, bevor er alles weitergibt.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Dann f\u00fcgt er neue Informationen hinzu, bevor er alles weitergibt.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "07acd960-a93e-4d80-9509-4ce3fdd50235",
+  "parent": {
+   "type": "page_id",
+   "page_id": "cd694183-19f3-82a7-9f5f-811d07e40f1d"
+  },
+  "created_time": "2026-07-04T09:01:00.000Z",
+  "last_edited_time": "2026-10-13T04:24:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "815cd27b-5ca8-4b38-8784-7f2f8565f656"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "In n8n stehen Outputs fr\u00fcherer Nodes als Ausf\u00fchrungsdaten zur Verf\u00fcgung. Mit ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "In n8n stehen Outputs fr\u00fcherer Nodes als Ausf\u00fchrungsdaten zur Verf\u00fcgung. Mit ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "Set (Edit Fields)",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Set (Edit Fields)",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " lassen sich benannte Felder ablegen; Expressions lesen Werte aus vorherigen Schritten. Agenten teilen nicht automatisch ein gemeinsames Memory-Objekt. Pr\u00fcfe die Ein- und Ausgaben jedes Nodes unter ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " lassen sich benannte Felder ablegen; Expressions lesen Werte aus vorherigen Schritten. Agenten teilen nicht automatisch ein gemeinsames Memory-Objekt. Pr\u00fcfe die Ein- und Ausgaben jedes Nodes unter ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "Executions",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Executions",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": ".",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": ".",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "60074bb6-4471-45e8-8ce4-801927bedbd5",
+  "parent": {
+   "type": "page_id",
+   "page_id": "cd694183-19f3-82a7-9f5f-811d07e40f1d"
+  },
+  "created_time": "2026-07-04T09:01:00.000Z",
+  "last_edited_time": "2026-07-04T09:01:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Beispiel f\u00fcr State Evolution",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Beispiel f\u00fcr State Evolution",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "da23ba28-4883-4f2b-b871-1a493805a45d",
+  "parent": {
+   "type": "page_id",
+   "page_id": "cd694183-19f3-82a7-9f5f-811d07e40f1d"
+  },
+  "created_time": "2026-07-04T09:01:00.000Z",
+  "last_edited_time": "2026-07-05T11:44:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": true,
+  "in_trash": false,
+  "type": "table",
+  "table": {
+   "table_width": 2,
+   "has_column_header": true,
+   "has_row_header": false
+  },
+  "archived": false,
+  "_children": [
+   {
+    "object": "block",
+    "id": "48e15ffc-98f9-4e6e-80b2-ad3e9ba6a791",
+    "parent": {
+     "type": "block_id",
+     "block_id": "da23ba28-4883-4f2b-b871-1a493805a45d"
+    },
+    "created_time": "2026-07-04T09:01:00.000Z",
+    "last_edited_time": "2026-07-04T09:01:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "table_row",
+    "table_row": {
+     "cells": [
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Schritt",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Schritt",
+        "href": null
+       }
+      ],
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "State",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "State",
+        "href": null
+       }
+      ]
+     ]
+    },
+    "archived": false
+   },
+   {
+    "object": "block",
+    "id": "0fd4666f-a838-461e-a395-a2650bdc2c3c",
+    "parent": {
+     "type": "block_id",
+     "block_id": "da23ba28-4883-4f2b-b871-1a493805a45d"
+    },
+    "created_time": "2026-07-04T09:01:00.000Z",
+    "last_edited_time": "2026-07-04T09:01:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "table_row",
+    "table_row": {
+     "cells": [
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "User Request",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "User Request",
+        "href": null
+       }
+      ],
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "\u201eMy order hasn't arrived.\"",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "\u201eMy order hasn't arrived.\"",
+        "href": null
+       }
+      ]
+     ]
+    },
+    "archived": false
+   },
+   {
+    "object": "block",
+    "id": "8369eea2-4366-4983-a908-b7fd1ffd76c6",
+    "parent": {
+     "type": "block_id",
+     "block_id": "da23ba28-4883-4f2b-b871-1a493805a45d"
+    },
+    "created_time": "2026-07-04T09:01:00.000Z",
+    "last_edited_time": "2026-07-04T09:01:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "table_row",
+    "table_row": {
+     "cells": [
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "After Analyzer",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "After Analyzer",
+        "href": null
+       }
+      ],
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "+ Category = Shipping Issue",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "+ Category = Shipping Issue",
+        "href": null
+       }
+      ]
+     ]
+    },
+    "archived": false
+   },
+   {
+    "object": "block",
+    "id": "3d26234c-ff31-489c-8d79-5047d2d3cc30",
+    "parent": {
+     "type": "block_id",
+     "block_id": "da23ba28-4883-4f2b-b871-1a493805a45d"
+    },
+    "created_time": "2026-07-04T09:01:00.000Z",
+    "last_edited_time": "2026-07-04T09:01:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "table_row",
+    "table_row": {
+     "cells": [
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "After Priority Agent",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "After Priority Agent",
+        "href": null
+       }
+      ],
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "+ Priority = High",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "+ Priority = High",
+        "href": null
+       }
+      ]
+     ]
+    },
+    "archived": false
+   },
+   {
+    "object": "block",
+    "id": "f4c649b8-da80-48a2-8a63-fb38bd672caf",
+    "parent": {
+     "type": "block_id",
+     "block_id": "da23ba28-4883-4f2b-b871-1a493805a45d"
+    },
+    "created_time": "2026-07-04T09:01:00.000Z",
+    "last_edited_time": "2026-07-04T09:01:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "table_row",
+    "table_row": {
+     "cells": [
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "After Response Agent",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "After Response Agent",
+        "href": null
+       }
+      ],
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "+ Draft Response",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "+ Draft Response",
+        "href": null
+       }
+      ]
+     ]
+    },
+    "archived": false
+   },
+   {
+    "object": "block",
+    "id": "abd2cfe3-f702-40f6-a082-7eafecef8ff0",
+    "parent": {
+     "type": "block_id",
+     "block_id": "da23ba28-4883-4f2b-b871-1a493805a45d"
+    },
+    "created_time": "2026-07-04T09:01:00.000Z",
+    "last_edited_time": "2026-07-04T09:01:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "table_row",
+    "table_row": {
+     "cells": [
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "After Review Agent",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "After Review Agent",
+        "href": null
+       }
+      ],
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "+ Approved Response",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "+ Approved Response",
+        "href": null
+       }
+      ]
+     ]
+    },
+    "archived": false
+   }
+  ]
+ },
+ {
+  "object": "block",
+  "id": "b3044c16-72de-41f2-a95e-cff7de1371cb",
+  "parent": {
+   "type": "page_id",
+   "page_id": "cd694183-19f3-82a7-9f5f-811d07e40f1d"
+  },
+  "created_time": "2026-07-04T09:01:00.000Z",
+  "last_edited_time": "2026-07-04T09:01:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_2",
+  "heading_2": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Warum sequenzielle Orchestrierung beliebt ist",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Warum sequenzielle Orchestrierung beliebt ist",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "d9f5da4e-a406-40f6-8458-6d7a57a42c25",
+  "parent": {
+   "type": "page_id",
+   "page_id": "cd694183-19f3-82a7-9f5f-811d07e40f1d"
+  },
+  "created_time": "2026-07-04T09:01:00.000Z",
+  "last_edited_time": "2026-07-04T09:01:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Sequenzielle Workflows bieten mehrere Vorteile.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Sequenzielle Workflows bieten mehrere Vorteile.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "b4cc0467-4b2c-4ea2-9961-15d416e264e0",
+  "parent": {
+   "type": "page_id",
+   "page_id": "cd694183-19f3-82a7-9f5f-811d07e40f1d"
+  },
+  "created_time": "2026-07-04T09:01:00.000Z",
+  "last_edited_time": "2026-07-04T09:01:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_3",
+  "heading_3": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Vorhersehbarkeit",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Vorhersehbarkeit",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "5edd3a19-74eb-4954-8e92-82737910c087",
+  "parent": {
+   "type": "page_id",
+   "page_id": "cd694183-19f3-82a7-9f5f-811d07e40f1d"
+  },
+  "created_time": "2026-07-04T09:01:00.000Z",
+  "last_edited_time": "2026-07-04T09:01:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Der Ausf\u00fchrungspfad ist im Voraus bekannt.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Der Ausf\u00fchrungspfad ist im Voraus bekannt.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "76c4e212-899c-47ac-9559-5209b72cc411",
+  "parent": {
+   "type": "page_id",
+   "page_id": "cd694183-19f3-82a7-9f5f-811d07e40f1d"
+  },
+  "created_time": "2026-07-04T09:01:00.000Z",
+  "last_edited_time": "2026-07-04T09:01:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Du wei\u00dft immer, welcher Schritt als N\u00e4chstes l\u00e4uft.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Du wei\u00dft immer, welcher Schritt als N\u00e4chstes l\u00e4uft.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "e5105558-3268-48fc-822a-3dbd38b9cbc7",
+  "parent": {
+   "type": "page_id",
+   "page_id": "cd694183-19f3-82a7-9f5f-811d07e40f1d"
+  },
+  "created_time": "2026-07-04T09:01:00.000Z",
+  "last_edited_time": "2026-07-04T09:01:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_3",
+  "heading_3": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Einfacheres Debugging",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Einfacheres Debugging",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "a50f1f82-0959-4ca0-bc93-81b5e5f1b4da",
+  "parent": {
+   "type": "page_id",
+   "page_id": "cd694183-19f3-82a7-9f5f-811d07e40f1d"
+  },
+  "created_time": "2026-07-04T09:01:00.000Z",
+  "last_edited_time": "2026-07-04T09:01:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Wenn etwas schiefgeht, kannst du jede Phase einzeln untersuchen.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Wenn etwas schiefgeht, kannst du jede Phase einzeln untersuchen.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "af310474-2c5e-4313-8c86-2857bbad1a02",
+  "parent": {
+   "type": "page_id",
+   "page_id": "cd694183-19f3-82a7-9f5f-811d07e40f1d"
+  },
+  "created_time": "2026-07-04T09:01:00.000Z",
+  "last_edited_time": "2026-07-04T09:01:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Das macht Troubleshooting deutlich einfacher als in stark dynamischen Systemen.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Das macht Troubleshooting deutlich einfacher als in stark dynamischen Systemen.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "665a4052-9935-4131-94b7-fdfb27d2a75e",
+  "parent": {
+   "type": "page_id",
+   "page_id": "cd694183-19f3-82a7-9f5f-811d07e40f1d"
+  },
+  "created_time": "2026-07-04T09:01:00.000Z",
+  "last_edited_time": "2026-07-04T09:01:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_3",
+  "heading_3": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Schrittweise Verfeinerung",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Schrittweise Verfeinerung",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "13cc8ecc-aafc-4b55-901c-525fa1c92c91",
+  "parent": {
+   "type": "page_id",
+   "page_id": "cd694183-19f3-82a7-9f5f-811d07e40f1d"
+  },
+  "created_time": "2026-07-04T09:01:00.000Z",
+  "last_edited_time": "2026-07-04T09:01:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Jeder Agent konzentriert sich auf eine einzelne Verantwortung.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Jeder Agent konzentriert sich auf eine einzelne Verantwortung.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "b897d1ad-6edf-4759-8d59-d98364484108",
+  "parent": {
+   "type": "page_id",
+   "page_id": "cd694183-19f3-82a7-9f5f-811d07e40f1d"
+  },
+  "created_time": "2026-07-04T09:01:00.000Z",
+  "last_edited_time": "2026-07-04T09:01:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Statt das gesamte Problem auf einmal zu l\u00f6sen, verbessert das System das Ergebnis Schritt f\u00fcr Schritt.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Statt das gesamte Problem auf einmal zu l\u00f6sen, verbessert das System das Ergebnis Schritt f\u00fcr Schritt.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "1ef94183-19f3-824f-9b90-017b2edf43df",
+  "parent": {
+   "type": "page_id",
+   "page_id": "cd694183-19f3-82a7-9f5f-811d07e40f1d"
+  },
+  "created_time": "2026-07-03T09:30:00.000Z",
+  "last_edited_time": "2026-07-04T09:18:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "image",
+  "image": {
+   "caption": [],
+   "type": "file",
+   "file": {
+    "url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/3a9085c4-df29-45e6-8bc7-6c9c0a25ea8c/2bfb80a4-41bf-46fe-a3b5-decf7da4c7c1/image_german.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466XEMMVPYJ%2F20261028%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20261028T113910Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEDsaCXVzLXdlc3QtMiJHMEUCIBi%2BkB5hZB3z21jweLES1uS7QGh5KemVaRNL4keXeRfOAiEAttB%2FSOJ14YDTZqzjKmEeZ9wDrK%2BlTEqs83qZCbhzPTEq%2FwMIBBAAGgw2Mzc0MjMxODM4MDUiDN%2F2E%2BQx9mXWxJ5MPyrcA6KWx2nnaC463kTYCgpaiL6u%2FBi0L7QG7T46KyPi8zpUSLsU7e8bv1vZa9i0Q1I2w9w9t1yX%2ByZaZRbFswLLGsgraTXht3TCz8EBgYNdcgVOssDny8b8j6ryfUiiS68WVuwCfh3zWrA6z7hR90oPvs74hs8bUrxw2k%2F1x4wDNAL4yfRhFbXBJO%2FYrlcISuYSnsyPzUiT8dsDwc7RGN0bUUr5%2B6DqY6s3vPdihIkj6ceoFn6LjiRPzehQhmIZua5mTr9GM99GOXHg%2Be7L0v3PW6zk8d9xANANVMiBcZuD1Xher8MsXaPnvrvi%2FnNO%2FYFrr%2FIXejoDVMNZ3efj8T4ll%2BWq4nC79yFAzPHXIUs%2FlL0hlETKvnygaOgD9da8ji%2FTAYDswRIySB1LkpiX7d8ya5PDXT8EqNXexoOuT28PTzWFgUUBbXQ7rjlPzl%2B66POIS1ZS7PpAbsBFOX74ggwHm6dP43DooEU2VMunAe%2BTCL8%2F84bZZCGPTqEJ%2BLjsHXWyqs1Hrb7i2SYEUMp7XvjUwdCTPV1FBvu0KsSNByYOz8opQT%2BhfjNqeufwwW9DpYnJNpU5OXCjjxXaoe4DpoFiLtPtf%2B7Y%2BegjOM1W8JnN6k1qfafjJsrKGD%2FYMp9cMLKnh9cGOqUBmCX8CuXiPx5Su59EQq1hFXq3PVhPzvJiuMClERe%2BiBINS9OMttyXiOpN4qtq7DGhvbduL4jrX%2BQpBJlPKuqoPzcRcCgtoZsDtNTEjYjXoxRvi%2Fcev4J4MuwqMw9b%2B5JL5pQuF7XgiDa4PFUvkJdlqnSYp%2Bf7gyvYVyQ%2FA7hrLg8QmjgVVz5SDoD5WeBYvOvyUy5Nd7icdL62L%2Ft2RZ2i2ruNFkcq&X-Amz-Signature=4fc2f040b48fa9e4502204314c21eacadbcae9cd62527d49cba37ae53d0ee15e&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+    "expiry_time": "2026-10-28T12:39:10.390Z"
+   }
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "46294183-19f3-825b-a35f-0169f1aec57f",
+  "parent": {
+   "type": "page_id",
+   "page_id": "cd694183-19f3-82a7-9f5f-811d07e40f1d"
+  },
+  "created_time": "2026-07-03T09:30:00.000Z",
+  "last_edited_time": "2026-07-04T09:05:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_2",
+  "heading_2": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Wann sequenzielle Orchestrierung am besten funktioniert",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Wann sequenzielle Orchestrierung am besten funktioniert",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "244c1b0d-8e53-4f69-bef4-309cfd6248ac",
+  "parent": {
+   "type": "page_id",
+   "page_id": "cd694183-19f3-82a7-9f5f-811d07e40f1d"
+  },
+  "created_time": "2026-07-04T09:05:00.000Z",
+  "last_edited_time": "2026-07-04T09:05:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Sequenzielle Orchestrierung ist am effektivsten, wenn Aufgaben klare Abh\u00e4ngigkeiten haben.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Sequenzielle Orchestrierung ist am effektivsten, wenn Aufgaben klare Abh\u00e4ngigkeiten haben.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "7f9f42cb-b92a-43f8-bde2-4b3b38a19758",
+  "parent": {
+   "type": "page_id",
+   "page_id": "cd694183-19f3-82a7-9f5f-811d07e40f1d"
+  },
+  "created_time": "2026-07-04T09:05:00.000Z",
+  "last_edited_time": "2026-07-04T09:05:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Gute Beispiele sind:",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Gute Beispiele sind:",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "20d03bff-5af2-44c4-8202-3f0a57dbf3c8",
+  "parent": {
+   "type": "page_id",
+   "page_id": "cd694183-19f3-82a7-9f5f-811d07e40f1d"
+  },
+  "created_time": "2026-07-04T09:05:00.000Z",
+  "last_edited_time": "2026-07-04T09:05:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Customer-Support-Workflows",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Customer-Support-Workflows",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "c638a0fc-9bcc-44ac-814d-b110a21b000c",
+  "parent": {
+   "type": "page_id",
+   "page_id": "cd694183-19f3-82a7-9f5f-811d07e40f1d"
+  },
+  "created_time": "2026-07-04T09:05:00.000Z",
+  "last_edited_time": "2026-07-04T09:05:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Document-Review-Pipelines",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Document-Review-Pipelines",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "783b6baf-41fa-4dc0-8794-92737a1ab1dc",
+  "parent": {
+   "type": "page_id",
+   "page_id": "cd694183-19f3-82a7-9f5f-811d07e40f1d"
+  },
+  "created_time": "2026-07-04T09:05:00.000Z",
+  "last_edited_time": "2026-07-04T09:05:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Datenextraktion gefolgt von Validierung",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Datenextraktion gefolgt von Validierung",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "5a62ca6e-4ff8-4190-8898-ac2d088585c7",
+  "parent": {
+   "type": "page_id",
+   "page_id": "cd694183-19f3-82a7-9f5f-811d07e40f1d"
+  },
+  "created_time": "2026-07-04T09:05:00.000Z",
+  "last_edited_time": "2026-07-04T09:05:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Content Generation gefolgt von Qualit\u00e4tspr\u00fcfungen",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Content Generation gefolgt von Qualit\u00e4tspr\u00fcfungen",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "07941b17-3c69-4522-b9e7-c906c0fb8ce2",
+  "parent": {
+   "type": "page_id",
+   "page_id": "cd694183-19f3-82a7-9f5f-811d07e40f1d"
+  },
+  "created_time": "2026-07-04T09:05:00.000Z",
+  "last_edited_time": "2026-07-04T09:05:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "mehrstufige Freigabeprozesse",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "mehrstufige Freigabeprozesse",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "a88b8b59-cc27-45c6-87e1-55cae2256185",
+  "parent": {
+   "type": "page_id",
+   "page_id": "cd694183-19f3-82a7-9f5f-811d07e40f1d"
+  },
+  "created_time": "2026-07-04T09:05:00.000Z",
+  "last_edited_time": "2026-07-04T09:05:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Ein n\u00fctzlicher Test ist:",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Ein n\u00fctzlicher Test ist:",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "b37550cd-3b2e-4127-b151-8ddda61d8e64",
+  "parent": {
+   "type": "page_id",
+   "page_id": "cd694183-19f3-82a7-9f5f-811d07e40f1d"
+  },
+  "created_time": "2026-07-04T09:05:00.000Z",
+  "last_edited_time": "2026-07-04T09:05:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "quote",
+  "quote": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "\u201eKann der n\u00e4chste Schritt beginnen, bevor der vorherige Schritt abgeschlossen ist?\"",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "\u201eKann der n\u00e4chste Schritt beginnen, bevor der vorherige Schritt abgeschlossen ist?\"",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "6ad566b3-8053-4bea-b4db-267aee5f4b5f",
+  "parent": {
+   "type": "page_id",
+   "page_id": "cd694183-19f3-82a7-9f5f-811d07e40f1d"
+  },
+  "created_time": "2026-07-04T09:05:00.000Z",
+  "last_edited_time": "2026-07-04T09:05:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Wenn die Antwort nein ist, ist ein sequenzieller Workflow wahrscheinlich passend.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Wenn die Antwort nein ist, ist ein sequenzieller Workflow wahrscheinlich passend.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "291ebd01-3e31-43b1-9fd2-c6b2b89e3d8d",
+  "parent": {
+   "type": "page_id",
+   "page_id": "cd694183-19f3-82a7-9f5f-811d07e40f1d"
+  },
+  "created_time": "2026-07-04T09:05:00.000Z",
+  "last_edited_time": "2026-07-04T09:05:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_2",
+  "heading_2": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Einschr\u00e4nkungen",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Einschr\u00e4nkungen",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "14cdd210-467c-459a-aed9-00406c6c1dc9",
+  "parent": {
+   "type": "page_id",
+   "page_id": "cd694183-19f3-82a7-9f5f-811d07e40f1d"
+  },
+  "created_time": "2026-07-04T09:05:00.000Z",
+  "last_edited_time": "2026-07-04T09:05:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Sequenzielle Workflows sind einfach, aber sie sind nicht immer die schnellste Option.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Sequenzielle Workflows sind einfach, aber sie sind nicht immer die schnellste Option.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "5952c3d5-ca5e-4448-9418-bfd7e9df4fd0",
+  "parent": {
+   "type": "page_id",
+   "page_id": "cd694183-19f3-82a7-9f5f-811d07e40f1d"
+  },
+  "created_time": "2026-07-04T09:05:00.000Z",
+  "last_edited_time": "2026-07-04T09:05:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Da jeder Schritt wartet, bis der vorherige abgeschlossen ist:",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Da jeder Schritt wartet, bis der vorherige abgeschlossen ist:",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "627bc409-0822-445b-9168-b0cd44bc79fa",
+  "parent": {
+   "type": "page_id",
+   "page_id": "cd694183-19f3-82a7-9f5f-811d07e40f1d"
+  },
+  "created_time": "2026-07-04T09:05:00.000Z",
+  "last_edited_time": "2026-07-04T09:05:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "steigt die Ausf\u00fchrungszeit, wenn mehr Schritte hinzugef\u00fcgt werden.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "steigt die Ausf\u00fchrungszeit, wenn mehr Schritte hinzugef\u00fcgt werden.",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "648eb988-d29a-40a8-8c70-5e1981f560f8",
+  "parent": {
+   "type": "page_id",
+   "page_id": "cd694183-19f3-82a7-9f5f-811d07e40f1d"
+  },
+  "created_time": "2026-07-04T09:05:00.000Z",
+  "last_edited_time": "2026-07-04T09:05:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "kann ein Fehler fr\u00fch in der Chain den gesamten Workflow blockieren.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "kann ein Fehler fr\u00fch in der Chain den gesamten Workflow blockieren.",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "201e70bc-b304-48db-b8cd-40d79e11b166",
+  "parent": {
+   "type": "page_id",
+   "page_id": "cd694183-19f3-82a7-9f5f-811d07e40f1d"
+  },
+  "created_time": "2026-07-04T09:05:00.000Z",
+  "last_edited_time": "2026-07-04T09:05:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "k\u00f6nnen unabh\u00e4ngige Aufgaben nicht gleichzeitig verarbeitet werden.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "k\u00f6nnen unabh\u00e4ngige Aufgaben nicht gleichzeitig verarbeitet werden.",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "604d02c0-54f9-4c21-b884-2fa6faee9a20",
+  "parent": {
+   "type": "page_id",
+   "page_id": "cd694183-19f3-82a7-9f5f-811d07e40f1d"
+  },
+  "created_time": "2026-07-04T09:05:00.000Z",
+  "last_edited_time": "2026-07-04T09:05:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Diese Einschr\u00e4nkungen sind der Grund, warum fortgeschrittenere Orchestrierungsmuster existieren, aber sequenzielle Workflows bleiben die Grundlage vieler Produktionssysteme.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Diese Einschr\u00e4nkungen sind der Grund, warum fortgeschrittenere Orchestrierungsmuster existieren, aber sequenzielle Workflows bleiben die Grundlage vieler Produktionssysteme.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "30804436-2b0b-410c-ab96-5b2ba2be237c",
+  "parent": {
+   "type": "page_id",
+   "page_id": "cd694183-19f3-82a7-9f5f-811d07e40f1d"
+  },
+  "created_time": "2026-07-04T09:05:00.000Z",
+  "last_edited_time": "2026-07-04T09:05:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_2",
+  "heading_2": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Verst\u00e4ndnischeck",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Verst\u00e4ndnischeck",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "02e197cb-c3f0-4860-8c42-f8503d58ead7",
+  "parent": {
+   "type": "page_id",
+   "page_id": "cd694183-19f3-82a7-9f5f-811d07e40f1d"
+  },
+  "created_time": "2026-07-04T09:05:00.000Z",
+  "last_edited_time": "2026-07-04T09:05:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_3",
+  "heading_3": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Frage 1",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Frage 1",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "39594183-19f3-80c5-b8f2-ffc927fed871",
+  "parent": {
+   "type": "page_id",
+   "page_id": "cd694183-19f3-82a7-9f5f-811d07e40f1d"
+  },
+  "created_time": "2026-07-06T14:08:00.000Z",
+  "last_edited_time": "2026-07-06T14:08:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": true,
+  "in_trash": false,
+  "type": "callout",
+  "callout": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Ein Legal-Document-Review-Workflow bei Cascadia hat diese Schritte:",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Ein Legal-Document-Review-Workflow bei Cascadia hat diese Schritte:",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "gray_background"
+  },
+  "archived": false,
+  "_children": [
+   {
+    "object": "block",
+    "id": "0ea80b1c-9cfe-4b4f-b320-fef187512fa3",
+    "parent": {
+     "type": "block_id",
+     "block_id": "39594183-19f3-80c5-b8f2-ffc927fed871"
+    },
+    "created_time": "2026-07-04T09:05:00.000Z",
+    "last_edited_time": "2026-07-06T14:08:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "numbered_list_item",
+    "numbered_list_item": {
+     "rich_text": [
+      {
+       "type": "text",
+       "text": {
+        "content": "Text aus einem PDF-Vertrag extrahieren.",
+        "link": null
+       },
+       "annotations": {
+        "bold": false,
+        "italic": false,
+        "strikethrough": false,
+        "underline": false,
+        "code": false,
+        "color": "default"
+       },
+       "plain_text": "Text aus einem PDF-Vertrag extrahieren.",
+       "href": null
+      }
+     ],
+     "color": "default"
+    },
+    "archived": false
+   },
+   {
+    "object": "block",
+    "id": "6cc8da51-3460-49a6-8b3d-a1570c7b71d4",
+    "parent": {
+     "type": "block_id",
+     "block_id": "39594183-19f3-80c5-b8f2-ffc927fed871"
+    },
+    "created_time": "2026-07-04T09:05:00.000Z",
+    "last_edited_time": "2026-07-06T14:08:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "numbered_list_item",
+    "numbered_list_item": {
+     "rich_text": [
+      {
+       "type": "text",
+       "text": {
+        "content": "Klauseln identifizieren.",
+        "link": null
+       },
+       "annotations": {
+        "bold": false,
+        "italic": false,
+        "strikethrough": false,
+        "underline": false,
+        "code": false,
+        "color": "default"
+       },
+       "plain_text": "Klauseln identifizieren.",
+       "href": null
+      }
+     ],
+     "color": "default"
+    },
+    "archived": false
+   },
+   {
+    "object": "block",
+    "id": "03eba0a5-4716-498d-b6b1-114ba1fb4932",
+    "parent": {
+     "type": "block_id",
+     "block_id": "39594183-19f3-80c5-b8f2-ffc927fed871"
+    },
+    "created_time": "2026-07-04T09:05:00.000Z",
+    "last_edited_time": "2026-07-06T14:08:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "numbered_list_item",
+    "numbered_list_item": {
+     "rich_text": [
+      {
+       "type": "text",
+       "text": {
+        "content": "Klauseln gegen Unternehmensrichtlinien pr\u00fcfen.",
+        "link": null
+       },
+       "annotations": {
+        "bold": false,
+        "italic": false,
+        "strikethrough": false,
+        "underline": false,
+        "code": false,
+        "color": "default"
+       },
+       "plain_text": "Klauseln gegen Unternehmensrichtlinien pr\u00fcfen.",
+       "href": null
+      }
+     ],
+     "color": "default"
+    },
+    "archived": false
+   },
+   {
+    "object": "block",
+    "id": "022b3eb0-05f0-4477-93a2-096875f829b7",
+    "parent": {
+     "type": "block_id",
+     "block_id": "39594183-19f3-80c5-b8f2-ffc927fed871"
+    },
+    "created_time": "2026-07-04T09:05:00.000Z",
+    "last_edited_time": "2026-07-06T14:08:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "numbered_list_item",
+    "numbered_list_item": {
+     "rich_text": [
+      {
+       "type": "text",
+       "text": {
+        "content": "Einen Compliance-Bericht generieren.",
+        "link": null
+       },
+       "annotations": {
+        "bold": false,
+        "italic": false,
+        "strikethrough": false,
+        "underline": false,
+        "code": false,
+        "color": "default"
+       },
+       "plain_text": "Einen Compliance-Bericht generieren.",
+       "href": null
+      }
+     ],
+     "color": "default"
+    },
+    "archived": false
+   },
+   {
+    "object": "block",
+    "id": "8dd2abb2-8f12-49ba-936c-c4a423b4abd6",
+    "parent": {
+     "type": "block_id",
+     "block_id": "39594183-19f3-80c5-b8f2-ffc927fed871"
+    },
+    "created_time": "2026-07-04T09:05:00.000Z",
+    "last_edited_time": "2026-07-06T14:08:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+     "rich_text": [
+      {
+       "type": "text",
+       "text": {
+        "content": "Warum ist sequenzielle Orchestrierung hier passend?",
+        "link": null
+       },
+       "annotations": {
+        "bold": false,
+        "italic": false,
+        "strikethrough": false,
+        "underline": false,
+        "code": false,
+        "color": "default"
+       },
+       "plain_text": "Warum ist sequenzielle Orchestrierung hier passend?",
+       "href": null
+      }
+     ],
+     "icon": null,
+     "color": "default"
+    },
+    "archived": false
+   },
+   {
+    "object": "block",
+    "id": "39594183-19f3-80d5-8e53-e0dcbdbbafb0",
+    "parent": {
+     "type": "block_id",
+     "block_id": "39594183-19f3-80c5-b8f2-ffc927fed871"
+    },
+    "created_time": "2026-07-06T14:07:00.000Z",
+    "last_edited_time": "2026-07-06T14:08:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "embed",
+    "embed": {
+     "caption": [],
+     "url": "https://app.masterschool.com/campus/multi-choice-question/28c8a718-1fac-4d90-bd28-d36eb2a8e86f"
+    },
+    "archived": false
+   }
+  ]
+ },
+ {
+  "object": "block",
+  "id": "82fb540c-bfaa-4b5c-aa2d-d232e25c8332",
+  "parent": {
+   "type": "page_id",
+   "page_id": "cd694183-19f3-82a7-9f5f-811d07e40f1d"
+  },
+  "created_time": "2026-07-05T16:56:00.000Z",
+  "last_edited_time": "2026-07-05T16:56:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_2",
+  "heading_2": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Zusammenfassung",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Zusammenfassung",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "2d30bccc-bef4-45a7-b8ff-4c0a44ace5a9",
+  "parent": {
+   "type": "page_id",
+   "page_id": "cd694183-19f3-82a7-9f5f-811d07e40f1d"
+  },
+  "created_time": "2026-07-05T16:56:00.000Z",
+  "last_edited_time": "2026-07-05T16:56:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "14cd872b-594c-81d9-ac6e-0002007063d3"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Sequenzielle Orchestrierung ist das nat\u00fcrliche Muster, wenn Aufgaben klare Abh\u00e4ngigkeiten haben. Sie ist vorhersehbar, leicht zu debuggen und l\u00e4sst sich einfach Schritt f\u00fcr Schritt erweitern. Daf\u00fcr ist sie auch am langsamsten, wenn sich Schritte eigentlich parallelisieren lie\u00dfen. In der n\u00e4chsten Lektion schauen wir uns hierarchische Orchestrierung an. Dabei sitzt ein Coordinator \u00fcber den Spezialisten.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Sequenzielle Orchestrierung ist das nat\u00fcrliche Muster, wenn Aufgaben klare Abh\u00e4ngigkeiten haben. Sie ist vorhersehbar, leicht zu debuggen und l\u00e4sst sich einfach Schritt f\u00fcr Schritt erweitern. Daf\u00fcr ist sie auch am langsamsten, wenn sich Schritte eigentlich parallelisieren lie\u00dfen. In der n\u00e4chsten Lektion schauen wir uns hierarchische Orchestrierung an. Dabei sitzt ein Coordinator \u00fcber den Spezialisten.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ }
+]

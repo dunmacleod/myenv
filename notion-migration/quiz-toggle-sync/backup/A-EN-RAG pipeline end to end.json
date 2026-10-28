@@ -1,0 +1,3019 @@
+[
+ {
+  "object": "block",
+  "id": "3f894183-19f3-8163-8200-f830139750e2",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8049-a2bb-f927ce4674fc"
+  },
+  "created_time": "2026-10-13T10:21:00.000Z",
+  "last_edited_time": "2026-10-13T10:21:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "callout",
+  "callout": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "What you will understand by the end of this lesson:",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "What you will understand by the end of this lesson:",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " The full sequence of steps that transforms raw business documents into grounded agent responses from initial ingestion through to answer generation.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " The full sequence of steps that transforms raw business documents into grounded agent responses from initial ingestion through to answer generation.",
+     "href": null
+    }
+   ],
+   "icon": {
+    "type": "emoji",
+    "emoji": "\ud83d\udca1"
+   },
+   "color": "gray_background"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "3f894183-19f3-8157-b170-c7f3a689f0f7",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8049-a2bb-f927ce4674fc"
+  },
+  "created_time": "2026-10-13T10:21:00.000Z",
+  "last_edited_time": "2026-10-13T10:21:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "3f894183-19f3-817e-82a8-cbab6587f32d",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8049-a2bb-f927ce4674fc"
+  },
+  "created_time": "2026-10-13T10:21:00.000Z",
+  "last_edited_time": "2026-10-13T10:21:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_2",
+  "heading_2": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "From the Problem to the Process",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "From the Problem to the Process",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "3f894183-19f3-81a9-814f-fdb52b93573c",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8049-a2bb-f927ce4674fc"
+  },
+  "created_time": "2026-10-13T10:21:00.000Z",
+  "last_edited_time": "2026-10-13T10:21:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Contigo GmbH\u2019s development team now understands why RAG is necessary. The agent cannot rely only on frozen training data to answer questions about Contigo\u2019s loan products, compliance requirements, or client-specific policies. To give useful answers, it needs access to Contigo\u2019s actual documents.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Contigo GmbH\u2019s development team now understands why RAG is necessary. The agent cannot rely only on frozen training data to answer questions about Contigo\u2019s loan products, compliance requirements, or client-specific policies. To give useful answers, it needs access to Contigo\u2019s actual documents.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "3f894183-19f3-81e7-92aa-c6f9cb8de6b5",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8049-a2bb-f927ce4674fc"
+  },
+  "created_time": "2026-10-13T10:21:00.000Z",
+  "last_edited_time": "2026-10-13T10:21:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "The next question is how that access works in practice.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "The next question is how that access works in practice.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "3f894183-19f3-8106-b03d-da598ec07b4e",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8049-a2bb-f927ce4674fc"
+  },
+  "created_time": "2026-10-13T10:21:00.000Z",
+  "last_edited_time": "2026-10-13T10:21:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "A document cannot simply be \u201cgiven\u201d to the agent as one large file every time a client asks a question. The system needs to prepare the document first, store it in a searchable format, and then retrieve only the most relevant parts when needed.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "A document cannot simply be \u201cgiven\u201d to the agent as one large file every time a client asks a question. The system needs to prepare the document first, store it in a searchable format, and then retrieve only the most relevant parts when needed.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "3f894183-19f3-81ec-883e-d60292f75c8b",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8049-a2bb-f927ce4674fc"
+  },
+  "created_time": "2026-10-13T10:21:00.000Z",
+  "last_edited_time": "2026-10-13T10:21:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "This is where the RAG pipeline comes in.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "This is where the RAG pipeline comes in.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "3f894183-19f3-81f8-9ecf-c0c4cf87022b",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8049-a2bb-f927ce4674fc"
+  },
+  "created_time": "2026-10-13T10:21:00.000Z",
+  "last_edited_time": "2026-10-13T10:21:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "The pipeline has two main phases. The first phase happens in the background, before any user asks a question. Documents are loaded, split into smaller chunks, converted into embeddings, and stored. The second phase happens in real time, when a client submits a query. The system searches for the most relevant chunks and passes them to the LLM as context.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "The pipeline has two main phases. The first phase happens in the background, before any user asks a question. Documents are loaded, split into smaller chunks, converted into embeddings, and stored. The second phase happens in real time, when a client submits a query. The system searches for the most relevant chunks and passes them to the LLM as context.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "3f894183-19f3-817d-a349-ecee53e6c5a3",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8049-a2bb-f927ce4674fc"
+  },
+  "created_time": "2026-10-13T10:21:00.000Z",
+  "last_edited_time": "2026-10-13T10:21:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "To understand this process clearly, the team first needs to understand where those chunks are stored and how they are searched.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "To understand this process clearly, the team first needs to understand where those chunks are stored and how they are searched.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "3f894183-19f3-81d8-b129-cb3c5cdf445f",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8049-a2bb-f927ce4674fc"
+  },
+  "created_time": "2026-10-13T10:21:00.000Z",
+  "last_edited_time": "2026-10-13T10:21:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "3f894183-19f3-81e9-b475-f605893f34ee",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8049-a2bb-f927ce4674fc"
+  },
+  "created_time": "2026-10-13T10:21:00.000Z",
+  "last_edited_time": "2026-10-13T10:21:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_3",
+  "heading_3": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "What is a vector database?",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "What is a vector database?",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "3f894183-19f3-81b6-9497-d1dc5b80a1b2",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8049-a2bb-f927ce4674fc"
+  },
+  "created_time": "2026-10-13T10:21:00.000Z",
+  "last_edited_time": "2026-10-13T10:21:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "A vector database is a database designed to store and search embeddings.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "A vector database is a database designed to store and search embeddings.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "3f894183-19f3-81b3-8e04-db1d7e23489f",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8049-a2bb-f927ce4674fc"
+  },
+  "created_time": "2026-10-13T10:21:00.000Z",
+  "last_edited_time": "2026-10-13T10:21:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "A traditional database usually searches for exact matches: a keyword, an ID, a row value, or a filter condition. A vector database works differently. It searches by semantic similarity, which means it looks for pieces of text that are close in meaning, even if they do not use the exact same words.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "A traditional database usually searches for exact matches: a keyword, an ID, a row value, or a filter condition. A vector database works differently. It searches by semantic similarity, which means it looks for pieces of text that are close in meaning, even if they do not use the exact same words.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "3f894183-19f3-8116-af0c-ebaa5cc6550e",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8049-a2bb-f927ce4674fc"
+  },
+  "created_time": "2026-10-13T10:21:00.000Z",
+  "last_edited_time": "2026-10-13T10:21:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "For example, a traditional database might only find a document section if the word \u201crefund\u201d appears in it. A vector database can also retrieve sections that mention \u201cmoney back,\u201d \u201creimbursement,\u201d or \u201ccancelled payment,\u201d because those meanings are represented by similar embeddings.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "For example, a traditional database might only find a document section if the word \u201crefund\u201d appears in it. A vector database can also retrieve sections that mention \u201cmoney back,\u201d \u201creimbursement,\u201d or \u201ccancelled payment,\u201d because those meanings are represented by similar embeddings.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "3f894183-19f3-814d-a4ef-fb0e9772ca7a",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8049-a2bb-f927ce4674fc"
+  },
+  "created_time": "2026-10-13T10:21:00.000Z",
+  "last_edited_time": "2026-10-13T10:21:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "This makes vector databases especially useful for RAG. Users rarely ask questions using the exact wording of the source documents. The vector database bridges that gap by finding document chunks that are semantically related to the user\u2019s question.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "This makes vector databases especially useful for RAG. Users rarely ask questions using the exact wording of the source documents. The vector database bridges that gap by finding document chunks that are semantically related to the user\u2019s question.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "3f894183-19f3-81fb-861d-d4f5404d7bb9",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8049-a2bb-f927ce4674fc"
+  },
+  "created_time": "2026-10-13T10:21:00.000Z",
+  "last_edited_time": "2026-10-13T10:21:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "3f894183-19f3-81fe-b426-d5f33d2f1cd7",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8049-a2bb-f927ce4674fc"
+  },
+  "created_time": "2026-10-13T10:21:00.000Z",
+  "last_edited_time": "2026-10-13T10:21:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_3",
+  "heading_3": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "What is Qdrant?",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "What is Qdrant?",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "3f894183-19f3-8102-9ffb-c82c6afd40a1",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8049-a2bb-f927ce4674fc"
+  },
+  "created_time": "2026-10-13T10:21:00.000Z",
+  "last_edited_time": "2026-10-13T10:21:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "In Contigo\u2019s stack, the vector database is Qdrant.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "In Contigo\u2019s stack, the vector database is Qdrant.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "3f894183-19f3-81b6-999f-e9dbd0cf8261",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8049-a2bb-f927ce4674fc"
+  },
+  "created_time": "2026-10-13T10:21:00.000Z",
+  "last_edited_time": "2026-10-13T10:21:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Qdrant is an open-source vector database commonly used in AI and RAG applications. In this pipeline, it stores the embedded document chunks together with the original chunk text and metadata such as the document name, page number, or section.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Qdrant is an open-source vector database commonly used in AI and RAG applications. In this pipeline, it stores the embedded document chunks together with the original chunk text and metadata such as the document name, page number, or section.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "3f894183-19f3-8160-a225-f57fb78a1d83",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8049-a2bb-f927ce4674fc"
+  },
+  "created_time": "2026-10-13T10:21:00.000Z",
+  "last_edited_time": "2026-10-13T10:21:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "For Contigo, Qdrant acts as the retrieval layer of the RAG system. It does not write answers and it does not reason like an LLM. Its job is narrower and more mechanical: store the chunks, compare vectors, and return the most relevant pieces of text when a query arrives.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "For Contigo, Qdrant acts as the retrieval layer of the RAG system. It does not write answers and it does not reason like an LLM. Its job is narrower and more mechanical: store the chunks, compare vectors, and return the most relevant pieces of text when a query arrives.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "3f894183-19f3-813f-8cd5-c54baf869a90",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8049-a2bb-f927ce4674fc"
+  },
+  "created_time": "2026-10-13T10:21:00.000Z",
+  "last_edited_time": "2026-10-13T10:21:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Once Qdrant returns those relevant chunks, the LLM can use them as context to generate a grounded answer.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Once Qdrant returns those relevant chunks, the LLM can use them as context to generate a grounded answer.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "3f894183-19f3-8190-a6c9-e5bdd42223fb",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8049-a2bb-f927ce4674fc"
+  },
+  "created_time": "2026-10-13T10:21:00.000Z",
+  "last_edited_time": "2026-10-13T10:21:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "3f894183-19f3-81fb-93df-d92b7b21adfc",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8049-a2bb-f927ce4674fc"
+  },
+  "created_time": "2026-10-13T10:21:00.000Z",
+  "last_edited_time": "2026-10-13T10:21:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_2",
+  "heading_2": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Phase 1: Preparing the knowledge base",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Phase 1: Preparing the knowledge base",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "3f894183-19f3-811a-a0e1-f45e5a26793b",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8049-a2bb-f927ce4674fc"
+  },
+  "created_time": "2026-10-13T10:21:00.000Z",
+  "last_edited_time": "2026-10-13T10:21:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "The background phase converts raw documents into a format the system can search mathematically. It runs once when documents are first ingested, and again whenever the knowledge base is updated. In n8n, Phase 1 is implemented as a document-ingestion workflow. A document loader, text splitter, embedding model, and Qdrant Vector Store operation prepare and index the documents; simply uploading a file does not make it searchable. Understanding what the Document Store is doing under the hood is the reason this lesson comes before you build anything.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "The background phase converts raw documents into a format the system can search mathematically. It runs once when documents are first ingested, and again whenever the knowledge base is updated. In n8n, Phase 1 is implemented as a document-ingestion workflow. A document loader, text splitter, embedding model, and Qdrant Vector Store operation prepare and index the documents; simply uploading a file does not make it searchable. Understanding what the Document Store is doing under the hood is the reason this lesson comes before you build anything.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "3f894183-19f3-81a1-83c4-faa04a0fada9",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8049-a2bb-f927ce4674fc"
+  },
+  "created_time": "2026-10-13T10:21:00.000Z",
+  "last_edited_time": "2026-10-13T10:21:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Step 1: Ingestion",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Step 1: Ingestion",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " - The pipeline begins by loading raw content from the source. For Contigo, this might mean importing PDFs of loan product specifications, Word documents containing compliance guidelines, or structured data from internal policy databases. The content is read and extracted into plain text that the system can process.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " - The pipeline begins by loading raw content from the source. For Contigo, this might mean importing PDFs of loan product specifications, Word documents containing compliance guidelines, or structured data from internal policy databases. The content is read and extracted into plain text that the system can process.",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "3f894183-19f3-81cb-9695-d9c9d80799e9",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8049-a2bb-f927ce4674fc"
+  },
+  "created_time": "2026-10-13T10:21:00.000Z",
+  "last_edited_time": "2026-10-13T10:21:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": true,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Step 2: Chunking",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Step 2: Chunking",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " - Large documents are broken into smaller segments called chunks. This is necessary for two reasons. First, embedding models and language models have token limits. For example, a 200-page compliance manual cannot be fed into a model as a single input. Second, smaller chunks produce more precise retrieval. So when a client asks about a specific clause, the system should return that clause, not an entire document section surrounding it.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " - Large documents are broken into smaller segments called chunks. This is necessary for two reasons. First, embedding models and language models have token limits. For example, a 200-page compliance manual cannot be fed into a model as a single input. Second, smaller chunks produce more precise retrieval. So when a client asks about a specific clause, the system should return that clause, not an entire document section surrounding it.",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false,
+  "_children": [
+   {
+    "object": "block",
+    "id": "3f894183-19f3-8172-9d37-e35b6bad0940",
+    "parent": {
+     "type": "block_id",
+     "block_id": "3f894183-19f3-81cb-9695-d9c9d80799e9"
+    },
+    "created_time": "2026-10-13T10:21:00.000Z",
+    "last_edited_time": "2026-10-13T10:21:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+     "rich_text": [
+      {
+       "type": "text",
+       "text": {
+        "content": "Chunk size and the overlap between consecutive chunks are design decisions that affect retrieval quality significantly. These choices are covered in detail further on in this sprint.",
+        "link": null
+       },
+       "annotations": {
+        "bold": false,
+        "italic": false,
+        "strikethrough": false,
+        "underline": false,
+        "code": false,
+        "color": "default"
+       },
+       "plain_text": "Chunk size and the overlap between consecutive chunks are design decisions that affect retrieval quality significantly. These choices are covered in detail further on in this sprint.",
+       "href": null
+      }
+     ],
+     "icon": null,
+     "color": "default"
+    },
+    "archived": false
+   }
+  ]
+ },
+ {
+  "object": "block",
+  "id": "3f894183-19f3-8150-8866-ee0e062c308a",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8049-a2bb-f927ce4674fc"
+  },
+  "created_time": "2026-10-13T10:21:00.000Z",
+  "last_edited_time": "2026-10-13T10:21:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Step 3: Embedding -",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Step 3: Embedding -",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " Each chunk is converted into a vector embedding which is a numerical array that captures the semantic meaning of the text. An embedding model performs this conversion. The resulting vectors represent the content mathematically, in a form the system can compare and search.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " Each chunk is converted into a vector embedding which is a numerical array that captures the semantic meaning of the text. An embedding model performs this conversion. The resulting vectors represent the content mathematically, in a form the system can compare and search.",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "3f894183-19f3-81f9-b486-e6d2d051c9a5",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8049-a2bb-f927ce4674fc"
+  },
+  "created_time": "2026-10-13T10:21:00.000Z",
+  "last_edited_time": "2026-10-13T10:21:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": true,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Step 4: Storage",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Step 4: Storage",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " \u2014 The vectors, together with the original text of each chunk and useful metadata such as the source document, page number, section title, or file name, are stored in a vector database. In Contigo\u2019s stack, this database is Qdrant.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " \u2014 The vectors, together with the original text of each chunk and useful metadata such as the source document, page number, section title, or file name, are stored in a vector database. In Contigo\u2019s stack, this database is Qdrant.",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false,
+  "_children": [
+   {
+    "object": "block",
+    "id": "3f894183-19f3-8149-8a4e-c7424cd19593",
+    "parent": {
+     "type": "block_id",
+     "block_id": "3f894183-19f3-81f9-b486-e6d2d051c9a5"
+    },
+    "created_time": "2026-10-13T10:21:00.000Z",
+    "last_edited_time": "2026-10-13T10:21:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+     "rich_text": [
+      {
+       "type": "text",
+       "text": {
+        "content": "At this point, each chunk has three important parts: the embedding vector, which represents the meaning of the chunk; the original text, which can later be sent back to the language model as context; and the metadata, which helps trace where the information came from. The database is now ready to receive queries.",
+        "link": null
+       },
+       "annotations": {
+        "bold": false,
+        "italic": false,
+        "strikethrough": false,
+        "underline": false,
+        "code": false,
+        "color": "default"
+       },
+       "plain_text": "At this point, each chunk has three important parts: the embedding vector, which represents the meaning of the chunk; the original text, which can later be sent back to the language model as context; and the metadata, which helps trace where the information came from. The database is now ready to receive queries.",
+       "href": null
+      }
+     ],
+     "icon": null,
+     "color": "default"
+    },
+    "archived": false
+   },
+   {
+    "object": "block",
+    "id": "3f894183-19f3-8176-bdb1-e005e9ac4d43",
+    "parent": {
+     "type": "block_id",
+     "block_id": "3f894183-19f3-81f9-b486-e6d2d051c9a5"
+    },
+    "created_time": "2026-10-13T10:21:00.000Z",
+    "last_edited_time": "2026-10-13T10:21:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+     "rich_text": [
+      {
+       "type": "text",
+       "text": {
+        "content": "When a user asks a question, the question is also converted into a vector. Qdrant then compares this query vector with the stored chunk vectors and returns the chunks that are most semantically similar. These retrieved chunks become the context that the LLM uses to generate a grounded answer.",
+        "link": null
+       },
+       "annotations": {
+        "bold": false,
+        "italic": false,
+        "strikethrough": false,
+        "underline": false,
+        "code": false,
+        "color": "default"
+       },
+       "plain_text": "When a user asks a question, the question is also converted into a vector. Qdrant then compares this query vector with the stored chunk vectors and returns the chunks that are most semantically similar. These retrieved chunks become the context that the LLM uses to generate a grounded answer.",
+       "href": null
+      }
+     ],
+     "icon": null,
+     "color": "default"
+    },
+    "archived": false
+   }
+  ]
+ },
+ {
+  "object": "block",
+  "id": "3f894183-19f3-81ab-b943-cba445c070d6",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8049-a2bb-f927ce4674fc"
+  },
+  "created_time": "2026-10-13T10:21:00.000Z",
+  "last_edited_time": "2026-10-13T10:21:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "3f894183-19f3-81b6-abf1-f659ce51d91c",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8049-a2bb-f927ce4674fc"
+  },
+  "created_time": "2026-10-13T10:21:00.000Z",
+  "last_edited_time": "2026-10-13T10:21:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_2",
+  "heading_2": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Phase 2: Answering a query at runtime",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Phase 2: Answering a query at runtime",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "3f894183-19f3-81e8-a97f-e79a92afaaf2",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8049-a2bb-f927ce4674fc"
+  },
+  "created_time": "2026-10-13T10:21:00.000Z",
+  "last_edited_time": "2026-10-13T10:21:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "The runtime phase happens every time a client sends a message to the agent. In n8n, this phase can be implemented with a vector-store retriever followed by a question-answering chain, or with a Qdrant retrieval tool connected to an AI Agent. Actual runtime depends on the model, data store, and hosting environment.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "The runtime phase happens every time a client sends a message to the agent. In n8n, this phase can be implemented with a vector-store retriever followed by a question-answering chain, or with a Qdrant retrieval tool connected to an AI Agent. Actual runtime depends on the model, data store, and hosting environment.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "3f894183-19f3-8193-a083-c786fc6e1b7b",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8049-a2bb-f927ce4674fc"
+  },
+  "created_time": "2026-10-13T10:21:00.000Z",
+  "last_edited_time": "2026-10-13T10:21:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Step 5: Query embedding -",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Step 5: Query embedding -",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " The client's question is passed through the same embedding model used during ingestion. This converts the query into a vector using identical mathematical representations, which is essential. If a different embedding model were used at query time, the similarity comparisons would produce meaningless results.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " The client's question is passed through the same embedding model used during ingestion. This converts the query into a vector using identical mathematical representations, which is essential. If a different embedding model were used at query time, the similarity comparisons would produce meaningless results.",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "3f894183-19f3-812c-9535-d168a6a711f5",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8049-a2bb-f927ce4674fc"
+  },
+  "created_time": "2026-10-13T10:21:00.000Z",
+  "last_edited_time": "2026-10-13T10:21:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Step 6: Retrieval",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Step 6: Retrieval",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " - The query vector is compared against all stored document vectors in the database. The system calculates which stored vectors are closest to the query vector mathematically and returns the top matching chunks. This is semantic search where you can find content that means the same thing as the query, even if the exact words are different.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " - The query vector is compared against all stored document vectors in the database. The system calculates which stored vectors are closest to the query vector mathematically and returns the top matching chunks. This is semantic search where you can find content that means the same thing as the query, even if the exact words are different.",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "3f894183-19f3-81b4-95c3-e76f4d41fddc",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8049-a2bb-f927ce4674fc"
+  },
+  "created_time": "2026-10-13T10:21:00.000Z",
+  "last_edited_time": "2026-10-13T10:21:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Step 7: Generation",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Step 7: Generation",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " - The retrieved chunks are appended to the client's original query to form an enriched prompt. The language model receives this combined input and generates a response grounded in the retrieved content. The system prompt instructs the model to answer only from the provided context and to acknowledge when the information is not available.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " - The retrieved chunks are appended to the client's original query to form an enriched prompt. The language model receives this combined input and generates a response grounded in the retrieved content. The system prompt instructs the model to answer only from the provided context and to acknowledge when the information is not available.",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "3f894183-19f3-81ad-8ce2-f36bda2119df",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8049-a2bb-f927ce4674fc"
+  },
+  "created_time": "2026-10-13T10:21:00.000Z",
+  "last_edited_time": "2026-10-13T10:21:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "3f894183-19f3-81f6-b127-dfacd9a9948d",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8049-a2bb-f927ce4674fc"
+  },
+  "created_time": "2026-10-13T10:21:00.000Z",
+  "last_edited_time": "2026-10-13T10:21:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_2",
+  "heading_2": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "The full pipeline at a glance",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "The full pipeline at a glance",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "3f894183-19f3-81a1-99bd-fca71f00bf77",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8049-a2bb-f927ce4674fc"
+  },
+  "created_time": "2026-10-13T10:21:00.000Z",
+  "last_edited_time": "2026-10-13T10:21:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "image",
+  "image": {
+   "caption": [],
+   "type": "file",
+   "file": {
+    "url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/3a9085c4-df29-45e6-8bc7-6c9c0a25ea8c/78d81a6c-e41c-495a-b65f-9e9875805a01/image.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466TOBAT4VZ%2F20261028%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20261028T111944Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEDsaCXVzLXdlc3QtMiJIMEYCIQCa2Emy1jQ%2BjVdHTuDtClOEV6tEZvbaCOBxFnuB0pS8EgIhALg3xKjMTyuMxvXT%2Bw8G9eZFVFKp9l6R%2FWO9EOulGg8yKv8DCAMQABoMNjM3NDIzMTgzODA1IgxyTbeNDY83EVan1IUq3APPv%2FsemzjUZ29TH%2BxXUNjU5z%2FpHDK8Q3ogFgVbs3dQ3AizvQUTHc%2BaVmIsXZtXZF1vnuTiV%2FKv%2B%2FFv51FvcOYfOb7zIFsWk%2BXp8RbsVL1sREUqhkqakX3lnDKBIKHjPhbSMKPOoxxyZfSr2OvYgAVeZJiZ125BauGf6w4JnOfpqZ3xmLsq%2FuzaiLkG4X8LRY%2F9XDnZickGn1u7arH7tVEFWD7vqQCkx%2B5zpvqJAvkBrtbm9b4li3BUEQkUyD%2FSN1tuOkqPaS4%2FPuemUiwnsVnNiOlLxsNs6CWVn9rm89OokwyZ6P%2BSEFZYFlM5F4NGMTvr3aATtN3v3TdlgfejnClkzgB5y%2BJ2FdJH03BU5yqi%2F54tO2N4dNrYG34h2LCQ12%2BXdYh5GAahphyYAQFiGdfRSwBoS9vbJBy8u2VmyNuHtgjXBgx1GPMxn%2BibOHEgyjLxASHBnXppnLpbMfaByZ0kGguGmxHmFXcdGrjCdvp2OjATXz5VLd%2FckTOuRsqB9Bugk2MIhcUskvoMBfVpzNvEcL29pnLOUaJWBi3cTVRvTtfMaPKuzpaHyWGISUe%2BcfNa54LiTL63M%2Fui8QsrHbIrxn7s3LkDFkBz0DQ%2FSX7Rf3gftSP2VImNXCP9bDDYpofXBjqkAfiOpY%2BDcmljgB9LpUJjw%2BcCUwAjK3qOiKEjuy8yfkXJgv9KusAB5umG%2FQRjENmMe3%2Fss6h1Nm6HrHlZ0zGETRlIC3VyEq16QP1%2Fo58z%2BPzdhpTWnTAPbLZl58Gijty9F%2BMfETUOUySQSyzmYb4VmzXhT17DsMlxr7FFTM88mBNHSxZD3zHp84J%2Bd9GLB7Q1J0Tokk5DnN6fmz0yXEX7rSzspH%2BV&X-Amz-Signature=d71e2e5091d334e74ef4f05e35f611963d44e419d1e87978fd302cd82261dc02&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+    "expiry_time": "2026-10-28T12:19:44.538Z"
+   }
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "3f894183-19f3-8119-ae41-d7b47f0364be",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8049-a2bb-f927ce4674fc"
+  },
+  "created_time": "2026-10-13T10:21:00.000Z",
+  "last_edited_time": "2026-10-13T10:21:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": true,
+  "in_trash": false,
+  "type": "table",
+  "table": {
+   "table_width": 4,
+   "has_column_header": false,
+   "has_row_header": false
+  },
+  "archived": false,
+  "_children": [
+   {
+    "object": "block",
+    "id": "3f894183-19f3-8155-81cf-cce4c2065845",
+    "parent": {
+     "type": "block_id",
+     "block_id": "3f894183-19f3-8119-ae41-d7b47f0364be"
+    },
+    "created_time": "2026-10-13T10:21:00.000Z",
+    "last_edited_time": "2026-10-13T10:21:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "table_row",
+    "table_row": {
+     "cells": [
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Stage",
+         "link": null
+        },
+        "annotations": {
+         "bold": true,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Stage",
+        "href": null
+       }
+      ],
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Step",
+         "link": null
+        },
+        "annotations": {
+         "bold": true,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Step",
+        "href": null
+       }
+      ],
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "What happens",
+         "link": null
+        },
+        "annotations": {
+         "bold": true,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "What happens",
+        "href": null
+       }
+      ],
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Output",
+         "link": null
+        },
+        "annotations": {
+         "bold": true,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Output",
+        "href": null
+       }
+      ]
+     ]
+    },
+    "archived": false
+   },
+   {
+    "object": "block",
+    "id": "3f894183-19f3-8174-96b8-f6de5aaead7f",
+    "parent": {
+     "type": "block_id",
+     "block_id": "3f894183-19f3-8119-ae41-d7b47f0364be"
+    },
+    "created_time": "2026-10-13T10:21:00.000Z",
+    "last_edited_time": "2026-10-13T10:21:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "table_row",
+    "table_row": {
+     "cells": [
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Background",
+         "link": null
+        },
+        "annotations": {
+         "bold": true,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Background",
+        "href": null
+       }
+      ],
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Ingestion",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Ingestion",
+        "href": null
+       }
+      ],
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Documents are loaded and extracted",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Documents are loaded and extracted",
+        "href": null
+       }
+      ],
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Raw text",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Raw text",
+        "href": null
+       }
+      ]
+     ]
+    },
+    "archived": false
+   },
+   {
+    "object": "block",
+    "id": "3f894183-19f3-8114-9dfa-edf3c04ced56",
+    "parent": {
+     "type": "block_id",
+     "block_id": "3f894183-19f3-8119-ae41-d7b47f0364be"
+    },
+    "created_time": "2026-10-13T10:21:00.000Z",
+    "last_edited_time": "2026-10-13T10:21:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "table_row",
+    "table_row": {
+     "cells": [
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Background",
+         "link": null
+        },
+        "annotations": {
+         "bold": true,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Background",
+        "href": null
+       }
+      ],
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Chunking",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Chunking",
+        "href": null
+       }
+      ],
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Text is split into segments",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Text is split into segments",
+        "href": null
+       }
+      ],
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Text chunks",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Text chunks",
+        "href": null
+       }
+      ]
+     ]
+    },
+    "archived": false
+   },
+   {
+    "object": "block",
+    "id": "3f894183-19f3-8145-9f6f-e5fa2dc1c271",
+    "parent": {
+     "type": "block_id",
+     "block_id": "3f894183-19f3-8119-ae41-d7b47f0364be"
+    },
+    "created_time": "2026-10-13T10:21:00.000Z",
+    "last_edited_time": "2026-10-13T10:21:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "table_row",
+    "table_row": {
+     "cells": [
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Background",
+         "link": null
+        },
+        "annotations": {
+         "bold": true,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Background",
+        "href": null
+       }
+      ],
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Embedding",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Embedding",
+        "href": null
+       }
+      ],
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Chunks are converted to vectors",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Chunks are converted to vectors",
+        "href": null
+       }
+      ],
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Vector embeddings",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Vector embeddings",
+        "href": null
+       }
+      ]
+     ]
+    },
+    "archived": false
+   },
+   {
+    "object": "block",
+    "id": "3f894183-19f3-81d8-8c7d-d57f50f81a71",
+    "parent": {
+     "type": "block_id",
+     "block_id": "3f894183-19f3-8119-ae41-d7b47f0364be"
+    },
+    "created_time": "2026-10-13T10:21:00.000Z",
+    "last_edited_time": "2026-10-13T10:21:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "table_row",
+    "table_row": {
+     "cells": [
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Background",
+         "link": null
+        },
+        "annotations": {
+         "bold": true,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Background",
+        "href": null
+       }
+      ],
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Storage",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Storage",
+        "href": null
+       }
+      ],
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Vectors are saved with metadata",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Vectors are saved with metadata",
+        "href": null
+       }
+      ],
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Populated vector database",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Populated vector database",
+        "href": null
+       }
+      ]
+     ]
+    },
+    "archived": false
+   },
+   {
+    "object": "block",
+    "id": "3f894183-19f3-815d-b380-fbea09ff4304",
+    "parent": {
+     "type": "block_id",
+     "block_id": "3f894183-19f3-8119-ae41-d7b47f0364be"
+    },
+    "created_time": "2026-10-13T10:21:00.000Z",
+    "last_edited_time": "2026-10-13T10:21:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "table_row",
+    "table_row": {
+     "cells": [
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Runtime",
+         "link": null
+        },
+        "annotations": {
+         "bold": true,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Runtime",
+        "href": null
+       }
+      ],
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Query embedding",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Query embedding",
+        "href": null
+       }
+      ],
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Client query is converted to a vector",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Client query is converted to a vector",
+        "href": null
+       }
+      ],
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Query vector",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Query vector",
+        "href": null
+       }
+      ]
+     ]
+    },
+    "archived": false
+   },
+   {
+    "object": "block",
+    "id": "3f894183-19f3-8103-aea6-dc6f1c06e9e4",
+    "parent": {
+     "type": "block_id",
+     "block_id": "3f894183-19f3-8119-ae41-d7b47f0364be"
+    },
+    "created_time": "2026-10-13T10:21:00.000Z",
+    "last_edited_time": "2026-10-13T10:21:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "table_row",
+    "table_row": {
+     "cells": [
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Runtime",
+         "link": null
+        },
+        "annotations": {
+         "bold": true,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Runtime",
+        "href": null
+       }
+      ],
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Retrieval",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Retrieval",
+        "href": null
+       }
+      ],
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Database returns closest matching chunks",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Database returns closest matching chunks",
+        "href": null
+       }
+      ],
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Relevant content",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Relevant content",
+        "href": null
+       }
+      ]
+     ]
+    },
+    "archived": false
+   },
+   {
+    "object": "block",
+    "id": "3f894183-19f3-814a-a78e-ed61be1fb408",
+    "parent": {
+     "type": "block_id",
+     "block_id": "3f894183-19f3-8119-ae41-d7b47f0364be"
+    },
+    "created_time": "2026-10-13T10:21:00.000Z",
+    "last_edited_time": "2026-10-13T10:21:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "table_row",
+    "table_row": {
+     "cells": [
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Runtime",
+         "link": null
+        },
+        "annotations": {
+         "bold": true,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Runtime",
+        "href": null
+       }
+      ],
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Generation",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Generation",
+        "href": null
+       }
+      ],
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "LLM responds using retrieved content",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "LLM responds using retrieved content",
+        "href": null
+       }
+      ],
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Grounded answer",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Grounded answer",
+        "href": null
+       }
+      ]
+     ]
+    },
+    "archived": false
+   }
+  ]
+ },
+ {
+  "object": "block",
+  "id": "3f894183-19f3-8130-9958-c76b3bceff07",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8049-a2bb-f927ce4674fc"
+  },
+  "created_time": "2026-10-13T10:21:00.000Z",
+  "last_edited_time": "2026-10-13T10:21:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "3f894183-19f3-812a-b08a-d3d4834a26a6",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8049-a2bb-f927ce4674fc"
+  },
+  "created_time": "2026-10-13T10:21:00.000Z",
+  "last_edited_time": "2026-10-13T10:21:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_2",
+  "heading_2": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Check for Understanding",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Check for Understanding",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "3f894183-19f3-81d5-b796-e8ca05df14d0",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8049-a2bb-f927ce4674fc"
+  },
+  "created_time": "2026-10-13T10:21:00.000Z",
+  "last_edited_time": "2026-10-13T10:21:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": true,
+  "in_trash": false,
+  "type": "callout",
+  "callout": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "During the runtime phase of a RAG pipeline, why must the query be embedded using the same model that embedded the documents during ingestion?",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "During the runtime phase of a RAG pipeline, why must the query be embedded using the same model that embedded the documents during ingestion?",
+     "href": null
+    }
+   ],
+   "icon": {
+    "type": "emoji",
+    "emoji": "\ud83d\udca1"
+   },
+   "color": "gray_background"
+  },
+  "archived": false,
+  "_children": [
+   {
+    "object": "block",
+    "id": "3f894183-19f3-8112-bc70-fab4709c876f",
+    "parent": {
+     "type": "block_id",
+     "block_id": "3f894183-19f3-81d5-b796-e8ca05df14d0"
+    },
+    "created_time": "2026-10-13T10:21:00.000Z",
+    "last_edited_time": "2026-10-13T10:21:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "embed",
+    "embed": {
+     "caption": [],
+     "url": "https://app.masterschool.com/campus/multi-choice-question/02fd45ad-6166-43a8-b050-0ed7e6b75fcd"
+    },
+    "archived": false
+   }
+  ]
+ },
+ {
+  "object": "block",
+  "id": "3f894183-19f3-8120-88d3-d683f363952f",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8049-a2bb-f927ce4674fc"
+  },
+  "created_time": "2026-10-13T10:21:00.000Z",
+  "last_edited_time": "2026-10-13T10:21:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "3f894183-19f3-8104-a197-f66b04142cfd",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8049-a2bb-f927ce4674fc"
+  },
+  "created_time": "2026-10-13T10:21:00.000Z",
+  "last_edited_time": "2026-10-13T10:21:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": true,
+  "in_trash": false,
+  "type": "callout",
+  "callout": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Takeaway:",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Takeaway:",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " ",
+     "href": null
+    }
+   ],
+   "icon": {
+    "type": "emoji",
+    "emoji": "\ud83d\udca1"
+   },
+   "color": "gray_background"
+  },
+  "archived": false,
+  "_children": [
+   {
+    "object": "block",
+    "id": "3f894183-19f3-81b3-9b80-d0c0b39870b4",
+    "parent": {
+     "type": "block_id",
+     "block_id": "3f894183-19f3-8104-a197-f66b04142cfd"
+    },
+    "created_time": "2026-10-13T10:21:00.000Z",
+    "last_edited_time": "2026-10-13T10:21:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+     "rich_text": [
+      {
+       "type": "text",
+       "text": {
+        "content": "The RAG pipeline is a data engineering system as much as it is an AI system. The quality of the agent's answers depends entirely on how well the pipeline prepares, stores, and retrieves the underlying content. A well-configured generation step cannot compensate for poor chunking, mismatched embedding models, or an incomplete knowledge base before the agent can perform reliably. ",
+        "link": null
+       },
+       "annotations": {
+        "bold": false,
+        "italic": false,
+        "strikethrough": false,
+        "underline": false,
+        "code": false,
+        "color": "default"
+       },
+       "plain_text": "The RAG pipeline is a data engineering system as much as it is an AI system. The quality of the agent's answers depends entirely on how well the pipeline prepares, stores, and retrieves the underlying content. A well-configured generation step cannot compensate for poor chunking, mismatched embedding models, or an incomplete knowledge base before the agent can perform reliably. ",
+       "href": null
+      }
+     ],
+     "icon": null,
+     "color": "default"
+    },
+    "archived": false
+   },
+   {
+    "object": "block",
+    "id": "3f894183-19f3-815b-941f-e6c5b3469ce0",
+    "parent": {
+     "type": "block_id",
+     "block_id": "3f894183-19f3-8104-a197-f66b04142cfd"
+    },
+    "created_time": "2026-10-13T10:21:00.000Z",
+    "last_edited_time": "2026-10-13T10:21:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+     "rich_text": [
+      {
+       "type": "text",
+       "text": {
+        "content": "In n8n, keep document ingestion and runtime retrieval as separate workflow responsibilities. Use compatible embeddings and the same Qdrant collection for both, then inspect retrieved text and source metadata before trusting an answer.",
+        "link": null
+       },
+       "annotations": {
+        "bold": false,
+        "italic": false,
+        "strikethrough": false,
+        "underline": false,
+        "code": false,
+        "color": "default"
+       },
+       "plain_text": "In n8n, keep document ingestion and runtime retrieval as separate workflow responsibilities. Use compatible embeddings and the same Qdrant collection for both, then inspect retrieved text and source metadata before trusting an answer.",
+       "href": null
+      }
+     ],
+     "icon": null,
+     "color": "default"
+    },
+    "archived": false
+   }
+  ]
+ },
+ {
+  "object": "block",
+  "id": "3f894183-19f3-8160-8eb5-d94235e1b30f",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8049-a2bb-f927ce4674fc"
+  },
+  "created_time": "2026-10-13T10:21:00.000Z",
+  "last_edited_time": "2026-10-13T10:21:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ }
+]

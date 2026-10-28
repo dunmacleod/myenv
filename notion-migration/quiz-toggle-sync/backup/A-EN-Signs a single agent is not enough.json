@@ -1,0 +1,2902 @@
+[
+ {
+  "object": "block",
+  "id": "17ee8a80-0bd2-445a-aa5b-f74e7b7fd6a1",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-80e6-a72e-eddffd5b3d27"
+  },
+  "created_time": "2026-06-23T23:07:00.000Z",
+  "last_edited_time": "2026-06-23T23:08:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Selin opened the sprint retrospective with a question nobody on the Vela team had expected to ask so soon: ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Selin opened the sprint retrospective with a question nobody on the Vela team had expected to ask so soon: ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "\"Should we split this into two agents?\"",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": true,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "\"Should we split this into two agents?\"",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " The internal operations agent they had built was holding up well. It handled inventory status queries, flagged supplier delays, and summarised fulfilment backlogs without breaking a sweat. So when the client support team asked whether the same architecture could be extended to handle inbound client queries, the answer had seemed obvious: just give it more instructions.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " The internal operations agent they had built was holding up well. It handled inventory status queries, flagged supplier delays, and summarised fulfilment backlogs without breaking a sweat. So when the client support team asked whether the same architecture could be extended to handle inbound client queries, the answer had seemed obvious: just give it more instructions.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "4f5a03ce-5df4-4779-96be-52931df700f1",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-80e6-a72e-eddffd5b3d27"
+  },
+  "created_time": "2026-06-23T23:07:00.000Z",
+  "last_edited_time": "2026-06-23T23:08:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Six weeks later, the extended agent was struggling. It mixed up commercial queries with technical ones, gave billing answers to integration questions, and occasionally surfaced supplier data in responses to clients asking about API rate limits. The agent was not broken. It was overloaded. Vela's team had hit one of the most common and least-obvious ceilings in agent design: the point where a single agent's responsibilities become too broad for it to stay coherent.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Six weeks later, the extended agent was struggling. It mixed up commercial queries with technical ones, gave billing answers to integration questions, and occasionally surfaced supplier data in responses to clients asking about API rate limits. The agent was not broken. It was overloaded. Vela's team had hit one of the most common and least-obvious ceilings in agent design: the point where a single agent's responsibilities become too broad for it to stay coherent.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "3ef12bab-9930-48f3-b685-82a60dda4f58",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-80e6-a72e-eddffd5b3d27"
+  },
+  "created_time": "2026-06-23T23:07:00.000Z",
+  "last_edited_time": "2026-06-23T23:08:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "This lesson names that ceiling clearly. By the end, you will be able to look at an agent, identify whether its problems are symptoms of overload and whether the right fix is a redesign or a split.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "This lesson names that ceiling clearly. By the end, you will be able to look at an agent, identify whether its problems are symptoms of overload and whether the right fix is a redesign or a split.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38894183-19f3-801f-b7b6-f2623fb25399",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-80e6-a72e-eddffd5b3d27"
+  },
+  "created_time": "2026-06-23T23:08:00.000Z",
+  "last_edited_time": "2026-06-23T23:08:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "callout",
+  "callout": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "In this lesson, you will learn to identify the scenarios where a single agent creates bottlenecks, and to distinguish between problems that need a better single agent and problems that need more than one.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "In this lesson, you will learn to identify the scenarios where a single agent creates bottlenecks, and to distinguish between problems that need a better single agent and problems that need more than one.",
+     "href": null
+    }
+   ],
+   "icon": {
+    "type": "emoji",
+    "emoji": "\ud83d\udca1"
+   },
+   "color": "gray_background"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38f94183-19f3-803a-98f1-cc52f3327c8e",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-80e6-a72e-eddffd5b3d27"
+  },
+  "created_time": "2026-06-30T12:35:00.000Z",
+  "last_edited_time": "2026-06-30T12:35:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "a95e0d0a-884a-4f44-84da-5cc150c70e8a",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-80e6-a72e-eddffd5b3d27"
+  },
+  "created_time": "2026-06-23T23:07:00.000Z",
+  "last_edited_time": "2026-06-23T23:07:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_2",
+  "heading_2": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "What a single agent is actually doing",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "What a single agent is actually doing",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "79241306-f31c-4a4a-b012-dd4e58671f30",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-80e6-a72e-eddffd5b3d27"
+  },
+  "created_time": "2026-06-23T23:07:00.000Z",
+  "last_edited_time": "2026-06-23T23:07:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Before diagnosing overload, it helps to be precise about what a single agent is managing at runtime.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Before diagnosing overload, it helps to be precise about what a single agent is managing at runtime.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "d12d6758-5719-4d87-a92c-a6870db44eb7",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-80e6-a72e-eddffd5b3d27"
+  },
+  "created_time": "2026-06-23T23:07:00.000Z",
+  "last_edited_time": "2026-06-23T23:08:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Every time a user sends a message, the agent's LLM (the model behind the node) reads three things together: the system prompt (its instructions and persona), the conversation history (what has been said so far), and the user's current message. From those three inputs it decides what to do: call a tool, ask a clarifying question, or generate a response directly.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Every time a user sends a message, the agent's LLM (the model behind the node) reads three things together: the system prompt (its instructions and persona), the conversation history (what has been said so far), and the user's current message. From those three inputs it decides what to do: call a tool, ask a clarifying question, or generate a response directly.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "44eba759-9ffc-4fec-b3d3-ea7419117abb",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-80e6-a72e-eddffd5b3d27"
+  },
+  "created_time": "2026-06-23T23:07:00.000Z",
+  "last_edited_time": "2026-06-23T23:08:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "This means a single agent's coherence depends entirely on its ability to hold a clear, consistent mental model of its purpose across every possible input it might receive. When the range of inputs is narrow and well-defined, that works well. When the range becomes wide, the agent's instructions grow longer, its context window fills faster, and its responses become less consistent at the edges.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "This means a single agent's coherence depends entirely on its ability to hold a clear, consistent mental model of its purpose across every possible input it might receive. When the range of inputs is narrow and well-defined, that works well. When the range becomes wide, the agent's instructions grow longer, its context window fills faster, and its responses become less consistent at the edges.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "dfe92e2f-246c-44f2-8d08-b3bf8ece25e8",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-80e6-a72e-eddffd5b3d27"
+  },
+  "created_time": "2026-06-23T23:07:00.000Z",
+  "last_edited_time": "2026-06-23T23:07:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "The Vela client support agent was asked to handle everything from ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "The Vela client support agent was asked to handle everything from ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "\"What does our enterprise plan include?\"",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": true,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "\"What does our enterprise plan include?\"",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " to ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " to ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "\"Why is our webhook returning a 502?\"",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": true,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "\"Why is our webhook returning a 502?\"",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " Those two queries require different knowledge, different tone, different tools, and different fallback behaviour. Crammed into one agent with one system prompt, neither gets handled as well as it could be.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " Those two queries require different knowledge, different tone, different tools, and different fallback behaviour. Crammed into one agent with one system prompt, neither gets handled as well as it could be.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38f94183-19f3-80eb-9c04-d04358c38b40",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-80e6-a72e-eddffd5b3d27"
+  },
+  "created_time": "2026-06-30T12:35:00.000Z",
+  "last_edited_time": "2026-06-30T12:35:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "bb374bd0-a367-4907-b609-1dc776289c0c",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-80e6-a72e-eddffd5b3d27"
+  },
+  "created_time": "2026-06-23T23:07:00.000Z",
+  "last_edited_time": "2026-06-23T23:07:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_2",
+  "heading_2": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Three signals that a single agent is at its limit",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Three signals that a single agent is at its limit",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "13ebe2cf-0146-4d86-a3d0-130469087c03",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-80e6-a72e-eddffd5b3d27"
+  },
+  "created_time": "2026-06-23T23:07:00.000Z",
+  "last_edited_time": "2026-06-23T23:09:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Not every underperforming agent needs to be split. Some agents underperform because their instructions are vague, their tools are misconfigured, or their memory is not set up correctly. Those are fixable without adding a second agent. The signals below point specifically to the kind of overload that a second agent resolves.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Not every underperforming agent needs to be split. Some agents underperform because their instructions are vague, their tools are misconfigured, or their memory is not set up correctly. Those are fixable without adding a second agent. The signals below point specifically to the kind of overload that a second agent resolves.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "e892c643-60cb-4384-bfaa-e3d508425965",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-80e6-a72e-eddffd5b3d27"
+  },
+  "created_time": "2026-06-23T23:07:00.000Z",
+  "last_edited_time": "2026-06-23T23:09:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Signal 1: The system prompt is trying to be two different experts at once",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Signal 1: The system prompt is trying to be two different experts at once",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "e7eba0a3-2fd7-403f-95b1-e428131127c4",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-80e6-a72e-eddffd5b3d27"
+  },
+  "created_time": "2026-06-23T23:07:00.000Z",
+  "last_edited_time": "2026-06-29T08:04:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "When you open an agent's system prompt and find yourself reading two distinct sets of instructions that would never appear in the same job description, the agent is being asked to be two different people. Vela's extended agent had instructions for how to speak to clients about commercial terms ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "When you open an agent's system prompt and find yourself reading two distinct sets of instructions that would never appear in the same job description, the agent is being asked to be two different people. Vela's extended agent had instructions for how to speak to clients about commercial terms ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "and",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": true,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "and",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " instructions for how to debug API integration issues. These are different roles. The model cannot consistently switch between them based on the input, especially when a single message touches both. For example, a client asks \u201c",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " instructions for how to debug API integration issues. These are different roles. The model cannot consistently switch between them based on the input, especially when a single message touches both. For example, a client asks \u201c",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "Is our plan rate-limited? we're getting 429s\"",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": true,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Is our plan rate-limited? we're getting 429s\"",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " is simultaneously a billing question and a technical question.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " is simultaneously a billing question and a technical question.",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "ecd630d1-1722-44bc-944c-4a3265a95e02",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-80e6-a72e-eddffd5b3d27"
+  },
+  "created_time": "2026-06-23T23:07:00.000Z",
+  "last_edited_time": "2026-06-23T23:10:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Signal 2: Response quality varies significantly by query type",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Signal 2: Response quality varies significantly by query type",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "05e53b59-d04f-4cd3-80d8-6d45b1ca6c62",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-80e6-a72e-eddffd5b3d27"
+  },
+  "created_time": "2026-06-23T23:07:00.000Z",
+  "last_edited_time": "2026-06-23T23:10:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "If you run a test set across an agent and notice that it handles one category of query reliably but another category poorly, the issue is usually not the instructions. It is that the agent is being asked to apply different levels of specialisation simultaneously, and the LLM context that makes it good at one category competes with the context that would make it good at the other. Vela's team found their agent scored well on fulfilment queries and poorly on commercial queries in the same session. The fix was separation.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "If you run a test set across an agent and notice that it handles one category of query reliably but another category poorly, the issue is usually not the instructions. It is that the agent is being asked to apply different levels of specialisation simultaneously, and the LLM context that makes it good at one category competes with the context that would make it good at the other. Vela's team found their agent scored well on fulfilment queries and poorly on commercial queries in the same session. The fix was separation.",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "aee1e9a3-6fb4-4e7e-91b3-3bc26a44621e",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-80e6-a72e-eddffd5b3d27"
+  },
+  "created_time": "2026-06-23T23:07:00.000Z",
+  "last_edited_time": "2026-06-23T23:10:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Signal 3: A query arriving at the wrong agent produces a plausible-but-wrong response",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Signal 3: A query arriving at the wrong agent produces a plausible-but-wrong response",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "d544f374-6e35-4a6b-b07d-2776ac305041",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-80e6-a72e-eddffd5b3d27"
+  },
+  "created_time": "2026-06-23T23:07:00.000Z",
+  "last_edited_time": "2026-06-23T23:10:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "This is the most dangerous signal because it is the hardest to catch in testing. When a single agent handles everything, there is no routing failure. Every query lands with the same agent, so there are no visible handoff errors. But the agent may answer a technical query with commercial language, or vice versa, in a way that sounds confident and coherent but is subtly wrong. This is the failure mode that only shows up when a subject-matter expert reviews the output.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "This is the most dangerous signal because it is the hardest to catch in testing. When a single agent handles everything, there is no routing failure. Every query lands with the same agent, so there are no visible handoff errors. But the agent may answer a technical query with commercial language, or vice versa, in a way that sounds confident and coherent but is subtly wrong. This is the failure mode that only shows up when a subject-matter expert reviews the output.",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38894183-19f3-80f9-833d-e1733306ba8e",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-80e6-a72e-eddffd5b3d27"
+  },
+  "created_time": "2026-06-23T23:22:00.000Z",
+  "last_edited_time": "2026-06-23T23:22:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "image",
+  "image": {
+   "caption": [],
+   "type": "file",
+   "file": {
+    "url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/3a9085c4-df29-45e6-8bc7-6c9c0a25ea8c/ebbe3540-8adf-44af-8aa1-9d470ed9397f/single-vs-specialist-agents__01__en.svg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466WQ35C77L%2F20261028%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20261028T113334Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEDsaCXVzLXdlc3QtMiJHMEUCIFD4Pt6JBIBOAnClcs0TjPQsxWAWJz96F4YPo4XICYNkAiEAsMfiPbsLC57EjBpTV5rDMtJSWO0veZ0lPWXGC0Pied4q%2FwMIBBAAGgw2Mzc0MjMxODM4MDUiDA6ZTbS0Pe%2BknwPlJyrcA%2FfMJYKpEziO4m%2B8xkC%2BZVJpJSxR8rN%2FI4IvhtmoYN2PwJiDp0lXPvlUv7%2FGUrga4BoxApQxmP3v3vC3DuyC9pqKK8dQmOgWsl2gV0YWw9tZE1BgXZJ9iVJndYv7H%2BOLCJOjqDe%2BKhldGioWbh5o29P14Ajk6ZEeJCRZ85x%2FXmc85COgXGcWbwAv%2BC8nn009MQbzNiyUpa2XLjP3UVD74mbThVolYa79as3mAO9tTY6EtdKlViZM3fL%2FG6bf57nhqIPTVqx0HNjeBm%2FSXywwmnUv4XfiGexQ3zxdSA3npvs9K4pyOSyu6xljlT00KKvXd3%2BQMxaeZXwgrovTFqwFZyhrP8zvy9RPWBKUG%2FQc9Uc%2FEVFEHgEzONFn7RPW5qvgu7WhFk6XnKVJvKHwFy%2FIPPjhqcxQJq1a8Q9IyV0FKY3di%2B3mCd4Eo3yqb0dmS81hkHZ0amZCDUNhPqFD%2Fa0GLfhC7MSDaE%2BN0xpoAxpLxornPSF325kNlP0lur%2BTB3IRikJV7e1uuzlWTyc920nX%2B%2FdvxQm0BU0jSumkmnrfX0SjgPQTlXMoW3UlYOJqcA9%2FbcvfeH9YIZPp1M6690aAUt5MJu4Lzkqk2q2WYYIgn%2BsqkQF5b76nF26R942VMNamh9cGOqUB%2FaIAZzbufMuEyvG6xmMYX6OAzGHHMqloPUDg%2F2Y5phumJHDfOegjJE65ogiyyeedXd70zB0%2FOoGW9d0nSp%2FwSMqB0bvY4oip5zmcG6fEXdgqBjZNc4Q36J5dlxBmBcTycpu1frPwVxgEnLWvV5Z41B6LLbUnhAH6vv7Zy730Jd5kvQyhcnh0itZmYiuu3Q98AE2OyU%2BnZXwYjeBqdR4QX%2BS8x%2FV%2B&X-Amz-Signature=26951c9ec716f72b3700e299e42ed80f39b8e3300fcc1919a6082fbe81dc57db&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+    "expiry_time": "2026-10-28T12:33:34.521Z"
+   }
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38f94183-19f3-80f4-a6cf-f46d9abdc75f",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-80e6-a72e-eddffd5b3d27"
+  },
+  "created_time": "2026-06-30T12:36:00.000Z",
+  "last_edited_time": "2026-06-30T12:36:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "a9c96ebc-f040-4006-8e56-c5b190e5e3f4",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-80e6-a72e-eddffd5b3d27"
+  },
+  "created_time": "2026-06-23T23:07:00.000Z",
+  "last_edited_time": "2026-06-23T23:11:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_2",
+  "heading_2": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "The distinction that matters: Overload vs Under-specification",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "The distinction that matters: Overload vs Under-specification",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "04aa69e6-c121-4acc-9efb-1f362d3dd3a0",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-80e6-a72e-eddffd5b3d27"
+  },
+  "created_time": "2026-06-23T23:07:00.000Z",
+  "last_edited_time": "2026-06-23T23:11:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "The three signals above all describe ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "The three signals above all describe ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "overload",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "overload",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " (an agent that has too many responsibilities to handle any of them at the level of quality the use case requires). This is different from ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " (an agent that has too many responsibilities to handle any of them at the level of quality the use case requires). This is different from ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "under-specification",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "under-specification",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": ", where an agent handles a narrow task but handles it poorly because its instructions, tools, or memory are not set up correctly.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": ", where an agent handles a narrow task but handles it poorly because its instructions, tools, or memory are not set up correctly.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "cc8191cb-efe2-4d44-9dd7-abed03489bda",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-80e6-a72e-eddffd5b3d27"
+  },
+  "created_time": "2026-06-23T23:07:00.000Z",
+  "last_edited_time": "2026-06-30T12:36:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": true,
+  "in_trash": false,
+  "type": "table",
+  "table": {
+   "table_width": 3,
+   "has_column_header": true,
+   "has_row_header": false
+  },
+  "archived": false,
+  "_children": [
+   {
+    "object": "block",
+    "id": "baa8ed82-3434-4451-bcef-80f930c33087",
+    "parent": {
+     "type": "block_id",
+     "block_id": "cc8191cb-efe2-4d44-9dd7-abed03489bda"
+    },
+    "created_time": "2026-06-23T23:07:00.000Z",
+    "last_edited_time": "2026-06-23T23:07:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "231d872b-594c-81f2-a375-0002b8783aca"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "231d872b-594c-81f2-a375-0002b8783aca"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "table_row",
+    "table_row": {
+     "cells": [
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Problem type",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Problem type",
+        "href": null
+       }
+      ],
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "What it looks like",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "What it looks like",
+        "href": null
+       }
+      ],
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Fix",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Fix",
+        "href": null
+       }
+      ]
+     ]
+    },
+    "archived": false
+   },
+   {
+    "object": "block",
+    "id": "eff7a46b-d04b-464a-b688-2e0381fe728e",
+    "parent": {
+     "type": "block_id",
+     "block_id": "cc8191cb-efe2-4d44-9dd7-abed03489bda"
+    },
+    "created_time": "2026-06-23T23:07:00.000Z",
+    "last_edited_time": "2026-06-23T23:11:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "231d872b-594c-81f2-a375-0002b8783aca"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "231d872b-594c-81f2-a375-0002b8783aca"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "table_row",
+    "table_row": {
+     "cells": [
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Under-specification",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Under-specification",
+        "href": null
+       }
+      ],
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Agent handles one query type but gives vague, inconsistent, or off-target responses",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Agent handles one query type but gives vague, inconsistent, or off-target responses",
+        "href": null
+       }
+      ],
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Better instructions, clearer tool descriptions, improved system prompt",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Better instructions, clearer tool descriptions, improved system prompt",
+        "href": null
+       }
+      ]
+     ]
+    },
+    "archived": false
+   },
+   {
+    "object": "block",
+    "id": "ad740281-771f-445b-86fb-7ca709e38116",
+    "parent": {
+     "type": "block_id",
+     "block_id": "cc8191cb-efe2-4d44-9dd7-abed03489bda"
+    },
+    "created_time": "2026-06-23T23:07:00.000Z",
+    "last_edited_time": "2026-06-23T23:07:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "231d872b-594c-81f2-a375-0002b8783aca"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "231d872b-594c-81f2-a375-0002b8783aca"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "table_row",
+    "table_row": {
+     "cells": [
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Overload",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Overload",
+        "href": null
+       }
+      ],
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Agent handles multiple query types but quality degrades as breadth increases; different query types compete for coherence",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Agent handles multiple query types but quality degrades as breadth increases; different query types compete for coherence",
+        "href": null
+       }
+      ],
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Split into specialised agents with non-overlapping responsibilities",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Split into specialised agents with non-overlapping responsibilities",
+        "href": null
+       }
+      ]
+     ]
+    },
+    "archived": false
+   },
+   {
+    "object": "block",
+    "id": "f7d67774-5116-4408-be3e-b03704a7d9e1",
+    "parent": {
+     "type": "block_id",
+     "block_id": "cc8191cb-efe2-4d44-9dd7-abed03489bda"
+    },
+    "created_time": "2026-06-23T23:07:00.000Z",
+    "last_edited_time": "2026-06-23T23:07:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "231d872b-594c-81f2-a375-0002b8783aca"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "231d872b-594c-81f2-a375-0002b8783aca"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "table_row",
+    "table_row": {
+     "cells": [
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Both",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Both",
+        "href": null
+       }
+      ],
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Agent handles multiple query types poorly across the board",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Agent handles multiple query types poorly across the board",
+        "href": null
+       }
+      ],
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Underspecification first \u2014 confirm the use case is viable as a single agent before splitting",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Underspecification first \u2014 confirm the use case is viable as a single agent before splitting",
+        "href": null
+       }
+      ]
+     ]
+    },
+    "archived": false
+   }
+  ]
+ },
+ {
+  "object": "block",
+  "id": "16e073dc-6175-415b-a193-930c28f1226f",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-80e6-a72e-eddffd5b3d27"
+  },
+  "created_time": "2026-06-23T23:07:00.000Z",
+  "last_edited_time": "2026-06-23T23:11:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "The order matters. Adding a second agent to fix under-specification is one of the most common over-engineering mistakes in agent design. The right question before splitting is always: ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "The order matters. Adding a second agent to fix under-specification is one of the most common over-engineering mistakes in agent design. The right question before splitting is always: ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "if this agent only had to handle one type of query, would it handle it well?",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": true,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "if this agent only had to handle one type of query, would it handle it well?",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " If the answer is no, the problem is underspecification and more agents will not help.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " If the answer is no, the problem is underspecification and more agents will not help.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38f94183-19f3-8005-b225-f5887aaf2193",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-80e6-a72e-eddffd5b3d27"
+  },
+  "created_time": "2026-06-30T12:36:00.000Z",
+  "last_edited_time": "2026-06-30T12:36:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "16acd3cc-0270-4688-9e71-f38d1b457748",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-80e6-a72e-eddffd5b3d27"
+  },
+  "created_time": "2026-06-23T23:07:00.000Z",
+  "last_edited_time": "2026-06-23T23:07:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_2",
+  "heading_2": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "What overload is not",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "What overload is not",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "831d92c5-0b4a-421a-82cb-e3a160a037d2",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-80e6-a72e-eddffd5b3d27"
+  },
+  "created_time": "2026-06-23T23:07:00.000Z",
+  "last_edited_time": "2026-06-23T23:07:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Two situations that look like overload but are not:",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Two situations that look like overload but are not:",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "996f7f4c-b3a3-480a-b7d7-9c480f14f850",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-80e6-a72e-eddffd5b3d27"
+  },
+  "created_time": "2026-06-23T23:07:00.000Z",
+  "last_edited_time": "2026-06-23T23:12:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "High query volume",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "High query volume",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " is not overload. An agent that handles ten queries a day and one that handles ten thousand are architecturally identical. Volume is an infrastructure concern, not an agent design concern. Splitting an agent to handle volume is a common but wrong instinct.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " is not overload. An agent that handles ten queries a day and one that handles ten thousand are architecturally identical. Volume is an infrastructure concern, not an agent design concern. Splitting an agent to handle volume is a common but wrong instinct.",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "7af85ea1-43bf-4ccf-b6a2-c52a4f467d26",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-80e6-a72e-eddffd5b3d27"
+  },
+  "created_time": "2026-06-23T23:07:00.000Z",
+  "last_edited_time": "2026-06-23T23:12:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Long conversations",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Long conversations",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " are not inherently overload. An agent that holds a twenty-message conversation about a single complex topic is where the context window is being used as intended. Overload is about the ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " are not inherently overload. An agent that holds a twenty-message conversation about a single complex topic is where the context window is being used as intended. Overload is about the ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "breadth of responsibilities",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": true,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "breadth of responsibilities",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": ", not the ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": ", not the ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "length of interactions",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": true,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "length of interactions",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": ".",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": ".",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38f94183-19f3-80c4-96dd-c7610d2a3819",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-80e6-a72e-eddffd5b3d27"
+  },
+  "created_time": "2026-06-30T12:36:00.000Z",
+  "last_edited_time": "2026-06-30T12:36:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "179b2a02-a5e6-42d0-bf7a-e0268e401c2b",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-80e6-a72e-eddffd5b3d27"
+  },
+  "created_time": "2026-06-23T23:07:00.000Z",
+  "last_edited_time": "2026-06-23T23:07:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_2",
+  "heading_2": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Applying this to Vela",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Applying this to Vela",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "a21abc94-456b-407f-85fb-6a096643c998",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-80e6-a72e-eddffd5b3d27"
+  },
+  "created_time": "2026-06-23T23:07:00.000Z",
+  "last_edited_time": "2026-06-23T23:07:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "The Vela client support agent shows all three signals clearly:",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "The Vela client support agent shows all three signals clearly:",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "d746fa4c-2420-4c58-9ac5-8602de1fe632",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-80e6-a72e-eddffd5b3d27"
+  },
+  "created_time": "2026-06-23T23:07:00.000Z",
+  "last_edited_time": "2026-06-23T23:07:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Its system prompt contained distinct instruction blocks for commercial queries and technical queries \u2014 two different experts in one node.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Its system prompt contained distinct instruction blocks for commercial queries and technical queries \u2014 two different experts in one node.",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "97cbb992-02b7-4fa1-ad33-2170ef3a3602",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-80e6-a72e-eddffd5b3d27"
+  },
+  "created_time": "2026-06-23T23:07:00.000Z",
+  "last_edited_time": "2026-06-23T23:07:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Test results showed consistent quality on one query type and poor quality on the other within the same session.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Test results showed consistent quality on one query type and poor quality on the other within the same session.",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "7a3e9343-9e5c-4f66-8a69-b5da22ab1cc2",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-80e6-a72e-eddffd5b3d27"
+  },
+  "created_time": "2026-06-23T23:07:00.000Z",
+  "last_edited_time": "2026-06-23T23:07:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Clients occasionally received technically accurate but contextually wrong responses \u2014 a billing answer phrased in the language of a technical support ticket.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Clients occasionally received technically accurate but contextually wrong responses \u2014 a billing answer phrased in the language of a technical support ticket.",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "000a76b7-0c67-4e7d-b299-5830cad310e6",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-80e6-a72e-eddffd5b3d27"
+  },
+  "created_time": "2026-06-23T23:07:00.000Z",
+  "last_edited_time": "2026-06-23T23:12:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "The diagnosis is overload, not under-specification. The agent handling fulfilment queries works well with a single agent because its responsibilities are narrow and consistent. The client support use case, by contrast, spans two distinct domains with different knowledge bases, different tones, and different downstream actions. That is the kind of breadth that earns a multi-agent design.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "The diagnosis is overload, not under-specification. The agent handling fulfilment queries works well with a single agent because its responsibilities are narrow and consistent. The client support use case, by contrast, spans two distinct domains with different knowledge bases, different tones, and different downstream actions. That is the kind of breadth that earns a multi-agent design.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "d41739ad-80de-4013-b4eb-61b4dfdd2f64",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-80e6-a72e-eddffd5b3d27"
+  },
+  "created_time": "2026-06-23T23:07:00.000Z",
+  "last_edited_time": "2026-06-23T23:12:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "The next step is not just deciding ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "The next step is not just deciding ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "to",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": true,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "to",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " split, but deciding ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " split, but deciding ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "how",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": true,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "how",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " to split: what each specialist agent is responsible for, where the boundaries sit, and what the coordination between them looks like.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " to split: what each specialist agent is responsible for, where the boundaries sit, and what the coordination between them looks like.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38894183-19f3-808c-9738-e3f6d06d201c",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-80e6-a72e-eddffd5b3d27"
+  },
+  "created_time": "2026-06-23T23:21:00.000Z",
+  "last_edited_time": "2026-06-23T23:21:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "7a9ed828-73a1-4241-8e19-9c4d1bb38034",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-80e6-a72e-eddffd5b3d27"
+  },
+  "created_time": "2026-06-23T23:07:00.000Z",
+  "last_edited_time": "2026-06-23T23:07:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_2",
+  "heading_2": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Summary",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Summary",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "0574de84-7fb9-4a89-8e72-74ef5f32db40",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-80e6-a72e-eddffd5b3d27"
+  },
+  "created_time": "2026-06-23T23:07:00.000Z",
+  "last_edited_time": "2026-06-23T23:12:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "The Vela team's instinct to extend their internal operations agent to cover client support was reasonable. What they discovered is that the breadth of the client support use case (commercial queries, technical queries, and hybrid queries that touch both) made a single agent inconsistent in ways that better instructions could not fix. That is overload, and it is the specific condition that a multi-agent design resolves.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "The Vela team's instinct to extend their internal operations agent to cover client support was reasonable. What they discovered is that the breadth of the client support use case (commercial queries, technical queries, and hybrid queries that touch both) made a single agent inconsistent in ways that better instructions could not fix. That is overload, and it is the specific condition that a multi-agent design resolves.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "3d1bb5a7-1061-4ba5-8743-d62a10d09454",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-80e6-a72e-eddffd5b3d27"
+  },
+  "created_time": "2026-06-23T23:07:00.000Z",
+  "last_edited_time": "2026-06-23T23:12:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "The three signals (a system prompt trying to be two experts, quality that varies by query type, and plausible-but-wrong responses at the boundaries) give you a diagnostic framework you can apply to any agent before deciding whether to split it. The key discipline is checking for underspecification first. A poorly specified agent will still be poorly specified after you add a second one.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "The three signals (a system prompt trying to be two experts, quality that varies by query type, and plausible-but-wrong responses at the boundaries) give you a diagnostic framework you can apply to any agent before deciding whether to split it. The key discipline is checking for underspecification first. A poorly specified agent will still be poorly specified after you add a second one.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "00ad5c34-d265-47ea-9aba-19da807dae04",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-80e6-a72e-eddffd5b3d27"
+  },
+  "created_time": "2026-06-23T23:07:00.000Z",
+  "last_edited_time": "2026-06-23T23:07:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "The next lessons take this diagnosis forward: how to define specialised agents with clear, non-overlapping responsibilities, and when the additional complexity of a multi-agent system is actually worth its cost.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "The next lessons take this diagnosis forward: how to define specialised agents with clear, non-overlapping responsibilities, and when the additional complexity of a multi-agent system is actually worth its cost.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38f94183-19f3-8002-9f92-d0787163397c",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-80e6-a72e-eddffd5b3d27"
+  },
+  "created_time": "2026-06-30T12:36:00.000Z",
+  "last_edited_time": "2026-06-30T12:36:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "68fe2484-2eac-44c2-ac06-6ab79507f6b1",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-80e6-a72e-eddffd5b3d27"
+  },
+  "created_time": "2026-06-23T23:07:00.000Z",
+  "last_edited_time": "2026-06-23T23:07:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_2",
+  "heading_2": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Quiz",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Quiz",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "a4baf9ba-9bce-4ebe-aeb7-b433b362ae96",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-80e6-a72e-eddffd5b3d27"
+  },
+  "created_time": "2026-06-23T23:07:00.000Z",
+  "last_edited_time": "2026-06-23T23:07:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_3",
+  "heading_3": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Question 1",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Question 1",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "39494183-19f3-8099-9bb8-f333473ade4b",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-80e6-a72e-eddffd5b3d27"
+  },
+  "created_time": "2026-07-05T12:24:00.000Z",
+  "last_edited_time": "2026-07-05T12:24:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": true,
+  "in_trash": false,
+  "type": "callout",
+  "callout": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Vela's client support agent is handling both commercial queries (pricing, contracts, renewals) and technical queries (API errors, integration issues, platform bugs). Response quality is consistently strong for commercial queries but degrades noticeably for technical ones within the same session. Which diagnosis fits?",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Vela's client support agent is handling both commercial queries (pricing, contracts, renewals) and technical queries (API errors, integration issues, platform bugs). Response quality is consistently strong for commercial queries but degrades noticeably for technical ones within the same session. Which diagnosis fits?",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "gray_background"
+  },
+  "archived": false,
+  "_children": [
+   {
+    "object": "block",
+    "id": "39494183-19f3-8061-a756-edc5c95cc011",
+    "parent": {
+     "type": "block_id",
+     "block_id": "39494183-19f3-8099-9bb8-f333473ade4b"
+    },
+    "created_time": "2026-07-05T12:24:00.000Z",
+    "last_edited_time": "2026-07-05T12:24:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "embed",
+    "embed": {
+     "caption": [],
+     "url": "https://app.masterschool.com/campus/multi-choice-question/4ee32edd-f701-4e93-bfc9-52f467e92e49"
+    },
+    "archived": false
+   }
+  ]
+ },
+ {
+  "object": "block",
+  "id": "3b641939-b7f9-43ed-bb50-3bc0edb1abf6",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-80e6-a72e-eddffd5b3d27"
+  },
+  "created_time": "2026-06-23T23:07:00.000Z",
+  "last_edited_time": "2026-06-23T23:07:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_3",
+  "heading_3": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Question 2",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Question 2",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "39494183-19f3-808e-8bd9-ca9b4352ca7b",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-80e6-a72e-eddffd5b3d27"
+  },
+  "created_time": "2026-07-05T12:25:00.000Z",
+  "last_edited_time": "2026-07-05T12:25:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": true,
+  "in_trash": false,
+  "type": "callout",
+  "callout": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Jonas suggests splitting the Vela client support agent into two specialist agents before doing anything else. Selin pushes back, arguing they should check something first. What is the most important thing to check before deciding to split?",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Jonas suggests splitting the Vela client support agent into two specialist agents before doing anything else. Selin pushes back, arguing they should check something first. What is the most important thing to check before deciding to split?",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "gray_background"
+  },
+  "archived": false,
+  "_children": [
+   {
+    "object": "block",
+    "id": "39494183-19f3-80a8-ac54-fea4538a8627",
+    "parent": {
+     "type": "block_id",
+     "block_id": "39494183-19f3-808e-8bd9-ca9b4352ca7b"
+    },
+    "created_time": "2026-07-05T12:25:00.000Z",
+    "last_edited_time": "2026-07-05T12:25:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "embed",
+    "embed": {
+     "caption": [],
+     "url": "https://app.masterschool.com/campus/multi-choice-question/664e574f-16fe-4a2f-b086-b76fae5c9a64"
+    },
+    "archived": false
+   }
+  ]
+ },
+ {
+  "object": "block",
+  "id": "4b62cb53-3f7a-4c58-8edd-8bbec1a7b735",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-80e6-a72e-eddffd5b3d27"
+  },
+  "created_time": "2026-06-23T23:07:00.000Z",
+  "last_edited_time": "2026-07-05T12:26:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ }
+]

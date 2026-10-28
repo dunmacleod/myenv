@@ -1,0 +1,3022 @@
+[
+ {
+  "object": "block",
+  "id": "36a94183-19f3-80cc-b0dc-fa847c745c75",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8008-9184-d2958c5822b4"
+  },
+  "created_time": "2026-05-24T01:09:00.000Z",
+  "last_edited_time": "2026-05-24T01:09:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "callout",
+  "callout": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "What you will work on in this lesson: ",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "What you will work on in this lesson: ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "Choosing between fixed-size and semantic chunking strategies for two structurally different document types and justifying each decision based on the document's structure and the queries it will need to support.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Choosing between fixed-size and semantic chunking strategies for two structurally different document types and justifying each decision based on the document's structure and the queries it will need to support.",
+     "href": null
+    }
+   ],
+   "icon": {
+    "type": "emoji",
+    "emoji": "\ud83d\udca1"
+   },
+   "color": "gray_background"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37994183-19f3-80ce-92c4-d7662f468fcd",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8008-9184-d2958c5822b4"
+  },
+  "created_time": "2026-06-08T15:38:00.000Z",
+  "last_edited_time": "2026-06-08T15:38:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "896eae0d-245d-4f7c-9504-826b00c53350",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8008-9184-d2958c5822b4"
+  },
+  "created_time": "2026-05-22T02:02:00.000Z",
+  "last_edited_time": "2026-05-24T01:10:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_2",
+  "heading_2": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "The Scenario",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "The Scenario",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "69253706-f83c-4654-bb18-055683da2a96",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8008-9184-d2958c5822b4"
+  },
+  "created_time": "2026-05-22T02:02:00.000Z",
+  "last_edited_time": "2026-06-09T12:37:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Contigo GmbH's development team has finalised the document selection and prepared the files for ingestion. Before any document enters Qdrant, the team must make one more foundational decision: how to chunk each document.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Contigo GmbH's development team has finalised the document selection and prepared the files for ingestion. Before any document enters Qdrant, the team must make one more foundational decision: how to chunk each document.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "4b799ad7-d75c-4874-bf7e-179c807c474e",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8008-9184-d2958c5822b4"
+  },
+  "created_time": "2026-05-22T02:02:00.000Z",
+  "last_edited_time": "2026-05-24T01:10:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "The team's data engineer raises the question in a review session. Two documents are ready for ingestion: The 2026 SME Loan Product Guide and the EU Consumer Credit Directive Summary. Both are PDFs. Both contain financial and regulatory content. But their internal structures are completely different, and applying the same chunking strategy to both would be the same mistake as applying generic processing.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "The team's data engineer raises the question in a review session. Two documents are ready for ingestion: The 2026 SME Loan Product Guide and the EU Consumer Credit Directive Summary. Both are PDFs. Both contain financial and regulatory content. But their internal structures are completely different, and applying the same chunking strategy to both would be the same mistake as applying generic processing.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "d140e36f-816a-42d5-8604-9396ec5c5aa4",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8008-9184-d2958c5822b4"
+  },
+  "created_time": "2026-05-22T02:02:00.000Z",
+  "last_edited_time": "2026-05-22T02:02:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "The team needs to define a chunking approach for each document that reflects its actual structure, the types of queries it will need to support, and the trade-offs between chunk size, overlap, and retrieval precision.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "The team needs to define a chunking approach for each document that reflects its actual structure, the types of queries it will need to support, and the trade-offs between chunk size, overlap, and retrieval precision.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37994183-19f3-8007-9211-cdf636bb7d9d",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8008-9184-d2958c5822b4"
+  },
+  "created_time": "2026-06-08T15:38:00.000Z",
+  "last_edited_time": "2026-06-08T15:38:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37994183-19f3-80cc-879d-c4fe96d1724a",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8008-9184-d2958c5822b4"
+  },
+  "created_time": "2026-06-08T13:51:00.000Z",
+  "last_edited_time": "2026-06-08T13:51:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_2",
+  "heading_2": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "What is chunking?",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "What is chunking?",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37994183-19f3-8071-ae82-ef36fdc126e6",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8008-9184-d2958c5822b4"
+  },
+  "created_time": "2026-06-08T13:51:00.000Z",
+  "last_edited_time": "2026-06-08T13:52:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Chunking",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Chunking",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " is the process of splitting large documents into smaller, manageable pieces before storing them in a knowledge base. Because language models have a limited context window, they cannot process an entire document at once. Chunking breaks content into segments small enough to be embedded as individual vectors and retrieved selectively based on relevance to a query. ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " is the process of splitting large documents into smaller, manageable pieces before storing them in a knowledge base. Because language models have a limited context window, they cannot process an entire document at once. Chunking breaks content into segments small enough to be embedded as individual vectors and retrieved selectively based on relevance to a query. ",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37994183-19f3-8050-8b89-eb7b6dceddbe",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8008-9184-d2958c5822b4"
+  },
+  "created_time": "2026-06-08T13:52:00.000Z",
+  "last_edited_time": "2026-06-08T13:52:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "The size and boundaries of each chunk directly will affect retrieval quality",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "The size and boundaries of each chunk directly will affect retrieval quality",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37994183-19f3-801b-9479-fd5a08b0e30a",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8008-9184-d2958c5822b4"
+  },
+  "created_time": "2026-06-08T13:52:00.000Z",
+  "last_edited_time": "2026-06-08T13:52:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Chunks that are too large will dilute the semantic signal",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Chunks that are too large will dilute the semantic signal",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37994183-19f3-807c-8dfe-ecd6c0c518f5",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8008-9184-d2958c5822b4"
+  },
+  "created_time": "2026-06-08T13:52:00.000Z",
+  "last_edited_time": "2026-06-08T13:52:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Chunks that are too small will lose the context needed to answer questions accurately",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Chunks that are too small will lose the context needed to answer questions accurately",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37994183-19f3-80aa-81f3-f33614c59214",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8008-9184-d2958c5822b4"
+  },
+  "created_time": "2026-06-08T13:52:00.000Z",
+  "last_edited_time": "2026-06-08T13:52:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Good chunking respects the natural structure of the document.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Good chunking respects the natural structure of the document.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37994183-19f3-8012-9dea-d596707e121c",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8008-9184-d2958c5822b4"
+  },
+  "created_time": "2026-06-08T15:40:00.000Z",
+  "last_edited_time": "2026-06-08T15:40:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37994183-19f3-80b2-b991-f7e30a9692f4",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8008-9184-d2958c5822b4"
+  },
+  "created_time": "2026-06-08T13:52:00.000Z",
+  "last_edited_time": "2026-06-08T13:53:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_2",
+  "heading_2": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "The two chunking strategies",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "The two chunking strategies",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "b2e74d11-1e03-4ed1-ae97-9acc276f70bd",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8008-9184-d2958c5822b4"
+  },
+  "created_time": "2026-05-22T02:02:00.000Z",
+  "last_edited_time": "2026-05-22T02:02:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Before beginning the task, review the two primary approaches available.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Before beginning the task, review the two primary approaches available.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "bd27e2ef-3290-44f3-ae03-5e90790cdb0b",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8008-9184-d2958c5822b4"
+  },
+  "created_time": "2026-05-22T02:02:00.000Z",
+  "last_edited_time": "2026-06-08T15:40:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Fixed-size chunking: Naive splitting -",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Fixed-size chunking: Naive splitting -",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " Text is divided into segments of a defined token or character count, with a defined overlap between consecutive chunks. The splits occur at the defined boundary regardless of whether they fall mid-sentence, mid-clause, or at a natural content boundary. This approach is fast to configure and consistent in output size, but it risks breaking context at arbitrary points.\n\nFixed-size chunking works well when the source content is already granular \u2014 short, self-contained entries that are unlikely to be split in a damaging way regardless of where the boundary falls.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " Text is divided into segments of a defined token or character count, with a defined overlap between consecutive chunks. The splits occur at the defined boundary regardless of whether they fall mid-sentence, mid-clause, or at a natural content boundary. This approach is fast to configure and consistent in output size, but it risks breaking context at arbitrary points.\n\nFixed-size chunking works well when the source content is already granular \u2014 short, self-contained entries that are unlikely to be split in a damaging way regardless of where the boundary falls.",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "3b88db15-752a-4921-b100-14c44d18a92f",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8008-9184-d2958c5822b4"
+  },
+  "created_time": "2026-05-22T02:02:00.000Z",
+  "last_edited_time": "2026-06-08T15:40:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Semantic chunking: Structure-aware splitting",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Semantic chunking: Structure-aware splitting",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " - Text is divided at meaningful content boundaries such as section headings, paragraph breaks, topic transitions, or logical clause endings. The splits respect the document's inherent structure rather than imposing an external size constraint. This approach requires more configuration and produces variable chunk sizes, but it preserves the integrity of complex, interconnected content.\n\nSemantic chunking is necessary when the source content contains multi-part arguments, cross-referenced clauses, or structured sections where splitting mid-content would destroy the meaning of the retrieved chunk.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " - Text is divided at meaningful content boundaries such as section headings, paragraph breaks, topic transitions, or logical clause endings. The splits respect the document's inherent structure rather than imposing an external size constraint. This approach requires more configuration and produces variable chunk sizes, but it preserves the integrity of complex, interconnected content.\n\nSemantic chunking is necessary when the source content contains multi-part arguments, cross-referenced clauses, or structured sections where splitting mid-content would destroy the meaning of the retrieved chunk.",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37994183-19f3-8066-8d44-ebee546cda8b",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8008-9184-d2958c5822b4"
+  },
+  "created_time": "2026-06-08T15:40:00.000Z",
+  "last_edited_time": "2026-06-08T15:40:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "c4ede059-f6a2-4b81-88bd-8b9adbb773c2",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8008-9184-d2958c5822b4"
+  },
+  "created_time": "2026-05-22T02:02:00.000Z",
+  "last_edited_time": "2026-05-24T01:11:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_2",
+  "heading_2": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "The two documents",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "The two documents",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "11ce91ce-d1c2-4441-982a-fa6392e4386a",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8008-9184-d2958c5822b4"
+  },
+  "created_time": "2026-05-22T02:02:00.000Z",
+  "last_edited_time": "2026-05-24T01:11:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Document 1: 2026 SME Loan Product Guide",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Document 1: 2026 SME Loan Product Guide",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " - A 5-page document organised into clearly marked sections, one per loan product, each containing subsections for eligibility criteria, interest rate structures, application requirements, and repayment conditions. Content within each section is densely interconnected. The eligibility criteria for a product reference the rate structure in the same section. The repayment conditions reference the application requirements. Splitting across subsection boundaries would produce chunks that are syntactically complete but semantically incomplete.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " - A 5-page document organised into clearly marked sections, one per loan product, each containing subsections for eligibility criteria, interest rate structures, application requirements, and repayment conditions. Content within each section is densely interconnected. The eligibility criteria for a product reference the rate structure in the same section. The repayment conditions reference the application requirements. Splitting across subsection boundaries would produce chunks that are syntactically complete but semantically incomplete.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "ecf1a4d4-ebc2-465d-bd15-da757f17a8ca",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8008-9184-d2958c5822b4"
+  },
+  "created_time": "2026-05-22T02:02:00.000Z",
+  "last_edited_time": "2026-05-24T01:11:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Expected query types: ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Expected query types: ",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "36a94183-19f3-80f8-9570-e411993fadf8",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8008-9184-d2958c5822b4"
+  },
+  "created_time": "2026-05-24T01:11:00.000Z",
+  "last_edited_time": "2026-05-24T01:11:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Product-specific questions",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Product-specific questions",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "36a94183-19f3-8084-b9f8-f12e093df995",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8008-9184-d2958c5822b4"
+  },
+  "created_time": "2026-05-24T01:11:00.000Z",
+  "last_edited_time": "2026-05-24T01:11:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Eligibility checks",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Eligibility checks",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "36a94183-19f3-804c-966d-c1a579c80662",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8008-9184-d2958c5822b4"
+  },
+  "created_time": "2026-05-24T01:11:00.000Z",
+  "last_edited_time": "2026-05-24T01:12:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Rate comparisons",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Rate comparisons",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "36a94183-19f3-8057-85f4-ee638674a926",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8008-9184-d2958c5822b4"
+  },
+  "created_time": "2026-05-24T01:12:00.000Z",
+  "last_edited_time": "2026-05-24T01:12:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Application requirement lookups",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Application requirement lookups",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37994183-19f3-8027-9e3e-e05f25d24bf4",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8008-9184-d2958c5822b4"
+  },
+  "created_time": "2026-06-08T15:40:00.000Z",
+  "last_edited_time": "2026-06-08T15:40:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "49185abd-12fc-46c0-9f6d-5949e560e00f",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8008-9184-d2958c5822b4"
+  },
+  "created_time": "2026-05-22T02:02:00.000Z",
+  "last_edited_time": "2026-05-26T13:54:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Document 2: EU Consumer Credit Directive Summary -",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Document 2: EU Consumer Credit Directive Summary -",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " A two-page internal summary prepared by Contigo's legal team. The document is organised as a numbered list of thirteen obligations, each stated in one to three sentences. Each obligation is self-contained, does not reference the others, and does not require surrounding context to be understood. The document has no cross-references, no nested clauses, and no interconnected sections.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " A two-page internal summary prepared by Contigo's legal team. The document is organised as a numbered list of thirteen obligations, each stated in one to three sentences. Each obligation is self-contained, does not reference the others, and does not require surrounding context to be understood. The document has no cross-references, no nested clauses, and no interconnected sections.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "f0b63b5c-e46d-447d-8c3b-e4f8d87d2ea3",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8008-9184-d2958c5822b4"
+  },
+  "created_time": "2026-05-22T02:02:00.000Z",
+  "last_edited_time": "2026-05-24T01:12:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Expected query types: ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Expected query types: ",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "36a94183-19f3-8094-af90-c06df03a7387",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8008-9184-d2958c5822b4"
+  },
+  "created_time": "2026-05-24T01:12:00.000Z",
+  "last_edited_time": "2026-05-24T01:12:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Specific obligation lookups",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Specific obligation lookups",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "36a94183-19f3-8044-816f-c355b0756940",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8008-9184-d2958c5822b4"
+  },
+  "created_time": "2026-05-24T01:12:00.000Z",
+  "last_edited_time": "2026-05-24T01:12:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Compliance requirement checks",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Compliance requirement checks",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "36a94183-19f3-8088-9adb-fefc754beee7",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8008-9184-d2958c5822b4"
+  },
+  "created_time": "2026-05-24T01:12:00.000Z",
+  "last_edited_time": "2026-05-24T01:12:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Regulatory threshold queries",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Regulatory threshold queries",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37994183-19f3-80cd-b071-e6b4ea0b7a41",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8008-9184-d2958c5822b4"
+  },
+  "created_time": "2026-06-08T15:40:00.000Z",
+  "last_edited_time": "2026-06-08T15:40:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "81521e1d-ff9c-40bb-b755-a11461abb62e",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8008-9184-d2958c5822b4"
+  },
+  "created_time": "2026-05-22T02:02:00.000Z",
+  "last_edited_time": "2026-05-24T01:12:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_2",
+  "heading_2": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Your Tasks",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Your Tasks",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37994183-19f3-80b8-a64d-ec979f8dc04e",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8008-9184-d2958c5822b4"
+  },
+  "created_time": "2026-06-08T15:43:00.000Z",
+  "last_edited_time": "2026-06-08T15:43:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37994183-19f3-80a2-a387-dfe40358d624",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8008-9184-d2958c5822b4"
+  },
+  "created_time": "2026-06-08T15:43:00.000Z",
+  "last_edited_time": "2026-06-08T15:43:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "callout",
+  "callout": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Template:",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Template:",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "Contigo Chunking Strategy worksheet",
+      "link": {
+       "url": "https://docs.google.com/spreadsheets/d/1Zo-m9xeInkphrBB8_dX_4pvm67ckHS6jL6rxzcASbks/copy"
+      }
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Contigo Chunking Strategy worksheet",
+     "href": "https://docs.google.com/spreadsheets/d/1Zo-m9xeInkphrBB8_dX_4pvm67ckHS6jL6rxzcASbks/copy"
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " \u2014 make a copy (File \u2192 Make a copy) and use it to record your strategy choice for each document, configure the parameters, and work through the transcript case.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " \u2014 make a copy (File \u2192 Make a copy) and use it to record your strategy choice for each document, configure the parameters, and work through the transcript case.",
+     "href": null
+    }
+   ],
+   "icon": {
+    "type": "emoji",
+    "emoji": "\ud83d\udd25"
+   },
+   "color": "gray_background"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37994183-19f3-80c2-883f-edf6900c3b17",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8008-9184-d2958c5822b4"
+  },
+  "created_time": "2026-06-08T15:43:00.000Z",
+  "last_edited_time": "2026-06-08T15:43:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "0f4084be-b270-4a41-b60c-11a867ac1bb0",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8008-9184-d2958c5822b4"
+  },
+  "created_time": "2026-05-22T02:02:00.000Z",
+  "last_edited_time": "2026-05-24T01:13:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_4",
+  "heading_4": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Task A: Assign and justify the chunking strategy",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Task A: Assign and justify the chunking strategy",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "0080d3f5-1e5d-40c3-b1b8-6a28153b9a12",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8008-9184-d2958c5822b4"
+  },
+  "created_time": "2026-05-22T02:02:00.000Z",
+  "last_edited_time": "2026-05-24T01:13:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "For each of the two documents, determine which chunking strategy is most appropriate (fixed-size or semantic, and write two to three sentences justifying your choice. Your justification should reference the document's structure and the types of queries it will need to support, not just the general properties of the strategy.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "For each of the two documents, determine which chunking strategy is most appropriate (fixed-size or semantic, and write two to three sentences justifying your choice. Your justification should reference the document's structure and the types of queries it will need to support, not just the general properties of the strategy.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37994183-19f3-80c2-9858-f5cf1e0fcf2a",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8008-9184-d2958c5822b4"
+  },
+  "created_time": "2026-06-08T15:40:00.000Z",
+  "last_edited_time": "2026-06-08T15:40:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "1a512f8a-632c-4dd6-9f28-86b3d6a2b8c6",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8008-9184-d2958c5822b4"
+  },
+  "created_time": "2026-05-22T02:02:00.000Z",
+  "last_edited_time": "2026-05-24T01:13:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_4",
+  "heading_4": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Task B: Configure the parameters",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Task B: Configure the parameters",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "9721fd75-c57d-40c8-8871-a78f04736575",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8008-9184-d2958c5822b4"
+  },
+  "created_time": "2026-05-22T02:02:00.000Z",
+  "last_edited_time": "2026-05-22T02:02:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "For the document where you have chosen fixed-size chunking, propose a specific chunk size in tokens and an overlap value. Justify both numbers. Consider the average length of an individual entry in the document, the risk of splitting a meaningful unit across two chunks, and the cost of storing redundant content through overlap.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "For the document where you have chosen fixed-size chunking, propose a specific chunk size in tokens and an overlap value. Justify both numbers. Consider the average length of an individual entry in the document, the risk of splitting a meaningful unit across two chunks, and the cost of storing redundant content through overlap.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "d7dd51c8-7ea7-4b6b-9552-6fbc0a35af95",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8008-9184-d2958c5822b4"
+  },
+  "created_time": "2026-05-22T02:02:00.000Z",
+  "last_edited_time": "2026-05-22T02:02:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "For the document where you have chosen semantic chunking, identify the structural feature you would use as the chunking boundary and explain why that boundary preserves the content's meaning for the expected query types.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "For the document where you have chosen semantic chunking, identify the structural feature you would use as the chunking boundary and explain why that boundary preserves the content's meaning for the expected query types.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37994183-19f3-80a2-81f8-f6b79cfe755e",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8008-9184-d2958c5822b4"
+  },
+  "created_time": "2026-06-08T15:40:00.000Z",
+  "last_edited_time": "2026-06-08T15:40:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "6896a395-e07e-410f-b600-adf18d89b5a2",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8008-9184-d2958c5822b4"
+  },
+  "created_time": "2026-05-22T02:02:00.000Z",
+  "last_edited_time": "2026-05-24T01:13:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_4",
+  "heading_4": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Task C: Evaluate a borderline case",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Task C: Evaluate a borderline case",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "bcd4e7fb-eb7e-4ebc-96b3-fd370c7b9e44",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8008-9184-d2958c5822b4"
+  },
+  "created_time": "2026-05-22T02:02:00.000Z",
+  "last_edited_time": "2026-05-24T01:13:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "A third document has been added to the ingestion queue: A transcript of a recorded client Q&A session held by Contigo's product team. The transcript is 1,000 words long, has no headings or structural markers, and contains a mixture of product questions, off-topic tangents, and partial sentences where the audio was unclear.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "A third document has been added to the ingestion queue: A transcript of a recorded client Q&A session held by Contigo's product team. The transcript is 1,000 words long, has no headings or structural markers, and contains a mixture of product questions, off-topic tangents, and partial sentences where the audio was unclear.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "5dd9b69e-5de2-4b36-b6ae-54c3d4d98cd1",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8008-9184-d2958c5822b4"
+  },
+  "created_time": "2026-05-22T02:02:00.000Z",
+  "last_edited_time": "2026-05-24T01:13:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Identify two specific challenges this document presents for both chunking strategies. Propose one pre-processing step the team should apply before chunking that would improve the quality of whatever chunks are produced.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Identify two specific challenges this document presents for both chunking strategies. Propose one pre-processing step the team should apply before chunking that would improve the quality of whatever chunks are produced.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37994183-19f3-8010-bea1-d7b36c2a55b4",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8008-9184-d2958c5822b4"
+  },
+  "created_time": "2026-06-08T15:44:00.000Z",
+  "last_edited_time": "2026-06-08T15:44:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "9e15cfc0-d5ba-4bcd-9be7-fff17efdedd2",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8008-9184-d2958c5822b4"
+  },
+  "created_time": "2026-05-22T02:02:00.000Z",
+  "last_edited_time": "2026-05-24T01:16:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": true,
+  "in_trash": false,
+  "type": "toggle",
+  "toggle": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Think about the following \u2026 ",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Think about the following \u2026 ",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false,
+  "_children": [
+   {
+    "object": "block",
+    "id": "5a0d6d16-c4ec-4d74-b17f-13f3871917b8",
+    "parent": {
+     "type": "block_id",
+     "block_id": "9e15cfc0-d5ba-4bcd-9be7-fff17efdedd2"
+    },
+    "created_time": "2026-05-22T02:02:00.000Z",
+    "last_edited_time": "2026-06-04T19:27:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "231d872b-594c-81f2-a375-0002b8783aca"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "231d872b-594c-81f2-a375-0002b8783aca"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+     "rich_text": [
+      {
+       "type": "text",
+       "text": {
+        "content": "\ud83d\udd3d ",
+        "link": null
+       },
+       "annotations": {
+        "bold": false,
+        "italic": false,
+        "strikethrough": false,
+        "underline": false,
+        "code": false,
+        "color": "default"
+       },
+       "plain_text": "\ud83d\udd3d ",
+       "href": null
+      },
+      {
+       "type": "text",
+       "text": {
+        "content": "Checkpoint 1: Thinking about the product guide structure",
+        "link": null
+       },
+       "annotations": {
+        "bold": true,
+        "italic": false,
+        "strikethrough": false,
+        "underline": false,
+        "code": false,
+        "color": "default"
+       },
+       "plain_text": "Checkpoint 1: Thinking about the product guide structure",
+       "href": null
+      },
+      {
+       "type": "text",
+       "text": {
+        "content": " - Section-level chunking puts eligibility criteria, rate structure, and repayment conditions into one chunk. Consider whether that serves specific product queries. Subsection-level boundaries produce smaller chunks but more precise retrieval when clients ask about one aspect of a product.",
+        "link": null
+       },
+       "annotations": {
+        "bold": false,
+        "italic": false,
+        "strikethrough": false,
+        "underline": false,
+        "code": false,
+        "color": "default"
+       },
+       "plain_text": " - Section-level chunking puts eligibility criteria, rate structure, and repayment conditions into one chunk. Consider whether that serves specific product queries. Subsection-level boundaries produce smaller chunks but more precise retrieval when clients ask about one aspect of a product.",
+       "href": null
+      }
+     ],
+     "icon": null,
+     "color": "default"
+    },
+    "archived": false
+   },
+   {
+    "object": "block",
+    "id": "c381cb97-3f4b-464d-8855-a4d978f38fd3",
+    "parent": {
+     "type": "block_id",
+     "block_id": "9e15cfc0-d5ba-4bcd-9be7-fff17efdedd2"
+    },
+    "created_time": "2026-05-22T02:02:00.000Z",
+    "last_edited_time": "2026-06-04T19:27:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "231d872b-594c-81f2-a375-0002b8783aca"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "231d872b-594c-81f2-a375-0002b8783aca"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+     "rich_text": [
+      {
+       "type": "text",
+       "text": {
+        "content": "\ud83d\udd3d ",
+        "link": null
+       },
+       "annotations": {
+        "bold": false,
+        "italic": false,
+        "strikethrough": false,
+        "underline": false,
+        "code": false,
+        "color": "default"
+       },
+       "plain_text": "\ud83d\udd3d ",
+       "href": null
+      },
+      {
+       "type": "text",
+       "text": {
+        "content": "Checkpoint 2: Thinking about overlap for fixed-size chunks",
+        "link": null
+       },
+       "annotations": {
+        "bold": true,
+        "italic": false,
+        "strikethrough": false,
+        "underline": false,
+        "code": false,
+        "color": "default"
+       },
+       "plain_text": "Checkpoint 2: Thinking about overlap for fixed-size chunks",
+       "href": null
+      },
+      {
+       "type": "text",
+       "text": {
+        "content": " - Each obligation is self-contained and averages 60 tokens. At a 150-token chunk size, two obligations fit comfortably with room to spare. Since nothing depends on adjacent obligations, a small overlap or none at all is likely sufficient here.",
+        "link": null
+       },
+       "annotations": {
+        "bold": false,
+        "italic": false,
+        "strikethrough": false,
+        "underline": false,
+        "code": false,
+        "color": "default"
+       },
+       "plain_text": " - Each obligation is self-contained and averages 60 tokens. At a 150-token chunk size, two obligations fit comfortably with room to spare. Since nothing depends on adjacent obligations, a small overlap or none at all is likely sufficient here.",
+       "href": null
+      }
+     ],
+     "icon": null,
+     "color": "default"
+    },
+    "archived": false
+   },
+   {
+    "object": "block",
+    "id": "9f20f9b2-9591-45c8-be9b-eac236b97764",
+    "parent": {
+     "type": "block_id",
+     "block_id": "9e15cfc0-d5ba-4bcd-9be7-fff17efdedd2"
+    },
+    "created_time": "2026-05-22T02:02:00.000Z",
+    "last_edited_time": "2026-06-04T19:27:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "231d872b-594c-81f2-a375-0002b8783aca"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "231d872b-594c-81f2-a375-0002b8783aca"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+     "rich_text": [
+      {
+       "type": "text",
+       "text": {
+        "content": "\ud83d\udd3d ",
+        "link": null
+       },
+       "annotations": {
+        "bold": false,
+        "italic": false,
+        "strikethrough": false,
+        "underline": false,
+        "code": false,
+        "color": "default"
+       },
+       "plain_text": "\ud83d\udd3d ",
+       "href": null
+      },
+      {
+       "type": "text",
+       "text": {
+        "content": "Checkpoint 3: Thinking about the Q&A transcript",
+        "link": null
+       },
+       "annotations": {
+        "bold": true,
+        "italic": false,
+        "strikethrough": false,
+        "underline": false,
+        "code": false,
+        "color": "default"
+       },
+       "plain_text": "Checkpoint 3: Thinking about the Q&A transcript",
+       "href": null
+      },
+      {
+       "type": "text",
+       "text": {
+        "content": " - Chunking a transcript with off-topic tangents and partial sentences embeds noise alongside meaningful content. The retrieval system cannot distinguish between them. Before chunking, consider what transformation removes the irrelevant material without discarding the genuine questions and answers.",
+        "link": null
+       },
+       "annotations": {
+        "bold": false,
+        "italic": false,
+        "strikethrough": false,
+        "underline": false,
+        "code": false,
+        "color": "default"
+       },
+       "plain_text": " - Chunking a transcript with off-topic tangents and partial sentences embeds noise alongside meaningful content. The retrieval system cannot distinguish between them. Before chunking, consider what transformation removes the irrelevant material without discarding the genuine questions and answers.",
+       "href": null
+      }
+     ],
+     "icon": null,
+     "color": "default"
+    },
+    "archived": false
+   },
+   {
+    "object": "block",
+    "id": "3bb0e005-9238-4422-97c3-4054509d33b0",
+    "parent": {
+     "type": "block_id",
+     "block_id": "9e15cfc0-d5ba-4bcd-9be7-fff17efdedd2"
+    },
+    "created_time": "2026-05-22T02:02:00.000Z",
+    "last_edited_time": "2026-06-04T19:27:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "231d872b-594c-81f2-a375-0002b8783aca"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "231d872b-594c-81f2-a375-0002b8783aca"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+     "rich_text": [
+      {
+       "type": "text",
+       "text": {
+        "content": "\ud83d\udd3d ",
+        "link": null
+       },
+       "annotations": {
+        "bold": false,
+        "italic": false,
+        "strikethrough": false,
+        "underline": false,
+        "code": false,
+        "color": "default"
+       },
+       "plain_text": "\ud83d\udd3d ",
+       "href": null
+      },
+      {
+       "type": "text",
+       "text": {
+        "content": "Checkpoint 4: Thinking about variable chunk sizes",
+        "link": null
+       },
+       "annotations": {
+        "bold": true,
+        "italic": false,
+        "strikethrough": false,
+        "underline": false,
+        "code": false,
+        "color": "default"
+       },
+       "plain_text": "Checkpoint 4: Thinking about variable chunk sizes",
+       "href": null
+      },
+      {
+       "type": "text",
+       "text": {
+        "content": " - Semantic chunking respects content boundaries but produces variable sizes. A dense section may exceed the embedding model's token limit. Before reverting to fixed-size splitting, check whether the section contains natural internal boundaries such as sub-clauses, numbered points, or paragraph breaks.",
+        "link": null
+       },
+       "annotations": {
+        "bold": false,
+        "italic": false,
+        "strikethrough": false,
+        "underline": false,
+        "code": false,
+        "color": "default"
+       },
+       "plain_text": " - Semantic chunking respects content boundaries but produces variable sizes. A dense section may exceed the embedding model's token limit. Before reverting to fixed-size splitting, check whether the section contains natural internal boundaries such as sub-clauses, numbered points, or paragraph breaks.",
+       "href": null
+      }
+     ],
+     "icon": null,
+     "color": "default"
+    },
+    "archived": false
+   }
+  ]
+ },
+ {
+  "object": "block",
+  "id": "37994183-19f3-80c1-af72-e87a85d518b8",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8008-9184-d2958c5822b4"
+  },
+  "created_time": "2026-06-08T15:40:00.000Z",
+  "last_edited_time": "2026-06-08T15:40:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "694b73bf-b3b1-4180-bb5d-2a4dfdeb97f6",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8008-9184-d2958c5822b4"
+  },
+  "created_time": "2026-05-22T02:02:00.000Z",
+  "last_edited_time": "2026-05-24T01:16:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_2",
+  "heading_2": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Check your Understanding",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Check your Understanding",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "cdca3090-e8ef-4f35-967e-ac53212a3d0c",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8008-9184-d2958c5822b4"
+  },
+  "created_time": "2026-05-24T01:21:00.000Z",
+  "last_edited_time": "2026-06-11T12:48:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_3",
+  "heading_3": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Question 1",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Question 1",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37c94183-19f3-80ca-8504-e789609a126f",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8008-9184-d2958c5822b4"
+  },
+  "created_time": "2026-06-11T12:48:00.000Z",
+  "last_edited_time": "2026-06-11T12:48:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": true,
+  "in_trash": false,
+  "type": "callout",
+  "callout": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Contigo's knowledge base contains documents in German, English, and Dutch. A consultant submits a query in German that requires retrieving a relevant chunk from the Dutch regulatory summary. Which factor most directly determines whether the correct chunk is retrieved?",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Contigo's knowledge base contains documents in German, English, and Dutch. A consultant submits a query in German that requires retrieving a relevant chunk from the Dutch regulatory summary. Which factor most directly determines whether the correct chunk is retrieved?",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "gray_background"
+  },
+  "archived": false,
+  "_children": [
+   {
+    "object": "block",
+    "id": "37c94183-19f3-80db-8e67-df3fd9fa4f1e",
+    "parent": {
+     "type": "block_id",
+     "block_id": "37c94183-19f3-80ca-8504-e789609a126f"
+    },
+    "created_time": "2026-06-11T12:48:00.000Z",
+    "last_edited_time": "2026-06-11T12:48:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "embed",
+    "embed": {
+     "caption": [],
+     "url": "https://app.masterschool.com/campus/multi-choice-question/d629cc3b-8cd5-45e0-b7ee-cb1d31c224ac"
+    },
+    "archived": false
+   }
+  ]
+ },
+ {
+  "object": "block",
+  "id": "e2944ddd-e937-4ce1-a3e1-97e89d0d4d82",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8008-9184-d2958c5822b4"
+  },
+  "created_time": "2026-05-24T01:21:00.000Z",
+  "last_edited_time": "2026-06-11T12:48:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "2dfff454-8b47-4ab0-b3a5-78c0b448d6dd",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8008-9184-d2958c5822b4"
+  },
+  "created_time": "2026-05-24T01:21:00.000Z",
+  "last_edited_time": "2026-06-11T12:48:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_3",
+  "heading_3": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Question 2",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Question 2",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "37c94183-19f3-8055-ab79-d537478a2367",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8008-9184-d2958c5822b4"
+  },
+  "created_time": "2026-06-11T12:49:00.000Z",
+  "last_edited_time": "2026-06-11T12:49:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": true,
+  "in_trash": false,
+  "type": "callout",
+  "callout": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "The SME Loan Product Guide is updated next quarter with revised interest rate figures. When should Contigo's team reconsider the chunking strategy rather than applying the existing configuration to the new version?",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "The SME Loan Product Guide is updated next quarter with revised interest rate figures. When should Contigo's team reconsider the chunking strategy rather than applying the existing configuration to the new version?",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "gray_background"
+  },
+  "archived": false,
+  "_children": [
+   {
+    "object": "block",
+    "id": "37c94183-19f3-8038-ad84-ff01fb3b9297",
+    "parent": {
+     "type": "block_id",
+     "block_id": "37c94183-19f3-8055-ab79-d537478a2367"
+    },
+    "created_time": "2026-06-11T12:49:00.000Z",
+    "last_edited_time": "2026-06-11T12:49:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "embed",
+    "embed": {
+     "caption": [],
+     "url": "https://app.masterschool.com/campus/multi-choice-question/2d9d6a98-ffcd-42fa-84c0-5deb9f2b1c0c"
+    },
+    "archived": false
+   }
+  ]
+ },
+ {
+  "object": "block",
+  "id": "12271c80-45a7-4d1d-aa6f-fdd9413b0721",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8008-9184-d2958c5822b4"
+  },
+  "created_time": "2026-05-24T01:21:00.000Z",
+  "last_edited_time": "2026-06-11T12:49:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "c59855fb-56ec-4b80-8fd3-b5f3b3fb555f",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8008-9184-d2958c5822b4"
+  },
+  "created_time": "2026-05-22T02:02:00.000Z",
+  "last_edited_time": "2026-05-24T01:16:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "36a94183-19f3-80f0-8159-c76d30262120",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36694183-19f3-8008-9184-d2958c5822b4"
+  },
+  "created_time": "2026-05-24T01:16:00.000Z",
+  "last_edited_time": "2026-06-08T15:44:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": true,
+  "in_trash": false,
+  "type": "callout",
+  "callout": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Takeaway:",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Takeaway:",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " ",
+     "href": null
+    }
+   ],
+   "icon": {
+    "type": "emoji",
+    "emoji": "\ud83d\udca1"
+   },
+   "color": "gray_background"
+  },
+  "archived": false,
+  "_children": [
+   {
+    "object": "block",
+    "id": "37994183-19f3-8088-a542-f53213f56f23",
+    "parent": {
+     "type": "block_id",
+     "block_id": "36a94183-19f3-80f0-8159-c76d30262120"
+    },
+    "created_time": "2026-06-08T15:44:00.000Z",
+    "last_edited_time": "2026-06-08T15:44:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+     "rich_text": [
+      {
+       "type": "text",
+       "text": {
+        "content": "Chunking strategy is a design decision that must be made for each document based on its structure and the queries it will need to support. A strategy that works well for a numbered list of self-contained obligations will produce broken, incomplete chunks when applied to a densely cross-referenced product guide. ",
+        "link": null
+       },
+       "annotations": {
+        "bold": false,
+        "italic": false,
+        "strikethrough": false,
+        "underline": false,
+        "code": false,
+        "color": "default"
+       },
+       "plain_text": "Chunking strategy is a design decision that must be made for each document based on its structure and the queries it will need to support. A strategy that works well for a numbered list of self-contained obligations will produce broken, incomplete chunks when applied to a densely cross-referenced product guide. ",
+       "href": null
+      }
+     ],
+     "icon": null,
+     "color": "default"
+    },
+    "archived": false
+   },
+   {
+    "object": "block",
+    "id": "37994183-19f3-80ca-9831-defc12c546c2",
+    "parent": {
+     "type": "block_id",
+     "block_id": "36a94183-19f3-80f0-8159-c76d30262120"
+    },
+    "created_time": "2026-06-08T15:44:00.000Z",
+    "last_edited_time": "2026-06-08T15:44:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+     "rich_text": [
+      {
+       "type": "text",
+       "text": {
+        "content": "Getting this decision right before ingestion determines how accurately the retrieval pipeline performs for the lifetime of that knowledge base.",
+        "link": null
+       },
+       "annotations": {
+        "bold": false,
+        "italic": false,
+        "strikethrough": false,
+        "underline": false,
+        "code": false,
+        "color": "default"
+       },
+       "plain_text": "Getting this decision right before ingestion determines how accurately the retrieval pipeline performs for the lifetime of that knowledge base.",
+       "href": null
+      }
+     ],
+     "icon": null,
+     "color": "default"
+    },
+    "archived": false
+   }
+  ]
+ }
+]

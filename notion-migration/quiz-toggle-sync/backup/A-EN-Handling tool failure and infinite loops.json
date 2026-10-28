@@ -1,0 +1,2395 @@
+[
+ {
+  "object": "block",
+  "id": "40194183-19f3-81fc-9d78-c8a494fff8bb",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36894183-19f3-8003-8bfa-fc2b9a1b9791"
+  },
+  "created_time": "2026-10-22T11:33:00.000Z",
+  "last_edited_time": "2026-10-22T11:33:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "callout",
+  "callout": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "What you will work on in this lesson:",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "What you will work on in this lesson:",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " Designing safeguards that stop repeated tool calls after failure and defining a client-safe fallback before additional tools are connected to the Contigo agent.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " Designing safeguards that stop repeated tool calls after failure and defining a client-safe fallback before additional tools are connected to the Contigo agent.",
+     "href": null
+    }
+   ],
+   "icon": {
+    "type": "emoji",
+    "emoji": "\ud83d\udca1"
+   },
+   "color": "gray_background"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "40194183-19f3-81af-9d1f-ee31e6933cc6",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36894183-19f3-8003-8bfa-fc2b9a1b9791"
+  },
+  "created_time": "2026-10-22T11:33:00.000Z",
+  "last_edited_time": "2026-10-22T11:33:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "40194183-19f3-81ca-8a1d-cab8d770c14b",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36894183-19f3-8003-8bfa-fc2b9a1b9791"
+  },
+  "created_time": "2026-10-22T11:33:00.000Z",
+  "last_edited_time": "2026-10-22T11:33:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_2",
+  "heading_2": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Setting the scene",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Setting the scene",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "40194183-19f3-81bc-8f9d-d44428140a55",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36894183-19f3-8003-8bfa-fc2b9a1b9791"
+  },
+  "created_time": "2026-10-22T11:33:00.000Z",
+  "last_edited_time": "2026-10-22T11:33:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "A tool-enabled agent can fail in a new way: the model may keep trying a tool because the requested task is still unresolved.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "A tool-enabled agent can fail in a new way: the model may keep trying a tool because the requested task is still unresolved.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "40194183-19f3-8198-94cc-d4b29a184706",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36894183-19f3-8003-8bfa-fc2b9a1b9791"
+  },
+  "created_time": "2026-10-22T11:33:00.000Z",
+  "last_edited_time": "2026-10-22T11:33:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Imagine the loan-status service is unavailable. The agent calls it, receives an error, reasons that it still needs the status, and calls it again. Without a limit, the workflow can waste tokens and time while the client receives no useful answer.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Imagine the loan-status service is unavailable. The agent calls it, receives an error, reasons that it still needs the status, and calls it again. Without a limit, the workflow can waste tokens and time while the client receives no useful answer.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "40194183-19f3-816f-aae8-c2a936bbb346",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36894183-19f3-8003-8bfa-fc2b9a1b9791"
+  },
+  "created_time": "2026-10-22T11:33:00.000Z",
+  "last_edited_time": "2026-10-22T11:33:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "A production design therefore needs ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "A production design therefore needs ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "two layers",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "two layers",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": ":",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": ":",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "40194183-19f3-815a-9241-fe59a6decea9",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36894183-19f3-8003-8bfa-fc2b9a1b9791"
+  },
+  "created_time": "2026-10-22T11:33:00.000Z",
+  "last_edited_time": "2026-10-22T11:33:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "numbered_list_item",
+  "numbered_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "a deterministic iteration cap in the AI Agent;",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "a deterministic iteration cap in the AI Agent;",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "40194183-19f3-81c0-88eb-d15cc27a12a2",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36894183-19f3-8003-8bfa-fc2b9a1b9791"
+  },
+  "created_time": "2026-10-22T11:33:00.000Z",
+  "last_edited_time": "2026-10-22T11:33:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "numbered_list_item",
+  "numbered_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "a clear instruction for how to respond when a tool cannot provide a usable result.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "a clear instruction for how to respond when a tool cannot provide a usable result.",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "40194183-19f3-8101-a1dc-c4e7310a041d",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36894183-19f3-8003-8bfa-fc2b9a1b9791"
+  },
+  "created_time": "2026-10-22T11:33:00.000Z",
+  "last_edited_time": "2026-10-22T11:33:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "40194183-19f3-815a-880b-c5f3acb432a0",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36894183-19f3-8003-8bfa-fc2b9a1b9791"
+  },
+  "created_time": "2026-10-22T11:33:00.000Z",
+  "last_edited_time": "2026-10-22T11:33:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_2",
+  "heading_2": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Layer 1: Max Iterations",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Layer 1: Max Iterations",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "40194183-19f3-811b-bb7d-c403f00a551c",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36894183-19f3-8003-8bfa-fc2b9a1b9791"
+  },
+  "created_time": "2026-10-22T11:33:00.000Z",
+  "last_edited_time": "2026-10-22T11:33:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "The n8n ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "The n8n ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "AI Agent",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "AI Agent",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " has a ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " has a ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "Max Iterations",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Max Iterations",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " option. It limits how many reasoning/tool-use cycles the model may run for one request.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " option. It limits how many reasoning/tool-use cycles the model may run for one request.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "40194183-19f3-817e-97fe-c85d52c81314",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36894183-19f3-8003-8bfa-fc2b9a1b9791"
+  },
+  "created_time": "2026-10-22T11:33:00.000Z",
+  "last_edited_time": "2026-10-22T11:33:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "For this Contigo exercise, set:",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "For this Contigo exercise, set:",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "40194183-19f3-8142-8cb9-d484e6ad4eaa",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36894183-19f3-8003-8bfa-fc2b9a1b9791"
+  },
+  "created_time": "2026-10-22T11:33:00.000Z",
+  "last_edited_time": "2026-10-22T11:33:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Options \u2192 Max Iterations = 4",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Options \u2192 Max Iterations = 4",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "40194183-19f3-81ba-a68c-fe8b0f9707c5",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36894183-19f3-8003-8bfa-fc2b9a1b9791"
+  },
+  "created_time": "2026-10-22T11:33:00.000Z",
+  "last_edited_time": "2026-10-22T11:33:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Four iterations leave enough room for the simple multi-tool scenarios in this sprint while preventing long retry loops. The exact production value is a design decision, but it should always be intentional rather than unlimited.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Four iterations leave enough room for the simple multi-tool scenarios in this sprint while preventing long retry loops. The exact production value is a design decision, but it should always be intentional rather than unlimited.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "40194183-19f3-814c-ab66-e33be39231e7",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36894183-19f3-8003-8bfa-fc2b9a1b9791"
+  },
+  "created_time": "2026-10-22T11:33:00.000Z",
+  "last_edited_time": "2026-10-22T11:33:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "callout",
+  "callout": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Important:",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Important:",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " Max Iterations is a circuit breaker, not a complete error-handling strategy. It stops the loop; the system message still needs to define what the client should hear when a tool is unavailable.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " Max Iterations is a circuit breaker, not a complete error-handling strategy. It stops the loop; the system message still needs to define what the client should hear when a tool is unavailable.",
+     "href": null
+    }
+   ],
+   "icon": {
+    "type": "emoji",
+    "emoji": "\u27a1\ufe0f"
+   },
+   "color": "gray_background"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "40194183-19f3-81d6-94e8-e52a68b4671e",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36894183-19f3-8003-8bfa-fc2b9a1b9791"
+  },
+  "created_time": "2026-10-22T11:33:00.000Z",
+  "last_edited_time": "2026-10-22T11:33:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "40194183-19f3-81d4-8e62-e4697f7db0a9",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36894183-19f3-8003-8bfa-fc2b9a1b9791"
+  },
+  "created_time": "2026-10-22T11:33:00.000Z",
+  "last_edited_time": "2026-10-22T11:33:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_2",
+  "heading_2": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Layer 2: Structured tool failure",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Layer 2: Structured tool failure",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "40194183-19f3-81af-ae64-e7c625677862",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36894183-19f3-8003-8bfa-fc2b9a1b9791"
+  },
+  "created_time": "2026-10-22T11:33:00.000Z",
+  "last_edited_time": "2026-10-22T11:33:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "When you control a tool workflow, prefer a structured failure result that the agent can interpret, for example:",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "When you control a tool workflow, prefer a structured failure result that the agent can interpret, for example:",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "40194183-19f3-81de-a302-f423dbb1dc2b",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36894183-19f3-8003-8bfa-fc2b9a1b9791"
+  },
+  "created_time": "2026-10-22T11:33:00.000Z",
+  "last_edited_time": "2026-10-22T11:33:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "code",
+  "code": {
+   "caption": [],
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "{\n  \"success\": false,\n  \"error\": \"service_unavailable\"\n}",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "{\n  \"success\": false,\n  \"error\": \"service_unavailable\"\n}",
+     "href": null
+    }
+   ],
+   "language": "json"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "40194183-19f3-8195-8d48-eda57100e6fe",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36894183-19f3-8003-8bfa-fc2b9a1b9791"
+  },
+  "created_time": "2026-10-22T11:33:00.000Z",
+  "last_edited_time": "2026-10-22T11:33:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Do not ask the model to infer success from an empty or malformed response. A clear success flag makes the failure state observable and testable.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Do not ask the model to infer success from an empty or malformed response. A clear success flag makes the failure state observable and testable.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "40194183-19f3-81dd-8c8c-c2fa562d5dda",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36894183-19f3-8003-8bfa-fc2b9a1b9791"
+  },
+  "created_time": "2026-10-22T11:33:00.000Z",
+  "last_edited_time": "2026-10-22T11:33:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "The loan-status sub-workflow you build in the next lesson will include a simulated failure case so you can verify the agent's behaviour safely.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "The loan-status sub-workflow you build in the next lesson will include a simulated failure case so you can verify the agent's behaviour safely.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "40194183-19f3-8176-9c90-d63efe84e168",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36894183-19f3-8003-8bfa-fc2b9a1b9791"
+  },
+  "created_time": "2026-10-22T11:33:00.000Z",
+  "last_edited_time": "2026-10-22T11:33:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "40194183-19f3-8161-aa16-e57fce1c9b4c",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36894183-19f3-8003-8bfa-fc2b9a1b9791"
+  },
+  "created_time": "2026-10-22T11:33:00.000Z",
+  "last_edited_time": "2026-10-22T11:33:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_2",
+  "heading_2": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Your tasks",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Your tasks",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "40194183-19f3-8174-b20f-d51ad02d65c6",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36894183-19f3-8003-8bfa-fc2b9a1b9791"
+  },
+  "created_time": "2026-10-22T11:33:00.000Z",
+  "last_edited_time": "2026-10-22T11:33:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_3",
+  "heading_3": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Task A: Configure the circuit breaker",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Task A: Configure the circuit breaker",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "40194183-19f3-81eb-ab25-dadf9e9297d9",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36894183-19f3-8003-8bfa-fc2b9a1b9791"
+  },
+  "created_time": "2026-10-22T11:33:00.000Z",
+  "last_edited_time": "2026-10-22T11:33:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Open the AI Agent in your Contigo workflow and add ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Open the AI Agent in your Contigo workflow and add ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "Max Iterations = 4",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Max Iterations = 4",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " under its options.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " under its options.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "40194183-19f3-81b6-92a0-de222e5e1291",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36894183-19f3-8003-8bfa-fc2b9a1b9791"
+  },
+  "created_time": "2026-10-22T11:33:00.000Z",
+  "last_edited_time": "2026-10-22T11:33:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Write two sentences explaining why this value is reasonable for the current architecture. Your explanation should consider that most requests require zero or one tool call, while a small number may combine retrieval with one additional tool.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Write two sentences explaining why this value is reasonable for the current architecture. Your explanation should consider that most requests require zero or one tool call, while a small number may combine retrieval with one additional tool.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "40194183-19f3-81b9-a442-f15adc6e477f",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36894183-19f3-8003-8bfa-fc2b9a1b9791"
+  },
+  "created_time": "2026-10-22T11:33:00.000Z",
+  "last_edited_time": "2026-10-22T11:33:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "40194183-19f3-814c-85dd-d568034251df",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36894183-19f3-8003-8bfa-fc2b9a1b9791"
+  },
+  "created_time": "2026-10-22T11:33:00.000Z",
+  "last_edited_time": "2026-10-22T11:33:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_3",
+  "heading_3": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Task B: Write the failure instruction",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Task B: Write the failure instruction",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "40194183-19f3-81ca-9260-f8b8feea2c21",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36894183-19f3-8003-8bfa-fc2b9a1b9791"
+  },
+  "created_time": "2026-10-22T11:33:00.000Z",
+  "last_edited_time": "2026-10-22T11:33:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Add a short instruction to the system message that covers both an unavailable tool result and an exhausted reasoning loop.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Add a short instruction to the system message that covers both an unavailable tool result and an exhausted reasoning loop.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "40194183-19f3-816f-b206-dfbb463c6ab7",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36894183-19f3-8003-8bfa-fc2b9a1b9791"
+  },
+  "created_time": "2026-10-22T11:33:00.000Z",
+  "last_edited_time": "2026-10-22T11:33:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "A strong version should communicate all three requirements:",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "A strong version should communicate all three requirements:",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "40194183-19f3-81e2-9a3a-f65a8a8a089d",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36894183-19f3-8003-8bfa-fc2b9a1b9791"
+  },
+  "created_time": "2026-10-22T11:33:00.000Z",
+  "last_edited_time": "2026-10-22T11:33:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "No fabrication:",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "No fabrication:",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " Never invent a loan status or pretend the tool succeeded.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " Never invent a loan status or pretend the tool succeeded.",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "40194183-19f3-8134-84b9-cdbacd24b804",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36894183-19f3-8003-8bfa-fc2b9a1b9791"
+  },
+  "created_time": "2026-10-22T11:33:00.000Z",
+  "last_edited_time": "2026-10-22T11:33:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "No technical leakage:",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "No technical leakage:",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " Do not expose internal errors, node names, stack traces, or implementation details.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " Do not expose internal errors, node names, stack traces, or implementation details.",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "40194183-19f3-816e-82b4-d163b86ea334",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36894183-19f3-8003-8bfa-fc2b9a1b9791"
+  },
+  "created_time": "2026-10-22T11:33:00.000Z",
+  "last_edited_time": "2026-10-22T11:33:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Clear next step:",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Clear next step:",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " Tell the client what to do instead.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " Tell the client what to do instead.",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "40194183-19f3-81e7-bac7-e90f3c1a43a7",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36894183-19f3-8003-8bfa-fc2b9a1b9791"
+  },
+  "created_time": "2026-10-22T11:33:00.000Z",
+  "last_edited_time": "2026-10-22T11:33:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Example:",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Example:",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "40194183-19f3-81a2-8f36-f700b14bf253",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36894183-19f3-8003-8bfa-fc2b9a1b9791"
+  },
+  "created_time": "2026-10-22T11:33:00.000Z",
+  "last_edited_time": "2026-10-22T11:33:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "quote",
+  "quote": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "\"If a required tool is unavailable or does not return a usable result, do not guess or claim that the action succeeded. Tell the client: 'I\u2019m unable to retrieve that information right now. Please try again later or contact your Contigo relationship manager for assistance.'\"",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": true,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "\"If a required tool is unavailable or does not return a usable result, do not guess or claim that the action succeeded. Tell the client: 'I\u2019m unable to retrieve that information right now. Please try again later or contact your Contigo relationship manager for assistance.'\"",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "40194183-19f3-8183-9614-d01819bdb6fb",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36894183-19f3-8003-8bfa-fc2b9a1b9791"
+  },
+  "created_time": "2026-10-22T11:33:00.000Z",
+  "last_edited_time": "2026-10-22T11:33:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "40194183-19f3-81eb-a186-d04fc02685b6",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36894183-19f3-8003-8bfa-fc2b9a1b9791"
+  },
+  "created_time": "2026-10-22T11:33:00.000Z",
+  "last_edited_time": "2026-10-22T11:33:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_3",
+  "heading_3": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Task C: Define the observable failure contract",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Task C: Define the observable failure contract",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "40194183-19f3-81c4-b846-db31f9c792d6",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36894183-19f3-8003-8bfa-fc2b9a1b9791"
+  },
+  "created_time": "2026-10-22T11:33:00.000Z",
+  "last_edited_time": "2026-10-22T11:33:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Before you build the loan-status tool, define its expected outputs:",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Before you build the loan-status tool, define its expected outputs:",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "40194183-19f3-81b2-bc26-ede5d4d12dd0",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36894183-19f3-8003-8bfa-fc2b9a1b9791"
+  },
+  "created_time": "2026-10-22T11:33:00.000Z",
+  "last_edited_time": "2026-10-22T11:33:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": true,
+  "in_trash": false,
+  "type": "table",
+  "table": {
+   "table_width": 2,
+   "has_column_header": true,
+   "has_row_header": false
+  },
+  "archived": false,
+  "_children": [
+   {
+    "object": "block",
+    "id": "40194183-19f3-81ac-8744-d15f0bfc4cd5",
+    "parent": {
+     "type": "block_id",
+     "block_id": "40194183-19f3-81b2-bc26-ede5d4d12dd0"
+    },
+    "created_time": "2026-10-22T11:33:00.000Z",
+    "last_edited_time": "2026-10-22T11:33:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "table_row",
+    "table_row": {
+     "cells": [
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Condition",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Condition",
+        "href": null
+       }
+      ],
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Expected result",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Expected result",
+        "href": null
+       }
+      ]
+     ]
+    },
+    "archived": false
+   },
+   {
+    "object": "block",
+    "id": "40194183-19f3-8110-88a9-ce62fed141ce",
+    "parent": {
+     "type": "block_id",
+     "block_id": "40194183-19f3-81b2-bc26-ede5d4d12dd0"
+    },
+    "created_time": "2026-10-22T11:33:00.000Z",
+    "last_edited_time": "2026-10-22T11:33:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "table_row",
+    "table_row": {
+     "cells": [
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Status found",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Status found",
+        "href": null
+       }
+      ],
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "success = true plus application reference, status, detail, and next action",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "success = true plus application reference, status, detail, and next action",
+        "href": null
+       }
+      ]
+     ]
+    },
+    "archived": false
+   },
+   {
+    "object": "block",
+    "id": "40194183-19f3-8177-89e0-ee7eae3f1951",
+    "parent": {
+     "type": "block_id",
+     "block_id": "40194183-19f3-81b2-bc26-ede5d4d12dd0"
+    },
+    "created_time": "2026-10-22T11:33:00.000Z",
+    "last_edited_time": "2026-10-22T11:33:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "table_row",
+    "table_row": {
+     "cells": [
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Reference unknown",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Reference unknown",
+        "href": null
+       }
+      ],
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "success = false, error = not_found",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "success = false, error = not_found",
+        "href": null
+       }
+      ]
+     ]
+    },
+    "archived": false
+   },
+   {
+    "object": "block",
+    "id": "40194183-19f3-81b9-bcca-dfcb93624fcc",
+    "parent": {
+     "type": "block_id",
+     "block_id": "40194183-19f3-81b2-bc26-ede5d4d12dd0"
+    },
+    "created_time": "2026-10-22T11:33:00.000Z",
+    "last_edited_time": "2026-10-22T11:33:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "table_row",
+    "table_row": {
+     "cells": [
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Service unavailable",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Service unavailable",
+        "href": null
+       }
+      ],
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "success = false, error = service_unavailable",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "success = false, error = service_unavailable",
+        "href": null
+       }
+      ]
+     ]
+    },
+    "archived": false
+   }
+  ]
+ },
+ {
+  "object": "block",
+  "id": "40194183-19f3-81e8-aa74-d0cced10b5f0",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36894183-19f3-8003-8bfa-fc2b9a1b9791"
+  },
+  "created_time": "2026-10-22T11:33:00.000Z",
+  "last_edited_time": "2026-10-22T11:33:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "This contract makes the later tests deterministic.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "This contract makes the later tests deterministic.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "40194183-19f3-8197-8c23-f81c3c606950",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36894183-19f3-8003-8bfa-fc2b9a1b9791"
+  },
+  "created_time": "2026-10-22T11:33:00.000Z",
+  "last_edited_time": "2026-10-22T11:33:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "40194183-19f3-8165-8f63-e616540b0c7d",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36894183-19f3-8003-8bfa-fc2b9a1b9791"
+  },
+  "created_time": "2026-10-22T11:33:00.000Z",
+  "last_edited_time": "2026-10-22T11:33:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_2",
+  "heading_2": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Check for Understanding",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Check for Understanding",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "40194183-19f3-81de-bf60-f35e5686e2d6",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36894183-19f3-8003-8bfa-fc2b9a1b9791"
+  },
+  "created_time": "2026-10-22T11:33:00.000Z",
+  "last_edited_time": "2026-10-22T11:33:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": true,
+  "in_trash": false,
+  "type": "callout",
+  "callout": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "A status tool keeps returning an unavailable result and the agent repeatedly calls it. Which safeguard should stop the reasoning loop even if the model keeps trying?",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "A status tool keeps returning an unavailable result and the agent repeatedly calls it. Which safeguard should stop the reasoning loop even if the model keeps trying?",
+     "href": null
+    }
+   ],
+   "icon": {
+    "type": "emoji",
+    "emoji": "\ud83d\udca1"
+   },
+   "color": "gray_background"
+  },
+  "archived": false,
+  "_children": [
+   {
+    "object": "block",
+    "id": "40194183-19f3-8120-8b5a-f59427d5f41c",
+    "parent": {
+     "type": "block_id",
+     "block_id": "40194183-19f3-81de-bf60-f35e5686e2d6"
+    },
+    "created_time": "2026-10-22T11:33:00.000Z",
+    "last_edited_time": "2026-10-22T11:33:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "embed",
+    "embed": {
+     "caption": [],
+     "url": "https://app.masterschool.com/campus/multi-choice-question/e820b00b-4cf0-4abe-8c70-96b6bf6aafc0"
+    },
+    "archived": false
+   }
+  ]
+ },
+ {
+  "object": "block",
+  "id": "40194183-19f3-817e-a288-e1b36c7da5f4",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36894183-19f3-8003-8bfa-fc2b9a1b9791"
+  },
+  "created_time": "2026-10-22T11:33:00.000Z",
+  "last_edited_time": "2026-10-22T11:33:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "40194183-19f3-8181-a0f6-d0250b3cb5e8",
+  "parent": {
+   "type": "page_id",
+   "page_id": "36894183-19f3-8003-8bfa-fc2b9a1b9791"
+  },
+  "created_time": "2026-10-22T11:33:00.000Z",
+  "last_edited_time": "2026-10-22T11:33:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "callout",
+  "callout": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Takeaway:",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Takeaway:",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " Reliable tool use needs both model instructions and deterministic execution limits. Max Iterations bounds the loop; structured tool results and a precise failure instruction determine what happens next.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " Reliable tool use needs both model instructions and deterministic execution limits. Max Iterations bounds the loop; structured tool results and a precise failure instruction determine what happens next.",
+     "href": null
+    }
+   ],
+   "icon": {
+    "type": "emoji",
+    "emoji": "\ud83d\udca1"
+   },
+   "color": "gray_background"
+  },
+  "archived": false
+ }
+]

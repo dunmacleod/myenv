@@ -1,0 +1,3290 @@
+[
+ {
+  "object": "block",
+  "id": "3f894183-19f3-81eb-884e-e90160d710ba",
+  "parent": {
+   "type": "page_id",
+   "page_id": "37794183-19f3-8013-997f-e17ca65932d7"
+  },
+  "created_time": "2026-10-13T10:15:00.000Z",
+  "last_edited_time": "2026-10-13T10:15:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "callout",
+  "callout": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Am Ende dieser Lektion verstehst du,",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Am Ende dieser Lektion verstehst du,",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " wie Text in eine mathematische Form umgewandelt wird, die Maschinen semantisch durchsuchen k\u00f6nnen, und warum dies die Grundlage daf\u00fcr ist, dass RAG-Retrieval \u00fcber unterschiedliche Query-Formulierungen hinweg funktioniert. ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " wie Text in eine mathematische Form umgewandelt wird, die Maschinen semantisch durchsuchen k\u00f6nnen, und warum dies die Grundlage daf\u00fcr ist, dass RAG-Retrieval \u00fcber unterschiedliche Query-Formulierungen hinweg funktioniert. ",
+     "href": null
+    }
+   ],
+   "icon": {
+    "type": "emoji",
+    "emoji": "\ud83d\udca1"
+   },
+   "color": "gray_background"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "3f894183-19f3-81f5-ab2d-e0485eb91e59",
+  "parent": {
+   "type": "page_id",
+   "page_id": "37794183-19f3-8013-997f-e17ca65932d7"
+  },
+  "created_time": "2026-10-13T10:15:00.000Z",
+  "last_edited_time": "2026-10-13T10:15:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "3f894183-19f3-8113-9a9a-c65a3d1f8bac",
+  "parent": {
+   "type": "page_id",
+   "page_id": "37794183-19f3-8013-997f-e17ca65932d7"
+  },
+  "created_time": "2026-10-13T10:15:00.000Z",
+  "last_edited_time": "2026-10-13T10:15:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_2",
+  "heading_2": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Das Problem, an dem Keyword Search scheitert",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Das Problem, an dem Keyword Search scheitert",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "3f894183-19f3-81e3-b4c7-c1c88d93a890",
+  "parent": {
+   "type": "page_id",
+   "page_id": "37794183-19f3-8013-997f-e17ca65932d7"
+  },
+  "created_time": "2026-10-13T10:15:00.000Z",
+  "last_edited_time": "2026-10-13T10:15:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Das Compliance-Team der Contigo GmbH testet die Abruf-Pipeline mit einer Reihe repr\u00e4sentativer Kundenanfragen. Die meisten geben die richtigen Chunks zur\u00fcck. Aber es zeigt sich ein Muster von Fehlern, das das Team nicht durch Anpassung von Chunk-Gr\u00f6\u00dfe oder Overlap beheben kann.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Das Compliance-Team der Contigo GmbH testet die Abruf-Pipeline mit einer Reihe repr\u00e4sentativer Kundenanfragen. Die meisten geben die richtigen Chunks zur\u00fcck. Aber es zeigt sich ein Muster von Fehlern, das das Team nicht durch Anpassung von Chunk-Gr\u00f6\u00dfe oder Overlap beheben kann.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "3f894183-19f3-8131-9a0e-e6530d988307",
+  "parent": {
+   "type": "page_id",
+   "page_id": "37794183-19f3-8013-997f-e17ca65932d7"
+  },
+  "created_time": "2026-10-13T10:15:00.000Z",
+  "last_edited_time": "2026-10-13T10:15:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Ein Kunde fragt:",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Ein Kunde fragt:",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "3f894183-19f3-81a2-a977-ca04ef5df66d",
+  "parent": {
+   "type": "page_id",
+   "page_id": "37794183-19f3-8013-997f-e17ca65932d7"
+  },
+  "created_time": "2026-10-13T10:15:00.000Z",
+  "last_edited_time": "2026-10-13T10:15:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "quote",
+  "quote": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "\u201eWas passiert, wenn ich meine Kreditrate diesen Monat nicht zahlen kann?\u201c",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": true,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "\u201eWas passiert, wenn ich meine Kreditrate diesen Monat nicht zahlen kann?\u201c",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "3f894183-19f3-8157-b253-e70fbae3cb7c",
+  "parent": {
+   "type": "page_id",
+   "page_id": "37794183-19f3-8013-997f-e17ca65932d7"
+  },
+  "created_time": "2026-10-13T10:15:00.000Z",
+  "last_edited_time": "2026-10-13T10:15:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Das Abruf-System gibt nichts Relevantes zur\u00fcck. Die richtige Information existiert in der Wissensdatenbank (ein Abschnitt mit dem Titel \u201ePayment Difficulties and Restructuring Options\u201c). Aber die Query des Kunden teilt keine exakten W\u00f6rter mit dieser Abschnitts\u00fcberschrift oder ihrem Inhalt. Das System findet keine \u00dcbereinstimmung, weil es nach W\u00f6rtern sucht, nicht nach Bedeutung.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Das Abruf-System gibt nichts Relevantes zur\u00fcck. Die richtige Information existiert in der Wissensdatenbank (ein Abschnitt mit dem Titel \u201ePayment Difficulties and Restructuring Options\u201c). Aber die Query des Kunden teilt keine exakten W\u00f6rter mit dieser Abschnitts\u00fcberschrift oder ihrem Inhalt. Das System findet keine \u00dcbereinstimmung, weil es nach W\u00f6rtern sucht, nicht nach Bedeutung.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "3f894183-19f3-81b1-b2fb-d5d09ed42c2c",
+  "parent": {
+   "type": "page_id",
+   "page_id": "37794183-19f3-8013-997f-e17ca65932d7"
+  },
+  "created_time": "2026-10-13T10:15:00.000Z",
+  "last_edited_time": "2026-10-13T10:15:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Das ist die grundlegende Einschr\u00e4nkung von Keyword-basierter Suche. Sie gleicht Text anhand des Vorhandenseins bestimmter Zeichen und W\u00f6rter ab. Sie hat kein Verst\u00e4ndnis von Synonymen, Paraphrasierung oder der konzeptuellen Beziehung zwischen unterschiedlichen Formulierungen derselben Frage. F\u00fcr einen Support-Agenten, der Kunden bedient, die ihre Fragen auf unvorhersehbare Weise formulieren, ist Keyword Search keine tragf\u00e4hige Grundlage.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Das ist die grundlegende Einschr\u00e4nkung von Keyword-basierter Suche. Sie gleicht Text anhand des Vorhandenseins bestimmter Zeichen und W\u00f6rter ab. Sie hat kein Verst\u00e4ndnis von Synonymen, Paraphrasierung oder der konzeptuellen Beziehung zwischen unterschiedlichen Formulierungen derselben Frage. F\u00fcr einen Support-Agenten, der Kunden bedient, die ihre Fragen auf unvorhersehbare Weise formulieren, ist Keyword Search keine tragf\u00e4hige Grundlage.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "3f894183-19f3-8105-8a41-f45e368bb1aa",
+  "parent": {
+   "type": "page_id",
+   "page_id": "37794183-19f3-8013-997f-e17ca65932d7"
+  },
+  "created_time": "2026-10-13T10:15:00.000Z",
+  "last_edited_time": "2026-10-13T10:15:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Die L\u00f6sung sind Embeddings und Vector Search. Das sind Mechanismen, die es dem Abruf-System erm\u00f6glichen, Inhalte auf Grundlage von Bedeutung statt exakter Formulierung zu finden.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Die L\u00f6sung sind Embeddings und Vector Search. Das sind Mechanismen, die es dem Abruf-System erm\u00f6glichen, Inhalte auf Grundlage von Bedeutung statt exakter Formulierung zu finden.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "3f894183-19f3-8191-a194-e7b70f7167e4",
+  "parent": {
+   "type": "page_id",
+   "page_id": "37794183-19f3-8013-997f-e17ca65932d7"
+  },
+  "created_time": "2026-10-13T10:15:00.000Z",
+  "last_edited_time": "2026-10-13T10:15:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_2",
+  "heading_2": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Was sind Embeddings ?",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Was sind Embeddings ?",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "3f894183-19f3-8192-8863-c40402dbdd6c",
+  "parent": {
+   "type": "page_id",
+   "page_id": "37794183-19f3-8013-997f-e17ca65932d7"
+  },
+  "created_time": "2026-10-13T10:15:00.000Z",
+  "last_edited_time": "2026-10-13T10:15:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Ein Embedding ist die numerische Darstellung von Text. Ein Embedding-Modell wandelt einen Textabschnitt in einen Vektor um, also in ein Array aus Zahlen. Jede Zahl in diesem Array steht f\u00fcr eine Dimension in einem hochdimensionalen mathematischen Raum.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Ein Embedding ist die numerische Darstellung von Text. Ein Embedding-Modell wandelt einen Textabschnitt in einen Vektor um, also in ein Array aus Zahlen. Jede Zahl in diesem Array steht f\u00fcr eine Dimension in einem hochdimensionalen mathematischen Raum.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "3f894183-19f3-8199-b3dc-c9c6669899c7",
+  "parent": {
+   "type": "page_id",
+   "page_id": "37794183-19f3-8013-997f-e17ca65932d7"
+  },
+  "created_time": "2026-10-13T10:15:00.000Z",
+  "last_edited_time": "2026-10-13T10:15:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Ein Beispiel: Der Satz ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Ein Beispiel: Der Satz ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "\u201ecannot make my loan repayment\u201c",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": true,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "\u201ecannot make my loan repayment\u201c",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " wird zu einem Vektor wie ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " wird zu einem Vektor wie ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "[0.21, -0.87, 0.44, ...]",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": true,
+      "color": "default"
+     },
+     "plain_text": "[0.21, -0.87, 0.44, ...]",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": ", der aus hunderten von Zahlen bestehen kann. Die Phrase ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": ", der aus hunderten von Zahlen bestehen kann. Die Phrase ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "\u201epayment difficulties\u201c",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": true,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "\u201epayment difficulties\u201c",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " erzeugt ein anderes, aber mathematisch nahe gelegenes Array. Der Ausdruck ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " erzeugt ein anderes, aber mathematisch nahe gelegenes Array. Der Ausdruck ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "\u201eoffice furniture catalogue\u201c",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": true,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "\u201eoffice furniture catalogue\u201c",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " liefert hingegen ein Array, das weit von beiden entfernt liegt. Die Zahlen selbst lassen sich nicht isoliert interpretieren. Entscheidend ist ausschlie\u00dflich der mathematische Abstand zwischen ihnen.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " liefert hingegen ein Array, das weit von beiden entfernt liegt. Die Zahlen selbst lassen sich nicht isoliert interpretieren. Entscheidend ist ausschlie\u00dflich der mathematische Abstand zwischen ihnen.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "3f894183-19f3-814f-b6b8-d3d97da7e846",
+  "parent": {
+   "type": "page_id",
+   "page_id": "37794183-19f3-8013-997f-e17ca65932d7"
+  },
+  "created_time": "2026-10-13T10:15:00.000Z",
+  "last_edited_time": "2026-10-13T10:15:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Die zentrale Eigenschaft von Embeddings ist, dass Texte mit \u00e4hnlicher Bedeutung Vektoren erzeugen, die in diesem Raum nah beieinander liegen. Die Aussagen ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Die zentrale Eigenschaft von Embeddings ist, dass Texte mit \u00e4hnlicher Bedeutung Vektoren erzeugen, die in diesem Raum nah beieinander liegen. Die Aussagen ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "\u201epayment difficulties\u201c",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": true,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "\u201epayment difficulties\u201c",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " und ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " und ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "\u201ecannot make my loan repayment\u201c",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": true,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "\u201ecannot make my loan repayment\u201c",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " erzeugen Vektoren in direkter Nachbarschaft, da das Embedding-Modell die semantische Verwandtschaft dieser Konzepte gelernt hat. Die Phrase ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " erzeugen Vektoren in direkter Nachbarschaft, da das Embedding-Modell die semantische Verwandtschaft dieser Konzepte gelernt hat. Die Phrase ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "\u201eoffice furniture catalogue\u201c",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": true,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "\u201eoffice furniture catalogue\u201c",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " erzeugt dagegen einen Vektor, der weit von beiden entfernt liegt.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " erzeugt dagegen einen Vektor, der weit von beiden entfernt liegt.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "3f894183-19f3-81a0-9b80-cf10f9cc67b4",
+  "parent": {
+   "type": "page_id",
+   "page_id": "37794183-19f3-8013-997f-e17ca65932d7"
+  },
+  "created_time": "2026-10-13T10:15:00.000Z",
+  "last_edited_time": "2026-10-13T10:15:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_2",
+  "heading_2": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Wie Chunking und Embeddings zusammenh\u00e4ngen",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Wie Chunking und Embeddings zusammenh\u00e4ngen",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "3f894183-19f3-818c-aac5-fd9e956bd4ec",
+  "parent": {
+   "type": "page_id",
+   "page_id": "37794183-19f3-8013-997f-e17ca65932d7"
+  },
+  "created_time": "2026-10-13T10:15:00.000Z",
+  "last_edited_time": "2026-10-13T10:15:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Chunking und Embeddings funktionieren als sequenzielles Paar.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Chunking und Embeddings funktionieren als sequenzielles Paar.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "3f894183-19f3-8132-86a5-cf248b2c5dcd",
+  "parent": {
+   "type": "page_id",
+   "page_id": "37794183-19f3-8013-997f-e17ca65932d7"
+  },
+  "created_time": "2026-10-13T10:15:00.000Z",
+  "last_edited_time": "2026-10-13T10:15:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Chunking teilt ein Dokument zuerst in kleinere Teile auf. Jeder Chunk wird dann an ein Embedding-Modell \u00fcbergeben, das ihn in einen numerischen Vektor umwandelt, der seine semantische Bedeutung repr\u00e4sentiert.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Chunking teilt ein Dokument zuerst in kleinere Teile auf. Jeder Chunk wird dann an ein Embedding-Modell \u00fcbergeben, das ihn in einen numerischen Vektor umwandelt, der seine semantische Bedeutung repr\u00e4sentiert.",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "3f894183-19f3-8101-94bf-ed84c1303003",
+  "parent": {
+   "type": "page_id",
+   "page_id": "37794183-19f3-8013-997f-e17ca65932d7"
+  },
+  "created_time": "2026-10-13T10:15:00.000Z",
+  "last_edited_time": "2026-10-13T10:15:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Die Qualit\u00e4t des Embeddings h\u00e4ngt direkt von der Qualit\u00e4t des Chunks ab. Ein Chunk, der nicht zusammenh\u00e4ngende Themen mischt, erzeugt einen Vektor, der nichts pr\u00e4zise repr\u00e4sentiert, wodurch es schwieriger wird es pr\u00e4zise abzurufen.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Die Qualit\u00e4t des Embeddings h\u00e4ngt direkt von der Qualit\u00e4t des Chunks ab. Ein Chunk, der nicht zusammenh\u00e4ngende Themen mischt, erzeugt einen Vektor, der nichts pr\u00e4zise repr\u00e4sentiert, wodurch es schwieriger wird es pr\u00e4zise abzurufen.",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "3f894183-19f3-817c-83c5-c42ec1b418fc",
+  "parent": {
+   "type": "page_id",
+   "page_id": "37794183-19f3-8013-997f-e17ca65932d7"
+  },
+  "created_time": "2026-10-13T10:15:00.000Z",
+  "last_edited_time": "2026-10-13T10:15:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Zur Anfragezeit wird die Frage des Nutzers mit demselben Modell eingebettet, und der resultierende Vektor wird mit allen gespeicherten Chunk-Vektoren verglichen, um die n\u00e4chsten semantischen Treffer zu finden.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Zur Anfragezeit wird die Frage des Nutzers mit demselben Modell eingebettet, und der resultierende Vektor wird mit allen gespeicherten Chunk-Vektoren verglichen, um die n\u00e4chsten semantischen Treffer zu finden.",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "3f894183-19f3-8177-9b8c-eb963430eaf6",
+  "parent": {
+   "type": "page_id",
+   "page_id": "37794183-19f3-8013-997f-e17ca65932d7"
+  },
+  "created_time": "2026-10-13T10:15:00.000Z",
+  "last_edited_time": "2026-10-13T10:15:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "image",
+  "image": {
+   "caption": [],
+   "type": "file",
+   "file": {
+    "url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/3a9085c4-df29-45e6-8bc7-6c9c0a25ea8c/2979fac7-ad2e-4270-a0bc-6cbabc4d995e/rag_full_pipeline_de.svg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466XK77I4HA%2F20261028%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20261028T112532Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEDsaCXVzLXdlc3QtMiJGMEQCIFP4048xn6m%2FQOQlMqzQMUcZ3fhAKk8fOQVPetT1ww%2BbAiAuGsuPetUwPcBddWSfNzXk5jNF2NZa2ss4p5PbGrTPfCr%2FAwgEEAAaDDYzNzQyMzE4MzgwNSIM%2FVNN4vD1iOxvziKKKtwD33utKBunOkFGlzBmNq1Uw86Vdo54Z296Q35KB4LZynQkdiEE9QMp8aeFAS4pyKaFf2I2V3fy6e0dbuAg9ClMOuxnVMTOs%2B7xeAFrF6raGgrDHacIJLEAPqLWJyMj8VFGLoiszh2CHrl7ETV6SJ2CjKlJqzIwsI6MCLFAZ7jmSKNIV80Zof250%2F9UpsGF9t7TIW6q770PKCzIHSMWyFSx72QrY0CYzCjsl5otx7P7ckgvaB3ur0OblWp35Ervm%2BxdE216SJ1h%2Fadx3znYI6EAb9DCjJtbK2DASACPaAUc%2BnCMYVq63OGmjzn5DNebPbAylnzUjdouCjswhFiyFKKEWOYyfOay%2BOPYkWqCXW1y5iSapgEUJJ095qT%2FEdQItnEfiuPt2cXAnp5brfSlwumeK7%2Bcri6mTisut%2FWP%2BZPy8I%2BGejMFgyZG9rVuMfhrg6Afem0yB0VgHJVy8YLbAiqaS7kEjPIBvGK358v2lKzg9kpLogiy%2FX6Gd1ZBCU%2Bb%2Ft1PdvBBs%2BDLc6qU1%2FLdLmDHRgyVKE4raaNd2w0yZazjXt60r1iCAVXkrrU4PSR%2FjVVo4Zzrk9TIMaOACns7w9dbaysWUfS3UK8ngmGlSDhxcfN8Vls7Bb5ZpQlu2SEw%2FqSH1wY6pgEMy2XorW43Kil7PbonImmvPZK3ZgpOP2Lzp73J%2FxYYtWUe59i5HBt1MgaAGn2138nMoxvU%2Bphs5ovJUFqZS9Pf8Kvyo0FvzBcp1lJlfxiKeipaunhJezBwYzCGDABm5rNuUkfNH93TqxMxp5fB3Ppjn7pI5saNqs%2FZO66wo6xhiA0vLyP6YwPLZPTnj11UCdStzHrzMtiFenPa2pP9hgqBpWU9MKur&X-Amz-Signature=8a804d1455895bcc39815d7e1594fc0620dc12fee4056f0615d1280bcdf5f4d6&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+    "expiry_time": "2026-10-28T12:25:32.612Z"
+   }
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "3f894183-19f3-8154-b5d1-e14c6a657923",
+  "parent": {
+   "type": "page_id",
+   "page_id": "37794183-19f3-8013-997f-e17ca65932d7"
+  },
+  "created_time": "2026-10-13T10:15:00.000Z",
+  "last_edited_time": "2026-10-13T10:15:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Das macht semantische Suche m\u00f6glich. Das System sucht nach Vektoren, die im Embedding-Raum nahe am Query-Vektor liegen.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Das macht semantische Suche m\u00f6glich. Das System sucht nach Vektoren, die im Embedding-Raum nahe am Query-Vektor liegen.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "3f894183-19f3-81a1-8234-c986e93525e1",
+  "parent": {
+   "type": "page_id",
+   "page_id": "37794183-19f3-8013-997f-e17ca65932d7"
+  },
+  "created_time": "2026-10-13T10:15:00.000Z",
+  "last_edited_time": "2026-10-13T10:15:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "F\u00fcr Contigos Pipeline wird dasselbe Embedding-Modell an zwei Punkten verwendet:",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "F\u00fcr Contigos Pipeline wird dasselbe Embedding-Modell an zwei Punkten verwendet:",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "3f894183-19f3-8109-9092-dacce6bf3a5d",
+  "parent": {
+   "type": "page_id",
+   "page_id": "37794183-19f3-8013-997f-e17ca65932d7"
+  },
+  "created_time": "2026-10-13T10:15:00.000Z",
+  "last_edited_time": "2026-10-13T10:15:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "numbered_list_item",
+  "numbered_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "W\u00e4hrend der Ingestion, um Dokument-Chunks f\u00fcr die Speicherung in Vektoren umzuwandeln",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "W\u00e4hrend der Ingestion, um Dokument-Chunks f\u00fcr die Speicherung in Vektoren umzuwandeln",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "3f894183-19f3-81a6-a128-ca513ebb6477",
+  "parent": {
+   "type": "page_id",
+   "page_id": "37794183-19f3-8013-997f-e17ca65932d7"
+  },
+  "created_time": "2026-10-13T10:15:00.000Z",
+  "last_edited_time": "2026-10-13T10:15:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "numbered_list_item",
+  "numbered_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Zur Query-Zeit, um die Frage des Kunden in einen Vektor f\u00fcr den Vergleich umzuwandeln",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Zur Query-Zeit, um die Frage des Kunden in einen Vektor f\u00fcr den Vergleich umzuwandeln",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "3f894183-19f3-81fa-b27c-d5ed71f4942c",
+  "parent": {
+   "type": "page_id",
+   "page_id": "37794183-19f3-8013-997f-e17ca65932d7"
+  },
+  "created_time": "2026-10-13T10:15:00.000Z",
+  "last_edited_time": "2026-10-13T10:15:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "image",
+  "image": {
+   "caption": [],
+   "type": "file",
+   "file": {
+    "url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/3a9085c4-df29-45e6-8bc7-6c9c0a25ea8c/a4b4de56-374a-48a3-a872-83959aa11111/embeddings_explainer_de.svg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466XK77I4HA%2F20261028%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20261028T112532Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEDsaCXVzLXdlc3QtMiJGMEQCIFP4048xn6m%2FQOQlMqzQMUcZ3fhAKk8fOQVPetT1ww%2BbAiAuGsuPetUwPcBddWSfNzXk5jNF2NZa2ss4p5PbGrTPfCr%2FAwgEEAAaDDYzNzQyMzE4MzgwNSIM%2FVNN4vD1iOxvziKKKtwD33utKBunOkFGlzBmNq1Uw86Vdo54Z296Q35KB4LZynQkdiEE9QMp8aeFAS4pyKaFf2I2V3fy6e0dbuAg9ClMOuxnVMTOs%2B7xeAFrF6raGgrDHacIJLEAPqLWJyMj8VFGLoiszh2CHrl7ETV6SJ2CjKlJqzIwsI6MCLFAZ7jmSKNIV80Zof250%2F9UpsGF9t7TIW6q770PKCzIHSMWyFSx72QrY0CYzCjsl5otx7P7ckgvaB3ur0OblWp35Ervm%2BxdE216SJ1h%2Fadx3znYI6EAb9DCjJtbK2DASACPaAUc%2BnCMYVq63OGmjzn5DNebPbAylnzUjdouCjswhFiyFKKEWOYyfOay%2BOPYkWqCXW1y5iSapgEUJJ095qT%2FEdQItnEfiuPt2cXAnp5brfSlwumeK7%2Bcri6mTisut%2FWP%2BZPy8I%2BGejMFgyZG9rVuMfhrg6Afem0yB0VgHJVy8YLbAiqaS7kEjPIBvGK358v2lKzg9kpLogiy%2FX6Gd1ZBCU%2Bb%2Ft1PdvBBs%2BDLc6qU1%2FLdLmDHRgyVKE4raaNd2w0yZazjXt60r1iCAVXkrrU4PSR%2FjVVo4Zzrk9TIMaOACns7w9dbaysWUfS3UK8ngmGlSDhxcfN8Vls7Bb5ZpQlu2SEw%2FqSH1wY6pgEMy2XorW43Kil7PbonImmvPZK3ZgpOP2Lzp73J%2FxYYtWUe59i5HBt1MgaAGn2138nMoxvU%2Bphs5ovJUFqZS9Pf8Kvyo0FvzBcp1lJlfxiKeipaunhJezBwYzCGDABm5rNuUkfNH93TqxMxp5fB3Ppjn7pI5saNqs%2FZO66wo6xhiA0vLyP6YwPLZPTnj11UCdStzHrzMtiFenPa2pP9hgqBpWU9MKur&X-Amz-Signature=6ff2486c9945988f2126d516b0fac83bfdd32f1048c3e44a94448032a7b43f12&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+    "expiry_time": "2026-10-28T12:25:32.612Z"
+   }
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "3f894183-19f3-8116-b9c9-eadaa3ce4f9e",
+  "parent": {
+   "type": "page_id",
+   "page_id": "37794183-19f3-8013-997f-e17ca65932d7"
+  },
+  "created_time": "2026-10-13T10:15:00.000Z",
+  "last_edited_time": "2026-10-13T10:15:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "3f894183-19f3-817a-9176-c7bad36a358d",
+  "parent": {
+   "type": "page_id",
+   "page_id": "37794183-19f3-8013-997f-e17ca65932d7"
+  },
+  "created_time": "2026-10-13T10:15:00.000Z",
+  "last_edited_time": "2026-10-13T10:15:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_2",
+  "heading_2": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Wo konfigurierst du das in n8n?",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Wo konfigurierst du das in n8n?",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "3f894183-19f3-814e-81a3-f12afd6a76f7",
+  "parent": {
+   "type": "page_id",
+   "page_id": "37794183-19f3-8013-997f-e17ca65932d7"
+  },
+  "created_time": "2026-10-13T10:15:00.000Z",
+  "last_edited_time": "2026-10-13T10:15:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Das Embedding-Modell wird in deinem Build an zwei getrennten Stellen konfiguriert:",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Das Embedding-Modell wird in deinem Build an zwei getrennten Stellen konfiguriert:",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "3f894183-19f3-8168-870c-e1b74ddd1af4",
+  "parent": {
+   "type": "page_id",
+   "page_id": "37794183-19f3-8013-997f-e17ca65932d7"
+  },
+  "created_time": "2026-10-13T10:15:00.000Z",
+  "last_edited_time": "2026-10-13T10:15:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "W\u00e4hrend der Einpflegung:",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "W\u00e4hrend der Einpflegung:",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " Im n8n-Ingestion-Workflow am Embeddings-Sub-Node des Qdrant Vector Store, zusammen mit Loader und Text Splitter. Hier wird ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " Im n8n-Ingestion-Workflow am Embeddings-Sub-Node des Qdrant Vector Store, zusammen mit Loader und Text Splitter. Hier wird ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "text-embedding-004",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": true,
+      "color": "default"
+     },
+     "plain_text": "text-embedding-004",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " ausgew\u00e4hlt und dein Gemini API-Key authentifiziert. Jeder Chunk, der in der Vektordatenbank gespeichert wird, wird mit diesem Modell eingebettet.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " ausgew\u00e4hlt und dein Gemini API-Key authentifiziert. Jeder Chunk, der in der Vektordatenbank gespeichert wird, wird mit diesem Modell eingebettet.",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "3f894183-19f3-8188-bc61-cb7ec38da29b",
+  "parent": {
+   "type": "page_id",
+   "page_id": "37794183-19f3-8013-997f-e17ca65932d7"
+  },
+  "created_time": "2026-10-13T10:15:00.000Z",
+  "last_edited_time": "2026-10-13T10:15:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Zur Query-Zeit:",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Zur Query-Zeit:",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " Im n8n-Retrieval-Workflow wird ein kompatibler Embeddings-Sub-Node mit dem Qdrant Retriever oder Retrieval-Tool verbunden. Dieser Node muss dasselbe Modell (",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " Im n8n-Retrieval-Workflow wird ein kompatibler Embeddings-Sub-Node mit dem Qdrant Retriever oder Retrieval-Tool verbunden. Dieser Node muss dasselbe Modell (",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "text-embedding-004",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": true,
+      "color": "default"
+     },
+     "plain_text": "text-embedding-004",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " ) und denselben API-Key verwenden. Wenn die zwei Nodes unterschiedliche Modelle verwenden, befinden sich Query-Vektor und Dokumentvektoren in unterschiedlichen mathematischen R\u00e4umen, und \u00c4hnlichkeitswerte werden bedeutungslos.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " ) und denselben API-Key verwenden. Wenn die zwei Nodes unterschiedliche Modelle verwenden, befinden sich Query-Vektor und Dokumentvektoren in unterschiedlichen mathematischen R\u00e4umen, und \u00c4hnlichkeitswerte werden bedeutungslos.",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "3f894183-19f3-81d9-badd-e2183d58f3e7",
+  "parent": {
+   "type": "page_id",
+   "page_id": "37794183-19f3-8013-997f-e17ca65932d7"
+  },
+  "created_time": "2026-10-13T10:15:00.000Z",
+  "last_edited_time": "2026-10-13T10:15:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Du wirst beides konfigurieren, wenn du vor der Antwortgenerierung einen Abruf durchf\u00fchrst. Zu verstehen, dass es sich um getrennte Schritte an unterschiedlichen Stellen handelt, bewahrt dich vor dem h\u00e4ufigsten RAG-Konfigurationsfehler.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Du wirst beides konfigurieren, wenn du vor der Antwortgenerierung einen Abruf durchf\u00fchrst. Zu verstehen, dass es sich um getrennte Schritte an unterschiedlichen Stellen handelt, bewahrt dich vor dem h\u00e4ufigsten RAG-Konfigurationsfehler.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "3f894183-19f3-81cc-b4c2-f573ee12d2d6",
+  "parent": {
+   "type": "page_id",
+   "page_id": "37794183-19f3-8013-997f-e17ca65932d7"
+  },
+  "created_time": "2026-10-13T10:15:00.000Z",
+  "last_edited_time": "2026-10-13T10:15:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_2",
+  "heading_2": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Wie Vector Search funktioniert",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Wie Vector Search funktioniert",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "3f894183-19f3-81b9-a884-d2bcf27c40f3",
+  "parent": {
+   "type": "page_id",
+   "page_id": "37794183-19f3-8013-997f-e17ca65932d7"
+  },
+  "created_time": "2026-10-13T10:15:00.000Z",
+  "last_edited_time": "2026-10-13T10:15:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Wenn ein Kunde eine Query sendet, passiert innerhalb des Abruf-Schritts die folgende Sequenz.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Wenn ein Kunde eine Query sendet, passiert innerhalb des Abruf-Schritts die folgende Sequenz.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "3f894183-19f3-81d4-b59b-f023837b1606",
+  "parent": {
+   "type": "page_id",
+   "page_id": "37794183-19f3-8013-997f-e17ca65932d7"
+  },
+  "created_time": "2026-10-13T10:15:00.000Z",
+  "last_edited_time": "2026-10-13T10:15:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "numbered_list_item",
+  "numbered_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Die Query wird durch das Embedding-Modell geleitet und in einen Vektor umgewandelt.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Die Query wird durch das Embedding-Modell geleitet und in einen Vektor umgewandelt.",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "3f894183-19f3-810f-be51-c1553b6af8b9",
+  "parent": {
+   "type": "page_id",
+   "page_id": "37794183-19f3-8013-997f-e17ca65932d7"
+  },
+  "created_time": "2026-10-13T10:15:00.000Z",
+  "last_edited_time": "2026-10-13T10:15:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "numbered_list_item",
+  "numbered_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Die Vektordatenbank (Qdrant) berechnet die mathematische Distanz zwischen dem Query-Vektor und jedem gespeicherten Dokumentvektor.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Die Vektordatenbank (Qdrant) berechnet die mathematische Distanz zwischen dem Query-Vektor und jedem gespeicherten Dokumentvektor.",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "3f894183-19f3-81ff-8829-c195675a0e29",
+  "parent": {
+   "type": "page_id",
+   "page_id": "37794183-19f3-8013-997f-e17ca65932d7"
+  },
+  "created_time": "2026-10-13T10:15:00.000Z",
+  "last_edited_time": "2026-10-13T10:15:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "numbered_list_item",
+  "numbered_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Die Chunks, deren Vektoren dem Query-Vektor am n\u00e4chsten liegen, werden als Retrieval-Ergebnisse zur\u00fcckgegeben.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Die Chunks, deren Vektoren dem Query-Vektor am n\u00e4chsten liegen, werden als Retrieval-Ergebnisse zur\u00fcckgegeben.",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "3f894183-19f3-81f3-ab6d-c9934f82fad8",
+  "parent": {
+   "type": "page_id",
+   "page_id": "37794183-19f3-8013-997f-e17ca65932d7"
+  },
+  "created_time": "2026-10-13T10:15:00.000Z",
+  "last_edited_time": "2026-10-13T10:15:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Die am h\u00e4ufigsten verwendete Distanzberechnung ist die Kosinus\u00e4hnlichkeit. Die Kosinus\u00e4hnlichkeit misst den Winkel zwischen zwei Vektoren statt der absoluten Distanz zwischen ihnen.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Die am h\u00e4ufigsten verwendete Distanzberechnung ist die Kosinus\u00e4hnlichkeit. Die Kosinus\u00e4hnlichkeit misst den Winkel zwischen zwei Vektoren statt der absoluten Distanz zwischen ihnen.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "3f894183-19f3-81d9-9358-e0d9b8658caf",
+  "parent": {
+   "type": "page_id",
+   "page_id": "37794183-19f3-8013-997f-e17ca65932d7"
+  },
+  "created_time": "2026-10-13T10:15:00.000Z",
+  "last_edited_time": "2026-10-13T10:15:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Eine Kosinus\u00e4hnlichkeit von 1 bedeutet, dass die Vektoren in genau dieselbe Richtung zeigen.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Eine Kosinus\u00e4hnlichkeit von 1 bedeutet, dass die Vektoren in genau dieselbe Richtung zeigen.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "3f894183-19f3-8167-a908-f4c667532850",
+  "parent": {
+   "type": "page_id",
+   "page_id": "37794183-19f3-8013-997f-e17ca65932d7"
+  },
+  "created_time": "2026-10-13T10:15:00.000Z",
+  "last_edited_time": "2026-10-13T10:15:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Eine Kosinus\u00e4hnlichkeit von 0 bedeutet, dass die Vektoren orthogonal sind, was bedeutet, dass der Inhalt keine bedeutungsvolle Beziehung zur Query hat. Ein Wert von -1 bedeutet, dass die Vektoren in entgegengesetzte Richtungen zeigen.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Eine Kosinus\u00e4hnlichkeit von 0 bedeutet, dass die Vektoren orthogonal sind, was bedeutet, dass der Inhalt keine bedeutungsvolle Beziehung zur Query hat. Ein Wert von -1 bedeutet, dass die Vektoren in entgegengesetzte Richtungen zeigen.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "3f894183-19f3-81f3-88b1-f7f1d1808e98",
+  "parent": {
+   "type": "page_id",
+   "page_id": "37794183-19f3-8013-997f-e17ca65932d7"
+  },
+  "created_time": "2026-10-13T10:15:00.000Z",
+  "last_edited_time": "2026-10-13T10:15:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Deshalb ruft die Frage des Kunden zu verpassten R\u00fcckzahlungen den Abschnitt zu Zahlungsschwierigkeiten ab, obwohl sich keine W\u00f6rter \u00fcberschneiden. Das Embedding-Modell platziert beide Formulierungen nahe beieinander im Vektorraum, die Kosinus\u00e4hnlichkeit zwischen ihren Vektoren ist hoch, und der richtige Chunk wird zur\u00fcckgegeben.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Deshalb ruft die Frage des Kunden zu verpassten R\u00fcckzahlungen den Abschnitt zu Zahlungsschwierigkeiten ab, obwohl sich keine W\u00f6rter \u00fcberschneiden. Das Embedding-Modell platziert beide Formulierungen nahe beieinander im Vektorraum, die Kosinus\u00e4hnlichkeit zwischen ihren Vektoren ist hoch, und der richtige Chunk wird zur\u00fcckgegeben.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "3f894183-19f3-81df-b3fe-f8819b83f440",
+  "parent": {
+   "type": "page_id",
+   "page_id": "37794183-19f3-8013-997f-e17ca65932d7"
+  },
+  "created_time": "2026-10-13T10:15:00.000Z",
+  "last_edited_time": "2026-10-13T10:15:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "image",
+  "image": {
+   "caption": [],
+   "type": "file",
+   "file": {
+    "url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/3a9085c4-df29-45e6-8bc7-6c9c0a25ea8c/af840bd9-2666-427f-8096-bd95751a0228/semantic_clusters_de.svg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466XK77I4HA%2F20261028%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20261028T112532Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEDsaCXVzLXdlc3QtMiJGMEQCIFP4048xn6m%2FQOQlMqzQMUcZ3fhAKk8fOQVPetT1ww%2BbAiAuGsuPetUwPcBddWSfNzXk5jNF2NZa2ss4p5PbGrTPfCr%2FAwgEEAAaDDYzNzQyMzE4MzgwNSIM%2FVNN4vD1iOxvziKKKtwD33utKBunOkFGlzBmNq1Uw86Vdo54Z296Q35KB4LZynQkdiEE9QMp8aeFAS4pyKaFf2I2V3fy6e0dbuAg9ClMOuxnVMTOs%2B7xeAFrF6raGgrDHacIJLEAPqLWJyMj8VFGLoiszh2CHrl7ETV6SJ2CjKlJqzIwsI6MCLFAZ7jmSKNIV80Zof250%2F9UpsGF9t7TIW6q770PKCzIHSMWyFSx72QrY0CYzCjsl5otx7P7ckgvaB3ur0OblWp35Ervm%2BxdE216SJ1h%2Fadx3znYI6EAb9DCjJtbK2DASACPaAUc%2BnCMYVq63OGmjzn5DNebPbAylnzUjdouCjswhFiyFKKEWOYyfOay%2BOPYkWqCXW1y5iSapgEUJJ095qT%2FEdQItnEfiuPt2cXAnp5brfSlwumeK7%2Bcri6mTisut%2FWP%2BZPy8I%2BGejMFgyZG9rVuMfhrg6Afem0yB0VgHJVy8YLbAiqaS7kEjPIBvGK358v2lKzg9kpLogiy%2FX6Gd1ZBCU%2Bb%2Ft1PdvBBs%2BDLc6qU1%2FLdLmDHRgyVKE4raaNd2w0yZazjXt60r1iCAVXkrrU4PSR%2FjVVo4Zzrk9TIMaOACns7w9dbaysWUfS3UK8ngmGlSDhxcfN8Vls7Bb5ZpQlu2SEw%2FqSH1wY6pgEMy2XorW43Kil7PbonImmvPZK3ZgpOP2Lzp73J%2FxYYtWUe59i5HBt1MgaAGn2138nMoxvU%2Bphs5ovJUFqZS9Pf8Kvyo0FvzBcp1lJlfxiKeipaunhJezBwYzCGDABm5rNuUkfNH93TqxMxp5fB3Ppjn7pI5saNqs%2FZO66wo6xhiA0vLyP6YwPLZPTnj11UCdStzHrzMtiFenPa2pP9hgqBpWU9MKur&X-Amz-Signature=bf52a6c5373facf4f1ed5a892416d2e7ec78951b4c9d869d3d1c343417e5743d&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+    "expiry_time": "2026-10-28T12:25:32.653Z"
+   }
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "3f894183-19f3-81d4-8332-d03c3891d61d",
+  "parent": {
+   "type": "page_id",
+   "page_id": "37794183-19f3-8013-997f-e17ca65932d7"
+  },
+  "created_time": "2026-10-13T10:15:00.000Z",
+  "last_edited_time": "2026-10-13T10:15:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "3f894183-19f3-817a-b650-c0aff790bf73",
+  "parent": {
+   "type": "page_id",
+   "page_id": "37794183-19f3-8013-997f-e17ca65932d7"
+  },
+  "created_time": "2026-10-13T10:15:00.000Z",
+  "last_edited_time": "2026-10-13T10:15:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "3f894183-19f3-8186-9611-f4413b5f8811",
+  "parent": {
+   "type": "page_id",
+   "page_id": "37794183-19f3-8013-997f-e17ca65932d7"
+  },
+  "created_time": "2026-10-13T10:15:00.000Z",
+  "last_edited_time": "2026-10-13T10:15:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_2",
+  "heading_2": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Warum das f\u00fcr die Abfrage-Qualit\u00e4t wichtig ist",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Warum das f\u00fcr die Abfrage-Qualit\u00e4t wichtig ist",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "3f894183-19f3-81e3-8f21-cb9e4c89df86",
+  "parent": {
+   "type": "page_id",
+   "page_id": "37794183-19f3-8013-997f-e17ca65932d7"
+  },
+  "created_time": "2026-10-13T10:15:00.000Z",
+  "last_edited_time": "2026-10-13T10:15:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Die Qualit\u00e4t semantischer Suche h\u00e4ngt von drei Faktoren ab, die das Entwicklungsteam kontrolliert.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Die Qualit\u00e4t semantischer Suche h\u00e4ngt von drei Faktoren ab, die das Entwicklungsteam kontrolliert.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "3f894183-19f3-81f4-9aa3-c4c926bca708",
+  "parent": {
+   "type": "page_id",
+   "page_id": "37794183-19f3-8013-997f-e17ca65932d7"
+  },
+  "created_time": "2026-10-13T10:15:00.000Z",
+  "last_edited_time": "2026-10-13T10:15:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Wahl des Embedding-Modells:",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Wahl des Embedding-Modells:",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " Verschiedene Modelle erzeugen unterschiedliche Vektorr\u00e4ume. F\u00fcr Contigos n8n-Pipeline nutze einen verf\u00fcgbaren Embeddings-Sub-Node und ein zum Qdrant-Index passendes Modell; der Modellname und die Vektordimension m\u00fcssen beim Schreiben und Suchen \u00fcbereinstimmen. F\u00fcr ein mehrsprachiges Deployment, das Deutschland, \u00d6sterreich und die Niederlande abdeckt, ist ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " Verschiedene Modelle erzeugen unterschiedliche Vektorr\u00e4ume. F\u00fcr Contigos n8n-Pipeline nutze einen verf\u00fcgbaren Embeddings-Sub-Node und ein zum Qdrant-Index passendes Modell; der Modellname und die Vektordimension m\u00fcssen beim Schreiben und Suchen \u00fcbereinstimmen. F\u00fcr ein mehrsprachiges Deployment, das Deutschland, \u00d6sterreich und die Niederlande abdeckt, ist ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "text-embedding-004",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": true,
+      "color": "default"
+     },
+     "plain_text": "text-embedding-004",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " geeignet, da es mehrsprachige semantische \u00c4hnlichkeit out of the box unterst\u00fctzt.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " geeignet, da es mehrsprachige semantische \u00c4hnlichkeit out of the box unterst\u00fctzt.",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "3f894183-19f3-81a7-b130-d2aa6740d580",
+  "parent": {
+   "type": "page_id",
+   "page_id": "37794183-19f3-8013-997f-e17ca65932d7"
+  },
+  "created_time": "2026-10-13T10:15:00.000Z",
+  "last_edited_time": "2026-10-13T10:15:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Chunk-Qualit\u00e4t:",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Chunk-Qualit\u00e4t:",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " Ein Embedding repr\u00e4sentiert die Bedeutung des Textes, den es erh\u00e4lt. Ein Chunk, der mehrere nicht zusammenh\u00e4ngende Themen mischt, erzeugt einen Vektor, der keines dieser Themen pr\u00e4zise repr\u00e4sentiert. Die Chunking-Entscheidungen, die du zuvor getroffen hast, bestimmen direkt, wie genau deine Vektoren die Inhalte der Wissensdatenbank repr\u00e4sentieren. Schlechte Chunks erzeugen unpr\u00e4zise Vektoren. Unpr\u00e4zise Vektoren erzeugen schlechte Abrufe. Die zwei Probleme sind dasselbe Problem.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " Ein Embedding repr\u00e4sentiert die Bedeutung des Textes, den es erh\u00e4lt. Ein Chunk, der mehrere nicht zusammenh\u00e4ngende Themen mischt, erzeugt einen Vektor, der keines dieser Themen pr\u00e4zise repr\u00e4sentiert. Die Chunking-Entscheidungen, die du zuvor getroffen hast, bestimmen direkt, wie genau deine Vektoren die Inhalte der Wissensdatenbank repr\u00e4sentieren. Schlechte Chunks erzeugen unpr\u00e4zise Vektoren. Unpr\u00e4zise Vektoren erzeugen schlechte Abrufe. Die zwei Probleme sind dasselbe Problem.",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "3f894183-19f3-819e-ba5c-d303b0ba6b0a",
+  "parent": {
+   "type": "page_id",
+   "page_id": "37794183-19f3-8013-997f-e17ca65932d7"
+  },
+  "created_time": "2026-10-13T10:15:00.000Z",
+  "last_edited_time": "2026-10-13T10:15:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Query-Formulierung:",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Query-Formulierung:",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " Eine sehr kurze oder mehrdeutige Query erzeugt einen weniger pr\u00e4zisen Vektor, weil dem Embedding-Modell weniger semantische Information zur Verf\u00fcgung steht. Deshalb kann ein n8n-Retrieval-Workflow Folgefragen, bevor sie die Vektordatenbank erreichen. F\u00fcr Queries, die bereits gut formuliert eintreffen, ist kein Umschreiben erforderlich. F\u00fcr Queries, die vage oder kontextabh\u00e4ngig eintreffen, macht die Reformulierung das Retrieval pr\u00e4zise.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " Eine sehr kurze oder mehrdeutige Query erzeugt einen weniger pr\u00e4zisen Vektor, weil dem Embedding-Modell weniger semantische Information zur Verf\u00fcgung steht. Deshalb kann ein n8n-Retrieval-Workflow Folgefragen, bevor sie die Vektordatenbank erreichen. F\u00fcr Queries, die bereits gut formuliert eintreffen, ist kein Umschreiben erforderlich. F\u00fcr Queries, die vage oder kontextabh\u00e4ngig eintreffen, macht die Reformulierung das Retrieval pr\u00e4zise.",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "3f894183-19f3-8188-891b-ce27f5d8d12a",
+  "parent": {
+   "type": "page_id",
+   "page_id": "37794183-19f3-8013-997f-e17ca65932d7"
+  },
+  "created_time": "2026-10-13T10:15:00.000Z",
+  "last_edited_time": "2026-10-13T10:15:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_2",
+  "heading_2": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Keyword Search versus Vector Search",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Keyword Search versus Vector Search",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "3f894183-19f3-81cd-b9cf-f16df65cfb7f",
+  "parent": {
+   "type": "page_id",
+   "page_id": "37794183-19f3-8013-997f-e17ca65932d7"
+  },
+  "created_time": "2026-10-13T10:15:00.000Z",
+  "last_edited_time": "2026-10-13T10:15:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": true,
+  "in_trash": false,
+  "type": "table",
+  "table": {
+   "table_width": 3,
+   "has_column_header": true,
+   "has_row_header": false
+  },
+  "archived": false,
+  "_children": [
+   {
+    "object": "block",
+    "id": "3f894183-19f3-8161-91d9-eab67be496eb",
+    "parent": {
+     "type": "block_id",
+     "block_id": "3f894183-19f3-81cd-b9cf-f16df65cfb7f"
+    },
+    "created_time": "2026-10-13T10:15:00.000Z",
+    "last_edited_time": "2026-10-13T10:15:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "table_row",
+    "table_row": {
+     "cells": [
+      [],
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Keyword Search",
+         "link": null
+        },
+        "annotations": {
+         "bold": true,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Keyword Search",
+        "href": null
+       }
+      ],
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Vector Search",
+         "link": null
+        },
+        "annotations": {
+         "bold": true,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Vector Search",
+        "href": null
+       }
+      ]
+     ]
+    },
+    "archived": false
+   },
+   {
+    "object": "block",
+    "id": "3f894183-19f3-812c-bb0b-f3ad762594b1",
+    "parent": {
+     "type": "block_id",
+     "block_id": "3f894183-19f3-81cd-b9cf-f16df65cfb7f"
+    },
+    "created_time": "2026-10-13T10:15:00.000Z",
+    "last_edited_time": "2026-10-13T10:15:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "table_row",
+    "table_row": {
+     "cells": [
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Matching-Mechanismus",
+         "link": null
+        },
+        "annotations": {
+         "bold": true,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Matching-Mechanismus",
+        "href": null
+       }
+      ],
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Exakter Wort- oder Zeichenabgleich",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Exakter Wort- oder Zeichenabgleich",
+        "href": null
+       }
+      ],
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Mathematische N\u00e4he im Embedding-Raum",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Mathematische N\u00e4he im Embedding-Raum",
+        "href": null
+       }
+      ]
+     ]
+    },
+    "archived": false
+   },
+   {
+    "object": "block",
+    "id": "3f894183-19f3-81f9-8590-f604e35e4241",
+    "parent": {
+     "type": "block_id",
+     "block_id": "3f894183-19f3-81cd-b9cf-f16df65cfb7f"
+    },
+    "created_time": "2026-10-13T10:15:00.000Z",
+    "last_edited_time": "2026-10-13T10:15:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "table_row",
+    "table_row": {
+     "cells": [
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Umgang mit Synonymen",
+         "link": null
+        },
+        "annotations": {
+         "bold": true,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Umgang mit Synonymen",
+        "href": null
+       }
+      ],
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Nur wenn ausdr\u00fccklich programmiert",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Nur wenn ausdr\u00fccklich programmiert",
+        "href": null
+       }
+      ],
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Automatisch: \u00e4hnliche Bedeutungen clustern zusammen",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Automatisch: \u00e4hnliche Bedeutungen clustern zusammen",
+        "href": null
+       }
+      ]
+     ]
+    },
+    "archived": false
+   },
+   {
+    "object": "block",
+    "id": "3f894183-19f3-81f0-a23c-c42d8af23636",
+    "parent": {
+     "type": "block_id",
+     "block_id": "3f894183-19f3-81cd-b9cf-f16df65cfb7f"
+    },
+    "created_time": "2026-10-13T10:15:00.000Z",
+    "last_edited_time": "2026-10-13T10:15:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "table_row",
+    "table_row": {
+     "cells": [
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Umgang mit Paraphrasierung",
+         "link": null
+        },
+        "annotations": {
+         "bold": true,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Umgang mit Paraphrasierung",
+        "href": null
+       }
+      ],
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Scheitert, wenn exakte Begriffe nicht vorhanden sind",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Scheitert, wenn exakte Begriffe nicht vorhanden sind",
+        "href": null
+       }
+      ],
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Gelingt: Bedeutung bleibt \u00fcber Formulierungen hinweg erhalten",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Gelingt: Bedeutung bleibt \u00fcber Formulierungen hinweg erhalten",
+        "href": null
+       }
+      ]
+     ]
+    },
+    "archived": false
+   },
+   {
+    "object": "block",
+    "id": "3f894183-19f3-813d-b79a-d71bd3033159",
+    "parent": {
+     "type": "block_id",
+     "block_id": "3f894183-19f3-81cd-b9cf-f16df65cfb7f"
+    },
+    "created_time": "2026-10-13T10:15:00.000Z",
+    "last_edited_time": "2026-10-13T10:15:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "table_row",
+    "table_row": {
+     "cells": [
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Geeignet f\u00fcr",
+         "link": null
+        },
+        "annotations": {
+         "bold": true,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Geeignet f\u00fcr",
+        "href": null
+       }
+      ],
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Strukturierte Daten mit bekannter Terminologie",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Strukturierte Daten mit bekannter Terminologie",
+        "href": null
+       }
+      ],
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Unstrukturierter Text mit variierter nat\u00fcrlicher Sprache",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Unstrukturierter Text mit variierter nat\u00fcrlicher Sprache",
+        "href": null
+       }
+      ]
+     ]
+    },
+    "archived": false
+   },
+   {
+    "object": "block",
+    "id": "3f894183-19f3-8130-bc64-ef18ea632c60",
+    "parent": {
+     "type": "block_id",
+     "block_id": "3f894183-19f3-81cd-b9cf-f16df65cfb7f"
+    },
+    "created_time": "2026-10-13T10:15:00.000Z",
+    "last_edited_time": "2026-10-13T10:15:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "table_row",
+    "table_row": {
+     "cells": [
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Contigo-Anwendungsfall",
+         "link": null
+        },
+        "annotations": {
+         "bold": true,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Contigo-Anwendungsfall",
+        "href": null
+       }
+      ],
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Ungeeignet f\u00fcr die Bearbeitung von Kundenanfragen",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Ungeeignet f\u00fcr die Bearbeitung von Kundenanfragen",
+        "href": null
+       }
+      ],
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Grundlage der RAG-Retrieval-Pipeline",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Grundlage der RAG-Retrieval-Pipeline",
+        "href": null
+       }
+      ]
+     ]
+    },
+    "archived": false
+   }
+  ]
+ },
+ {
+  "object": "block",
+  "id": "3f894183-19f3-814c-b023-e5d751569005",
+  "parent": {
+   "type": "page_id",
+   "page_id": "37794183-19f3-8013-997f-e17ca65932d7"
+  },
+  "created_time": "2026-10-13T10:15:00.000Z",
+  "last_edited_time": "2026-10-13T10:15:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_2",
+  "heading_2": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Verst\u00e4ndnis pr\u00fcfen",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Verst\u00e4ndnis pr\u00fcfen",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "3f894183-19f3-815f-84bc-dbd2780e15ba",
+  "parent": {
+   "type": "page_id",
+   "page_id": "37794183-19f3-8013-997f-e17ca65932d7"
+  },
+  "created_time": "2026-10-13T10:15:00.000Z",
+  "last_edited_time": "2026-10-13T10:15:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": true,
+  "in_trash": false,
+  "type": "callout",
+  "callout": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Ein Contigo-Kunde fragt: \u201eWelche Optionen habe ich, wenn ich finanzielle Schwierigkeiten habe?\u201c Der richtige Chunk tr\u00e4gt den Titel \u201ePayment Difficulties and Restructuring Options\u201c. Zwischen der Query und dem Chunk-Titel \u00fcberschneiden sich keine W\u00f6rter. Warum ruft Vector Search trotzdem den richtigen Chunk ab?",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Ein Contigo-Kunde fragt: \u201eWelche Optionen habe ich, wenn ich finanzielle Schwierigkeiten habe?\u201c Der richtige Chunk tr\u00e4gt den Titel \u201ePayment Difficulties and Restructuring Options\u201c. Zwischen der Query und dem Chunk-Titel \u00fcberschneiden sich keine W\u00f6rter. Warum ruft Vector Search trotzdem den richtigen Chunk ab?",
+     "href": null
+    }
+   ],
+   "icon": {
+    "type": "emoji",
+    "emoji": "\ud83d\udca1"
+   },
+   "color": "gray_background"
+  },
+  "archived": false,
+  "_children": [
+   {
+    "object": "block",
+    "id": "3f894183-19f3-81f3-9878-e1f7aed2f3e4",
+    "parent": {
+     "type": "block_id",
+     "block_id": "3f894183-19f3-815f-84bc-dbd2780e15ba"
+    },
+    "created_time": "2026-10-13T10:15:00.000Z",
+    "last_edited_time": "2026-10-13T10:15:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "embed",
+    "embed": {
+     "caption": [],
+     "url": "https://app.masterschool.com/campus/multi-choice-question/248e0e64-5ac2-46a0-a7d3-4feca9264983"
+    },
+    "archived": false
+   }
+  ]
+ },
+ {
+  "object": "block",
+  "id": "3f894183-19f3-8180-8edd-ee00a0523779",
+  "parent": {
+   "type": "page_id",
+   "page_id": "37794183-19f3-8013-997f-e17ca65932d7"
+  },
+  "created_time": "2026-10-13T10:15:00.000Z",
+  "last_edited_time": "2026-10-13T10:15:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "3f894183-19f3-815d-afc3-ef27f3248407",
+  "parent": {
+   "type": "page_id",
+   "page_id": "37794183-19f3-8013-997f-e17ca65932d7"
+  },
+  "created_time": "2026-10-13T10:15:00.000Z",
+  "last_edited_time": "2026-10-13T10:15:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": true,
+  "in_trash": false,
+  "type": "callout",
+  "callout": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Takeaway:",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Takeaway:",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " ",
+     "href": null
+    }
+   ],
+   "icon": {
+    "type": "emoji",
+    "emoji": "\ud83d\udca1"
+   },
+   "color": "gray_background"
+  },
+  "archived": false,
+  "_children": [
+   {
+    "object": "block",
+    "id": "3f894183-19f3-811f-a54d-cd7fdb3da2be",
+    "parent": {
+     "type": "block_id",
+     "block_id": "3f894183-19f3-815d-afc3-ef27f3248407"
+    },
+    "created_time": "2026-10-13T10:15:00.000Z",
+    "last_edited_time": "2026-10-13T10:15:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+     "rich_text": [
+      {
+       "type": "text",
+       "text": {
+        "content": "Embeddings sind die \u00dcbersetzungsschicht zwischen menschlicher Sprache und maschineller Suche. Indem Text in der Vektoren umgewandelt werden, die nach Bedeutung clustern, kann die Abruf-Pipeline den richtigen Inhalt finden, selbst wenn der Kunde seine Frage so formuliert, dass sie keine W\u00f6rter mit dem Quelldokument teilt.",
+        "link": null
+       },
+       "annotations": {
+        "bold": false,
+        "italic": false,
+        "strikethrough": false,
+        "underline": false,
+        "code": false,
+        "color": "default"
+       },
+       "plain_text": "Embeddings sind die \u00dcbersetzungsschicht zwischen menschlicher Sprache und maschineller Suche. Indem Text in der Vektoren umgewandelt werden, die nach Bedeutung clustern, kann die Abruf-Pipeline den richtigen Inhalt finden, selbst wenn der Kunde seine Frage so formuliert, dass sie keine W\u00f6rter mit dem Quelldokument teilt.",
+       "href": null
+      }
+     ],
+     "icon": null,
+     "color": "default"
+    },
+    "archived": false
+   },
+   {
+    "object": "block",
+    "id": "3f894183-19f3-8132-a795-e969e270f388",
+    "parent": {
+     "type": "block_id",
+     "block_id": "3f894183-19f3-815d-afc3-ef27f3248407"
+    },
+    "created_time": "2026-10-13T10:15:00.000Z",
+    "last_edited_time": "2026-10-13T10:15:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+     "rich_text": [
+      {
+       "type": "text",
+       "text": {
+        "content": "In n8n h\u00e4ngt diese Flexibilit\u00e4t davon ab, dass dasselbe Embedding-Modell im Ingestion-Workflow und beim Abruf konsistent konfiguriert wird. Eine einzige Abweichung zwischen diesen zwei Konfigurationspunkten reicht aus, damit die gesamte Abfrage-Pipeline bedeutungslose Ergebnisse zur\u00fcckgibt.",
+        "link": null
+       },
+       "annotations": {
+        "bold": false,
+        "italic": false,
+        "strikethrough": false,
+        "underline": false,
+        "code": false,
+        "color": "default"
+       },
+       "plain_text": "In n8n h\u00e4ngt diese Flexibilit\u00e4t davon ab, dass dasselbe Embedding-Modell im Ingestion-Workflow und beim Abruf konsistent konfiguriert wird. Eine einzige Abweichung zwischen diesen zwei Konfigurationspunkten reicht aus, damit die gesamte Abfrage-Pipeline bedeutungslose Ergebnisse zur\u00fcckgibt.",
+       "href": null
+      }
+     ],
+     "icon": null,
+     "color": "default"
+    },
+    "archived": false
+   }
+  ]
+ }
+]

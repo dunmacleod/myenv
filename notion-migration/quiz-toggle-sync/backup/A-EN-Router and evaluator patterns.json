@@ -1,0 +1,4352 @@
+[
+ {
+  "object": "block",
+  "id": "bf26dccc-56fb-4ec8-97d1-4264b660c0fb",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-8073-8159-dea3826e59e8"
+  },
+  "created_time": "2026-06-24T03:09:00.000Z",
+  "last_edited_time": "2026-06-24T03:10:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "At the end of the previous lesson, Petra made an observation that stuck with Selin: the confidence signal they added to the coordinator was doing something different from the routing decision. The routing decision said ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "At the end of the previous lesson, Petra made an observation that stuck with Selin: the confidence signal they added to the coordinator was doing something different from the routing decision. The routing decision said ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "where to send the query",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": true,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "where to send the query",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": ". The confidence signal said ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": ". The confidence signal said ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "how much to trust the routing decision before acting on it",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": true,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "how much to trust the routing decision before acting on it",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": ". Those are two different jobs and in the multi-agent design literature, they have two different names: ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": ". Those are two different jobs and in the multi-agent design literature, they have two different names: ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "router",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "router",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " and ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " and ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "evaluator",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "evaluator",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": ".",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": ".",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "2dc46254-b242-4665-a932-2e22b7312a00",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-8073-8159-dea3826e59e8"
+  },
+  "created_time": "2026-06-24T03:09:00.000Z",
+  "last_edited_time": "2026-06-24T03:10:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "The Vela coordinator is already doing both jobs inside one node. That is fine for their current system. The flow is small, the stakes are modest, and having one node that routes and self-evaluates is not causing problems. But understanding why those jobs are distinct, and what happens when they are handled by separate nodes, is what makes the difference between a multi-agent system that holds up in production and one that requires constant instruction tuning.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "The Vela coordinator is already doing both jobs inside one node. That is fine for their current system. The flow is small, the stakes are modest, and having one node that routes and self-evaluates is not causing problems. But understanding why those jobs are distinct, and what happens when they are handled by separate nodes, is what makes the difference between a multi-agent system that holds up in production and one that requires constant instruction tuning.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38994183-19f3-801f-96fa-e686e03067e7",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-8073-8159-dea3826e59e8"
+  },
+  "created_time": "2026-06-24T03:09:00.000Z",
+  "last_edited_time": "2026-06-24T03:09:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "callout",
+  "callout": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "A router decides where work goes. An evaluator decides whether the work is good enough before it moves on. They look similar from the outside (both sit between agents), but they answer different questions.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "A router decides where work goes. An evaluator decides whether the work is good enough before it moves on. They look similar from the outside (both sit between agents), but they answer different questions.",
+     "href": null
+    }
+   ],
+   "icon": {
+    "type": "emoji",
+    "emoji": "\ud83d\udca1"
+   },
+   "color": "gray_background"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38f94183-19f3-804c-8d26-c31f77ef8b53",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-8073-8159-dea3826e59e8"
+  },
+  "created_time": "2026-06-30T13:00:00.000Z",
+  "last_edited_time": "2026-06-30T13:00:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "4283433e-3001-43db-8448-147292a4af80",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-8073-8159-dea3826e59e8"
+  },
+  "created_time": "2026-06-24T03:09:00.000Z",
+  "last_edited_time": "2026-06-24T03:09:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_2",
+  "heading_2": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "The router pattern",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "The router pattern",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "75a23f57-8372-447e-b457-8b8bb946aa31",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-8073-8159-dea3826e59e8"
+  },
+  "created_time": "2026-06-24T03:09:00.000Z",
+  "last_edited_time": "2026-06-24T03:10:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "A router is a node (typically a coordinator agent or a condition node) whose sole job is to classify an input and direct it to the right handler. The router does not answer the user's query. It does not assess quality. It reads the input, applies a decision rule, and passes the input to the appropriate downstream node.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "A router is a node (typically a coordinator agent or a condition node) whose sole job is to classify an input and direct it to the right handler. The router does not answer the user's query. It does not assess quality. It reads the input, applies a decision rule, and passes the input to the appropriate downstream node.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "caf19bcd-2dba-44bc-8abf-883f181a2d3f",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-8073-8159-dea3826e59e8"
+  },
+  "created_time": "2026-06-24T03:09:00.000Z",
+  "last_edited_time": "2026-06-24T03:09:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "The Vela coordinator is a router. It reads a client query, classifies it as commercial, technical, or hybrid, and passes it on. It has no opinion on whether the query is well-formed, whether the specialist will be able to answer it, or whether the answer the specialist gives is good. Routing and answering are separated.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "The Vela coordinator is a router. It reads a client query, classifies it as commercial, technical, or hybrid, and passes it on. It has no opinion on whether the query is well-formed, whether the specialist will be able to answer it, or whether the answer the specialist gives is good. Routing and answering are separated.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38f94183-19f3-8060-85cb-cfccd891c711",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-8073-8159-dea3826e59e8"
+  },
+  "created_time": "2026-06-30T13:00:00.000Z",
+  "last_edited_time": "2026-06-30T13:00:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "5ebfd9f0-36b8-4142-bd73-bba1493c4792",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-8073-8159-dea3826e59e8"
+  },
+  "created_time": "2026-06-24T03:09:00.000Z",
+  "last_edited_time": "2026-06-24T03:10:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_4",
+  "heading_4": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "What a router needs to work well:",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "What a router needs to work well:",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "ce8e520f-03ca-456a-90f8-65af0d4e174b",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-8073-8159-dea3826e59e8"
+  },
+  "created_time": "2026-06-24T03:09:00.000Z",
+  "last_edited_time": "2026-06-24T03:09:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "A router is only as good as its classification logic. Three things determine whether a router is reliable:",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "A router is only as good as its classification logic. Three things determine whether a router is reliable:",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "5b1ffb61-3dba-4f73-9865-2db89b224bb9",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-8073-8159-dea3826e59e8"
+  },
+  "created_time": "2026-06-24T03:09:00.000Z",
+  "last_edited_time": "2026-06-29T08:04:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Clear, mutually exclusive categories.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": true,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Clear, mutually exclusive categories.",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " If the categories overlap (if a query could plausibly belong to more than one), the router will route inconsistently, and the inconsistency will be hard to detect because no error is thrown. The specialisation design work from earlier in this sprint was essentially preparation for having a reliable router: narrow, non-overlapping responsibility statements make routing categories that a model can apply consistently.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " If the categories overlap (if a query could plausibly belong to more than one), the router will route inconsistently, and the inconsistency will be hard to detect because no error is thrown. The specialisation design work from earlier in this sprint was essentially preparation for having a reliable router: narrow, non-overlapping responsibility statements make routing categories that a model can apply consistently.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "c7c7daca-0860-4f6f-9603-88aeaef769d7",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-8073-8159-dea3826e59e8"
+  },
+  "created_time": "2026-06-24T03:09:00.000Z",
+  "last_edited_time": "2026-06-24T03:10:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "A defined default for the ambiguous case.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": true,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "A defined default for the ambiguous case.",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " Every router will eventually receive a query that does not fit any of its named categories. The Vela coordinator's ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " Every router will eventually receive a query that does not fit any of its named categories. The Vela coordinator's ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "hybrid",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": true,
+      "color": "default"
+     },
+     "plain_text": "hybrid",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " category is partly a genuine third category and partly a default for queries that don't clearly belong to either specialist. Naming the default (and deciding what happens to it) is part of router design.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " category is partly a genuine third category and partly a default for queries that don't clearly belong to either specialist. Naming the default (and deciding what happens to it) is part of router design.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "145a726c-d3cd-4a99-bb08-45fa5f31d3a0",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-8073-8159-dea3826e59e8"
+  },
+  "created_time": "2026-06-24T03:09:00.000Z",
+  "last_edited_time": "2026-06-24T03:10:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "No side effects.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": true,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "No side effects.",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " A router that modifies the query, adds context, or makes assumptions about what the downstream agent needs is no longer just a router. It has started doing the evaluator's job or the specialist's job. The Vela coordinator's Custom Function node exists partly for this reason: the shaping of context (adding the ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " A router that modifies the query, adds context, or makes assumptions about what the downstream agent needs is no longer just a router. It has started doing the evaluator's job or the specialist's job. The Vela coordinator's Custom Function node exists partly for this reason: the shaping of context (adding the ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "context_note",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": true,
+      "color": "default"
+     },
+     "plain_text": "context_note",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": ", stripping routing metadata) was moved out of the coordinator and into a dedicated node so the coordinator stays clean.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": ", stripping routing metadata) was moved out of the coordinator and into a dedicated node so the coordinator stays clean.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38f94183-19f3-80ac-bd18-c4483ff114be",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-8073-8159-dea3826e59e8"
+  },
+  "created_time": "2026-06-30T13:00:00.000Z",
+  "last_edited_time": "2026-06-30T13:00:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "05b94742-6cc3-47b1-8105-5ee5567193f3",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-8073-8159-dea3826e59e8"
+  },
+  "created_time": "2026-06-24T03:09:00.000Z",
+  "last_edited_time": "2026-06-24T03:10:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_4",
+  "heading_4": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "When a router is the right pattern:",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "When a router is the right pattern:",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "07f87ff2-59ea-47bf-a9c7-112b447d1ec2",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-8073-8159-dea3826e59e8"
+  },
+  "created_time": "2026-06-24T03:09:00.000Z",
+  "last_edited_time": "2026-06-24T03:09:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "The input space is divisible into clearly distinct categories",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "The input space is divisible into clearly distinct categories",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "bbfcfb8b-4992-4366-ab50-7a8c4da5fba7",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-8073-8159-dea3826e59e8"
+  },
+  "created_time": "2026-06-24T03:09:00.000Z",
+  "last_edited_time": "2026-06-24T03:09:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Different categories require genuinely different handling (different specialists, different tools, different response posture)",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Different categories require genuinely different handling (different specialists, different tools, different response posture)",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "b73c1f6a-08d5-4ea7-b390-1778c8faffc0",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-8073-8159-dea3826e59e8"
+  },
+  "created_time": "2026-06-24T03:09:00.000Z",
+  "last_edited_time": "2026-06-24T03:09:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "The routing decision itself is low-stakes \u2014 a misroute sends the query to the wrong specialist, but the specialist's boundary behaviour catches it and the query can be re-routed",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "The routing decision itself is low-stakes \u2014 a misroute sends the query to the wrong specialist, but the specialist's boundary behaviour catches it and the query can be re-routed",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38f94183-19f3-805d-9450-e250ac0baf9e",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-8073-8159-dea3826e59e8"
+  },
+  "created_time": "2026-06-30T13:00:00.000Z",
+  "last_edited_time": "2026-06-30T13:00:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "d6c28a33-ea88-4a54-b752-908781bcdf60",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-8073-8159-dea3826e59e8"
+  },
+  "created_time": "2026-06-24T03:09:00.000Z",
+  "last_edited_time": "2026-06-24T03:11:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_4",
+  "heading_4": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "When a router alone is not enough:",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "When a router alone is not enough:",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "fcb22bd9-0b4c-4950-b5c7-4986895cb86c",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-8073-8159-dea3826e59e8"
+  },
+  "created_time": "2026-06-24T03:09:00.000Z",
+  "last_edited_time": "2026-06-24T03:09:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "The categories are fuzzy and classification confidence varies significantly by input",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "The categories are fuzzy and classification confidence varies significantly by input",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "6b56b652-76df-4764-ad06-d2eec7c7f53a",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-8073-8159-dea3826e59e8"
+  },
+  "created_time": "2026-06-24T03:09:00.000Z",
+  "last_edited_time": "2026-06-24T03:09:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "A misroute has a high cost \u2014 the specialist produces a confident, authoritative-sounding but wrong answer that the client acts on",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "A misroute has a high cost \u2014 the specialist produces a confident, authoritative-sounding but wrong answer that the client acts on",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "415b6bd5-7b5e-4965-8aeb-38cc6253ddae",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-8073-8159-dea3826e59e8"
+  },
+  "created_time": "2026-06-24T03:09:00.000Z",
+  "last_edited_time": "2026-06-24T03:09:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "The input space includes queries that no defined category covers, and the default path produces poor results",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "The input space includes queries that no defined category covers, and the default path produces poor results",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "2c6792fd-7bc5-41e7-b2a3-c8ab530a9fc6",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-8073-8159-dea3826e59e8"
+  },
+  "created_time": "2026-06-24T03:09:00.000Z",
+  "last_edited_time": "2026-06-24T03:09:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "In those cases, the router needs a companion: an evaluator.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "In those cases, the router needs a companion: an evaluator.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38994183-19f3-80f9-99df-eb5750d6d19f",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-8073-8159-dea3826e59e8"
+  },
+  "created_time": "2026-06-24T03:11:00.000Z",
+  "last_edited_time": "2026-06-24T03:11:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "image",
+  "image": {
+   "caption": [],
+   "type": "file",
+   "file": {
+    "url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/3a9085c4-df29-45e6-8bc7-6c9c0a25ea8c/2c5f9207-9064-4c4a-92e7-70825ef9168e/router-pattern__01__en.svg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466TZ2LMWZN%2F20261028%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20261028T113450Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEDsaCXVzLXdlc3QtMiJGMEQCIBdxZAISyIubHYjxCBj64nnJ4pQTPhjQXXgBDqeMa9QrAiBUULfdGMBM22CvKWW536eLnVAfuzG9lRW7p2nA7DjwAir%2FAwgEEAAaDDYzNzQyMzE4MzgwNSIM4vl3jrh7tlH6jAhTKtwDeaiy2S2GmS0UwPpvpk8p%2ByO8g8n2yH7H46Cv7Lucd82b01O541BvZKwFFrezSIhTi2Xl4HAiaU8HIQgIO2Ie3yn%2FmcaNIeOiLICuxsG0ErXJmI9Dph45ogDcKmO9aC0PQNcL1nF6rEBDIDE%2BSS9tkN17saKbOi6ofzE7%2F95uLTQ02g%2BSFNqn3VrXKsSLjsfxxuU6mnuDu2zbNVJYSvNJqvYN84tZwu31OAy%2BYSfKWrvM6LDolwFyEvKmeed56UlhIP%2FkmppdNcOnQr4DQolYZTR4CZxIX9CMP7120hwHnEEu4vU%2ByddQt6L7SHmvY6KcAX915uxBMegVL53nFShXd8%2BZGWoGaR%2FuPo%2BQeQ3ZF%2FWvOPuogKhNF4dZ4zss8dB6%2FWEznDvFMZcRqrMpUmjpLl%2FKlTYiTvrBojd0cVvsxyrW1%2BugipoajTFcP4Co2T1YjFYZ9osmda91WEBC0LYWDb0xMNPPaoWEOfj3xfnlB19QwVW2a7tvPXAkuA%2FjBJJ2yLBXVB4CVULOtqAxDsxpRHkrD5alX2%2B5bkmdB6Dr7l%2FwDjwcHVCZkbNfrAO%2Fkv%2FcqgGqpJuOggEok%2BYJJ8d30hJDBTyhEL1FNHygttj5k3SZqRJRLNF1pbcxK%2F0w4aWH1wY6pgF1EqVVMyWveco989UDa6AOSrbLCjFvTVVVG5JIc2Z1KVE%2BjtKm5EL0%2B6uqOQpwmze2VhQ%2BONUsVcYM40%2BHmP5gey3iUGWGl5tIxQ15Vcs%2F3e%2BRznUU6JDAulKQeIg3J2or8%2F6GWduHVIcl4p%2Bpm93D6cqbd18VTD2iCsWoJJ6BP2h6xCq%2F4mm4DyHI19MAC3WICzOHCapDMkZckp269drKv9%2Fd1iHO&X-Amz-Signature=d950fb46e8207fe26c4b09a2e9191923fea054e291dd60f0a19802b0d11b1228&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+    "expiry_time": "2026-10-28T12:34:50.073Z"
+   }
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38f94183-19f3-80f6-9440-d819274fd464",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-8073-8159-dea3826e59e8"
+  },
+  "created_time": "2026-06-30T13:00:00.000Z",
+  "last_edited_time": "2026-06-30T13:00:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "05d7daa2-e21c-4fcf-974d-bfdc04fc17ca",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-8073-8159-dea3826e59e8"
+  },
+  "created_time": "2026-06-24T03:09:00.000Z",
+  "last_edited_time": "2026-06-24T03:09:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_2",
+  "heading_2": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "The evaluator pattern",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "The evaluator pattern",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "83128fd6-1c29-4e77-9609-7b8212391bf1",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-8073-8159-dea3826e59e8"
+  },
+  "created_time": "2026-06-24T03:09:00.000Z",
+  "last_edited_time": "2026-06-24T03:09:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "An evaluator is a node whose job is to assess the quality of another node's output before deciding what to do with it. It does not answer the user's query. It does not route the input. It reads an output that has already been produced and makes a judgment: is this good enough to pass on, or does it need to be revised, re-routed, or flagged?",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "An evaluator is a node whose job is to assess the quality of another node's output before deciding what to do with it. It does not answer the user's query. It does not route the input. It reads an output that has already been produced and makes a judgment: is this good enough to pass on, or does it need to be revised, re-routed, or flagged?",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "9bbc034d-f58c-4c3a-a230-7d76712980b7",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-8073-8159-dea3826e59e8"
+  },
+  "created_time": "2026-06-24T03:09:00.000Z",
+  "last_edited_time": "2026-06-24T03:12:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "The confidence signal added to the Vela coordinator in the previous lesson is a primitive evaluator because the coordinator is assessing its own classification confidence before committing to a routing decision. But a proper evaluator is a separate node, downstream from the agent it is evaluating, with its own instructions and its own decision logic.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "The confidence signal added to the Vela coordinator in the previous lesson is a primitive evaluator because the coordinator is assessing its own classification confidence before committing to a routing decision. But a proper evaluator is a separate node, downstream from the agent it is evaluating, with its own instructions and its own decision logic.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38994183-19f3-804e-9d6d-c1d249bb81de",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-8073-8159-dea3826e59e8"
+  },
+  "created_time": "2026-06-24T03:12:00.000Z",
+  "last_edited_time": "2026-06-24T03:12:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "callout",
+  "callout": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "An example:",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "An example:",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " after the Vela Commercial Agent produces a response, an evaluator node reads the response and checks two things: does the response stay within the Commercial Agent's defined responsibility (pricing, contracts, billing, renewal), and does it contain anything that should not appear in a client-facing response (internal account flags, system error codes, routing metadata)? If both checks pass, the evaluator sends the response to the End node. If either check fails, the evaluator can re-route to the Hybrid Handler, request a revised response, or trigger a graceful degradation response.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " after the Vela Commercial Agent produces a response, an evaluator node reads the response and checks two things: does the response stay within the Commercial Agent's defined responsibility (pricing, contracts, billing, renewal), and does it contain anything that should not appear in a client-facing response (internal account flags, system error codes, routing metadata)? If both checks pass, the evaluator sends the response to the End node. If either check fails, the evaluator can re-route to the Hybrid Handler, request a revised response, or trigger a graceful degradation response.",
+     "href": null
+    }
+   ],
+   "icon": {
+    "type": "emoji",
+    "emoji": "\u27a1\ufe0f"
+   },
+   "color": "gray_background"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38f94183-19f3-8012-9421-df6196cb1f98",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-8073-8159-dea3826e59e8"
+  },
+  "created_time": "2026-06-30T13:00:00.000Z",
+  "last_edited_time": "2026-06-30T13:00:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "966e9845-c264-47fb-ba00-24ace210efe8",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-8073-8159-dea3826e59e8"
+  },
+  "created_time": "2026-06-24T03:09:00.000Z",
+  "last_edited_time": "2026-06-24T03:12:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_4",
+  "heading_4": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "What an evaluator needs to work well:",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "What an evaluator needs to work well:",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "9fc02d19-c47d-44d8-839d-f57bd604d60b",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-8073-8159-dea3826e59e8"
+  },
+  "created_time": "2026-06-24T03:09:00.000Z",
+  "last_edited_time": "2026-06-24T03:17:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "A specific, testable criterion.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": true,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "A specific, testable criterion.",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " An evaluator that checks \"is this a good response?\" will fail; \"good\" is not testable. An evaluator that checks \"does this response contain any of the following patterns: [list] yes or no\" can be tested and will produce consistent results.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " An evaluator that checks \"is this a good response?\" will fail; \"good\" is not testable. An evaluator that checks \"does this response contain any of the following patterns: [list] yes or no\" can be tested and will produce consistent results.",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "2f38b095-d773-49d9-92c0-6e6d0f7c42c9",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-8073-8159-dea3826e59e8"
+  },
+  "created_time": "2026-06-24T03:09:00.000Z",
+  "last_edited_time": "2026-06-24T03:17:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "A clear action for each verdict.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": true,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "A clear action for each verdict.",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " The evaluator's job is not complete when it produces a verdict. It needs to do something with the verdict: pass the output forward, send it back for revision, route to a fallback, or flag for human review. An evaluator without a defined action for its failure case is not a fallback strategy. It is a quality check with no consequence.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " The evaluator's job is not complete when it produces a verdict. It needs to do something with the verdict: pass the output forward, send it back for revision, route to a fallback, or flag for human review. An evaluator without a defined action for its failure case is not a fallback strategy. It is a quality check with no consequence.",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "14482948-2c12-4f14-8d89-a587a1e733fa",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-8073-8159-dea3826e59e8"
+  },
+  "created_time": "2026-06-24T03:09:00.000Z",
+  "last_edited_time": "2026-06-24T03:17:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Its own failure mode considered.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": true,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Its own failure mode considered.",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " An evaluator is an LLM node, which means it can give wrong verdicts, time out, or return malformed output. A multi-agent system with an evaluator that itself fails silently is more complex and no more reliable than one without an evaluator. The evaluator needs its own fallback; typically a conservative one: if the evaluator cannot produce a verdict, treat the output as failed and route to the fallback path.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " An evaluator is an LLM node, which means it can give wrong verdicts, time out, or return malformed output. A multi-agent system with an evaluator that itself fails silently is more complex and no more reliable than one without an evaluator. The evaluator needs its own fallback; typically a conservative one: if the evaluator cannot produce a verdict, treat the output as failed and route to the fallback path.",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38f94183-19f3-8052-a37c-f0e3930465b0",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-8073-8159-dea3826e59e8"
+  },
+  "created_time": "2026-06-30T13:00:00.000Z",
+  "last_edited_time": "2026-06-30T13:00:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "2126bf35-8ac0-4ada-b85e-aebf5dc263b2",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-8073-8159-dea3826e59e8"
+  },
+  "created_time": "2026-06-24T03:09:00.000Z",
+  "last_edited_time": "2026-06-24T03:12:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_3",
+  "heading_3": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "When an evaluator is the right pattern:",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "When an evaluator is the right pattern:",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "94899fdf-5782-44a1-b4e8-09dda583b298",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-8073-8159-dea3826e59e8"
+  },
+  "created_time": "2026-06-24T03:09:00.000Z",
+  "last_edited_time": "2026-06-24T03:09:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "The quality of a specialist's output is variable and unpredictable",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "The quality of a specialist's output is variable and unpredictable",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "739e8660-756e-4782-8f6f-c86b464a9217",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-8073-8159-dea3826e59e8"
+  },
+  "created_time": "2026-06-24T03:09:00.000Z",
+  "last_edited_time": "2026-06-24T03:09:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "A wrong output reaching the client has a high cost (reputation, trust, compliance)",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "A wrong output reaching the client has a high cost (reputation, trust, compliance)",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "4b4f26b4-8d36-4e8c-a33d-a61ae797b08e",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-8073-8159-dea3826e59e8"
+  },
+  "created_time": "2026-06-24T03:09:00.000Z",
+  "last_edited_time": "2026-06-24T03:09:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "The checks that define quality are specific enough to be encoded in an evaluator prompt",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "The checks that define quality are specific enough to be encoded in an evaluator prompt",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "e76a730b-8f09-4381-a621-85a20f0d2173",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-8073-8159-dea3826e59e8"
+  },
+  "created_time": "2026-06-24T03:09:00.000Z",
+  "last_edited_time": "2026-06-24T03:09:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "The added LLM call cost and latency are acceptable given the stakes",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "The added LLM call cost and latency are acceptable given the stakes",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38f94183-19f3-8059-9b92-e2105de4615f",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-8073-8159-dea3826e59e8"
+  },
+  "created_time": "2026-06-30T13:00:00.000Z",
+  "last_edited_time": "2026-06-30T13:00:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "855a3829-a89d-49ba-9bef-e8535676dbc1",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-8073-8159-dea3826e59e8"
+  },
+  "created_time": "2026-06-24T03:09:00.000Z",
+  "last_edited_time": "2026-06-24T03:12:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_3",
+  "heading_3": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "When an evaluator adds complexity without benefit:",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "When an evaluator adds complexity without benefit:",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "6078fa0f-8cab-4171-89a9-da519b29f3a7",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-8073-8159-dea3826e59e8"
+  },
+  "created_time": "2026-06-24T03:09:00.000Z",
+  "last_edited_time": "2026-06-24T03:09:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "The specialist's output quality is already high and consistent",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "The specialist's output quality is already high and consistent",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "4d192a1b-769f-4028-aad0-dab7df701d12",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-8073-8159-dea3826e59e8"
+  },
+  "created_time": "2026-06-24T03:09:00.000Z",
+  "last_edited_time": "2026-06-24T03:09:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "The quality criteria are too vague to encode reliably",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "The quality criteria are too vague to encode reliably",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "ffc79074-0f6a-4f8d-a3ce-dbd5c9f91440",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-8073-8159-dea3826e59e8"
+  },
+  "created_time": "2026-06-24T03:09:00.000Z",
+  "last_edited_time": "2026-06-24T03:09:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "The evaluator introduces more failure modes than it prevents",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "The evaluator introduces more failure modes than it prevents",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "724d3f7e-90c0-42b3-87aa-f2f0029d9558",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-8073-8159-dea3826e59e8"
+  },
+  "created_time": "2026-06-24T03:09:00.000Z",
+  "last_edited_time": "2026-06-24T03:09:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "The added latency is unacceptable for the use case",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "The added latency is unacceptable for the use case",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "0888ad7b-05f5-4aa7-be07-e9b794accad2",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-8073-8159-dea3826e59e8"
+  },
+  "created_time": "2026-06-24T03:09:00.000Z",
+  "last_edited_time": "2026-06-24T03:13:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": true,
+  "in_trash": false,
+  "type": "table",
+  "table": {
+   "table_width": 3,
+   "has_column_header": true,
+   "has_row_header": false
+  },
+  "archived": false,
+  "_children": [
+   {
+    "object": "block",
+    "id": "18e82007-b3b6-4e16-9628-14f30ec418a2",
+    "parent": {
+     "type": "block_id",
+     "block_id": "0888ad7b-05f5-4aa7-be07-e9b794accad2"
+    },
+    "created_time": "2026-06-24T03:09:00.000Z",
+    "last_edited_time": "2026-06-24T03:09:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "231d872b-594c-81f2-a375-0002b8783aca"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "231d872b-594c-81f2-a375-0002b8783aca"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "table_row",
+    "table_row": {
+     "cells": [
+      [],
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Router",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Router",
+        "href": null
+       }
+      ],
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Evaluator",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Evaluator",
+        "href": null
+       }
+      ]
+     ]
+    },
+    "archived": false
+   },
+   {
+    "object": "block",
+    "id": "42a496ca-43c1-4e1a-ad23-deb9c3c1cf1f",
+    "parent": {
+     "type": "block_id",
+     "block_id": "0888ad7b-05f5-4aa7-be07-e9b794accad2"
+    },
+    "created_time": "2026-06-24T03:09:00.000Z",
+    "last_edited_time": "2026-06-24T03:09:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "231d872b-594c-81f2-a375-0002b8783aca"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "231d872b-594c-81f2-a375-0002b8783aca"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "table_row",
+    "table_row": {
+     "cells": [
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Question it answers",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Question it answers",
+        "href": null
+       }
+      ],
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Where should this input go?",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Where should this input go?",
+        "href": null
+       }
+      ],
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Is this output good enough to pass on?",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Is this output good enough to pass on?",
+        "href": null
+       }
+      ]
+     ]
+    },
+    "archived": false
+   },
+   {
+    "object": "block",
+    "id": "1e82b5da-1f21-4dbe-8717-c007e67017e2",
+    "parent": {
+     "type": "block_id",
+     "block_id": "0888ad7b-05f5-4aa7-be07-e9b794accad2"
+    },
+    "created_time": "2026-06-24T03:09:00.000Z",
+    "last_edited_time": "2026-06-24T03:09:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "231d872b-594c-81f2-a375-0002b8783aca"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "231d872b-594c-81f2-a375-0002b8783aca"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "table_row",
+    "table_row": {
+     "cells": [
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Reads",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Reads",
+        "href": null
+       }
+      ],
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "The input (the user's query)",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "The input (the user's query)",
+        "href": null
+       }
+      ],
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "The output (a specialist's response)",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "The output (a specialist's response)",
+        "href": null
+       }
+      ]
+     ]
+    },
+    "archived": false
+   },
+   {
+    "object": "block",
+    "id": "0b7cdda6-7f8f-4ed5-804e-05ee840b1313",
+    "parent": {
+     "type": "block_id",
+     "block_id": "0888ad7b-05f5-4aa7-be07-e9b794accad2"
+    },
+    "created_time": "2026-06-24T03:09:00.000Z",
+    "last_edited_time": "2026-06-24T03:09:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "231d872b-594c-81f2-a375-0002b8783aca"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "231d872b-594c-81f2-a375-0002b8783aca"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "table_row",
+    "table_row": {
+     "cells": [
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Position in flow",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Position in flow",
+        "href": null
+       }
+      ],
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Before the specialist",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Before the specialist",
+        "href": null
+       }
+      ],
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "After the specialist",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "After the specialist",
+        "href": null
+       }
+      ]
+     ]
+    },
+    "archived": false
+   },
+   {
+    "object": "block",
+    "id": "c3793c5d-88c8-492e-9118-1c81b498d992",
+    "parent": {
+     "type": "block_id",
+     "block_id": "0888ad7b-05f5-4aa7-be07-e9b794accad2"
+    },
+    "created_time": "2026-06-24T03:09:00.000Z",
+    "last_edited_time": "2026-06-24T03:13:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "231d872b-594c-81f2-a375-0002b8783aca"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "231d872b-594c-81f2-a375-0002b8783aca"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "table_row",
+    "table_row": {
+     "cells": [
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Failure mode",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Failure mode",
+        "href": null
+       }
+      ],
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Misroute; input goes to wrong handler",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Misroute; input goes to wrong handler",
+        "href": null
+       }
+      ],
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "False pass; bad output cleared; false fail; good output rejected",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "False pass; bad output cleared; false fail; good output rejected",
+        "href": null
+       }
+      ]
+     ]
+    },
+    "archived": false
+   },
+   {
+    "object": "block",
+    "id": "2658fda7-c955-4e11-81e8-f9c36cc3ef15",
+    "parent": {
+     "type": "block_id",
+     "block_id": "0888ad7b-05f5-4aa7-be07-e9b794accad2"
+    },
+    "created_time": "2026-06-24T03:09:00.000Z",
+    "last_edited_time": "2026-06-24T03:09:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "231d872b-594c-81f2-a375-0002b8783aca"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "231d872b-594c-81f2-a375-0002b8783aca"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "table_row",
+    "table_row": {
+     "cells": [
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Cost",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Cost",
+        "href": null
+       }
+      ],
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "One additional LLM call at the start",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "One additional LLM call at the start",
+        "href": null
+       }
+      ],
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "One additional LLM call at the end",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "One additional LLM call at the end",
+        "href": null
+       }
+      ]
+     ]
+    },
+    "archived": false
+   },
+   {
+    "object": "block",
+    "id": "fe5f6fdb-855e-4b88-8e8b-281320fd36fc",
+    "parent": {
+     "type": "block_id",
+     "block_id": "0888ad7b-05f5-4aa7-be07-e9b794accad2"
+    },
+    "created_time": "2026-06-24T03:09:00.000Z",
+    "last_edited_time": "2026-06-24T03:09:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "231d872b-594c-81f2-a375-0002b8783aca"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "231d872b-594c-81f2-a375-0002b8783aca"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "table_row",
+    "table_row": {
+     "cells": [
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "When to add",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "When to add",
+        "href": null
+       }
+      ],
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Categories are distinct; routing error is recoverable",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Categories are distinct; routing error is recoverable",
+        "href": null
+       }
+      ],
+      [
+       {
+        "type": "text",
+        "text": {
+         "content": "Output quality is variable; quality failure is costly",
+         "link": null
+        },
+        "annotations": {
+         "bold": false,
+         "italic": false,
+         "strikethrough": false,
+         "underline": false,
+         "code": false,
+         "color": "default"
+        },
+        "plain_text": "Output quality is variable; quality failure is costly",
+        "href": null
+       }
+      ]
+     ]
+    },
+    "archived": false
+   }
+  ]
+ },
+ {
+  "object": "block",
+  "id": "38994183-19f3-805f-a41e-c4bb27b2bfea",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-8073-8159-dea3826e59e8"
+  },
+  "created_time": "2026-06-24T03:17:00.000Z",
+  "last_edited_time": "2026-06-24T03:17:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "image",
+  "image": {
+   "caption": [],
+   "type": "file",
+   "file": {
+    "url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/3a9085c4-df29-45e6-8bc7-6c9c0a25ea8c/0ebb5cf9-81f8-456a-a9a0-6fc862e051a8/evaluator-pattern__01__en.svg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466TZ2LMWZN%2F20261028%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20261028T113450Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEDsaCXVzLXdlc3QtMiJGMEQCIBdxZAISyIubHYjxCBj64nnJ4pQTPhjQXXgBDqeMa9QrAiBUULfdGMBM22CvKWW536eLnVAfuzG9lRW7p2nA7DjwAir%2FAwgEEAAaDDYzNzQyMzE4MzgwNSIM4vl3jrh7tlH6jAhTKtwDeaiy2S2GmS0UwPpvpk8p%2ByO8g8n2yH7H46Cv7Lucd82b01O541BvZKwFFrezSIhTi2Xl4HAiaU8HIQgIO2Ie3yn%2FmcaNIeOiLICuxsG0ErXJmI9Dph45ogDcKmO9aC0PQNcL1nF6rEBDIDE%2BSS9tkN17saKbOi6ofzE7%2F95uLTQ02g%2BSFNqn3VrXKsSLjsfxxuU6mnuDu2zbNVJYSvNJqvYN84tZwu31OAy%2BYSfKWrvM6LDolwFyEvKmeed56UlhIP%2FkmppdNcOnQr4DQolYZTR4CZxIX9CMP7120hwHnEEu4vU%2ByddQt6L7SHmvY6KcAX915uxBMegVL53nFShXd8%2BZGWoGaR%2FuPo%2BQeQ3ZF%2FWvOPuogKhNF4dZ4zss8dB6%2FWEznDvFMZcRqrMpUmjpLl%2FKlTYiTvrBojd0cVvsxyrW1%2BugipoajTFcP4Co2T1YjFYZ9osmda91WEBC0LYWDb0xMNPPaoWEOfj3xfnlB19QwVW2a7tvPXAkuA%2FjBJJ2yLBXVB4CVULOtqAxDsxpRHkrD5alX2%2B5bkmdB6Dr7l%2FwDjwcHVCZkbNfrAO%2Fkv%2FcqgGqpJuOggEok%2BYJJ8d30hJDBTyhEL1FNHygttj5k3SZqRJRLNF1pbcxK%2F0w4aWH1wY6pgF1EqVVMyWveco989UDa6AOSrbLCjFvTVVVG5JIc2Z1KVE%2BjtKm5EL0%2B6uqOQpwmze2VhQ%2BONUsVcYM40%2BHmP5gey3iUGWGl5tIxQ15Vcs%2F3e%2BRznUU6JDAulKQeIg3J2or8%2F6GWduHVIcl4p%2Bpm93D6cqbd18VTD2iCsWoJJ6BP2h6xCq%2F4mm4DyHI19MAC3WICzOHCapDMkZckp269drKv9%2Fd1iHO&X-Amz-Signature=8df8ac2fcc7e221c22b976a98632461a840ba92aec1d4a7a08f2ad8e0b546164&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+    "expiry_time": "2026-10-28T12:34:50.110Z"
+   }
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38f94183-19f3-80d8-9d24-fc0e60bc178b",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-8073-8159-dea3826e59e8"
+  },
+  "created_time": "2026-06-30T13:00:00.000Z",
+  "last_edited_time": "2026-06-30T13:00:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "0b1cf15d-2c2e-48c0-8488-4ea1477a8b36",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-8073-8159-dea3826e59e8"
+  },
+  "created_time": "2026-06-24T03:09:00.000Z",
+  "last_edited_time": "2026-06-24T03:09:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_2",
+  "heading_2": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Router and evaluator together",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Router and evaluator together",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "cfe07a0e-4abd-46b5-bcad-1b33eb1731d1",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-8073-8159-dea3826e59e8"
+  },
+  "created_time": "2026-06-24T03:09:00.000Z",
+  "last_edited_time": "2026-06-24T03:09:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "The two patterns are not mutually exclusive. A mature multi-agent system often has both: a router at the front that directs inputs to the right specialist, and an evaluator at the back that checks the specialist's output before it reaches the client.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "The two patterns are not mutually exclusive. A mature multi-agent system often has both: a router at the front that directs inputs to the right specialist, and an evaluator at the back that checks the specialist's output before it reaches the client.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "8705d992-b3b4-4088-a966-c9ae13311a27",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-8073-8159-dea3826e59e8"
+  },
+  "created_time": "2026-06-24T03:09:00.000Z",
+  "last_edited_time": "2026-06-24T03:09:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "The Vela system as built in the previous lesson has a router (the coordinator and condition node) but no evaluator. That is the right starting point \u2014 adding an evaluator before the router is working reliably introduces complexity without the data to calibrate it. The typical progression is:",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "The Vela system as built in the previous lesson has a router (the coordinator and condition node) but no evaluator. That is the right starting point \u2014 adding an evaluator before the router is working reliably introduces complexity without the data to calibrate it. The typical progression is:",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "20520f1b-95b6-498d-bbab-b2eae133064a",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-8073-8159-dea3826e59e8"
+  },
+  "created_time": "2026-06-24T03:09:00.000Z",
+  "last_edited_time": "2026-06-24T03:09:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "numbered_list_item",
+  "numbered_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Build the router. Test it against a representative sample of inputs. Measure misroute rate.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Build the router. Test it against a representative sample of inputs. Measure misroute rate.",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "db3f0854-689a-4d82-be41-0ce413cdd3df",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-8073-8159-dea3826e59e8"
+  },
+  "created_time": "2026-06-24T03:09:00.000Z",
+  "last_edited_time": "2026-06-24T03:09:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "numbered_list_item",
+  "numbered_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "If misroute rate is acceptable, ship without an evaluator \u2014 the boundary behaviour in each specialist handles edge cases.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "If misroute rate is acceptable, ship without an evaluator \u2014 the boundary behaviour in each specialist handles edge cases.",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "4da4600e-3891-43e9-a687-1c1a1958bad4",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-8073-8159-dea3826e59e8"
+  },
+  "created_time": "2026-06-24T03:09:00.000Z",
+  "last_edited_time": "2026-06-24T03:09:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "numbered_list_item",
+  "numbered_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "If output quality is variable after correct routing, add an evaluator downstream of the specialist with the highest quality variance.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "If output quality is variable after correct routing, add an evaluator downstream of the specialist with the highest quality variance.",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "19373176-483f-42ff-a0cd-3a9c6cc5a25c",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-8073-8159-dea3826e59e8"
+  },
+  "created_time": "2026-06-24T03:09:00.000Z",
+  "last_edited_time": "2026-06-29T08:04:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "37c94183-19f3-81a8-88c7-002741ff0f4c"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "numbered_list_item",
+  "numbered_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "If routing confidence is consistently low for a query type, add a confidence evaluator upstream (before the specialist) \u2014 which is what the confidence signal introduced in the previous lesson was approximating.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "If routing confidence is consistently low for a query type, add a confidence evaluator upstream (before the specialist) \u2014 which is what the confidence signal introduced in the previous lesson was approximating.",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38f94183-19f3-8096-be77-d2838873c589",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-8073-8159-dea3826e59e8"
+  },
+  "created_time": "2026-06-30T13:00:00.000Z",
+  "last_edited_time": "2026-06-30T13:00:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "97e5621a-8534-40ba-828c-0eb288fe6036",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-8073-8159-dea3826e59e8"
+  },
+  "created_time": "2026-06-24T03:09:00.000Z",
+  "last_edited_time": "2026-06-24T03:13:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_4",
+  "heading_4": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "The combined pattern in practice:",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "The combined pattern in practice:",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "bea0350b-5ab6-47ac-9389-93d340ebfa0d",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-8073-8159-dea3826e59e8"
+  },
+  "created_time": "2026-06-24T03:09:00.000Z",
+  "last_edited_time": "2026-06-24T03:14:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "For the Vela system, if the team decides to add an evaluator, the most valuable placement would be after the Commercial Agent (not the Technical Agent, and not the Hybrid Handler). Here is why: the Commercial Agent's domain (pricing, contracts, billing) contains information that can do real business harm if stated incorrectly to a client. A wrong technical answer about API behaviour is recoverable. The client can test it and find out it was wrong. A wrong pricing answer or a misquoted contract term may be acted on by the client before it is corrected. High consequence of quality failure = evaluator earns its cost.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "For the Vela system, if the team decides to add an evaluator, the most valuable placement would be after the Commercial Agent (not the Technical Agent, and not the Hybrid Handler). Here is why: the Commercial Agent's domain (pricing, contracts, billing) contains information that can do real business harm if stated incorrectly to a client. A wrong technical answer about API behaviour is recoverable. The client can test it and find out it was wrong. A wrong pricing answer or a misquoted contract term may be acted on by the client before it is corrected. High consequence of quality failure = evaluator earns its cost.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38f94183-19f3-8050-9bf9-cd878fc52e69",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-8073-8159-dea3826e59e8"
+  },
+  "created_time": "2026-06-30T13:00:00.000Z",
+  "last_edited_time": "2026-06-30T13:00:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "d25c19fe-40b6-43a8-bf1d-d709b299cfae",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-8073-8159-dea3826e59e8"
+  },
+  "created_time": "2026-06-24T03:09:00.000Z",
+  "last_edited_time": "2026-06-24T03:09:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_2",
+  "heading_2": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Choosing between the patterns",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Choosing between the patterns",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "9dbe0834-9bcb-465f-9b10-7188660f8b31",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-8073-8159-dea3826e59e8"
+  },
+  "created_time": "2026-06-24T03:09:00.000Z",
+  "last_edited_time": "2026-06-24T03:14:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "The most common mistake in multi-agent design is adding both patterns reflexively; treating router and evaluator as a standard architecture that all multi-agent systems need. They are not. Each adds an LLM call, latency, and a new failure surface. The question is always whether the benefit in reliability or quality justifies those costs in the specific system.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "The most common mistake in multi-agent design is adding both patterns reflexively; treating router and evaluator as a standard architecture that all multi-agent systems need. They are not. Each adds an LLM call, latency, and a new failure surface. The question is always whether the benefit in reliability or quality justifies those costs in the specific system.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "be0ae591-5b7c-4693-93cd-ce2f43ede701",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-8073-8159-dea3826e59e8"
+  },
+  "created_time": "2026-06-24T03:09:00.000Z",
+  "last_edited_time": "2026-06-24T03:09:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Use this as a rough decision guide:",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Use this as a rough decision guide:",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "ad95d40b-1afa-4bf3-804c-ee7c099a03d7",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-8073-8159-dea3826e59e8"
+  },
+  "created_time": "2026-06-24T03:09:00.000Z",
+  "last_edited_time": "2026-06-24T03:14:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Add a router when",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Add a router when",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " the input space has clearly distinct categories that require different handling, and a single agent handling all of them would be overloaded.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " the input space has clearly distinct categories that require different handling, and a single agent handling all of them would be overloaded.",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "8bd25e58-33da-4778-a6a5-6fe145f1b230",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-8073-8159-dea3826e59e8"
+  },
+  "created_time": "2026-06-24T03:09:00.000Z",
+  "last_edited_time": "2026-06-24T03:14:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Add an evaluator when",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Add an evaluator when",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " output quality is variable after routing, and the cost of a quality failure reaching the client is high enough to justify an additional LLM call and latency.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " output quality is variable after routing, and the cost of a quality failure reaching the client is high enough to justify an additional LLM call and latency.",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "fdea9e57-0aff-4c6c-9cab-74e43f255fd4",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-8073-8159-dea3826e59e8"
+  },
+  "created_time": "2026-06-24T03:09:00.000Z",
+  "last_edited_time": "2026-06-24T03:14:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Add both when",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Add both when",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " the input space is diverse and routing errors are common ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " the input space is diverse and routing errors are common ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "and",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": true,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "and",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " output quality from correctly-routed specialists is still variable. This is the most complex configuration and should only be built once the simpler configurations have been tested and found insufficient.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " output quality from correctly-routed specialists is still variable. This is the most complex configuration and should only be built once the simpler configurations have been tested and found insufficient.",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "ed17123d-5861-421e-a210-0ff1ddaf93c2",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-8073-8159-dea3826e59e8"
+  },
+  "created_time": "2026-06-24T03:09:00.000Z",
+  "last_edited_time": "2026-06-24T03:14:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "bulleted_list_item",
+  "bulleted_list_item": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Add neither when",
+      "link": null
+     },
+     "annotations": {
+      "bold": true,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Add neither when",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " a single, well-specified agent handles the full input space with acceptable quality. Adding routing and evaluation to a system that doesn't need them produces complexity without benefit. The precise mistake the Vela team avoided by evaluating multi-agent complexity before building.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " a single, well-specified agent handles the full input space with acceptable quality. Adding routing and evaluation to a system that doesn't need them produces complexity without benefit. The precise mistake the Vela team avoided by evaluating multi-agent complexity before building.",
+     "href": null
+    }
+   ],
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38f94183-19f3-8084-b95d-c5a35e84868a",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-8073-8159-dea3826e59e8"
+  },
+  "created_time": "2026-06-30T13:00:00.000Z",
+  "last_edited_time": "2026-06-30T13:00:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "f3d3f3af-166f-4fad-8c62-e249c5b99c89",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-8073-8159-dea3826e59e8"
+  },
+  "created_time": "2026-06-24T03:09:00.000Z",
+  "last_edited_time": "2026-06-24T03:09:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_2",
+  "heading_2": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Summary",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Summary",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "ebc9e736-15ce-49d6-bacc-9f7c02271319",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-8073-8159-dea3826e59e8"
+  },
+  "created_time": "2026-06-24T03:09:00.000Z",
+  "last_edited_time": "2026-06-24T03:09:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Two patterns, two questions, two positions in the flow. A router sits before the work and answers: ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Two patterns, two questions, two positions in the flow. A router sits before the work and answers: ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "where does this input belong?",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": true,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "where does this input belong?",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " An evaluator sits after the work and answers: ",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " An evaluator sits after the work and answers: ",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": "is this output good enough to deliver?",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": true,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "is this output good enough to deliver?",
+     "href": null
+    },
+    {
+     "type": "text",
+     "text": {
+      "content": " Both add LLM calls and latency; neither should be added without a specific, testable reason.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": " Both add LLM calls and latency; neither should be added without a specific, testable reason.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "55157591-11e8-404c-bb34-5760baf7ff39",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-8073-8159-dea3826e59e8"
+  },
+  "created_time": "2026-06-24T03:09:00.000Z",
+  "last_edited_time": "2026-06-24T03:14:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "The Vela system has a router. The team now has the vocabulary, the decision framework to decide whether it needs an evaluator and where to place one if it does. That decision belongs with the Sprint 2 assessment: designing the full multi-agent architecture for the project agent, with agent roles, responsibilities, coordination approach, and the patterns that hold the system together when inputs are ambiguous or outputs fall short.",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "The Vela system has a router. The team now has the vocabulary, the decision framework to decide whether it needs an evaluator and where to place one if it does. That decision belongs with the Sprint 2 assessment: designing the full multi-agent architecture for the project agent, with agent roles, responsibilities, coordination approach, and the patterns that hold the system together when inputs are ambiguous or outputs fall short.",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "38f94183-19f3-80d6-a47a-cd805d8354e3",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-8073-8159-dea3826e59e8"
+  },
+  "created_time": "2026-06-30T13:00:00.000Z",
+  "last_edited_time": "2026-06-30T13:00:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "635677da-ceaa-4ac3-828b-61f396393ab4",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-8073-8159-dea3826e59e8"
+  },
+  "created_time": "2026-06-24T03:09:00.000Z",
+  "last_edited_time": "2026-06-24T03:09:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_2",
+  "heading_2": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Quiz",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Quiz",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "7bde8258-f7f9-4086-91c4-59b60df12bde",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-8073-8159-dea3826e59e8"
+  },
+  "created_time": "2026-06-24T03:09:00.000Z",
+  "last_edited_time": "2026-06-24T03:09:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_3",
+  "heading_3": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Question 1",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Question 1",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "39494183-19f3-80dc-9159-c7cb159c81fe",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-8073-8159-dea3826e59e8"
+  },
+  "created_time": "2026-07-05T12:51:00.000Z",
+  "last_edited_time": "2026-07-05T12:51:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": true,
+  "in_trash": false,
+  "type": "callout",
+  "callout": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "The Vela team adds a new node after the Technical Agent that reads the Technical Agent's response and checks whether it contains any internal system error codes that should not appear in a client-facing message. If it finds one, it removes the error code and replaces it with a plain-language explanation before passing the response to the End node. What pattern does this node implement?",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "The Vela team adds a new node after the Technical Agent that reads the Technical Agent's response and checks whether it contains any internal system error codes that should not appear in a client-facing message. If it finds one, it removes the error code and replaces it with a plain-language explanation before passing the response to the End node. What pattern does this node implement?",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "gray_background"
+  },
+  "archived": false,
+  "_children": [
+   {
+    "object": "block",
+    "id": "39494183-19f3-807a-840b-f9a14c566597",
+    "parent": {
+     "type": "block_id",
+     "block_id": "39494183-19f3-80dc-9159-c7cb159c81fe"
+    },
+    "created_time": "2026-07-05T12:51:00.000Z",
+    "last_edited_time": "2026-07-05T12:51:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "embed",
+    "embed": {
+     "caption": [],
+     "url": "https://app.masterschool.com/campus/multi-choice-question/ef412d00-227e-4ac7-a23e-de4a5248b89c"
+    },
+    "archived": false
+   }
+  ]
+ },
+ {
+  "object": "block",
+  "id": "38f94183-19f3-8027-8bd1-e62c2cb82906",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-8073-8159-dea3826e59e8"
+  },
+  "created_time": "2026-06-30T13:00:00.000Z",
+  "last_edited_time": "2026-06-30T13:00:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "paragraph",
+  "paragraph": {
+   "rich_text": [],
+   "icon": null,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "6584149f-c792-41cd-a4e1-b68e7a8a2a3b",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-8073-8159-dea3826e59e8"
+  },
+  "created_time": "2026-06-24T03:09:00.000Z",
+  "last_edited_time": "2026-06-24T03:09:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "231d872b-594c-81f2-a375-0002b8783aca"
+  },
+  "has_children": false,
+  "in_trash": false,
+  "type": "heading_3",
+  "heading_3": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "Question 2",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "Question 2",
+     "href": null
+    }
+   ],
+   "is_toggleable": false,
+   "color": "default"
+  },
+  "archived": false
+ },
+ {
+  "object": "block",
+  "id": "39494183-19f3-8003-ab81-fab91d081d53",
+  "parent": {
+   "type": "page_id",
+   "page_id": "38494183-19f3-8073-8159-dea3826e59e8"
+  },
+  "created_time": "2026-07-05T12:52:00.000Z",
+  "last_edited_time": "2026-07-05T12:52:00.000Z",
+  "created_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "last_edited_by": {
+   "object": "user",
+   "id": "114d872b-594c-8174-9474-0002954cf668"
+  },
+  "has_children": true,
+  "in_trash": false,
+  "type": "callout",
+  "callout": {
+   "rich_text": [
+    {
+     "type": "text",
+     "text": {
+      "content": "After two weeks in production, the Vela team reviews their data. The coordinator is misrouting about 4% of queries \u2014 mostly edge cases that mention both pricing and technical symptoms in the same message. The Commercial Agent and Technical Agent are both handling their correctly-routed queries well, with high client satisfaction scores. Which addition to the system is most justified by this data?",
+      "link": null
+     },
+     "annotations": {
+      "bold": false,
+      "italic": false,
+      "strikethrough": false,
+      "underline": false,
+      "code": false,
+      "color": "default"
+     },
+     "plain_text": "After two weeks in production, the Vela team reviews their data. The coordinator is misrouting about 4% of queries \u2014 mostly edge cases that mention both pricing and technical symptoms in the same message. The Commercial Agent and Technical Agent are both handling their correctly-routed queries well, with high client satisfaction scores. Which addition to the system is most justified by this data?",
+     "href": null
+    }
+   ],
+   "icon": null,
+   "color": "gray_background"
+  },
+  "archived": false,
+  "_children": [
+   {
+    "object": "block",
+    "id": "39494183-19f3-8023-8dde-d7fa5e22e9d5",
+    "parent": {
+     "type": "block_id",
+     "block_id": "39494183-19f3-8003-ab81-fab91d081d53"
+    },
+    "created_time": "2026-07-05T12:52:00.000Z",
+    "last_edited_time": "2026-07-05T12:52:00.000Z",
+    "created_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "last_edited_by": {
+     "object": "user",
+     "id": "114d872b-594c-8174-9474-0002954cf668"
+    },
+    "has_children": false,
+    "in_trash": false,
+    "type": "embed",
+    "embed": {
+     "caption": [],
+     "url": "https://app.masterschool.com/campus/multi-choice-question/db36c3ca-1935-450f-a4d8-72d1d15ad892"
+    },
+    "archived": false
+   }
+  ]
+ }
+]
