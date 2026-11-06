@@ -107,6 +107,7 @@ def norm(blocks, remap=None):
                 e["tw"] = v.get("table_width"); e["ch"] = bool(v.get("has_column_header")); e["rh"] = bool(v.get("has_row_header"))
             if t == "table_row":   e["cells"] = [norm_rt(c, remap) for c in v.get("cells", [])]
             if t == "image":       e["img"] = True
+            if t == "file":        e["name"] = v.get("name")
         kids = b.get("_children") or []
         if kids:
             e["children"] = norm(kids, remap)
@@ -203,17 +204,30 @@ class Builder:
         self.tmpdir = tmpdir; self.log = log; self.remap = remap or {}
         self.uploaded = 0; self.image_failures = []
 
-    def upload_image(self, block):
-        v = block["image"]; kind = v.get("type")
+    CTYPES = {"png": "image/png", "jpg": "image/jpeg", "jpeg": "image/jpeg", "gif": "image/gif",
+              "webp": "image/webp", "svg": "image/svg+xml", "md": "text/markdown", "csv": "text/csv",
+              "txt": "text/plain", "json": "application/json", "pdf": "application/pdf",
+              "xlsx": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+              "docx": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+              "pptx": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+              "zip": "application/zip"}
+
+    def upload_asset(self, block, field):
+        """Re-host a Notion-hosted image or file attachment in the destination workspace.
+
+        Notion serves them from signed URLs that expire within the hour, so the source
+        URL cannot simply be referenced: the bytes are downloaded and uploaded afresh.
+        """
+        v = block[field]; kind = v.get("type")
         if kind == "external":
             return {"type": "external", "external": {"url": v["external"]["url"]}}
         url = (v.get("file") or {}).get("url")
         if not url:
             self.image_failures.append((block["id"], "no url")); return None
-        name = url.split("?")[0].rsplit("/", 1)[-1] or "image.png"
-        ext = name.rsplit(".", 1)[-1].lower() if "." in name else "png"
-        ctype = {"png": "image/png", "jpg": "image/jpeg", "jpeg": "image/jpeg", "gif": "image/gif",
-                 "webp": "image/webp", "svg": "image/svg+xml"}.get(ext, "image/png")
+        name = v.get("name") or url.split("?")[0].rsplit("/", 1)[-1] or (
+            "image.png" if field == "image" else "attachment")
+        ext = name.rsplit(".", 1)[-1].lower() if "." in name else ("png" if field == "image" else "")
+        ctype = self.CTYPES.get(ext, "image/png" if field == "image" else "application/octet-stream")
         path = os.path.join(self.tmpdir, f"{block['id']}.{ext}")
         if not download(url, path):
             self.image_failures.append((block["id"], "download failed")); return None
@@ -230,8 +244,19 @@ class Builder:
         t = b["type"]; v = b.get(t) or {}
         kids = b.get("_children") or []
 
+        if t == "file":
+            src = self.upload_asset(b, "file")
+            if src is None:
+                return None
+            payload = dict(src)
+            if v.get("name"):
+                payload["name"] = v["name"]
+            if v.get("caption"):
+                payload["caption"] = build_rt(v["caption"], self.remap)
+            return {"object": "block", "type": "file", "file": payload}
+
         if t == "image":
-            src = self.upload_image(b)
+            src = self.upload_asset(b, "image")
             if src is None:
                 return None
             payload = dict(src)
