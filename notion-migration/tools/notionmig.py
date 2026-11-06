@@ -1,5 +1,5 @@
 """Notion content migration: copy page bodies verbatim into existing pages, preserving page IDs."""
-import json, os, subprocess, sys, time
+import json, os, re, subprocess, sys, time
 
 NV = "Notion-Version: 2022-06-28"
 BASE = "https://api.notion.com/v1"
@@ -78,7 +78,7 @@ def norm_rt(rts, remap=None):
         else:
             e["x"] = r.get("plain_text", "")
         if t == "text" and (r.get("text") or {}).get("link"):
-            e["l"] = r["text"]["link"]["url"]
+            e["l"] = canon_link(r["text"]["link"]["url"], remap)
         if t == "equation":
             e["eq"] = r["equation"]["expression"]
         out.append(e)
@@ -117,6 +117,51 @@ def norm(blocks, remap=None):
 
 UNRESOLVED = []
 SYNCED_DEREFERENCED = []
+UNRESOLVED_LINKS = []
+
+_NOTION_LINK = re.compile(
+    r'(?:^/p/|^/|notion\.so/|app\.notion\.com/(?:p/)?|notion\.site/)[^/?#]*?([0-9a-f]{8}-?[0-9a-f]{4}-?[0-9a-f]{4}-?[0-9a-f]{4}-?[0-9a-f]{12})',
+    re.I)
+
+def _link_page_id(url):
+    """The Notion page id an in-workspace link points at, dashless, or None."""
+    if not url:
+        return None
+    m = _NOTION_LINK.search(url)
+    return m.group(1).replace("-", "") if m else None
+
+def remap_link(url, remap):
+    """Rewrite an in-workspace Notion link so it points at the destination twin.
+
+    A link such as /p/<id> copied verbatim would send a reader of the live course into
+    the source course, so the page id is swapped for its mapped counterpart. The API
+    rejects the relative /p/<id> form on create even though it returns it on read, so
+    the result is always an absolute URL.
+    """
+    if not url or not remap:
+        return url
+    found = _link_page_id(url)
+    if not found:
+        return url
+    new = remap.get(found) or {k.replace("-", ""): v for k, v in remap.items()}.get(found)
+    if not new:
+        UNRESOLVED_LINKS.append(url)
+        return url
+    return "https://app.notion.com/p/" + new.replace("-", "")
+
+def canon_link(url, remap=None):
+    """Canonical form for comparison: an in-workspace link reduces to its target page
+    id (remapped when a mapping is given), so the link's URL shape cannot cause a
+    false mismatch between what was sent and what Notion stored."""
+    pid = _link_page_id(url)
+    if not pid:
+        return url
+    if remap:
+        mapped = remap.get(pid) or {k.replace("-", ""): v for k, v in remap.items()}.get(pid)
+        if mapped:
+            pid = mapped.replace("-", "")
+    return "notion-page:" + pid
+
 
 def build_rt(rts, remap=None):
     out = []
@@ -135,7 +180,7 @@ def build_rt(rts, remap=None):
         if t == "text":
             item = {"type": "text", "text": {"content": r["text"]["content"]}}
             if (r["text"] or {}).get("link"):
-                item["text"]["link"] = {"url": r["text"]["link"]["url"]}
+                item["text"]["link"] = {"url": remap_link(r["text"]["link"]["url"], remap)}
         elif t == "equation":
             item = {"type": "equation", "equation": {"expression": r["equation"]["expression"]}}
         else:
